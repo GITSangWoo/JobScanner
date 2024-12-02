@@ -150,6 +150,14 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
         notice_status = columns[1]
         work_status = columns[2]
         done_time = columns[3]
+        d_day = columns[4]  # D-day 값을 가져옴
+        
+        # D-day 값이 숫자인 경우 deadline 계산
+        try:
+            d_day_int = int(d_day)
+            deadline = calculate_deadline_from_dday(d_day_int)
+        except ValueError:
+            deadline = None  # D-day 값이 유효하지 않으면 deadline은 None
         
         if notice_status == "update" and work_status == "null":
             print(f"Starting crawl for {url}")
@@ -193,10 +201,6 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
                 except Exception:
                     pass
 
-                # Calculate due date if applicable
-                d_day = links_with_ddays.get(url)
-                deadline = calculate_deadline_from_dday(d_day) if d_day else None
-
                 # Determine due type
                 due_type = '상시채용' if not deadline else '날짜'
                 due_date = deadline if deadline else None
@@ -225,4 +229,3 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
 
 driver.quit()
 connection.close()
-

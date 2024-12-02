@@ -124,32 +124,29 @@ if os.path.exists(yesterday_log_file):
 log_data = []
 
 # 오늘 크롤링한 URL과 어제 로그 파일을 비교하여 상태 설정
-for url in link_data:
+for url, d_day in link_data.items():
     if os.path.exists(yesterday_log_file):
         if url in previous_urls:
-            # 어제 로그 파일에 URL이 있고, work_status가 "done"이 아니면 그대로 가져옴
             if previous_urls[url]['work_status'] != "done":
-                # 작업이 필요하거나 아직 완료되지 않은 경우
                 notice_status = previous_urls[url]['notice_status']
                 work_status = previous_urls[url]['work_status']
                 done_time = previous_urls[url]['done_time']
             else:
-                # "done" 상태면 "exist"로 설정하고, done_time을 그대로 사용
                 notice_status = "exist"
                 work_status = "done"
                 done_time = previous_urls[url]['done_time']
         else:
-            # 어제 로그 파일에 없으면 상태를 "deleted"로 설정
             notice_status = "deleted"
             work_status = "done"
-            done_time = datetime.today().strftime('%Y-%m-%d %H:%M:%S')  # 삭제된 시간을 현재 시간으로
+            done_time = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
     else:
-        # 어제 로그 파일이 없으면 모든 URL은 "update"로 설정
         notice_status = "update"
         work_status = "null"
         done_time = "null"
 
-    log_data.append(f"{url},{notice_status},{work_status},{done_time}")
+    # D-day 값을 로그 데이터의 마지막 열로 추가
+    log_data.append(f"{url},{notice_status},{work_status},{done_time},{d_day if d_day is not None else 'null'}")
+
 
 # 오늘 로그 파일 생성 (기존 로그 파일 덮어쓰기)
 with open(log_file_name, 'w', encoding='utf-8') as file:
@@ -178,4 +175,3 @@ upload_to_s3(output_file_path, bucket_name, s3_file_key)
 
 # Selenium 종료
 driver.quit()
-
