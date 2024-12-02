@@ -1,0 +1,84 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=etc&rec_idx=49260242&searchType=search&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4
+
+Iframe Text Content:
+시니어 백엔드 개발자 (Node.js)
+서비스 소개
+큐피스트는 사람들이 ‘만남을 재밌고 쉽게’ 할 수 있도록 돕는 ‘글램’을 운영하고 있습니다.
+
+1인 가구가 보편화되고 비혼율이 높아지는 개인주의 시대가 오고 있습니다. 영국에는 외로움부 장관(Ministry of Loneliness)이 생길 정도로 외로움은 사회적 문제이며 곧 세계 최대의 재해가 될 것이라고 합니다. 시대의 변화에 따라 사랑 역시 다양하게 정의되고 더 쉬워져야 하지 않을까요?
+
+큐피스트는 이 외로움의 문제를 해결하기 위해, 복잡하고 어려운 사랑을 엔터테인먼트로 풀어내어 ‘글램'을 통해 사람들이 쉽고 재밌게 만날 수 있도록 연결하는 큐피드의 대리자 역할을 맡고 있습니다.
+
+‘글램'은 회원수 540만명, 누적 다운로드 600만, 월 35만명이 이용하는 소셜 엔터테인먼트 서비스로, 데이팅 매칭 서비스 뿐만 아니라 어디서나 실시간 라이브를 통해 다양한 컨텐츠를 만날 수 있습니다. 이러한 성장 가능성을 인정받아 작년 시리즈 A 투자 유치를 마쳤으며 2025년까지 전 세계에 사랑을 채우는 유니콘으로 성장한다는 비전을 가지고 있습니다.
+
+큐피스트는 모두가 지향하는 '사랑의 욕망을 충족한다'라는 뚜렷한 사명과 핵심가치를 가지고 성장에 집중할 수 있는 업무 환경속에서 서로 신뢰하는 수준 높은 구성원들과 함께 즐겁게 일할 동료를 찾습니다 :)
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Node.js
+주요업무
+현재 서버 인프라는 AWS위에서 운영되고 있으며 EKS, Fargate를 기반으로 동작하고 각 서비스는 Event Pipline기반인 MSK를 중점적으로 운영되고 있습니다.
+
+또한 AWS의 다양한 기술스택 WAF, CloudFront, Global Accelerator, Route53, CloudWatch, RDS, Elasticsearch, ElaticCache, S3, AWS R kognition, AirFlow, SQS 등 다양하고 기술 스택들을 활용하고 있습니다.
+
+이외에도 최신 기술스택을 PoC 및 활용 (Neptune, Kinesis, Keyspaces, DynamoDB 등등 )하고 경우에 따라서는 서비스에 도입하여 트랜드에 뒤쳐지지 않기 위해 다각도로 접근하고 있습니다.
+
+따라서 클라우드 플랫폼에 관심 있는 Backend, DevOps 에게 최신 기술 스택을 직접 사용해 볼 수 있는 좋은 기회가 될 것입니다.
+
+백엔드 서버는 주로 Node.js Nest Framework을 사용하고 있고 Data Pipline 및 처리가 필요한부분은 Python 을 사용하고 있습니다. 현재 Monolithic을 지향하고 있으며 서비스가 확장됨에 따라서 점차 MSA형태로 고도화 해 나가는 과정에 있습니다.
+
+저희 Backend 조직은 모든 작업에 있어서 Stability, Scalability, Readability 라는 3개의 대원칙을 가지고 업무를 진행하며 “실수가 없는 완벽함” 보다 “개선을 통해 실수를 반복하지 않고 실수하기 어려운 환경” 을 만드는것을 목표로 하고있습니다.
+
+또한 맹목적으로 특정 기술과 패러다임을 따르는것이 아닌 현재 우리 조직에게 가장 적절한게 무엇이고 “나”의 역량발전에도 도움을 줄 수 있는게 무엇인지, 함께 성장하는 방향을 항상 고민합니다.
+
+마지막으로 주기적으로 Backend Technical Sync를 통해서 정말 다양한 주제 (Code Review, Coding Convention, 기술 세미나, OOP, Design Patterns, TDD, DDD 등)을 통하여 많은 기술적인 토론을 진행하고 있습니다.
+
+효율적인 Product 개발을 위한 자체 플랫폼화, 이벤트 기반 서비스 Pipeline 구축, 성능 최적화, 비용 최적화, 배포 간소화, 개발 시스템 간소화, 시스템 자동화 등 많은 기술적으로 챌린징한 과업들이 주어졌습니다.
+
+이러한 과정인 만큼 업계 최고 수준의 보상으로 엔지니어분들을 모시고자 합니다. 서비스를 단순하게 유지보수하는 정도에서 끝나지 않고, 함께 지속적으로 성장하고 성공을 같이 누리실 분들을 찾고있습니다.
+
+기술적 챌린지를 통해 함께 성장해 나가며 즐거운 기술문화를 만들어 나갈 수 있는 엔지니어 분들의 지원을 기다립니다.
+
+- 지속적인 서비스 고도화, 투자 유치 등의 사업 확장으로 인한 상시 채용 포지션입니다.
+자격요건
+• Node.js 경험 7년 이상 / 팀 리딩 경험
+• 기본 CS 지식(OS/Network/DB/Data Structure/Algorithm등)을 보유하고 실무에 활용 가능하신 분
+• 여러 Server Language (JS/Python/JAVA/Kotlin/GO/C++ 등)중 1개 이상 능숙한 언어를 보유하신 분
+• 여러 Web Framework (Nest/Django/FastAPI/Spring 등)중 1개 이상 능숙하게 사용하실 수 있는 분
+• 다양한 가이드를 통해 능동적으로 업무를 진행하실 수 있는 분
+• 여러 상황에서 근본적인 문제를 도출하고 해결하실 수 있는 분
+• Technical 요소를 담은 내용을 글 또는 대화로 의사전달 하거나 문서화를 할 수 있는 분
+• 협업 도구 사용에 능숙하고 이해 관계자와의 능숙한 협업이 가능하신 분
+우대사항
+• 클라우드 컴퓨팅 플랫폼(AWS, GCP, Azure 등)을 활용한 업무 경험
+• 비동기 시스템 도입 및 활용 경험
+• 글로벌 프로젝트 혹은 대용량 트래픽 처리 경험이 있으신 분
+• 기술 스택 선정 의사결정 경험이 있으신 분
+• Over, Under Engineering을 능동적으로 파악하며 대응이 가능하신 분
+• 상황에 맞는 최적의 Design Pattern, Code / System Modularize가 가능하신 분
+• 엔지니어 조직의 생산성을 향상 시킬 수 있고 다양한 Risk management가 가능하신 분
+• 다양한 처리 방식(Asynchronous / Multithreading / Multiprocessing / Synchronized / Parallel등)에 이해하고 활용 하실 수 있는 분
+• MSA / DDD / EDD / TDD / Clean Architecture 등 다양한 Architecture 및 방법론의 개념을 이해하고 Service / System Design을 스스로 정의 할 수 있는 분
+• Technical 요소를 청자 수준을 고려하여 다양한 채널로 의사소통 가능하신 분
+• 우대 사항은 필수조건이 아니며, 이러한 챌린징 또는 성장을 함께 해 나가실 분들을 환영합니다.
+마감일 및 근무지
+• 마감일 : ~2024-11-22
+• 근무지
+- 서울 강남구 테헤란로 146, 11층 역삼동, 현익빌딩
+복지 및 혜택
+• 직급,직책을 붙이지 않아요. 전직원 영어 닉네임 사용
+• Free 무제한 도서구매 지원
+• 탈잉 VOD 무제한 수강 지원
+• 성장비 + 교육훈련비 지원
+• 전 구성원 자율출퇴근 (9~11시)
+• 휴가는 자동승인, 30분 단위의 자유로운 연차 사용
+• 점심식대 지원
+• 전직원 개인 법인카드 제공 (회사 내부 규정에 따라, 자율사용)
+• N주년 리프레시 휴가 & 지원금 지원
+• 고정 명절 상여 지급 & 경조사 지원
+채용절차 및 기타 지원 유의사항
+• 서류 전형 → 1차 직무 인터뷰 → 2차 문화 인터뷰 → 최종 합격
+
+Iframe Image Links:
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Node.js | Link: https://cdn.jumpit.co.kr/images/stacks/node.js.png

@@ -1,0 +1,28 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49432462&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=247db45f-e38b-42ca-aca6-715508bf425a
+
+Iframe Text Content:
+물류 서비스 제공 기업에서 SaaS 플랫폼 UI/UX 개발을 담당할 Frontend Engineer를 모집 중에 있습니다. 5년 이상의 ReactJS 개발 경력을 보유한 전문가분들의 많은 지원 바랍니다.
+Responsibilities:
+SaaS 플랫폼 UI/UX 개발
+많은 데이터를 안정적이고 효율적으로 처리하기 위한 아키텍처 설계
+지속적인 웹 성능 문제 진달 및 최적화
+플랫폼의 기존 웹, 웹 앱 서비스 유지 보수 및 신규 기능 개발
+Requirements:
+5년 이상의 ReactJS 개발 경력
+웹 개발 라이브러리 및 프레임워크에 대한 경험
+싱글 페이지 애플리케이션 (SPA), 서버 사이드 렌더링 (SSR) 및 웹앱 개발 경험 혹은 이해도
+높은 가용성과 확장 가능성을 가진 시스템을 설계하고 운영한 경험
+B2B 서비스 출시 및 운영 경험 우대
+팀 리딩 경험 우대
+웹 최적화 경험과 성능 최적화에 대한 고민을 해본 자 우대
+Git 등의 분산 버전 관리 시스템 이용 능숙도 우대
+About the Company:
+물류 서비스 제공 기업으로 Iot 기반의 기술을 통한 물류 전반적인 과정을 확인할 수 있는 솔루션을 제공하고 있습니다.
+Keywords:
+Logistics, technology, IT, engineer, developer
+2127370/001
+
+
+영문 이력서 및 경력 기술서 지원 선호
+
+No images found in iframe.

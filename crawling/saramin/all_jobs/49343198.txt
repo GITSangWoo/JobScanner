@@ -1,0 +1,90 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49343198&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=290bf73e-6420-499b-a8ac-e4cabebed627
+
+Iframe Text Content:
+Data Platform Engineer
+서비스 소개
+■ About Bigwave Robotics
+빅웨이브로보틱스는 '로봇’을 쉽고 편리하게 도입할 수 있는 세상을 만들기 위해 '마로솔’과 '솔링크’를 개발하고 공급하는 “Total Robot Solution Provider” 기업입니다.
+
+마로솔은,
+ ◦ “Total Robot Solution” 플랫폼으로, 로봇 시장의 정보 비대칭을 해소합니다.
+ ◦ 국내 최대 로봇 관련 데이터베이스를 기반으로 고객이 원하는 로봇 제품과 자동화 서비스를 빠르게 제공합니다.
+ ◦ 소비자는 최적화된 로봇 제품과 자동화 관련 꼼꼼한 컨설팅을 받으며, 마로솔 로봇 엔지니어를 통해 설계, 제작, 설치, 제어, 사후 관리까지 원스톱으로 지원받을 수 있습니다.
+
+솔링크는,
+ ◦ 글로벌 No.1 이종, 다종 로봇 통합 관제 시스템으로 현장에 투입된 모든 로봇과 인프라를 연결합니다.
+ ◦ 세계 최다 로봇 연동 기술력을 보유하며, 무한한 확장성과 세계 최초의 사례를 만들어가고 있습니다.
+
+빅웨이브로보틱스는 "Total Robot Solution Provider"로서 로봇 시장의 큰 파도를 함께 일으키고자 합니다. 우리는 ‘Only One’ 플랫폼을 만드는 대체 불가능한 기업으로 성장하기 위해 노력하고 있습니다. 함께 성장하며 파도를 일으킬 멋진 동료를 기다립니다!
+
+■ News
+1. 빅웨이브로보틱스, 98억규모 시리즈A 투자 유치
+http://www.industrynews.co.kr/news/articleView.html?idxno=49346
+
+2. 마로솔, 가우시움과 파트너십…"글로벌 서비스로봇 시장 공략"
+https://news.mt.co.kr/mtview.php?no=2023082211453068278
+
+3. “네이버 로봇이요? 저희는 개방형으로 다른 전략입니다”
+https://www.edaily.co.kr/news/read?newsId=02810966638828240&mediaCodeNo=257&OutLnkChk=Y
+
+4. “로봇이 엘베 타고 층간 이동”...마로솔, ‘솔링크 링커’ 공개
+https://www.mk.co.kr/news/it/10961396
+
+5. 마로솔, 로봇솔루션 공급건수 300여건…전년比 3배↑
+https://news.mt.co.kr/mtview.php?no=2024012309182355134
+
+■ CEO Interview
+1. 90만 유튜버 , 전인구 경제 연구소 인터뷰
+https://www.youtube.com/watch?v=OwLr4jcpe2I
+
+2. CEO 아시아 경제 인터뷰 
+https://view.asiae.co.kr/article/2024051607400834710
+
+■ Youtube (자체 컨텐츠)
+1. 2024 SFAW 마로솔 솔링크 링커(Linker) + 빌더(Builder) 시연 영상
+https://www.youtube.com/watch?v=msCFNYM9Hrs
+
+2. 팔레타이징 자동화 막막하시면 이 영상을 참고하세요!
+https://www.youtube.com/watch?v=NURvGAtVZaY
+
+3. 로보락의 10,000배?! 업소용 로봇청소기의 괴물 같은 청소력 
+https://www.youtube.com/watch?v=x4LdyskCOlo
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+AWS SQL Spark Hadoop
+주요업무
+• 로봇 데이터플랫폼 연구/개발
+• 데이터 파이프라인 개발
+• 정형/비정형 데이터 핸들링
+• 대용량 데이터 처리 및 마이그레이션
+자격요건
+• 경력 : 3년 이상 ~ 7년이하
+• 컴퓨터공학 계열 전공자
+• 데이터플랫폼 아키텍처 설계 및 개발경험이 있는 분
+• Apache Spark, Airflow, Kafka 활용 경험이 있는 분
+• AWS 등 클라우드 기반 빅데이터/서비스 개발 경험이 있는 분
+• Python, Java, SQL 등 언어 활용 능력이 있는 분
+• 정형/비정형/대용량 데이터 핸들링 능력이 있는 분
+우대사항
+• 로봇 관련 서비스 및 플랫폼에 대한 연구/개발 경험이 있으신 분
+• 컴퓨터공학, 인공지능 계열 석/박사 학위 소유자
+• MLOps에 대한 이해도가 있으신 분
+마감일 및 근무지
+• 마감일 : ~2024-12-08
+• 근무지
+- 서울 강남구 역삼로 542, 4층 (대치동,신사에스앤지빌딩)
+복지 및 혜택
+• 점심 식대 하루 1만원 지급 (출근시)
+• 명절 선물 + 생일 선물 지급
+• 기본 연차 외 리프레시 휴가 5일 추가 부여
+• 선택적 시간 근무 가능(오전 7시 ~ 오전 10시 출근, 월 1회 선택 후 고정)
+채용절차 및 기타 지원 유의사항
+서류전형 ＞ 1차 인터뷰 (코딩테스트 및 개발팀 인터뷰) ＞ 2차 인터뷰 (임원진) > Reference Check > 최종합격
+
+Iframe Image Links:
+Image: AWS | Link: https://cdn.jumpit.co.kr/images/stacks/aws.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Spark | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: SQL | Link: https://cdn.jumpit.co.kr/images/stacks/sql.png
+Image: Hadoop | Link: https://cdn.jumpit.co.kr/images/stacks/hadoop.png

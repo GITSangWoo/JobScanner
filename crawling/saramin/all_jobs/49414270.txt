@@ -1,0 +1,56 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49414270&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c71d81ab-2f24-40bb-a55a-ed5c0c19550c
+
+Iframe Text Content:
+세계적인 게임 개발사
+ 
+게임 데이터엔지니어
+
+
+담당업무
+- *****의 불건전언어, 어뷰징(봇핵,계정도용,결제사기) 탐지를 위한 MLOps 플랫폼 구축
+- 인게임 로그 분석, 피쳐/데이터 선정, 모델 학습/평가 프로세스를 통한 지속적인 모델 성능 고도화
+- 운영자를 위한 데이터기반 웹 서비스 개발(Flask, Django)
+- 실시간 데이터 가공 및 처리
+
+자격요건
+- 관련 업무 경력 1년 이상
+- 학력/전공 무관
+
+필요역량
+- 대화의 핵심을 쉽게 파악하고 팀원/타 부서와 원활한 커뮤니케이션을 통해 주도적으로 문제 해결이 가능하신 분
+- Java, Scala, Python(Numpy/Pandas) 등의 프로그래밍 언어 중 최소 1개의 언어를 능숙하게 사용
+- Pytorch, AutoML, Tensorflow, Keras 등 딥 러닝 프레임워크 활용 능력을 보유하신 분
+- Database System, Hadoop Ecosystem 개념 및 언어(SQL, NoSQL)에 대한 탄탄한 지식
+- Spark, EMR 등의 빅데이터 프레임워크와 분산처리 기술로 대용량 데이터 처리 및 파이프라인 구축을 해 보신 분
+
+우대사항
+_ 실무에서의 AI/ML 프로젝트 수행 및 AI/ML 모델 구축 경험(상용서비스 기준)
+- AI 모델 자동 최적화 기법 개발(AutoML, Neural Architecture Search 등)
+- Airflow를 통한 파이프라인 구축 경험이 있으신 분
+- Kafka, Spark-Streaming 등의 스트림 프로세싱 시스템에 대한 경험이 있으신 분
+- AWS, Azure 등 클라우드 기반 서비스 환경에서 개발 경험이 있으신 분
+
+
+판교근무
+
+
+
+어린이집 및 주차장 추첨
+셔틀버스 운행
+비포괄임금제(분단위 측정, 일한 만큼 주는 분위기)
+높은 성과기반 인센티브 
+
+사원수 690명
+기업형태 대기업
+전 세계 80개국 서비스
+매출 6619억원 영업이익 3748억원으로
+국내 게임사 중 가장 높은 수준이라고 해요.
+
+
+담당자
+이 상민 이사
+
+헤드헌터  12년 재직 중
+recruit@hrbiz.co.kr / 010-2330-8214
+
+No images found in iframe.

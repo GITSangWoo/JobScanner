@@ -1,0 +1,26 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49431567&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=33d37386-8162-4559-b754-cebffa41db4f
+
+Iframe Text Content:
+모집분야 담당 업무 자격 요건 및 우대 사항
+빅데이터
+시스템
+구축 및 운영 ㆍ빅데이터 시스템 구축 및 관리
+ㆍ빅데이터 시스템 점검 및 프로세스 개선
+ㆍ서비스 및 자원 모니터링 장애 대응 수행
+ㆍ서버, DB, 네트워크 등 IT 인프라 운영
+자격 요건
+ㆍ경력 : 3년 이상
+ㆍIT 인프라 전반에 대한 기본 지식 보유
+ㆍIT 인프라 시스템 및 솔루션 운영
+ㆍ주도적이고 능동적으로 업무를 수행하는 분
+
+우대 사항
+ㆍ빅데이터 관련 프로젝트 경험
+ㆍDocker/Kubernetes 운영 경험
+ㆍWEB/WAS/DB 운영 경험
+ㆍJava 개발 경험
+ㆍETL 업무 수행 경험
+
+Iframe Image Links:
+Image: 2024 상반기 엑셈 신입사원 공개 채용 | Link: https://ex-em.com/web/nm/uploads/sub/recruit_bottom_2024.png
+Image: 2024 상반기 엑셈 신입사원 공개 채용 | Link: https://ex-em.com/web/nm/uploads/sub/recruit_top_2024_1.jpg

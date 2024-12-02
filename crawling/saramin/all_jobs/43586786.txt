@@ -1,0 +1,109 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=43586786&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=76c04cb4-d2f7-4559-9a21-da2f8ca32832
+
+Iframe Text Content:
+인공지능/머신러닝 엔지니어 채용
+서비스 소개
+[ ActionPower를 소개합니다 ]
+액션파워는 `행동하는 것에 힘이 있다‘라는 창업이념 아래
+음성인식, 자연어 처리, 비전 처리 등 인공지능 핵심 기술을 자체 개발하고
+관련된 서비스를 운영하는 기술 기반 스타트업입니다.
+
+세계 최고의 인공지능 기술을 기반으로, 액션파워는 국내 최초로 음성인식 기술을 활용한 B2C 서비스인 다글로를 출시해 운영하고 있습니다. 
+현재 수십만명의 사용자들에게 안정적인 서비스를 제공하고 있으며, 지속적으로 성장하고 있습니다. 
+일반 사용자 뿐 아니라 삼성물산, 대구시청 등 국내 주요 기업 및 기관에서도 다글로를 도입하여 사용하고 있습니다. 
+다글로 이외에도 사람들의 삶과 업무에 도움이 되는 다양한 서비스를 출시하는 것을 목표로 하고 있습니다. 
+
+액션파워에서는 이러한 성장 여정을 함께 할 수 있는 사람을 모집하고 있습니다.
+존중, 질문, 실행의 핵심가치를 바탕으로 ”꿈꿔왔던 편리함을 가능하게”라는 미션을 위해
+함께 경험하고, 생각하고, 행동하는 AI파트너가 되실 액션파워 레인저를 기다리고 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Linux Docker Git MachineLearning AI/인공지능 Python TensorFlow
+주요업무
+[ 이런 일을 해요 ]
+
+◎ 음성, 음향 관련 연구개발
+• AI 받아쓰기 서비스 다글로가 여러분의 이야기를 더 정확히 받아 쓸 수 있도록 Speech-to-Text 기술을 개발합니다.
+• 여러 화자가 등장하는 음성에서 누가 이야기를 하는지 구분해주는 Speaker Diarization 기술을 개발합니다.
+• 목소리를 생체암호로 사용해 본인을 확인하는 Speaker Identification/Verification 기술을 개발합니다.
+• 잡음이 섞여 있거나 녹음 상태가 좋지 못한 음성을 복원해주는 Speech Enhancement 기술을 개발합니다.
+• 음성의 특정 구간이 어떤 음성인지 정확히 추출하고 분류해주는 Sound Event Detection/Classification 기술을 개발합니다.
+• 액션파워는 최고의 음성인식 모델을 만들어 가고 있습니다. 하지만 아직 풀어야 할 문제들이 많습니다. 이 문제들을 여러분들과 같이 고민하고 해결해 나가길 원합니다.
+
+◎ 자연어처리 관련 연구개발 
+• 우리 생활이 더 편리해지기 위해서는 받아쓰기만으로 만족할 수 없습니다. 받아쓴 글을 요약하고, 정리하는 Text Summarization 기술을 개발합니다.
+• 정리된 내용을 잘 검색할 수 있도록 지식을 체계화 하는 Text Classification 기술을 개발합니다.
+• 체계화된 지식을 바탕으로 찰떡같이 원하는 정보를 검색하고 답변하는 Question Answering 기술을 개발합니다.
+
+◎ 컴퓨터 비전 관련 연구개발
+• 음성 뿐만 아니라, 영상에도 많은 정보가 있습니다. 저희는 영상에 있는 음성정보를 받아쓰기 하는 것부터 시작해서, 이미지처리 기술도 함께 개발하고 있습니다.
+• 요즘에는 영상이 넘치도록 많습니다. 그 중에서 내가 원하는 정보가 있는 부분은 어디일까요? 꼭 필요한 곳만 콕 집어보거나, 중요 장면만 모으는 Video Timestamping, Video Summary 기술을 개발합니다.
+
+◎ 그 외 인공지능 관련 기술 연구개발
+• Neural Network Architecture Exploration
+• Lightweight / Pruning / Quantization
+• AutoML / Parameter Optimization
+• XAI(Explainable AI)
+• Adversarial Attacks/Defenses
+자격요건
+• 자동화를 좋아하셔서, 귀찮고 반복적인 것들은 컴퓨터에게 시키고, 그동안 다른 생산적인 활동을 즐기시는 분이면 좋겠습니다.
+• 데이터와 결과를 분석하고 패턴을 발견하는 과정을 통해 문제점을 해결할 수 있는 분이면 좋겠습니다.
+• 대학에서 인공지능이나 컴퓨터 공학을 공부하셨거나 경험을 가지신 분이면 좋겠습니다. 컴퓨터 기초 지식이 튼튼하시면 더 멀리 갈 수 있다고 믿고 있습니다.
+• 멋진 아이디어를 세상에 내보일 수 있는 기본적인 코딩을 하실 수 있는 분이면 좋겠습니다. 언어는 특히 Python을 모국어처럼 쓰실 수 있으면 빠르게 업무에 적응 하실 수 있습니다.
+• PyTorch, Tensorflow, JAX 등을 다뤄보신 분이라면 기존의 모델을 파악하시는데 도움이 됩니다.
+• Linux , Docker, Git 등 다양한 개발환경, 개발툴에 능숙하시면 좋겠습니다.
+• 컴퓨터 구조, 알고리즘, 최적화에 대한 깊은 이해가 있으시면 큰 도움이 될 것 같습니다.
+• 병역특례(전문연구요원 보충역, 산업기능요원 보충역, 전직) 가능
+우대사항
+• 인공지능 업계 경험
+• 머신러닝 관련 분야의 석/박사 학위 또는 그에 준하는 경험
+• 컴퓨터과학 및 머신러닝 관련 학회/저널 논문 게재 경험
+• 알고리즘, Kaggle, 해커톤 등 각종 대회 수상, 출전 경험
+마감일 및 근무지
+• 마감일 : 상시
+• 근무지
+- 서울 관악구 남부순환로 1838, 11층
+복지 및 혜택
+[ 액션파워 레인저가 되면 이런 혜택이 있어요 ] 
+• 선택적 근로시간제를 운영하고 있어요.
+　- 8시~10시 사이 출근, 17시~19시 퇴근이 가능해요.
+　- Core Time 10시~17시만 준수해주시고 주 40시간을 근무하시면 돼요. 
+　- 액션파워에서는 효율적으로 일하고 자율적으로 쉽니다.
+• 액션파워 사무실은 서울대입구역 지하철역 1분거리에 있어요.
+• 몇 월에 입사하시든, 다음 해 1월 1일에 연차 15개를 선 부여해드려요.
+• 생일에는 쉬세요!
+• 회사 생일에도 쉬세요!
+• 건강검진 지원도 해요. 
+　- 검진 받으실 때도 유급 휴가를 드려요.
+• 그 외 각종 경조사 휴가를 지원해요.
+• B사 안마의자, 빈백룸에서 편안하게 쉴 수 있어요.
+
+[ 성장과 적응을 지원합니다 ]
+• 업무에 필요한 도서를 지원해요.
+• 월 5만원의 역량개발비를 지원해요.
+　- 운동, 강의 등에 활용할 수 있어요.
+• 유용한 물건들이 가득한 웰컴키트를 드려요.
+　- 업무에 필요한 개인물품을 구매하실 수 있도록 10만원을 지원해요.
+　- 후드집업, 반팔티 등 팀복도 드려요.
+
+[ 사소한 것도 잘 챙겨드리고 싶습니다 ]
+• 각종 경조사의 경조비 및 경조물품을 드려요.
+• 명절(구정, 추석)에는 상품권을 드려요.
+• 입사 1주년에는 소정의 상품을 드려요.
+• 커피, 음료, 간식, 냉동식품 등 다양한 먹거리들이 항상 가득 차 있어요.
+• S보험사의 단체 실손보험을 가입해드리고 있어요.
+채용절차 및 기타 지원 유의사항
+• 서류검토 > 면접( 직무적합성 & Culture Fit & 코딩테스트 ) > 결과발표
+• 채용전형은 정규직 ( 수습기간 3개월 ) 입니다. 
+• 제출서류에 연봉내역이 포함되지 않도록 해주세요.
+
+Iframe Image Links:
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: Git | Link: https://cdn.jumpit.co.kr/images/stacks/git.png
+Image: MachineLearning | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png
+Image: AI/인공지능 | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Docker | Link: https://cdn.jumpit.co.kr/images/stacks/docker.png
+Image: TensorFlow | Link: https://cdn.jumpit.co.kr/images/stacks/tensorflow.png

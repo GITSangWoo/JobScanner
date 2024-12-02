@@ -1,0 +1,96 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49364668&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=4248949f-dbba-46e1-93da-c6e04660686f
+
+Iframe Text Content:
+At Johnson & Johnson, we believe health is everything. Our strength in healthcare innovation empowers us to build a world where complex diseases are prevented, treated, and cured, where treatments are smarter and less invasive, and solutions are personal. Through our expertise in in pharmaceutical, and medical devices and diagnostics markets Janssen and MedTech, we are uniquely positioned to innovate across the full spectrum of healthcare solutions today to deliver the breakthroughs of tomorrow, and profoundly impact health for humanity. Learn more at https://www.jnj.com/.
+
+
+
+1. 포지션: Execution Systems Engineer
+2. 계열사: 얀센백신 (Janssen Vaccines)
+3. 근무지: 인천 송도
+4. 근무 형태: Regular
+
+
+
+[Summary]
+Janssen Vaccines is recruiting for an Engineer, Execution Systems, Incheon Site, Large Molecule Platform. This position must be based at an Incheon (Janssen Vaccines) site.
+The Execution Systems is managing all of the systems in MTO (Manufacturing Technology and Operation) including Process Control System, Building Management System, Environmental Management System, Utility Management System, Automation Integration layer, PI system.
+The Engineer will report to the Execution Systems Site lead. The Position at site level will be responsible for implementing, supporting and maintaining the ISA-95 level 1, 2 and 3 systems. Site ES engineer will execute all the activities required to ensure that computerized systems are fit for intended use and compliant with applicable regulations throughout the entire system life cycle
+Site ES engineer will be responsible for maintaining and updating local recipe elements (process content, technology process actions and phases, libraries) and CSV & Data Integrity as Manufacturing System Administrator and maintain Network and Virtual machine servers that possess L2 Systems.
+
+
+[Responsibilities]
+PROJECT LEADERSHIP
+- Acts as project leader/core team member and reporting / sharing to Team Lead
+
+
+TECHNICAL RESPONSIBILITIES
+Site
+- 24/7 system support (local execution, with option to elevate to Global platform level)
+- Maintain Computerized Systems Validation & Data Integrity Status for Execution systems
+- Recipe management work
+- System Administrator for Execution systems
+- Write and execute validation protocol - CSV
+- Execute against global SOPs (including back up, disaster recovery, user administration etc.) and manage site specific work instructions
+- Execute ES related projects
+
+
+ORGANIZATIONAL LEADERSHIP
+- Capable of working in a matrix organization for engineers at platform or enterprise level.
+- Collaboration and partnership with the various internal and external partners like Quality, IT, Lab Systems, Technical Operations, PDMS, Production and others as well as collaboration with General Managers
+- Ensure compliance in all aspects of Environmental, Health, Safety and Sustainability (EHSS) per Johnson & Johnson standards.
+
+
+[Requirements]
+- A minimum of a Bachelor's degree in Engineering
+- A technical education / degree in computer science engineering, electronics engineering, industrial automation, information technology, or relevant engineering discipline is preferred.
+- Fluent verbal and written communications skills (English)
+- Familiarity with IT application design and deployment is required.
+- Knowledge of Microsoft Office (Word, Excel, PowerPoint, Outlook) is required.
+- The applicant who has knowledge or Certification that is related to automation is preferred (for Experience applicants only)
+o CISCO Network Switch Cerification
+o Computer Network
+o Digital System
+o Digital Logic
+o PLC
+o Siemens PLC (S7-300/400)
+o PLC Configuration using STEP 7 / TIA Potal
+o Siemens Win CC
+o Siemens Desigo CC
+o Wonderware Intouch HMI
+o Windows SQL
+o AVEVA PI
+o PAS-X MES
+o VM Ware
+o minimum of 2-5 years GMP experience is preferred
+o Knowledge of Process Excellence tools (Lean, Six Sigma) preferred.
+
+
+
+[지원 방법]
+www.careers.jnj.com 접속 -> Position Number 2406220008W 검색 -> 해당 모집 공고의“Apply Now” 클릭 후 온라인 지원 프로세스 진행
+
+
+[제출 서류]
+국문 혹은 영문 자유 양식의 이력서/ 자기소개서
+
+
+[서류 마감일]
+채용시 마감
+
+
+[For more Johnson & Johnson]
+J&J Linkedin: https://www.linkedin.com/company/johnson-&-johnson/
+J&J Corporate Page: http://www.jobkorea.co.kr/Company/1605233/Info
+
+
+[유의사항]
+- 국가보훈 대상자 및 장애인은 관련 서류 제출 시 관계 법령에 의거하여 우대합니다.
+- 서류 전형 합격자에 한하여 개별 통보합니다. 단, 회사 사정에 따라 지연될 수 있습니다.
+- 입사 지원 서류에 허위 사실이 발견될 경우, 채용 확정 이후라도 채용이 취소될 수 있으며 향후 채용이 제한됩니다.
+- 제출된 서류는 반환되지 않으며, 별도 요청 시 삭제합니다.
+
+
+www.careers.jnj.com
+
+No images found in iframe.

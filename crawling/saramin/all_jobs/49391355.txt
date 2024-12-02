@@ -1,0 +1,49 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49391355&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=9d51bf61-9053-4e6d-a7a2-9458b68f3fa2
+
+Iframe Text Content:
+의뢰회사
+IT솔루션기반 컨설팅/ 서비스 회사로 클라우드 매니지드 , Unix to Linux (U2L), 망 분리 (가상화), 미들웨어 마이그레이션 / 빅데이터 분석/관리/ 업무 자동화 (RPA)/ 차세대 보안 시스템솔루션의 서비스기업 으로 지속적인 성장하는 기업입니다.
+
+
+▣ Job Position ( 정규직 )
+
+Kubernetes 기반 인프라 설계 및 구축
+
+▣ 담당업무
+
+• Kubernetes 기반 인프라 설계 및 구축 : 클러스터 배포, 노드 관리, 스케일링 등 Kubernetes 인프라 개발
+o 보안 관리 및 정책 구현: Kyverno, RBAC 등을 통한 보안 정책 자동화 및 감사 시스템 구축
+o 서비스 Mesh 설계 및 운영: Istio 기반 서비스 Mesh 구축 및 관리, 트래픽 관리 최적화
+o 백업 및 복구 솔루션 개발: Kubernetes 환경의 데이터 백업 및 복구 시스템 설계 및 구현
+o 서비스 연속성 보장: 클러스터 운영 중단 없이 보안 정책 변경 및 업데이트 수행
+
+
+▣ 조건
+• Kubernetes 인프라 관리 경험 5년 이상 ~ (부장급까지 가능)
+• Kubernetes 클러스터 설계 및 운영 경험
+• 보안 정책 자동화 및 감사 시스템 구축 경험 (Kyverno, RBAC 등)
+• 마이크로서비스 아키텍처 및 API Gateway 운영 경험
+• Service Mesh(예: Istio) 관리 및 운영 경험
+• Linux 시스템 관리 능력 및 네트워크 구성 이해도
+
+▣ 우대사항
+• CKA(Certified Kubernetes Administrator) 자격증 보유
+• 클라우드 네이티브 애플리케이션 개발 및 운영 경험
+• DevOps 관련 도구 및 프로세스 경험 (Jenkins, GitLab, Docker 등)
+• Python, Go 등 스크립트 언어 능숙자
+• 실시간 로그 분석 도구 및 모니터링 도구 경험 (Prometheus, Grafana, ELK 등)
+• Kubernetes 생태계 최신 기술 트렌드에 대한 이해
+
+근무지 : 화성( 반도체/ 셔틀버스 )과 서울(뚝섬역)근무 가능자
+
+사람인 지원하시면 적합한 분에게 상세안내 보내 드리겠습니다.
+함께하기 위한 방법
+접수기간 : 2024년 11월 13일 (수)10시 00분 ~ 2024년 12월 13일 (금) 23시 59분
+접수방법 : 사람인 입사지원
+이력서양식 : 사람인 이력서 양식
+함께하기 위한 여정
+서류전형
+1차면접
+최종합격
+
+No images found in iframe.

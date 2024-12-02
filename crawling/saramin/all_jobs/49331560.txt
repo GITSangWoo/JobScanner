@@ -1,0 +1,94 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49331560&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=89c171f4-6238-485a-a4c6-c754b831b55c
+
+Iframe Text Content:
+이런 분을 찾습니다
+대한민국 대표 온라인 명품 커머스 플랫폼 머스트잇은 2011년 설립 이후 치열한 경쟁 환경 속에서 ‘진짜는 모두가 알아본다’는 CEO의 경영철학 하에 신뢰와 정직을 바탕으로 고객과 판매자 모두에게 진정성을 주며 업계를 선도하고 있습니다. 
+우리는 급변하는 시장 환경에 빠르게 대응하며 주도권을 잡고, 또 한 번 폭발적인 성장과 임팩트, 마법 같은 반등을 이루기 위해 치열하게 달리고 있으며, 이에 맞춰 결속력이 강한 조직을 만들기 위해 조직을 슬림하게 재편하며 밀도 높은 조직을 구성했고, 딱딱한 리더십이 아닌 성숙한 오너십을 가진 동료들과 함께 견고한 "One Team"을 구축했습니다. 
+최고의 인재들은 서로를 통해 성장하고, 더 많이 더 빠르게 성과를 창출할 수 있다고 합니다. 이에, 우리와 함께 시장의 문제를 해결할 비범한 동료를 찾습니다.
+[ MUST IT Development Environment ]
+- Project/Issue Management Tool : Jira
+- Knowledge Base : Confluence
+- Source Management : Git (Github)
+- IDE Tools : VSCode, IntelliJ, Xcode, Android Studio
+- Deployment Tool : Jenkins
+- Monitoring Tool : AWS CloudWatch, Grafana + Prometheus
+- Logging Tool : AWS Athena, ElasticSearch + FileBeat/Logstash + Kibana
+
+[ MUST IT Technology Stacks ]
+- Mustit-service, Admin : PHP, CodeIgniter(2 or 3), HTML/CSS/javascript
+- FrontWeb: Vue.JS + Typescript
+- iOS App: iOS SDK + Swift
+- Android App: Android SDK + Kotlin
+- Auth/Facade API : Node.JS(v12+) + Koa + Typescript
+- Biz API : SpringBoot2 + JPA + Kotlin
+- Infra : AWS Services, AWS EKS(Kubernetes 1.23), Docker, Terraform
+모집상세
+모집부문
+Sr. Back-end Engineer (6년 이상)
+주요업무
+• 스마트 럭셔리를 위한 커머스 프로덕트 기획부터 론칭, 운영까지 프로덕트 개발 전 과정에 참여
+• 신규 태스크 타당성 검토, 공수 산정, 일정조율 및 담당자 배정
+• 머스트잇 서비스 개발
+      - 사용자/어드민 서비스 프론트엔드 설계/개발/고도화 및 운영
+      - 머스트잇의 기존 커머스 레거시 서비스 마이그레이션머스트잇 서비스 개발
+• 기술 스택
+      - Kotlin, Spring Boot, Node, Kafka, Debezium, Open Search, MySQL, MongoDB
+      - AWS, Kubernetes, Docker
+자격요건
+• 백엔드 개발 경험 6년 이상 또는 그에 준하는 역량을 보유한 분
+• Springboot(Kotlin), JPA를 이용하여 웹 서비스 개발이 가능한 분
+• DB 설계·적용·활용에 대한 높은 이해도를 보유하고 DB 개선 경험이 있는 분
+• 유지보수가 쉽고 확장 가능한 코드 설계에 대한 욕심을 가진 분
+• 성장욕구, 새로운 기술에 관심이 많고 꾸준히 스스로 학습하는 분
+• 긍정적 사고와 커뮤니케이션이 원활하신 분
+• 오너십과 책임감을 보유한 분
+우대사항
+• 팀원 관리 및 리딩 경험이 있는 분
+• AWS, E-Commerce 서비스 경험이 있는 분
+• 대규모 트래픽 처리 경험과 분산 캐시를 통한 서비스 튜닝 경험이 있는 분
+• Batch/Streaming 파이프라인을 안정적으로 구축 및 운영한 경험이 있으신 분
+• Kafka, Elasticsearch, Redis 운영 경험이 있으신 분
+• MSA, 이벤트 기반 메시징 분산 처리 운영 경험이 있으신 분
+• Git, Jira, Confluence 등의 협업 도구 사용 경험이 있으신 분
+• 테스트 코드, 코드 리뷰 등을 통해 주변 동료에게 자극을 주실 수 있는 분
+참고사항 
+• 채용절차 : 서류전형 - 1차 인터뷰 - 처우확인 - 2차 인터뷰 - 최종 결과
+• 경력과 포지션에 따라 레퍼런스 체크가 추가될 수 있으며, 사전 동의를 받고 있습니다.
+• 채용형태 : 정규직  *수습기간 3개월-처우동일
+• 조직문화, 복리후생 등 회사 소개는  채용 페이지(Click)를 참고 바라며, 모집 완료 시 조기 마감될 수 있습니다.
+• 채용 과정에서 허위사실 및 결격사유가 확인되는 경우 최종 합격 이후에도 입사가 취소될 수 있습니다
+모집부문
+Jr. Back-end Engineer (3년 이상)
+주요업무
+• 스마트 럭셔리를 위한 커머스 프로덕트 기획부터 론칭, 운영까지 프로덕트 개발 전 과정에 참여
+• 머스트잇 사용자/어드민 서비스 백엔드 설계/개발/고도화 및 운영
+• 기존 레거시 시스템을 MSA로 전환하며 서비스 마이그레이션데이터베이스 설계 적용 및 튜닝
+• 다양한 협업자들과 유연한 의사소통을 통해 원칙과 프로토콜을 정의하며 개발
+• 기술 스택
+      - Kotlin, Spring Boot, Node, Kafka, Debezium, Open Search, MySQL, MongoDB
+      - AWS, Kubernetes, Docker
+자격요건
+• 백엔드 개발 경험 3년 이상 또는 그에 준하는 역량을 보유한 분
+• Springboot(Kotlin), JPA를 이용하여 웹 서비스 개발이 가능한 분
+• DB 설계·적용·활용에 대한 높은 이해도를 보유하고 DB 개선 경험이 있는 분
+• 유지보수가 쉽고 확장 가능한 코드 설계에 대한 욕심을 가진 분
+• 성장욕구, 새로운 기술에 관심이 많고 꾸준히 스스로 학습하는 분
+• 긍정적 사고와 커뮤니케이션이 원활하신 분
+• 오너십과 책임감을 보유한 분
+우대사항
+• AWS, E-Commerce 서비스 경험이 있는 분
+• 대규모 트래픽 처리 경험과 분산 캐시를 통한 서비스 튜닝 경험이 있는 분
+• Batch/Streaming 파이프라인을 안정적으로 구축 및 운영한 경험이 있으신 분
+• Kafka, Elasticsearch, Redis 운영 경험이 있으신 분
+• MSA, 이벤트 기반 메시징 분산 처리 운영 경험이 있으신 분
+• Git, Jira, Confluence 등의 협업 도구 사용 경험이 있으신 분
+• 테스트 코드, 코드 리뷰 등을 통해 주변 동료에게 자극을 주실 수 있는 분
+참고사항 
+• 채용절차 : 서류전형 - 1차 인터뷰 - 처우확인 - 2차 인터뷰 - 최종 결과
+• 경력과 포지션에 따라 레퍼런스 체크가 추가될 수 있으며, 사전 동의를 받고 있습니다.
+• 채용형태 : 정규직  *수습기간 3개월-처우동일
+• 조직문화, 복리후생 등 회사 소개는  채용 페이지(Click)를 참고 바라며, 모집 완료 시 조기 마감될 수 있습니다.
+• 채용 과정에서 허위사실 및 결격사유가 확인되는 경우 최종 합격 이후에도 입사가 취소될 수 있습니다
+
+Iframe Image Links:
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202408/22/silx7d_meys-toeflv_recruit.png

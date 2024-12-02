@@ -1,0 +1,53 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49404926&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=8731facd-9a32-45c0-8469-b750d9edc676
+
+Iframe Text Content:
+세계적인 게임 개발사
+
+매출액 절반에 가까운 영업이익 /
+훌륭한 직원복지 / 매우 건전한 회사
+ 시스템 엔지니어 (프라이빗 클라우드)
+
+담당업무
+프라이빗클라우드팀 시스템 엔지니어는 네트워크 엔지니어와 함께 팀에 소속되어 서비스 인프라를 운영하는 조직이에요 프라이빗클라우드 환경을 통해 빠르게 인프라를 제공하고 운영을 극대화 하는 것을 목표로 하고 있어요.
+
+- 프라이빗클라우드 : Openstack, Ceph 기반의 프라이빗클라우드를 플랫폼엔지니어링팀과 협업하여 운영하고 있으며 VM, Baremetal, Block/Object 스토리지 운영하고 개선하는 업무를 담당해요.
+- Openstack : OVN, DPDK 에서 Openstack Nova, Ironic 으로 서버를 구축하고 관리하고, 새로운 Openstack 기능 개발, 하드웨어 최적화하고 고도화해요.
+- 자동화 : Chatbot, API 로 인프라를 관리하며, ansible, gitlab 을 이용해 인프라를 효율적으로 구축하고 자동화 하고 있어요.
+- 운영 : Baremetal, VM 및 OS(Ubuntu, Rocky, Windows Server), 공통시스템(AD, DNS, SMTP, Nexus) 을 구축하고 관리해요.
+
+저희 프라이빗클라우드팀은 최신 기술 트렌드와 도구를 적극 도입하고, 지속적인 개선과 혁신을 통해 데이터센터의 기반 시스템인 서버/스토리지를 안정적으로 운영하기 위해 노력하고 있어요. Openstack, Ceph, Kubernetes 와 같은 클라우드 기술에 대한 깊은 이해와 열정을 가진 인재들을 환영하며, 함께 미래의 플랫폼을 만들어 나가기를 기대합니다. 담당하게 될 업무는 아래와 같아요.
+
+- 게임 및 플랫폼 서비스 서버 운영 관리
+- 시스템 모니터링, 장애 분석, 트러블슈팅, 자동화
+- IDC, Cloud 시스템 구축 및 운영
+- 공통 시스템 (AD, DNS, SMTP, Proxy 등) 구축 및 운영
+자격요건
+- 유관경력 3년 이상 보유하고 있는 분
+- X86서버(HP, DELL 등) 기반 인프라 구축 및 운영 경험
+- 기술에 지속적으로 관심을 갖고 도전하는 분
+- 하드웨어 가상화 및 자동화 경험과 도전, 열정이 있는 분
+- 오픈 소스 기반 솔루션 리서치/기획/구축 경험
+필요역량
+- Linux / Windows OS 동작에 대한 이해
+- System, Hardware, Hypervisor 동작에 대한 이해
+- System 분석 및 모니터링, 트러블 슈팅 능력
+우대사항
+- 게임사/포털 인프라 운영 및 글로벌 또는 대규모 인프라 운영 경험 보유자
+- 하드웨어 가상화 및 자동화 경험 보유자
+- Linux / Windows 시스템 OS 구축 및 운영 경험
+- 오픈소스를 이용한 모니터링 및 자동화 구축 및 운영 경험 보유
+- 스크립트, 프로그래밍 지식 보유 (Powershell, Python 등)
+- Openstack 가상화 플랫폼 및 분산 스토리지에 대한 이해
+판교근무
+
+높은 성과기반 인센티브 
+
+[회사개요] 매출액 : 약 1.6조, 영업이익 7,500억, 종업원수 : 약 3,500명
+게임 개발, 퍼블리싱, 소셜플렛폼, 투자, 자산운용 등 30여개 계열사를 보유한 지주회사
+ 담당자
+이상민 이사
+
+헤드헌터 이사 12년 재직 중
+recruit@hrbiz.co.kr / 010-2330-8214
+
+No images found in iframe.

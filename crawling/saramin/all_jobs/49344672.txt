@@ -1,0 +1,38 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49344672&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=410727db-2dfa-400b-89e9-fa7d25dc4766
+
+Iframe Text Content:
+모집부문 및 상세내용
+모집부문 상세내용
+공통 자격요건
+ㆍ학력 : 대졸 이상 (4년)
+AI엔지니어
+AI 연구실 0명
+주요업무
+ㆍ 오브로 AI - 영상 위치추적 기술 개발 및 상용화
+ㆍ 컴퓨터 비전 / 딥러닝 알고리즘 개발
+ㆍ 객체 검출 및 추적 딥러닝 알고리즘 개발
+ㆍ 데이터 전처리 및 딥러닝 모델 학습
+ㆍ Python3 C++/ Tensorflow2 /Keras/ Pytorch /Hadoop
+지원자격
+ㆍ경력 : 무관 (신입도 지원 가능)
+우대사항
+ㆍ수학/통계학
+ㆍ컴퓨터활용능력 우수, 해당직무 근무경험
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월
+ㆍ 근무일시 : 주 5일(월~금)
+ㆍ 근무지역 : (13494) 경기 성남시 분당구 대왕판교로 660 유스페이스1 B동 1203호(삼평동) - 신분당선 판교 에서 800m 이내
+전형절차
+서류전형
+1차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 11월 6일 (수) 09시 ~ 2024년 12월 6일 (금) 24시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+ㆍ 제출서류 : 이력서, 포트폴리오 등 본인을 어필할 수 있는 자료
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202411/05/smgxjl_jsz4-1mdfho8_recruit.png

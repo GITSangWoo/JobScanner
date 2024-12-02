@@ -1,0 +1,93 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49366289&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=3356c1bd-39aa-40af-b07c-0a0a03bae62b
+
+Iframe Text Content:
+데이터 처리 및 포맷팅. 주니어 개발자
+서비스 소개
+포지큐브는 AI 기술 전문 회사로,
+공공기관 및 민간기업에게 AI Voice & Vision 서비스를 제공하고 있습니다.
+
+뉴스에서 들어본 것 같은 AI 기술이 아닌, 삶에 적용되는 AI 서비스를 제공하고 있습니다.
+AI 기술이 우리 삶의 당연한 일부분이 되는 그 날을 향해 노력하고 있습니다.
+AI 전화 응대 서비스, AI based OCR 서비스 등의 AI 서비스를 개발·운영합니다.
+
+#. 포지큐브에 합류해야 하는 이유!!
+- 국내 최초의, 최고의 엔지니어와 함께하는 AI 개발 그룹
+삼성전자, LG전자 엔지니어를 리더로 최고의 AI기술을 만들어 갑니다.
+
+- 매년 매출 200% 로켓 성장 기업
+각종 관공서, 공공 영역 뿐만 아니라 금융권, 보험업까지 AI voice&vision 솔루션을 확장하고 있습니다. (주요 거래처 카카오, NHN, Toss, 바디프렌드, KTDS, NH농협, 하나카드, KB국민카드 등)
+
+- 110억원 시리즈B 투자유치로 사업 확장 중
+2017년 창업한 이래로 TIPS, SW 고성장클럽, KB 스타터스 등에 선정되며 그 가능성을 인정 받았을 뿐만 아니라, 2020년에는 캡스톤 파트너스, HB 인베스트먼트, 윈 벤처 투자, BA 파트너스에서 시리즈 A 투자유치, 2021년에는 시리즈 B 투자유치에 성공했습니다.
+
+#. 포지큐브는 이런 분을 찾고 있습니다.
+- AI 분야의 최전선에서 경쟁력 있는 커리어를 만들어가고 싶으신 분
+- 새로운 것에 대한 지적 호기심이 많은 분
+- 발전과 도전을 두려워하지 않는 분
+- 맡은 일에 책임감을 갖고 임하며, 문제 상황을 외면하지 않는 분
+- 회사와 내가 서로에게 성장의 바탕이 된다는 것을 이해하시는 분
+
+#. 포지큐브는 이런 문화를 갖고 있어요.
+- 업무에 몰입할 수 있다면 재택근무도 가능해요.
+- 동료를 도와가며 협업해요.
+- 수평적인 '님' 문화를 갖고 있어요.
+- 연차는 자유롭게 사용할 수 있어요.
+- 업무 중 휴식도 중요해요. 휴식 시간 탁구와 오락도 가능해요.
+
+#. 언론 소개
+머니투데이 : [https://bit.ly/3DotC1n](https://bit.ly/3DotC1n)
+　오피니언뉴스 : [https://bit.ly/3Do27oT](https://bit.ly/3Do27oT)
+　전자신문 : [https://bit.ly/3ouwxiQ](https://bit.ly/3ouwxiQ)
+　Korea Times : [https://bit.ly/30uJbqs](https://bit.ly/30uJbqs)
+　아시아경제 : [https://bit.ly/3HxJ6D4](https://bit.ly/3HxJ6D4)
+　IT조선 : [https://bit.ly/3wV2lkI](https://bit.ly/3wV2lkI)
+　전자신문 : [https://bit.ly/3niZyPf](https://bit.ly/3niZyPf)
+　KEB하나은행 : [https://bit.ly/3FnMluN](https://bit.ly/3FnMluN)
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Node.js Docker MongoDB
+주요업무
+• 다양한 데이터(문서, 데이터베이스, 웹페이지 등)에서 정보를 추출
+• 추출된 정보를 포맷팅하여 가공
+• Python 기반의 API 서버 개발
+자격요건
+• 자료구조, 알고리즘에 대한 이해가 있으신 분
+• Python 개발 경험이 있으신 분
+• github 사용 경험이 있으신 분
+• 관련 부서와 원할한 커뮤니케이션이 가능하신 분
+• 문제를 해결하기 위해 다각도로 접근이 가능하신 분
+우대사항
+• Python에서 GPT 및 ML 관련 서비스 사용 경험이 있으신 분
+• Python으로 서버 개발 경험이 있으신 분
+• PDF, PPT, DOCX 등 다양한 문서를 코드 내에서 제어해 보신 분
+• Web Crawling 경험이 있으신 분
+• 자연어 처리에 대한 이해도가 있으신 분
+• Docker 및 리눅스 사용에 어려움이 없으신 분
+마감일 및 근무지
+• 마감일 : ~2024-12-09
+• 근무지
+- 서울 강남구 테헤란로14길 16 라인빌딩 10층
+복지 및 혜택
+[근무환경]
+• 근무형태 : 정규직 (수습기간 3개월)
+• 근무시간 : 주5일 (월~금)
+
+[혜택 및 복지]
+• 저녁에 업무가 잘되는 당신, 선택적 자율출퇴근제
+• 오늘은 혼자 있고 싶어요, 재택근무 가능
+• 몸이 건강해야 마음이 건강하다! 매년 제공되는 건강검진
+• 당신의 개성을 존중합니다. 개인별 맞춤 장비 제공
+• 먹고 일하는 직원이 행복하다! 화수분처럼 쏟아지는 간식bar
+• 근무시간에 탁구 경기 가능! 탁구대, 플스 구비
+• 합법적 비상금 충당 가능! 매월 초 식대 제공(비상금 충당 가능)
+• 서로 윈윈하자! 자기계발비, 교육훈련비, 도서지원
+• 곧 더 넒은 곳으로 갑니다! 160평 규모의 사무실과 카페테리아
+• 스톡옵션, 퇴직연금, 성과급 제도 운영
+(더 많은 복리후생을 제공하기 위해 HR팀 열일중입니다!)
+
+Iframe Image Links:
+Image: Docker | Link: https://cdn.jumpit.co.kr/images/stacks/docker.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: MongoDB | Link: https://cdn.jumpit.co.kr/images/stacks/mongodb.png
+Image: Node.js | Link: https://cdn.jumpit.co.kr/images/stacks/node.js.png

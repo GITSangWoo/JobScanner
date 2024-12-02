@@ -1,0 +1,44 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49342102&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=63119a17-0cd1-4c38-b134-07aa299e6612
+
+Iframe Text Content:
+Job Description
+세상을 바꾸는 이직 플랫폼, 헤딩 HEDING
+인사담당자님, 경력 인증된 지원자를 헤딩으로 한번에 관리해보세요!
+ 
+-기업 인사팀이 선호하는 서류합격 프리패스 헤딩이력서
+-4대보험 불러오기로 누구보다 빠르게 이력서 완성
+-헤드헌터와 인사팀이 역제안하는 고퀄리티 포지션
+
+[주요업무]
+- 전기차 충전소 운영 데이터 수집, 정제 및 분석과 시뮬레이션
+- 전기차 충전소 매출 및 사용 패턴 분석을 통한 인사이트 도출
+- 경영진을 위한 전기차 충전소 운영 보고서 및 기타 시각화 자료 작성
+- 데이터 시각화 도구 (Tableau, Power BI 등) 활용한 리포트 작성
+Job Requirements
+[자격요건]
+- 비즈니스 데이터 관리 및 분석 관련 경력 2년 이상
+- 데이터 시각화 도구 사용 경험 보유 (Tableau, Power BI 등)
+- Python, SQL을 활용 가능하며, 다양한 형태의 데이터를 다룰 수 있는 역량과 경험
+- 포트폴리오 제출 필수
+
+[우대사항]
+- 통계학 또는 데이터 사이언스 관련 학위를 보유한 분
+- 실시간 데이터 처리 파이프라인을 설계 및 구축하고, 운영한 경험이 있는 분
+- 데이터 분석을 통해 실제 서비스 가치 향상에 기여한 경험이 있는 분
+- 다양한 직군의 동료들과 커뮤니케이션하고 협업하여 결과를 만들어 내실 수 있는 분
+- 모빌리티 업계에 대한 관심이 높으신 분
+- 전기차를 타시는 분 
+
+[문의처 및 지원]
+담당자 : 이창헌 매니저
+이메일 : chlee@heding.co.kr
+카카오톡 :  https://open.kakao.com/me/hedinglch 
+
+[지원 방법]
+헤딩 홈페이지 > 헤딩 이력서 불러오기  > 공고에 지원하기 > 지원완료
+https://www.heding.co.kr/MyRecruit/MainView/1948/0 
+
+- 제출한 채용 서류는 반환 요청을 할 수 있으며, 반환 요청에 대한 방법 및 제출서류는 아래 링크를 참고하시기 바랍니다. 단, 홈페이지나 이메일로 제출된 채용서류는 반환의무에서 제외됩니다.
+▶ https://bit.ly/3DUQbOi
+
+No images found in iframe.

@@ -1,0 +1,99 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49367102&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=e5c584db-a838-4200-8611-2cd5825eaf8e
+
+Iframe Text Content:
+AI 엔지니어 (NLP)
+서비스 소개
+"하이퍼러닝은 AI로 교육을 혁신하고 세상의 모든 학생과 선생님들을 도와 더 좋은 세상을 만들 수 있다고 생각합니다." 
+하이퍼러닝은 AI 자연어 처리 기술을 활용하여 세상의 모든 사람들이 수준 높은 교육을 받을 수 있는 차별 없는 세상을 꿈꾸며 서비스를 만들고 있습니다. 
+
+1. Q-Craft: 초, 중, 고 영어 교사를 위한 AI 영어 문항 생성기
+• 메타데이터 입력만으로 사용자가 원하는 수준 높은 영어 문항 생성
+• 국내 유일 교육 과정 기반 문항 생성 등
+
+2. PASTA: 한국어 논, 서술 자동 채점 프로그램
+• 국내 최초 자동 채점 상용화 서비스
+• 사람보다 빠르고, 공정한 평가 제공 등
+
+이외에도 하이퍼러닝은 자연어 처리 분야의 각종 정부 프로젝트에 참여하며 빠르게 성장 중입니다.
+
+2024년 7월에 법인이 설립되었음에도 불구하고, 2,000여명 이상의 사용자를 확보했으며 투자 문의가 활발하게 진행되고 있습니다.
+
+AI 엔지니어(NLP)는 자연어 처리와 LLM 모델에 대한 깊은 이해와 경험이 필요합니다. 하이퍼러닝의 일원이 되어 교육의 미래를 함께 만들어 나가실 분을 찾습니다.
+
+⁜ 2024 인하대학교 예비 창업 패키지
+⁜ 2024 인하대학교 실험실 창업 패키지
+
+[홈페이지]
+hyperlearning.kr
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Linux GitHub Git Docker AWS SQL Python JavaScript HTML5 React
+주요업무
+• 자연어 처리(NLP) 모델 개발 및 최적화
+• LLM 모델을 활용한 교육 관련 애플리케이션 개발
+• 데이터 전처리 및 분석을 통한 모델 성능 개선
+• AI 기반 교육 솔루션의 연구 및 개발
+자격요건
+• 컴퓨터 공학, 전산학 또는 관련 분야 학사 이상
+• 자연어 처리(NLP) 및 LLM 모델에 대한 깊은 이해와 경험
+• Python, TensorFlow, PyTorch 등 AI 관련 프로그래밍 언어 및 도구 사용 능력
+• 데이터 분석 및 전처리 경험
+우대사항
+• AI 기반 교육 솔루션 개발 경험
+• 대규모 데이터셋을 다룬 경험
+• 논문 작성 및 연구 경험
+• 팀 협업 및 커뮤니케이션 능력
+마감일 및 근무지
+• 마감일 : ~2024-12-10
+• 근무지
+- 인천 미추홀구 인하로 100 김현태 드림센터 312호
+복지 및 혜택
+하이퍼러닝은 자율적이며, 생산력 높은 업무 환경을 조성하고자 노력하고 있어요.
+
+▷ 멤버 모두 ‘님’ 호칭을 통한 수평적 조직 문화
+
+[업무 제도 및 지원]
+• 업무 관련 도서 구매비 지원
+• 세미나, 강의, 온라인 매거진, 웹사이트 구독비용 등 교육비 지원
+
+[업무 환경]
+• GPU 워크스테이션 서버 제공
+• PC 및 듀얼 모니터 제공
+• 유연 근무 제도 운영
+• 이벤트 휴가 지원(생일, 건강검진 등)
+• 자율 복장제
+
+[복리 후생]
+• 4대보험 가입 및 퇴직금 지급
+• 자유로운 연차 사용
+• 스톡옵션 제공 가능
+채용절차 및 기타 지원 유의사항
+[고용형태]
+• 정규직 (수습기간 3개월) 
+• 수습기간 내 급여 100% 지급
+
+[제출서류(필수)]
+• 자유이력서 (형식 무관)
+ 
+[기타사항]
+• 해당 공고는 채용 완료시 조기 마감될 수 있습니다.
+• 입사지원 서류에서 허위기재 사실이 발견될 경우, 입사가 취소될 수 있습니다.
+• 제출 서류는 채용을 위한 검증 목적으로만 이용됩니다.
+
+채용 전형
+• 서류전형 ▷ 과제(필요시) ▷ 인터뷰 ▷ 평판조회/처우협의 ▷ 입사
+• 지원자의 이력 및 경력 사항에 따라 일부 과정(티타임 등)이 생략되거나 추가될 수 있습니다
+
+Iframe Image Links:
+Image: AWS | Link: https://cdn.jumpit.co.kr/images/stacks/aws.png
+Image: JavaScript | Link: https://cdn.jumpit.co.kr/images/stacks/javascript.png
+Image: HTML5 | Link: https://cdn.jumpit.co.kr/images/stacks/html5.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: Git | Link: https://cdn.jumpit.co.kr/images/stacks/git.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png
+Image: SQL | Link: https://cdn.jumpit.co.kr/images/stacks/sql.png
+Image: GitHub | Link: https://cdn.jumpit.co.kr/images/stacks/github.png
+Image: Docker | Link: https://cdn.jumpit.co.kr/images/stacks/docker.png
+Image: React | Link: https://cdn.jumpit.co.kr/images/stacks/react.png

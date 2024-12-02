@@ -1,0 +1,46 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49216909&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=36869fb4-1e40-4519-b4b5-c939b14a0952
+
+Iframe Text Content:
+(주)이노그리드 D.Tech센터
+web3 개발팀(백엔드) 경력직 채용
+웹3 개발팀
+본부/부서 직책 직급 업무내용 자격요건 및 우대사항
+D.Tech 센터
+web3 개발팀
+(백엔드) 팀원 선임~ ㆍ블록체인 기반 서비스를 구축
+ㆍ블록체인과 상호 작용하는
+   애플리케이션의 백엔드 부분을 개발
+ㆍ효과적인 테스트를 작성하여
+   품질관리 자격요건
+ㆍ백엔드 소프트웨어 엔지니어로서
+   5년 이상의 경력
+ㆍx-javascript 및 NestJS와 같은
+   Node.js 웹 애플리케이션
+   프레임워크에 대한 숙련도
+
+우대사항
+ㆍ블록체인 기술에 대한 경험
+ㆍ마이크로서비스 기반 애플리케이션
+   개발 경험
+ㆍ영어(개발 주요 내용에 대한
+   커뮤니케이션이 가능한 수준
+근무조건
+ㆍ근무형태 : 정규직(수습기간)-3개월
+ㆍ근무일시 : 주 5일(월~금) 시차출근제
+ㆍ근무지역 : (04551) 서울 중구 을지로 100, 파인에비뉴 B동 10층
+접수방법
+ㆍ접수방법 : 사람인 온라인 입사지원
+ㆍ이력서양식 : 사람인 온라인 이력서
+ㆍ제출서류 : 입사지원 시 포트폴리오 첨부
+
+Iframe Image Links:
+Image: 근무환경 | Link: https://www.saraminimage.co.kr/recruit/os_mmp/218_inogrid_img02_221125.png
+Image: 이노그리드 홈페이지 바로가기 | Link: https://www.saraminimage.co.kr/recruit/os_mmp/218_inogrid_img04_221125.png
+Image: Designed by saramin | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit/watermark_basic.png
+Image: 회사소개 | Link: https://www.saraminimage.co.kr/recruit/os_mmp/218_inogrid_txt_221125.png
+Image: ㈜이노그리드 | (주)이노그리드 D.Tech센터 web3 개발팀 경력직 채용 | Link: https://www.saraminimage.co.kr/recruit/os_mmp/218_inogrid_title_221125.png
+Image: 복리후생 | Link: https://www.saraminimage.co.kr/recruit/os_mmp/218_inogrid_img03_221125.png
+Image: 전형절차 / 오시는길 / 유의사항 | Link: https://www.saraminimage.co.kr/recruit/os_mmp/218_inogrid_img01_221125.png
+Image: 이노그리드 공식 블로그 바로가기 | Link: https://www.saraminimage.co.kr/recruit/os_mmp/218_inogrid_img05_221125.png
+Image: logo | Link: https://www.saraminimage.co.kr/recruit/os_mmp/218_inogrid_logo_221125.png
+Image: icon | Link: https://www.saraminimage.co.kr/recruit/os_mmp/218_inogrid_icon_221125.png

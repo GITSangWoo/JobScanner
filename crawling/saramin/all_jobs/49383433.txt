@@ -1,0 +1,85 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49383433&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c709406e-f872-4daa-a43c-3c3d11e1a325
+
+Iframe Text Content:
+SW엔지니어(신입&경력 무관)
+서비스 소개
+메디트는 첨단 자체 기술을 기반으로 구축된 3D 구강스캐너와 올인원 디지털 덴티스트리 플랫폼을 제공하는 글로벌 기업입니다. 
+디지털 치과를 위한 혁신적인 소프트웨어를 개발하여 치과와 기공소 간의 협업 워크플로우를 지원하며, 메디트의 구강스캐너는 공식적으로 세계 최초이자 유일하게 Windows 및 Apple Mac 운영 체제와 모두 호환되는 스캐너입니다. 다양한 분야의 전문가들이 모여 뛰어난 기술력을 바탕으로 치과 의료 경험을 혁신해 나가고 있으며 앞으로도 계속해서 변화와 발전을 주도할 것입니다. 
+최고의 동료들과 함께 성장하고, 디지털 헬스케어 혁신을 함께 만들어 갈 인재분들을 모십니다.
+
+Medit is a global provider of 3D intraoral scanners and an all-in-one digital dentistry platform built on its own patented state-of-the-art technology. We develop innovative software for digital dentistry, enabling collaborative workflows between dental clinics and labs. Medit intraoral scanners are officially the first and only ones in the world to be compatible with both Windows and Apple Mac operating systems. Our commitment to innovation, customer-centric approach, and affordability make it a disruptive force in the dental technology industry and will continue to drive change and advancement in the years to come.
+
+[비전]
+MEDIT will become the leader in 3D dental scanning through innovation and customer care. 
+혁신과 고객 관리를 통해 3D 덴탈 스캐닝 업계의 리더가 된다.
+
+[미션]
+We welcome new challenges and are not afraid of taking risks because we believe that innovation happens by venturing into the unknown.
+새로운 도전을 환영하고 위험을 감수하기를 두려워하지 않는다. 확정되지 않은 곳을 탐험할 때 비로소 혁신이 일어난다고 믿기 때문이다.
+
+Who are we looking for?
+
+Welcome Challenges ------ 끊임없이 도전하는 인재
+Be a Great Teammate ------ 상호 협력이 가능한 인재
+Be Open and Honest ------ 신뢰성을 바탕으로 커뮤니케이션 할 수 있는 인재
+Deliver Results ------ 최고에 대한 열정을 가진 인재
+Focus on End-Users ------ 고객 감동을 추구하는 인재
+
+참고자료
+https://blog.naver.com/meditcompany/221343146884
+http://www.dailypharm.com/Users/News/NewsView.html?ID=256745&REFERER=NP
+http://www.thebell.co.kr/free/content/ArticleView.asp?key=201909170100025030001546&svccode=00&page=1&sort=thebell_check_time
+https://www.mk.co.kr/news/stock/view/2019/09/741889/
+https://blog.naver.com/meditcompany/221463947259
+http://www.topdaily.kr/news/articleView.html?idxno=57879
+
+
+MEDIT에 물어보기 - 카카오톡 오픈채팅 (자유 Q&A) : https://open.kakao.com/o/sGstHXIb
+MEDIT i700 Launching : https://www.youtube.com/watch?v=SLSWUgzKjbs
+MEDIT Intro 영상 : https://www.youtube.com/watch?v=h3AlsxM_6E4
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+C++
+주요업무
+• 의료용 3D 어플리케이션 개발
+• 의료 빅데이터를 활용한 AI 어플리케이션 개발
+• Polygon mesh / Image processing 알고리즘 연구 개발
+자격요건
+• 공학 계열 혹은 자연계열 학사 이상 (졸업 예정자 가능) 또는 이에 상응하는 공학적 문제 해결 능력 보유
+• 객체지향 언어를 사용한 프로그래밍 능력
+• 구두 및 문서를 통한 의사소통 능력
+우대사항
+• C++을 활용한 프로그래밍 경험
+• 상용 어플리케이션 개발 경험 (windows 또는macOS 또는 iOS)
+• 애자일 개발 방법론에 따른 개발 경험
+• 3D Mesh, Voxel 알고리즘 개발 경험
+• 3D CAD S/W 개발 경험
+• Qt 라이브러리를 활용한 개발 경험
+마감일 및 근무지
+• 마감일 : ~2024-12-11
+• 근무지
+- 서울특별시 영등포구 양평로 25길 8 어반 322
+복지 및 혜택
+• 유연근무제
+• 수평적인 호칭 체계
+• 최고 사양의 업무 장비/ 소프트웨어
+• 웰컴키트 제공
+• 캐쥬얼 복장
+• 3년, 5년, 7년, 10년 이후 매 5년 근속 축하 상품권 및 휴가 제공
+• 복지 포인트
+• 생일 반차 및 상품권 제공
+• 명절 상품권 제공
+• 다양한 경조사에 대한 지원
+• 종합 건강 검진
+• 임직원 상해 보험 가입
+• 심리상담(EAP) 지원
+※ 근무지에 따라 제공되는 베네핏은 상이할 수 있습니다.
+채용절차 및 기타 지원 유의사항
+• 서류전형
+• 1차면접
+• 2차면접
+
+Iframe Image Links:
+Image: C++ | Link: https://cdn.jumpit.co.kr/images/stacks/CPlusPlus.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png

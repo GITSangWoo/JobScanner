@@ -1,0 +1,40 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49140109&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=76c04cb4-d2f7-4559-9a21-da2f8ca32832
+
+Iframe Text Content:
+D.TECH 센터 WEB3 개발팀 경력직 채용
+담당업무
+- 시스템 인프라를 구축하고 관리하며, 거의 100%에 가까운 배포 가용성을 보장
+- 테스트 및 프로덕션 환경에서 문제를 해결
+자격요건 
+-5년 이상의 DevOps 엔지니어 경력
+- AWS 클라우드 및 관련 서비스에 대한 지식
+- 최신 기술을 사용한 확장 가능한 웹 애플리케이션 인프라 구축 경험
+- Docker 사용 경험
+- Python, Bash 등과 같은 스크립팅 언어에 대한 지식
+- 데이터베이스 관리 경험
+- Grafana 및 Prometheus를 포함한 모니터링 도구 경험
+- CI/CD 도구 사용 경험
+우대사항
+-Kubernetes를 사용한 컨테이너 오케스트레이션 경험
+- 블록체인 노드를 설정하고 유지 관리한 경험
+- 영어: 업무 상의 전문적인 능력
+
+근무조건
+· 근무형태 : 정규직(수습기간)-3개월
+· 근무일시 : 주 5일(월~금) 시차출근제
+· 근무지역 : 서울 중구 세종대로 39 서울상공회의소
+접수방법
+· 접수방법 : 사람인 입사지원
+· 이력서양식 : 사람인 온라인 이력서
+· 제출서류 : 입사지원 시 포트폴리오 첨부
+
+Iframe Image Links:
+Image: 이노그리드 복리후생 | Link: https://www.innogrid.com/board/3767/11/images
+Image: 이노그리드 로고 | Link: https://www.innogrid.com/board/3767/6/images
+Image: No alt | Link: https://www.innogrid.com/board/3767/4/images
+Image: 행복한 이노그리드 | Link: https://www.innogrid.com/board/3767/10/images
+Image: 이노그리드 상단 문구 | Link: https://www.innogrid.com/board/3767/7/images
+Image: 이노그리드 홈페이지 바로가기 | Link: https://www.innogrid.com/board/3767/12/images
+Image: 이노그리드 블로그 바로가기 | Link: https://www.innogrid.com/board/3767/13/images
+Image: 전형절차 / 오시는길 / 유의사항 | Link: https://www.innogrid.com/board/3767/9/images
+Image: 이노그리드 회사 소개 보기 | Link: https://www.innogrid.com/board/3767/3/images

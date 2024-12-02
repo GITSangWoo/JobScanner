@@ -1,0 +1,79 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49361607&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=2cc0eacb-9bfd-43bc-9990-ef10aaee104f
+
+Iframe Text Content:
+[ST Unitas] 클라우드 엔지니어
+팀원급 인재채용
+모집부문 및 상세내용
+
+
+클라우드 엔지니어 시스템운영팀
+직무요약
+* 공단기를 비롯한 회사의 주요 서비스 인프라를 Public 클라우드 상에서 운영 및 관리하며, 원활한 서비스 제공을 위한 모니터링 및
+   신속한 장애 대응 업무를 수행합니다.
+
+담당업무
+ㆍ클라우드(AWS) 인프라 구축/운영
+ㆍ클라우드(AWS)서비스 장애 조치 및 원인분석
+ㆍ이벤트 대비 인프라 증설 및 모니터링
+
+자격요건
+ㆍ학력무관
+ㆍAWS기반 클라우드 운영경험
+ㆍLinux-like 시스템 운영 지식
+ㆍ네트워크 및 시스템에 대한 이해
+ㆍ관련 제반경력 1~4년 차 (주니어 경력자)
+
+우대사항
+ㆍAWS 관련 자격증 보유자
+ㆍApache/Nginx 등 웹서버 관련 지식 및 최적화 능력
+ㆍKubernetes 구성/운영 경력
+ㆍ쉘스크립트(Bash, Python, Perl등) 능력
+
+필요역량
+ㆍPublic Cloud 상 인프라 운영 경험
+ㆍEKS, Kubernetes 또는 Docker, 컨테이너 환경 운영 경험
+ㆍ개발자들과 효율적으로 소통할 수 있는 개발언어 이해도 및 커뮤니케이션 능력
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월 (수습기간 동안 평가를 거쳐 최종 본 채용이 확정됩니다)
+ㆍ 근무지역 : (08209) 서울 구로구 경인로 662 타워동 30층/31층 (에스티유니타스) (신도림동, 디큐브시티)
+전형절차
+서류전형
+1차면접
+2차면접
+-
+처우협의
+최종합격
+ 혜택 및 복지
+
+     * 시차출퇴근제
+      - 08:00 ~ 10:00 사이 30분 단위로 출근시간을 유연하게 선택할 수 있어요
+    * 경조사 지원
+      - 우리는 결혼, 출산, 장례 등 중요한 순간에 도움을 제공하여, STian의 특별한 날을 함께 축하하고 위로해요.
+    * 건강검진 지원
+      - 일하다보면 건강관리에 소홀해지기 쉽죠. 우리는 건강검진을 지원하여 STian들의 건강관리에
+        도움을 드리고 있어요
+    * ST방학
+      - 쉼없이 열정적으로 달려온 STian을 위해, 매 3년 근속할 때마다 2주간의 유급휴가를 부여하여
+        리프레시를 지원하고 있어요.
+    * 워킹대디, 워킹맘 방학
+      - 자녀가 초등학교에 입학하면 자녀와 함께 등교할 수 있도록 1개월 유급휴가 사용이 가능해요.
+    * STian Free Pass
+      - 자기계발에 관심있는 Stian을 위해, ST 교육 프리패스 상품을 무료로 지원하고 있어요.
+
+    * 교육비 지원
+      - ST 교육 프리패스 뿐만 아니라, STian들의 업무 역량 강화를 위한 교육에 필요한 비용을 지원하고 있어요.
+
+    * 팀 지원금
+      - 매 월마다 팀 단합을 위한 비용을 지원하고 있어요.
+    * 생일 반차
+      - 생일인 STian을 위해 축하의 의미로 생일 당일 오후 반차를 지급하고 있어요.
+    * 명절상여금
+      - 기분좋은 명절, 마음까지 든든해지는 특별 상여금(설, 추석)을 지급하고 있어요.
+
+유의사항
+[ST Unitas 채용서류 반환요청 안내(링크)]
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://ifh.cc/g/tykKGD.jpg
+Image: No alt | Link: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAmCAYAAADa8osYAAACA0lEQVRYCe2V2ysEURzH/XluyaUkJXlR4kXJLZRL23qQW5I3cnlCKUq8CEUeJPGCkloit92dHWsvs1/9Zvodc/bMmFqTB83U9js753d+n/P7nvP7TRH+6Cn6Iw4CUMFKB9IF0gkFgssgpHAbGDkgtKzj4Dwtufgu3cTqB4o731HaHcXWcUrAfAXNbydNCIH4t7T7acJ8A20cpkRwhpBd3En6B9o7S6OkK6qAptY//JPu9CqD8h4VMryoI5cTnN99j64iWVT1q5DOuQTS2W8IjQo+o8izgbqhmCJX64QG3Tp/iSSBaBef8vWXnPnPazyHxnBcgTSNxvGm2fTiBfaMDAMYXEigfUZDIunsTOtormVchVB2D6+GLbQ8NDOiQwuv6GKHbZMaYroKS2eAjllN+PE1ru6P4uY+71BkjnVGU2tWNfNCss1jcZBE/FBroYztPjSu6I3i7CbDbq7WzGj7JGW2jPwgpPnTmyUHtxa7D7WZ/bye5kYSl4GKrsyhHhpCMThlTMDNo+9e5gbg9wJEL44uM6YU9l27jZd2rdbCgbysBCJnqvTKPrUI7cBpW2vxAvC8AqKJi9ssagacYSN5rYUDeVlHEC26jmRROyhXvlNr8QLwvCuIHO4eDdQPWzC31sKBvOyPIFr88GKgay6Bd5fW4gXgeU8QO/7WBqCCFfx/0n0BqsKzVg3xt74AAAAASUVORK5CYII=

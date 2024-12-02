@@ -1,0 +1,50 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49434344&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=255f39c0-e5c6-48af-a584-51300758ac0c
+
+Iframe Text Content:
+강소기업(CCTV)AI 엔지니어 대리과장급
+(근무처:남양주)
+저희 고객사는 
+방송장비 제조업을 영위하고 있습니다. 
+주요 사업 내용으로는 CCTV 교통통제장비, 구조용 금속판 
+제품, 공작물, 육상 및 수상 금속골조 구조재, 금속표시판, 
+버스, 차량 정보안내장치, 수배전반 제조 등이 있습니다
+직원수 130 여명, 매출액 250억
+모집부문 및 상세내용
+공통 자격요건
+ㆍ학력 : 석사 이상
+AI 엔지니어
+[담당업무] 
+- ITS 관련 Classification, Object Detection, Tracking, Segmentation 알고리즘 개발 및 개선
+- 모델 Training, Validataion
+- Labeling 및 Data Argumentation
+- 근무지 본사연구소 (남양주)
+
+[상세사양]
+- 학력 : 석사 이상
+- 경력 : 5년 이상
+- 관련 학과 석사 졸업 이상
+- Windows 환경에서 C++ 딥러닝 기반 영상처리 알고리즘을 구현 경험자
+- YOLO 계열 모델을 훈련 및 검증, mAP 성능 지표 개선을 해본 경험자
+- Onnxruntime, TensorRT, OpenVINO 등 프레임워크 경험자
+- darklabel, labelimg, labelme, CVAT 등 라벨링 경험자
+- OpenCV 경험자
+
+[우대사항]
+- ITS 관련 프로젝트 경험자
+- 영상 데이터 분석 및 관리 경험자
+근무조건
+ㆍ 근무형태 : 정규직
+전형절차
+서류전형
+1차면접
+임원면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 11월 20일 (수) 09시 ~ 채용시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://www.saraminimage.co.kr/sri/vix/template/toptype/talent6.png

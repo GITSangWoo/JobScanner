@@ -1,0 +1,98 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49356452&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=abe19497-5b44-41e4-b532-de836b765221
+
+Iframe Text Content:
+RECRUIT   ~ 2024.12.07
+  ㈜시스메이트
+각 부문별
+신입/경력 사원 채용
+(주)시스메이트는 대전에 본사를 둔 네트워크 전문 기술을 보유한 우수 중견기업으로서
+국내 네트워크 보안 1위 (IPS부분) 회사인 (주)윈스(WINS)의 패밀리 회사입니다.
+당사의 네트워크 트래픽 모니터링 및 제어 솔루션인 packetLiner® 의
+국내 시장 점유율 확대에 따른 역량 있는 인재를 모시고자 합니다.
+모집부문 담당업무 채용 조건
+품질관리 주요업무
+ㆍ제품/시스템 수입, 생산, 출고 검사
+
+우대 사항
+ㆍ전자, 전기, 정보통신 전공자
+ㆍ시스템 운영 체제 경험자
+ㆍ리눅스 사용 가능자 자격요건
+ㆍ신입
+ㆍ학력 : 전문대졸이상
+ㆍ성별/나이 : 무관
+서버
+소프트웨어 개발 주요업무
+ㆍ리눅스 C/C++를 활용한 S/W개발
+ㆍTCP/IP 데이터 송수신 기술 활용 S/W개발
+
+우대 사항
+ㆍC/C++ 및 네트워크 S/W개발 경험자
+ㆍWireshark를 이용한 패킷 분석 경험자 자격요건
+ㆍ신입/경력(2년이상)
+ㆍ학력 : 대졸이상
+ㆍ성별/나이 : 무관
+ㆍ컴퓨터/정보통신/전자/보안
+    관련 전공자
+네트워크
+트래픽 분석자 주요업무
+ㆍ인터넷 트래픽 어플리케이션 분석
+ㆍ네트워크 프로토콜 분석
+ㆍM/L, AI 기반 네트워크 분석
+웹UI 개발 주요업무
+ㆍJAVA, Spring 웹 UI개발
+
+우대 사항
+ㆍSpring Framework, Angular개발 경험자
+ㆍLinux, Apache, Tomacat등 사용 경험자
+FPGA개발
+엔지니어 주요업무
+ㆍFPGA(Xilinx,Altera) 및 SoC 로직 설계
+ㆍ고속 통신(PCIe, DDR, 이더넷 MAC 등) 인터페이스 개발
+ㆍVHDL/Verilog 코드 개발
+하드웨어 개발 주요업무
+ㆍ하드웨어 개발, 구현 및 시험
+ㆍ회로, PCB 설계(SoC, FPGA, Processor)
+ㆍ시스템 기구 설계
+
+우대 사항
+ㆍ회로 및 Layout 설계 경험자
+ㆍ네트워크/통신 제품 개발 경험자
+ㆍ고속 신호 설계 경험자 자격요건
+ㆍ신입/경력(3년이하)
+ㆍ성별/나이 : 무관
+ㆍ전자/전기/컴퓨터/정보통신/
+    메카트로닉스 전공자
+공통 응시 자격
+ㆍ해외 여행에 결격 사유가 없는 분
+ㆍ남성의 경우 병역을 마쳤거나 면제인 분
+근무조건
+ㆍ급여 : 회사내규에 따름
+ㆍ근무형태 : 정규직(수습기간 3개월 후, 최종 정규직 채용 평가)
+ㆍ직급/직책 : 면접 후 결정
+ㆍ근무일시 : 합격자에 한하여 개별 안내 및 조율
+ㆍ근무장소 : 대전광역시 유성구
+복리후생
+ㆍ지원금/보험 : 단체상해보험, 주택자금대출, 종합건강검진, 사내동호회 지원
+ㆍ급여제도 : 장기근속자 포상, 우수사원 포상
+ㆍ근무환경 : 공용휴게실, 음료제공, 샤워시설
+ㆍ선물 : 명절기념품지급 등
+근무환경
+제출서류
+ㆍ이력서, 자기소개서, 경력기술서
+ㆍ최종학교 졸업(예정)증명서, 성적증명서, 경력증명서, 자격증사본 : 면접전형시
+ㆍ입사지원서류 반환은 채용절차법에 따름
+접수기간 및 방법
+ㆍ접수기간 : 2024년 12월 07일 마감
+ㆍ접수방법 : 사람인 온라인 입사지원
+전형절차
+공지사항
+ㆍ최종합격자는 수습기간이 있으며, 수습기간 종료 후 부적격 시에는 본 채용을 취소할 수 있음
+ㆍ입사지원서류 등에 기재된 내용이 사실과 다르거나 제출서류가 미비할 경우 응시자의 책임으로 합격을 취소함
+ㆍ각 분야별로 적격자가 없을 경우 선발하지 않을 수 있음
+
+Iframe Image Links:
+Image: Designed by saramin | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit/watermark_gray.png
+Image: 서류전형 - 1차면접 - 2차면접 - 채용검진 - 최종합격 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/38_c_step1_240126.png
+Image: 근무환경 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/13_sysmate_img_240919.png
+Image: ㈜시스메이트 | ㈜시스메이트 각 부문별 신입/경력 사원 채용 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/38_2024c_img01_240125.png
+Image: icon | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/38_c_img_240126.png

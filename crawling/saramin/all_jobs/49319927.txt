@@ -1,0 +1,71 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49319927&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=133db40c-3f8e-4fc1-a3ea-d3a2b30c527f
+
+Iframe Text Content:
+엔터프라이즈 웹서비스 개발자(병역특례_보충역 지원 가능)
+서비스 소개
+아이티엘은 2013년 창업한 기업으로 우수한 기술력과 시장 적응형 Business Model로 그동안 총 80억의 투자를 유치하여 안정적인 재무구조 하에 다양한 사업을 추진하고 있습니다.
+"성공의 반대말은 실패가 아니라 도전하지 않는다” 와 "즐거운 도전”을 회사의 모토로 삼아 재미있게 사업을 하고 있습니다.
+약 600여 건의 통신표준특허, 플랫폼 서비스 특허를 보유하고 있어 기술적으로나 기업 가치적으로 높은 평가를 받고 있는 기업입니다.
+또한 플랫폼 사업본부는 현재까지 총 8개의 플랫폼을 만들었고 4개 플랫폼이 시장에 오픈되어 있으며, 아이티엘의 가장 핵심 경쟁력인 IP(특허, 상표, 디자인권)를 관리 활용하여 수익화하고, 정부공공사업 과제를 One Click으로 찾을 수 있는 플랫폼인 biznavi를 계열사를 통해 사업화하고 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Kotlin Scala Apache Tomcat Apache Traffic Server NGINX Oracle PostgreSQL MySQL Python Java
+주요업무
+• 엔터프라이즈 웹서비스 개발 및 유지/보수
+• 대용량 분산 서비스 개발 및 유지/보수
+• 메일 서비스 개발 및 유지/보수
+• 메신저 서비스 개발 및 유지/보수
+• 빅데이터 분석 및 사업화 데이터 추출 서비스 개발 및 유지/보수
+자격요건
+• Java/Scala/Kotlin 개발언어 활용 능력을 보유하신 분
+• Spring 프레임워크 , Node, Python 중 하나 이상을 기반으로 웹서비스를 런칭하고 운영해보신 경험을 가지고 있으신 분
+• MySQL, PostgreSQL, ORCLE 중 하나 이상을 기반으로 웹서비스를 런칭하고 운영해보신 경험을 가지고 있으신 분
+• 시스템 아키텍처에 대한 기본적인 이해도가 있으신 분
+• RESTful API 서비스에 대한 이해가 있으신 분
+• Git 등 코드 협업도구에 대한 경험과 이해가 있으신 분
+우대사항
+• React 프레임워크와 SPA로 구현된 웹 화면에 대한 이해가 있으신 분
+• 빅데이터 분석을 위한 AI 모델링에 관심이 있으신 분
+• Enterprise Solution 개발 및 운영 경험이 있스신 분
+• 커뮤니케이션이 원활하고 책임감 있는 분
+마감일 및 근무지
+• 마감일 : ~2024-11-30
+• 근무지
+- 서울특별시 서초구 바우뫼로 175, 4층,5층(양재동,창덕빌딩)
+복지 및 혜택
+[ 연봉 ]
+• 기본급여
+　- 사원급 3천 이상, 대리급 4천 이상, 과장급 5천 이상
+　- 업무경력 및 능력에 따라 추가협상 가능(희망연봉 우대)
+　- 면접 후 최종 결정 
+• Stock option 부여
+　- 퇴직금 별도 지급
+
+ [ 근무조건 ] 
+• 고용형태 : 정규직
+• 근무시간 : 주5일 (월~금 09:00~18:00) *야근 없음
+• 근무위치 : 서울 서초구 양재동
+
+[ 복리후생 및 기타 ]
+• 회사 분위기 : 열정 넘치는 20~30대로 구성되어 있는 젊고 활기찬 분위기 
+• 조직 문화 : 회식없는 문화이며, 근무복장 자유
+• 사무실 환경 : 공기청정기 비치로 쾌적한 환경
+• 휴가 : 월 1회 강제 연차 사용(리프레쉬), 근로자의 날 휴무, 하계휴가, 경조 휴가, 생일날 반차휴가 지원
+• 기타 : 명절 선물지급, 장기근속자 포상, 기념일(생일, 결혼기념일) 선물, 월 1회 문화DAY 시행(조기퇴근 및 문화비 지급), 외부교육&도서비 지원, 경조금 제도 운영
+채용절차 및 기타 지원 유의사항
+• 입사지원 시 희망연봉 기재 
+※ 병역특례 지원 시 이력서 제목에 기재 필수
+
+Iframe Image Links:
+Image: Scala | Link: https://cdn.jumpit.co.kr/images/stacks/scala.png
+Image: Oracle | Link: https://cdn.jumpit.co.kr/images/stacks/oracle.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: NGINX | Link: https://cdn.jumpit.co.kr/images/stacks/nginx.png
+Image: PostgreSQL | Link: https://cdn.jumpit.co.kr/images/stacks/postgresql.png
+Image: Apache Traffic Server | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: Kotlin | Link: https://cdn.jumpit.co.kr/images/stacks/kotlin.png
+Image: Java | Link: https://cdn.jumpit.co.kr/images/stacks/java.png
+Image: MySQL | Link: https://cdn.jumpit.co.kr/images/stacks/mysql.png
+Image: Apache Tomcat | Link: https://cdn.jumpit.co.kr/images/stacks/apachetomcat.png

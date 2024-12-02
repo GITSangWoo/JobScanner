@@ -1,0 +1,49 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49414877&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=255f39c0-e5c6-48af-a584-51300758ac0c
+
+Iframe Text Content:
+DevOps Engineer /의료기기 제조사
+모집부문 및 상세내용
+모집부문 상세내용
+공통 자격요건
+ㆍ학력 : 대졸 이상 (4년)
+DevOps Engineer
+0명
+1. 회사 소개 
+- 만성질환 관리를 위한 의료기기 및 데이터 수집 /분석 / 진단/ 배포 플랫폼 제공 헬스케어 기업 
+2. 포지션 : DevOps Engineer
+3. 주요 업무
+-  Kubernetes, Pipeline등 Cloud 인프라 구축 및 운영
+- 어플리케이션 모니터링, 인프라 모니터링, 취약성 점검 및 대응, 장애처리 프로세스 구축
+- IaC, CI/CD, 자동화 프로세스 구축 및 관리, Configuration management 업무
+- 인프라 자원 접근권한 관리
+4. 자격 요건 
+-  DevOps 경력 3 ~ 10년
+- Cloud(AWS, GCP, NCP 등) 기반 실무 업무를 3년 이상 하신 분
+- 운영체제(리눅스) 및 네트워크 관련 전문 지식을 보유하신 분
+- 개발/서비스 배포 CI/CD 구축 경험이 있으신 분
+- 하나 이상의 프로그래밍 언어에 능통하신 분
+- 오픈소스 라이센스 체계와 도구 사용에 익숙하신 분
+- 라이브 서비스 운영 및 장애 대응에 능숙하신 분
+5. 우대 사항 
+- AWS 환경에서의 자원 구축 및 운용에 능통 및 각종 AWS 서비스 관련 경험이 있으신 분
+- 로깅 파이프라인과 모니터링 시스템 구축 및 운용 경험, 리소스 최적화 및 병목 발견/대응에 능숙하신 분
+- 쿠버네티스 등 컨테이너 오케스트레이션 도구 사용에 능통하신 분
+- 금융 서비스 및 인프라 관련 구축 또는 운영 경험이 있으신 분
+- 기존 사용기술의 문제점과 대체 도구 발견 또는 개발에 능숙하신 분
+- 보안 관련 실무 경험이 있으신 분
+6 . 근무지 :  경기 성남 판교 
+ㆍ 근무형태 : 정규직
+전형절차
+서류전형
+1차면접
+2차 면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 11월 17일 (일) 14시 ~ 2024년 12월 17일 (화) 24시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://www.saraminimage.co.kr/sri/vix/template/toptype/talent5.png

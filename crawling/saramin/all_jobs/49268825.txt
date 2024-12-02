@@ -1,0 +1,101 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49268825&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=34f6ab08-9fde-4668-8a44-8ef9f177171f
+
+Iframe Text Content:
+DevOps 엔지니어 (경력 3년이상)
+서비스 소개
+어깨를 나란히 한 지난 10년 동안 청담러닝과 씨엠에스에듀는 각자의 자리에서 이야기를 만들어 왔습니다. 이제 그 이야기들이 하나로 모여 크레버스가 출범하였습니다.
+
+양사 통합은 ‘역량 발굴, 삶의 발견’이라는 미션을 실현하여 21세기 인재를 양성하기 위함입니다. 그 방법론적 핵심 개념으로 문해력/상상력/서사력을 제시합니다.
+크레버스는 이 세 가지 방법론을 영어/수학/코딩의 세 가지 영역에서 전개하고 나아가 3개 영역을 융합합니다.
+
+사업전략을 보면 4개의 전략 층위가 있음을 알게 됩니다. 전통적 LC사업에 7개 브랜드가, VLC사업 층위에 3개 브랜드가 포진하고 있습니다.
+VLC 제품은 LC 커리큘럼을 반영하지만 가상성을 도입하여 새로운 체험을 낳고, 시공간 및 비용 면에서 편익도 제공합니다.
+
+3번째 층위를 구성하게 될 모듈형 융합 브랜드 사업은 미디어/디지털 기반으로 가상성을 한층 심화하는 한편 신개념 혼성(hybrid) 학습에도 도전합니다.
+VLC 제품 및 모듈형 융합 브랜드는 해외시장도 겨냥하고 있습니다.
+
+메타버스 사업은 인터랙티브/트랜스미디어 스토리텔링을 핵심 개념으로 제안합니다.
+지식을 활용하는 쌍방향 스토리텔링 속에서 사용자는 역량을 강화하면서 자기 캐릭터를 깨닫게 됩니다.
+나아가서, 현실과 가상을 넘나들면서 사용자가 문제를 해결하고 콘텐츠를 생산, 거래하는 자기 서사의 시대에 진입할 것입니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Kubernetes Redis Docker FastAPI PostgreSQL Prisma Python Node.js NestJS TypeScript
+주요업무
+[프로젝트 소개]
+ • 생성형 AI를 활용하여 학생 대상의 영어 글쓰기, 말하기에 대한 자동 평가 서비스를 개발 및 운영합니다.
+ • Microsoft와 업무 협약으로 정기적으로 긴밀하게 과제 진행에 대한 리뷰를 함께하고 있습니다.
+ • 안정적인 국내 서비스 런칭 이후 글로벌 서비스 확충을 위한 준비도 진행할 계획입니다.
+
+[주요 업무]
+ 1. 인프라 운영 및 자동화
+ • Azure 환경에서 Kubernetes를 사용하여 네트워크 토폴로지와 핵심 인프라를 설계하고, Container runtime을 운영하고 관리합니다.
+ • 모든 과정은 코드형 인프라(IaC)를 통해 확장성 및 재사용이 가능한 아키텍쳐로 구성합니다.
+ 2. CI/CD 및 SDLC
+ • 개발팀이 서비스 개발에 집중 할 수 있도록 Azure DevOps PipeLine CI/CD를 구성하고, 개발 생산성을 높이는 작업을 진행합니다.
+ • 소프트웨어 생명 주기를 관리하여 개발팀이 안전하고 높은 품질의 결과물을 도출 할 수 있도록 지원합니다.
+ 3. 모니터링
+ • 서비스 장애 시 개발팀을 도와 문제를 해결합니다.
+ • 안정적인 서비스 운영을 위해 부족한 모니터링을 구성하거나 현재 구성되어있는 모니터링을 통해 지표와 
+ 로그를 보고 본인만의 노하우로 서비스 장애를 사전에 방지하며, 진행 중인 장애를 빠르게 해결합니다.
+ 4. 보안
+ • 내부 데이터를 안전하게 보호하기 위해 Cloud 환경에서의 보안을 고민하고 Compliance를 구성합니다.
+ • Zero-Trusted를 통해 보안 강화를 달성할 수 있도록 리서치하고 구성합니다.
+ 5. Researching
+ • 개발팀이 효율적으로 일할 수 있는 새로운 도구들을 발굴하고 컬처핏에 맞는지 고려합니다.
+ • 반복적인 업무를 개선하여 효율화할 수 있는 방법을 찾습니다.
+ 6. FinOps
+ • 인프라 비용을 통제하고 최적화합니다.
+ • 클라우드 및 SaaS에서 발생하는 비용을 관리합니다.
+자격요건
+[필요 역량]
+
+• 인프라 엔지니어링 경력 3년 이상 또는 그에 준하는 경험이 있으신 분 (SRE / DevOps / Backend 경험이 있으신 분)
+• Microsoft Azure를 사용하여 인프라를 구성하고, 대고객 서비스를 운영한 경험이 있는 분
+• Self-Healing, Container, Automation 등을 포함한 Cloud-Native 기반의 사고가 가능하신 분
+• Kubernetes를 사용하여 Container orchestration을 운영한 경험이 있는 분
+• Terraform, Helm, Packer 등을 활용한 IaC 경험이 있으신 분
+• Multi cluster, Multi account를 포함하여 N개 이상의 인프라를 설계하고 운영한 경험이 있는 분
+• Golang, Python, Java, TypeScript 등의 프로그래밍 언어를 1개 이상 능숙하게 사용할 수 있는 분
+우대사항
+[우대사항]
+• 최소 1년 이상 백엔드 엔지니어로써 개발에 참여한 경험과 전반적인 개발 프로세스의 이해도가 있는 분
+
+[이런 분과 함께하고 싶습니다:]
+• SRE와 DevOps 문화에 대한 깊은 이해를 가지고 계시는 분
+• Linux 및 Network, Container를 중심으로 하는 CS 전반에 대한 깊은 이해가 있으신 분
+• 문제 해결 능력이 뛰어나고 커뮤니케이션이 원활한 분
+• 지속적으로 품질 좋은 소프트웨어 개발을 위해 노력하시는 분
+• 새로운 시도를 통한 시스템 및 문화 개선에 적극적인 분
+• 기술에 대한 지속적인 학습을 즐기며 이를 공유하시는 분
+• 코드 리뷰, 페어 프로그래밍, 기술 세미나 등 팀의 개발 문화에 적극적으로 참여하시는 분
+
+[개발 환경]
+• Typescript, Node.JS, Nest.JS, PrismaORM, Python, FastAPI
+• PostgreSQL, Redis, Docker, Kubernetes(K8S)
+• Prometheus, Grafana, Azure DevOps
+• Jira, Confluence, Slack
+마감일 및 근무지
+• 마감일 : ~2024-11-26
+• 근무지
+- 서울시 강남구 테헤란로 521 (삼성동, 파르나스타워) 21층
+복지 및 혜택
+• 종합 건강검진(+유급휴가), 임직원 단체 상해 보험, 식대/경조사 지원
+• 야간 식대/교통비 지급, 장기 근속/우수 사원 포상, 인센티브
+• 자녀 학원교육비 지원, 육아 수당, 출산/생일축하/명절 선물, 명절 귀향비 지급
+채용절차 및 기타 지원 유의사항
+[입사 프로세스]
+• 서류전형 > 실무면접 > 임원면접 > 처우협의 > 입사확정
+
+Iframe Image Links:
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: Node.js | Link: https://cdn.jumpit.co.kr/images/stacks/node.js.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: PostgreSQL | Link: https://cdn.jumpit.co.kr/images/stacks/postgresql.png
+Image: Kubernetes | Link: https://cdn.jumpit.co.kr/images/stacks/kubernetes.png
+Image: NestJS | Link: https://cdn.jumpit.co.kr/images/stacks/nestjs.png
+Image: Redis | Link: https://cdn.jumpit.co.kr/images/stacks/redis.png
+Image: Docker | Link: https://cdn.jumpit.co.kr/images/stacks/docker.png
+Image: FastAPI | Link: https://cdn.jumpit.co.kr/images/stacks/FastAPI.png
+Image: Prisma | Link: https://cdn.jumpit.co.kr/images/stacks/prisma.png
+Image: TypeScript | Link: https://cdn.jumpit.co.kr/images/stacks/typescript.png

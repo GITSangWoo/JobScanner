@@ -1,0 +1,67 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49339412&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=44cbcd90-9ff4-48c4-919a-0fd6ea659661
+
+Iframe Text Content:
+Web Application 백엔드 엔지니어
+서비스 소개
+한솔그룹의 IT계열사인 한솔PNS IT부문에서 미래를 바라보며 꿈을 실현해 갈 역량 있는 많은 분들의 지원을 기다립니다.
+
+한솔PNS IT 서비스는 4차 산업혁명시대에 걸맞는 IT회사로 고객과 함께 성장하고 있습니다.
+
+POINT 01. 25년 이상 한솔그룹 IT서비스 경험과 다양한 대외사업 비즈니스 노하우 보유
+POINT 02. 고객사의 Digital Transformation을 돕는 솔루션과 노하우 보유
+POINT 03. 자유롭게 소통하며 회사와 직원이 함께 성장하는 분위기
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Spring Framework Spring Boot Java MSA
+주요업무
+• 웹 어플리케이션 플랫폼의 백엔드 개발 (Spring Boot 기반)
+ - 백엔드 아키텍처 설계/구현
+• 플랫폼 기본 기능 제작(DB 기타)
+• 플랫폼과 외부 시스템간의 adapter 기능 제작
+• 플랫폼의 효과적인 테스트 방법 설계 및 수행
+• 플랫폼 관련 프로젝트 기능 지원
+자격요건
+• 대졸 이상(컴퓨터공학/소프트웨어 관련 학과)
+• 관련 경력 7년 이상
+ - Java언어를 능숙하게 다룰 수 있는 자
+ - 웹 어플리케이션에 대한 이해 보유자(Spring Boot 기반)
+ - 객체지향 소프트웨어 분석/설계/구현 가능자
+ - 애자일 개발 관련 경험자
+ - 테스트 자동화/CICD 관련 경험자
+ - 다양한 통신 방식(REST API, Socket, MQ 등)을 통한 서비스 구현 경험 보유자
+ - 다양한 데이터 관리 기술 및 경험 보유자(relational dbms/NoSql/Object storage 등)
+우대사항
+• TDD에 대한 이해 및 경험 보유자
+• 구조적/객체지향적/함수형 프로그래밍 이해자
+• 상용 클라우드 기반 서비스 경험자
+• 다양한 소프트웨어 아키텍처 관련 지식 보유자
+ - 2~3 Tier 아키텍처, 레이어드/클린/헥사고널 아키텍처, MSA 등
+• 스마트팩토리 영역에 대한 경험자
+마감일 및 근무지
+• 마감일 : ~2024-12-05
+• 근무지
+- 서울 강서구 양천로 570 NH서울축산농협 NH서울타워 6층
+복지 및 혜택
+• 직무교육 지원
+• 복지몰 운영
+• 경조사 지원
+• 사내 동호회 운영
+• Refresh 휴가
+• 야근식대/심야교통비 지원
+• 건강검진 지원
+• 자녀 학자금 지원
+• 장기근속/우수사원 포상
+• 콘도 제휴
+• 유연근무제(선택적 근로시간제) 운영
+• 자유로운 휴가 사용
+• 자유로운 복장
+채용절차 및 기타 지원 유의사항
+• 서류전형 > 실무면접 > 평판조회 > 임원면접 > 처우협상 > 채용검진 > 입사
+
+Iframe Image Links:
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Spring Boot | Link: https://cdn.jumpit.co.kr/images/stacks/springboot.png
+Image: Spring Framework | Link: https://cdn.jumpit.co.kr/images/stacks/springframework.png
+Image: Java | Link: https://cdn.jumpit.co.kr/images/stacks/java.png
+Image: MSA | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

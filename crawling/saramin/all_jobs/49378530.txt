@@ -1,0 +1,86 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49378530&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=3356c1bd-39aa-40af-b07c-0a0a03bae62b
+
+Iframe Text Content:
+모집부문
+모집부문 담당업무 자격요건 및 우대사항 인원
+프로젝트
+수행
+엔지니어 ㆍ프로젝트 구축 및 수행 /
+   개발팀과의 협업 [자격요건]
+ㆍ학력 : 대졸 이상 (2,3년)
+ㆍ경력 : 경력 2년 이상
+ㆍshell script(bash) 기본 지식 보유자
+ㆍlinux/unix 등 os 기본 지식 보유자
+ㆍguide document 활용 능력
+ㆍslack 등을 활용한 개발/운영
+  파트와의 커뮤니케이션 가능자
+
+[우대사항]
+ㆍ프로젝트 경험자
+ㆍ공학계열 전공자
+ㆍ정보처리기사 보유자
+ㆍdocument/wiki 등 작성 및 관리
+   경험자
+ㆍkafka, ELK stack, Redis, MariaDB 등
+   Open source 사용 경험자
+ㆍslack 등을 활용한 개발/운영 파트와의
+   커뮤니케이션
+ㆍlogstash 활용 능숙자
+기술본부
+/
+SE팀
+0명
+기술지원
+엔지니어 ㆍ자사 솔루션 유지 보수 및
+   정기점검 진행
+   - 고객사 유지보수 및 정기점검
+   - logstash 를 통한 data 정형
+   - opensource 기술연구 [자격요건]
+ㆍ학력 : 대졸 이상 (2,3년)
+ㆍ경력 : 신입 및 경력
+ㆍshell script(bash) 기본지식 보유자
+ㆍlinux/unix 등 os 기본지식 보유자
+ㆍguide document 활용 능력
+
+[우대사항]
+ㆍ공학계열 전공자
+ㆍ정보처리기사 보유자
+ㆍdocument/wiki 등 작성 및 관리
+   경험자
+ㆍkafka, ELK stack, Redis, MariaDB 등
+   Open source 사용 경험자
+ㆍslack 등을 활용한 개발/운영
+   파트와의 커뮤니케이션 가능자
+기술본부
+/
+SE팀
+0명
+근무조건
+ㆍ근무형태 : 정규직 (수습기간 3개월)
+ㆍ근무일시 : 주 5일(월~금) 근무 / 오전 9시 30분 ~ 오후 6시 30분
+ㆍ근무지역 : (135-270) 서울 강남구 도곡동 954-13 호성빌딩7층
+ㆍ인근전철 : 서울 3호선 양재역에서 200m 이내
+복리후생
+전형절차
+접수기간 및 방법
+ㆍ접수기간 : 2024년 11월 20일 마감
+ㆍ접수방법 : 사람인 온라인 입사지원
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+ㆍ모집분야별로 마감일이 상이할 수 있으니 유의하시길 바랍니다.
+홈페이지 바로가기
+
+Iframe Image Links:
+Image: 복리후생 | Link: https://www.saraminimage.co.kr/recruit/os_mmp_01/226_interezen_img_230623.png
+Image: 서류전형
+
+사전면접(Slack)
+
+기술면접 및
+임원면접
+
+처우협의
+
+최종합격 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit6/36_interezen_step_220321.png
+Image: 인터리젠㈜ 시스템 엔지니어 신입 및 경력 모집 | Link: https://www.saraminimage.co.kr/recruit/os_mmp_02/217_inter_top_231204.png
+Image: Designed by saramin | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit/watermark_basic.png

@@ -1,0 +1,41 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49138682&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=024d7c47-c633-4765-b3fa-ea116c66fc6c
+
+Iframe Text Content:
+PDF 솔루션즈는 반도체 제조를 위한 첨단 분석 및 수율 개선 솔루션을 제공하는 글로벌 리더입니다. 당사의 Exensio® 플랫폼은 생산 공정 전반의 데이터를 통합 분석하여 품질과 신뢰성을 극대화하고, 머신러닝과 예측 분석을 통해 생산 효율성을 향상시킵니다. Industry 4.0과 클라우드 컴퓨팅 시대에 맞춰 반도체 제조업체들이 더 빠르고 정확한 의사 결정을 내릴 수 있도록 지원합니다.
+
+PDF 솔루션즈의 DFI(Design-for-Inspection) 기술은 반도체 제조 공정에서 발생할 수 있는 전기적 결함을 조기에 식별하고, 생산 수율을 개선하기 위한 솔루션입니다. DFI는 공정 노드의 미세화를 지원하며, 기존 방법론보다 몇 달 앞서 결함을 찾아내는 것이 가능해 제조 과정의 품질과 효율성을 크게 향상시킵니다. 이를 통해 반도체 제조업체는 더 높은 수율과 제품 신뢰성을 확보할 수 있습니다
+
+Overview
+PDF Solutions Inc is seeking a Field Applications Engineer to join the field team to work on PDF’s e-beam inspection tool used for enhancing yield in state-of-art 300mm semiconductor fabs. The Applications Engineer must be an organized and highly motivated team player with strong initiative and communication skills and possesses the drive to deliver quality results on time in a dynamic, multi-discipline, intensive and highly productive small team environment
+
+Job description
+Main responsibilities are (but not limited to):
+• Work in 300mm fab and write inspection recipes on PDF’s e-beam tools.
+• Drive wafer inspection and perform analysis reduce yield loss on some of the world's most advanced ICs.
+• Oversee the data pipeline from measurement and monitor data quality and health of tool.
+• Perform R&D and experiments for improving and optimizing recipes based on data analysis
+• Lead complex engineering projects and drive continuous business process improvement and automation
+
+Education and Experience
+• Master’s or bachelor’s degree in computer science, electrical engineering, applied physics or equivalent engineering degrees
+• Proficiency in Korean, Good at verbal and written communication in English
+• Experience working with inspection tools, including optical, voltage-contract or spectroscopy
+• Ability to work in production environment and respond to customer promptly requests with high standard results
+
+Preferred skills for the position
+• Data analysis software: Spotfire, Exensio.
+• Semiconductor layout drawing/viewing software.
+• eBeam, SEM, TEM knowledges
+• Experience in semiconductor industry (preferably sub-20nm FIN-fet technology)
+• Python or other programming experience (Java, C#, C++, Ruby, Perl, etc.)
+함께하기 위한 방법
+접수기간 : 2024년 10월 07일 (월)08시 00분 ~ 2024년 11월 29일 (금) 23시 59분
+접수방법 : 사람인 입사지원
+이력서양식 : 사람인 이력서 양식
+함께하기 위한 여정
+서류전형
+1차면접
+최종합격
+
+Iframe Image Links:
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202411/19/sn6rep79_80az-ay652w_recruit.jpg

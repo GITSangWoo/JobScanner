@@ -1,0 +1,36 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49405263&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=8731facd-9a32-45c0-8469-b750d9edc676
+
+Iframe Text Content:
+<세부직무>
+공공사업의 클라우드 전환 설계
+구축 사업의 AA업무 수행
+어플리케이션 아키텍쳐 설계 및 구축
+어플리케이션 개발 표준 가이드 작성
+공통 기능 설계 및 개발
+
+<자격요건>
+DevOps 구축 경험
+다수의 공공/금융 사업에서의 AA 경험
+제품 또는 플랫폼 개발에서의 AA 경험
+공통 기능 설계, 개발 경험
+Restful API 설계, 개발 경험
+MSA 기반의 설계, 개발 경험
+
+<우대요건>
+클라우드 기반 개발, 설계 경험
+MSA설계, Gitlab, Jenkins 등 CD/CD 환경 구축 및 운영경험이 있으신 분
+Java, Python등의 개발 경험이 있으신 분
+어플리케이션 성능 테스트 및 튜닝 경험이 있으신 분
+빅데이터 소프트웨어 분석, 설계, 구축, 안정화의 실무경험이 있으신 분
+원활한 커뮤니케이션 능력을 보유하신 분
+함께하기 위한 방법
+접수기간 : 2024년 11월 15일 (금)07시 00분 ~ 2024년 12월 15일 (일) 23시 59분
+접수방법 : 사람인 입사지원
+이력서양식 : 사람인 이력서 양식
+함께하기 위한 여정
+서류전형
+1차면접
+2차면접
+최종합격
+
+No images found in iframe.

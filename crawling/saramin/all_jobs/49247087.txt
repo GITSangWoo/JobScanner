@@ -1,0 +1,55 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49247087&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c71d81ab-2f24-40bb-a55a-ed5c0c19550c
+
+Iframe Text Content:
+[데이터랩스]백앤드·블록체인 개발팀 신입/경력 모집
+모집부문 및 상세내용
+모집부문 상세내용
+공통 자격요건
+ㆍ학력 : 무관
+ㆍ경력 : 무관
+[데이터랩스] LLM 엔지니어 모집
+0명
+
+공동 우대사항
+ㆍ스스로 성장에 관심이 많으며, 새로운 기술을 접하는데에 거부감이 없으신 분
+ㆍLLM 기반 프로젝트 참여 경험
+ㆍ소프트웨어 공학에 대한 기본 지식을 보유하고 계신 분
+ㆍ능동적인 업무 진행 및 결과 보고서 표현력 및 전달력이 있으신 분
+ㆍ유관부서와 원할한 협업 및 커뮤니케이션 능력이 있으신 분
+
+주요 업무
+ㆍPre-training, Fine-tuning, Prompt Engineering
+
+(주) 데이터랩스에 꼭 입사해야 하는 이유
+ㆍAI 전문가로 성장할 수 있는 기회
+     ㆍ'21세기 원유' 데이터 전문가로 성장
+     ㆍ글로벌 기업을 만드는 초기에 기여
+
+주요 기술
+ㆍPython
+ㆍPyTorch
+ㆍTensorFlow
+ㆍNLP
+ㆍTransformer
+ㆍ머신러닝
+ㆍ딥러닝
+ㆍCUDA
+
+근무조건
+ㆍ 근무형태 : 계약직-2개월(정규직 전환 가능)
+ㆍ 근무일시 : 08~10시 자율출근, 09시 출근 시 18시 퇴근, 매주 화요일/목요일 재택근무 실시
+ㆍ 근무위치 : (07325) 서울 영등포구 의사당대로 83 오투타워 8층 112호 - 서울 5호선 여의도역 에서 200m 이내
+전형절차
+서류전형
+1차면접
+2차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 10월 22일 (화) 14시 ~ 2024년 11월 21일 (목) 24시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://www.saraminimage.co.kr/sri/vix/template/toptype/talent2.png

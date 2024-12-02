@@ -1,0 +1,31 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49145652&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c53375c6-e220-4fb3-8afc-00c39f47a76c
+
+Iframe Text Content:
+담당업무
+ㆍ세일즈포스 기반 DataCloud 개발 역할 수행 
+ㆍ마케팅 클라우드 프로젝트 개발 역할 수행 
+
+필수역량
+ㆍ5년 이상의 javascript, Java 개발 경력 
+ㆍ연계 개발 경험 있으신 분 (SOAP, Rest API 등) 
+ㆍ세일즈포스 프로젝트 수행을 경험하신 분
+ㆍ빠르게 변하는 디지털 기술에 대한 관심과 학습의지가 있으신 분
+
+우대사항
+ㆍ마케팅 솔루션 및 프로젝트 구축 / 운영 경험 있으신 분
+ㆍ비지니스 영어 활용 가능하신 분 (모든 학습 자료 영어)
+
+Iframe Image Links:
+Image: 근무조건 | Link: https://i2max.my.salesforce.com/servlet/servlet.ImageServer?id=015GB00000J88w1&oid=00D90000000Jeb7&lastMod=1721019260000
+Image: 권준석인터뷰 | Link: https://i2max.my.salesforce.com/servlet/servlet.ImageServer?id=015GB00000J88vN&oid=00D90000000Jeb7&lastMod=1721019025000
+Image: 채용절차 | Link: https://i2max.my.salesforce.com/servlet/servlet.ImageServer?id=015GB00000J88wB&oid=00D90000000Jeb7&lastMod=1721019315000
+Image: 회사블로그 | Link: https://i2max.my.salesforce.com/servlet/servlet.ImageServer?id=015GB00000J88wa&oid=00D90000000Jeb7&lastMod=1721019438000
+Image: 채용인스타그램 | Link: https://i2max.my.salesforce.com/servlet/servlet.ImageServer?id=015GB00000J88wf&oid=00D90000000Jeb7&lastMod=1721019465000
+Image: 회사홈페이지 | Link: https://i2max.my.salesforce.com/servlet/servlet.ImageServer?id=015GB00000J88wV&oid=00D90000000Jeb7&lastMod=1721019417000
+Image: 복리후생 | Link: https://i2max.my.salesforce.com/servlet/servlet.ImageServer?id=015GB00000J89kc&oid=00D90000000Jeb7&lastMod=1721101523000
+Image: 이동후브이로그 | Link: https://i2max.my.salesforce.com/servlet/servlet.ImageServer?id=015GB00000J88vX&oid=00D90000000Jeb7&lastMod=1721019090000
+Image: 모집분야 | Link: https://i2max.my.salesforce.com/servlet/servlet.ImageServer?id=015GB00000J890r&oid=00D90000000Jeb7&lastMod=1721028983000
+Image: No alt | Link: https://i2max.my.salesforce.com/servlet/servlet.ImageServer?id=015GB00000J88v8&oid=00D90000000Jeb7&lastMod=1721018887000
+Image: 회사소개유투브배너 | Link: https://i2max.my.salesforce.com/servlet/servlet.ImageServer?id=015GB00000J88wG&oid=00D90000000Jeb7&lastMod=1721019351000
+Image: 김혜원인터뷰 | Link: https://i2max.my.salesforce.com/servlet/servlet.ImageServer?id=015GB00000J88vS&oid=00D90000000Jeb7&lastMod=1721019059000
+Image: 채용유투브배너 | Link: https://i2max.my.salesforce.com/servlet/servlet.ImageServer?id=015GB00000J88wQ&oid=00D90000000Jeb7&lastMod=1721019380000

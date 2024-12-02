@@ -1,0 +1,117 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49328180&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=89c171f4-6238-485a-a4c6-c754b831b55c
+
+Iframe Text Content:
+Senior Machine Learning Researcher (Vision) (5년~8년)
+서비스 소개
+We heal the world in new ways.
+
+메디픽셀은 새로운 방법으로 세상을 치유한다는 사명을 가지고, 인공지능을 의료에 접목하여 질병의 진단과 치료방법을 개발하는 헬스테크 스타트업입니다. 심혈관 질환과 관련된 인공지능 및 이미지 분석에 있어 독보적인 기술력을 갖추고, 세계에서 가장 경쟁력 있고 혁신적인 SaMD(Software as Medical Device)를 제공하고 있습니다.
+
+메디픽셀의 혁신적인 기술력은 Microsoft for Startups 선정, Johnson & Johnson QuickFire Challenges 대회 우승, 중소벤처기업부 ‘대-스타 해결사 플랫폼’ 우승, 과학기술정보통신부 ‘장관상’ 수상에 이어 2023년에는 MICCAI의 심혈관 분야 의료 인공지능 알고리즘 경진대회에서 협착 검출 1위, 혈관 분할 2위의 쾌거를 달성했습니다.
+
+이제 메디픽셀은 미국 FDA 승인, 미국과 베트남 경제사절단 선정, 다양한 국제 의료 학회 참석을 통해 우리의 기술을 글로벌 비즈니스로 연결하는 걸음을 내딛고 있습니다. 2021년에 글로벌 1위 기업인 필립스의 투자, 2023년 6월에는 인도의 IITPL사와 약 450만불 규모의 구매 MOU를 체결함으로써 새로운 도약의 시작을 알렸으며, 메디픽셀의 무한한 가능성은 170억원 규모의 시리즈B 투자유치로도 증명할 수 있었습니다.
+
+우리는 비슷한 꿈과 열정을 가지고, 새로운 방법으로 세상을 치유한다는 사명을 함께 실현할 사람들을 기다립니다. 구성원들이 각 분야에서 탁월한 재능을 가지고 성장할 수 있도록 최적의 환경을 제공하고 적극 지원하겠습니다. 세계 최고의 인공지능 의료 소프트웨어로 세상을 치유하고자 하는 분들의 많은 관심과 지원 부탁드립니다.
+
+
+[메디픽셀 연혁]
+2023년 11월 GMP 인증갱신
+2023년 10월 시리즈B 투자 유치(170억)
+2023년 10월 MICCAI 심혈관 분야 의료 AI 알고리즘 경진대회 1위
+2023년 10월 KOREA AI START UP 100 3년 연속 선정 및 졸업 
+2023년 6월 베트남 경제사절단 선정
+2023년 6월 IITPL MOU 체결
+2023년 4월 미국 경제사절단 선정
+2023년 3월 메디픽셀XA FDA 승인
+2022년 10월 KOREA AI START UP 100 2년 연속 선정
+2022년 8월 강남구(삼성역) 사무실 이전
+2021년 10월 KOREA AI START UP 100 선정
+2021년 9월 35억 추가 투자 유치
+2021년 5월 시리즈A 투자 유치(65억)
+2021년 1월 메디픽셀XA 식약처 인증 획득
+2020년 12월 대-스타 해결사 플랫폼 우승
+2020년 11월 GMP취득
+2020년 9월 범부처 과제 선정(주관기관)
+2020년 7월 병역지정업체 선정
+2020년 6월 직무발명보상 우수기업 인증
+2020년 4월 IITP과제 선정
+2019년 11월 Pre A 투자 유치(10억원)
+2019년 9월 미국학회 포스터 논문 발표(TCT)
+2019년 5월 TIPS과제 선정(주관기관)
+2018년 11월 Johnson & Johnson 퀵파이어챌린지 우승
+2018년 7월 Microsoft for Startups 멤버 선정
+2018년 5월 범부처과제 선정(참여기관)
+2018년 4월 기업부설연구소 인증
+2017년 5월 벤처기업 인증
+2017년 4월 주식회사 메디픽셀 설립
+
+
+[메디픽셀 인재상]
+최고의 제품을 만들기 위해 끊임없이 연구하고 학습하는 인재
+동료들과 활발히 소통하는 커뮤니케이터
+성과를 만들어내는 실행력을 가진 인재
+
+
+[메디픽셀의 장점 (Why Medipixel?)]
+[기술력] 의료 인공지능 분야의 컴퓨터비전과 강화학습에서 최고의 실력을 가진 연구원들과 함께 함께 성장
+[분야] 국내 유일의 심혈관질환 관련 AI 기반 의료소프트웨어 개발
+[논문] 해외 유명 학회에 논문 제출/발표 기회
+[특허] 발명권자로서 특허 출원 기회
+[파트너] 국내 최고 수준의 의료진과 공동 연구, Johnson & Johnson 의 acceleration
+[근무환경] 동종업계 최고수준의 급여, 쾌적한 사무실 환경, 워라벨 보장 (야근 자제)
+[복지] 자율재택근무, 시차출퇴근제, 점심 식대 지원, 각종 교육 기회, 영어회화 교육 제공 
+[외부활동] 다양한 국내외 학회 참여/발표 기회
+[보상] 스톡옵션을 통해 회사 성장의 보상 공유
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+MachineLearning DeepLearning Linux Python
+주요업무
+• 의료영상 및 의료데이터를 기반으로 하는 Machine learning, Deep learning 관련 연구 및 개발
+• 메디픽셀 제품군에서 Machine learning, Deep learning으로 해결 가능한 문제 정의 및 해결
+• 연구 결과에 따른 관련 논문 작성
+자격요건
+• 포트폴리오 제출 권장
+• 머신러닝 관련 유관 경력 5년 이상
+• 컴퓨터비전 또는 의료영상 유관분야에서의 딥러닝 모델 연구 및 개발 경험 
+• 컴퓨터비전 관련 기본 전공 지식을 보유하신 분 (전공은 무관)
+• 단순 모델 구현에 그치지 않고 문제에 맞춰 개선하고 연구하실 분
+• 논리적으로 사고하고 문제 해결 능력과 판단력이 탁월하신 분
+• 타인의 의견을 존중하고 논의를 통해 문제를 해결하실 분
+• 팀 플레이어로서 팀 내/외 협업과 커뮤니케이션에 익숙하신 분
+우대사항
+• Key-frame Extraction, 2D-Segmentation, NeRF, Point Cloud, 3D Reconstruction 중 관련 연구를 진행한 경험이 있으신 분
+• Video 도메인에서 관련 연구를 진행한 경험이 있으신 분
+• Few-shot learning, Meta learning 관련 연구를 진행한 경험이 있으신 분
+• AI 관련 최신 연구에 대한 이해도가 높으신 분
+• CVPR, ICCV, ECCV, ICLR, MICCAI 등 top tier conference 논문 개재 경험이 있으신 분
+마감일 및 근무지
+• 마감일 : ~2024-12-03
+• 근무지
+- 서울특별시 강남구 테헤란로108길 22, 지상 3층(대치동, 서경빌딩)
+복지 및 혜택
+• 자율 재택근무 및 시차 출퇴근제 운영
+• 점심 식대 지원
+• 영어 회화 수업 
+• 웰컴키트 지급
+• 각종 포상제도 운영
+• 간식, 커피 무한 제공
+• 건강검진 비용 지원
+• 명절 선물 지급 
+• 도서구매비 & 교육비 지원 
+• 최고 사양 장비 지원
+• 야근 No No No
+• 직급 대신 닉네임으로
+채용절차 및 기타 지원 유의사항
+[근무형태]
+• 정규직 (수습기간 3개월, 급여100%)
+
+[채용절차]
+• 서류전형 - 1차면접 - 과제면접 - 2차면접 - 최종합격
+
+Iframe Image Links:
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: DeepLearning | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: MachineLearning | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png

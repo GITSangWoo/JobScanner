@@ -1,0 +1,60 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49303134&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=57f01d7b-50ea-41f6-85c2-24d64c68b2b5
+
+Iframe Text Content:
+회사소개
+
+커넥트웨이브는 고객과 셀러의 연결성 강화를 위해 다양한 플랫폼을 인수합병(M&A) 하여 성장해 왔습니다.
+빅데이터를 기반으로 한 ‘컨슈머 커머스(다나와, 에누리)’, 
+쇼핑몰 구축부터 연동, 운영 등 원스톱 서비스가 가능한 ‘셀러 커머스(메이크샵, 플레이오토, 링크프라이스, 스윗트래커, 빌트온)', 
+글로벌 풀필먼트 서비스가 강점인 '크로스보더 커머스(몰테일)’를 선보이며 일상 속 편리한 토탈 플랫폼으로 거듭나고 있습니다.
+플랫폼을 현대적 아키텍처로 업그레이드해 나갈 것이며, 
+차세대 플랫폼으로 편리함을 넘어 무한한 가능성을 찾아 진화하고 있는 우리는 커넥트웨이브 입니다.
+ 
+모집부문
+
+Consumer Commerce CTO - AI개발팀 
+
+경력
+
+석/박사의 경우 무관
+경력 3년 이상
+
+
+담당업무
+
+커넥트웨이브 그룹사에 필요한 AI 모델 개발, 적용 등 AI 전반적인 업무를 하게 됩니다.
+
+✅ 새로운 기술 트렌드에 대한 리서치
+✅ Private LLM 모델을 활용한 서비스 개발(RAG등)
+✅ Private LLM 모델 fine-tuning
+✅ Text/Image에 대한 다양한 모델 및 복합 모델 학습 및 운용
+✅ 추천 등 다양한 비즈니스에 맞는 AI 연구 및 활용
+✅ Vector 모델 개발 및 검색 시스템 등 Vector 파생 서비스 개발
+
+ 자격요건
+
+·  신기술 센싱과 분석을 즐기시는 분
+·  코드 리뷰 등을 통해 주변 동료에게 험 주는 분
+·  docker 및 kubernetes 이해 및 경험
+· AI/ML에 대한 배경 지식과 경험 보유
+· 최신 논문을 수시로 학습하고 공유하며 토의할 수 있는 분
+·  Text/Image 등 다양한 AI 분야에 최소 한 가지 이상에 대해 경험이 있으신 분
+
+ 필수 언어/프레임워크
+
+·  python/pytorch or tensorflow 등 ML framework
+·  hadoop/spark
+·  kafka
+·  docker/kubernetes/kubeflow
+  
+우대사항
+
+·  관련 분야 석/박사
+·  LM/LLM 및 관련 응용 분야(프롬프팅, RAG등) 개발 경험 및 서비스 경험
+·  커머스 분야의 AI 경
+·  다양한 데이터, 모델들을 앙상블/멀티모달하는 복합 과제에 경험 보유
+·  AI 기술과 더불어 E2E 엔지니어링을 위한 기술 보유
+·  kubeflow 구축 및 운영 또는 MLops 관련 기술 경험 보유
+· ML 관점에서 CI/CD/CT 환경을 구성하고 운영한 경험 보유
+
+No images found in iframe.

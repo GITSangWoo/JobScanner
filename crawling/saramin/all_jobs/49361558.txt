@@ -1,0 +1,61 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49361558&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=34f6ab08-9fde-4668-8a44-8ef9f177171f
+
+Iframe Text Content:
+웹 개발자 (병역특례, 전문연구요원 가능)
+서비스 소개
+아이알엠은 2013년 창업하여 의료영상, 빅데이터, 인공지능의 3가지가 만나는 지점에서 다양한 의료데이터를 통합, 저장, 처리, 교류하게 해 주는 제품과 서비스를 개발, 판매하고 있습니다.
+
+아이알엠은 분당서울대학교병원, 세브란스 병원, 가톨릭대학교 서울성모병원, 은평성모병원 등 국내 유수의 대학병원들과 의원급 의료기관들을 대상으로 자사의 서비스와 솔루션을 공급하여 운영중이며, 이 외에도 아래와 같은 다양한 국내외 기관 및 기업체들과 솔루션과 서비스를 공급하고 운영하고 있습니다.
+
+• 보건의료정보원, 한국환경산업기술원, 광주테크노파크 등 공공기관 의료정보서비스 관련 프로젝트 사업 수행
+• 루닛, 딥노이드, 비트컴퓨터, 코어라인소프트, 더존소프트, 아헬즈헬스케어 등 다양한 유관 기업들과 의료솔루션 및 서비스 제휴 운영 등
+• 카자흐스탄, 우즈베키스탄등 중앙아시아 의료솔루션 공급 및 운영
+• 베트남, 인도네시아, 미얀마, 라오스, 캄보디아 등 동남아시아 의료솔루션 공급 및 운영
+
+자세한 사항은 홈페이지 www.irm.kr
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Next.js NGINX AWS JavaScript React Linux Git
+주요업무
+• Next.js / React.js 를 사용한 반응형 웹 애플리케이션 개발
+• 메인 플랫폼, 어드민 등 서비스의 신규기능 개발 및 유지보수
+• 개발 및 배포 속도 향상을 위한 프론트엔드 개발 환경 개선
+• 캐싱, 이미지 최적화 등의 관련 기술 적용을 통한 성능 최적화
+• 사용자 경험(UX) 및 사용자 인터페이스(UI) 디자인 개선을 위한 협업
+• 최신 프론트엔드 기술 동향에 대한 지속적인 연구 및 적용
+자격요건
+• 신입 또는 프론트엔드 경력 1년 이상 또는 그에 상응하는 실력이 있으신 분
+• 컴퓨터공학 관련 학과 학사 이상 학위 (병특의 경우 석사 이상)
+• Next.js, React.js, Typescript 를 활용한 웹 서비스 개발 경험이 있으신 분
+• RESTful API 기반 백엔드 시스템과 통합 개발 경험이 있으신 분
+• Zustand, Recoil 등 상태관리 라이브러리 사용 경험 있으신 분
+• Nginx 사용경험이 있으신 분
+• SWR 또는 React-Query 사용 경험 있으신 분
+• CSR, SSR, SSG, ISR 과 같은 렌더링 방식에 대한 이해가 있으신 분
+• Git 을 이용한 소스코드 관리 및 프로젝트 관리 경험이 있으신 분
+• 주어진 일을 단순히 처리하기 보다 문제 해결을 위해 주체적으로 고민하시는 분
+우대사항
+• 이공계 출신
+• 대용량 데이터 처리 경험
+• 호기심이 많은 성격
+마감일 및 근무지
+• 마감일 : ~2024-12-08
+• 근무지
+- 경기 성남시 분당구 황새울로342번길 21 6층 일부
+복지 및 혜택
+• 각종 경조사 지원, 인센티브제, 스톡옵션, 퇴직금, 4대보험,
+• 자기개발: 업무관련 교육비 및 도서 지원
+• 사내활동: 각종 동호회 지원
+• 보상제도: 우수사원 포상, 장기근속자 포상 및 휴가
+• 탄력 근무제(8:30~10:00), 야근식대, 야근 교통비 지원, 통신비 지원
+
+Iframe Image Links:
+Image: AWS | Link: https://cdn.jumpit.co.kr/images/stacks/aws.png
+Image: JavaScript | Link: https://cdn.jumpit.co.kr/images/stacks/javascript.png
+Image: NGINX | Link: https://cdn.jumpit.co.kr/images/stacks/nginx.png
+Image: Git | Link: https://cdn.jumpit.co.kr/images/stacks/git.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png
+Image: Next.js | Link: https://cdn.jumpit.co.kr/images/stacks/next.js.png
+Image: React | Link: https://cdn.jumpit.co.kr/images/stacks/react.png

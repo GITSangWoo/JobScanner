@@ -1,0 +1,27 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49193454&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=6407b733-d34c-4b2e-8ef0-1c653048c4a9
+
+Iframe Text Content:
+모집요강 및 자격요건
+
+
+담당업무 
+자격요건
+
+비즈플랫폼팀
+(백엔드 개발자)
+- 간편인증 서비스 플랫폼 개발 및 유지보수
+[자격요건]
+ASP.NET CORE 활용 실무경험 1년이상
+
+[우대사항]
+1. Redis 연동 개발 경험
+2. Kafaka 연동 개발 경험
+3. 도커 사용 경험
+
+[필요 기술스택,자격증]
+1. Rest API 개발경험
+2. MySql 개발경험
+
+Iframe Image Links:
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202408/22/silno3_oozg-1kko2w9_recruit.png
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202408/22/silnma_w6ng-1kko2w9_recruit.png

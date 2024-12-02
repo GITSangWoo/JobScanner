@@ -1,0 +1,110 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49392418&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=2cc0eacb-9bfd-43bc-9990-ef10aaee104f
+
+Iframe Text Content:
+[추천엔지니어 ML]추천엔지니어(경력) 모집
+서비스 소개
+■ Rye&Catchers는 무슨뜻인가요?
+영어로 The Catcher in The Rye 라는 작품의 제목에서 영감을 얻었습니다.
+호밀밭은 자유로운 벌판입니다. 아이들이 자기만의 개성으로 자유롭게 뛰어 놀 수 있는 곳입니다. 
+그러나 그 끝에는 치명적인 절벽이 숨어 있습니다. 그래서 파수꾼이 필요합니다.
+현실 사회에서도 자유롭게 자신의 개성을 세상의 유익으로 발현하기 위해 실패와 낙오를 방지하는 파수꾼이 필요합니다. 
+호밀밭의 파수꾼을 꿈꾸는 기업 라이앤캐처스 입니다.
+
+■ 무엇을 하는 회사인가요?
+라이앤캐처스는 데이터 전문 기업으로 성장해나갑니다. 
+빅데이터/AI 관련 프로젝트를 수행하고 있으며, 자체 서비스로는 인공지능 서점 비블리를 준비중입니다. 
+다양한 머신러닝과 데이터분석 모델 및 빅데이터 아키텍처 분야에서 함께 성장해나갈 수 있습니다.
+
+■ 우리 회사가 더 궁금하다면?
+https://www.notion.so/ryencatchers/_ver-2022-04-11d0d7768b1a4c538b5dad9c7b2b1937
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Python Kafka Spark MongoDB PyTorch TensorFlow Airflow C++ Java SQL
+주요업무
+◆ 비즈니스 요구사항에 따른 머신러닝 엔지니어 프로젝트 수행
+◆ AI 고객경험관리 서비스의 대용량 추천엔진 및 데이터 파이프라인 자동화 개발 및 유지
+◆ 머신러인/딥러닝 모델 설계 및 기존 모델 성능 최적화 및 개선
+◆ AI 추천에 필요한 피처발굴, 데이터분석, 모델링 등 추천시스템 고도화를 위한 다양한 기술 검토 및 도입
+◆ 코드 관리를 위한 리뷰 및 기술문서 작성, 협업툴 프로젝트 관리
+자격요건
+[다음 기준에 부합하면 충분해요]
+• 수학, 통계, 전산 분야 2년 이상의 경력 필수 / 석사 우대
+• ML 테크닉들에 대한 다양한 모델링 및 실제 서비스 적용 경험을 보유하신 분
+• 추천엔진에 대한 기본적인 이해가 있으신 분, 실제 추천 엔진을 개발해보신 분
+• ML Serving 에 대한 이해도가 있고 관련 개발을 경험해보신 분
+• 여러 상황에서 적합한 솔루션을 찾을 수 있는 문제해결능력과 뛰어난 커뮤니케이션 역량을 가지신 분
+• 외국인 지원불가
+우대사항
+[이런 분이시면 더욱 좋아요]
+• Backend 개발 경험
+• GPU 학습 최적화 경험 (Tensorflow, PyTorch)
+• 다양한 데이터베이스(MongoDB, Redis, ElasticSearch 등) 사용 경험
+• MLOps 플랫폼 구축, 활용 경험 (MLFlow, KubeFlow, MLOps 플랫폼 직접 구축 등)대규모 서비스 트래픽 운영 경험
+
+
+[개발환경]
+• 주요 기술 Python, SQL, Java, C++ Kubernetes, Spark, Airflow, Kafka, Tensorflow, Pytorch, MongoDB, Redis, AWS
+• 도구 : GitLab, Slack, Jira, Confluence
+• 빌드, 배포, 테스트 자동화 : GitLab CI, ArgoCD
+• 모니터링: Grafana, Prometheus
+마감일 및 근무지
+• 마감일 : ~2024-12-16
+• 근무지
+- 서울 영등포구 국제금융로2길 17, 414호
+복지 및 혜택
+[라이앤캐처스에서 누릴 수 있는 특권이에요]
+• 재택근무 기반 자율출퇴근제
+2022년 02월 03일부터 재택근무 기반 자율출퇴근제를 채택하여 운영중에 있어요.
+재택근무도 가능하고 사무실 출근 후 업무 진행 가능합니다.
+오전 08시~11시 사이 자유로운 출퇴근으로 워라벨을 자유롭게 조절하실 수 있어요~
+
+• 자유로운 휴가사용
+상사눈치 필요없는 휴가사용!! 따로 휴가계 작성 및 보고없이 자유롭게 사용가능합니다!
+쉿! 비밀인데.... 반반차도 있어요!!! 
+
+• 일과 삶의 균형 a.k.a. 워라밸!
+라이앤캐처스에서는 직원들이 최적의 업무 능력을 발휘할 수 있도록 C.U.휴가,안식휴가&리프레시 휴가 등 다양한 휴가를 지원합니다. 자세한 사항은 휴가페이지(클릭)로 들어오시면 보실 수 있어요!
+
+• 장비 지원
+입사 후, 3개월 숙려기간동안 회사에서 임의로 지급해드립니다.(개인 장비 사용 원하시면 언제든지 가능합니다~) 숙려기간이 지나면 업무능력 최대치 사용을 위해 원하시는 OS 장비로 구매해드려요.
+
+• 식사비 지원
+기본 점심식사 비용 8천원을 지원해드립니다. 혹, 야근이 필요할 때는 저녁도 라캐가 책임져 드려요!
+또한 월 16만원 한도 내에서 건강식, 다이어트식, 키토식 등 자유롭게 도시락 주문이 가능해요. 
+맛있게 잘 먹고 힘내서 일하자구요!
+
+• 교육 지원금
+라이앤캐처스는 회사의 성장만큼 개인의 성장을 중요하게 여기고 있습니다. 본인의 성장에 필요한 강의, 세미나 등 다양한 방법의 교육 참여 기회를 제공해 드립니다. 
+여러분의 지식이 쌓일 수록 라이앤캐처스도 함께 성장해 나가는 거니까요! 
+
+• 마음의 양식
+비블리 서비스인 '찾아가는 서점'을 이용하여 매달 5만 포인트를 여가생활을 위한 도서비 용도로 지원합니다. 또한 업무 관련 도서들은 한도없이 제공 됩니다.
+
+• 교통비 지원금
+혹여나 야근으로 인해 대중교통 이용에 어려움이 있을 경우 택시비를 지원해 드립니다!
+
+• 명절엔 양손가득
+우리나라 고유 명절인 설날과 추석, 가족들과 즐거운 시간을 보낼 수 있도록 라캐에서 명절선물을 지급합니다. 매년 선물은 업그레이드 되고 있어요~!
+
+• 3년, 6년 근속 시 1개월 안식월 휴가 제공
+나를 되돌아보고 한 단계 더 도약할 수 있는 시간을 드려요!
+최신형 장비 2년마다 지원! 맥북프로, 윈도우 중 선택!
+채용절차 및 기타 지원 유의사항
+• 지원서는 수시로 검토되어 집니다. 
+• 서류전혀 합격자는 개별 연락을 드립니다. 
+• 지원서 내용에 허위사실이 발견될 경우, 입사가 취소될 수 있습니다. 
+• 채용 관련 문의사항은 jud@ryencatchers.com으로 문의주시면 친절히 안내 드리겠습니다.
+
+Iframe Image Links:
+Image: Spark | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: PyTorch | Link: https://cdn.jumpit.co.kr/images/stacks/pytorch.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: MongoDB | Link: https://cdn.jumpit.co.kr/images/stacks/mongodb.png
+Image: Kafka | Link: https://cdn.jumpit.co.kr/images/stacks/kafka.png
+Image: Airflow | Link: https://cdn.jumpit.co.kr/images/stacks/Airflow.png
+Image: Java | Link: https://cdn.jumpit.co.kr/images/stacks/java.png
+Image: SQL | Link: https://cdn.jumpit.co.kr/images/stacks/sql.png
+Image: C++ | Link: https://cdn.jumpit.co.kr/images/stacks/CPlusPlus.png
+Image: TensorFlow | Link: https://cdn.jumpit.co.kr/images/stacks/tensorflow.png

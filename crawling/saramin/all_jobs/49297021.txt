@@ -1,0 +1,42 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49297021&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=50b0ce6c-3f22-47de-8fc1-253b55607db6
+
+Iframe Text Content:
+에스트라오토모티브시스템(주)
+정보전략실[ IT ]
+자격요건 및 모집 상세내용
+모집부문 상세내용
+자격요건
+ㆍ학력 : 전문학사 이상 
+ㆍ전공 : 컴퓨터관련 전공자 우대 또는 관련학과 이수자
+ㆍ우대사항
+ ① 정보처리기사 우대
+ ② 대구 및 인근 지역 출신 자
+ㆍ개발 사용언어 : C#/.NET, VB.NET 기반, DEVEXPRESS
+ㆍDB : MS SQL, ORACLE( PL/SQL)
+정보전략실
+
+
+ㆍ 생산 Part IT 신입/경력
+ ① ERP 개발  및 운영관리
+   - 자재모듈 개발지원 및 마감업무지원              
+ ② QMS 시스템 운영 관리
+   - QMS 시스템 업무지원               
+   - QMS/MES/POP 서버관리
+ ③ 해외공장 업무지원 (멕시코, 미국)
+   - POP 생산업무지원
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월
+ㆍ 근무지역 : (42981) 대구 달성군 논공읍 논공로 664
+전형절차
+서류전형
+1차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 10월 30일 (수) 07시 ~ 채용시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://www.saraminimage.co.kr/sri/vix/template/toptype/talent5.png

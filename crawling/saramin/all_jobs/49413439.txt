@@ -1,0 +1,29 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49413439&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=247db45f-e38b-42ca-aca6-715508bf425a
+
+Iframe Text Content:
+고객사는 삼성계열 S/W 전문기업입니다.
+
+Elastic Stack 기술 서비스 
+
+[자격조건]
+* Elastic Stack 기술서비스 경험자
+* Linux 환경에 능숙하여 쉘스크립트와 유틸리티를 잘 다루는 자
+* 고객과의 원활한 의사소통을 위한 커뮤니케이션 능력
+* 관련경력 2년 이상
+* 학사이상 (전산관련 전공자)
+
+[우대사항]
+* Elastic Certified Engineer 자격 보유자
+* Elastic Stack 기반 Data 검색/분석 시스템 구축/개발 경험자
+* Elastic Stack 기반 검색 시스템 Tuning 경험자
+* Machine Learning 관련 시스템 구축/개발 경험자
+* VectorDB 상용 서비스 구현 및 Opensearch 구축 경험자
+
+** 디리아, 위앤유텍, 로이드케이, 아이브릭스, 메가존, 프로텐 출신 우대 
+
+[제출서류]
+* 입사지원서, 경력중심 자기소개서, 프로젝트 수행내역서 (MS-WORD 1개파일 작성)
+* 메일제목 [Elastic 기술서비스/출생년도/희망연봉/주요경력회사] 로 접수.
+Jsys@scout.co.kr (문의 010-6542-2001)
+
+No images found in iframe.

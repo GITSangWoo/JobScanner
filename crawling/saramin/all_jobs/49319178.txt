@@ -1,0 +1,85 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49319178&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=8fea491d-2cf0-4673-87c2-70a973f6cd9a
+
+Iframe Text Content:
+S/W Test & QA Engineer (신입/경력) 인재영입
+모집부문 및 상세내용
+모집부문
+상세내용
+공통 자격요건
+ㆍ학력 : 대졸 이상 (2,3년)
+ㆍ나이/성별 : 무관
+우대사항
+ㆍ컴퓨터/시스템공학, 공학계열
+ㆍISTQB foundation level, CSTS Foundation Level
+ㆍ인근거주자, 해외근무 가능자, 해당직무 근무경험
+ㆍ취업보호대상자 : 국가 유공자 및 장애인 등 취업보호대상자는 관계법령에 의거하여 우대합니다.
+   보훈 및 장애인 지원자에 해당되시는 경우, 입사지원시 [포트폴리오/이력서] 첨부란에 반드시
+   관련 증명원을 첨부 바랍니다.
+   1. 보훈 지원자 : '보훈취업지원대상자 증명서' 발급하여 첨부
+   2. 장애인 지원자 : '장애인증명서 또는 복지카드' 첨부
+S/W Test
+근무지역
+ㆍ서울시 구로구, 강남구, 강서구, 경기 광명
+지원자격
+ㆍ경력 : 신입/경력 (년수무관) (사원, 대리, 과장급)
+우대사항
+ㆍSW Test 관련 경력자
+ㆍ개발 관련 경력자
+광고플랫폼QA
+근무지역
+ㆍ경기 성남시 분당구 (서현역)
+지원자격
+ㆍ경력 : 경력 (년수무관)
+우대사항
+ㆍSW Test 관련 경력자
+ㆍAPI 테스트 관련 경력자
+ㆍ컴퓨터공학 관련 학과, QA 관련 자격증 소지자
+ㆍ테스트  관련 도구(JIRA, TestRail) 경험자
+인프라 구축 및 
+유지보수 QA
+근무지역
+ㆍ서울시 강남구 (강남구청역 인근)
+지원자격
+ㆍ경력 : 신입 / 경력 (년수무관)
+필수자격
+ㆍOS (Linux계열), HW (Server, Storage), DB, Network에 대한 이해
+ㆍ지방 출장 가능자
+반도체 S/W     
+QA 
+ㆍ학력 : 학사 이상 (컴퓨터공학 또는 관련 분야)
+근무지역
+ㆍ서울시 구로구 (구로디지털단지역 인근)
+ㆍ경기도  화성시 동탄 (교육기간 동안 출근 가능자)
+지원자격
+ㆍ경력 : 경력 (년수무관)
+필수자격
+ㆍUI/BDD 및 End to End Testing Tools 사용 숙련자
+ㆍC# 사용 경험자 (또는 C++ 사용 경험)
+우대사항
+ㆍ테스트 관련 도구 (Gitlab, JIRA, TestRail) 사용 경험자
+ㆍ영어 가능자 (Reading & Writing)
+ㆍ반도체 공정에 대한 사전 학습 또는 업무 경험자
+
+근무조건
+ㆍ 근무형태 : 정규직, 프리랜서
+ㆍ 근무일시 : 주 5일(월~금) 오전 9시~오후 6시
+ㆍ 근무지역 : (08378) 서울 구로구 디지털로34길 27 대륭포스트타워3차(구로동) - 서울 2호선 구로디지털단지 에서 300m 이내
+전형절차
+ㆍ 서류전형 : 합격자에 한해 연락예정
+ㆍ1차 면접 : 면접방식 (대면 or 비대면) 선택가능
+ㆍ 최종합격 : 면접 진행 후 1주일 이내 결과 발표
+서류전형
+1차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 11월 01일(금) ~ 상시 채용
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+ㆍ 제출서류 : 입사지원서(사람인 양식)
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202406/17/sf7mkq_zgks-1mrhj1z_recruit.jpg
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202405/03/scw82b_t1h0-1mrhj1z_recruit.jpg
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202405/03/scw81f_x5wx-1mrhj1z_recruit.jpg

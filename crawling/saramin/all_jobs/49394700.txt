@@ -1,0 +1,53 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49394700&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=5fe8ee1a-69bb-4112-a53e-375bbf6ee3a1
+
+Iframe Text Content:
+AI SW 개발 엔지니어 [경력3~7년]
+서비스 소개
+SW 개발팀은 차량용 반도체에 탑재되어 고객의 사용 시나리오에 맞게 반도체를 제어하며 최고의 성능을 낼 수 있도록 최적화된 고품질의 임베디드 시스템 SW 개발을 미션으로 합니다. 
+차량용 반도체의 Computing/Safety 수준에 맞추어 칩 내부의 HW IP 디바이스 Enabling을 위한 firmware, bootloader에서부터 Linux나 RTOS와 같은 OS 플랫폼 기반의 kernel, device driver, system framework, 및 자율주행 DL 솔루션과 같은 분야의 SW를 제공합니다. 각 해당 분야의 전문가들이 팀을 이루어 업계 최고의 차량용 반도체 SW 개발을 위해 함께 연구/개발하고 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+TensorFlow PyTorch Optimize C
+주요업무
+Required Skills
+• Build and optimize an AI frontend compiler on a grid structure of NN compute cores using MLIR and TVM 
+• Work on 'graph'-level and 'mid'-level compiler optimizations for AI workloads given. 
+• Develop and optimize compute kernels for data conversion/movement and ops behavior computation. 
+• Design data routing algorithms and optimization on a grid structure of NN compute cores 
+• Work on weight/activation size optimization using quantization and structured sparsity
+자격요건
+• Bachelors, Masters, or PhD degree in computer science, machine learning, mathematics, or related field
+• Experience in machine learning frameworks such as TensorFlow, PyTorch, or ONNX
+• Experience in working with AI compiler frameworks such as TVM, MLIR, and LLVM.
+• Experience in high-performance kernel development and optimization
+• Experience in low-level software optimizations to maximize hardware utilization.
+우대사항
+마감일 및 근무지
+• 마감일 : ~2024-12-12
+• 근무지
+- 경기 성남시 분당구 판교로255번길 24, 3층
+복지 및 혜택
+• BOS Healthy Meal Plan: 아침/점심&저녁
+• BOS 건강검진 프로그램
+• Gym: 건물 내 Gym 시설
+• BOS FUN English Class
+• BOS Korean Class
+• Vitamin Day / Happy Beer Party
+• 취향 저격 단짠간식 & Coffee & Tea 
+• Motion Arm/Motion Desk 
+• 유연근무제
+• 최적의 개발 환경 제공 (듀얼 모니터/HPC서버)
+채용절차 및 기타 지원 유의사항
+• 서류 심사: 이력서 외 서류 + 전화 스크리닝
+• 1차 대면 면접: 인성 면접 + 직무 면접 (본인 소개 발표 + 팀 면접) + 코딩 테스트 (SW팀에 한함)
+• 2차 면접: 화상/대면 중 선택
+• 결과 발표 및 입사 서류 안내
+• 입사 OT
+
+Iframe Image Links:
+Image: Optimize | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: C | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: PyTorch | Link: https://cdn.jumpit.co.kr/images/stacks/pytorch.png
+Image: TensorFlow | Link: https://cdn.jumpit.co.kr/images/stacks/tensorflow.png

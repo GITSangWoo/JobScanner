@@ -1,0 +1,46 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49437598&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=024d7c47-c633-4765-b3fa-ea116c66fc6c
+
+Iframe Text Content:
+DBMS엔지니어 채용(대리급이상)
+모집부문 및 상세내용
+공통 자격요건
+ㆍ학력 : 무관
+DBMS엔지니어 채용(대리급이상) 0명
+[담당업무]
+   - SingleStoreDB 구축 및 기술지원
+  - SingleStoreDB 로의 마이그레이션
+  - SingleStoreDB Pre-Sales
+
+[자격요건]
+  - 관련 경력 5년 이상
+ - 데이터베이스 성능 모니터링 및 트러블 슈팅
+ - 이기종 데이터베이스 마이그레이션
+
+[필수/우대사항]
+(필수) 5년 이상 RDBMS 환경에서의 데이터 엔지니어링 또는 관련 개발 경험 보유
+(필수) 이기종 데이터베이스 마이그레이션 경험
+(필수)데이터 수집/가공/적재 등 데이터 파이프라인 구축 경험
+(필수)대용량 데이터 처리 및 분산 시스템에 대한 지식
+(필수) DBMS의 성능 모니터링 및 트러블 슛팅 경험
+(필수) 성능향상을 위한 쿼리 튜닝 경험
+(우대) SingleStore(memsql) 사용 경험
+(우대) Linux OS 및 opensource kubernetes에 대한 이해
+(우대)DBMS 관련 자격증 소지
+
+
+근무조건
+ㆍ 근무형태 : 정규직
+ㆍ 근무지역 : (13840) 경기 과천시 가일로 000(갈현동)
+전형절차
+서류전형
+1차면접
+2차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 11월 4일 (월) 11시 ~ 채용시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 자유양식
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+No images found in iframe.

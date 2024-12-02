@@ -1,0 +1,146 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49378739&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=9d51bf61-9053-4e6d-a7a2-9458b68f3fa2
+
+Iframe Text Content:
+모집부문
+[해외영업팀]
+모집부문 담당업무 자격요건 및 우대사항 인원
+의료기기
+해외영업 ㆍ해외 신규거래선 발굴 및 영업
+   (의료기기 분야)
+ㆍ고객사 및 매출 관리
+ㆍ해외 전시회/학회 참가 자격요건
+ㆍ학력 : 대졸 이상
+ㆍ경력 : 신입 및 경력
+ㆍ해외영업 경력자
+ㆍ비즈니스 영어회화 가능자
+ㆍ해외 여행에 결격 사유가 없는 자
+
+우대사항
+ㆍ의료기기 경력자
+ㆍ기타 외국어 가능자
+   (영업 Reading, Writing 중급 이상)
+ㆍSNS 마케팅 경력자
+ㆍ수출입 무역 경력자
+ㆍ신규거래선 개척 다수 경험자 0명
+[국내영업팀]
+모집부문 담당업무 자격요건 및 우대사항 인원
+의료기기
+국내영업 ㆍ병의원 대상 의료기 영업
+   - 제품별, 거래처별 영업 계획 수립
+   - 온라인 마케팅 계획 및 운영
+   - 신규 거래처 개척
+ㆍ제품 시연 (Set up)
+   - 의료기기 데모 및 납품
+   - 제품에 대한 Deatil 및 홍보
+ㆍ전시회 & 학회 업무
+   - 고객 응대 및 전체 일정 운영
+   - 홍보, 프로모션, 이벤트 전략 수립 자격요건
+ㆍ학력 : 초대졸 이상
+ㆍ경력 : 신입 및 경력
+ㆍ의사소통 능력, 긍정적 마인드, 책임감 및
+   문제 해결 능력 보유자
+ㆍ자동차 운전면허 보유자
+ㆍ해외 출장에 지장 없는 자
+
+우대사항
+ㆍ의료기 or 제약영업 경력자
+ㆍ외국어 communication 능숙한 자 0명
+[R&D 센터]
+모집부문 담당업무 자격요건 및 우대사항 인원
+의료기기
+R&D SW
+(Embedded) [Embedded]
+ㆍ임베디드 Linux의 user space, 드라이버
+   및 커널
+ㆍApplication program 작성
+ㆍC, C++ 프로그래밍- 설계, 검증 테스트 자격요건
+ㆍ학력 : 초대졸 이상
+ㆍ경력 : 신입 및 경력
+ㆍC/C++ 개발 가능
+ㆍI2C/GPIO/SPI와 같은 Peripherals를 이해하고
+   개발 가능
+ㆍ기본적인 개발 능력
+   (알고리즘, 자료구조, 운영체제 등)
+
+우대사항
+ㆍYocto/Buildroot 등의 빌드 프레임워크 수정 및
+   유지 보수 가능하신 분
+ㆍ기술 문제를 깊이 분석하고 문제를 해결하는
+   경험과 역량을 갖춘 분
+ㆍOOP 개념을 이해하고 디자인 패턴을 적용하여
+   개발 가능하신 분
+ㆍOpenGL ES 구조를 이해하고 개발 가능하신 분 0명
+의료기기
+R&D HW ㆍApplication Processor를 이용한 회로설계
+   및 검토
+ㆍARTWORK 검토
+ㆍ하드웨어 bring-up/debugging 진행
+ㆍ기술문서 작성 및 생산자료 이관
+ㆍ소프트웨어 및 기구 업무 협업 자격요건
+ㆍ학력 : 초대졸 이상
+ㆍ경력 : 신입 및 경력
+ㆍDP, HDMI, USB-C 포함한 인터페이스
+   프로토콜에 대한 지식
+ㆍArm 기반 Embedded system 개발 경험자
+ㆍMicroelectronics에 대한 이해
+
+우대사항
+ㆍ기술 문제를 깊이 분석하고 문제를 해결하는
+   경험과 역량을 갖춘 분
+ㆍ임베디드 system에 대한 이해를 가지고 계신 분 0명
+의료기기
+R&D
+Mechanic ㆍ2D, 3D 기구 설계
+ㆍ기술문서 작성 및 생산자료 이관
+ㆍ하드웨어 업무 협업 자격요건
+ㆍ학력 : 초대졸 이상
+ㆍ경력 : 경력 7년 이상
+ㆍ양산진행 경험자
+ㆍ스켈레톤 기법을 활용한 설계 가능자
+
+우대사항
+ㆍ전자기기, VR기기 설계 경험자
+ㆍ기술 문제를 깊이 분석하고 문제를 해결하는
+   경험과 역량을 갖춘 분
+ㆍ의료영상장비 설계 경험자 0명
+근무조건
+ㆍ근무형태 : 정규직
+ㆍ근무시간 : 주 5일(월~금) 09:00~18:00
+ㆍ근무지역 : (13486) 경기 성남시 분당구 판교로255번길 35 판교실리콘파크 203호(삼평동)
+복리후생
+연금보험 및 급여제도
+국민연금, 고용보험, 산재보험, 건강보험,
+퇴직연금, 퇴직금 수당제도
+연/월차수당, 명절 상여금 지급
+식사관련
+점심식사 제공 교통/출퇴근
+통근비/주차비 지원
+지원금/대출
+문화생활비 지급 휴일/휴가
+연차, 정기 휴가, 경조휴가제
+기타
+대상자에 한하여 내일채움공제 및 주식매수선택권
+부여    
+전형절차
+제출서류
+ㆍ입사지원서(사진, 희망연봉 必)
+ㆍ자기소개서
+ㆍ경력기술서(해당자에 한함)
+접수기간 및 방법
+ㆍ접수방법 : 사람인 온라인 입사지원
+ㆍ접수기간 : 2024년 11월 24일 마감
+기타 유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+홈페이지 바로가기
+
+Iframe Image Links:
+Image: Designed by saramin | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit/watermark_basic.png
+Image: 아이콘 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_medi_icon_241007_06_01.png
+Image: 아이콘 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_medi_icon_241007_02_01.png
+Image: 아이콘 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_medi_icon_241007_05_01.png
+Image: 아이콘 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_medi_icon_241007_01_01.png
+Image: 아이콘 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_medi_icon_241007_03_01.png
+Image: 아이콘 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_medi_icon_241007_07_01.png
+Image: 서류전형 - 면접전형 - 최종합격  | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_medi_step_241004.png
+Image: (주)메디씽큐 | 24년 각 부문 신입 및 경력 채용 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_medi_top_241004_01.png
+Image: 아이콘 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_medi_icon_241007_04_01.png

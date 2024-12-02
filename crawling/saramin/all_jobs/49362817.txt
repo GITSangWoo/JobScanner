@@ -1,0 +1,48 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49362817&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=76c04cb4-d2f7-4559-9a21-da2f8ca32832
+
+Iframe Text Content:
+딥러닝 엔니지어 신입 채용
+서비스 소개
+2020년1월에 설립하여 국내 최초 인공지능 모델을 관리하는 플랫폼을 출시하여 대기업에 납품하는 등 인공지능분야 비지니스를 선도하고 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+GitHub Pages DeepLearning Python
+주요업무
+ㆍPython Programming
+ㆍ텍스트, 이미지 데이터 분석 및 Torch 또는 TF를 이용한
+ Deep Learning 모델링 능력
+ㆍLLM 모델 적용, 파인튜닝 경험 (GitHub / HuggingFace)
+ㆍLangchain 활용 개발 경험
+자격요건
+ㆍ학력 : 대졸(4년제) 이상(예정자 가능)
+ㆍ경력 : 신입 (팀원급)
+ㆍ기타 필수 사항
+ - 공학계열
+우대사항
+ㆍLangserve 활용 경험
+ㆍDeepspeed 활용 경험
+ㆍ텍스트 데이터 크롤링 경험
+마감일 및 근무지
+• 마감일 : ~2024-12-10
+• 근무지
+- 서울 중구 세종대로18길 16 804호
+복지 및 혜택
+건강검진, 각종 경조사 지원
+퇴직연금, 장기근속자 포상, 성과급, 4대 보험
+ 워크샵, 신규 입사자 교육(OJT),
+ 자격증취득지원, 교육비 지원,
+ 자기계발비 지원, 저녁식사 제공,
+ 음료제공(차, 커피)
+수평적 조직문화, 자유로운 연차사용
+주 52시간제 준수, 주 40시간제 시행
+연차, 경조휴가제, 반차, 근로자의 날 휴무,
+ 산전 후 휴가, 남성출산휴가
+채용절차 및 기타 지원 유의사항
+서류전형=>면접전형=> 최종합격
+
+Iframe Image Links:
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: DeepLearning | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: GitHub Pages | Link: https://cdn.jumpit.co.kr/images/stacks/GitHubPages.png

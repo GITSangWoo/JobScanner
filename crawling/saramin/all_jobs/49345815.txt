@@ -1,0 +1,69 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49345815&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=abe19497-5b44-41e4-b532-de836b765221
+
+Iframe Text Content:
+[수원] SW 테스트 엔지니어 (QA) 경력 채용(경력 5년 ~ 8년 미만)
+서비스 소개
+"인공지능 데이터 전문기업, 인피닉."
+
+인피닉은 2005년부터 검증사업에서 쌓아온 전문 지식과 경험을 바탕으로 고품질의 인공지능 데이터를 만들고 있습니다.
+인피닉의 미래는 '인공지능'과 '데이터'라는 키워드에 집중하고, 무한한 경험과 신뢰를 기반으로 인공지능 데이터 분야의 선도기업으로 나아가고자 합니다.
+
+[SW 검증 분야의 최고 기업]
+인피닉은 우리 주위에서 쉽게 볼 수 있는 다양한 분야의 전자제품, 모바일, 자동차, 임베디드 등 전문 산업 분야의 제품 출시 전 품질과 안전성을 검증합니다.
+이후 문제점에 대해 보완, 컨설팅하며, 각 산업 별 주요 고객사에게 최상의 서비스를 제공하고 있습니다.
+
+[인공지능 데이터 전문기업]
+인피닉은 자율주행 산업분야, 컴퓨터 비전 분야에서 높은 기술력과 점유율을 가지고 있으며, 인공지능 개발, 검증 및 고도화를 위해 요구되는 데이터셋과 관련된 서비스를 제공하고 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+SW C Python QA
+주요업무
+• Android 기반 플랫폼 AVN SW 검증
+• 시양서 기반 Test Case 설계 
+• CANoe를 사용한 TC 평가 
+• Test Bench 장비 사용
+자격요건
+• 경력 5년 이상 ~ 8년 미만 
+• 프로그래밍 언어 사용 가능자(C언어, Python 등) 
+• QA 중급 이상 활용가능자(Excel, Outlook 등)
+우대사항
+• 테스트 관련 자격증 보유자 (ISTQB, CSTS 등) 
+• IT 관련 자격증 보유자(정보처리기사, 산업기사, 워드프로세서 등) 
+• IT 관련 유사 학과 졸업자 / 프로그래밍 언어 전공자 및 가능자 
+• 운전가능자 
+• 전장 분야 SW 테스팅 경험자
+마감일 및 근무지
+• 마감일 : ~2024-12-05
+• 근무지
+- 경기 수원시 영통구 영통동 980-3
+복지 및 혜택
+<개인혜택>
+• 생일자 지원
+• 경조사 지원
+• 연장수당 지급
+• 명절 선물 지원
+• 임신/출산 기념선물 제공
+
+<휴가혜택>
+• 출산/육아휴직 보장
+• 임신초기/후기 단축근무 보장
+• 육아기 단축근무 가능
+
+<근무혜택>
+• 장기 근속자 해외여행
+• 데스팅 자격증 응시 지원(합격시)
+
+<기본혜택>
+• 4대보험
+• 퇴직연금
+• 직장인 건강검진
+채용절차 및 기타 지원 유의사항
+• 서류전형 → 면접전형 →최종합격
+
+Iframe Image Links:
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: C | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: SW | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: QA | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

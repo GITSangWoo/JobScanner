@@ -1,0 +1,45 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49394832&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c3e8eb17-f13d-407d-8e4f-8c074577dd53
+
+Iframe Text Content:
+DevOps 엔지니어
+  [담당업무]
+자사 구축팀이 시스템 구축 과정에서 생길 수 있는 다양한 지원 요청을 해결. (상급 시스템 엔지니어로서 역량) 
+ -솔루션 테스트
+ -설치, 유지보수, 운영지원
+ -트러블슈팅을 위한 현장 또는 원격 지원
+- 장애 대응 및 문제 해결 
+  [자격요건]
+   -시스템 엔지니어, DevOps 엔지니어 경력 4년~10년
+   -솔루션 서버, 네트워크, 서비스 구성 및 운영
+  - 리눅스 OS 구축 및 운영 경험
+·      Linux 운영체제 지식 및 스킬 (중급 이상)
+·      Linux 운영체제 지식 및 스킬
+o   Linux 시스템 운영 경험
+o   Shell 스크립트 작성 겸험 
+o   리눅스 트러블슈팅경험
+-  DBMS 관련 지식 및 스킬 
+         o    SQLD 자격증 보유 또는 그 수준의 쿼리 작성 능력
+         o    RDBMS 운영 경력
+-  네트워크 관련 지식 및 스킬 
+
+-       VMWare, AWS 사용 능력
+-       VM 사용 능력 
+-       클라우드 인프라에 대한 경험 (AWS 등)
+
+  [우대사항]
+  -IT 자격증 소지자 (정보처리기사 등)
+ - 자사 솔루션의 아키텍쳐를 철저히 이해하고, 보안 문제를 찾아내고 해결책을 제시하는 역량과 열정.
+ - 다양한 데이터베이스, 메시징 및 분산 시스템을 포함한 다양한 기술 스택에 대한 깊은 관심과 지속적인 학습 열정을 보유
+
+
+[참고사항]
+-  근무지:마포
+-  처우:현연봉 및 면접내용에 따른 협의
+
+
+ 
+
+접수방법:이메일접수(cindy@humantree.net )
+담당자: Cindy.HAN
+
+No images found in iframe.

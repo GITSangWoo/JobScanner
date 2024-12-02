@@ -1,0 +1,56 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49361540&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=34f6ab08-9fde-4668-8a44-8ef9f177171f
+
+Iframe Text Content:
+백엔드 개발자 (병역특례, 전문연구요원 가능)
+서비스 소개
+아이알엠은 2013년 창업하여 의료영상, 빅데이터, 인공지능의 3가지가 만나는 지점에서 다양한 의료데이터를 통합, 저장, 처리, 교류하게 해 주는 제품과 서비스를 개발, 판매하고 있습니다.
+
+아이알엠은 분당서울대학교병원, 세브란스 병원, 가톨릭대학교 서울성모병원, 은평성모병원 등 국내 유수의 대학병원들과 의원급 의료기관들을 대상으로 자사의 서비스와 솔루션을 공급하여 운영중이며, 이 외에도 아래와 같은 다양한 국내외 기관 및 기업체들과 솔루션과 서비스를 공급하고 운영하고 있습니다.
+
+• 보건의료정보원, 한국환경산업기술원, 광주테크노파크 등 공공기관 의료정보서비스 관련 프로젝트 사업 수행
+• 루닛, 딥노이드, 비트컴퓨터, 코어라인소프트, 더존소프트, 아헬즈헬스케어 등 다양한 유관 기업들과 의료솔루션 및 서비스 제휴 운영 등
+• 카자흐스탄, 우즈베키스탄등 중앙아시아 의료솔루션 공급 및 운영
+• 베트남, 인도네시아, 미얀마, 라오스, 캄보디아 등 동남아시아 의료솔루션 공급 및 운영
+
+자세한 사항은 홈페이지 www.irm.kr
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Spring Data JPA Spring Framework SQL Java Linux .NET
+주요업무
+• Java Spring, Spring boot, C# 등 백엔드 개발
+• 의료데이터 플랫폼 개발 및 구축
+• 의료데이터 표준 연계 인터페이스 개발
+• 진료정보교류 시스템, HL7 표준(FHIR, CDA) 활용
+• PostgreSQL, MS-SQL DB 활용
+• 개발 산출물 작성
+자격요건
+• Java Spring, Spring boot, C# 개발 경력(3년 이상)
+• Java Spring, Spring boot, JPA, Linux 서버 환경에 대한 이해 및 개발 경험
+• Rest API 설계 및 개발 경험
+• RDBMS(PostgreSQL, MS-SQL) 경험
+• 긍정적인 마인드로 새로운 도전을 즐기는 분
+• 의료데이터 플랫폼 및 표준에 관심이 많고 학습의지가 있는 분
+우대사항
+• 의료정보, 의공학 관련 전공자
+• 의료정보 관련 시스템 개발 경력 
+• C# 관련 개발 경력
+마감일 및 근무지
+• 마감일 : ~2024-12-08
+• 근무지
+- 경기 성남시 분당구 황새울로342번길 21 6층 일부
+복지 및 혜택
+• 각종 경조사 지원, 인센티브제, 스톡옵션, 퇴직금, 4대보험,
+• 자기개발: 업무관련 교육비 및 도서 지원
+• 사내활동: 각종 동호회 지원
+• 보상제도: 우수사원 포상, 장기근속자 포상 및 휴가
+• 탄력 근무제(8:30~10:00), 야근식대, 야근 교통비 지원, 통신비 지원
+
+Iframe Image Links:
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png
+Image: Spring Framework | Link: https://cdn.jumpit.co.kr/images/stacks/springframework.png
+Image: Java | Link: https://cdn.jumpit.co.kr/images/stacks/java.png
+Image: Spring Data JPA | Link: https://cdn.jumpit.co.kr/images/stacks/SpringDataJpa.png
+Image: SQL | Link: https://cdn.jumpit.co.kr/images/stacks/sql.png
+Image: .NET | Link: https://cdn.jumpit.co.kr/images/stacks/ASP_NET.png

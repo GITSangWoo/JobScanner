@@ -1,0 +1,34 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49407675&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=2ab04d28-119b-4eb2-8c20-16b72bf3e1b1
+
+Iframe Text Content:
+안녕하세요?
+라인서치의 헤드헌터 박형규 대표입니다.
+저희는 반도체,디스플레이팀/전자,IT팀/기계,화학팀/제약,바이오팀을 주축으로 
+최고 임원급을 비롯하여 각분야 실무 전문가들을
+추천드리는 헤드헌팅업계를 리딩하는 전문회사입니다.
+좋은 포지션을 추천드립니다.
+
+
+[ 모듈 설계 엔지니어 ]
+
+Tx module designer - 2名
+• RF front-end module 개발 경험자 (Mobile or Automotive)
+• Packaging substrate design (laminate or LTCC)
+• PA application design
+• SAW or BAW application design
+• Top simulation (ADS FEM or ANSYS HFSS)
+• 과/차장급 이상
+
+• 우대사항
+-. Project Lead (PL) 이력 (양산 과제 뿐 아니라 선행 과제도 무관)
+-. Mass product 이력 (양산)
+-. RF 관련 전공자
+-. Thermal simulation (ANSYS ICEPAK or ADS ETH)
+-. 전공 관련 특허 출원 이력
+
+경력과 매칭되시는 분은
+line@linesearch.co.kr로 이력서를 보내주시거나,
+010-5176-5075로 문의바랍니다.
+감사합니다.
+
+No images found in iframe.

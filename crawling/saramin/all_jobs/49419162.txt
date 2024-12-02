@@ -1,0 +1,98 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49419162&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=34f6ab08-9fde-4668-8a44-8ef9f177171f
+
+Iframe Text Content:
+Software Engineer(Frontend)
+서비스 소개
+레브잇은 "올웨이즈"라는 모바일 커머스를 운영하고 있습니다.
+올웨이즈는 Discovery형 커머스로, 게임, 소셜 등의 다양한 서비스들을 커머스에 녹여내고 있으며,
+2021년 9월 앱 정식 런칭 이후 빠르게 성장하여, 2024년 1월 기준 MAU 340만, DAU 160만, 월 거래액 640억을 달성했습니다.
+
+[합류하게 될 팀]
+• Software Engineer(Frontend)는 목적조직으로 Group에 소속되어 다양한 Maker와 함께 그로스/커머스 제품을 개발하고, 기능조직으로 Frontend Chapter에 소속되어 높은 개발 생산성과 개발문화를 만들어가고 있습니다.
+• 레브잇의 모든 구성원은 누군가에게 업무를 지시하는 것이 아니라, 본인 영역의 직무전문성을 발휘하고 동료들과 협업하여 비즈니스 목표달성에 기여하고 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+GitHub Actions AWS React Query GraphQL React Native React JavaScript TypeScript mobX Git
+주요업무
+• 올웨이즈 Growth Feature/Commerce Platform 제품의 웹/앱 컴포넌트 설계, 개발, 테스트 및 운영을 담당합니다.
+• 서비스 아키텍처 설계부터 출시까지 전 과정에 참여합니다.
+• Frontend 개발 환경을 구축하고 개선하여, 뛰어난 사용자 경험(UX)과 높은 개발 생산성을 목표합니다.
+자격요건
+• 만 3년 이상의 Frontend 개발 경력에 준하는 역량을 보유하신 분
+• HTML, CSS, TypeScript/JavaScript 에 대한 깊은 이해를 보유하신 분
+• React/Vue/Angular 와 같은 모던 프레임워크 사용에 능숙하신 분
+• 사용자 경험(UX)에 대한 관심을 바탕으로 전사적인 관점에서 임팩트를 추구하시는 분
+• 빠르게 개발하고 배포하는 조직에서 주도적으로 일해 보신 분
+• 단순히 주어진 개발을 해내는 것보다, 주도적으로 문제를 발견하고 분석해 팀에 솔루션을 제안할 수 있는 분
+
+[기술 스택]
+• 프로그래밍 언어: HTML, CSS, TypeScript/JavaScript
+• 프레임워크: React, React Native
+• 데이터 관리와 API 통신: GraphQL, Relay, React Query
+• 클라우드 서비스: AWS (EC2, S3, Lambda, Route 53, CloudFront 등)
+• CI/CD: GitHub Actions, Argo CD
+• 버전 관리: Git
+• 상태 관리: MobX, zustand
+• 모니터링 및 로깅: Datadog, Sentry
+• 협업 도구 : Slack, Jira
+우대사항
+• 게임/앱테크/커머스/플랫폼 관련 도메인 경험이 있는 분
+• 업무 비효율을 줄이고 자동화와 최적화로 팀의 생산성을 높일 수 있는 분
+마감일 및 근무지
+• 마감일 : ~2024-12-18
+• 근무지
+- 서울 관악구 남부순환로 1836 7층, 8층
+복지 및 혜택
+[보상 및 복지]
+• 최고 수준의 보상
+업계 최고의 보상 제공
+반기(연 2회) 연봉 협상
+
+• 자율과 신뢰
+자율 출퇴근 제도 운영
+무제한 휴가 제도 운영
+개인 법인카드 제공 (식대 및 야근 교통비 지원)
+
+• 건강 및 생활 지원
+50만원 상당의 건강검진 지원
+심리 상담 서비스 제공
+체력단련비 지원
+매월 올웨이즈 쇼핑 지원금 지급
+명절 선물 지급
+
+• 몰입을 위한 환경
+최고급 하드웨어 및 소프트웨어 제공
+리프레시 휴가 및 휴가비 지원
+업무 몰입에 최적화된 근무 환경 제공
+
+• 성장과 학습 지원
+도서 구매비 지원
+구독 서비스 비용 지원
+직무 교육비 지원
+
+[근무 조건]
+• 정규직(수습기간 3개월)
+• 주 5일(월~금) 근무
+채용절차 및 기타 지원 유의사항
+[합류여정]
+• 서류접수 > 직무 과제 > 1차 대면 인터뷰(직무 인터뷰) > 2차 대면 인터뷰(컬쳐 인터뷰) > 레퍼런스 체크 > 처우 협의 > 최종합격
+
+[기타사항]
+• 레브잇은 지원자의 역량을 최우선적으로 검토하고 있습니다. 이력서 제출 시 직무와 무관한 개인정보 및 연봉 정보는 삭제 후 
+ 지원 부탁드립니다.
+• 이력서 및 제출 서류에 허위 사실이 발견되거나 근무 이력 중 징계사항이 확인될 경우, 채용이 취소될 수 있습니다.
+• 레브잇 내규에 따라 채용 금지자 또는 결격사유 해당자는 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: AWS | Link: https://cdn.jumpit.co.kr/images/stacks/aws.png
+Image: JavaScript | Link: https://cdn.jumpit.co.kr/images/stacks/javascript.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: GitHub Actions | Link: https://cdn.jumpit.co.kr/images/stacks/githubactions.png
+Image: React Query | Link: https://cdn.jumpit.co.kr/images/stacks/ReactQuery.png
+Image: Git | Link: https://cdn.jumpit.co.kr/images/stacks/git.png
+Image: mobX | Link: https://cdn.jumpit.co.kr/images/stacks/mobX.png
+Image: React | Link: https://cdn.jumpit.co.kr/images/stacks/react.png
+Image: React Native | Link: https://cdn.jumpit.co.kr/images/stacks/reactnative.png
+Image: GraphQL | Link: https://cdn.jumpit.co.kr/images/stacks/graphql.png
+Image: TypeScript | Link: https://cdn.jumpit.co.kr/images/stacks/typescript.png

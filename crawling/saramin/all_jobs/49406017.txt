@@ -1,0 +1,74 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49406017&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=57f01d7b-50ea-41f6-85c2-24d64c68b2b5
+
+Iframe Text Content:
+딥러닝 알고리즘 엔지니어(신입)
+서비스 소개
+블루닷은 시스템 반도체와 인공지능을 활용한, 빠르고 지능적인 영상처리 및 영상압축 기술을 서비스하는 스타트업입니다.
+
+인공지능을 활용한 영상처리 시, High Computing Power 를 요구합니다. 처리결과를 만들기 위해서, 많은 자원(GPU, NPU etc)과 긴 처리시간이 필요합니다. 이는 좋은 알고리즘이 서비스되기 어려운 이유입니다. 블루닷은 반도체 설계경험과 경량화기술을 적용하여, SOTA 영상처리 알고리즘을 고성능으로 구현하고 있습니다.
+
+블루닷에서는 빠르고 지능적인 영상처리 서비스 개발에 도전할 딥러닝 알고리즘 엔지니어를 찾습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Node.js C++ C Python Java Linux
+주요업무
+• 딥러닝 기반 영상처리 알고리즘 개발
+- AI 논문 서치 및 리뷰를 통한 구현 및 학습
+
+• 실시간 영상처리 제품을 위한 네트워크 최적화
+- 뉴럴 네트워크 경량화 및 최적화(화질, 사용자원, 속도 tradeoff) 작업 수행
+자격요건
+• 컴퓨터비전/머신러닝/딥러닝 지식 보유 및 관련 프로젝트 수행 경험자
+• 영상처리 관련 프로젝트 수행 경험자(Super resolution, Denoising, Deblurring, Color adjustment 등)
+• 딥러닝 프레임워크 (e.g. Pytorch, Tensorflow 등) 개발 가능
+우대사항
+• Top Tier 컨퍼런스 및 저널 1저자 경험
+• 뉴럴 네트워크 경량화 및 최적화 경험 및 기술 보유
+• 상용화(가능) 서비스 및 제품에 탑재된 알고리즘 개발 경험
+• 병역특례
+마감일 및 근무지
+• 마감일 : ~2024-12-17
+• 근무지
+- 서울 강남구 언주로 527, 4층
+복지 및 혜택
+블루닷은 직원의 행복한 삶을 응원합니다.
+
+[Life]
+• 복지포인트 지급
+ 자기개발, 여가/취미 활동지원을 위한 복지포인트를 지급합니다.(연 최대 150만원)
+• 경조사 지원
+ 결혼, 출산, 장례 등 중요한 경조사에 축하 및 조의를 전하며 화환 및 경조비를 지급합니다.
+• 명절 및 기념일 선물
+ 명절과 기념일에 감사의 마음을 전하기 위해 소정의 선물을 지급합니다.
+
+[Wellness]
+• 종합건강검진 지원
+ 직원의 건강관리를 위한 종합건강검진을 지원합니다.(연 1회, 100만원 상당)
+ 
+[Work]
+• 자율근무 및 휴가제도 운영
+ 최적의 시간과 공간을 선택할 수 있는 자율 근무와 자율 휴가 제도를 운영합니다.
+ (정해진 근무시간 없이 자유롭게 출근하시고, 법정 휴가 소진하셨어도 일정에 맞게 휴가 사용하실 수
+ 있습니다:))
+• 업무성장 지원
+ 직원의 성장을 위해 업무 관련 도서 및 외부 교육을 지원합니다.
+• 야근 지원
+ 야근 시 수고한 직원을 위해 식대와 교통비를 지급합니다.
+• 팀활동비 지원
+ 팀의 원활한 협업과 소통을 위한 팀활동비를 지원합니다.
+• 스카우트 리워드
+ 함께 일하고 싶은 동료를 추천해주세요! 그럼 스카우트 리워드가 지급됩니다.
+• 업무환경 개선
+ 최고의 퍼포먼스를 위해 업무환경을 끊임없이 개선하고자 노력합니다.
+채용절차 및 기타 지원 유의사항
+[서류전형 - 대면면접(논문발표, 코딩테스트 포함) - 처우협의 - 최종입사]
+
+Iframe Image Links:
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: C | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Node.js | Link: https://cdn.jumpit.co.kr/images/stacks/node.js.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png
+Image: Java | Link: https://cdn.jumpit.co.kr/images/stacks/java.png
+Image: C++ | Link: https://cdn.jumpit.co.kr/images/stacks/CPlusPlus.png

@@ -1,0 +1,46 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49361545&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=247db45f-e38b-42ca-aca6-715508bf425a
+
+Iframe Text Content:
+[에듀테크 기업]AI Researcher 채용
+모집부문 및 상세내용
+    담당업무
+핵심 AI 연구 조직으로서, 우리는 AI를 통해 효율적이고 창의적인 학습 환경을 조성하는 데 기여합니다.
+올바른 기획, 빠른 문제해결능력 및 기술 적용을 통해 AI 모델의 산출물이 사용자의 직접적인 가치로 이어지도록 합니다.
+더 나아가, 올바른 데이터 기획을 통해 서비스에서 모인 데이터가 유저의 경험을 향상시키는 데이터 선순환 구조를 만들어냅니다.
+위에 언급된 일련의 과정에서 얻어진 연구 결과를 논문화 합니다.
+현재 진행되고 있는 프로젝트들은 다음과 같습니다.
+- LLM-based Tutoring
+- Personalized Generative Modeling (TTS, Text-to-Image Diffusion)
+- Assessment Modules for ITS (KT, CAT, ...)
+자격요건
+AI 관련 분야 석사학위 이상 또는 그에 준하는 경력을 가지신 분 (2년 이상의 AI 관련 프로젝트 경험)
+Huggingface 등을 기반으로 다양한 AI 모델을 빠르게 구현할 수 있는 능력
+ROI/Impact-driven 의사결정 능력 및 성장지향성을 갖추신 분
+LLM (prompting, fine-tuning, RAG 등) 관련 기술에 대한 깊은 이해가 있으신 분
+Speech 관련 모델링 (ASR, TTS, Speech Assessment 등) 경험이 있으신 분
+Image/Video Generative Modeling 관련 경험이 있으신 분
+AI 관련 주요 학회 및 저널에 게재된 논문에 주요 저자로 참여하신 경험이 있으신 분
+기타사항
+- 근무지  : 서울특별시 강남구 테헤란로 
+- 근무시간 : 오전8시30분~오전10시30분 자율 출퇴근제 (금요일 2시간 단축근무)
+- 채용절차 : 서류전형-직무 인터뷰(논문/프로젝트 발표) > Culture Fit 인터뷰 -입사확정
+- 복리후생 : 
+  • 온/오프라인에서 자유롭게 사용 가능한 복지포인트 지급
+  • 오피스 라운지에 커피, 음료 상시 지원
+  • 근속 3년 시, 리프레쉬 휴가 및 호텔 식사권 지급
+  • 근속 5년 시, 리프레쉬 휴가 및 300만원의 휴가 지원비 지급 등
+
+
+전형절차
+서류전형
+직무 인터뷰(논문/프로젝트 발표)
+Culture Fit 인터뷰
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 11월 8일 (금) 10시 ~ 2024년 12월 8일 (일) 24시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+No images found in iframe.

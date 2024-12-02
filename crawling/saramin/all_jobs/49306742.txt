@@ -1,0 +1,74 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49306742&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=34239cb3-23b5-4922-9da0-4f2d19f52223
+
+Iframe Text Content:
+[EvryAI] 백엔드 개발자 채용
+서비스 소개
+주식회사 EvryAI Korea는 AI 기반 솔루션 전문 기업으로, 혁신적인 인공지능(AI) 기술을 통해 삶의 효율성을 극대화하는 데 주력하고 있습니다. 
+우리는 첨단 AI 알고리즘과 데이터 분석 기술을 결합하여 다양한 산업 분야에 맞춤형 솔루션을 제공하며, 시장을 선도하는 것을 목표로 합니다.
+특히, 여러 분야에서 AI를 활용한 제품과 서비스를 통해 일상생활의 편리함과 생산성을 향상시키고자 합니다.
+AI 기술 혁신을 기반으로 글로벌 시장에서의 입지를 강화하며, 미래를 이끌어 나가는 선도 기업으로 성장할 것 입니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Python Docker Git Linux AI/인공지능 DeepLearning NLP TensorFlow PyTorch
+주요업무
+ㆍ사용자의 문제를 AI 기술로 해결하기 위한 플랫폼 개발
+ㆍ보이스봇과 같은 고도화 프로젝트 수행
+ㆍAPI 개발 및 시스템 연동
+ㆍDB 설계, 프론트와 AI 시스템간의 연동
+자격요건
+ㆍSW개발 경력 4년 이상 개발 경험
+ㆍ최소 3년 이상의 개발 경력을 보유하신 분
+ㆍNode.js, Python 등 서버 개발 언어 사용
+ㆍREST API 설계 및 개발 경험
+ㆍAWS 클라우드 인프라 경험
+ㆍAWS 경험이 있으신 분
+ㆍGIT 사용하여 코드관리 및 리뷰 가능하신분
+ㆍDocker, Kubernetes 등 컨테이너화 및 오케스트레이션 도구 경험
+ㆍAgile 및 DevOps 방법론에 익숙하신 분
+ㆍ문제 해결을 위한 도전정신 및 응용능력
+우대사항
+ㆍ오픈소스 분석 경험, 디자인 패턴, 리팩토링 지식 및 경험이 있는 분
+ㆍ스타트업 경험 또는 역할을 보유하신 분
+ㆍ영어로 기본적인 의사소통이 가능하신 분
+ㆍ자료구조 / 알고리즘 이해
+ㆍUNIX / Linux OS 설치 및 Shell 사용 능숙자
+ㆍ서버 / 클라이언트 / 웹 동작 개념 이해
+마감일 및 근무지
+• 마감일 : ~2024-11-30
+• 근무지
+- 강원특별자치도 원주시 입춘로 45 C동 904호
+복지 및 혜택
+ㆍ업무 효율을 위한 최상급 장비 지원 - 맥북/듀얼모니터/모니터암 등 업무에 필요한 물품이라면 뭐든지!
+
+ㆍ무제한 간식/음료/커피머신 - 스백바 및 커피머신 설치 완료, 원하는 간식이 있다면 언제든 주문 가능!
+
+ㆍ식비/통신비 지원 - 자유로운 점심 식대 지원과 업무용 통신비 지원까지!
+
+ㆍ수평적 조직문화 - 회식 및 야근 강요 없어요. 연차 및 복장도 자유롭게!
+
+ㆍ그 외 당연한 모든 것 - 4대보험, 각종 경조사 지원, 도서구입비, 야근 교통비/식대, 상여금, 생일자 조기 퇴근 등
+채용절차 및 기타 지원 유의사항
+[채용절차]
+• 서류전형 → 1차 인터뷰 → 2차 인터뷰(코딩테스트) → 처우 협의 → 최종합격
+※절차는 변경될 수 있습니다.
+
+[지원 시 주의사항]
+• 3개월의 기간제 수습 기간이 있습니다.(수습 기간 동일 급여와 복리후생 보장)
+• 포트폴리오 제출 시,10MB 초과할 경우에는 링크를 기재해주세요.
+
+[참고사항]
+• 서류 합격자에 한해 연락드립니다.
+• 본 채용은 수시 진행으로 우수 인재 채용 시 마감될 수 있습니다.
+
+Iframe Image Links:
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: DeepLearning | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: PyTorch | Link: https://cdn.jumpit.co.kr/images/stacks/pytorch.png
+Image: Git | Link: https://cdn.jumpit.co.kr/images/stacks/git.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png
+Image: AI/인공지능 | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Docker | Link: https://cdn.jumpit.co.kr/images/stacks/docker.png
+Image: TensorFlow | Link: https://cdn.jumpit.co.kr/images/stacks/tensorflow.png
+Image: NLP | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

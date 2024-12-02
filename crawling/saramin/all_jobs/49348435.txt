@@ -1,0 +1,63 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49348435&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=50b0ce6c-3f22-47de-8fc1-253b55607db6
+
+Iframe Text Content:
+HW Engineer (전문연구요원)
+서비스 소개
+"Video Technology Leader for Silicon HW IP"
+국내 유일의 반도체 설계자산 (Silicon IP) 기업으로, Video Codec, Computer Vision, ISP를 연구개발하며 비디오 IP에 특화된 전문회사 입니다. 근로자 80%가량이 개발자이며, 개발자가 근무하기 좋은 환경을 위해 끊임없이 고민합니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+C++ C Python Verilog HW FPGA ASIC
+주요업무
+[함께 하게 될 업무]
+
+• Video codec standard 또는 Video 입출력과 관련된 Spec and Algorithm을 이해하여, 경쟁력 있는 하드웨어 IP 구조를 고안하고, 설계, 검증하는 업무를 합니다.
+• 설계 및 검증의 결과물은 HW Architecture document,Verified RTL code, Testbench, Performance/Power/Bandwidth/Synthesis Report 등 입니다.
+
+[Architecture]
+
+• Macro Architecture : Video HW system 전반적인 요구 조건(Performance, AXI Latency Tolerance, Bandwidth, Access Pattern, Area, Schedule) 등을 이해하고 sub-module 간 pipeline 과 전체 control flow를 고안하며, top level 검증 시나리오 작성 등의 업무를 포함 합니다.
+
+• Micro Architecture : Sub-block 의 function 및 Performance 등의 동작 요구 조건을 고려해서 Control Flow, Data Flow, Internal Memory Access, External Memory Access, Testbench 구조 등을 구체적으로 고안합니다.
+
+[Implementation and Verification]
+• 합의된 Architecture 와 테스트 시나리오에 대해서 RTL module, Testbench, Required script 등을 작성하고 원하는 기능 동작을 하게 만듭니다.
+• Performance/Area/Synthesis Timing이 target을 만족하도록 만듭니다.
+자격요건
+• 디지털 로직 설계에 대한 탄탄한 기초가 필수적입니다.
+- 원하는 기능의 HW module/Testbench/script를 Verilog / SystemVerilog / Python 으로 구현하고 디버깅할 수 있는 능력이 필요합니다.
+- 간단한 C code를 이해하고 필요에 맞게 수정할 수 있어야 합니다.
+- ASIC/SOC/FPGA 의 설계 개발 Flow 및 Tool Chain, AMBA Protocol 에 대한 기본 지식과 경험이 필요합니다.
+- 설계, 검증 관련 경험이 부족하더라도 적극적으로 배우려는 자세를 가진 분을 선호합니다.
+• 협업에 어려움이 없어야 합니다.
+- 대부분의 업무가 같은 팀(HW Architect, HW Designer) 혹은 다른 팀 동료(Algorithm Expert, Verification Expert)와 협업을 통해 진행하기 때문에 능숙한 커뮤니케이션 능력이 있는 분을 선호합니다.
+- 미숙한 부분이 있더라도 기꺼이 노력하는 자세, 즐겁게 co-work 하는 자세를 가진 분을 선호합니다.
+우대사항
+• Video Codec Standard 에 대한 이해가 있는 분을 우대합니다.
+• Codec에 대한 이해가 없더라도 Video Format 혹은 Video Data 의 특성에 대한 기본적인 지식을 우대합니다.
+마감일 및 근무지
+• 마감일 : ~2024-12-05
+• 근무지
+- 서울시 강남구 테헤란로 509(삼성동,NC타워) 7~8F
+복지 및 혜택
+• 유연근무 (Core time 운영)
+• Refresh 휴가 및 휴가비 지원
+• 선택적복리후생비 연 300만원 제공
+• 어학교육비 지원
+• 연 70만원 상당 건강검진 제공
+• 사내 세미나 활성화 등 개발 역량 향상을 위한 지원
+• 수평적 분위기 (사원부터 대표까지 모두 영어 닉네임 사용)
+채용절차 및 기타 지원 유의사항
+코딩TEST 및 1차 인터뷰 ＞ 2차 인터뷰 ＞ 최종합격
+*상황에 따라 변경될 수 있습니다.
+
+Iframe Image Links:
+Image: ASIC | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: C | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: FPGA | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Verilog | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: C++ | Link: https://cdn.jumpit.co.kr/images/stacks/CPlusPlus.png
+Image: HW | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

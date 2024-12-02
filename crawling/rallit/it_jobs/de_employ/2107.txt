@@ -1,0 +1,80 @@
+URL: https://www.rallit.com/positions/2107/%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4-pm
+1/1
+메이븐클라우드서비스 주식회사, 어떤 곳인가요?
+안녕하세요.
+메이븐클라우드서비스㈜ 는
+마이크로소프트 클라우드 서비스(Microsoft Cloud Service)의 솔루션 파트너로 Microsoft DW&BI, Microsoft 365, Azure등의 라이선스 컨설팅,
+다양한 프로젝트 개발 및 프로젝트 기술지원, 유지보수 그리고, Microsoft Learning Partner의 전문 교육센터를 보유하고 있는 IT기업 입니다.
+데이터엔지니어/PM, 어떤 일을 하나요?
+PM 가능한 데이터 엔지니어를 채용하고 있습니다.
+#sql-query
+#R
+#Python
+주요업무
+Pre-Sales (프로젝트 요건 파악, 개발구축을 위한 업무 분석 등)
+솔루션 개발을 위한 아키텍쳐링
+프로세스 및 기능 컨설팅
+고객사DB구축 (Data Mart, Data Warehouse 등)
+데이터 모델링 및 추출
+프로젝트 리딩(PM/PL)
+자격요건
+Data flow Architecture 설계가 가능하신 분
+ETL 파이프라인 구축 경험이 있으신 분
+SQL Query 작성 및 Index 최적화가 가능하신 분
+Stored Procedure in SQL Server 작성이 가능하신 분
+Data 엔지니어로서 BI (예 : Tableau, Power BI 등)에 대한 이해도가 있는 분
+PM업무 수행이 가능하신 분
+우대사항
+정형/비정형 데이터 처리 경험이 있으신 분
+Data Mart, Data Warehouse, Data Lake 구축/운영을 해보신 분
+데이터 표준화 및 품질관리 업무를 경험해 보신 분
+Power BI 활용 경험이 있으신 분
+R, Python, Pyspark Programming 경험이 있으신 분
+혜택 및 복지
+자율복장
+반차, 반반차 제도
+시차출퇴근제 운영
+사내 카페테리아
+웰컴키트 제공
+자격증 등 각종 수당제도
+사내 동호회 지원
+채용 절차
+서류 접수
+실무 면접
+임원 면접
+최종 합격
+채용 절차는 일정 및 상황에 따라 달라질 수 있습니다.
+지원서 내용 중 허위 사실이 있는 경우에는 합격이 취소될 수 있습니다.
+메이븐클라우드서비스 주식회사에서 전하는 미래 동료에게 한마디
+안녕하세요.
+저는 메이븐 클라우드 서비스에서 채용업무를 담당하고 있는 조은경 과장입니다.
+현재 메이븐 클라우드 서비스에서는 회사와 함께 성장해 나갈 인재를 채용하고 있습니다.
+현재 자기 개발을 위해, 혹은 다른 이유들로 인해 이직을 고민하고 계시는 중이시라면 메이븐 클라우드 서비스에 지원을 긍정적으로 검토해주시면 감사하겠습니다.
+메이븐 클라우드 서비스는 마이크로소프트 클라우드 서비스(Microsoft Cloud Service)의 솔루션 파트너로
+Microsoft DW&BI, Microsoft 365, Azure 등의 라이선스 컨설팅, 다양한 프로젝트 개발 및 프로젝트 기술지원, 유지보수 그리고, Microsoft Learning Partner의 전문 교육센터를 보유하고 있는 IT 기업입니다.
+또한 구성원들의 성장 및 복지를 위해 Happy Hour나 반반차제도, 시차출퇴근제 도입 등을 시작으로
+구성원 친화적인 환경을 구축하기 위해 현재도 많은 Staff 부서의 인원들이 불철주야 노력하고 있습니다.
+남은 하루도 즐거운 하루 되시길 바라겠습니다.
+감사합니다.
+조은경 드림.
+담당자 연락처
+amy.jo@mavencloudservice.com
+02-2139-9622
+010-2699-1130
+홈페이지 : www.mavencloudservice.com
+블로그 : blog.naver.com/mavencloudservice_
+인스타그램 : www.instagram.com/maven_cloud_service
+트위터 : twitter.com/maven_cs
+근무 지역
+서울 강남구 언주로 609 팍스타워 B동 14층
+데이터엔지니어/PM
+경력
+시니어 (9년 이상)
+최소 연봉
+회사 내규에 따름
+마감일
+채용 시 마감
+회사명
+메이븐클라우드서비스 주식회사
+2
+지원하기

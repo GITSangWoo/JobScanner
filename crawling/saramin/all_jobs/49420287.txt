@@ -1,0 +1,73 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49420287&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=306a7e39-b2d8-44ae-a1dd-b7fb3a2c76cc
+
+Iframe Text Content:
+모집부문 담당업무 자격요건 및 우대사항 인원
+TA, AA
+SWA, NA
+경력직 채용
+
+(LG그룹
+SI 프로젝트)
+[프로젝트 TA 담당자]
+- LG그룹사 테크니컬 아키텍처 업무
+- 제안 / 분석 / 솔계 / 구축 / 이행
+- 기타 프로젝트 관련 업무
+
+[프로젝트 AA 담당자]
+- LG그룹사 어플리케이션 아키텍처 업무
+- 업무영역 및 내부로직 설계
+- 기타 프로젝트 관련 업무
+
+[프로젝트 SWA 담당자]
+- 시스템 SW(DB포함) 및 응용 시스템 이전 계획 수립
+- SM 응용 담당자 컨택 및 인터뷰
+- 서비스 인터페이스 현황 조사 및 연관 서비스 조사
+- 인스턴스 현황 조사 및 재기동 절차 수립
+- 서비스 점검 체크리스트 수립
+- 산출물 작성 및 보고 등
+
+[프로젝트 NA 담당자]
+- LG그룹사 프로젝트 아키텍처 업무
+- 기타 프로젝트 관련 업무
+- 필요기술 (프로젝트에 따라 필요기술 상이함)
+[자격요건]
+* SWA
+- (WEB,WAS,DB) 요구분석/설계/구축 문서작성 실무 가능자
+* AA
+- 인프라 (업무영역 및 내부로직 설계) 실무 가능자
+* TA
+- 인프라 (Linux/Linux/스토리지/HA) 요구분석/설계/구축 문서작성 실무 가능자
+* NA
+- 인프라(보안/네트워크) 요구분석/설계/구축 문서작성 실무 가능자
+- 영역별 트러블 슈팅 가능자
+
+[우대사항]
+- 원활한 소통 능력 보유자
+- 업무 수행 책임감 보유자
+- 센터이전 경력 보유자
+- 퍼블릭/프라이빗 클라우드 경력 보유자
+- K8s, EKs 경험 보유자
+- 오픈소스 경험 및  네트워크/보안 경력 보유자
+0명
+(정규직)
+
+ 근무조건
+ - 지      역 : 서울권 및 경기도권 (인터뷰 진행 시 협의) 
+ - 소속형태 : 유호스트 소속 프리랜서
+ - 처우조건 : 경력에 따라 업계 최고 수준 협의 
+ - 요      일 : 주5일 (토, 일요일 및 공휴일 휴무)  
+ - 시      간 : 09:00~18:00 (점심시간 11:30~12:30) 
+ - 복      장 : 분위기를 해치지 않는 편한 복장 
+ - 접수방법 : 경력기술서 이메일 사전 제출 시 진행이 빠름 (scout@youhost.co.kr)  
+ 접수방법
+ㆍ접수방법 : 온라인 입사지원
+
+
+                                                                          기업 홈페이지
+
+Iframe Image Links:
+Image: ㈜유호스트
+[IT영업/강남] (주)유호스트 본사 영업팀 정규직 채용 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit6/25_youhost_bottom_220720.png
+Image: ㈜유호스트
+[IT영업/강남] (주)유호스트 본사 영업팀 정규직 채용 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit6/25_youhost_top_220720.png
+Image: icon | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit5/sy_02_icon_orange.png

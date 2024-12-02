@@ -1,0 +1,109 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49409177&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=9289c623-8ec6-4767-adb2-c6e91dc2d7f5
+
+Iframe Text Content:
+Backend Engineer(5년 이상)
+서비스 소개
+안녕하세요? 초간단 물류 경쟁력, 콜로세움입니다.
+
+콜로세움은 물류센터 네트워크와 AI 솔루션을 통해 이커머스에 가장 최적화된 풀필먼트를 제공하는 서비스 플랫폼입니다. 
+
+지난 2019년 7월에 베타버전으로 서비스를 시작한 이후, 빠르고 단단하게 온라인 셀러들을 위한 온디맨드 풀필먼트를 만들어 가고 있습니다.
+
+기존의 이커머스 물류 공정을 새롭게 디자인하고, 그것을 안정적으로 수행하기 위한 솔루션과 오퍼레이션 그리고 영업과 마케팅 및 경영지원 등의 영역에서 멋진 팀워크와 반짝이는 역량을 보유하신 인재를 정중히 모시고자 합니다.
+
+[콜로세움의 성장스토리]
+• 노후한 창고에 인공지능 입히니 기업 맞춤 첨단 물류센터로 변신
+ https://www.mk.co.kr/news/it/view/2021/11/1089756/
+• 콜로세움, AI 풀필먼트 플랫폼으로의 도약을 위한 서비스 확대
+ https://mirakle.mk.co.kr/view.php?year=2021&no=891034
+• 콜로세움, 풀필먼트 고객 10명 중 8명 서비스 만족
+ http://www.klnews.co.kr/news/articleView.html?idxno=302029
+• 커머스 물류 페인포인트, 핵심을 찌른 스타트업
+ https://www.chosun.com/economy/smb-venture/2022/03/23/WT7DLTON4ZFVPHT7E56LAGC5PU/
+
+[콜로세움의 핵심가치]
+• 책임감: 압도적이거나 존경할 수 있는 수준의 퍼포먼스를 위한 책임감을 발휘합니다.
+• 약속: 약속을 잘 지키는 것은 기본, 약속을 잘 할 줄도 알아야 합니다.
+• 신뢰: 서로의 입장을 존중하고, 솔직하게 소통함으로써, 신뢰를 지속적으로 쌓아갑니다.
+• 업무적 완결성: 문제를 잘 정의하고 해결하기 위한 실무적인 완결성을 확보합니다.
+
+[콜로세움의 일하는 방식]
+• 고객중심 (현장에 답이 있다.): 콜로세움의 모든 의사결정은 고객과 현장에서 나오는 데이터를 최우선 기준으로 합니다. 
+• 투명성 (데이터 중심의 정보 공유): 업무와 관련한 모든 정보는 동일한 양과 질로 전구성원에게 공유합니다.
+• 직무 자존감 (프로페셔널리즘): 우리는 각자에게 주어진 역할과 업무에 있어, 프로다운 건강한 직무 자존감을 갖고 일합니다.
+• 피드백 관용성 (겸허한 성찰과 개선) : 우리는 조직의 미션과 비전의 달성을 위해 서로에게 피드백을 잘 할 줄 알고 피드백을 잘 받을 줄 압니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Spring Batch Spring Boot Kotlin Gradle Java Git Amazon RDS QueryDSL Mybatis Spring Data JPA MySQL
+주요업무
+• 소단위 파트 인원 관리 및 프로젝트 PL역할 수행
+• 온라인 판매자의 상품 입고부터 물류창고의 상품 출고까지 아우르는 물류관리 시스템 운영 및 설계/개발
+• 외부 시스템과의 연동을 통한 시스템 기능 강화
+• AWS를 이용한 서버, DB 운영 및 관리
+• 각종 로봇 및 보조 장비들과의 연동을 위한 콘솔 프로그래밍
+• 배치 프로그래밍을 이용한 각종 스케줄 잡 구성
+자격요건
+• 소단위 파트급 이상 운영, 관리 경험이 있으신 분
+• 다양한 서비스의 REST API를 연동하여 통합 시스템을 개발해 본 경험이 있으신 분
+• AWS의 다양한 서비스들을 사용하여 개발해보신 경험이 있으신 분
+• 웹 서비스 서버 개발 경험을 바탕으로, 꾸준히 기술적인 성장을 갈구고 성실하게 고민하고 문제를 함께 해결해가는 과정을 즐기실 수 있는 분
+• 비즈니스 요구 사항을 정확하게 이해하여, 능숙하게 데이터 모델과 API를 설계할 수 있는 분
+• 실무 경력 5년 이상이신 분
+• Confluence, JIRA, Slack 등 협업도구를 기반으로 한 커뮤니케이션이 원활하신 분
+• 해외 출장에 결격 사유가 없으신 분 
+
+* 사용 기술 스택
+
+Java, Gradle, Kotlin,Spring Boot, Spring Batch, 
+MySQL,JPA, Mybatis, Querydsl, AWS RDS
+Git,Jenkins,Harness,AWS ECS,Docker,Datadog
+우대사항
+• AWS를 이용한 인프라 구성 가능 역량이 있으신 분
+• AWS의 물류도메인 서비스 이용개발 경험이 있으신 분
+• WMS, Fulfillment, 이커머스 개발 경험이 있으신 분
+• Kubernetes 경험이 있으신 분
+마감일 및 근무지
+• 마감일 : ~2024-12-14
+• 근무지
+- 서울 강남구 역삼로 415, 3층 (성진빌딩)
+복지 및 혜택
+『우리가 함께 신날 수 있도록, 기분 좋은 보상과 지원을 제공합니다.』
+
+■ 자율적인 근무와 효율적인 휴식
+• 유연한 출퇴근제 운영
+• 자유로운 2시간 단위 연차 사용
+• 해피아워: 매월 3주차 금요일 조기 퇴근
+• 롱런데이 : 매월 1회 2시간 점심 시간 지원
+• 만 3년 근속마다 안식휴가 및 휴가비 지원
+
+■ 탁월한 업무와 역량 향상을 위한 지원
+• 추가근무 식대 및 교통비 지원
+• 커피/음료 및 간식 지원
+• 업무 관련 도서 및 콘텐츠 구입, 학습비 지원
+• 직무 관련 컨퍼런스 및 외부 세미나, 교육 참여 지원
+
+■ 행복 추구에 도움이 되는 보탬
+• 스톡옵션 부여(근무년수 및 평가등급 고려)
+• 전 직원 정기 건강검진
+• 생일 기념 반차 제공
+• 본인과 가족 경조사 휴가 및 축/조의금 지원
+• 설날/추석 명절 선물 지급
+• 동호회 지원
+• 블루보드(사내 복지/문화 개선 TF) 운영
+채용절차 및 기타 지원 유의사항
+서류전형 - 1차 비대면 직무 면접 - 2차 대면 종합 면접 - 처우 협의 및 입사일 결정 - 최종 확정 (각 전형단계별로 최대 1주일을 넘기지 않도록 하겠습니다.)
+
+Iframe Image Links:
+Image: Amazon RDS | Link: https://cdn.jumpit.co.kr/images/stacks/amazonrds.png
+Image: Gradle | Link: https://cdn.jumpit.co.kr/images/stacks/gradle.png
+Image: QueryDSL | Link: https://cdn.jumpit.co.kr/images/stacks/querydsl.png
+Image: Spring Boot | Link: https://cdn.jumpit.co.kr/images/stacks/springboot.png
+Image: Git | Link: https://cdn.jumpit.co.kr/images/stacks/git.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: Spring Batch | Link: https://cdn.jumpit.co.kr/images/stacks/springbatch.png
+Image: Kotlin | Link: https://cdn.jumpit.co.kr/images/stacks/kotlin.png
+Image: Java | Link: https://cdn.jumpit.co.kr/images/stacks/java.png
+Image: Spring Data JPA | Link: https://cdn.jumpit.co.kr/images/stacks/SpringDataJpa.png
+Image: MySQL | Link: https://cdn.jumpit.co.kr/images/stacks/mysql.png
+Image: Mybatis | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

@@ -1,0 +1,51 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=etc&rec_idx=49252671&searchType=search&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&search_uuid=0630e35c-2c7d-4416-80ce-7b8e4b281c8a
+
+Iframe Text Content:
+[수원/신입가능] 글로벌 기업 시냅틱스
+Application Engineer 채용
+
+[근무회사 및 모집부문]
+* 근무회사: 시냅틱스
+수백만명의 사람들이 매일 Synaptics를 경험합니다. 우리의 기술은 사람들이 집, 직장, 자동차 또는 이동 중에도 사람들이 만지고, 보고, 연결하고, 인지하고, 참여하고, 들을 수 있는 필수적인 기술을 제공합니다. Synaptics는 세계적 수준의 소프트웨어 및 실리콘 개발과 결합된 기계 학습, 생체 인식 및 비디오 처리와 같은 분야에서 가장 진보된 알고리즘을 사용하여 업계에서 가장 영향력 있는 회사와 함께 복잡한 문제를 해결합니다. 
+* Job title : Application Engineer
+* 신입이 지원하기 좋은 포지션입니다.
+  [업무내용]
+* Android Linux device driver 유지보수
+- Linux driver 변경사항 porting 및 검증
+  * FW 개발 업무 지원
+- FW 기능 검증을 위한 테스트
+- 장비를 이용한 데이터 측정
+  [지원자격]
+- 학사 이상 (졸업예정자 가능, 전자공학/전산/SW/컴퓨터공학 등 이공계 전공자 선호)
+- 주니어~대리급까지 고려 (신입가능)
+- 프로그래밍 언어 가능자 (C언어 이해)
+- 원활한 커뮤니케이션 능력
+  [우대사항]
+- 영어 이메일 작성 가능자
+- 원활한 커뮤니케이션 능력 보유자
+- 적극적이고 능동적인 성격 보유자
+  [전형절차]
+- 1차 서류전형 -> 2차 면접전형(매니저&팀원) -> 3차 면접전형(사장님&HR)
+* 면접절차는 상황에 따른 변동이 있을 수 있습니다.
+  [근무환경]
+- 급여조건: 회사 내규에 따름 (경력별 협의 : 이력서 상 직전연봉 및 희망연봉 기재 필수)
+- 근무위치: 경기도 수원시 영통구 망포역 인근
+- 근무시간: 주 5일 (09:30 ~ 18:30)
+- 근무기간: 채용 시 ~ 1년
+- 근무형태: 맨파워코리아 소속 파견계약직
+- 복리후생: 4대 보험, 연차, 연차수당, 제휴 호텔 할인, 화상영어 제휴 할인, 생일/명절 선물, 경조 휴가/경조금, 우수사원 시상 등 
+* 복리후생의 경우 회사 사정에 따른 변동이 있을 수 있습니다. *
+  [지원방법]
+1. 간편지원 : 링크 접속하여 지원하기(이력서 등록)
+https://manpowergroupkorea.ninehire.site/job_posting/T1hhhbif
+  2. 담당자 이메일로 지원
+- 국/영문 이력서 제출 (MS-word 양식)
+- 이메일 지원: ted.jeong@manpower.co.kr
+- 이메일 제목: 수원(SW/FW Engineer)_본인 성함 기재
+- 담당자: 정민호,  02-2051-6678
+  ** 서류전형 합격자에 한해 개별 연락 드립니다.
+** 이력서 접수 순으로 상시 면접 진행하고 있으며, 채용 완료 시 마감됨으로 빠른 지원 결정 부탁드립니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202410/23/slsbts_qe0o-1a0yb3h_recruit.png
+Image: No alt | Link: https://www.saraminimage.co.kr/sri/vix/template/toptype/sale2.png

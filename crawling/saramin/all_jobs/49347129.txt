@@ -1,0 +1,24 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49347129&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=abe19497-5b44-41e4-b532-de836b765221
+
+Iframe Text Content:
+모집부문 및 상세내용
+공통 자격요건
+ㆍ학사 및 전문학사 이상
+S/W 개발자 00명
+주요업무
+ㆍ 응용소프트웨어 개발 구축 및 유지보수
+ㆍ 구축형태 : On-Premise / Cloud
+
+주요스킬
+ㆍ프런트엔드 : C#, WPF, javascript
+ㆍ백엔드 : C#, .NET
+ㆍDB : Oracle, MYSQL
+
+지원자격
+ㆍ경력 2년 이상
+ㆍIT관련 전공 / 지방근무 가능자 우대
+
+Iframe Image Links:
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202409/06/sjdbme_9489-tofw4y_recruit.jpg
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202409/06/sjdbv5_khb8-tofw4y_recruit.jpg
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202411/06/smidgy_e424-tofw4y_recruit.jpg

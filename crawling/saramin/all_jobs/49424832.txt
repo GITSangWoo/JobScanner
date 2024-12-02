@@ -1,0 +1,60 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49424832&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=255f39c0-e5c6-48af-a584-51300758ac0c
+
+Iframe Text Content:
+Unity Client Engineer(앱 개발 경험 5년이상)
+Unity Client Engineer(앱 개발 경험 5년이상)
+  기술 스택
+프로그래밍 언어: C#, C++
+앱 개발: Unity, Unity Shader Graph, HLSL 셰이더
+개발 환경: JetBrains Rider, Xcode, Visual Studio Code
+도구 개발: Python, javascript
+CI/CD: Jenkins
+버전 관리: GitHub Enterprise, GitLab
+생산성 도구: GitHub Copilot, ChatGPT Plus, Google Workspace
+협업 도구: Slack, Notion
+
+주요 업무
+Unity를 활용한 스마트폰 앱 전반적인 개발 및 관리
+엔지니어 관점에서의 운영/기획안 제안
+게임 서비스 담당 시 추가 업무:
+게임 플레이 데이터 관리 및 성능 최적화
+클라이언트 로직, 매치메이킹, 랭킹 시스템 설계 및 구현
+네트워크 성능 최적화 및 보안 강화
+서버팀과 협력하여 안정적인 게임 환경 제공
+
+자격 요건
+Unity를 이용한 앱 개발 경력 5년 이상
+서버 통신 관련 개발 지식 보유
+원활한 의사소통 능력
+협업과 성장을 중시하는 태도
+
+우대 사항
+캐주얼 게임 클라이언트 개발 및 운영 경험
+리드 엔지니어 경력
+Unity 외 프레임워크 사용 경험
+C#, C++ 앱 개발 3년 이상 경력
+3D 콘텐츠 개발 경험
+성능 최적화 경험
+3D 모델링 툴 관련 개발 경험
+셰이더 관련 지식
+스크립트 언어를 이용한 개발 자동화 경험
+
+근무 조건
+경력: 5년 이상 ~ 20년 미만
+학력: 학사 이상
+근무지: 서울 종로구
+근무조건
+ㆍ 근무형태 : 정규직
+ㆍ 근무지역 : (03180) 서울 종로구 경교장길 5(교남동) - 서울 5호선 서대문 에서 300m 이내
+전형절차
+서류전형
+1차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 10월 11일 (금) 18시 ~ 2024년 10월 26일 (토) 24시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 자유양식
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+No images found in iframe.

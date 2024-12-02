@@ -1,0 +1,66 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49391729&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=57f01d7b-50ea-41f6-85c2-24d64c68b2b5
+
+Iframe Text Content:
+Data Engineer(경력5년) 채용
+서비스 소개
+어깨를 나란히 한 지난 10년 동안 청담러닝과 씨엠에스에듀는 각자의 자리에서 이야기를 만들어 왔습니다. 이제 그 이야기들이 하나로 모여 크레버스가 출범하였습니다.
+
+양사 통합은 ‘역량 발굴, 삶의 발견’이라는 미션을 실현하여 21세기 인재를 양성하기 위함입니다. 그 방법론적 핵심 개념으로 문해력/상상력/서사력을 제시합니다.
+크레버스는 이 세 가지 방법론을 영어/수학/코딩의 세 가지 영역에서 전개하고 나아가 3개 영역을 융합합니다.
+
+사업전략을 보면 4개의 전략 층위가 있음을 알게 됩니다. 전통적 LC사업에 7개 브랜드가, VLC사업 층위에 3개 브랜드가 포진하고 있습니다.
+VLC 제품은 LC 커리큘럼을 반영하지만 가상성을 도입하여 새로운 체험을 낳고, 시공간 및 비용 면에서 편익도 제공합니다.
+
+3번째 층위를 구성하게 될 모듈형 융합 브랜드 사업은 미디어/디지털 기반으로 가상성을 한층 심화하는 한편 신개념 혼성(hybrid) 학습에도 도전합니다.
+VLC 제품 및 모듈형 융합 브랜드는 해외시장도 겨냥하고 있습니다.
+
+메타버스 사업은 인터랙티브/트랜스미디어 스토리텔링을 핵심 개념으로 제안합니다.
+지식을 활용하는 쌍방향 스토리텔링 속에서 사용자는 역량을 강화하면서 자기 캐릭터를 깨닫게 됩니다.
+나아가서, 현실과 가상을 넘나들면서 사용자가 문제를 해결하고 콘텐츠를 생산, 거래하는 자기 서사의 시대에 진입할 것입니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Hadoop Kafka GCP Apache Spark SQL AZURE AWS NoSql
+주요업무
+• 데이터의 체계적인 관리 및 데이터플랫폼을 활용한 분석가 및 전사데이터 활용성 지원
+• 데이터레이크 기반의 ETL 파이프라인 구축 및 데이터 워크플로우/스케쥴 관리
+• 대시보드 구축 및 운영
+자격요건
+[자격요건]
+• 초대졸 이상 (전산 전공자 우대)
+• 경력 5년 이상 8년 이하
+
+[필요역량]
+• 데이터 엔지니어링 유관업무 경험 보유
+• 데이터 엔지니어링에 필요한 개발언어(SQL, Python, Java, Scala 등) 경험 보유 
+• Database 및 Nosql에 대한 이해도 보유
+• 데이터 분석 / 모델링 에 필요한 데이터 파이프라인 구축 경험 보유
+• 우수한 의사소통 및 협업 능력
+우대사항
+• MS Azure/DataBricks 환경에서의 데이터 엔지니어링 경험 보유
+• AI기반 제품 및 서비스에 대한 직/간접적인 경험 보유
+마감일 및 근무지
+• 마감일 : ~2024-12-13
+• 근무지
+- 서울시 강남구 테헤란로 521 (삼성동, 파르나스타워) 21층
+복지 및 혜택
+- 단체상해보험 (본인 및 배우자 가입)
+- 종합검진 (유급휴가 제공)
+- 경조휴가 및 경조금
+- 생일축하금
+- 자녀 학원교육비 지원
+- 육아수당
+채용절차 및 기타 지원 유의사항
+[입사 프로세스]
+• 서류전형 > 실무면접 > 임원면접 > 처우협의 > 입사확정
+
+Iframe Image Links:
+Image: AWS | Link: https://cdn.jumpit.co.kr/images/stacks/aws.png
+Image: Apache Spark | Link: https://cdn.jumpit.co.kr/images/stacks/apachespark.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: AZURE | Link: https://cdn.jumpit.co.kr/images/stacks/azure.png
+Image: Kafka | Link: https://cdn.jumpit.co.kr/images/stacks/kafka.png
+Image: SQL | Link: https://cdn.jumpit.co.kr/images/stacks/sql.png
+Image: Hadoop | Link: https://cdn.jumpit.co.kr/images/stacks/hadoop.png
+Image: NoSql | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: GCP | Link: https://cdn.jumpit.co.kr/images/stacks/googlecloudplatform.png

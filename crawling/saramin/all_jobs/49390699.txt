@@ -1,0 +1,48 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49390699&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=024d7c47-c633-4765-b3fa-ea116c66fc6c
+
+Iframe Text Content:
+외국계 계측/계장/제어/자동화분야 대기업의 "IT Solution Engineer" 포지션입니다.
+
+[ 회사 소개 ]
+해당기업은 1978년 설립된 이래 '계측, 제어, 정보 서비스를 통한 보다 풍요로운 사회 발전에 공헌'을 기업이념으로 
+공업계측 및 계장 기기 분야에서 국내 기간산업 발전에 중추적인 역할을 담당해 온 선도적인 위치에 있는 전문 기업입니다.
+
+[ 포지션 ]
+IT Solution Engineer 사원~대리급 (신입 가능)
+*근무지 : 서울 영등포구
+
+[ 담당업무 및 역할 ]
+- 제조부문 자동화 IT 솔루션에 대한 이해를 바탕으로 고객의 이슈 해결
+- Project 실행 업무 (Documentation, Engineering, FAT, SAT, Site Service 등)
+- DCS and/or 타 시스템과의 Interface 및 관련 Engineering
+- 소프트웨어 설치, 기능 테스트, 디버깅, Troubleshooting 
+- 제품 설명회, 견적 등 기술지원 / 기술영업 지원 
+- Account Manager와 협력하여 고객의 요구 사항 파악 및 비즈니스 기회 창출
+- 해외거점과 Global 미팅 주관/참여
+* 개발 직군은 아닙니다
+
+[ 자격요건 ] * 모든 요건을 충족할 필요는 없습니다.
+- 학사이상 / 컴퓨터 관련 전공 / 경력 5년 미만 (신입 수준도 지원 가능)
+- 비즈니스 영어 가능 역량 보유자 (이메일/문서 및 회의 가능한 수준)
+- 제조 부문에 대한 업종 지식 및 스마트팩토리 구축 경험 보유
+  . 제조 운영 솔루션(MES, EMS, TMS, LIMS, CMMS 등) 수행 경험
+  . 제조 운영 솔루션 외 설비 Interface, 개조 등의 공장 설비 관련 업무 수행
+- 제조 부문 IT 경력
+  . 프로그래밍(JAVA, C#, HTML5, Python 등) 경험
+  . DB(Oracle, MSSQL, MySQL 등) 경험
+- 해외 거점 및 국내 타부서 와의 협업을 위한 원활환 커뮤니케이션 능력
+- 고객의 문의 및 지원에 대한 비즈니스 매너
+
+[ 우대사항 ]
+- 화학/석유/정유 프로젝트 경험
+- Process Data Analysis 프로젝트 경험
+- SI 프로젝트 경험
+- 영어 능통자 - 중급 이상 (해외대 출신 우대)
+
+[ 제출 서류 ] 
+- 국문/영문 이력서 (MS Word 파일로 작성)
+
+[ 지원 방법 및 문의 ]
+- Email : brad.kim@manpower.co.kr
+
+No images found in iframe.

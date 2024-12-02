@@ -1,0 +1,70 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49366381&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=33d37386-8162-4559-b754-cebffa41db4f
+
+Iframe Text Content:
+시계열 데이터 AI 모델 개발자 경력직 채용
+서비스 소개
+ 즐겁게 전진하는, 펀진
+
+펀진은 2006년 설립이래 3G/4G/5G에 이르는 이동통신 기술을 기반으로 이동통신 솔루션, AI, AIoT 플랫폼으로 사업의 영역을 확장하여 왔습니다.
+펀진은 5G/6G 통신, AI, IoT를 통합한 AIoT 플랫폼 사업을 통해 방위산업, Robot 모빌리티, 의료/복지 분야에서 그동안 축적해 온 기술 역량을 발휘하여 미래 산업의 선도주자가 되겠습니다. 
+고객에게는 첨단 기술 기반의 우수한 제품과 미래형 서비스를 향유하는 즐거움을 드리고 우리 펀진의 임직원들은 이러한 과정을 통해 스스로가 발전하는 즐거움을 찾아 가겠습니다.
+언제나 즐겁게 전진하는 펀진이 되겠습니다. 함께 미지의 영역을 개척하고 선두할 당신을 기다립니다. 감사합니다.
+(주)펀진은 현재, SBS, KT, LGU+ 등 방송 및 무선통신 관련 기업들과 협력 하에 사업을 진행하고 있으며, 기술/서비스의 자동화를 기반으로 고객사의 현업에 대한 개선과 효율적 컨설팅을 제공하고 있습니다. 
+그에 관련하여, (주)펀진은 국내 최초 STB 자동검증 시스템, STB전력측정 시스템, M2M 연동 기지국 전력 공용화 사업과 실시간 장면 연동 T-커머스 서비스를 진행 중에 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+AI/인공지능 C++ Linux SpaCy PyTorch TensorFlow NumPy Pandas Python
+주요업무
+다변량 시계열 데이터 전처리 및 분석: 여러 센서로부터 수집된 다변량 시계열 데이터를 수집하고, 필요한 전처리 작업을 수행하며, 분석을 통해 복잡한 상관관계와 패턴을 파악합니다.
+ㆍ이상 탐지: ML 및 DL 모델을 활용하여 이상을 탐지하고, 이상의 원인을 설명할 수 있는 모델을 개발합니다.
+ㆍ가상 계측: 다변량 데이터의 상호작용을 고려하여 공정 결과를 예측하는 모델을 개발합니다.
+ㆍ예지 보전 및 잔여수명 예측: 장비의 고장을 예측하고 잔여수명을 평가합니다. 고장 예측 결과를 기반으로 유지보수 전략을 개발하여 시스템 가용성을 높입니다.
+자격요건
+ㆍ기계학습 / 딥러닝 기반 영상 알고리즘 개발
+ㆍ대용량 데이터 사용한 학습 및 데이터 정제 
+ㆍPython
+ㆍPandas, Numpy, Tensorflow, Pytorc, spacy
+ㆍ기계학습 / 딥러닝 인프라 관리, 모니터링, 문제해결
+ㆍ학습 데이터의 수집, 전처리, 가공, 분석
+ㆍAI 모델 트레이닝, 모델 배포 파이프라인 구축 등 학습 시스템 자동화
+ㆍAI 모델 서빙 인프라 구축 및 시스템 자동화
+ㆍ모델, 피처, 데이터 등을 관리하기 위한 데이터베이스 및 Versioning 시스템 개발
+ㆍAI 서비스 모니터링 개발 
+ㆍ리눅스
+우대사항
+ㆍC++
+ㆍInference engine 경험자
+ㆍTensorRT, ONNX Runtime, TVM, NCNN 등
+마감일 및 근무지
+• 마감일 : ~2024-12-07
+• 근무지
+- 서울 성동구 연무장5가길 7, 이스트동 13층
+복지 및 혜택
+• 휴무·휴가·행사
+- 주5일제, 연차제도, 월차제도, 경조휴가, 반차제도, 육아휴직, 노동절 휴무, 창립일 행사
+
+• 보상·수당·지원
+- 스톡옵션, 퇴직금, 경조금, 인센티브, 장기근속 포상, 도서 구입비 지원
+
+• 사내제도·성장
+- 자격증취득지원
+- 자유복장, 자유로운 연차사용
+- 도서구입비 지원
+- 교육비 지원
+- 사내동호회 운영
+
+• 사내시설
+- 휴식공간, 카페테리아
+
+Iframe Image Links:
+Image: SpaCy | Link: https://cdn.jumpit.co.kr/images/stacks/SpaCy.png
+Image: Pandas | Link: https://cdn.jumpit.co.kr/images/stacks/pandas.png
+Image: PyTorch | Link: https://cdn.jumpit.co.kr/images/stacks/pytorch.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png
+Image: AI/인공지능 | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: NumPy | Link: https://cdn.jumpit.co.kr/images/stacks/numpy.png
+Image: C++ | Link: https://cdn.jumpit.co.kr/images/stacks/CPlusPlus.png
+Image: TensorFlow | Link: https://cdn.jumpit.co.kr/images/stacks/tensorflow.png

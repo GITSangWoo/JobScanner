@@ -1,0 +1,62 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=etc&rec_idx=49434664&searchType=search&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&search_uuid=34239cb3-23b5-4922-9da0-4f2d19f52223
+
+Iframe Text Content:
+㈜딥엑스
+HARDWARE Engineer 모집
+㈜딥엑스는 세계 최고 수준의 AI 반도체 원천기술을 연구개발하는 스타트업으로,
+인공지능 기술을 통해 누구나 쉽고 편안한 일상을 보낼 수 있도록 하여 인류 문명 발전에 기여하고자 합니다.
+AI 칩셋 시장 규모는 2025년 700억 달러를 넘어설 것으로 예측되며,
+㈜딥엑스는 최근 CES 2024에서 AI 반도체 기업 중 최초로 3개 부문 혁신상을 수상하며
+세계에서 선도적인 초격차 원천 기술을 다시 한 번 증명하였습니다.
+
+세계 최고 수준의 원천기술을 개발하고, 최고의 동료들과 함께 일하며,
+인류문명을 초지능 사회로 나아가게 할 ㈜딥엑스의 열정적인 여정에 여러분을 초대합니다. 
+
+★ Frost & Sullivan, 2024 Company of the Year NPU 부문 선정!
+테슬라, 구글 등 미래 글로벌 기업의 탄생을 예견하기로 유명한 Frost & Sullivan이
+딥엑스에 대해 어떻게 평가하였는지 직접 확인하세요!
+☞ 링크 바로가기
+
+★ 딥엑스 사업에 대해 더욱 구체적으로 알고 싶다면 딥엑스 백서를 확인하세요!
+☞ 링크 바로가기
+
+Hardware Engineer 모집 포지션
+■ NPU Architect                       ▶ 공고 보러가기
+기본적인 모델부터 SOTA 모델까지 다양한 인공지능 모델을 NPU로 구동시킬 수 있는 원천기술을 개발합니다. ㈜딥엑스의 NPU HW Architecture는 고성능+저전력을 목표로하고 있으며, 이를 위해 종래의 NPU 에너지 효율성을 극대화시킬 수 있는 Data Workload를 개발하고, 사용자의 니즈와 NPU 스펙 간의 정합성과 타당성에 대해 지속적으로 연구합니다. CPU, Memory, Bus 등 Chip Architecture에 대한 지식을 보유하고, System C를 이용한 Architecture Level Modeling 경험과 PPA Estimation 경험을 갖추신 HW 엔지니어 후보자 중 고객이 보다 다양한 응용 제품을 개발하는데 견고한 기술적 기반을 제공하는 데 가치를 느끼고 열정이 있는 분들을 초대합니다.
+
+■ RTL 설계 엔지니어 (HW IP)    ▶ 공고 보러가기
+㈜딥엑스의 AI 하드웨어 프로세서 개발과 관련된 Hardware IP를 설계합니다. Linux 환경에서의 Verilog RTL 설계 경험, Simulation Model 및 Testbench 설계 경험, RTL Simulation 및 Verification 경험, C 기반 모델의 RTL IP 설계 및 검증 경험, python / perl / C / C++ 등을 원활하게 사용한 경험을 갖추신 HW 엔지니어 후보자 중 고객이 보다 다양한 응용 제품을 개발하는데 견고한 기술적 기반을 제공하는 데 가치를 느끼고 열정이 있는 분들을 초대합니다.
+
+■ FPGA Platform 엔지니어        ▶ 공고 보러가기
+㈜딥엑스의 AI 하드웨어 프로세서 개발과 관련된 FPA 플랫폼을 구축하고 프로토타입을 개발합니다. Verilog-HDL 기반의 RTL 설계 경험, Simulation Model 및 Testbench 설계 경험, RTL Simulation 및 Verification 경험, FPGA built in logic analyzer 사용 경험, python / perl / C / C++ 등을 원활하게 사용한 경험을 갖추신 HW 엔지니어 후보자 중 고객이 보다 다양한 응용 제품을 개발하는데 견고한 기술적 기반을 제공하는 데 가치를 느끼고 열정이 있는 분들을 초대합니다.
+
+■ SoC ASIC 설계 엔지니어        ▶ 공고 보러가기
+㈜딥엑스의 AI 하드웨어 프로세서 개발과 관련된 SoC ASIC을 설계합니다. Verilog 및 System Verliog를 이용한 RTL 설계 경험, ARM Core / AMBA bus 및 Interconnect를 이용한 SoC 설계 경험, SoC Top Integration 및 Verification 경험, Linux / shell / tcl / python / perl 등을 원활하게 사용한 경험을 갖추신 HW 엔지니어 후보자 중 고객이 보다 다양한 응용 제품을 개발하는데 견고한 기술적 기반을 제공하는 데 가치를 느끼고 열정이 있는 분들을 초대합니다.
+
+
+전형절차
+서류전형
+온라인 인터뷰 (필요시)
+성향 테스트
+1차 면접
+2차 면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 채용 시 마감
+ㆍ 접수방법 : ㈜딥엑스 채용사이트 지원  ▶바로가기
+ㆍ 이력서양식 : 자유양식
+ㆍ 제출서류 : (1) 필수 제출 서류
+     □ 이력서 (자기소개서 포함, 자유 양식)
+     □ 경력기술서
+(2) 선택 제출 서류
+     □ 포트폴리오 등 후보자의 역량을 잘 드러낼 수 있는 자료 일체
+     □ 성적증명서
+근무조건
+ㆍ 근무형태 : 정규직 (수습기간 3개월)
+ㆍ 근무일시 : 주5일 (월~금), 09:00~18:00
+ㆍ 근무지역 : (13494) 경기 성남시 분당구 판교역로241번길 20 미래에셋벤처타워, 5F(삼평동) - 신분당선 판교 에서 1km 이내
+안내사항
+ㆍ1차 면접 내방 시 딥엑스 Chip 데모 소개도 같이 진행됩니다.
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+No images found in iframe.

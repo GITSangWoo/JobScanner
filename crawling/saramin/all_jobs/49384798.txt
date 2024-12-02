@@ -1,0 +1,39 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49384798&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=4248949f-dbba-46e1-93da-c6e04660686f
+
+Iframe Text Content:
+국내 대기업- 디지털 헬스케어 SW개발(과/차장)
+모집부문 및 상세내용
+공통 자격요건
+ㆍ학력 : 석사 이상
+국내 대기업- 디지털 헬스케어 SW개발(과/차장) 0명
+
+
+담당업무:
+• 의약품 정보 및 의료 기록 관련 등 민감 정보 Database 설계 / 운용
+• Billing System 설계, 운용
+• 의료 정보 및 기록, 제품 관련 Web Front-End 개발
+• 의료 정보 및 기록, 제품 관련 Back-end server 설계 / 개발
+• SaMD 용 Android / IOS Client 앱 개발
+• 국가별 규제 기관이 요구 하는 authentication systems 개발
+
+
+지원자격
+ㆍ경력 : 경력 5년 ~ 12년
+• Digital Health 관련한 System 설계 경험 필요 • Full Stack System Engineer 필요
+• 병원 내 의료 데이터 시스템 운영 / 설계 경험 • 의약품 및 의료기기 제품 Publishing 설계 경험 • 각국의 의료기기 / 혹은 의약품 규제 및 승인 경험 • 의약품 혹은 의료기기의 디지털 마켓 플레이스 운용 경험 • 정부 주도 하 의료 관련 시스템 설계 및 운용 경험
+
+근무조건
+ㆍ 근무형태 : 정규직
+ㆍ 근무지역 : (06164) 서울 강남구 테헤란로 2(삼성동) - 서울 2호선 삼성 에서 200m 이내
+전형절차
+서류전형
+1차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 11월 12일 (화) 12시 ~ 2024년 11월 27일 (수) 24시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+No images found in iframe.

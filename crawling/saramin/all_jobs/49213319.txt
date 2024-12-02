@@ -1,0 +1,40 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49213319&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=9289c623-8ec6-4767-adb2-c6e91dc2d7f5
+
+Iframe Text Content:
+모집부문 및 자격요건
+모집분야 담당업무  및 자격요건 우대사항
+웹 풀스택 
+
+
+온라인에 판매를 하는 사람들의 업무를 자동화하기 위해 로직을 설계하고 AI를 활용하여 디자인홍보자동화, 상품진열,상품추천, 유행상품 조사의 운영업무자동화 SaaS 웹서비스를 개발합니다
+
+업무내용 
+- Java, javascript, MySQL, Spring, React 기반의 SaaS 웹 서비스 기능단위 개발 및 고도화
+- 파이썬 기반(Python)의 데이터수집, 이미지캡춰, 마케팅자동화 자체개발 TOOL 유지보수
+-대용량 데이터 처리 및 실시간 연동관리 및 유지보수
+-코틀린 Kotlin 과 타임리프를 활용한 외주 웹플랫폼개발
+
+업무방식
+-  고객요구사항 기반의 빠른 기능고도화
+- 기능 단위 개발업무
+
+자격요건
+- 이공계 이력 
+- 백엔드와 프론트엔드 모두 개발 가능하시면서 프론트엔드에 좀 더 자신 있으신 분
+- 고객의 사용 개선을 위해서 개발 제품에 집중하여 문제를 해결하고 기능 단위의 개발과 화면 개선을 적극적으로 해본 경험 있는 분
+- 고객 중심의 기획전이 마인드 필요함
+- JAVA,Spring boot 또는 전자정부프레임워크,Kotlin, Mybatis 개발 경험이 있는 분
+- Html 5, CSS, javascript, Jquery, React.js, Thymeleaf 웹서비스 개발 경험이 있으신 분
+- Data Architecture 수립 및 구현 가능한 분
+
+
+우대사항
+-  Canvas 라이브러리 사용 경험
+-  디자인 편집 툴 개발 및 사진 편집기능 개발한 경험이 있으신 분
+- 쇼핑몰 운영관련 서비스 및 SaaS서비스 개발을 해보신 분
+- 온라인 쇼핑몰의 데이터구조에 대한 이해가 있으신 분
+- SI, ERP, CRM 개발 경험
+-코틀린 개발 경험이 있거나 배우고자 하시는 분
+
+Iframe Image Links:
+Image: 아이클레이브채용 | Link: https://s3.ap-northeast-2.amazonaws.com/otdeal.file/notice/2024/08/20/Group_3_(1)_%EB%B3%B5%EC%82%AC.png

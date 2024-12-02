@@ -1,0 +1,83 @@
+URL: https://www.rallit.com/positions/2710/software-engineer-data-platform
+1/1
+센드버드, 어떤 곳인가요?
+센드버드는 인앱 채팅, 영상/음성 메세징 솔루션을 제공하는 실리콘밸리의 서비스형 소프트웨어 (SaaS) 스타트업으로, 전 세계 10,000여개의 모바일과 웹서비스에 SDK(소프트웨어 개발도구)를 제공합니다. 다양한 글로벌 기업들이 센드버드를 통해 고객과 대화채널을 구축하고, 진화된 형태의 수익화 전략을 수행하고 있으며, 월간 플랫폼 사용자 수는 2억 3천 만을 넘어섰습니다. 한국 출신 스타트업 최초로 와이콤비네이터(Y Combinator)와 테크스타(Techstars) 모두에서 투자를 유치한 바 있으며, 최근 시리즈 C 투자를 성공적으로 마무리하여 국내 최초 기업가치 1조원 이상의 글로벌 B2B 소프트웨어 유니콘 기업이 되었습니다. 현재까지 실리콘밸리 최정상 투자사로부터 누적 총 2억2천만달러 (약 2,450억 원)의 투자를 유치하였으며, 캘리포니아 산 마테오의 본사와 서울의 R&D센터 및 APAC 오피스 그리고 뉴욕, 런던, 싱가포르, 인도 등에 오피스를 두고 있습니다.
+Software Engineer, Data Platform, 어떤 일을 하나요?
+센드버드는 인앱 채팅, 영상/음성 메세징 솔루션을 제공하는 실리콘밸리의 서비스형 소프트웨어 (SaaS) 스타트업으로, 전 세계 10,000여개의 모바일과 웹서비스에 SDK(소프트웨어 개발도구)를 제공합니다. 다양한 글로벌 기업들이 센드버드를 통해 고객과 대화채널을 구축하고, 진화된 형태의 수익화 전략을 수행하고 있으며, 월간 플랫폼 사용자 수는 2억 3천 만을 넘어섰습니다.
+한국 출신 스타트업 최초로 와이콤비네이터(Y Combinator)와 테크스타(Techstars) 모두에서 투자를 유치한 바 있으며, 최근 시리즈 C 투자를 성공적으로 마무리하여 국내 최초 기업가치 1조원 이상의 글로벌 B2B 소프트웨어 유니콘 기업이 되었습니다.
+현재까지 실리콘밸리 최정상 투자사로부터 누적 총 2억2천만달러 (약 2,450억 원)의 투자를 유치하였으며, 캘리포니아 산 마테오의 본사와 서울의 R&D센터 및 APAC 오피스 그리고 뉴욕, 런던, 싱가포르, 인도, 캐나다 등에 오피스를 두고 있습니다.
+#airflow
+#Kafka
+#Kubernetes
+#AWS
+#Google Cloud Platform
+#Elasticsearch
+주요업무
+• Lead designing of distributed, high-volume data pipelines that power Sendbird analytics and products
+• Support data warehousing of a variety of different datasets at scale
+• Build production services using open-source technologies such as Airflow, Beam, Spark, AWS cloud infrastructure such as MSK, EKS, Lambda, Aurora, S3, Athena, and also GCP services such as BigQuery, Dataflow, GCS
+• Develop data processing platform and tools for data collection, discovery, and analytics in Python, Java, Scala, Go and define workflows and processes in testing, validation, monitoring and so forth
+• Implement measures for data security and governance, such as sanitization of sensitive data
+• Collaborate with other teams and work cross-functionally for large-scale data related product initiatives
+• Propose solutions to team and organization's development processes and technical problems and drive them into action
+자격요건
+• Have working knowledge of distributed processing, highly scalable data stores, and developing and maintaining large variety of datasets
+• Fluency in several programming languages such as Python, Java, or Scala
+• Strong analytic skills related to data models and conducting SQL
+• Drive cross-team multi-phase projects and works efficiently with engineers to execute and deliver result
+• Understand the need and enhance data quality and reliability
+• Can navigate through ambiguity/blockers, consult the right stakeholders and can execute on optimal solution given resource and time constraints
+• Continuously seeks to improve the team’s system, coding standards, and contributes to new ideas and approaches
+• Embrace responsibility and learnings from failures to prevent them in the future
+우대사항
+• 4+ years of work experience in data engineering and/or building ETL pipelines in production
+• Work experience in AWS and/or GCP data pipeline ecosystem
+• Familiar with Airflow, Kubernetes, Kafka, Spark, Beam, Elasticsearch
+• Understanding of RDBMS, NoSQL and distributed databases
+• English proficiency for business collaboration
+• Strong communication and collaboration skills
+혜택 및 복지
+• 1년뒤부터 행사가능한 실리콘밸리 최고 수준의 스톡옵션
+• 하이브리드 근무제, 유연근무제
+• 플레이스테이션, 자전거, 여행 등 자유롭게 사용할 수 있는 현금성 연간 복지포인트 약 400만원
+• 모션데스크, 의자, 모니터, 에어팟 등의 재택 근무 물품 지원 약 100만원 상당
+• 영어회화, 강의 등 자유롭게 수강할 수 있는 어학 지원금 최대 연간 360만원
+• 매주 1회 오피스 런치 지원
+• 매월 1회 팀 빌딩 비용 지원
+• 출퇴근 비용(교통비) 일부 지원
+• 선릉 오피스 주차 무료
+• 본인, 배우자, 자녀 모두 포함하는 단체보험 지원
+• MRI, 유전자검사등을 포함한 1인당 40만원 상당의 건강검진 지원 - 본인 및 가족 1인
+• 법정 연차 외 7개의 휴가 추가 지급 (Boost leave, Birthday leave, etc)
+• 맥북 프로 등 최신 업무 기기 지원 (직무별 특별 지원 옵션)
+• 스낵, 음료수, 라면이 매일 가득 채워지는 무제한 스낵바
+• 12주 유급 출산 휴가 지원 (엄마, 아빠 모두가능)
+• 기타 경조사 지원 프로그램 등
+
+그 외 다양한 이벤트와 선물: 온라인 요가, 케어패키지, 센드버디안 알아가기 20 Questions, Global Step Challenge, 퀴즈쇼 등 사람 냄새 나는 다양한 이벤트를 하고 있습니다. 센드버드만의 특별한 복지는 계속해서 발전하고 있습니다.
+채용 절차
+서류 접수
+실무 면접
+코딩 테스트
+임원 면접
+최종 합격
+채용 절차는 일정 및 상황에 따라 달라질 수 있습니다.
+지원서 내용 중 허위 사실이 있는 경우에는 합격이 취소될 수 있습니다.
+센드버드에서 전하는 미래 동료에게 한마디
+• The Future of Work at Sendbird
+센드버드는 업무 효율성과 팀간의 협업 및 관계형성에 모두 중요한 가치를 두고 있습니다. 그 취지로 새로워진 Future of work 제도를 운영합니다. 최적의 근무 장소와 시간을 자율적으로 선택하면서도, 함께 일하는 시너지를 얻기 위해 출근 거리 1시간 이내에 거주하시는 분들은 주 2회 오피스로 출근하게 됩니다. 본인의 거주지, 근무하게 될 조직이나 업무 성격에 따라 출근 빈도는 팀과 상의하여 정합니다.
+• 센드버드가 생각하는 다양성과 포용
+위 요구사항에 100% 부합하지 않으셔도 괜찮습니다. 센드버드는 모두가 배우고 성장할 수 있는 곳이기에 다양한 배경, 경험 및 기술 스택을 가진 누구든 최고의 직원이 되실 수 있다고 생각합니다. 우리는 평등한 고용 기회를 위해 다양성을 존중하고 장려하고 있습니다. 이 포지션이 여러분의 가슴을 뛰게 만든다면 지원해주세요!
+근무 지역
+서울 강남구 선릉로 514 성원타워 17층 센드버드 코리아
+Software Engineer, Data Platform
+경력
+미들 (4~8년)
+최소 연봉
+회사 내규에 따름
+마감일
+채용 시 마감
+회사명
+센드버드
+0
+지원하기

@@ -1,0 +1,71 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49318097&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=50b0ce6c-3f22-47de-8fc1-253b55607db6
+
+Iframe Text Content:
+리얼텍코리아(주)
+Communications Network 부문 경력 채용
+Bluetooth & IoT SW 엔지니어 (FAE)
+Realtek Semiconductor Corporation 은 미디어, 통신 네트워크, 컴퓨터 기기, 멀티미디어 및
+스마트 인터커넥트 애플리케이션을 위한 다양한 집적 회로(IC) 제품을 설계하고 개발하는 세계적인 반도체 기업입니다.
+다양한 도전과 개인 역량을 발전할 수 있는 기회를 누구나 얻을 수 있는 것이 저희 회사가 자랑하는 최고의 업무 환경입니다.
+저희 회사를 통해 회사와 같이 성장 하실 분을 찾습니다.
+모집부문
+모집부문 담당업무 자격요건 우대사항
+블루투스 SW
+엔지니어 (FAE) ㆍ국내 고객사 문의대응,
+    이슈분석 및 기술 지원 ㆍ학력 : 4년제 학사이상
+ㆍ전공 : 전자, 컴퓨터, 반도체 등
+   공학계열 전공자
+ㆍ경력 : 3년 이상
+ㆍSkill : C/C++,
+   기타 programming language
+ㆍ외국어
+    : 기초적인 영어 회화 가능
+* 기타
+   : 해외 출장 및 자차 운행 가능자 ㆍEmbedded SW 관련 개발 경력
+ㆍBluetooth 또는 유관
+   (Network protocol 등) 경력
+IoT SW
+엔지니어 (FAE) ㆍEmbedded(SoC), 아두이노 및
+    RTOS 환경에서 개발 경험
+ㆍWi-fi/BT 개발, 테스트 경험자
+    우대
+* 고용형태 : 정규직 / 모집인원 : 각 0명 / 근무지 : 서울 서초 / 연봉 : 협의 후 결정
+복리후생
+회의실, 카페테리아 (간식 및 음료 제공) 건강검진비 지원 (유급휴가), 건강관리보조비 지원
+연차 (시간제 연차 가능), 출산ㆍ육아휴직,
+연차수당 장기근속 포상, 창립일 선물, 명절 상여금
+차량 유지비, 주유비, 통신비, 식대지원 4대 보험, 퇴직금/퇴직연금,성과급
+전형절차
+  STEP 01
+서류심사 STEP 02
+면접(1/2차) STEP 03
+인적성검사 STEP 04
+채용검진 STEP 05
+합격자발표  
+제출서류
+ㆍ국문 이력서 (이력서 내 경력 기술 포함), 2차 인터뷰 진행 시 영문 이력서
+접수기간 및 방법
+ㆍ접수기간 : 2024년 11월 8일 (금) ~ 2024년 11월 28일 (목)
+ㆍ접수방법 : 사람인 온라인 입사지원
+기타사항
+ㆍ문의처 : jennie.pak@realtek.com
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+ㆍ서류는 반환되지 않습니다.
+www.realtek.com
+www.amebaiot.com / www.realmcu.com
+5F, 18, Saimdang-ro, Seocho-gu
+Seoul, Republic of Korea (#06652)
+
+Iframe Image Links:
+Image: 아이콘 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_realtek_lcon2_241105.png
+Image: 아이콘 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_realtek_lcon2_241104_04.png
+Image: 아이콘 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_realtek_lcon2_241104_06.png
+Image: Designed by saramin | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_realtek_logo_241105.png
+Image: 기업로고 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_realtek_bottom_lcon_241105_01_01.png
+Image: 아이콘 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_realtek_lcon2_241104_05.png
+Image: 기업로고 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_realtek_bottom_lcon_241105_02_02.png
+Image: Designed by saramin | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit/watermark_white.png
+Image: icon | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_realtek_lcon_241104.png
+Image: 아이콘 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_realtek_lcon2_241104_001.png
+Image: 기업로고 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/09_realtech_img_241104_04.png
+Image: 아이콘 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_realtek_lcon2_241104_03.png

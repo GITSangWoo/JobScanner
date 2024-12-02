@@ -1,0 +1,48 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=etc&rec_idx=49396234&searchType=search&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4
+
+Iframe Text Content:
+IoT, 제어, 빅데이타 및 C# 기반 어플리케이션 개발자 채용
+서비스 소개
+마린웍스는 조선해양분야 ICT 전문 기업으로,
+선박의 전장 설계부터 소프트웨어 개발, 엔지니어링, 디지털 전략 컨설팅, IT 아우소싱까지 마켓의 변화를 대비한 최고의 사업 포트폴리오를 구축하고 국내외 고객에게 최적의 솔루션을 제공하고 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+ERP Network C++ C# JavaScript CSS 3 jQuery ASP.NET Java MachineLearning
+주요업무
+• 선박 IoT 플랫폼 서비스 개발
+• 자율운항선박 솔루션 연구개발
+자격요건
+• C# 기반 프로그램 개발
+우대사항
+• IT 전공자 우대
+• 통신(TCP/UDP/Modbus/MQ) 인터페이스 및 ASP.NET MVC 개발 가능자
+• SQL Server/시계열 DB/Windows Service Programming 경험자
+• 빅 데이터, 인공지능(AI, ML, DL) 설계 및 응용 경력자
+• 조선, IoT, 빅데이타, 네트워크 및 제어 부분 개발 유 경험자
+마감일 및 근무지
+• 마감일 : ~2024-12-12
+• 근무지
+- 부산 동구 고관로 62 4층(초량동)
+복지 및 혜택
+• 시차출퇴근제
+• 도서 구입 지원
+• 자기계발비 지원
+• 최신형 업무장비
+• 자격증 수당
+• 경조사 지원
+채용절차 및 기타 지원 유의사항
+-
+
+Iframe Image Links:
+Image: JavaScript | Link: https://cdn.jumpit.co.kr/images/stacks/javascript.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: MachineLearning | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: CSS 3 | Link: https://cdn.jumpit.co.kr/images/stacks/css3.png
+Image: C# | Link: https://cdn.jumpit.co.kr/images/stacks/CSharp.png
+Image: ASP.NET | Link: https://cdn.jumpit.co.kr/images/stacks/asp.net.png
+Image: Java | Link: https://cdn.jumpit.co.kr/images/stacks/java.png
+Image: Network | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: C++ | Link: https://cdn.jumpit.co.kr/images/stacks/CPlusPlus.png
+Image: ERP | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: jQuery | Link: https://cdn.jumpit.co.kr/images/stacks/jquery.png

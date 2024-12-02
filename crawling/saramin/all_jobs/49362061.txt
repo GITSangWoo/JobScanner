@@ -1,0 +1,83 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49362061&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=e5c584db-a838-4200-8611-2cd5825eaf8e
+
+Iframe Text Content:
+서버/백엔드 개발자
+서비스 소개
+국내 최초 VMS 전문기업
+이노뎁은 국내 최초의 VMS(Video Management Solution) 전문기업으로, 외산 중심의 초기 국내 VMS 시장에서 VMS 국산화를 이룬 기업입니다. 
+창업 초기부터 이노뎁은 오픈 플랫폼 정책을 도입해 다양한 CCTV 제조사와 솔루션 업체와의 협업을 통해 국산 VMS를 제공한다는 목표를 설정했습니다.
+
+국내 시장 점유율 1위
+이노뎁이 국내 시장에 참여한 이래, 국내 지자체의 CCTV 통합관제센터 시장에서 VMS가 국산으로 대체됐으며, 이노뎁은 국내 시장 점유율 1위 기업으로 거듭났습니다. 
+또한 영상감지 및 데이터 관리 솔루션을 개발해 공공분야와 국내외 시장 영상관제솔루션 분야의 선두기업이 되었습니다.
+
+4차 산업 선도기업, 이노뎁
+현재 이노뎁은 딥 러닝, 빅데이터, 인공지능, 사물인터넷 등을 활용해 사용자의 직관적인 실시간 의사결정을 돕는 클라우드 기반 데이터관리플랫폼과 시각화 된 데이터 리포트를 통해, 새로운 비즈니스 인사이트를 제공하고 있습니다. 이러한 디지털 시큐리티 솔루션 및 서비스를 다양한 산업군에 확산해 스마트시티, 스마트 팩토리, 스마트 파킹 등의 선두 기업이 되어 시민들이 보다 안심하고 살 수 있는 안전한 생활 공간을 제공 하겠습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Node.js FastAPI Python Spring Framework Spring Java Cloud AI Platform Pipelines Google Cloud Platform PostgreSQL MySQL
+주요업무
+• AI 기반 영유아 보육 안전 플랫폼 서비스 백엔드 개발
+ • 백엔드 서버 설계 및 개발
+ • 데이터베이스 관리 및 연동 (MySQL, Postgres 등)
+ • 클라우드 서버 배포 및 운영 (Naver Cloud Platform 등)
+자격요건
+• 학력 : 대졸 이상 (4년제)
+• 경력 : 3년 이상
+• 아래 기술 및 개발 경험을 1가지 이상 보유하신 분
+ -Java Spring, Node Express, Python FastAPI
+• 논리적 사고와 문제 해결 중심의 협업 능력을 보유하고 있는 분
+우대사항
+• 컴퓨터, 소프트웨어 등 관련 전공 학위를 소지하신 분
+• 개인 포트폴리오를 보유하고 계신 분
+• Jira, Confluence, Bitbucket등 협업툴 사용 경험이 있는 분
+• 새로운 기술과 트렌드에 관심이 있는 분
+마감일 및 근무지
+• 마감일 : ~2024-12-07
+• 근무지
+- 서울 금천구 디지털로9길 47, 9층, 11층 (가산동,한신아이티 타워2차)
+복지 및 혜택
+• 직원 중심의 조직문화를 만들어 갑니다.
+- 자유로운 복장, 자유로운 연차사용 (연차/반차)
+
+• 편안하게 일할 수 있는 최선의 환경을 제공합니다.
+- 휴게실, 회의실, 공기청정기, 카페테리아, 노트북, 사무용품 지급, 간식바(스낵바), 음료제공 (차, 커피)
+
+• 직원들의 경조사와 건강과 관련된 혜택을 제공합니다.
+- 경조지원금(결혼, 경조사, 출산 등), 생일축하선물, 명절선물, 장기근속포상, 건강검진, 독감예방접종
+
+• 직원들의 자기계발을 존중합니다.
+- 워크샵, 신입사원교육(OJT), 직무능력향상교육, 리더십강화교육, 도서구입비, 멘토링제도, 교육비지원, 저녁식사 제공, 
+ 사내 동호회 운영, 직무보상제도(직무관련 특허 출원 및 등록)
+
+• 최고의 복지는 휴가죠.
+- 연차, 경조휴가제, 근로자의날 휴무, 산전후휴가, 육아휴직, 근로자 휴가지원사업 지원
+
+• 편하게 출퇴근 하세요.
+- 유연근무제, 주 52시간제 준수, 청년전세자금대출
+채용절차 및 기타 지원 유의사항
+[채용절차]
+• 서류전형 → 1차 인터뷰 → 2차 인터뷰 → 처우 협의 → 최종합격
+※절차는 변경될 수 있습니다.
+
+[지원 시 주의사항]
+• 3개월의 수습 기간이 있습니다. (수습 기간 동일 급여 지급)
+• 포트폴리오 제출 시,10MB 초과할 경우에는 링크를 기재해주세요.
+
+[참고사항]
+• 서류 합격자에 한해 연락드립니다.
+• 본 채용은 수시 진행으로 우수 인재 채용 시 조기 마감될 수 있습니다.
+
+Iframe Image Links:
+Image: Google Cloud Platform | Link: https://cdn.jumpit.co.kr/images/stacks/googlecloudplatform.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: Node.js | Link: https://cdn.jumpit.co.kr/images/stacks/node.js.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: PostgreSQL | Link: https://cdn.jumpit.co.kr/images/stacks/postgresql.png
+Image: Spring | Link: https://cdn.jumpit.co.kr/images/stacks/spring.png
+Image: Spring Framework | Link: https://cdn.jumpit.co.kr/images/stacks/springframework.png
+Image: Java | Link: https://cdn.jumpit.co.kr/images/stacks/java.png
+Image: MySQL | Link: https://cdn.jumpit.co.kr/images/stacks/mysql.png
+Image: Cloud AI Platform Pipelines | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: FastAPI | Link: https://cdn.jumpit.co.kr/images/stacks/FastAPI.png

@@ -1,0 +1,46 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49246200&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=50b0ce6c-3f22-47de-8fc1-253b55607db6
+
+Iframe Text Content:
+모집에 관심이 있으신 분은 아래 이메일 주소로 영문 및 한글 이력서를 직접 보내주시기 바랍니다.
+이메일: ehsu@aligntech.com
+
+Join a team that is changing millions of lives.
+Transforming smiles, changing lives
+
+At Align Technology, we believe a great smile can transform a person’s life, so we create technology that gives people the confidence to take on whatever’s next. We revolutionized the orthodontic industry with the introduction of the Invisalign system, and we have never lost sight of that spirit of innovation. Our diverse and collaborative teams are constantly pushing the boundaries of what’s possible. 
+Ready to join us? 
+About this opportunity
+The Software Engineer - Full Stack will be responsible for building and managing a platform that facilitates communication between IoT devices and cloud services, ensuring seamless connectivity, data management, and user interaction. You will work across multiple layers of the tech stack, including cloud infrastructure, back-end services, and front-end user interfaces.
+This role will be working closely with mobile application developers and firmware engineers to create seamless communication between IoT devices and cloud services. This will be a highly autonomous role in a startup-like team where most of the design and infrastructure decisions will be driven by you. The success of this position will be measured by the success of the team in advancing technology development and launching new products in market.
+In this role, you will…
+ Full Stack Development: Develop and implement front-end and back-end services and applications for managing connected devices.
+ Device Integration: Implement communication protocols to connect and manage IoT devices.
+ API Development: Develop and manage APIs for data exchange between devices and cloud services.
+ Database Management: Design and manage databases for storing device data and application information.
+ Security Implementation: Ensure best practices for data security and application integrity.
+ Performance Monitoring: Monitor application performance and optimize both front-end and back-end for scalability.
+ Collaboration: Work with mobile app developers, firmware engineers, hardware engineers, and other developers to deliver integrated solutions.
+ Documentation: Maintain clear documentation of application architecture, APIs, and deployment processes.
+
+
+this role, you’ll need …
+ Bachelor’s or Master’s degree in Computer Science, Electrical Engineering, or a related field.
+ Proven experience in IoT development, with a strong understanding of device-to-cloud communication and embedded systems.
+ Proficiency in programming languages such as C/C++, Python, javascript, or Node.js.
+ Experience with IoT protocols such as MQTT, CoAP, and HTTP.
+ Familiarity with cloud platforms such as AWS IoT, Azure IoT Hub, or Google Cloud IoT Core.
+ Strong knowledge of back-end development: APIs, databases (SQL/NoSQL), message queues (e.g., RabbitMQ, Kafka), and RESTful services.
+ Experience in front-end development: React, Angular, or similar frameworks for creating web/mobile interfaces.
+ Understanding of networking (Wi-Fi, Bluetooth, Zigbee, LPWAN) and real-time data processing.
+ Knowledge of cybersecurity best practices for IoT systems (encryption, authentication, etc.).
+ Excellent problem-solving skills and ability to work in a fast-paced, collaborative environment.
+ Ability to communicate with strong interpersonal, oral, and written skills in English.
+
+Sound like a good fit?
+Great! Click the "Apply" link to let us know you are interested. Not the right fit? Don’t worry, Align is quickly growing so we are creating more opportunities to expand our Align family. Please consider joining our Talent Network to receive notifications about future jobs or sharing this opportunity with others in your network.
+About Align
+Align Technology is a publicly traded medical device company that is transforming smiles and changing lives. Our global team of talented employees develop innovative technology, tools and treatment options to help dental professionals worldwide achieve the clinical results they expect. Our digital ecosystem combines the power of technology to create beautiful smiles through the integration of AI and machine learning, digital imaging and visualization, biomechanics and material science to develop the Invisalign system, the most advanced clear aligner system in the world; iTero Intraoral Scanners and OrthoCAD digital services. Did you know? Align is the world’s largest manufacturer of custom 3D-printed materials.
+By joining Align, you will be part of a global, fast-growing company in one of the most dynamic industries. Great people, innovative technologies, and meaningful work – these are just some of the things employees say make Align Technology a great place to work.
+Align Technology is an equal opportunity employer. All applicants will be considered for employment without attention to race, color, religion, sex, sexual orientation, gender identity, national origin, veteran or disability status. We also respect your privacy. Please review our Applicant Privacy Policies for additional information.
+
+No images found in iframe.

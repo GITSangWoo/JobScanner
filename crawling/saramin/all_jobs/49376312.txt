@@ -1,0 +1,114 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49376312&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=34f6ab08-9fde-4668-8a44-8ef9f177171f
+
+Iframe Text Content:
+계룡건설은 1970년에 창립된 대한민국의 대표 건설기업으로, 건축, 토목, 주택, 플랜트, 해외사업 등 다양한 분야에서
+활약하고 있습니다. 지속 가능한 성장을 목표로 친환경 기술 개발, 스마트 건설 기술 도입, 지역사회 공헌을 강화하며
+ESG 경영을 실천하고 있습니다. 특히, 4차 산업혁명 기술을 접목한 스마트 건설, 탄소 중립 및 친환경 건축을 통해
+지속 가능한 미래를 위한 건설 문화를 만들어 가고 있습니다.
+
+본 교육과정은 이러한 목표를 실현하기 위해 온실가스 배출을 줄이고 지속 가능한 건축 솔루션을 구현할 수 있는
+빅데이터와 AI 기반의 친환경 소프트웨어 개발 인재를 양성하는 데 초점을 맞추고 있습니다.
+실무형 Green Tech SW 개발자 과정에서는 탄소 중립을 위한 친환경 소프트웨어 개발, 에너지 효율 관리,
+지속 가능한 기술 솔루션 구축 등 현장에서 바로 적용 가능한 실무 중심의 기술 교육을 제공합니다.
+핵심 포인트
+ㆍ탄소 배출 절감 설계 기술부터 빅데이터 분석,
+   AI 환경 모니터링까지!
+ㆍ현업 전문가와 함께하는 실무 중심 프로젝트
+ㆍ환경을 위한 혁신적인 기술 역량과 실제 개발 경험 제공   주요습득 기술
+ㆍ온실가스 배출 데이터를 활용한 친환경 솔루션 개발
+ㆍAI 기반 탄소 절감 의사결정 시스템 구축 실무
+ㆍ기후변화 대응을 위한 빅데이터 활용 기술 습득
+취업분야
+ㆍ빅데이터 분석가 / SW개발자 / AI 플랫폼 개발자 / DBMS 운용관리자 / 풀스택 개발자
+에코건설을 위한 에너지 분석 SW 개발
+웹사이트 구현   ERP 프로그램 구현
+(대시보드, 프로젝트관리, 예산/자재/폐기물/안전 관리)
+빅데이터 대시보드 구현   ECO 모바일 애플리케이션 구현
+차종 탐지 및 배출가스에 따른 탄소세 종량제 부과시스템 구현
+AI 솔루션 탑재 웹 & 앱 구현   차종/번호판 탐지 기능 구현
+차종/번호판 탐지 기능 구현   엣지 컴퓨팅을 활용한 데이터 수집 및 처리 시스템
+교육기간
+ㆍ2024년 11월 21일 ~ 2025년 05월 08일
+   (총 6개월, 896시간)   진로
+ㆍ자바 개발자, 빅데이터(인공지능) SW개발자
+교육장소
+ㆍ대전 둔산동 시청네거리 미래융합교육원   교육 혜택
+ㆍ전액 국비지원, 훈련참여수당 지원, 협력기업 취업연계
+모집기간
+ㆍ2024년 11월 11일 ~ 2024년 11월 20일   과정신청
+ㆍQR 접속 후 신청
+상세커리큘럼
+교과목명 세부내용 훈련시간
+탄소중립 ㆍ탄소중립의 이해
+ㆍ탄소중립의 필요성 4 시간
+프로그래밍 언어 ㆍ객체지향 프로그래밍 언어
+ㆍ응용SW기초, 개발환경 구축
+ㆍ라이브러리 활용하기 140 시간
+데이터 수집 및 구축 ㆍETL (추출, 변환, 적재)
+ㆍ크롤링 엔진, 로그 수집기
+ㆍRSS, Open API - 공공데이터, 센싱(Sensing) 데이터 수집
+ㆍDBMS 구축, SQL, NoSQL, 오라클 DB
+ㆍDB 모델링 - 테이블, 뷰, 인덱스 84 시간
+에너지 데이터
+분석 및 활용 ㆍ통계 및 데이터 분석
+ㆍ데이터, 텍스트 마이닝
+ㆍ기계학습 (지도, 비지도학습, 강화학습, 회귀 분석 모델)
+ㆍ기계학습 (회귀, 서포트 벡터 머신, 결정트리, 인공신경망 등)
+ㆍMQTT의 이해와 사용
+ㆍIoT 데이터처리 (시계열 데이터 전처리 및 시각화, 센서 데이터 처리 시뮬레이션)
+ㆍ예측 분석
+ㆍ에너지 비용 산출 및 절감방안 수립
+ㆍ온실가스 감축 진단 및 대체물질·공정 이용하기
+ㆍ에너지 관리 시스템 분석 168 시간
+에너지 분석 시스템 구축 ㆍJAVA기반 JSP
+ㆍSpring boot
+ㆍAWS (Amazon Web Sevice)
+ㆍ리눅스의 이해 및 서버구축 168 시간
+공공데이터 프로젝트 ㆍ공공데이터를 활용한 에너지 데이터 비교분석 플랫폼 개발 70 시간
+에너지SW 프로젝트 ㆍ에코건설을 위한 에너지 분석 SW개발
+ㆍ건물에너지 관리시스템 개발 247 시간
+재량교과 ㆍ건설, 에너지, IT분야 전문가 특강 (3H)
+ㆍ취업특강 (이력서, 자기소개서, 면접요령, 취업정보 제공 등) (7H)
+ㆍ오리엔테이션 (3H)
+ㆍ수료식 (2H) 15 시간
+총 훈련시간 896 시간
+한줄후기
+강사님을 만나면서 다양한 프로그램과 언어를 폭넓게 다룰 수 있었습니다. 많은 것을 배울 수 있었고,
+정말 좋은 경험이었습니다.
+열정적이고 훌륭한 선생님과 친절하게 도움 주신 교육원 직원분들 덕분에 무사히 수료할 수 있었습니다.
+여러 교육원 중 미래융합교육원을 선택하길 잘했다고 생각합니다.
+짧은 시간에 정말 많은 것을 배워 조금 벅차게 느껴지기도 했지만, 되돌아보니 값진 시간이었습니다.
+다른 과정보다도 다양한 툴과 기술을 다뤄볼 수 있어 취업에 큰 도움이 되었습니다.
+선생님 감사합니다! 짧은 시간 안에 이렇게나 다양하게 배울 수 있을 줄 몰랐어요.
+이론뿐 아니라 실습을 통해 실제로 그 기술들을 활용해 볼 수 있어서 좋았습니다.
+선생님의 열정 덕분에 많은 것을 배우고 성장할 수 있었습니다. 선생님 최고입니다!
+비전공자여도 배우겠다는 마음이 있다면 충분히 따라갈 수 있는 과정입니다. 정말 많이 배워갑니다
+세심하게 지도해 주신 덕분에 큰 성장을 할 수 있었습니다. 단순히 강의 내용만이 아니라 공부 방법이나 생활적인 부분까지
+조언해 주셔서 더 의미 있는 시간이었습니다. 도와주신 다른 수강생분들께도 감사합니다.
+AI 딥러닝 모델을 활용한 팀 프로젝트를 진행했는데, 협업 능력 향상에 큰 도움이 되었습니다.
+미래융합교육원과 계룡건설의 훈련과정 덕분에 제 인생이 바뀌었습니다. 감사합니다!
+후기 보러가기
+※ 해당과정은 계룡건설과 대전 미래융합교육원이 함께 진행하는 교육과정으로
+과정 문의는 대전 미래융합교육원으로 연락 바랍니다.
+문의전화 : 042-471-9222(미래융합교육원)
+
+Iframe Image Links:
+Image: Designed by saramin | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit/watermark_gray.png
+Image: Curriculum Guidelines | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_stitle_241112.gif
+Image: 교육과정 자세히보기 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_stitle02_241111.png
+Image: 수강후기 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_img_241111.png
+Image: 계룡건설_빅데이터 기반 Green Tech SW 개발자 교육생 모집 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_title_241111.png
+Image: 웹사이트 구현 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_img01_241111.png
+Image: 훈련생 포트폴리오  | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_stitle01_241111.png
+Image: 차종/번호판 탐지 기능 구현 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_img06_241111.png
+Image: 계룡건설 5기 수강후기 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_stitle04_241111.png
+Image: ERP 프로그램 구현
+ (대시보드, 프로젝트관리, 예산/자재/폐기물/안전 관리) | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_img02_241111.png
+Image: 교육과정 개요 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_stitle03_241111.png
+Image: ECO 모바일 애플리케이션 구현 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_img04_241111.png
+Image: 엣지 컴퓨팅을 활용한 데이터 수집 및 처리 시스템 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_img08_241111.png
+Image: 빅데이터 대시보드 구현 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_img03_241111.png
+Image: qr 바로가기 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_qr02_241111.png
+Image: 차종/번호판 탐지 기능 구현 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_img07_241111.png
+Image: 상단이미지 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/03_a_img_231218_01.png
+Image: AI 솔루션 탑재 웹 & 앱 구현 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit9/39_krcon_img05_241111.png

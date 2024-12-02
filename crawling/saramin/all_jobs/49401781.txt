@@ -1,0 +1,56 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49401781&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=9289c623-8ec6-4767-adb2-c6e91dc2d7f5
+
+Iframe Text Content:
+JAVA Application Engineer
+서비스 소개
+BISTelligence는 전신인 BISTel에서 인적분할을 통해 분사한 manufacturing AI 전문 기업입니다.
+제조산업에서 Digital Transformation과정의 단계별 역할을 지원하고, 최적의 모델을 찾아 서비스합니다.
+
+우리는 BISTel에서 20년이상 축적된 제조산업 분야에서의 솔루션 개발과 Consulting 경험을 기반으로 산업현장의 다양한 문제를 고객의 눈높이에서 이해하고 해결책을 제시합니다.
+
+디지털 기술로 대변하는 Data로 이루어진 세상에서 차별화된 경험과 가치를 선사하는 manufacturing AI No.1 기업으로 4차 산업혁명 시대 제조산업의 혁신을 이루어 미래 경쟁력확보의 최고의 파트너 입니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Python Java Kafka Streams Linux Java 8
+주요업무
+• 반도체/이차전지 등 제조 설비 데이터 인터페이스 개발 및 유지보수 
+• 사이트 프로젝트 고객 대응 수행
+자격요건
+• 중국어 회화 (비즈니스 레벨) 가능자 
+• 해외 출장근무에 결격사유가 없는 자 
+• JAVA Application 개발 가능자
+우대사항
+• IT 전공 또는 관련분야 학력 보유자 
+• 중국어 어학 관련 자격증 보유자 
+• JAVA 및 Python을 이용한 프로젝트 개발 및 유지보수 경험자 
+• 반도체 및 제조 관련 서비스 구축 및 활용 경험자
+마감일 및 근무지
+• 마감일 : ~2024-12-13
+• 근무지
+- 서울 서초구 바우뫼로 128
+복지 및 혜택
+• 수평적 조직문화 (영어호칭, 님/닉네임 문화)
+• 자유로운 분위기 (복장 자유, 유연근무제/재택근무, 눈치보지 않는 연차)
+• 건강한 조직문화 (종합검진, 백신휴가 지원)
+• 경조사 지원 (결혼, 출산, 돌, 자녀수능격려, 회갑/칠순, 상 지원 등)
+• 선택적 복지제도 (매월 5만원, 개인건강 및 자기개발 지원)
+• 장기근속포상 (포상휴가 및 포상금, 최대 500만원/7일)
+• 사업부포상 (매월 우수사원 포상)
+• 리프레쉬 휴가 (생일/기념일 특별휴가, 프로젝트 종료휴가)
+• 사내 동호회
+• 그외 지원사항
+ - 퇴직연금, Onsite 수당, 출장수당, 직책수당, 4대보험, 명절선물/귀향비
+ - 직무능력향상교육, 리더쉽 강화교육
+ - 회의실, 전용사옥, 노트북, 사원증, 사무용품, 웰컴키트 지급
+ - 출산전후휴가, 육아휴직 지원 등 
+
+https://www.bistelligence.ai/career
+
+Iframe Image Links:
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png
+Image: Kafka Streams | Link: https://cdn.jumpit.co.kr/images/stacks/kafkastreams.png
+Image: Java 8 | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Java | Link: https://cdn.jumpit.co.kr/images/stacks/java.png

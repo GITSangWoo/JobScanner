@@ -1,0 +1,100 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49375291&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=afade53c-0067-444e-b9f4-d6ef66adda15
+
+Iframe Text Content:
+ㆍ모집부문 전체
+회사 구분 포지션
+㈜폴라리스오피스 경력
+(정규직/
+계약직) ㆍ개발 부분
+   소프트웨어엔지니어, Back-end 개발, Doc엔진개발, iOS개발, AI개발지원
+
+ㆍ사업부문
+   UI디자인, UI/UX기획
+* 자사 홈페이지 공고 확인하시어 조직 소개 및 담당업무 등 공고 상세내용 확인 부탁드립니다.
+ㆍ개발부문
+직무 담당업무 자격요건 공고
+바로가기
+소프트웨어
+엔지니어 Polaris Docs
+개발 및 유지보수 ㆍ경력 3년 이상
+ㆍSpring, Spring Boot 기반의 설정, Bean 객체간
+   의존성 이해, API 개발 가능 하신 분
+ㆍWeb 기반 HTML, CSS, Javascript 등을 통해 화면
+   개발 가능 하신 분
+ㆍ외근 및 출장 업무에 거부감이 없으신 분
+바로가기
+Back-end 개발 Polaris Office
+서비스 서버개발 및 운영 ㆍ경력 : 2년 ~ 6년
+ㆍLinux 환경 내 Java & Spring Framwork 개발 역량
+ㆍMySQL 및 NoSQL 개발 경험
+ㆍ대규모 트래픽 처리 및 분산 데이터 처리 서비스
+   개발/운영 경험
+ㆍ적극적인 커뮤니케이션 역량 보유
+바로가기
+Doc엔진개발 Polaris Office
+엔진 연구개발 ㆍ신입 또는 경력 2년 이하
+ㆍ소프트웨어개발 관련 학과를 이수한 분
+ㆍ프로그래밍언어 중급 1개 이상인 분
+ㆍAlgorithm, Design Pattern 지식을 보유한 분
+ㆍ최신 IT트렌드를 잘 이해하고 있는 분 바로가기
+iOS개발 기업용 모바일
+폴라리스오피스 개발 ㆍ신입 또는 경력 2년 이하
+ㆍ새로운 언어와 개발 환경을 배우는 것을 즐기는 분
+ㆍ팀원과 원활하게 소통하며 협업 할 수 있는 분
+ㆍ능동적이고 적극적인 마인드를 가진 분
+ㆍ최신 iOS 기술 및 트렌드에 관심이 많은 분 바로가기
+AI개발지원
+(계약직/3개월) AI관련 문서 데이터
+품질 관리 및 개발 지원 ㆍ문서 요소에 대한 이해력
+ㆍPython 프로그래밍 능력
+ㆍJSON 데이터 구조 이해 및 처리 경험
+ㆍ품질 관리 의식
+바로가기
+ㆍ사업/경영지원부문
+직무 담당업무 자격요건 공고
+바로가기
+인사총무 폴라리스오피스
+인사운영 및 총무업무 ㆍ신입 또는 경력 2년 이하
+ㆍ구성원에 대한 깊은 관심과 헌신을 가지신 분
+ㆍ긍정적인 성격과 책임감 있고 꼼꼼한 업무가 가능하신 분
+ㆍ능동적으로 행동하고 문제해결능력이 좋으신 분
+ㆍ상대방의 입장에서 생각하고 공감능력이 좋으신 분 바로가기
+UI 디자인 Polaris Office 제품군
+GUI디자인 ㆍ경력 : 3년 ~ 6년
+ㆍ모바일 디자인 및 가이드 제작 경험이 있는 분
+ㆍ플랫폼별 UI에 대한 이해, 감각적인 디자인 시각화 역량을
+   갖고 계신 분
+ㆍ원만한 성격, 폭넓은 배경 지식으로 기획, 개발, 마케팅등
+   유관부서와 협업을 잘할 수 있는 분
+ㆍ그래픽 툴 사용이 능숙하신 분
+   (Figma, Sketch, Photoshop, Illustrator등)
+ㆍ포트폴리오 제출 필수 (본인 기여도 기재) 바로가기
+UI/UX기획
+(계약직/3개월) AI기능 인터페이스
+UI/UX 상세 기획 및
+기본 디자인 작업 ㆍ경력 3~7년
+ㆍ웹, 모바일 등의 디지털 기반 서비스의 UI/UX 기획 또는
+   디자인 경험
+ㆍWireframe 및 UX Flow 설계, 화면 상세 기능 정의 능력
+ㆍ개발팀과 원활하게 협업할 수 있는 커뮤니케이션 능력
+ㆍFigma, Adobe XD 등 UI/UX 디자인 툴 활용 능력
+ㆍUI/UX 설계 및 스토리보드/플로우차트 등의
+   문서 작성 능력 바로가기
+ㆍ근무조건
+ㆍ고용형태: 정규직
+ㆍ근무지: 서울시 구로구 디지털로 31길 12, 11층, 15층
+ㆍ급여조건: 면접 후 협의
+ㆍ근무요일/시간: 주 5일(월~금) 오전 9시 30분 ~ 오후 6시 30분
+ㆍ수습종료 후 재택근무(최대 주2회) 및 자율출퇴근제 실시 (조직 별 상이)
+ㆍ전형절차
+※ 각 직무별 전형절차는 상이합니다. 자세한 사항은 홈페이지 상의 개별 공고 내용을 확인해주시기 바랍니다.
+
+Iframe Image Links:
+Image: 폴라리스오피스에서 일하는 방식! 인터뷰 보러가기 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit8/36_polarisofficecorp_top2_230407.png
+Image: 복리후생 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_polar_benefit_241111.png
+Image: 추천하고 싶은 분이 계신가요? 입사 확정시, 추천인에게 100만원 보상!
+지원하는 데 있어 고민이 된다면? | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit6/04_polarisofficecorp_img_220803_02.png
+Image: Designed by saramin | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit/watermark_basic.png
+Image: 서류전형 온라인코딩테스트(개발직군) 1차면접 2차면접 최종합격 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit5/polarisofficecorp_step_211118.png
+Image: ㈜폴라리스오피스 | 폴라리스오피스 부문별 신입/경력직 채용 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_polar_top_241111.png
+Image: 우리 회사의 찐한 소개  | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/06_polar_img_241111.png

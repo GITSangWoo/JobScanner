@@ -1,0 +1,81 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49404259&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=34239cb3-23b5-4922-9da0-4f2d19f52223
+
+Iframe Text Content:
+불법 저작권 모니터링 시스템 개발 및 운영
+서비스 소개
+> 클라우드 기반 AI 개발 환경 + AI 프로젝트 컨설팅 업체로 시작
+> 2019년, 우연한 기회로 AI반도체 클러스터화 연구를 하였고, 본격적으로 R&D 추진중
+> 도로, 공장내 CCTV등을 인식하는 등의 비전 인식 기술 개발과 이를 AI반도체로 제공하기 위한 기술 개발중
+
+- 2017.11월 설립한 뒤, 처음에는 Docker, Kubernetes기술을 활용해서 (사설용) 클라우드를 구축하는 업무를 수행하였습니다. 그러다가 GPU를 프로비저닝하는 기능을 추가하면서 자연스럽게 AI연구를 할 수 있는 시스템 개발을 하게 되었습니다. 주로 AWS등의 상용 클라우드를 사용하고 싶으나 사용하기 어려운 회사에 납품을 하게 되었고, 자연스럽게 관련 회사의 데이터를 활용한 AI 프로젝트도 함께 수행하게 되었습니다.
+- 2019년에 우연한 기회로 SKT의 AI반도체인 Sapeon을 클러스터로 구성한 뒤, 프로비저닝하는 연구 과제를 수행하면서 NVIDIA GPU가 아닌 AI반도체를 활용하여 클라우드를 구축할 수 있게 되었습니다.
+- 이 과정에서 AI반도체를 제품수준(Production Level)로 가기 위해서는 좀 더 좋은 소프트웨어와 라이브러리 개발이 필요하다는 것을 알게 되었고, 관련한 개발을 하고 있습니다.
+- 특히 CCTV 영상 인식, 저작권 침범 판단 등의 Vision AI 연구를 함께 하고 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Docker JavaScript Python
+주요업무
+• 서비스 운영 및 관리
+• 이슈 해결 및 고객 지원
+• 시스템 모니터링 및 성능 최적화
+• 품질 보증을 위한 테스트 계획 및 실행
+• 버그 및 이슈 보고서 작성
+자격요건
+• 배움에 대해 적극적이고, 새로운 시도를 좋아하시는분
+• 팀 협업이 가능하고, 커뮤니케이션이 원활하신분
+• 기본적인 컴퓨터 툴 ( 엑셀, PPT …) 다룰줄 아는분
+우대사항
+• 운영 및 개발 경험 우대
+• **코딩 능력 보유자 우대**
+• 팀 협업 및 커뮤니케이션 능력
+마감일 및 근무지
+• 마감일 : ~2024-12-17
+• 근무지
+- 서울 관악구 남부순환로218길 36 6층
+복지 및 혜택
+[근무환경]
+• 재택근무, 탄력근무 가능 ( 8-17 , 9-18 , 10-19 ) - 점심 휴게시간 1시간 포함**
+• 사무실위치는 현재 3개운영 중이지만 7월이후부터는 서울대와 판교사무실로만 운영 예정입니다**
+***저작권 보호 서비스 개발팀은 서울특별시 마포구 월드컵북로 402 Kgit 센터 (상암동) 에서 근무 예정입니다.***
+
+• 눈치를 보는 회사는 아니기에 모든 형태의 처우 협상 가능합니다.**
+• 자유로운 연차 사용 가능
+• 생일 있는 달 오후 반차 제공
+
+[사내문화]
+
+**닉네임 호칭**
+• 멤버별로 닉네임을 정하여 직급이나 이름이 아닌 닉네임으로 부르고 있습니다.
+ 
+**월 1회 Monthly 진행** 
+• 개인 및 팀, 프로젝트별로 한달간 진행한 업무와 지식에 대해 공유하고, 발표하며 교류합니다.
+
+**Slack, Notion 을 활용한 협업**
+• slack을 이용해 커뮤니케이션을 하며 Notion을 이용해 문서화 및 일정관리를 하고 있습니다.
+
+**간식비** 
+• 1인당 1만원 매달 간식비가 지원되어, 한달에 한번정도 함께 구매하여 즐기고있습니다.
+
+**CKA 자격증 지원**
+• [CKA 자격증](https://training.linuxfoundation.org/certification/certified-kubernetes-administrator-cka/) 응시 후 합격할 경우 비용을 환급해줍니다.
+
+**사내 스터디 진행 및 지원** ( 1인 월 1회 쫑파티를 지원합니다. 1인 1만원~2만원)
+• [**스터디**](https://study.dudaji.com/)
+　- AI 5차 스터디 (2022 5/10~6/30) : Pytorch
+　- 엔지니어 스터디 (2022 5/26~7/7) : 디자인 패턴
+　- CKA 스터디 (2022 8/17~11/1) : 쿠버네티스 자격증
+　- javascript 스터디 (2023 01/31 ~ 진행중) : [20 Web Projects With Vanilla JavaScript](https://github.com/bradtraversy/vanillawebprojects) 실습
+
+**Kubecon 참관** 
+• 2019년 스페인 바르셀로나에서 열린 Kubecon 을 참관하였습니다.
+　- [https://blog.dudaji.com/kubernetes/2019/06/18/2019-kubecon-europe-day2.html](https://blog.dudaji.com/kubernetes/2019/06/18/2019-kubecon-europe-day2.html)
+• 2022년 스페인 발렌시아에서 열린 Kubecon 에 참석하여 참관하였습니다.
+채용절차 및 기타 지원 유의사항
+연봉 : 3000 으로 시작하며 해당 프로젝트 종료 시 본인의 업무 기여도에 따라 연봉 협상 가능합니다.
+
+Iframe Image Links:
+Image: Docker | Link: https://cdn.jumpit.co.kr/images/stacks/docker.png
+Image: JavaScript | Link: https://cdn.jumpit.co.kr/images/stacks/javascript.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png

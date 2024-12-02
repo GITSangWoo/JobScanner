@@ -1,0 +1,85 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49354966&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=4ca7329e-bb4d-4cd4-b1b9-260c4be680e2
+
+Iframe Text Content:
+Python Back-end Engineer
+서비스 소개
+Allganize 는 AI 가 사람의 언어를 이해하고, 그에 맞는 액션을 자동화 할 수 있는 Natural Language Understanding (NLU) API 와 이 NLU API 를 이용한 금융, 보험, 커머스 등의 고객 서포트에 특화된 Answer Bot을 제공하고 있습니다. 
+고객사들로부터 어떤 솔루션보다도 높은 정확도의 NLU API 를 제공하고 있다는 평가를 받고 있습니다.
+
+특히 기계 독해 라는 기술을 사용해서 AI 가 직원과 고객들의 질문에 대해서 방대한 문서에서 자동으로 답변을 할 수 있는 부분에 집중을 하고 있습니다. 
+고객사는 한국/미국/일본에 있고, 한국의 고객사는 SKT, LG U+, 현대카드, 코스맥스 등이 있고, 글로벌한 고객사는 KDDI, JPOWER 등 여러 곳이 있습니다.
+
+본사는 미국 휴스턴에 있으며, 미국 실리콘밸리와 일본 도쿄, 서울 강남 등에 오피스를 두고 있습니다. 
+2017년과 2019년에 Seed Round 와 Series A 라운드로 총 500만 달러를 투자 유치하였으며 작년 3월에는 Series A2 투자로 1,000만 달러를 유치하기도 했습니다.
+
+회사는 매 분기별 300% 이상 급 성장 하고 있으며, 같이 회사의 성장을 이끌어나갈 좋은 인재를 모시고자 합니다.
+
+올거나이즈 이창수 대표 인터뷰
+http://jmagazine.joins.com/forbes/view/334556
+
+딥테크 스타트업 창업가 11인에 선정된 올거나이즈
+https://www.chosun.com/economy/smb-venture/2021/12/28/4KHHTFWA6ZCHHN42ISHJMHPJBA/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+AWS DeepLearning AI/인공지능 NoSql Spring Boot Node.js Django Python
+주요업무
+• 간결하고, 읽기 쉬우며, 재사용 가능하고, 유지 보수가 쉬운 코드를 작성합니다.
+• 비즈니스 로직을 개발하고, 성능 및 확장성에 중점을 둔 데이터 모델, 서버 아키텍처를 설계 및 구현합니다.
+• 프론트엔드 엔지니어, AI 엔지니어, 기획자, 디자이너와 긴밀하게 협력하여, 제품에 필요한 백엔드 서비스를 개발 관리합니다.
+• 개발하는 기능의 기술적 세부 사항과 다른 시스템과의 상호 작용을 깊이 이해합니다.
+• 해당 분야의 최고의 인재들과 협업하여 AI 및 대규모 언어 모델(LLM)을 활용한 제품을 개발합니다.
+• 팀과 함께 코드 리뷰에 참여하고, 새로운 기술 동향을 지속적으로 파악하고 적용합니다.
+자격요건
+• 하나 이상의 개발 언어(예: Python)에 능통한 분.
+• Django, FastAPI, Node.js, Spring Boot 등의 프레임워크 중 하나 이상을 이해하고 경험한 분
+• RDBMS 또는 NoSQL DB에 대해 깊게 이해하며, 실제로 사용 경험이 있는 분
+• 고객이 직접 사용하는 프러덕션 서비스에서의 백엔드 개발 및 배포 경험을 보유하신 분
+• 소프트웨어 아키텍처 및 디자인에 대한 깊은 이해가 있으며, 확장성과 유지보수, 효율 등을 고려하실 수 있는 분
+• 다양한 팀원(디자이너, 기획자, 세일즈)과의 원활한 커뮤니케이션 능력과 고객의 요구사항에 빠르게 대응할 수 있는 분
+• 백엔드 코드의 변경이 고객에게 미치는 영향을 이해하고, 고객 중심으로 생각하실 수 있는 분
+• AI, 딥러닝, LLM 등의 기술에 대한 학습 열정이 있으신 분.
+우대사항
+• 대규모 웹 어플리케이션의 개발 경험을 보유한 분
+• 'Lean Startup'과 'Growth Hacking' 전략에 대한 실무 경험이 있는 분
+• AWS, Azure, GCP와 같은 클라우드 플랫폼에서의 서비스 개발 경험이 풍부한 분
+• 자신의 전문 지식을 팀원과 적극적으로 공유하는 분
+• 작업물을 영어로 발표하거나 그런 능력을 키우기 위해 노력하는 분
+• 애자일(Agile) 방법론에 숙련된 분
+• Docker나 Kubernetes 환경에 능숙하고, 이러한 환경에서의 실무 경험이 있는 분
+• Redis, Kafka, Airflow 등의 데이터 파이프라인 도구에 대한 처리 및 개발 경험이 있으신 분
+마감일 및 근무지
+• 마감일 : ~2024-12-06
+• 근무지
+- 서울 강남구 테헤란로8길 16 8층
+복지 및 혜택
+[글로벌 인재로 성장할 수 있는 기회] 
+• 미국 휴스턴 본사 및 실리콘 밸리, 일본 도쿄에 있는 팀과 일할 수 있는 글로벌한 업무 환경을 제공해드려요. 
+• 미국 본사로 Exchange Program(1-2개월)을 운영하며 희망할 경우 경비를 지원 해드려요. 
+• 조직 목표 달성시 글로벌팀이 한자리에 모이는 Global Offsite를 운영하고 있어요.(2022년 12월 태국 파타야에서 진행) 
+
+[자율적이고 업무 몰입을 돕는 근무 환경]
+• 근무시간은 9시 - 6시가 기본이지만 상황에 맞게 유연한 출/퇴근이 가능해요. 
+• 고사양의 노트북과 모니터를 지원해드려요. 그 외에도 필요한 장비를 적극 지원해드리고 있습니다. 
+• 사무실에 나오시는 날은 식대 걱정 없도록, 점심 및 저녁 식사 비용을 지원합니다. 
+• 당 떨어지는 일 없도록, 사무실에는 항시 간식을 구비하고 있어요. 
+
+[그 외에 제공 해드리는 것들]
+• 자기계발비를 지원해드려요. 
+• 도서 구입비용을 지원해드려요. 
+• 설과 추석에는 명절 선물을 지급해드려요. 
+• 종합 건강 검진을 지원해드려요. 
+• 연차 외 유급 병가제도와 연말 약 1주 간의 전사 Off기간을 운영하고 있어요.
+채용절차 및 기타 지원 유의사항
+-
+
+Iframe Image Links:
+Image: AWS | Link: https://cdn.jumpit.co.kr/images/stacks/aws.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: DeepLearning | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Node.js | Link: https://cdn.jumpit.co.kr/images/stacks/node.js.png
+Image: Spring Boot | Link: https://cdn.jumpit.co.kr/images/stacks/springboot.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: Django | Link: https://cdn.jumpit.co.kr/images/stacks/django.png
+Image: AI/인공지능 | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: NoSql | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

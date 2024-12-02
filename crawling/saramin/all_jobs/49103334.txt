@@ -1,0 +1,82 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49103334&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c71d81ab-2f24-40bb-a55a-ed5c0c19550c
+
+Iframe Text Content:
+[채용] 빅데이터 수집 시스템 개발자
+및 인프라 운영 엔지니어
+모집부문 및 상세내용
+신입_서비스 시스템 개발 및 운영 0명
+담당업무
+- 웹 수집 시스템 개발 및 운영 관리(php, Java)
+- 빅데이터 수집 시스템 개발 및 운영 관리
+- 빅데이터 데이터 점검 및 관리 운영 업무
+- 차세대 데이터 플랫폼 개발 참여(Java, Python)
+
+자격요건
+- 신입 또는 주니어 개발경력 (5년이하)
+- php, Mysql 등 백엔드 학습 및 개발 가능자
+- HTML, javascript, CSS 개발 가능자
+- 서비스 운영관리에 대한 책임감 보유
+
+우대사항
+- Git 형상관리 사용 가능
+- Linux 서비스 운영 가능
+- Docker, Kubernetes 운영 가능
+- Cloud (AWS, GCP, Azure등) 서비스 사용 가능
+- ElasticSearch 사용가능
+- node, puppeteer 개발 가능
+- C# 개발 가능
+- 관련자격증보유 : 정보처리기사
+
+
+경력_서비스 시스템 개발 및 운영  0명
+담당업무
+- 빅데이터 수집/공급 시스템 개발 및 운영 관리
+- 웹 수집 시스템 개발 및 운영 관리
+
+자격요건
+- 학력 : 초대졸이상
+- Java, Spring framework, MySQL 개발 가능자
+- HTML, javascript, CSS 개발 가능자
+- [경력 지원만 해당] 관련직무 3년 ~ 10년 (대리~과장급)
+
+우대사항
+-Git 형상관리 사용 가능 
+-Linux 서비스 운영 가능
+-Docker, Kubernetes 운영 가능
+-Cloud (AWS, GCP, Azure 등) 서비스 사용 가능
+-ElasticSearch 사용 가능
+-Python 개발 가능 혹은 경험자
+-관련자격증보유 : 정보처리기사, 정보처리산업기사
+경력_데이터 수집/인프라 운영 0명
+담당업무
+-사내 IT 자산 운영 관리 실무
+-IDC 서버 및 클라우드 서비스 모니터링, 점검 및 장애 대응
+-웹 수집 시스템 유지 관리
+
+자격요건
+-학력 : 초대졸이상
+-Linux 서버 운용 가능자
+-[경력 지원만 해당] 관련 직무 3년이상
+
+우대사항
+-관련자격보유 : 리눅스마스터, 네트워크관리사 등
+-시스템 성능 지표 및 서버 장비 스팩에 대한 이해 등력 보유
+-Cloud 서비스 VM 및 Network 구성 경험 보유 (AWS, GCP, Azure 등)
+-PHP 혹은 프로그래밍 언어 개발 업무 겸업 가능
+근무조건
+ㆍ 근무형태 : 정규직
+ㆍ 근무지역 : (10391) 경기 고양시 일산서구 킨텍스로 240, 24층
+전형절차
+서류전형
+1차면접
+임원면접
+최종합격
+접수기간 및 방법
+
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+ㆍ모집분야별로 마감일이 상이할 수 있으니 유의하시길 바랍니다.
+
+No images found in iframe.

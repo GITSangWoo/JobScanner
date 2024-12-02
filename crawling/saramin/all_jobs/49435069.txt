@@ -1,0 +1,29 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49435069&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c3e8eb17-f13d-407d-8e4f-8c074577dd53
+
+Iframe Text Content:
+[채용의뢰사]  IT 전문 솔루션 회사
+ [채용포지션]  DB 엔지니어 
+ [담당업무]  
+- 데이터베이스 설치 / 운영
+- DB 장애처리 및 트러블 슈팅
+- 데이터 모델링 및 쿼리 검수
+
+[경력 요건 및 우대사항] 
+- DE 또는 DBA 관련 최소 5년 이상의 경력
+- DBMS 유관업무 경험자 (설치, 백업복구, HA, DR 등)
+- PostgreSQL, Oracle, 또는 DBMS 자격증 소지사 우대
+   [근무형태] 정규직
+ [근무지] 서울 여의도
+ [처우조건]  면접 후 협의
+ [채용절차] 
+ 서류심사 → 1차면접 → 2차면접 →   최종합격
+ [서류 제출]
+   1) 제출서류 : 국문이력서 (자기소개서 포함)
+                  (최종합격 후 졸업증명서, 경력증명서, 원천징수증명서 등 기타 서류 제출)
+   2) 제출방법 : 온라인 또는 이메일 접수
+  3) 제출기한 : ASAP
+ (주) 비에이블 컨설팅그룹   김 수 성 이사 
+서울시 금천구 가산디지털2로 165, 1501호(가산동, 백상스타타워2차)
+TEL. 02-6480-8293    FAX. 02-6480-7932    H.P. 010-9172-7919
+
+No images found in iframe.

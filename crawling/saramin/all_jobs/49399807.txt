@@ -1,0 +1,59 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49399807&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c53375c6-e220-4fb3-8afc-00c39f47a76c
+
+Iframe Text Content:
+(주)미디어윌네트웍스
+데이터분석(DA) 계약직 채용
+(주)미디어윌네트웍스는 한사람 한사람의 꿈을 소중하게 생각합니다.
+(주)미디어윌네트웍스와 함께 성장하며 더 가치있는 미래를 이끌어갈 당신을 기다립니다.
+열정과 도전의식을 가지고 더 큰 목표와 꿈을 펼치고 싶은 분들의 많은 지원 바랍니다.
+모집분야 
+모집부문 · 알바천국 데이터분석(DA) 계약직 모집(1년)
+담당업무
+· 서비스 지표, 로그 데이터 설계 및 관리
+· 알바천국 트래킹 시스템 운영 및 관리
+· 고급 데이터 분석 기법을 활용한 인사이트 도출
+· 데이터 웨어하우스(DW) 및 데이터 비주얼화 툴 관리
+자격요건 · 데이터 수집/분석/정제(정형 및 비정형) 가능한 분
+· DW모델링, BI구축, ETL프로세스 설계 가능한 분
+우대조건 · 구글 빅쿼리, 루커 스튜디오 경험한 분
+· SQL, Python 등 프로그래밍 언어 숙련된 분
+※ 당사는 금연 사업장으로 운영중이오니, 입사지원시 참고 바랍니다.
+근무조건
+근무형태 계약직(수습기간 : 경력직 3개월, 신입직 6개월)
+근무장소 서울시 강남구 테헤란로 322, 동관 20층
+근무시간 주5일(월~금) 09:00~18:00
+급여수준 회사내규에 따른(면접 후 결정)
+복리후생
+급여제도
+장기근속자/공로상/직원추천 포상,
+퇴직연금, 4대 보험, 인센티브제
+각종지원
+선택적 복리후생비 지원, 경조사 지원, 교육비 지원
+건강/생활
+중식지원, 건강검진, 안마의자구비, 사내 음료 구비
+여가지원
+리프레쉬데이(월2회), 사내 동호회 지원, 제휴 콘도 할인 등
+
+전형절차
+* 면접 전형은 경우에 따라 실무와 임원면접이 별도로 진행될 수 있음
+(면접합격자에 한해 2차서류전형진행)
+채용일정
+접수기간 공고일로부터 최소 2주
+(채용 여부에 따라 조기마감 또는 연장될 수 있음)
+면접안내 서류전형 합격자에 한해 개별 통보
+결과안내 면접일로부터 7일 이내에 결과 안내
+지원방법
+접수방법 온라인 지원
+지원서류 입사지원서, 경력기술서, 자기소개서
+기타사항
+· 입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수있습니다.
+· 제출된 서류는 「채용절차의 공정화에 관한 법률」 제11조 제1항에 의해 채용 여부가 확정된  날로부터 15일 이내에 반환을 청구할 수 있습니다. (반환 시 소용비용은 청구자 부담)
+
+Iframe Image Links:
+Image: 건강/생활 아이콘 | Link: https://www.saraminimage.co.kr/?url=http://image.alba.kr/corp/recruit/template_icon_welfare3.png
+Image: ◎ | Link: https://www.saraminimage.co.kr/?url=http://image.alba.kr/corp/recruit/template_icon_title.png
+Image: 입사지원 → 서류심사 → 면접(실무/임원) → 채용확정 | Link: https://www.saraminimage.co.kr/?url=http://image.alba.kr/corp/recruit/template_process.png
+Image: 각종지원 아이콘 | Link: https://www.saraminimage.co.kr/?url=http://image.alba.kr/corp/recruit/template_icon_welfare2.png
+Image: 여가지원 아이콘 | Link: https://www.saraminimage.co.kr/?url=http://image.alba.kr/corp/recruit/template_icon_welfare4.png
+Image:  (주)미디어윌네트웍스 알바천국 | Link: https://www.saraminimage.co.kr/?url=http://image.alba.kr/corp/recruit/template_bottom.png
+Image: 급여제도 아이콘 | Link: https://www.saraminimage.co.kr/?url=http://image.alba.kr/corp/recruit/template_icon_welfare1.png

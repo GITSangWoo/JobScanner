@@ -1,0 +1,66 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49314075&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=76c04cb4-d2f7-4559-9a21-da2f8ca32832
+
+Iframe Text Content:
+채용 부문
+모집무분
+ 담당업무
+ 자격요건
+ 우대사항
+ 모집인원
+Cloud Management Platform 개발
+당사 AWS 클라우드 비용관리 툴인 FitCloud 시스템 고도화 설계 및 개발
+ ● FitCloud 시스템 빌링 데이터 프로세스 튜닝
+ ● FitCloud 시스템 고도화를 위한 기능 분석 및 데이터베이스 설계
+ ● FitCloud 시스템 고도화를 위한 Application Architecture 설계 및 개발(PL)
+ ●2년 이상의 웹어플리케이션 설계(Application Architecture) 경험
+  ●7년 이상의 웹어플리케이션 개발 실무 경험
+  ●Spring framework 기반의 Java Web 어플리케이션 설계 및 개발 경험
+  ●SpringBoot를 활용한 개발 경험
+  ●RESTful API 형태의 서비스 설계 및 개발 경험
+ ●데이버베이스(MySQL)에 대한 이해와 설계 능력
+ ● Public 클라우드 빌링 또는 비용절감 관련 툴 개발 경험
+ ● 컨테이너 기반 MSA 설계 경험
+ ● 대용량 데이터베이스 설계 경험
+ ● View.js, react, NextJS, Metronic 등 Front-end 라이브러리를 이용한 개발 경험
+ ● Amazon Athena 또는 Amazon Redshift 사용 경험
+ ● Product 기획 / 개발 경험
+ ● DevOps 기반의 개발 및 배포 경험 (AWS의 Code Series 에 대한 이해 및 적용 역량)
+ ● AWS 클라우드 관련 자격증 보유자
+ ● AWS SageMaker 등 AWS AI/ML 관련 서비스 유경험자
+ O명
+
+근무 조건
+근무 형태 : 정규직 (수습기간 3개월)
+근무 요일 : 주5일 (월~금)
+근무 시간 : 9시~18시
+급여 : 사내규정에 따름
+
+지원 자격
+공통 요건
+학력 무관
+나이/성별 무관
+해외 여행에 결격 사유가 없는 자
+
+우대 요건
+국가보훈대상자 및 장애인은 법률에 의거 우대합니다. (증빙서류 제출자에 한함)
+기타 사항
+입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소 될 수 있습니다.
+지원 방법
+접수 방법 : 사람인 입사 지원
+제출 서류 : 이력서, 경력기술서, 자기소개서 제출
+이력서 양식 : 사람인 온라인 이력서
+전형절차
+
+
+
+일부 직무에 한해 기술 과제, 사전 과제 등이 진행 될 수 있습니다.
+면접 일정은 서류 합격자에 한하여 개별 연락 드립니다.
+오시는 길
+주소
+ 경기도 과천시 과천대로12길 117, 과천펜타원 G동 7층
+연락처
+Tel : 02-6249-6117
+
+Iframe Image Links:
+Image: saramin-saltware | Link: https://fitcloud.co.kr/eDM/images/%EC%B1%84%EC%9A%A9%EA%B3%B5%EA%B3%A0/230530_%EC%86%94%ED%8A%B8%EC%9B%A8%EC%96%B4%EC%B1%84%EC%9A%A9_%EC%82%AC%EB%9E%8C%EC%9D%B8.png
+Image: saltware_process | Link: https://fitcloud.co.kr/eDM/images/%EC%B1%84%EC%9A%A9%EA%B3%B5%EA%B3%A0/%EC%B1%84%EC%9A%A9%EA%B3%B5%EA%B3%A0_%EC%A0%88%EC%B0%A8_04.png

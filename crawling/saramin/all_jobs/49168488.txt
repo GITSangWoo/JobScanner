@@ -1,0 +1,41 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49168488&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c475dc3f-1f95-4f18-928d-bd3f300fe355
+
+Iframe Text Content:
+PCB SI-PI Simulation Engineer
+Teradyne Korea는 1978년에 설립된 회사로 자본금 1억원, 매출액 USD 200M, 사원수 100명 규모의 외국계(외국 투자기업)입니다. 서울 서초구 양재2동에 위치하고 있으며, 반도체 및 통신 검사 장비 판매 및 서비스사업을 하고 있습니다.
+모집부문 및 상세내용
+ - Minimum 7 years’ experience in PCB layout and automated test.
+- Bachelor of Science in Electrical Engineering.
+- Experience with Cadence Allegro Cad tools (Allegro 17.2 and Orcad Capture).
+- Experience with E.M. field solvers, time and frequency domain simulation tools:
+Cadence Sigrity, Ansys HFSS and ADS, and Synopsys HSpice.
+- Able to do PCB design from Data entry to Output of fabrication files.
+- Attends product development and critical kick off meetings for initial product launch.
+- Use Teamcenter to research parts and BOM’s.
+- Perform QA inspection on final designs for completeness and quality.
+- Some travel may be needed for training, off site meetings, or product validation.
+- All other related duties as assigned by management.
+    - Solid comprehension of electromagnetic and transmission line theory, signal integrity, differential and single-ended interface technologies.
+- Clear comprehension of power distribution network design and optimization techniques.
+- Familiarity with, and fundamental comprehension of lab measurement equipment like Oscilloscopes, TDR, VNA etc
+- Execute on S parameter model extraction, channel study, target impedance study, etc.
+- Engage with engineers and vendors to comprehend and evaluate PCB materials and stackups.
+- Must comprehend PCB schematic and know how to make changes to schematic and layout for SI/PI improvements.
+- Experience with the following industry standards: DDR, LPDDR, GDDR, PCIe, UFS, MIPI, etc.
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월
+ㆍ 근무지역 : (06771) 서울 서초구 매헌로 16, 10층 - 신분당선 양재시민의숲 에서 1km 이내
+전형절차
+서류전형
+1차 면접
+2차 면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 10월 10일 (목) 14시 ~ 2024년 12월 9일 (월) 24시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+ㆍ 제출서류 : 영문이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+No images found in iframe.

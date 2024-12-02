@@ -1,0 +1,68 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49086440&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=8fea491d-2cf0-4673-87c2-70a973f6cd9a
+
+Iframe Text Content:
+[ThorDrive] Senior Software Engineer (Perception)
+(전문연구요원 가능)
+What we're looking for
+ThorDrive is seeking a talented individual who possesses infinite curiosity. Be a pioneer to create groundbreaking technology with us. This is an incredible opportunity to make a meaningful impact on the future of ThorDrive as well as everyone's life.
+토르드라이브는 무한한 호기심을 가진 재능 있는 인재를 찾고 있습니다. 토르드라이브와 함께 혁신적인 기술을 창조하는 선구자가 될 기회를 가지고 ThorDrive의 미래와 모든 사람의 미래의 삶에 의미 있는 영향을 줄 수 있는 놀라운 기회를 저희와 함께 하실 분을 찾고 있습니다.
+모집부문 및 상세내용
+공통 자격요건
+ㆍ학력 : 대졸 이상 (4년)
+ㆍ경력 : 2년 이상
+Senior Software Engineer (Perception) (전문연구요원 가능)  0명
+주요업무
+ㆍ센서(카메라, 라이다 및 레이더) 퓨전 기반 탐지 알고리즘 개발
+ㆍReal-time으로 작동하는 딥러닝 기반 컴퓨터 비전 탐지 알고리즘 개발
+ㆍ자율주행 차량 실차 테스트를 통한 알고리즘 및 방법론 검증
+
+자격요건
+ㆍ컴퓨터 비전 및 딥러닝 분야 석사학위 이상 또는 이에 준하는 경력 소유자
+ㆍPyTorch, TensorFlow 등 딥러닝 프레임워크 관련 숙련된 경력자
+ㆍC++, python 프로그래밍 관련 숙련된 경력자
+ㆍ팀원들과의 원활한 의사소통 능력
+
+우대 사항
+ㆍ자율주행 및 로보틱스 분야에서의 경험이 있으신 분
+ㆍROS 환경 개발에 익숙하신 분
+ㆍCUDA C/ C++개발 경험이 있으신 분
+ㆍ탑티어 컨퍼런스(e.g. CVPR, ICCV, ECCV, ICLR, ICML, NeurIPS, ICRA and IROS) 논문을 게재해보신 경험이 있으신 분
+ㆍ라이다(e.g. 3D point cloud) 혹은 레이더(e.g. 2D/3D point cloud, Heatmap etc.) 센서 관련 데이터 경험을 갖추고 있으신 분
+
+혜택 및 복지
+ㆍ선택적 근로시간제 (코어타임 11:00-15:00 외에 자율 출퇴근)
+ㆍ음료 및 간식 제공
+ㆍ전자도서관 이용 제공
+ㆍ직무 관련 교육비 지원
+ㆍ설날/추석 명절 선물 지급
+ㆍ생일자 선물/유급휴가 지급
+ㆍ장기근속자 유급휴가 지급 (3/6/9년)
+ㆍ휴게공간 (안마의자/침대, 캔틴 등)
+ㆍ수평적 조직 문화
+ㆍ자유 복장
+
+[지원 전 반드시 확인해주세요.]
+
+제출 서류 
+ㆍ이력서
+ㆍ포트폴리오
+ㆍ(선택) Github, 논문, 개인 웹페이지 등 보유 기술 역량, 경험을 확인할 수 있는 자료
+
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월
+ㆍ 근무일시 : 유연근무제 (선택적 근로시간제)
+ㆍ 근무지역 : (07268) 서울 영등포구 선유로 165 와이피센터 401호(양평동3가) - 서울 2호선 영등포구청 에서 800m 이내
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 9월 26일 (목) 15시 ~ 채용시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 자유양식
+전형절차
+ㆍ서류 전형 -＞ 코딩 테스트 -＞ 실무 인터뷰 -＞ 임원 인터뷰 -＞ 최종 합격
+ㆍ실무 인터뷰에서 제출해주신 포트폴리오를 활용하여 10분 가량의 자기소개 발표를 진행합니다.
+ㆍ제출해 주신 지원서 내용 중 허위 사실이 있는 경우 합격이 취소될 수 있습니다.
+ㆍ해당 공고는 수시 채용으로, 채용 완료시 조기 마감될 수 있습니다.
+ㆍ국가유공자 및 장애인 등 취업 보호 대상자는 관계 법령에 따라 우대합니다.
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+No images found in iframe.

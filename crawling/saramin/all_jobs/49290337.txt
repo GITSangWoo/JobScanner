@@ -1,0 +1,64 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49290337&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=290bf73e-6420-499b-a8ac-e4cabebed627
+
+Iframe Text Content:
+시스템 엔지니어 (SE) 경력직 모집
+서비스 소개
+시스템/정보보호팀은 에듀윌의 모든 시스템이 안정적으로 운영될 수 있도록 뒷받침하는 역할을 하고 있습니다.
+고객의 소중한 학습 데이터를 보호하고, 시스템 장애를 예방하여 원활한 학습 환경을 제공하는 것이 저희 팀의 목표입니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Jira Python GNU Bash K8S Zabbix GitLab Jenkins vmware Docker
+주요업무
+• 핵심 업무
+ - 온라인 교육 플랫폼의 안정적인 시스템 운영 및 관리, 학습자에게 원활한 학습 환경 제공
+
+• 주요 역할
+ - Linux/Windows 서버 관리
+ - Docker, VMware를 활용한 시스템 가상화 및 운영
+ - 플랫폼 성능 최적화 및 장애 대응
+ - 새로운 교육 서비스를 위한 시스템 확장
+자격요건
+• 학력 무관, 관련학과 전공자 우대
+• 관련 경력 3년 이상
+• 운영체제: Windows/Linux 운영체제 관리 경험
+• 클라우드: NCP, AWS 등 퍼블릭 클라우드 환경에서 인프라 구축 및 운영 경험
+• 컨테이너: Docker를 활용한 컨테이너 기반 서비스 배포 및 운영 경험
+• CI/CD: Jenkins, Gitlab 등 CI/CD 도구를 활용한 개발 파이프라인 구축 및 운영 경험
+• 모니터링: Zabbix를 활용한 시스템 모니터링 및 장애 대응 경험
+• AD: Active Directory 그룹 정책 설정 및 관리 경험
+우대사항
+• Active Directory, LDAP 등 디렉터리 서비스 관리
+• CDN 서비스 운영
+• 가상화 환경 (VMware, Hyper-V) 관리
+• 스크립팅 (Bash, Python) 및 자동화
+• 오픈소스 활용 (Jira, Confluence, Gitlab 등)
+• ISMS 또는 ISMS-P 인증 심사 경험 우대
+• 동종업종 경력자 및 관련학과 전공자 우대
+• 해당 분야에서 우수한 성과를 이룬 경험이 있는자
+• 비흡연자 우대
+마감일 및 근무지
+• 마감일 : ~2024-11-24
+• 근무지
+- 서울 구로구 디지털로34길 55, 310호
+복지 및 혜택
+- 경조사비
+- 역량교육
+- 생일/결혼기념일 조기 퇴근
+- 반차/반반차
+- 포상제도 등
+채용절차 및 기타 지원 유의사항
+서류전형 > 인성검사 > 1차(실무)면접 > 2차(임원)면접 > 서류검증/평판조회 > 최종합격
+ㄴ 상기 채용절차는 회사의 사정에 따라 변경(조정)될 수 있음
+
+Iframe Image Links:
+Image: GitLab | Link: https://cdn.jumpit.co.kr/images/stacks/gitlab.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: Docker | Link: https://cdn.jumpit.co.kr/images/stacks/docker.png
+Image: Jenkins | Link: https://cdn.jumpit.co.kr/images/stacks/jenkins.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: Jira | Link: https://cdn.jumpit.co.kr/images/stacks/jira.png
+Image: K8S | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: vmware | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: GNU Bash | Link: https://cdn.jumpit.co.kr/images/stacks/GNUBash.png
+Image: Zabbix | Link: https://cdn.jumpit.co.kr/images/stacks/Zabbix.png

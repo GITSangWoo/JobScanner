@@ -1,0 +1,31 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49344630&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=8731facd-9a32-45c0-8469-b750d9edc676
+
+Iframe Text Content:
+[채용의뢰사]  첨단IT서비스  기업
+ [채용포지션]  Software Engineer (과~차장급)
+ [담당업무]  
+    - 원앱 추천 모델개발
+- AI 모델 개발, 테스트 및 서비스 적용
+- 이미지, 텍스트 등 비정형 데이터 기반의 멀티 모달 개발 및 테스트
+- 로그 데이터에서 데이터 추출, 분석, 피쳐 엔지니어링, 모델링
+- 데이터 분석가/엔지니어 및 프로젝트 팀과의 협업을 통한 문제 해결
+ [우대사항] 
+- 컴퓨터 공학, 통계학 등 머신러닝 관련 분야 전공
+- 3년 이상의 AI/ML 관련 엔지니어링 업무 경험 혹은 그에 준하는 역량
+- AI/ML 관련하여 특정 분야에 한하지 않은 도메인 전반에 관심 및 지식
+- 데이터 분석가/엔지니어 및 타 팀과의 원활한 커뮤니케이션 능력
+ [근무형태] 정규직
+ [근무지] 서울 강남
+ [처우조건]  면접 후 협의
+ [채용절차] 
+ 서류심사 → 1차면접 → 2차면접 →   최종합격
+  [서류 제출]
+   1) 제출서류 : 국문이력서 (자기소개서 포함)
+                          (최종합격 후 졸업증명서, 경력증명서, 원천징수증명서 등 기타 서류 제출)
+   2) 제출방법 : 온라인 또는 이메일 접수
+   3) 제출기한 : ASAP
+
+ (주) 비에이블 컨설팅그룹   김 수 성 이사    www.babcg.com
+      E mail  sskim@babcg.com / H.P. 010-9172-7919
+
+No images found in iframe.

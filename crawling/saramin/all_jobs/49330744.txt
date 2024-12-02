@@ -1,0 +1,62 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49330744&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=33d37386-8162-4559-b754-cebffa41db4f
+
+Iframe Text Content:
+▶ 휴톰 홈페이지 : 바로가기
+▶ 휴톰 사내 인터뷰 : 바로가기
+▶ 휴톰 YouTube : 바로가기
+
+
+휴톰은 이렇게 운영되고 있어요
+1. 분단위 유연근무제 운영(8시부터~ 10시 사이 매일 자유로운 출근)
+2. 직급 없는 '님' 호칭의 상호 존중 문화
+3. 자가결재 시스템을 통한 자유로운 휴가 사용
+4. 종합 건강검진 지원 및 검진시 휴가 지원(전년도 상반기 입사자)
+5. 의견 제시에 자유로운 수평적인 분위기
+6. PAYCO 복지포인트 분기별 지급 → 업종 무관하게 사용 가능
+7. 생일 다음 분기에는 추가 지급!
+8. DC형 퇴직 연금 운용
+9. 각종 경조사 휴가 및 경조금 지원(본인 및 가족의 결혼, 출산, 사망 등)
+
+
+
+[휴톰/의료기기 소프트웨어]
+Backend 백엔드 개발자(5년 이상)
+모집부문 및 상세내용
+주요업무
+[담당업무]
+데이터 파이프라인 개발 및 운영
+모델 학습 및 배포 파이프라인 개발 및 운영
+지속적인 통합과 지속적인 배포 구축
+
+자격 요건 0명
+[필요기술]
+의료데이터 경험
+MLflow 및 DVC를 통한 데이터 및 모델 버전 관리 및 배포 경험
+Ray 및 Dask를 활용한 분산 처리 경험
+GitHub Actions, Jenkins, ArgoCD를 통한 CI/CD 구축 경험
+
+[자격요건]
+개발 경력 3년 이상 또는 그에 준하는 실력
+주도적으로 문제를 해결하고 적극적인 태도
+유연한 커뮤니케이션 능력
+데이터 및 머신러닝 플랫폼 구축 및 운영 경험
+데이터 마트 및 데이터 웨어하우스 설계 경험
+
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-6개월
+ㆍ 근무지역 : (04151) 서울 마포구 독막로 301, 일양빌딩별관 5층 휴톰
+전형절차
+서류전형
+1차면접(실무진)
+2차면접(경영진)
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 채용시까지
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://pds.saramin.co.kr/workenv-bg/202108/27/qyhdq3_u6oz-1ms4ocv_workenv-bg.jpg
+Image: No alt | Link: https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FsiL8g%2Fbtq5qqfQrMQ%2FlQksDusJpDDWzYtH4A5qNK%2Fimg.png

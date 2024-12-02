@@ -1,0 +1,57 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49295861&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=89c171f4-6238-485a-a4c6-c754b831b55c
+
+Iframe Text Content:
+[NPU] Linux Device Driver Engineer
+서비스 소개
+오픈엣지 NPU팀은 엣지 디바이스를 위한 NPU (Neural Network Processing Unit) IP를 개발하는 팀입니다. 
+NPU HW와 함께 NPU 활용을 위한 SW Toolkit도 개발하고 있습니다. 
+인공지능 신경망에 대한 기술 동향과 신경망의 효율적 처리를 위한 HW/SW 최적화 방안에 대해 연구하는 팀입니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+PyTorch C++ TensorFlow Linux C
+주요업무
+• NPU와의 인터페이싱을 위한 Linux Device Driver/API 개발
+• Linux Device Driver / API Guide 문서 작성
+• SW & HW 디버깅 및 SW 최적화
+• 기능 안전 (FuSa) 대응 Spec. 문서 작성 및 SW 설계
+• NPU 탑재 Board에 Linux Device Driver Porting
+자격요건
+• 경력: 석사 이상 학력 또는 2년 이상 해당 전문 분야 종사
+• 해외 여행에 결격 사유가 없으신 분
+
+[필요 스킬]
+• Linux Device Driver / API 개발 경험
+• C/C++ 활용 Embedded SW 개발 경험
+• Linux Kernel 환경에서의 Process Scheduler, Memory Management, Synchronization, Profiling에 대한 이해
+• SoC/Computer Architecture에 대한 이해
+우대사항
+• 반도체 및 컴퓨터, 전기/전자학과 석/박사 학위
+• Linux Device Driver / API 적용 제품 양산 경험
+• 기능 안전 (FuSa) 대응 SW 개발 경험
+• TensorFlow, PyTorch, ONNX 등의 ML Framework에 대한 사용 경험
+• 취업 보호 대상자 (보훈, 장애 등)는 관련 법령에 의거하여 우대
+마감일 및 근무지
+• 마감일 : ~2024-12-01
+• 근무지
+- 서울 강남구 역삼로 114, 13층
+복지 및 혜택
+• 업무 방식: 자율 출퇴근 (선택적 근로시간제), 자율적 업무 환경, 수평적 조직 문화 (영어 닉네임 사용)
+• 근무 환경: 중식비 지원, 간식 및 음료 무한 제공, IT 바우처 지급
+• 건강 관리: 단체 상해보험 가입, 의료비 지원, 종합 건강검진
+• 자기계발: 도서 (업무/개인) 구입비 지원, 영어 학습비 지원
+• 기타: 경조사 지원 (경조 휴가, 경조금, 상조 서비스 등), 명절 선물 지급, 생일 반차 제공
+채용절차 및 기타 지원 유의사항
+[채용 절차]
+• 서류 접수 > 1차 직무 인터뷰 > 2차 리더십 인터뷰 > 최종 합격
+
+[지원 서류]
+• 이력서 1부 (자유 양식)
+
+Iframe Image Links:
+Image: C | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: PyTorch | Link: https://cdn.jumpit.co.kr/images/stacks/pytorch.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png
+Image: C++ | Link: https://cdn.jumpit.co.kr/images/stacks/CPlusPlus.png
+Image: TensorFlow | Link: https://cdn.jumpit.co.kr/images/stacks/tensorflow.png

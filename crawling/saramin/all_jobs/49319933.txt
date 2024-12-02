@@ -1,0 +1,91 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=etc&rec_idx=49319933&searchType=search&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4
+
+Iframe Text Content:
+백엔드 개발 (CORE개발/주문.결제)
+서비스 소개
+[우리 팀을 소개할게요.]
+와디즈에서 Java 백엔드 서버 개발자를 모십니다. 다양한 도메인/기술을 사용해보고 레거시 청산 및 새로운 아키텍쳐를 설계하고 구현하는 경험을 해보세요.
+와디즈는 창업 생태계에서 새로운 도전을 하는 사람을 응원하고, 아이디어를 실현하여 사업을 성공시키는데 필요한 자금 조달이나 제작 지원 등 실질적인 도움을 주는 비즈니스를 하고 있어요.
+기획자, 프로덕트 디자이너, 백엔드 및 F/E(Frontend) 엔지니어와 협업하여 와디즈 서비스를 지속 개선 개발 합니다. 오래된 레거시 서비스의 아키텍처를 개선하고 새로운 기술을 도입하여 더 나은 서비스를 만들기 위한 꾸준한 노력이 필요하죠. 개인의 성장이 곧 비즈니스의 성장이라는 생각으로 끊임없이 역량 향상을 위해 노력할 수 있는, 열정이 풍부한 분을 찾고 있어요!
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Git Confluence Jira MySQL REST API Spring Boot Spring Java Elasticsearch MSA
+주요업무
+[자바 백엔드 개발자는 이런 일을 해요.]
+• 와디즈 핵심 서비스인 펀딩,스토어,광고 서비스의 Java 백엔드 서버 개발을 해요.
+• 주문/결제 Java 백엔드 시스템을 개발해요.
+ - 커머스 주문 관리, 장바구니 시스템 개발
+ - 클레임(취소, 환불) 관련 처리 모듈 개발
+ - 결제 모듈 (간편결제, 카드 결제) 연동
+ - 포인트 결제, 쿠폰 결제 등 다양한 결제 관리 및 복합 결제 시스템 개발
+ - 물류 연동, 재고 관리 시스템 개발
+자격요건
+[우리는 이런 분들을 찾고있어요.]
+• Spring 및 Spring Boot 프레임웍을 이용한 Java 백엔드 서버 개발 경력 (또는 그에 준하는 실력)을 보유하신 분
+• OOP에 대한 이해를 바탕으로 Java 객체의 책임, 역할, 협력을 고려하여 서비스를 개발한 경험이 있으신 분
+• 다양한 RESTful API 를 설계하고 효과적인 개발과 관리 경험이 있으신 분
+• Git branch 전략을 기반으로 소스 코드 관리와 코드 리뷰를 통한 개발이 익숙하신 분
+• Confluence/Jira 를 이용한 일정 관리 및 문서 작업 등 기술 공유 문화에 익숙하신 분
+
+[합류한다면 이런 일들을 경험하며 성장 할 수 있어요.]
+• 크라우드 펀딩에서의 핵심적인 서비스인 펀딩과 프리오더, 스토어의 주문 관리 시스템을 경험할 수 있어요. 
+• 예약 결제와 지금 결제 시스템의 안정적 개발과 운영을 할 수 있어요.
+• 집중 트래픽에 대한 효과적인 분산 시스템 개발을 할 수 있어요.
+• 글로벌 크라우드 펀딩 서비스를 개발할 수 있어요.
+• 클라우드와 마이크로 서비스 기반의 다양한 주문 결제 서비스 개발을 할 수 있어요.
+
+
+[아래 문항에 대한 답변을 이력서에 작성하여 제출해주세요.]
+• 지원자님이 생각하시는 와디즈는 어떤 회사인가요? 왜 와디즈에서 함께 하고 싶은 마음이 드셨나요?
+• 와디즈가 하고 있는 일을 살펴보셨나요? 내가 합류해서 꼭 해보고 싶은 일이 있다면 기록해주세요.
+우대사항
+[이러한 분이시라면 더욱 좋아요.]
+• 글로벌 커머스 주문/결제 개발 경험이 있으신 분
+ - 글로벌 서비스 주문/결제 개발
+ - 해외 결제 모듈 연동 (PG, 해외 간편결제등)
+ - 해외 현지 결제 모듈 연동 경험 (일본, 동남아등)
+• 대용량 데이터 및 트래픽에서도 안정적 서비스를 제공하기 위한 분산 개발 경험이 있으신 분
+• AWS 클라우드 환경에서 EDA (Event Driven Architecture) 를 포함한 다양한 백엔드 서비스 개발 경험이 있으신 분
+마감일 및 근무지
+• 마감일 : ~2024-11-30
+• 근무지
+- 경기 성남시 분당구 판교로 242, A동 5층 504호
+복지 및 혜택
+1. 나와 가족들의 안전과 건강을 지켜요.
+• 단체상해보험 가입 지원 (본인, 배우자, 자녀, 부모)
+• 피트니스센터 지원
+• 경조사 지원
+• 건강검진
+
+2. 출퇴근을 자유롭게 해요.
+• 유연근무제
+• 출퇴근셔틀버스
+ 
+3. 잘 쉬어야 더 잘 일할 수 있어요.
+• 사내 카페
+• 수면실
+채용절차 및 기타 지원 유의사항
+[채용절차]
+• 서류전형 - 코딩테스트 - 1차 인터뷰 직무(적합성 중심) - 인성검사 온라인 진행 - 2차 인터뷰 조직(적합성 중심) - 처우 협의 - 최종합격
+
+[기타 사항]
+• 이력서 작성 시 연봉정보를 제외하여 주시기 바랍니다.
+• 경력직은 3개월간 Probation을 거칩니다.
+• 서류 전형 이후, 코딩테스트 전형이 있습니다.
+• 서류 및 면접 결과는 3주 내외로 안내해 드리고 있습니다.
+• 보훈대상자 및 장애인은 관련 법규에 의거하여 우대합니다.
+• 본 공고는 채용 시 조기마감 될 수 있습니다.
+
+Iframe Image Links:
+Image: Spring Boot | Link: https://cdn.jumpit.co.kr/images/stacks/springboot.png
+Image: Git | Link: https://cdn.jumpit.co.kr/images/stacks/git.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: Spring | Link: https://cdn.jumpit.co.kr/images/stacks/spring.png
+Image: Confluence | Link: https://cdn.jumpit.co.kr/images/stacks/confluence.png
+Image: Jira | Link: https://cdn.jumpit.co.kr/images/stacks/jira.png
+Image: Java | Link: https://cdn.jumpit.co.kr/images/stacks/java.png
+Image: MySQL | Link: https://cdn.jumpit.co.kr/images/stacks/mysql.png
+Image: REST API | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: MSA | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Elasticsearch | Link: https://cdn.jumpit.co.kr/images/stacks/elasticsearch.png

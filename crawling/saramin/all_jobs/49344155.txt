@@ -1,0 +1,32 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49344155&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=46c834d5-541f-4e09-b84e-1de2db8b6a09
+
+Iframe Text Content:
+안녕하세요?
+라인서치의 헤드헌터 박형규 대표입니다.
+저희는 반도체,디스플레이팀/전자,IT팀/기계,화학팀/제약,바이오팀을 주축으로 
+최고 임원급을 비롯하여 각분야 실무 전문가들을
+추천드리는 헤드헌팅업계를 리딩하는 전문회사입니다.
+좋은 포지션을 추천드립니다.
+
+
+ㅣ 담당 업무
+반도체가 적용된 다목적 개방형 싱글 컴퓨팅 보드의 응용 App, SDK 개발 및  Open Community의 Open Project 참여
+ㅣ 지원자격
+[ 지원 자격 ]
+MCU 또는 AP(Application Processor)또는 인공지능 반도체에 대한 전반적인 지식 및 응용개발 경험
+ARM core 기반의 Embedded S/W(Linux, Android 기반 Device Driver) 개발 경험
+C 또는 C++ 언어 활용 개발 경험지원 자격
+ [ 우대 사항 ]
+ IVI, ADAS 등의 Automotive Application, Middleware, BSP 개발 경험자
+리눅스 기반 (Yocto등) 개발 경험자
+Free RTOS 개발 경험자
+Python, Open CV 개발 경험자
+SDK등 SW 개발자를 위한 기술문서 작성 및 배포 경험자 우대
+
+
+경력과 매칭되시는 분은
+line@linesearch.co.kr로 이력서를 보내주시거나,
+010-5176-5075로 문의바랍니다.
+감사합니다.
+
+No images found in iframe.

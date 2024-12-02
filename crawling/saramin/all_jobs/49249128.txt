@@ -1,0 +1,88 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49249128&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=76c04cb4-d2f7-4559-9a21-da2f8ca32832
+
+Iframe Text Content:
+데이터 분석 / 머신러닝 개발자
+서비스 소개
+정교한 신호분석 전문 스타트업으로, 전 회사에서 웨어러블 의료기기 1호 제품/서비스를 개발한 경험으로 움직임 신호로 확장하며 바딧(Bodit; Tech. for Body)를 설립하였습니다.
+
+미세한 움직임을 구분해낼 수 있는 기술로 축산분야에서 송아지 질병조기발견 및 정밀사육 솔루션 '파머스핸즈'를 개발하여 지자체 시범사업, 보급사업에 선정되며 확산 중입니다. 국내에서는 최대규모 사료업체와 컨설팅 그룹과 협약을 통해 확산 중에 있으며, 해외시장은 UN산하 World Bank와 협업관계를 만들어가고 있습니다.
+
+헬스케어 분야에서도 '바디스태모' 솔루션을 바탕으로 국내 필라테스 시장을 공략하고 있으며, 김희진 선수의 도쿄올림픽 / 김아랑 선수의 베이징 올림픽 준비과정에도 활용될 정도로 정교한 서비스로 김혜수 배우 등 연예인 분들도 활용하고 계시고 국내 최대 필라테스 체인과 공급 협약을 맺은 상태입니다.
+
+신호분석 영역에서의 핵심기술을 기반으로 문제의 본질을 해결하며 세상을 변화시키는 혁신 스타트업으로 지속 성장하고자 합니다.
+
+http://farmershands.io
+http://bodystamo.io
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+NumPy MachineLearning PyTorch Pandas Python TensorFlow
+주요업무
+• 정밀한 신호 분석을 통해 소의 다양한 행동을 탐지하는 모델을 개발합니다.
+• 다양한 비즈니스 상황에 맞게 데이터를 수집하고 분석하는 프로세스를 개발합니다.
+• 시계열 센서 데이터, 통계 데이터를 활용하여 분석 및 모델링을 수행합니다.
+• 머신러닝, 딥러닝을 통해 소의 다양한 행동, 건강 관리, 상태 등을 예측하는 모델들을 개발합니다.
+자격요건
+• Python을 사용하여 개발할 수 있는 분을 모십니다.
+• pandas, numpy 등의 데이터 분석 Library 사용 경험이 있으신 분을 모십니다.
+• Tensorflow, Pytorch, LightGBM, XGBoost 등 하나 이상의 프레임워크 사용 경험이 있으신 분을 찾습니다.
+• 팀원들과 항상 소통하며 문제를 해결하고 관련 지식을 나누면서 같이 성장할 수 있는 분을 모십니다.
+우대사항
+• 문제 해결을 위해 머신러닝 알고리즘을 직접 활용하여 연구하고 개발하여 서비스에 반영해 보신 경험이 있으신 분을 우대합니다.
+• 센서 데이터, 생체신호 데이터, 시계열 데이터 등을 활용하여 문제를 해결하신 경험이 있으신 분을 우대합니다.
+• 임베디드와 머신러닝을 결합하여 프로젝트를 개발한 경험이 있으신 분을 우대합니다.
+• 이상치 탐지 등의 기법을 활용하여 문제를 해결한 경험이 있으신 분을 우대합니다.
+마감일 및 근무지
+• 마감일 : ~2024-11-20
+• 근무지
+- 서울 금천구 가산디지털1로 25, 906-2호
+복지 및 혜택
+• 수평적 조직 추구 
+　- 영어이름+님 호칭
+
+• 업무 Alignment를 위한 행사 
+　- 월간바딧 & OKR 파티 / 워크샵
+
+• 업무 능력 극대화를 위한 유연성
+　- 자율 출퇴근
+　- 필요에 따른 재택 근무
+　- 여름 및 연말 Break
+　- 야근 지양
+　- 간식 제공
+
+• 업무 뿐 아니라 삶을 더 윤택하게!
+　- 문화의날
+　- Mother’s Day
+　- Bodit Assemble
+　- 심리상담
+　- 건강검진
+
+• 직무 능력 강화를 위한 아낌없는 지원! 
+　- 교육 지원
+　- 도서 구입 지원
+채용절차 및 기타 지원 유의사항
+[전형절차]
+1. 서류 제출
+• ※ 필수 ※ 아래 5가지 질문에 대한 답변과 함께 이력서(또는 포트폴리오)를 제출해주세요.
+① 지원하게 된 계기 / ② 직군을 잘해낼 수 있는 이유 / ③ 바딧과 함께하며 이루고자 하는 것 / 
+④ 살아오면서 가장 임팩트 있었던 사건 / ⑤ 가장 기억에 남는 서비스(또는 프로젝트)를 개발한 경험 소개
+• 위 내용이 포함된 서류를 제출하지 않을 경우 서류심사 과정에서 불합격 되실 수 있습니다. 
+
+2. 대면 인터뷰
+• 조직 및 문화 적합도를 확인하기 위한 인터뷰가 진행됩니다.
+
+3. 기술 인터뷰
+• 직무 적합도를 확인하기 위한 인터뷰가 진행됩니다.
+
+[지원 시 주의사항]
+• 3개월의 수습 기간이 있습니다.(수습 기간 동일 급여와 복리후생 보장)
+• 포트폴리오 제출 시,10MB 초과할 경우에는 링크를 기재해주세요.
+
+Iframe Image Links:
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: Pandas | Link: https://cdn.jumpit.co.kr/images/stacks/pandas.png
+Image: PyTorch | Link: https://cdn.jumpit.co.kr/images/stacks/pytorch.png
+Image: MachineLearning | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: NumPy | Link: https://cdn.jumpit.co.kr/images/stacks/numpy.png
+Image: TensorFlow | Link: https://cdn.jumpit.co.kr/images/stacks/tensorflow.png

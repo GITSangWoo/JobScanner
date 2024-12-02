@@ -1,0 +1,109 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=48500821&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=3356c1bd-39aa-40af-b07c-0a0a03bae62b
+
+Iframe Text Content:
+Backend Engineer(통합메세징 솔루션 표준화 담당)
+서비스 소개
+휴머스온은, 1998년에 설립된 회사로 현재 국내 점유율 1위의 크로스 채널 메시징 솔루션 "TMS"를 기반으로 성장해왔습니다. 2017년도에는, 기존의 솔루션과 빅데이터가 결합되어 만난, 웹 서비스(SaaS)형태의 빅데이터 마케팅 플랫폼 "TAS"을 런칭하여, 엔터프라이즈급 기업부터 소규모 쇼핑몰까지 아우르는 디지털 마케팅 SW 라인업을 구축했습니다. 2018년도에는, TAS의 빅데이터 엔진을 기반으로 하여 고객의 행동 추적부터 개인화 마케팅까지 자동으로 수행 가능한 마케팅 자동화 서비스 "TAS마케팅자동화"서비스를 런칭했습니다.
+
+휴머스온은, 신기술에 대한 지속적인 R&D 투자와 우리가 보유한 빅데이터, 그리고, 마케팅 테크놀로지 SW간의 시너지를 통해, 국내를 넘어 "글로벌 빅데이터 마케팅 테크놀로지 컴퍼니"로 성장해나가고 있습니다.
+
+#. 회사소개
+- 업계 내 최고 연봉 / 매년 상여금 및 성과급 지급
+- 23년 연속 성장 및 15년 연속 흑자 경영
+- 국내 1위 "빅데이터마케팅 플랫폼 Tech" 기업 / 디지털 마케팅솔루션 국내 점유율 1회 
+- 국내 최고 마케팅 SW/솔루션 원천 기술 회사로 독보적 기술력 보유 
+* 23년간 축적된 기술 노하우를 바탕으로 국내 시장 선도
+
+#. 주요 연혁
+2022년
+- 데이터 바우처 데이터 판매 및 가공기업, AI 바우처 공급기업 선정
+2021년 
+- 인공지능 마케팅 플랫폼 "AI Help U" 서비스 오픈
+
+2020년
+- 제19회 대한민국 SW기업경쟁력대상 IT솔루션부분 최우수 기업 선정
+- 고용노동부 주관 "임금, 일생활균형, 고용안정" 분야에서 "청년친화 강소기업" 선정
+
+2019년
+- 고용노동부 주관 "임금, 일생활균형, 고용안정" 분야에서 "청년친화 강소기업" 선정
+- 대한상공회의소 주관 “일하기 좋은 중소기업_일생활균형" 부문 최우수기업 선정
+
+2018년
+- 빅데이터 마케팅 플랫폼 "TasON" 오픈
+- 고용노동부 주관 "임금, 일생활균형, 고용안정" 분야에서 "청년친화 강소기업" 선정
+- 대한상공회의소 주관 “일하기 좋은 중소기업_일생활균형" 부문 최우수기업 선정
+
+2017년 
+- 일하기 좋은 기업 "일생활균형" 부문 최우수기업 선정
+- 대한상공회의소 주관 “일하기 좋은 중소기업_일생활균형" 부문 최우수기업 선정
+
+2016년 - 통합 메시징 솔루션 "TMS 3.0" 출시
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Oracle Spring MSSQL Java Hadoop Linux MySQL Spring Framework
+주요업무
+- TMS/IMC 표준화 규정 수립 및 유지
+- 정기적인 코드 리팩토링 및 성능 최적화
+- 고객 피드백(VOC) 반영 및 CX 팀과 협업
+- 제품 버전 관리 및 업데이트 내역 관리
+자격요건
+- 5년 이상의 백엔드 개발 경력
+- 필수 기술 스택
+* 백엔드 개발: Spring Boot, Spring Batch 기반의 프로젝트 경험
+* 데이터베이스: MySQL, Oracle, Redis 등의 데이터베이스 설계 및 최적화 경험
+* 메시징 시스템 및 분산 처리: Kafka, ActiveMQ, Netty 등을 활용한 대규모 메시징 시스템 구축 및 운영 경험
+- 경험 및 역량
+* 제품 표준화 및 버전 관리의 실무 경험
+* 코드 리팩토링 및 성능 최적화에 대한 깊은 이해와 실무 경험
+* 고객 피드백을 수용하고, 이를 제품에 반영해본 경험
+우대사항
+- 대규모 메시징 시스템 개발 및 운영 경험
+- AI/데이터 기반 기능 개발 경험 
+- TMS나 관련 마케팅 솔루션 구축 및 운영 경험
+- 시스템 안정성 및 가용성을 위한 모니터링 및 오류 관리 경험
+마감일 및 근무지
+• 마감일 : ~2024-12-09
+• 근무지
+- 서울 강남구 선릉로 433 세방빌딩 세방빌딩 신관 10층
+복지 및 혜택
+[근무 환경]
+• 선릉역 3번 출구 도보 10초 거리 위치
+• 신규입사자 입사축하선물 / 웰컴키트 지급/ 멘토링제도
+• 카페테리아 운영 중(조식 제공)
+• 간식 무한 제공(커피, 음료, 컵라면, 햇반 등)
+• 야근 식대, 택시비 지원
+• 인재추천 포상금 지원
+• 유료SW 적극 지원
+
+[자기 계발]
+• 사내 정기 세미나(신기술, New 트렌드 등)
+• 외부 유료교육 및 세미나 지원
+• 도서 구매 지원
+
+[연차 제도]
+• 장기근속자 휴가(&포상금) 지급
+• 자유로운 연차(반차) 사용
+
+[복지]
+• 콘도 이용 가능(소노호텔 & 리조트)
+• 명절 선물 2가지 지급(① 귀성여비 ② 선물세트)
+• 생일 선물 지급
+• 결혼기념일 조기퇴근
+• 경조사 지원(휴가, 경조금, 경조화환)
+• 각종 문화 활동 진행(음악회, 무비데이 등)
+채용절차 및 기타 지원 유의사항
+• 서류심사 > 과제 전형 > 면접 전형 > 인적성 검사 > 처우 협의 > 최종 합격
+• 직무 연차 및 경력에 따라 레퍼런스 체크가 진행될 수 있습니다.
+• 경우에 따라 2차 면접이 진행될 수 있습니다.
+
+Iframe Image Links:
+Image: Oracle | Link: https://cdn.jumpit.co.kr/images/stacks/oracle.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: MSSQL | Link: https://cdn.jumpit.co.kr/images/stacks/mssql.png
+Image: Spring | Link: https://cdn.jumpit.co.kr/images/stacks/spring.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png
+Image: Spring Framework | Link: https://cdn.jumpit.co.kr/images/stacks/springframework.png
+Image: Java | Link: https://cdn.jumpit.co.kr/images/stacks/java.png
+Image: MySQL | Link: https://cdn.jumpit.co.kr/images/stacks/mysql.png
+Image: Hadoop | Link: https://cdn.jumpit.co.kr/images/stacks/hadoop.png

@@ -1,0 +1,112 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49345794&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=34239cb3-23b5-4922-9da0-4f2d19f52223
+
+Iframe Text Content:
+Senior Backend Engineer 채용 [강남지사]
+서비스 소개
+스마일드래곤은 Creative한 디자인과 높은 개발 기술력을 보유하고 있는 마케팅 전문 기업입니다.
+
+[IDENTITY]
+마케팅 분야를 선도하는 기업
+디지털 미디어 통합 마케팅 역량 보유
+
+[STRENGTH]
+기획부터 개발, 브랜딩 및 마케팅까지
+최고의 전문가로 구성된 국내 유일 원스톱 마케팅 그룹
+
+[CHALLENGE]
+데이터 기반의 디지털 트랜스포메이션
+일반산업 분야의 변화를 주도해 새로운 비지니스 창출
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Kubernetes GitHub Actions Yarn NestJS TypeScript Argo Helm MariaDB Minio Docker Compose
+주요업무
+스마일드래곤의 핵심 서비스를 개발하는 백엔드 팀에 합류하실 분을 모집합니다!
+
+
+ 저희는 이런 환경에서 일해요!
+
+• 개발팀 내부적으로 Slack 을 통한 커뮤니케이션이 이루어집니다.
+• Pull Request 는 반드시 팀원들의 코드 리뷰를 받고 이루어집니다.
+• Notion 을 통해 프로젝트 진행상황 및 정보를 관리합니다.
+• Docker 를 통해 개발환경을 단일화합니다.
+• GitHub Actions 를 통해 프로젝트 빌드 및 배포 자동화가 진행됩니다.
+• 사내 Kubernetes + Helm + Argo CD 환경으로 배포가 이루어집니다.
+
+️ 저희는 이런 기술을 사용해요!
+• Nest.js, TypeScript, Mikro-ORM, Jest, Supertest
+• Yarn Berry, Docker Compose, Minio
+더욱 자세한 기술스택은 https://stackshare.io/companies/smiledragon 에서 확인하실 수 있어요! 
+
+ 이런 업무를 함께해요!
+• SNS 자동화 솔루션 모두그램 리뉴얼 백엔드 개발
+• SNS 기반 재택부업 서비스 뷰업 리뉴얼 백엔드 개발 및 유지보수
+• 개발 중이거나 개발된 프로젝트의 코드 품질 개선 및 리팩토링
+자격요건
+이런 분과 함께하고 싶어요!
+
+• 3년 이상의 백엔드 개발 경험 혹은 그에 상응하는 실력을 갖추신 분
+• TypeScript, Node.js, Nest.js 에 대한 지식 및 경험을 보유하신 분
+• RDBMS를 사용해보고 이를 기반으로 테이블을 설계해본 경험이 있으신 분
+• 하나 이상의 백엔드 프로젝트에 대한 설계, 개발, 배포, 운영 경험이 있으신 분
+• Git 과 GitHub 를 통한 버전 관리 시스템 이용에 능숙하신 분
+• 더 나은 코드나 개발방법을 찾는 것을 즐기시는 분
+• 비즈니스 속도에 대한 이해를 기반으로 의사결정을 할 수 있으신 분
+우대사항
+️ 이런 분이면 더욱 좋아요!
+
+• Docker 환경에서의 개발 경험이 있으신 분
+• 데이터 기반의 백엔드 성능 최적화 경험이 있으신 분
+• e2e, Unit 등의 테스트 코드 작성 경험이 있으신 분
+• Jest, Mocha 와 같은 테스트 프레임워크를 사용해보신 분
+마감일 및 근무지
+• 마감일 : ~2024-12-05
+• 근무지
+- 서울 서초구 서초대로 398 4-7층
+복지 및 혜택
+• 점심시간 80분 (여유로운 휴게시간)
+• 중식제공 (1년 기준 250만원 상당 지원)
+• 카페테리아 운영 (네스프레소 캡슐 머신)
+• 생일자 혜택 (조기 퇴근 및 케이크 지급)
+• 업무장비 지원 (Mac, 4K 모니터)
+• 희망도서 상시 대여 (성장에 필요한 도서구입비 제공)
+• 장기근속 혜택 (리프레쉬 휴가 / 건강검진)
+• 6성급 휴양시설 (아난티 회원권 운영)
+• 개인 캐비닛 제공 (1인 1캐비넷 제공)
+• 인재 추천 제도 운영 (인재 추천 보상금제도 운영)
+채용절차 및 기타 지원 유의사항
+전형절차
+
+1. 서류 접수 
+2. 실무 면접
+3. 컬쳐핏 면접
+4. 합격 발표 및 처우 협의
+
+> 경우에 따라 컬쳐핏 면접은 실무 면접과 한 번에 이루어 질 수 있습니다.
+> 포지션에 따라 실무 면접 전 사전과제 전형이 추가될 수 있습니다. 
+
+
+[확인 및 주의사항]
+
+• 접수 기간
+　- 상시채용 ( 채용 시 공고 마감 )
+• 제출 서류
+　- 이력서
+　- 포트폴리오
+
+※ 병역특례의 경우 사전에 편입/전직이 가능한 지 반드시 확인 후 지원 바랍니다.
+※ 정규직 채용의 경우 3개월의 수습기간이 있습니다.
+※ 지원서류 내용이 사실과 다를 경우, 채용 확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: GitHub Actions | Link: https://cdn.jumpit.co.kr/images/stacks/githubactions.png
+Image: Minio | Link: https://cdn.jumpit.co.kr/images/stacks/Minio.png
+Image: Yarn | Link: https://cdn.jumpit.co.kr/images/stacks/yarn.png
+Image: Helm | Link: https://cdn.jumpit.co.kr/images/stacks/helm.png
+Image: Kubernetes | Link: https://cdn.jumpit.co.kr/images/stacks/kubernetes.png
+Image: NestJS | Link: https://cdn.jumpit.co.kr/images/stacks/nestjs.png
+Image: Docker Compose | Link: https://cdn.jumpit.co.kr/images/stacks/dockercompose.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: MariaDB | Link: https://cdn.jumpit.co.kr/images/stacks/mariadb.png
+Image: Argo | Link: https://cdn.jumpit.co.kr/images/stacks/argo.png
+Image: TypeScript | Link: https://cdn.jumpit.co.kr/images/stacks/typescript.png

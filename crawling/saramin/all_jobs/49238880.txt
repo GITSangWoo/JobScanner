@@ -1,0 +1,158 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49238880&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=8fea491d-2cf0-4673-87c2-70a973f6cd9a
+
+Iframe Text Content:
+에이엠(주)
+신입/경력 채용 모집
+에이엠㈜는 20년간 휴대폰-통신모듈-IoT-Automotive-AI-Cloud
+제품을 개발, 출시하여 시장을 선도해 온 회사입니다.
+과천 사옥 입주를 기점으로 에이엠텔레콤에서 에이엠으로
+사명을 변경하고 새롭게 출발합니다.
+최고 수준의 기술개발인재들이 모여 5G, 미래전장사업(TCU등),
+차세대단말기의 새로운 시대를 열어 나갈 소중한 인재를 기다립니다.
+
+★ 고용노동부 강소기업 선정
+★ 경기도 일자리 우수기업 선정
+모집부문 및 자격요건
+모집부문 담당업무 자격요건
+SW
+Application
+개발 - SW Application 개발 - 학력 : 대졸이상
+- 경력 : 신입~경력15년이하
+- 사용 언어 : C / C++, python, Java, Qt/C#/VC++
+- 전장 및 IoT 모듈, Smart phone,
+   IoT 서버 운용 경험자 우대,
+   Window 응용프로그램 개발 경험자우대
+- OS 경험 : Linux, Android, RTOS, Windows 등
+- 컴퓨터공학, 정보통신공학, 전자공학 전공자 우대
+SW System
+개발 - System Software (Firmware) 개발
+- Linux / Android OS 및
+  Device driver 개발
+- 5G 모듈 및 TCU 개발 업무 - 학력 : 대졸이상
+- 경력 : 신입~경력15년이하
+- 언어 : C/C++, OS: Linux, RTOS,
+- 개발환경: Linux / Windows
+- Linux / Android OS / Device driver 개발 경험자
+- Board bring up 개발 경험(BSP)
+- Qualcomm Chipset 개발 및 디버깅 툴 사용 경험자
+SW Protocol
+개발 - SW Protocol 개발 - 학력 : 대졸 이상
+- 경력 : 신입~경력15년이하
+- 전공 : 전자/전산 관련학과
+- 언어 : C, C++
+- LTE/5G/V2X/GNSS/UICC/IMS protocol 개발 경력
+- Linux/Android Data/WiFi framework 개발 경력
+- RF SW 개발 경력
+전장 Firmware
+SW 개발 - 전장 Firmware SW 개발 - 학력 : 대졸이상
+- 경력 : 신입~경력15년이하
+- 사용언어 및 OS : C, Embedded Linux, RTOS
+- QualComm Chip/BSP 으로 펌웨어 개발 경험자 우대
+- Linux 환경에서 펌웨어 개발 경험자 우대
+- Power Management(PM), Audio Device Driver
+   개발 경험자 우대
+전장 Middleware
+SW 개발 - 전장 Middleware SW 개발 - 학력 : 대졸이상
+- 경력 : 신입~경력15년이하
+- 사용언어 및 OS
+   : C/C++, RUST, Flutter, Embedded Linux
+- Linux 환경에서 프레임워크, 어플리케이션 등
+   개발 경험자 우대
+- DoIP, SOME/IP, DBUS, Fast DDS/Cyclone DDS 등
+   차량용 소프트웨어 개발 개발 경험자 우대
+전장
+In-vehicle
+Network개발 - 전장 In-vehicle Network개발 - 학력 : 대졸이상
+- 경력 : 신입~경력15년이하
+- 사용언어 및 OS : C, RTOS
+- MCU 기반 In-Vehicle Network 디바이스 개발
+   경험자 우대 (CAN통신, Ethernet 통신, Diagnostics
+   (UDS), AUTOSAR, DoIP 등)
+- AUTOSAR등 차량용 소프트웨어 개발 경험자 우대
+전장
+MCU 개발 - 전장 MCU 개발 - 학력 : 대졸이상
+- 경력 : 경력 1년이상
+- 사용언어 및 OS : C, RTOS
+- 업무 : MCU기반의 BSP 개발
+- 전장용 디바이스를 위한 RTOS 기반 MCU 개발
+   경험자 우대
+HW 개발 - 하드웨어(Baseband) 개발
+- 개발 검증 & 양산 지원
+- 인증 시험 및 디버깅
+- 유해 물질 등록 및 관리 - 학력 : 대졸이상
+            (전자/통신/전파공학 또는 유사학과 전공자)
+- 경력 : 신입~경력15년이하
+- 전장(NAD/TCU/V2X) HW 개발 유경험자
+- 통신(4G/5G) 모듈/단말기 Baseband 설계 유경험자,
+  5G/LTE/Wi-Fi/BT/GPS/Audio 개발
+- Qualcomm 4G/5G Chipset 개발 경험자 우대
+기구설계/계발 - IoT Device 기구설계/개발
+- 전장제품 기구설계/개발
+- 도면작성, BOM관리, ECO관리,
+   포장개발업무 - 학력 : 대졸이상(기계공학,기계설계 관련 전공자)
+- 경력 : 신입
+PL 업무 - PL 업무(Project Leader) - 학력 : 대졸이상
+- 경력 : 경력5년이상~10년이하
+- 전자공학/정보통신/컴퓨터공학 관련 전공자
+- PL(Project Leader), SW Process전문가로서
+  성장하려는 인재
+- Project Management/Process Management에
+  관심 많으신 인재
+- SW 개발, Main-PL/Sub-PL/PM 경험자 우대
+BackEND
+서버 개발 및
+유지 보수 - BackEND 서버 개발 및 유지 보수 - 학력 : 대졸이상
+- 경력 : 5년 ~ 경력15년 이하
+- Backend Server 5년 이상 경력자.
+- AWS 인프라 설치 및 운영 유경험자
+- RESTFull API 개발 가능자
+- 서버 설계부터 구현이 가능하신 분
+- Java, x-javascript, Python 등 개발 가능자
+- 데이터베이스 설계 및 관리 경험(SQL, NoSQL)
+- Docker, Kubernetes 등 컨테이너화 및
+   오케스트레이션 기술 사용 경험
+근무조건
+- 근무형태 : 정규직
+- 근무요일 : 주5일(월~금) / 주40시간
+- 근무시간 : 유연근무제 / 선택적 근로시간제
+- 근무지역 : 경기도 과천시 과천대로7가길 20
+복리후생
+- 선택적 복지포인트
+  : 자유로운 자기계발과 여가활동을 지원하기 위하여 일정 포인트를 지급하여 자유롭게 선택하여 사용할 수 있습니다.
+- 근무제도
+  : 선택적 근무시간제로 월 근로시간 범위내에서 본인이 근로시간을 유연하게 설정하는 근무제도를 운영중입니다.
+- 경조휴가
+  : 회사에서는 축하 또는 조의의 마음을 표하기 위하여 경조금과 경조화환(조화), 장의용품을 전달하고
+    경조휴가를 부여하고 있습니다.
+- 장기근속포상
+  : 일정 기간 동안 근속한 직원들을 위해 장기근속포상금을 지급하고 있습니다.
+- 대출
+  : 임직원의 복리증진과 생활안정을 목적으로 사내대출 지원제도를 마련해 드리고 있습니다.
+- 단체상해보험
+  : 단체상해보험에 가입하여 각종 상해, 사고, 질병에 대한 위험부담을 최소화 할 수 있도록 보장하고 있습니다.
+- 콘도
+  : 회사와 제휴된 콘도를 다양한 할인 혜택을 받아 이용할 수 있습니다.
+- 퇴직금
+  : 퇴직연금제도를 운영하여 사외에 적립.운용하고 있습니다.
+- 인센티브
+  : 회사 경영실적 및 개인성과에 따라 인센티브를 지급하고 있습니다.
+- 선물
+  : 명절선물, 생일선물, 신규입사자 웰컴키트
+- 교육/생활
+  : 신입사원교육(OJT), 직무능력향상교육, 리더십강화교육, 멘토링제도, 점심식대 제공, 사내동호회 운영
+- 조직문화
+  : 회식강요안함, 자율복장
+- 휴가제도
+  : 연차/반차/반반차 본인희망일에 자유롭게 사용 가능, 경조휴가제, 근로자의날/창립기념일 휴무, 하계휴가비 지원
+전형절차
+접수기간 및 방법
+- 접수기간 : 채용 시 마감
+- 접수방법 : 사람인 온라인 입사지원/이메일 입사지원(recruit@amtel.co.kr)
+※ 채용인원 확정시 조기 마감 가능
+유의사항
+- 입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: 서류전형>면접전형>최종합격 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit8/25_c_blue_step03_230706.png
+Image: Designed by saramin | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit/watermark_white.png
+Image: WE'RE HIRING | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit8/25_c_txtimg_230707.png

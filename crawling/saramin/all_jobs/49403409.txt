@@ -1,0 +1,54 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49403409&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=8fea491d-2cf0-4673-87c2-70a973f6cd9a
+
+Iframe Text Content:
+대기업 MES 개발 및 운영
+신입/경력사원 모집
+(LG 배터리 계열사)
+함께 성장해 갈 수 있는 자질을 갖춘 신입 팀원과 역량을 보유한 팀원을 찾습니다.
+두잇시스템과 함께 성장해 갈 수 있는 잠재 역량을 갖춘 신입
+팀원과 Smart Factory 경험을 보유한 팀원을 찾습니다.
+우리는 2차 전지 제조공정 중 “Formation Process”에서
+Global No.1 Smart Factory MES 역량을 보유하고 있습니다.
+2차 전지는 미래 우리나라의 가장 핵심산업군 이며, 우리는
+Leading Company와 Global 생산기지를 구축하는 파트너로
+함께 하고 있습니다. 우리팀은 프로젝트를 통해 역량을
+쌓으면서 2차 전지 Smart Factory 최고의 전문가로 성장해
+가고 있습니다.
+
+“우리팀이 구축한 시스템으로 완성된 배터리를 탑재한 전기차가 전세계를 달립니다“
+
+- 존중, 멘토링, 성장, 팀워크, 소통이 있는 곳 -
+모집부문
+모집부문 담당업무 자격요건 및 우대사항 인원
+SmartFactory ㆍSmartFactory 플랫폼 기반 MES
+   (Formation Process)
+   - 프로그램 개발
+   - 2차전지 설비 프로세스 분석/설계
+   - PLC MAP분석/설계
+   - 설비 Interface 자격요건
+ㆍ초대졸 이상
+
+우대사항
+ㆍ해외출장 가능자
+
+ IT Skill
+ㆍC#(C/C++), 데이타베이스 (MS-SQL 등), WPF 00명
+근무조건
+ㆍ근무형태 : 신입/경력
+ㆍ기본 근무지 : 충북 오창
+ㆍ프로젝트 출장 : 오창, 중국(남경), 미국, 유럽(폴란드)
+ㆍ기타 : 1인 1숙소 제공, 국내 ←→ 프로젝트간 순환 근무, 장기출장수당 & 인센티브
+전형절차
+접수기간 및 방법
+ㆍ접수기간 : 2024년 11월 30일 마감
+ㆍ접수방법 : 사람인 온라인 입사지원
+ㆍ제출서류 : 이력서, 자기소개서
+  유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: 2024 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/13_doit_date_241114.png
+Image: Designed by saramin | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit/watermark_basic.png
+Image: WE'RE HIRING TALENTED PEOPLE  | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit7/29_saramin_top_221026_113.png
+Image: 서류전형 면접전형 최종합격 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit7/29_saraminhrr_step_221026_05.png
+Image: TALENTED PEOPLE WE'RE HIRING | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit7/29_saramin_top_221026_112.png

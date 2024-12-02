@@ -1,0 +1,77 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=etc&rec_idx=49407112&searchType=search&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&search_uuid=4248949f-dbba-46e1-93da-c6e04660686f
+
+Iframe Text Content:
+[ASML]
+Supplier
+Quality
+Engineer
+모집부문 및 상세내용
+Job Description
+Secure quality and manufacturability during development of part repair & reuse solutions along with outsourcing parties and OEM suppliers.
+Ensure that next to parts quality, configuration management and engineering change aspects are covered in the 
+solution development phase
+Lead new repair introduction launches with solutions that were developed by ASML Reuse and Repair 
+engineering. And responsible to assure supplier manufacturing to meet ASML requirements through collaboration with internal and external stakeholders.
+Define process performance parameters and control limits for supplier repair manufacturing with Reuse and 
+Repair development engineers.
+Ensure supplier readiness on new repair capability through validations of process control plan, work instruction, 
+and tools/fixtures preparation.
+Lead qualifications for supplier new repair introduction through First Article Inspection (FAI) and Production Part Approval Process (PPAP). And conducting approval process to move volume production.
+Deliver training on Statement of Work and technical product documents awareness to engineers at the supplier to ensure understanding and compliance on ASML requirements.
+Deploy test & analysis with supplier on process problems during new repair introduction and define root cause and corrective action to prevent recurrence.
+Deploy ASML preferred techniques to mitigate potential risks such as Poka-Yoke, Measurement System Analysis, Process Failure Mode Effects Analysis (PFMEA), and 8 Discipline problem solving.
+Participate in the supplier approval process as an assessor for technical capabilities in supplier processes.
+Evaluate supplier performance and quality data to identify process improvement opportunities with Supply Chain stakeholder.
+Facilitate supplier to escalate unresolved issues in new repair introduction and participate in cross-functional 
+activities to resolve issues.
+Conduct benchmarking studies to determine best practices for continuous improvement of new repair 
+introduction.
+Independently determine approaches and assigned tasks, supporting rollout of local repair activities into WW 
+such as Taiwan, China, and other locations
+
+Education and Experience
+Master’s or bachelor’s degree in Electrical, Mechanical, Manufacturing engineering or equivalent 
+experience.
+7+ years relative work experience in semiconductor industry and proven experience performing 
+Supplier Quality or Supplier Industrialization engineer role.
+Experience in a complex organizational structure.
+Experience internal and external stakeholder and business partner management.
+
+Personal skills
+Multi-disciplinary & multi-cultural understanding, values differences and able to bridge between 
+different departments and people.
+Capable to deal with a broad range of technical & quality subject matters.
+Understanding of semiconductor manufacturing equipment and skills in manufacturing or quality 
+control for electrical & mechanical parts.
+Excellent quality mindset to try realizing ‘Zero defect’.
+Understanding of the product development process and transferring processes to volume 
+manufacturing.
+Highly motivated team player with good social and communication skills. And collaborate well with 
+others to incorporate input from various sources.
+Analytical and problem-solving skills - communicates in a clear and consice manner; effectively 
+evaluates information/data for fast decision making.
+Focused on quality, continuous improvement with cost-reduction mindset
+Flexible and enjoy working in a rapidly changing environment.
+Good verbal and written language skills in English.
+
+Supplier Quality Engineer 0명
+
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월
+ㆍ 근무일시 : 주 5일(월~금) 08:00~17:00
+ㆍ 근무지역 : (18449) 경기 화성시 삼성1로5길 25 시엠파트너스 ASML Korea(석우동)
+전형절차
+서류전형
+영어테스트
+면접전형
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 :  ~ 2024년 11월 28일 (목) 23시
+ㆍ 접수방법 : 홈페이지 지원
+ㆍ 이력서양식 : 자유양식 (국문, 영문 이력서 및 자기소개서를 한 파일로 통합하여 제출)
+ㆍ 제출서류 : 국,영문 이력서 및 자기소개서 (각종 증빙서류는 서류전형합격자에 한해 추후제출)
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://www.saraminimage.co.kr/sri/vix/template/toptype/sale3.png

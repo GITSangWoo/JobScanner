@@ -1,0 +1,63 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49235646&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=63119a17-0cd1-4c38-b134-07aa299e6612
+
+Iframe Text Content:
+[대구 신규공장]
+Industrial Control System Engineer 채용
+모집부문 및 상세내용
+모집부문 상세내용
+공통 자격요건
+ㆍ학력 : 대졸 이상 (2,3년)
+Industrial Control
+System Engineer
+1명
+글로벌 시스템을 갖추고 있는 외국계 기업 발레오모빌리티코리아에서 대구에서 함께 근무할
+ICS 엔지니어(Industrial Control System Engineer)를 채용하고 있습니다 .
+
+* 주요 업무
+
+주요 업무
+- 산업 제어 시스템(ICS) 설계, 구축, 운영 및 유지보수
+- PLC, SCADA, DCS 등 자동화 시스템 관리 및 문제 해결
+- 네트워크 보안 강화 및 사이버 위협 대응
+- 시스템 성능 최적화 및 효율성 향상
+- 스마트 공장 환경 구축 및 운영 지원
+- MES, Barflow 시스템의 운영지원 
+
+근무부서
+ ㆍ IS팀
+
+경력
+  ㆍ3년 이상 
+
+필수 요건 
+ㆍPLC, SCADA, DCS 등 자동화 시스템에 대한 운영경험
+ㆍ네트워크 (TCP/IP, 산업용 통신 프로토콜) 및 보안 지식
+ㆍ프로그래밍 (C, C++, Python 등) 능력
+ㆍ데이터베이스 활용 능력
+ㆍMES 시스템의 경험 
+ㆍ영어 회화 가능자 
+
+우대 사항
+ㆍ산업 자동화 관련 자격증 소지자
+ㆍOT, IoT 관련 프로젝트 경험자
+ㆍ스마트 공장 구축 경험자
+ㆍ클라우드 환경에서의 ICS 운영 경험자
+
+
+
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월
+ㆍ 근무지역 : (43011) 대구 달성군 구지면 국가산단대로33길 120
+전형절차 (필요시 2차 면접 진행)
+서류전형
+1차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 10월 21일 (월) 11시 ~ 채용시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202308/31/s08fcm_2e6z-1p4ylvl_recruit.jpg

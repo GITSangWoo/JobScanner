@@ -1,0 +1,33 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49396525&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c709406e-f872-4daa-a43c-3c3d11e1a325
+
+Iframe Text Content:
+1. 주요업무 및 세부직무 
+   ○ 의약품 정보 및 의료 기록 관련 등 민감 정보 Database 설계 / 운용
+   ○ Billing System 설계, 운용
+   ○ 의료 정보 및 기록, 제품 관련 Web Front-End 개발
+   ○ 의료 정보 및 기록, 제품 관련 Back-end server 설계 / 개발
+   ○ SaMD 용 Android / IOS Client 앱 개발
+   ○ 국가별 규제 기관이 요구 하는 authentication systems 개발 
+
+
+2. 지원자격(필수) 및 우대사항
+  - 학력: 학사(4년) 이상
+  - 경력: 6년 이상
+    ○  각국의 Digital Health 관련 법규 및 데이터 규제에 대한 이해 필요
+    ○  Digital Health 관련한 System 설계 경험 필요
+    ○  Full Stack System Engineer 필요 
+    ○  병원 내 의료 데이터 시스템 운영 / 설계 경력자 우대
+    ○  의약품 및 의료기기 제품 Publishing 설계 경력자 우대
+    ○  각국의 의료기기 / 혹은 의약품 규제 및 승인 경력자 우대
+    ○  의약품 혹은 의료기기의 디지털 마켓 플레이스 운용 경력자 우대
+    ○  정부 주도 하 의료 관련 시스템 설계 및 운용 경력자 우대 
+
+
+         ※  학위 및 재직 정보 확인 후 자세한 직무 안내 가능한 점 양해바랍니다.
+ ○ 기타 궁금한 사항은 아래 연락처를 참조해서 연락주십시오.○   
+   HR컨설팅 유한석 이사  
+   * T: 02-6207-0429
+   * C: 010-5494-1789
+   * E-mail: yhs1023@hrcon.co.kr
+
+No images found in iframe.

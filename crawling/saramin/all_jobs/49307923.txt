@@ -1,0 +1,54 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49307923&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c3e8eb17-f13d-407d-8e4f-8c074577dd53
+
+Iframe Text Content:
+모집분야 및 자격요건
+모집부문 구분 담당업무 자격요건 인원 근무지
+소프트웨어
+연구본부
+(신입) 신입 SW개발 <기본요건>
+- 신입
+- 학사 졸 이상
+- 전공 : 공학계열
+- C, C++, C#을 Visual Studio를 활용해 프로그램 가능자
+- 외국어(영어)로 일상생활 수준 의사소통 가능자
+
+<우대요건>
+- 각종 경진대회 수상 이력자
+- 운전 가능자
+- 석/박사 학위자
+0명 인천
+서구
+소프트웨어
+연구본부
+(경력) 경력 SW개발 <기본요건>
+- 경력
+- 학사 졸 이상
+- 전공 : 공학계열
+- C, C++, C#을 Visual Studio를 활용해 프로그램 가능자
+- 외국어(영어)로 일상생활 수준 의사소통 가능자
+
+<우대요건>
+- 반도체 장비 경력자
+- 운전 가능자
+- 석/박사 학위자
+- EtherCAT 기반 제어시스템 (모터, IO)등 유경험자
+- LASER 제어(SCANNER , RTC BOARD) 유경험자
+- 영상처리라이브러리 (Halcon, OpenCV) 유경험자
+- 반도체 SECS/GEM 및 통신 유경험자
+- 윈도우 GUI 및 DB 프로그램 유경험자
+0명 인천
+서구
+지원방법
+- 접수기간 : 채용시까지
+- 접수방법 : 사람인 온라인 입사지원
+채용절차
+기타사항
+- 국가 보훈대상자, 장애인 관련법에 의거 우대
+- 입사지원 내용이 사실과 다를 경우 채용 취소
+문의사항
+- 인사부 채용 담당자 : 032-580-1208 / hr@hanmisemi.com
+
+Iframe Image Links:
+Image: 복리후생 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit2/br_i_200728.png
+Image: [한미반도체] 신입/경력 사원 채용 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit3/hanmi_top_z201230.png
+Image: 채용절차 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit2/st1_i_200728.png

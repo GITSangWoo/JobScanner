@@ -1,0 +1,51 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=46032974&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=2cc0eacb-9bfd-43bc-9990-ef10aaee104f
+
+Iframe Text Content:
+AWS 인프라 관련 설계/구축 경력직
+서비스 소개
+오픈된 발상과 높은 기술력으로 모두의 창조활동에 공헌을 이어나갑니다.
+클래스메소드는 [모두의 창조활동에 공헌을 이어나갑니다] 라는 기업이념 아래, 클라우드(Amazon Web Services), 모바일, 빅데이터의 특화한 컨설팅, 시스템 설계 및 개발 서비스를 제공하고 있습니다.
+아마존 웹 서비스(AWS), 각종 클라우드 서비스, Web시스템에 특화한 시스템 컨설팅, 설계, 개발을 진행합니다.
+AWS에서는 일본내 소수의 프리미엄 컨설팅 파트너 중 하나로, SDP취득수 세계 1위, 1000개 이상의 자격증을 자랑하고 있는 클래스메소드. 이 외에도 LINE, Alteryx등 CX, 데이터 분석의 분야에서도 다수 인정을 받고 있습니다.
+
+보다 빠르게, 보다 편리하게
+노하우를 형식화하여 회전수를 최대화, 질높은 서비스를 저가격에 제공합니다.
+
+정보발신
+세상의 모든 엔지니어가 크리에이티브를 유지하기 위해, 모든 엔지니어의 기술 노하우를 공개합니다.
+
+인재육성
+배움의 욕구가 있는 크리에이티브한 인재를 적극적으로 채용하여, 보다 많은 고객에게 서비스를 제공합니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Network AWS
+주요업무
+■ AWS인프라에 관한 설계 및 구축
+• 프리세일즈 부터 정보를 전달받아, 더욱 구체적인 AWS에 관한 설계 및 구축을 진행합니다. 
+• AWS이용법에 관한 어드바이스, 추천설계 방법에 대해서도 적극적으로 제안합니다. 
+• 네트워크, 백업, 보안, 가용성, 감시, CI/CD, 운용설계까지 전반적으로 진행합니다. 
+• 구축작업에 관해서는 자동화를 도입하여 효율화를 실현합니다.
+자격요건
+• AWS 이용경험
+• 고객 서포트, 협상 경험
+• NW, DB, OS, 보안에 관한 기초지식
+우대사항
+• AWS자격증 소지자
+• CloudFormation, Ansible등의 구성관리 Tool의 이용 경험
+• 프로그램 개발 경험, 스트립트 등의 Tool 개발 경험
+• AWS SDK 또는 AWS CLI 이용 경험
+• Web 어플리케이션 개발 경험 또는 네트워크 인프라 구축 경험
+마감일 및 근무지
+• 마감일 : 상시
+• 근무지
+- 서울특별시 중구 서소문로 116, 11층 1107호, 1108호
+복지 및 혜택
+• 중식대 지급
+• FLEX 근무제도
+• 재택근무(* 현재 전 직원 재택근무 중에 있으며, 코로나 이후에도 전면 재택근무를 긍정적으로 검토 중에 있습니다)
+
+Iframe Image Links:
+Image: AWS | Link: https://cdn.jumpit.co.kr/images/stacks/aws.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: Network | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

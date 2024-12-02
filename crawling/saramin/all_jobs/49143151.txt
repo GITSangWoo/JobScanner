@@ -1,0 +1,54 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49143151&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=290bf73e-6420-499b-a8ac-e4cabebed627
+
+Iframe Text Content:
+[메가존] 태블로 (BI) 컨설턴트 채용
+모집부문 및 상세내용
+
+ 직무
+업무내용 
+ 자격요건 & 우대사항
+ 공고링크
+태블로(BI)
+컨설턴트
+- 태블로(Tableau) 솔루션 컨설팅 및 구축
+- 정형 및 비정형 데이터를 활용한 데이터 플랫폼 전략 수립, 설계, 구축
+- 빅데이터 플랫폼 / DW&DM 구축, 데이터 시각화 설계 및 구현
+- 데이터 모델링 및 BI 설계/개발
+  [자격요건]
+- 경력 5년 이상
+- Tableau (BI) 솔루션 프로젝트 경험자 (경력)
+- BI 개발 or 운영 경력 1년 이상자 (SAP BW, COGNOS, TABLEAU, QLIK, MSTR, SPOTFIRE 및 그외 국내외 분석 솔루션)
+- SQL 활용 능력 보유 및 데이터 시각화 개발 경험
+
+  [우대사항]
+- 대용량 데이터베이스 경험자
+- 솔루션 웹 커스터마이징 가능자
+-SQLD, ADsP, DAsP 자격 보유자
+-Tableau Certification 취득자
+-수학/통계학과/컴퓨터공학 관련 전공자
+지원하기
+복리후생
+근무조건
+ㆍ 근무형태 : 정규직 (정규직 전환을 위한 평가기간 3개월 계약직 운영)
+ㆍ 근무지역 : 경기도 과천시
+전형절차
+
+STEP 1. 지원서 제출 - STEP 2. 실무 면접 - STEP 3. 최종 면접 - STEP 4. 입사조건 검토 - STEP 5. 최종 합격
+접수기간 및 방법
+
+
+ㆍ 접수방법 : 홈페이지 지원
+ㆍ 이력서양식 : 사람인 온라인 이력서 또는 자유양식
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+메가존스러움
+
+
+메가존 회사 소개
+
+Iframe Image Links:
+Image: No alt | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit2/mz1_i_201208.png
+Image: No alt | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit6/206_mg_top_220503.png
+Image: No alt | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit6/megazon_logo_220216_01.png
+Image: No alt | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit5/ma_210610_img.png

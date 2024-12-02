@@ -1,0 +1,43 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49221038&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=57f01d7b-50ea-41f6-85c2-24d64c68b2b5
+
+Iframe Text Content:
+[신논현역/블록체인] PC온라인 게임 서비스 Data Engineer 모집
+
+모집부문 및 상세내용
+공통 자격요건
+ㆍ학력 : 무관
+ㆍ담당 업무
+  - BI환경을 위한 ODS/DW/DM 구성, 이기종 DB간 ETL 처리
+  - 온라인 게임 서비스의 OLTP/OLAP DB 관리
+  - SQL을 활용한 데이터 집계 및 분석 작업
+클라우드 운영자 0명
+지원자격
+ㆍ경력 : 경력 3년 이상
+ㆍData Engineer 또는 DBA 업무 경력 3년 이상 (MySQL, SQL Server)
+ㆍSQL을 활용한 데이터 집계 및 분석 능력
+ㆍLinux 및 Windows OS에 대한 기본 지식
+ㆍ사업/기획/개발자와의 원활한 커뮤니케이션 가능
+우대사항
+ㆍ대용량 데이터 환경에서의 B2C 서비스 경험
+ㆍ쿼리 성능 개선(튜닝) 경험
+ㆍApache NIFI/Superset 사용 경험
+ㆍPython 및 Shellscript 사용 경험
+ㆍ데이터 품질 관리 및 데이터 클렌징 경험
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월
+ㆍ 근무지역 : (06541) 서울 서초구 사평대로 371 현철빌딩 2층(반포동) - 서울 9호선 신논현 에서 200m 이내
+전형절차
+서류전형
+1차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 10월 18일 (금) 04시 ~ 2024년 12월 17일 (화) 24시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202410/18/slimrt_o8a9-jb56m_recruit.png
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202410/18/slimsl_a4wi-jb56m_recruit.png
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202410/18/slimsc_owe4-jb56m_recruit.png

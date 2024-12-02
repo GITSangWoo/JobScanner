@@ -1,0 +1,86 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49365092&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=34f6ab08-9fde-4668-8a44-8ef9f177171f
+
+Iframe Text Content:
+AIoT 임베디드/펌웨어 엔지니어 (전문연구요원 가능)
+서비스 소개
+모토브는 AI, IoT, Data, Mobility를 융합한 차량탑미디어 광고 기반의 Urban tech 스타트업입니다. 디지털 디스플레이 장치에서 수집되는 수십억건의 센서 데이터를 주변 상황(장소, 시간, 유동인구, 날씨 등) 에 맞추어 타겟팅 광고를 수행하는 DOOH 광고 플랫폼을 운영하고 있습니다. 이제 모토브는 단순 광고를 넘어 다양한 광고 매체를 디지털화하고 통합하고 도시데이터를 시각화하는 것은 물론 수천대의 택시를 기반으로 한 모빌리티 서비스와 도시에서의 모바일 기반 O2O인터랙션을 설계하고 변화를 주도하고자 합니다. 이에 공감한 알토스 벤처스, TBT 등 유수한 투자사로부터 누적 370억원의 투자를 유치했습니다.
+
+이러한 변화를 주도하는데 함께하실 다양한 인재분들을 모십니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Android OS AWS IoT Device Management RTOS C++ C
+주요업무
+• 안드로이드와 펌웨어 간의 통신 기능 개발
+• 안드로이드 응용 개발
+• 임베디드 리눅스 펌웨어 응용 개발
+• MCU 기반 펌웨어 응용 개발
+• 무선 통신 및 네트워킹 응용 개발
+• 운영 디바이스 모니터링
+• 경량 AI/ML 모델 연동 기능 개발 및 운영
+자격요건
+• 운영체제, 파일시스템, 네트워크, 컴퓨터 구조 등의 충분한 전공 지식
+• ST, ESP, Nordic 등의 MCU의 펌웨어 개발을 경험한 자 (3~10년 경력)
+• BLE, Sub-1GHz, LTE, Ethernet 등에서 한가지 이상 개발을 경험한 자
+• 아날로그 디지털 I/O제어(RTC, USB, I2C, SPI, UART etc..) 개발 경험
+• 새로운 도메인과 플랫폼에 대한 호기심과 적응을 즐기는 자
+• 동료와의 협업 능력
+우대사항
+• C/C++/JAVA/Python 등 다양한 언어의 사용에 능숙한 분 우대
+• AI/ML 기본 지식 혹은 인공지능 모델 경량화 경험
+• 칼만필터, 통계적 기계학습 등 경험자 우대 
+• Gateway 장비 설계 유경험자 우대
+• 양산 프로세스 경험자 우대
+• ESP32 펌웨어 개발 유경험자 우대
+• BLE, WIFI MESH 기술 경험자
+• Android 혹은 Linux 환경 개발 유경험자 우대
+• 각종 센서 제어 유경험자 우대
+마감일 및 근무지
+• 마감일 : ~2024-11-30
+• 근무지
+- 서울 강남구 강남대로 566 지하 1층
+복지 및 혜택
+[혜택 및 복지]
+모토브의 분위기는
+• 편한시간에 출퇴근하세요~! 탄력근무제
+• 계급없는 동료문화 (님 호칭)
+• 팀원들간에 소통의 장은 언제든 열려있습니다. 자유롭게 의견을 공유해주세요~!
+
+복지는
+• 야근을 최대한 지양하고 있어요 하지만 어쩔수 없이 야근을 해야한다면, 야근식대, 교통비, 대체휴무 지원해드려요.
+• 자기계발은 곧 회사의 발전!! 자기계발 관련 교육비 및 도서 지원해 드려요.
+• 커피 및 간식 무제한!!!! 출출할때 먹는 라면도 무제한~!
+
+그밖에
+• 4대보험 및 법정퇴직금
+• 경조사지원
+• 심야 교통비 지원
+• 연차휴가제도
+• 야근식대 제공
+• 명절선물 지급
+• 장기근속자 포상
+• 회식비 지원
+채용절차 및 기타 지원 유의사항
+[근무 조건]
+• 근무시간: 오전 8~10시 출근 탄력 근무제, 주 40시간 근무
+• 근무지: 서울시 강남구 강남대로 566, B1 (논현동, 신영와코루빌딩)
+
+[지원 방법]
+• 경험/업무 중심의 자유형식 이력서 제출
+• 필요시 포트폴리오 등 참고자료 제출
+
+[면접 안내]
+• 서류 검토(7일 내) 후 합격자 수시로 연락드림
+* 개발자는 코딩 테스트, Product Designer는 사전 과제가 진행됩니다.
+• 1차 실무 면접
+• 2차 인성 면접 : 조직 적합성 및 협업능력, 회사 방향성 검증
+• 처우협상 : 이전 처우 최대한 반영해서 서로 협의하에 결정
+• 최종 합류 : 입사일 조율하여 결정
+
+Iframe Image Links:
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: C | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Android OS | Link: https://cdn.jumpit.co.kr/images/stacks/androidos.png
+Image: AWS IoT Device Management | Link: https://cdn.jumpit.co.kr/images/stacks/awsiotdevicemanagement.png
+Image: C++ | Link: https://cdn.jumpit.co.kr/images/stacks/CPlusPlus.png
+Image: RTOS | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

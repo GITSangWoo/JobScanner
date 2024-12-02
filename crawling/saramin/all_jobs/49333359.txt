@@ -1,0 +1,43 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=etc&rec_idx=49333359&searchType=search&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&search_uuid=44cbcd90-9ff4-48c4-919a-0fd6ea659661
+
+Iframe Text Content:
+[위버스마인드]
+IT 부서 우수 인재 모집 (AI백엔드,
+Spring, IT시스템 엔지니어)
+모집부문 및 상세내용
+
+Spring 개발자
+■ 지원자격
+ - Spring framework 및 Spring Boot 경험
+ - SVN, Git 등의 버전 관리 도구 사용 경험
+ - DB 활용능력 (Mysql, tuning, mybatis)
+ - 기본 마크업 (jquery, css, html)
+
+ ■ 우대사항
+ - CRM 및 ERP 프로세스 경험 또는 프로세스 설계능력
+ - java Legacy 소스 분석 능력
+ - 개발요구사항에 대한 원활한 소통 능력
+
+ ■ 담당업무
+ - Spring framework를 이용한 웹 개발
+ - 데이터베이스 설계 및 최적화
+
+
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월
+ㆍ 근무지역 : (152-848) 서울 구로구 구로3동 디지털로30길 28(구로동) 마리오타워 9층 - 서울 2호선 구로디지털단지 에서 800m 이내
+전형절차
+서류전형
+1차면접
+2차면접
+최종합격
+접수기간 및 방법
+
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202407/15/sgn6dn_kyoi-vbbz2i_recruit.jpg
+Image: No alt | Link: https://www.saraminimage.co.kr/sri/vix/template/toptype/sale3.png

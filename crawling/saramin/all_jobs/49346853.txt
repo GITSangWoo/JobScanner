@@ -1,0 +1,50 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49346853&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=255f39c0-e5c6-48af-a584-51300758ac0c
+
+Iframe Text Content:
+반도체 테스트 엔지니어 (TEST Engineer)
+서비스 소개
+어보브반도체는 "고객중심의 도전과 혁신"이라는 경영이념을 바탕으로
+2006년 2월 매그나칩반도체(구:하이닉스)로 부터 독립한
+MCU(Micro Controller Unit) 전문 반도체 기업입니다.
+
+LG반도체 시절부터 30여 년을 함께 해 온 어보브반도체의 기술과 경험, 노하우는
+국내외 IT 산업 발전의 디딤돌이 되었으며, 나아가 4차 산업혁명의
+핵심 아이콘으로 새로운 디지털 세상을 견인하고 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Perl C++ C
+주요업무
+• Probe Test / Final Test Program setup
+• Probe Card / Load Board 회로도 작성
+• Test Data 정리 / 분석 (Histogram / CPK)
+• 저수율 분석, RMA 분석 등
+자격요건
+[지원자격]
+• 학력 : 학사 이상
+• 경력 : 직무관련 경력자
+• 전공 : 전자/반도체/컴퓨터 관련 학과
+우대사항
+[우대사항]
+• C,C++,Perl 등 Programming 가능자
+• Test Program 개발 경력자
+• 영어(중국어) 회화 가능자
+마감일 및 근무지
+• 마감일 : ~2024-12-09
+• 근무지
+- 충북 청주시 청원구 오창읍 각리1길 37 어보브반도체
+복지 및 혜택
+•급여제도
+퇴직연금, 상여금, 연차수당, 4대 보험
+
+•교육/생활
+점심식사 제공ㅍ
+채용절차 및 기타 지원 유의사항
+• 전형절차 : 서류심사 - 1차면접(실무) - 2차면접(임원) - 최종합격
+• 제출서류 : 이력서, 자기소개서 (자유형식), 경력기술서 또는 포트폴리오
+
+Iframe Image Links:
+Image: Perl | Link: https://cdn.jumpit.co.kr/images/stacks/perl.png
+Image: C++ | Link: https://cdn.jumpit.co.kr/images/stacks/CPlusPlus.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: C | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

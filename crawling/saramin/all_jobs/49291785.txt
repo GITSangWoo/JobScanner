@@ -1,0 +1,56 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49291785&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=34f6ab08-9fde-4668-8a44-8ef9f177171f
+
+Iframe Text Content:
+[외국계] Salesforce Developer (Solution Engineer)
+아이큐비아는 헬스케어 분야의 빅데이터 분석, 컨설팅 및 임상시험 서비스를 제공하는 기업으로 전 세계 100여 국 87,000여명의 임직원이 헬스케어 미래를 위해 노력하고 있습니다. 아이큐비아는 2024년 Fortune지 World's Most Admired Companies에 7년 연속 선정되고, 특히 Healthcare 분야에서는 3년 연속 1위로 랭크되어, Global Leading Company의 위상을 인정 받았습니다. 현재 한국아이큐비아에는 800명 이상의 임직원이 근무 중이며, 의약품 전주기에 걸친 다양한 서비스 및 솔루션을 바탕으로 헬스케어 기업들을 지원하고 있습니다.
+
+모집부문 및 상세내용
+ 
+Purpose
+We are looking for a Salesforce Developer, with proven experience in administration and development in the Salesforce platform, solid knowledge of SFDC architecture for systems and data integration.
+
+Responsibilities
+• Salesforce 기반의 IQVIA CRM Solution(OCE Personal) 운영 및 커스터마이징
+• Salesforce 기반의 솔루션 구축 프로젝트 수행
+• Salesforce 관련 시스템 인터페이스 개발 및 유지보수
+• 비즈니스 요구사항에 따른 시스템 개선 및 새로운 솔루션 도입
+• 기술적 요구사항에 대한 구현 가능성 분석
+
+Requirements
+• 대졸 이상 (컴퓨터 공학 또는 관련 학과 우대)
+• 최소 4년 이상의 Salesforce 개발 경험 및 숙련도 필수 (Configuration, LWC, APEX, Heroku)
+• 업무 프로세스 분석 및 개선 능력
+• 다양한 기술 습득 및 이해에 거부감이 없는 분
+• 내외부 이해관계자와의 원활한 소통과 협업 능력
+• 영어 가능자 우대 (기술문서 이해 및 비즈니스 영어 가능 수준)
+• Salesforce 관련 자격증 우대
+• Node.js, React를 이용한 실무 개발 경험 우대
+• KakaoTalk API를 이용한 실무 개발 경험 우대
+• Salesforce Community Cloud 실무 경험 우대
+• Salesforce Marketing Cloud 실무 경험 우대
+
+[추천 영상]
+1. What does it mean to be IQVIAN? https://youtu.be/dhrtkSGsej4
+2. 아이큐비아ㅣ나만 몰랐던 (진짜) 포브스 선정 '세계 최고의 직장' https://youtu.be/i8hNY49LzPs?si=Zzp2IoY4cqsD2x_e
+
+[관련 문의]
+한국 아이큐비아 채용(IQVIA) 카카오톡 채널을 통해 1:1 문의 하실 수 있습니다.
+http://pf.kakao.com/_XeVFs
+*채널을 추가하시면 매월 신규 포지션 알림 및 회사 소식을 받아보실 수 있습니다.
+
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월
+ㆍ 근무지역 : (04554) 서울 중구 퇴계로 173 남산스퀘어(충무로3가) - 서울 3호선 충무로 에서 300m 이내
+전형절차
+서류전형
+면접전형
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 10월 29일 (화) 11시 ~ 2024년 11월 28일 (목) 24시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://www.saraminimage.co.kr/sri/vix/template/toptype/talent3.png

@@ -1,0 +1,56 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49395785&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=247db45f-e38b-42ca-aca6-715508bf425a
+
+Iframe Text Content:
+금번 채용건은 고객사의 요청으로 기업명이 비공개로 진행되오니 지원자 분들의 깊은 양해 바랍니다.
+서류합격자 분들께 개별로 연락드려 기업명을 공개하여 설명드리겠습니다. 많은 지원 바랍니다.
+
+  01. 모집내용
+모집분야
+담당업무
+자격요건 및 우대사항
+클라우드 구축
+
+ - NCP, AWS 기반 데이터 플랫폼 구축 및 운영 (Vuex, Vite, Route, Axios, primevue, message channel)
+ - kinesis kafka기반 데이터 수집
+ - ec2, eks를 활용하여 서비스
+ - 플랫폼 운영 최적화를 위한 자동화 도구 및 서비스 개발
+ - 대내외 서비스에 대한 로그 분석 및 트러블슈팅
+ - API개발 가능하신분 (java 또는 python 기반) 
+
+ - 데이터 엔지니어 경력 2년 이상
+ - 2,3년 대졸 이상
+    02. 근무조건
+1) 근무시간 : 월-금 09:00~18:00 
+2) 급      여 : 경력별 협의
+3) 회사위치 : 서울 금천구 가산디지털단지역 인근
+4) 고용형태 : 정규직
+  03. 복리후생
+1) 4대보험 가입, 정기 건강검진
+2) 근무 우수 사원 포상
+3) 성과에 따른 보상
+4) 듀얼모니터, 노트북 지원
+5) 자기계발 도서지원
+7) 중, 석식 제공
+8) 생일선물, 명절 선물 지급
+9) 제휴업체 할인 혜택 제공
+10) 연차휴가, 산전휴가, 경조사 휴가
+11) 회사 콘도 지원
+12) 직무역량개발 교육 지원
+13) 어린이집/ 학자금 지원
+14) 기타 회사내규
+  04. 채용절차
+* 서류전형 -> 1차면접 -> 2차면접 -> 최종합격
+* 서류마감 : 채용시 즉시마감
+    05. 지원방법
+★ 사람인 공고 지원 또는 이메일 지원 (지원서 발송, 개인이력서 사용 가능)
+ - 지원서 다운로드(클릭) 후 작성 → 이메일 발송 (클라우드 구축AA_성함OOO)
+   - 보내실 곳 : lch@saraminhs.co.kr
+(한글 및 워드 양식 다운로드 후 작성)
+    06. 기타
+1) 제출된 서류는 비밀을 보장합니다.
+2) 기타 궁금한 사항은 채용담당자 문의 (02-2025-2624)
+
+Iframe Image Links:
+Image: No alt | Link: https://www.saraminimage.co.kr/?url=http://board-3.blueweb.co.kr/user/popkhs/data/hhy2971/%bf%f6%b5%e5%be%c6%c0%cc%c4%dc.JPG
+Image: No alt | Link: https://www.saraminimage.co.kr/?url=http://board-3.blueweb.co.kr/user/popkhs/data/hhy2971/%c7%d1%b1%db%be%c6%c0%cc%c4%dc.JPG
+Image: No alt | Link: https://saraminhs.hanbiro.net/editor/userfiles/saraminhs.co.kr/leeci/e4aa9c345077b5b42072fac8d9ed7bd2.jpg

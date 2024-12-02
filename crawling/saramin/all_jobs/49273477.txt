@@ -1,0 +1,60 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49273477&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c53375c6-e220-4fb3-8afc-00c39f47a76c
+
+Iframe Text Content:
+(주)이비즈테크
+시스템엔지니어
+(스토리지/서버/가상화/클라우드)
+(주)이비즈테크는 Enterprise Business Data Technology 전문 컨설팅 회사입니다. Zadara Stroage, NetApp Storage,
+Commvault Backup, Zerto(BCDR) 제품을 AWS, KT U클라우드 및 On-Premise 환경에서 제공하며, 해당 비즈니스에서
+지속적으로 성장을 이루어 내고 있습니다. (주)이비즈테크와 함께 꿈과 열정으로,
+지속적인 성장과 성공에 동참할 인재를 모집합니다. 많은 지원 부탁드립니다. 감사합니다.
+#기술지원 #백엔드/서버개발 #유지보수 #서울 #마포구
+모집부문 및 자격요건
+모집부문 ㆍ시스템 엔지니어(스토리지/서버/가상화/클라우드)
+담당업무 ㆍ스토리지(NetApp)/서버/가상화 구축, 운영
+ㆍ스토리지(NetApp)/서버 유지보수, 장애처리, 기술지원 등
+ㆍ제안서 작성
+자격요건 ㆍ엔터프라이즈 스토리지(5~10년) 경력자
+ㆍ영어 독해력(영문 기술서적 이해 능숙/본사와의 커뮤니케이션(메일) 및
+   영문 기술자료 이해를 위한 기본적인 독해 능력 필요)
+ㆍ사용프로그램 : OS(Window, Linux), Office 프로그램
+우대사항 ㆍ영문 독해 능력(영문 기술서적 이해 가능)
+ㆍlayer2 Networking에 대한 기본적인 이해 능력
+ㆍNetworking에 대한 기본적인 이해 능력
+ㆍ스토리지 기술지원 경력
+근무조건
+ㆍ근무형태 : 정규직
+ㆍ근무요일 : 월~금 09:00~18:00
+ㆍ급여조건 : 5,000만원~7,000만원(면접 후 협의)
+ㆍ주소 : 서울특별시 마포구 성암로 189 중소기업 DMC타워 8층 802호, 804호
+            (6호선, 경의선, 공항철도 디지털미디어씨티역 직통연결)
+복리후생
+4대보험, 퇴직연금 연차, 석식제공, 간식제공
+각종 경조휴가 및 경조금 지원,
+차량유류비 지원, 주차비 지원, 통신비 지원 수도권 외 연고자 월세 별도 지원,
+도서구입비 지원, 자격증 취득 지원,
+교육비 지원
+명절 선물, 생일상품권 지급 및
+생일자 조기퇴근제도,
+장기근속자 포상 및 포상휴가, 사내도서관 워크샵, 금연수당, 추천수당 등
+전형절차
+ STEP 01
+ 서류전형
+  STEP 02
+  면접전형
+     STEP 03
+     최종합격
+접수기간 및 방법
+ㆍ접수기간 : ~2024년 11월 30일 토요일 24시
+ㆍ접수방법 : 자사 이력서 양식 지원
+ㆍ제출서류 : 이력서, 자기소개서
+기타사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: icon | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit7/25_icon_b_2208_20.png
+Image: 복리후생  | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit7/25_icon_b_2208_8.png
+Image: 복리후생  | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit7/25_icon_b_2208_17.png
+Image: 복리후생  | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit7/25_icon_b_2208_2.png
+Image: 복리후생  | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit7/25_icon_b_2208_3.png
+Image: 복리후생  | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit7/25_icon_b_2208_13.png

@@ -1,0 +1,73 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49339029&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=97e79b27-fc9a-4ed3-829b-ca0a4882d3f5
+
+Iframe Text Content:
+모집부문 및 자격요건
+
+등급
+모집인원
+주요 업무
+기술 환경
+필수 조건
+초급 서버관리자 
+( 클라우드 )
+
+
+모집인원 : 1명
+대기업 데이터센터 근무
+Cloud 서버 및 인프라 운영/관리
+
+
+  1) 서버 / Storage 등 운영
+   .  MS Azure Cloud , windows , Linux
+   .  Vmware, HCI, etc
+
+
+  2) WEB/WAS , FTP, DNS, SMTP 운영
+  . Apache, Tomcat, WEBTOB, JEUS, etc
+
+
+필수조건 
+- Cloud 서버 운영 경험
+   - Linux  ( 또는 윈도우즈 ) 서버 
+    운영 경험 
+
+                  우대조건
+( 필수는 아님 ) 
+   - 스토리지 , 네트워크, 보안,  DB,  가상화 업무에 대한 이해 
+지원자격
+학력
+초대졸 이상 (2,3년)
+성별
+무관
+연령
+무관
+근무조건 및 근무환경
+근무시작
+즉시 ( 출근일자 협의가능 ) ~ 연단위 계약 ( 수년간 근무 )
+근무요일/시간
+주 5일(월~금) 오전 9시~오후 6시
+근무지역
+논현동 
+급여
+월 500 ~ 520만원  ( 3.3% 공제후 지급 , 4대보험은 납부하지 않음 ) 
+인근전철
+학동역
+전형절차 및 제출서류
+제출서류
+스킬 인벤토리 ( 당사 양식 or 개인 작성 양식 )
+접수기간 및 방법
+접수기간
+~ 2024년 11월 22일
+이력서양식
+사람인 온라인 이력서 또는
+스킬 인벤토리 ( 당사 양식 or 개인 작성 양식 )
+접수방법
+사람인 입사지원 or 이메일 지원 ( pureunit@naver.com )
+기타 유의사항
+  연차와 월차가 주어지며 , 하기휴가도 정확하게 주어집니다.
+  인터뷰는 수시로 진행하며 인터뷰 결과는 당일 알려드립니다.
+  업무강도는 그리 높지 않습니다.  
+  중급엔지니어도 페이가 맞을시 지원 가능합니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202203/20/r917m7_5yew-1pwzbvx_recruit.png

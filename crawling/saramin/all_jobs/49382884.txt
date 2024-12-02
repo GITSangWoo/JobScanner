@@ -1,0 +1,64 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49382884&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=afade53c-0067-444e-b9f4-d6ef66adda15
+
+Iframe Text Content:
+SM하이플러스는 고속도로 선불 전자카드사업을 주된 목적으로 한국도로공사에 의해 2007년 7월 설립되었습니다.
+2011년 6월 SM그룹에 편입 후 카드사업 외에도 건설업, 레저사업 등 다양한 사업영역으로 확장했으며, 향후
+“Mobile + Big Data + Customer Centric” 기반의 미래 모빌리티 페이먼트 산업을 리드하는 기업으로 성장을 준비하고 있습니다.
+[SM하이플러스] 경력직 채용
+분야 경력 인원 자격요건 및 담당업무
+선불카드 시스템 및
+앱 정산 개발자 10년 이상 0명 [주요 업무 및 책임]
+ㆍ모바일 App. 페이머니/포인트 정산 시스템 개발
+   - 모바일 App. 머니/포인트 이용관련 로직 구현 및 관리
+     (적립, 사용, 전환, 소멸 등)
+ㆍ선불 하이패스 카드 시스템 운영·관리
+   - 고속도로 통행료 데이터 수집, 정합성 심사, 데이터 분석
+   - 선불카드 정산 시스템 수정 개발
+
+[자격 요건]
+ㆍ10년 이상의 Oracle PL/SQL 프로그래밍 경력
+ㆍ선불카드 정산 또는 선불 머니/포인트 정산 시스템 개발 경험
+ㆍPowerBuilder 개발 가능자
+ㆍ대용량 데이터 처리, 분석 및 데이터 컨트롤 능력
+
+[우대 사항]
+ㆍ선불 포인트, 머니 정산 시스템 개발 경험
+ㆍ회계관리시스템 개발 경험자
+ㆍ데이터베이스 튜닝, 운영 관리
+ㆍ금융 규제 및 보안에 대한 이해
+ㆍ최신 기술 트렌드에 대한 이해 및 적용 능력
+ㆍ원활한 커뮤니케이션 및 협업 능력
+그룹 IT 및
+ERP 개발 4년 이상 0명 [주요 업무 및 책임]
+ㆍERP 시스템 유지보수
+   - 건설ERP 시스템 유지보수
+   - 입찰B2B 시스템 유지보수
+ㆍ정보 시스템 운영지원
+   - 그룹웨어 시스템 운영
+   - 그룹/기준정보 시스템 운영
+   - 웹포탈(홈페이지, 사내교육) 사이트 운영
+ㆍ차세대 시스템 개발
+   - 전자결재 시스템 신규개발
+
+[자격 요건]
+ㆍ컴퓨터 공학 또는 관련 분야 학사 이상
+ㆍJAVA, RDBMS(ORACLE 등) Spring기반 웹개발 경력
+   (4년이상)
+ㆍCSS, HTML5, Jquery 개발 가능자
+
+[우대 사항]
+ㆍ그리드, 웹에디터, 레포팅툴 사용경험
+ㆍ시스템간 인터페이스 구축경험
+전형 절차
+지원서 접수
+ㆍ접수기간 : ~ 2024.11.25.(월)까지
+ㆍ접수방법 : SM그룹 채용홈페이지 지원 또는 사람인 즉시지원
+기타
+ㆍ지원서는 마감일까지 접수된 것만 유효합니다.
+ㆍ지원서의 내용이 사실과 다를 경우, 합격 취소 등 불이익을 받을 수 있습니다.
+ㆍ취업보호 대상자 및 장애인은 관계 법령에 의거하여 우대합니다.
+
+Iframe Image Links:
+Image: 서류전형 - 인성검사 - 실무면접 - 심층면접 - 최종합격 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/05_smhiplus_step_240416.png
+Image: [SM하이플러스]경력직 채용 | 에스엠하이플러스 주식회사/애플밸리CC/SM하이플러스(주)/탑스텐동강시스타 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/05_smhiplus_top_240416.png
+Image: Designed by saramin | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit/watermark_basic.png

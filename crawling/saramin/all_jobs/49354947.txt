@@ -1,0 +1,71 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49354947&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=abe19497-5b44-41e4-b532-de836b765221
+
+Iframe Text Content:
+Customer On-prem Engineer (DevOps)
+서비스 소개
+Allganize 는 AI 가 사람의 언어를 이해하고, 그에 맞는 액션을 자동화 할 수 있는 Natural Language Understanding (NLU) API 와 이 NLU API 를 이용한 금융, 보험, 커머스 등의 고객 서포트에 특화된 Answer Bot을 제공하고 있습니다. 
+고객사들로부터 어떤 솔루션보다도 높은 정확도의 NLU API 를 제공하고 있다는 평가를 받고 있습니다.
+
+특히 기계 독해 라는 기술을 사용해서 AI 가 직원과 고객들의 질문에 대해서 방대한 문서에서 자동으로 답변을 할 수 있는 부분에 집중을 하고 있습니다. 
+고객사는 한국/미국/일본에 있고, 한국의 고객사는 SKT, LG U+, 현대카드, 코스맥스 등이 있고, 글로벌한 고객사는 KDDI, JPOWER 등 여러 곳이 있습니다.
+
+본사는 미국 휴스턴에 있으며, 미국 실리콘밸리와 일본 도쿄, 서울 강남 등에 오피스를 두고 있습니다. 
+2017년과 2019년에 Seed Round 와 Series A 라운드로 총 500만 달러를 투자 유치하였으며 작년 3월에는 Series A2 투자로 1,000만 달러를 유치하기도 했습니다.
+
+회사는 매 분기별 300% 이상 급 성장 하고 있으며, 같이 회사의 성장을 이끌어나갈 좋은 인재를 모시고자 합니다.
+
+올거나이즈 이창수 대표 인터뷰
+http://jmagazine.joins.com/forbes/view/334556
+
+딥테크 스타트업 창업가 11인에 선정된 올거나이즈
+https://www.chosun.com/economy/smb-venture/2021/12/28/4KHHTFWA6ZCHHN42ISHJMHPJBA/?utm_source=naver&utm_medium=referral&utm_campaign=naver-news
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Windows Linux
+주요업무
+• 고객 환경에 맞춘 On-premise 기반의 제품 인프라 구축 및 운영, 관리를 담당합니다.
+• On-premise 환경에서의 장애 대응 및 해결과 이를 예방하기 위한 시스템 모니터링을 구축합니다.
+• On-premise 배포 환경을 위한 보안 정책 및 절차를 구현합니다.
+• On-premise 배포를 위한 메뉴얼 및 기술 문서를 작성하고 관리합니다.
+• 필요시에는 인프라팀 뿐만 아니라, 세일즈팀등 다양한 팀과 협력하여 배포과정과 운영과정에서 일어나는 이슈를 식별하고 신속하게 대처합니다.
+• 인프라팀과 고객에게 프로젝트 진행 상황을 주기적으로 공유하고, 필요한 정보를 제공합니다.
+자격요건
+• 3년 이상의 On-premise 기반 솔루션 배포 및 관리 경험
+• 서버, 스토리지, 네트워크 시스템에 대한 깊은 지식
+• 가상화 기술 및 Linux, Windows 서버 운영에 대한 지식
+• 커뮤니케이션 및 문서작성 능력이 뛰어난 분
+• 다양한 종류의 고객사(공공기관, 대기업, 스타트업 등)를 대상으로 IT 또는 AI 프로젝트(데이터 구축 프로젝트 제외) 경험이 있으신 분
+우대사항
+• AI 산업 및 기술 동향에 대한 이해도와 지속적인 학습 의지가 있는 분
+• 스타트업 근무 경험이 있는 분
+• 비즈니스 수준에서 영어 또는 일본어로 소통이 가능하신 분
+마감일 및 근무지
+• 마감일 : ~2024-12-06
+• 근무지
+- 서울 강남구 테헤란로8길 16 8층
+복지 및 혜택
+[글로벌 인재로 성장할 수 있는 기회] 
+• 미국 휴스턴 본사 및 실리콘 밸리, 일본 도쿄에 있는 팀과 일할 수 있는 글로벌한 업무 환경을 제공해드려요. 
+• 미국 본사로 Exchange Program(1-2개월)을 운영하며 희망할 경우 경비를 지원 해드려요. 
+• 조직 목표 달성시 글로벌팀이 한자리에 모이는 Global Offsite를 운영하고 있어요.(2022년 12월 태국 파타야에서 진행) 
+
+[자율적이고 업무 몰입을 돕는 근무 환경]
+• 근무시간은 9시 - 6시가 기본이지만 상황에 맞게 유연한 출/퇴근이 가능해요. 
+• 고사양의 노트북과 모니터를 지원해드려요. 그 외에도 필요한 장비를 적극 지원해드리고 있습니다. 
+• 사무실에 나오시는 날은 식대 걱정 없도록, 점심 및 저녁 식사 비용을 지원합니다. 
+• 당 떨어지는 일 없도록, 사무실에는 항시 간식을 구비하고 있어요. 
+
+[그 외에 제공 해드리는 것들]
+• 자기계발비를 지원해드려요. 
+• 도서 구입비용을 지원해드려요. 
+• 설과 추석에는 명절 선물을 지급해드려요. 
+• 종합 건강 검진을 지원해드려요. 
+• 연차 외 유급 병가제도와 연말 약 1주 간의 전사 Off기간을 운영하고 있어요.
+채용절차 및 기타 지원 유의사항
+-
+
+Iframe Image Links:
+Image: Windows | Link: https://cdn.jumpit.co.kr/images/stacks/windows.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png

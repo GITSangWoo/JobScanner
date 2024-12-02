@@ -1,0 +1,76 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49337535&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=97e79b27-fc9a-4ed3-829b-ca0a4882d3f5
+
+Iframe Text Content:
+[전문연구요원 가능] Deep Learning Research Engineer
+서비스 소개
+모빌린트의 Deep Learning Research Engineer는 최신 딥러닝 알고리즘 연구를 통해 AI 반도체가 다양한 모델들을 처리할 수 있도록 하고, 각종 경량화 기술을 적용하여 제품의 추론 성능을 향상시키는 역할을 합니다.
+
+딥러닝 모델을 단순히 차용하는데 그치지 않고 모델 경량화 및 최적화를 통해 실제 어플리케이션에서 사용하기 편리한 모델을 만들어보고 싶으신 분, 다양한 딥러닝 기법을 연구하는데 흥미가 있으신 분, 그리고 새로운 도전을 즐기시는 분들께 적극 추천드립니다!
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+C++ C DeepLearning TensorFlow PyTorch Python
+주요업무
+• Task, Dataset, Size, NPU 별 최적화된 딥러닝 모델 연구 및 설계
+• Quantization, Pruning 등 딥러닝 모델 경량화 연구 및 적용
+• Computer vision 최신 연구 동향 분석
+• 각종 최신 딥러닝 알고리즘 연구
+• 고객사 데이터 분석 및 딥러닝 모델 학습
+• 딥러닝 모델 학습 관련 툴 개발
+자격요건
+• 딥러닝 프레임워크(PyTorch, TensorFlow 등) 활용 능력
+• 프로그래밍 언어(Python, C/C++ 등) 활용 능력
+• 딥러닝 모델 개발 관련 전체 프로세스 경험
+• 최종 성적증명서 제출 필수
+우대사항
+• 딥러닝 모델 학습 개발 경험 및 논문 실적
+• 컴퓨터비전 딥러닝 모델 학습과 관련된 높은 이해도
+• NPU에 대한 이해도
+• 딥러닝 핵심 연산들에 대한 정확한 이해
+마감일 및 근무지
+• 마감일 : ~2024-12-04
+• 근무지
+- 서울 강남구 선릉로93길 35 나라키움 역삼 B 빌딩 3층
+복지 및 혜택
+[ 여러분의 성장을 응원합니다 ]
+• 전 세계가 주목하는 AI 반도체라는 인공지능, 반도체 분야의 최첨단 기술을 접할 수 있습니다.
+• AI 반도체 특성상 타 분야 엔지니어와의 교류가 필수적이며 인공지능 솔루션 기업들과 협업할 기회가 많기 때문에 다양한 경험을 통해 시야를 넓히고 융합형 인재로 성장할 수 있습니다.
+• 열정적이고 성장에 욕심 많은 멤버들을 위해 세미나 참석비 지원, 도서구입비 지원 제도를 운영하고 있습니다.
+• 직무발명보상제도를 운영하여 멤버들의 역량 증진을 장려하고 성과에 대해 보상해드리고 있습니다.
+
+[ 우리는 이렇게 일해요 ]
+• 자율출퇴근, 자유복장을 원칙으로 하고 있습니다. 
+• 공공기관에 준하는 휴일, 휴가 제도를 운영하며 연차는 자유롭게 사용하실 수 있습니다.
+• 직급없이 님을 사용하며 스스로 업무를 관리하는 수평적 조직문화를 자랑합니다.
+• 불필요한 문서 작업을 철저히 배척하고 직접적이고 빠른 의사소통으로 문제를 해결합니다.
+
+[ Low-Risk & High-Return ]
+• 열정페이가 아닌 열정이 샘솟는 페이를 지향합니다.
+• 국내 AI 반도체 선도기업 중 규모가 작은 편으로, 지금 합류하시면 회사의 성장으로 인한 기쁨을 스톡옵션을 통해 금전적으로도 충분히 누리실 수 있습니다.
+• AI 반도체는 차세대 비메모리 반도체 패권을 결정짓는 국가전략산업으로 미국은 2025년까지 56조원, EU는 2030년까지 182조원, 우리 정부 역시 1조 4000억원의 투자를 발표했습니다.
+모빌린트는 국내최고수준의 AI반도체 기술력을 활용하여 지금도 여러 과제에 참여하고 있으며, 앞으로도 정부 지원을 통해 안정적으로 AI 반도체 기술 국산화에 도전할 계획입니다.
+
+[ 쾌적한 근무 환경 ]
+• 멤버들이 연구 개발에 집중하실 수 있도록 편안한 환경 조성을 최우선 목표로 하고 있습니다.
+• 역삼역 3분 거리에 있는 넓고 깨끗한 사무실에서 근무합니다.
+• 신규 멤버가 입사하실 때마다 최고 사양의 컴퓨터와 듀얼 모니터를 새로 구입해드리며 필요한 소프트웨어를 요청하시면 지체 없이 지원해드립니다.
+
+[ 그 외 소소한 복지 제도 ]
+• 4대 보험 및 매년 건강검진 지원
+• 중식 및 석식 제공
+• 간식, 음료 무제한 제공
+• 고급 캡슐 커피 무제한 제공
+• 명절, 연말 등 특별한 선물
+채용절차 및 기타 지원 유의사항
+[채용 절차]
+• 서류 접수 > 1차 기술 면접 > 2차 임원 면접 > 처우 협의 > 최종합격
+• 최종 성적증명서 제출 필수 (석,박사의 경우 학부 성적표도 첨부)
+
+Iframe Image Links:
+Image: DeepLearning | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: C | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: PyTorch | Link: https://cdn.jumpit.co.kr/images/stacks/pytorch.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: C++ | Link: https://cdn.jumpit.co.kr/images/stacks/CPlusPlus.png
+Image: TensorFlow | Link: https://cdn.jumpit.co.kr/images/stacks/tensorflow.png

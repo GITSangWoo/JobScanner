@@ -1,0 +1,66 @@
+URL: https://www.rallit.com/positions/2266/ai-%EC%9D%8C%EC%84%B1-%EC%9D%B8%EC%8B%9D-%EA%B0%9C%EB%B0%9C%EC%9E%90
+1/1
+브랜드 인게이지먼트 네트워크 인크, 어떤 곳인가요?
+BEN is a next-generation provider of conversational AI avatar assistants, with the purpose of transforming engagement and analytics for businesses through our security-focused, multimodal communication and human- like AI interface offerings. Our suite of configured and customizable applications is built on proprietary natural language processing, anomaly detection, multisensory awareness, sentiment, and environmental analysis, as well as real-time individuation and personalization capabilities. We believe these powerful tools will empower businesses to elevate customer experiences, optimize cost management and supercharge operational efficiency. Our focus is to deliver scalable, customizable, human-like AI avatar platforms that can enhance customer engagement while providing safe, secure, consistent and effective messaging to meet the growing demand for contemporary conversational AI.
+BEN은 차세대 대화형 AI 아바타 비서 제공업체로, 보안에 중점을 둔 멀티모달 커뮤니케이션과 인간과 유사한 AI 인터페이스 제품을 통해 비즈니스의 참여와 분석을 혁신하는 것을 목표로 합니다. 구성 및 사용자 지정 가능한 애플리케이션 제품군은 독점적인 자연어 처리, 이상 징후 감지, 다중 감각 인식, 감정 및 환경 분석, 실시간 개별화 및 개인화 기능을 기반으로 구축되었습니다. 이러한 강력한 도구를 통해 기업은 고객 경험을 개선하고 비용 관리를 최적화하며 운영 효율성을 극대화할 수 있습니다. 저희는 확장 가능하고 맞춤 설정이 가능한 인간과 유사한 AI 아바타 플랫폼을 제공하여 고객 참여를 향상시키는 동시에 안전하고 보안이 유지되며 일관되고 효과적인 메시지를 제공하여 대화형 AI에 대한 증가하는 수요를 충족하는 데 중점을 두고 있습니다.
+AI 음성 인식 개발자, 어떤 일을 하나요?
+AI 음성 인식 개발
+#Swift
+#Docker
+#websockets
+#grpc
+#rabbitmq
+주요업무
+서버-클라이언트 ASR 개발
+On device(mobile app) ASR 개발
+화자 분리(Speaker Diarization) 알고리즘 개발
+자격요건
+기계학습 방식을 이용한 음성/음향 인식에 대한 이론적 지식
+기계학습 방식을 이용한 음성/음향 인식에 대한 프로젝트 경험
+학력 : 대졸 이상 (4년)
+AI 계열 동종 경력 1년 이상
+기계 학습 분야 프로젝트 수행 경험
+Linux, Python, 기계 학습 관련 개발 경력 (Pytorch, Tensorflow, coreML, ONNX)
+우대사항
+스마트폰 앱 개발 (SWIFT, Android Native)
+기계 학습을 이용한 백엔드 개발 경험
+Java script를 이용한 web framework 개발 경험
+기계 학습 모델 경량화 및 최적화 경험
+Docker 및 Kubernetix 이용 배포 경험
+네트워크 통신 관련 개발 경력 (websocket, gRPC, MQ(RabbitMQ, Apache Kafka 등))
+사용자 경험 분석 및 개선 경험
+영어 회화 가능
+혜택 및 복지
+미국기업의 한국 지점에서 근무합니다.
+팀 회식비 지원.
+무제한 간식 제공.
+명절 선물 및 경조금 지급.
+초과근무수당
+연차수당
+퇴직금(또는 퇴직연금 가입)
+채용 절차
+서류 접수
+1차 면접
+코딩 테스트
+2차 면접
+3차 면접
+최종 합격
+채용 절차는 일정 및 상황에 따라 달라질 수 있습니다.
+지원서 내용 중 허위 사실이 있는 경우에는 합격이 취소될 수 있습니다.
+브랜드 인게이지먼트 네트워크 인크에서 전하는 미래 동료에게 한마디
+BEN의 미션은 전 세계 기업이 고객과 소통할 수 있는 최고의 AI 아바타 비서를 만드는 것입니다. 우리는 AI 아바타 비서를 유용하고 창의적이며 영리하고 친근하게 만들기 위해 노력합니다. 저희의 독점 플랫폼은 의미 있는 참여를 촉진하는 데 필요한 소비자 개인화 및 비즈니스 맞춤화를 통합하는 것을 목표로 합니다. 저희는 원활한 통합을 목표로 클라우드, 로컬 및 하이브리드 환경에서 광범위하게 운영될 수 있도록 제품을 설계할 계획입니다. 기업들은 기본 앱, 키오스크 및 소프트웨어 개발 키트("SDK") 통합 내에서 멀티모달 대화형 AI 및 AI 아바타를 배포할 수 있을 것으로 믿습니다.
+근무 지역
+서울 중구 한강대로 416 서울스퀘어 서울스퀘어 15층
+AI 음성 인식 개발자
+경력
+경력무관
+최소 연봉
+회사 내규에 따름
+마감일
+채용 시 마감
+사전 질문
+미리보기
+회사명
+브랜드 인게이지먼트 네트워크 인크
+0
+지원하기

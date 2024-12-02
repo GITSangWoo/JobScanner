@@ -1,0 +1,40 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49427720&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=1ce572f6-2127-4637-8908-dd3f579392e5
+
+Iframe Text Content:
+소프트웨어 엔지니어
+소속 ㆍ기술연구소 - 기술개발팀
+담당업무 ㆍ아트봉봉 백엔드 서비스 총괄
+
+
+자격요건
+
+    및
+
+필수역량 [ 자격 요건 ]
+ㆍ학력 : 무관
+ㆍ전공 : 무관
+ㆍ필요경력 : 5~10년 이상 (리드급)
+
+[ 필수 역량 ]
+ㆍNode.js 환경에서 Typescript를 활용한 웹 서비스 개발 경험
+ㆍReact 또는 Next 기반의 프론트엔드  웹 서비스 개발 경험
+ㆍEspress 또는 Nest 기반의  백엔드 웹 서비스 개발 경험 
+ㆍORM 오픈소스를 활용한 DB 연동 서비스 개발 경험 
+
+
+우대사항
+ㆍ웹 서비스 개발 또는 운영 프로젝트에서 5~10년 이상의 리딩 경험
+ㆍNode.js 환경에서 Typescript를 활용한 사이드 프로젝트 경험
+ㆍRelational & Document (Hybrid) DB 설계 또는 운영 경험
+ㆍRadix/UI 또는 Shadcn/UI 기반의 퍼블리싱 적용 경험
+ㆍReact Native  또는 Flutter 기반의  앱 개발 및 출시 경험
+ㆍ인프라 셋팅 및 DB  구축 경험
+근무지 ㆍ강남구 삼성역
+인원 ㆍ0명
+
+* 자격 요건에 부합하는 경우에만 지원 바랍니다.
+
+Iframe Image Links:
+Image: Designed by saramin | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit/watermark_basic.png
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202405/20/sdrsdy_y0ba-i9qdu_recruit.jpg
+Image: 2023 ㈜아이스크림아트 | 고객개발팀 - CS분야  과장급 경력직 채용 | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit8/35_iscream_top_230524.png

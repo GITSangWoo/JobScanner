@@ -1,0 +1,78 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49278438&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=024d7c47-c633-4765-b3fa-ea116c66fc6c
+
+Iframe Text Content:
+[ 업력 15년차 / 대기업&공기업 협력업체 ]
+
+당사는 PHM, CBM 플랫폼 서비스를 국산화한 국내 유일 기업으로서, 센서/스마트계측기기/서버시스템의 각종 H/W와 펌웨어, GUI, DB관리 및 WEB운영 시스템을 독자 개발하였으며 구조물의 정적 데이터를 동기화하여 측정하는 시스템을 세계 최초로 개발하여 검증된 기술력을 보유하고 있는 기업입니다.
+
+
+※서류접수 해주시면 업체명 공개 및 자세한 내용 안내드릴 예정이오니 많은 관심 부탁드립니다.  
+
+
+
+01. 모집부문 및 자격요건
+
+모집분야 담당업무 지원자격/우대사항
+기업부설연구소
+[리눅스 S/W]
+
+모집부문 : 리눅스 S/W 엔지니어
+
+- 전동차 및 고속철도 통신프로그램 개발
+- UBUNTU 기반 데이터 분석 어플리케이션 개발 (철도차량 데이터 분석)
+- 철도차량 내 기타 장치와의 인터페이스 소프트웨어 개발
+- 시험용 GUI 프로그램 제작
+
+*개발언어: C / C++ / GIT / Node.js / Shell script / Docker
+
+
+
+※ 필수자격 
+- Linux Expert
+- TCP/IP, UDP를 사용한 Network Program 경험자
+- DSP (Filter, Transform) 경험자
+- GIT, 이슈트레킹 시스템 등 협업 툴 경험자
+
+※ 우대사항
+- 100대 이상의 시계열 스트림 데이터 처리 경험자 우대
+- SIL 인증 경험자 우대
+- 철도 SW 제작 경험 보유자 우대
+
+
+
+
+
+
+02. 급여 및 근무조건
+1) 연봉 : 최소 4,500만원 이상 (경력사항별 직전연봉 대비 협의)
+
+2) 근무 : 월~금 09:00~18:00
+                
+                        
+
+03. 근무장소 및 고용형태
+
+* 근무장소 : 사당역 인근
+
+* 고용형태 : 정규직 (수습 3개월)
+
+
+
+04. 복리후생
+
+- 생일선물 제공
+- 명전선물 및 귀향비 제공
+- 각종 경조사 지원
+- 건강검진 지원
+- 워크샵 및 직무능력향상교육 운영
+- 여름휴가 제공
+- 그외 내규에 따른 복리후생 제공
+
+
+05. 지원방법 및 문의처
+
+ㆍE-mail: jjy@saraminhs.co.kr (접수처)
+ㆍ지원방법(택1): 입사지원서(워드) or 개인 이력서 접수
+
+Iframe Image Links:
+Image: No alt | Link: https://www.saraminimage.co.kr/?url=http://board-3.blueweb.co.kr/user/popkhs/data/hhy2971/1212.PNG

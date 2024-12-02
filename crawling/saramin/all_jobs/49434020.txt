@@ -1,0 +1,46 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49434020&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=1ce572f6-2127-4637-8908-dd3f579392e5
+
+Iframe Text Content:
+[ASE Cheonan] FI 개발 엔지니어 채용
+모집부문 및 상세내용
+모집부문 상세내용
+공통 자격요건
+ㆍ학력 : 대졸 이상 (4년)
+FI 개발 엔지니어
+담당업무
+
+· 반도체 제조 관련 시스템 개발 및 유지 보수 업무
+· SECS GEM 기반 장비 자동화 시스템 구축
+· 시스템 이슈에 대한 긴급 대응
+· 제조 시스템에 대한 사용자 요구 사항에 대한 지원
+· MES , 제조 자동화 시스템 데이터 제공 업무
+
+지원자격
+· 컴퓨터 소프트웨어 관련 학과 졸업 및 5년 이상의 하기와 관련된 경력 소유
+SECS GEM 기반 장비 자동화 시스템 구축
+· IT 개발 툴 : C#, Java, Oracle, MS SQL, Tableau(Nice to have)등의 개발툴을 사용 가능자
+
+우대사항
+· 미라콤 솔루션 유경험자
+· SECS GEM protocol 유 경험자
+· 반도체 조립 공정에 대한 이해와 관련 업에서 상기와 같은 경력자
+· 영어 사용 가능자
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월
+ㆍ 근무일시 : 주 5일(월~금) 08:30~17:30
+ㆍ 근무지역 : (31226) 충남 천안시 동남구 목천읍 삼성4길 56
+전형절차
+서류전형
+실무면접
+처우협의
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 11월 20일 (수) 08시 ~ 2024년 12월 20일 (금) 24시
+ㆍ 접수방법 : 사람인 입사지원, 홈페이지 지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+ㆍ 제출서류 : 이력서/경력기술서 
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://www.saraminimage.co.kr/sri/vix/template/toptype/marketing2.png

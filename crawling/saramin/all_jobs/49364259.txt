@@ -1,0 +1,65 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49364259&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=9d51bf61-9053-4e6d-a7a2-9458b68f3fa2
+
+Iframe Text Content:
+[채용 포지션]
+Data Scientist-- Ads Performance
+
+[업무 내용]
+[ The Impact You'll Be Contributing to Company]
+Product Data Science (PDS) is the global team of data scientists whose mission is to provide data-driven insights to improve decision-making and design, resulting in best-in-class Demand Side Platform (DSP) products and services. As a senior data scientist in PDS, you will derive performance improvement and cost efficiency in our product through a deep understanding of the ML and infra system and provide a data-driven insight and scientific solution.
+
+[ The Opportunity ]
+• Data Analysis and Research: analyzing a large dataset with queries and scripts, extracting valuable signals from noise, and
+producing actionable insights into how we could complete and improve Company’s complex ML and bidding system.
+• Simulation and Modeling: validating and quantifying the efficiency and performance gain from hypotheses through rigorous
+simulation and modeling.
+• Experimentation and Causal Inference: developing a robust experiment design and metric framework and providing reliable and
+unbiased insights for product and business decision-making.
+
+[자격 요건]
+• Bachelor’s degree in a quantitative discipline (e.g., Statistics, Operations Research, Bioinformatics, Economics, Computational
+Biology, Computer Science, Mathematics, Physics, Electrical Engineering, Industrial Engineering).
+• 3+ years of work experience in data science-related fields or an advanced degree such as a Master’s or Ph.D. in a quantitative
+discipline with 2+ years of experience(3년이상 ~ 20년 미만)/ 아마존, 구글 뿐만 아니라 이른바 '네카라쿠배'급 정도의 메이저급 기업체 재직자가
+적합
+• Distinctive problem-solving skills, good at articulating product questions, pulling data from large datasets, and using statistics to
+arrive at a recommendation.
+• Excellent verbal and written communication skills, with the ability to present information and analyze results effectively.
+(영어 가능자)
+• Ability to build positive relationships within DSA and with our stakeholders and work effectively with cross-functional partners in a
+global company.
+• Statistics: must have strong knowledge and experience in experimental design, hypothesis testing, and various statistical analysis
+techniques such as regression or linear models.
+• Machine Learning: must have a deep understanding of ML algorithms (i.e., deep learning, random forest, gradient boosted trees, k-
+means clustering, etc.) and their development, validation, and evaluation.
+• Programming: experience with Python, R, or other scripting languages, and database language (e.g., SQL) or data manipulation
+(e.g., Pandas, Dplyr) are required.
+
+[급여]
+협의/충분한 경쟁력 있음
+
+[근무지]
+서울 강남구
+
+------------------------------------------------------------------------------------------------------------------------------------
+(*) 회사 소개
+회사는 모바일 광고 기반의 머신러닝 솔루션 기업으로서 지난 2013년에 YouTube 알고리즘을 개발한 대표께서 실리콘밸리에 창업한
+이후 매년 100% 이상의 매출 성장을 이룩하는 등 모바일 광고기술 분야에서 대표 기업으로 자리 잡았습니다.
+한국인이 실리콘밸리에서 창업한 ML/AI기업 중에서 첫 유니콘으로 선정되었으며, 최근 Google/Meta와 함께 세계 5대 광고 네트워크로 선정되는 등
+기술력을 인정받습니다.
+또한 1억 5000만달러 투자 유치, 한국의 마케터상, 구글 클라우드 고객어워즈 수상, 코리아 대표 AI 스타트업 선정, 과기정통부 장관상 등 국내외적으로
+공식적인 인정까지 받고 있습니다.
+본사인 실리콘밸리를 비롯하여 샌프란시스코, 시애틀, 런던, 싱가포르, 도쿄, 북경, 서울에 오피스를 두고 있으며, Global IT업계 출신의 Top급 인력 300
+여명이 성공 로켓에 함께 하고 있습니다.
+앞으로는 모바일광고기술 분야를 비롯한, E-Commerce, 물류. 미디어, 공장자동화 등 Data를 통한 수익화가 필요한 산업 전분야에 독보적인 당사의
+머신러닝 기술을 확대하기 위해 노력하고 있습니다.
+함께하기 위한 방법
+접수기간 : 2024년 11월 08일 (금)13시 00분 ~ 채용시 마감
+접수방법 : 사람인 입사지원
+이력서양식 : 사람인 이력서 양식
+함께하기 위한 여정
+서류전형
+1차면접
+최종합격
+
+No images found in iframe.

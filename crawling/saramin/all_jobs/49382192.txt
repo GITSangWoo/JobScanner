@@ -1,0 +1,36 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49382192&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=97e79b27-fc9a-4ed3-829b-ca0a4882d3f5
+
+Iframe Text Content:
+LVIS Corporation은 인공지능 기반 소프트웨어 도구를 개발하여 신경과 진료의 전 과정을 혁신하고자 하는 사명을 가지고 있습니다. 저희는 최첨단 뇌신경 분석 기술의 선두주자로서, 뇌신경 신호 분석과 모델링 및 시각화 기술을 통해 뇌 안에 구축되어 있는 네트워크 관계를 밝혀내고, 이를 통해 뇌질환들에 대한 새로운 진단법과 치료법을 찾는 첨단 기술을 개발하고 있습니다. LVIS Corporation은 관련 기술에 대해 독자적인 특허를 보유하고 있으며, Stanford, MIT, KAIST, 서울대 등 국내외 유수 대학과 병원 출신의 우수한 신경과학 및 공학 분야 전문가들로 이루어진 팀을 갖추고 있습니다. 또한 스탠포드 대학의 Startup 프로그램인 StartX 커뮤니티와 NVIDIA 인셉션 프로그램의 멤버이기도 합니다. LVIS Corporation은 미국 캘리포니아주 팔로 알토 본사와 대한민국 서울 강남 사무실에서 다국적 팀이 함께 근무하고 있으며, 신경학 헬스케어 산업을 변혁하는 저희의 사명에 함께할 열정적이고 유능한 인재를 찾고 있습니다.
+
+
+[ Responsibilities ]
+- 의료 웹 애플리케이션을 위한 딥러닝 모델 개발 및 배포
+- 머신러닝 시스템의 안정성 테스트 및 최적화
+- 데이터과학자 및 소프트웨어 엔지니어와 협력하여 딥러닝 모델의 성능을 최적화하고 훈련된 모델을 배포
+
+[ Basic Qualifications ]
+- 컴퓨터과학, 전자공학, 데이터과학 및 관련 분야에서 석사 또는 박사 학위 소지자 또는 해당 분야에서 최소 3년 이상 업무 경험
+- 머신 러닝 (딥러닝) 알고리즘과 시스템에 대한 깊은 이해
+- 최신 딥러닝 관련 논문을 읽고 구현할 수 있는 능력
+- 파이썬 및 파이썬 머신러닝 패키지(numpy, pytorch, scikit-learn, keras 등) 사용에 능숙
+- 원활한 영어 커뮤니케이션 능력
+
+[ Preferred Qualifications ]
+- Model compression 경험.
+- AWS, Azure 또는 GCP에서의 클라우드 모델 배포 경험.
+- Docker, Kubernetes 활용 개발 및 배포 경험
+- CI/CD 경험
+- Flask API 개발 경험
+- 의료 이미지 및 신호 처리 데이터 분석 경험
+함께하기 위한 방법
+접수기간 : 2024년 11월 12일 (화)09시 00분 ~ 2024년 12월 12일 (목) 23시 59분
+접수방법 : 사람인 입사지원
+이력서양식 : 사람인 이력서 양식
+함께하기 위한 여정
+서류전형
+온라인 면접 (코딩테스트)
+대면 면접
+최종합격
+
+No images found in iframe.

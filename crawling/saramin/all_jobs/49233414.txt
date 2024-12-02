@@ -1,0 +1,50 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49233414&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=9289c623-8ec6-4767-adb2-c6e91dc2d7f5
+
+Iframe Text Content:
+DESCRIPTION & REQUIREMENTS
+This is a software engineering position for the Kubernetes Automation. 
+This position is heavily utilizing Kubernetes technologies and will be focused on working with newer technologies and solving problems related to CICD. 
+You will participate in Samsung’s cloud initiatives to utilize Kubernetes.
+
+Job Responsibilities
+-Utilize secure methodologies in order to reduce secrets and credentials utilizing tools such as vault, policies, and other methods.
+-Creating Infrastructure as Code Terraform scripts for all Kubernetes Infrastructure
+-Create CI/CD pipelines that utilize GitHub action runners.
+
+Skills & Competencies
+-To help build Kubernetes solutions for developers such as CICD systems and other infrastructure projects.
+-Have experience with GitHub actions and knowledge on self-hosted runners.
+-Experience running Kubernetes workloads on various clouds including AWS, GCP and Azure
+-Experience with custom integrations such as slack, bots, Jira or any other tooling that may be required.
+-Familiarity with GitOps and utilizing github action runners particularly for Kubernetes related workloads.
+-Experience with security with tools such as Hashicorp Vault and understanding of security policies on various cloud providers.
+-Developer experience with Golang and python or similar programming languages
+-Experience with Terraform and Infrastructure as Code methodologies.
+-Experience developing software to run on Linux systems.
+-Able to communicate effectively with members of the team in different time zones.
+-Ability to analyze complex problems and come up with effective solutions in a cloud context.
+-Strong teamwork and communication skills to work effectively with cross-functional teams, including DevOps, architects, and business stakeholders.
+-Basic project management skills to manage tasks, timelines, and priorities effectively.
+-The ability to analyze data and metrics to make data-driven decisions for optimizing cloud resources and performance.
+
+Education & Experience
+-A B.Sc. degree in Computer Science, Mathematics, Engineering, or any related discipline.
+-Minimum of 5 years of industry experience in engineering
+-Must be bilingual English and Korean
+
+What We Offer (This is subject to change) 
+-Medical Check-up (for employee and one dependent) 
+-Group Life and Medical Insurance 
+-Pension 
+-Annual leave, Congratulatory & condolences leave 
+-Mobile phone usage 
+-HARMAN Welcome Kit 
+-Be-Brilliant 
+-Team meal  
+-Late commute and late meal allowance 
+-Breakfast service 
+-Benefit point (SK Benepia) 
+-Samsung Mall to purchase Samsung and HARMAN products 
+-Holiday voucher for Lunar New Year and Chuseok
+
+No images found in iframe.

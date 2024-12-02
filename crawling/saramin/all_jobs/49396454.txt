@@ -1,0 +1,47 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49396454&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=247db45f-e38b-42ca-aca6-715508bf425a
+
+Iframe Text Content:
+IT Systems Engineer(기술분야의 학위,Linux/Network,영어)
+IT Systems Engineer(기술분야의 학위,Linux/Network,영어)
+  외국계기업
+
+주요 업무
+·         인프라 설계 및 구축: 사무실, 네트워크, 서버 인프라 시설의 설계, 구축, 최적화 및 지원
+·         모니터링 시스템 관리: 성능 모니터링 도구와 대시보드 개발 및 유지보수
+·         장비 관리: 사무실 장비부터 데이터센터 서버까지 설치, 설정, 업데이트
+·         문서화 및 표준화: 기술 문서 작성, 내부 정책 및 모범 사례 구현
+·         협업: IT팀, 실무진, 외부 업체와의 협력을 통한 문제 해결 및 환경 개선
+자격 요건
+·         학력: 컴퓨터 과학, IT 공학 또는 관련 기술 분야 학위 소지자
+·         기술 역량:
+·         Linux (RedHat/CentOS/Ubuntu) 및 Windows 시스템 관리
+·         네트워크 기술 (Cisco OS, Arista EOS, 보안)
+·         가상화 기술 (VMware)
+·         자동화 및 스크립팅 (bash, PowerShell, Ansible)
+·         전문 지식:
+·         데이터센터 관리 및 모니터링
+·         Low latency 네트워크 최적화
+·         Multicast 네트워크 환경
+·         언어 능력: 영어 및 한국어 업무 가능
+·         Linux 또는 네트워크 분야 1년 이상 10년 미만의 실무 경험
+·         프로젝트 관리 능력
+근무 조건
+·         근무지: 서울 영등포구
+·         학력: 고졸 이상
+
+영문이력서 제출 필수
+근무조건
+ㆍ 근무형태 : 정규직
+ㆍ 근무지역 : (07378) 서울 영등포구 가마산로 311(대림동) - 서울 2호선 대림 에서 800m 이내
+전형절차
+서류전형
+1차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 9월 25일 (수) 18시 ~ 2024년 10월 10일 (목) 24시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 자유양식
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+No images found in iframe.

@@ -1,0 +1,58 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49430231&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=3356c1bd-39aa-40af-b07c-0a0a03bae62b
+
+Iframe Text Content:
+AI 인프라, AI Ops 환경 구성
+서비스 소개
+㈜디에스앤지는 설립 이후로 IT/서버 관련 산업에 주력하며 지속적인 도약을 거듭해온 IT 토탈 솔루션 기업 입니다. 
+
+Supermicro 서버의 국내 최대 총판으로 주요 대기업에 클라우드, GPU 클러스터, 스토리지를 구축 및 서비스 하고 있으며, IBM / Intel / AMD / Nvidia 등 주요 IT 업체의 업무 파트너로 다양한 협업을 진행하고 있습니다. 
+특히, 최근에는 솔루션사업부를 통해 지속적으로 HPC/클러스터 구축 서비스를 제공하는 등 솔루션 분야 확장에도 투자하고 있습니다. 
+
+주요 고객사는 클라우드/클러스터 등을 구축하려고 하는 기업 (IT, IT 통신, 제조, 일반 등)과 연구소/대학교, 그 외에도 방송 분야에서도 다양한 목적의 서버 및 솔루션을 제공하고 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Infra Python DeepLearning CUDA AI/인공지능 K8S
+주요업무
+• AI 모델을 위한 효율적인 Training/Inference 연구 환경 구축
+• GPU Cluster(or SuperPod) 구축 후 기술지원
+자격요건
+• 아래 사항 중 해본 경험이 있거나 기술 방향을 아래 키워드로 바꾸려는 경력 개발자
+　- LangChain, AutoGPT, LlamaIndex, LLM(Vicuna, Koala, Alpack, LLaMA, Dolly, Falcon)
+　- AIOps, autoML, CNCF, Kubernetes, Bigdata(spark, hadoop, kafka), Hybrid Cloud, OpenStack
+우대사항
+• 우대경험 : K8S, CI/CD, Kaggle/국내 외 AI 경진대회 입상자, LLM fine-tuning, 의료/금융 AI 모델링
+• LLM fine-tuning경험
+• LLMOps 구축경험
+• LangChain 개발경험
+• CKA, CKS, CNCF, CNCF 에코시스템 개발경험
+• 빅데이터(Big Data) 에코시스템 개발경험
+• AI 파이프라인경험(MLOps, AIOps, CI/CD)
+마감일 및 근무지
+• 마감일 : ~2024-12-23
+• 근무지
+- 서울 영등포구 경인로 775, 1동 501호, 502호
+복지 및 혜택
+• 지원금/보험
+　- 건강검진, 각종 경조사 지원, 문화생활비, 자녀학자금
+• 급여제도
+　- 퇴직연금, 상여금, 우수사원포상, 성과급, 휴일(특근)수당, 직책수당, 4대 보험
+• 선물
+　- 생일자 조기퇴근, 장기근속 선물
+• 교육/생활
+　- 우수사원시상식
+• 출퇴근
+　- 주택자금 융자
+• 리프레시
+　- 연차, 여름휴가, 경조휴가제, 산전 후 휴가, 육아휴직
+채용절차 및 기타 지원 유의사항
+-
+
+Iframe Image Links:
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: DeepLearning | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: AI/인공지능 | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: K8S | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: CUDA | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Infra | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

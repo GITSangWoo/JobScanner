@@ -1,0 +1,45 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49264964&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=33d37386-8162-4559-b754-cebffa41db4f
+
+Iframe Text Content:
+DBA 영입
+- 모집부문 우리 기술분과의 DBA는 운영 및 설계에 필요한 표준 정책을 세우고,
+이를 기반으로 서비스 및 프로젝트에서 DBA역할을 수행합니다.
+- DB 모니터링 및 운영
+- 데이터 모델링/분석/설계
+- SQL 튜닝
+- DB 컨설팅
+- 데이터 이관 및 마이그레이션
+- 자격요건 - MySQL 운영 경험 있으신 분 (설치, 백업복구, HA, DR 등)
+- DB Log 를 분석하여 이슈대응 및 트러블슈팅 경험이 있으신 분
+- Shell script 및 Python 개발 역량이 있으신 분
+- 비즈니스 클라우드에 대한 경험이 있으신 분
+- Docker 및 k8s 환경이 익숙하신 분
+
+- 우대사항 - 데이터 표준화 관리 경험이 있으신 분
+- 데이터 통합 및 최적화 경험이 있으신 분
+- 요구사항 및 화면설계서 분석 능력이 있으신분 
+- ETL 파이프라인 구축 경험 있으신 분
+- 이슈를 적극적으로 발견하고 개선하고자 하는 능동적인 마인드를 보유하신 분
+- 원활한 커뮤니케이션 능력, 기술문서 작성 능력 우수자 우대
+- Git, Wiki, Jira 등 협업에 필요한 도구 이해가 있는 분
+- 접수방법 온라인 공고 입사지원
+- 접수기간 채용 시 마감
+
+Iframe Image Links:
+Image: 근무조건 및 환경 | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_title5.png
+Image: 전형절차 | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_title1.png
+Image: Hello! dktechin! 기술과 사람을 중심으로 새로운 세상, 새로운 연결을 만들어가는 디케이테크인의 여정에 함께 해주세요. 디케이테크인과 다양한 생각을 나누며 놀라운 결과를 만들어낼 여러분들을 기다리고 있습니다. | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_main2.png
+Image: Life-경조사 지원, 안식휴가, 가족돌봄휴가, 사원마일리지, 명절선물, 행복나눔, 건강검진, 헬스케어, 심리상담 | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_life.png
+Image: Development-전문서적 지원,역량성장 지원, 국내외 컨퍼런스, 생일자 복지 지원 | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_development.png
+Image: 디케이테크인 인재채용 | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_main1.png
+Image: 일하는 방식 | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_title3.png
+Image: 복리후생 | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_title4.png
+Image: No alt | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_place.png
+Image: 디케이테크인 홈페이지 | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_sns_dk.png
+Image: 디케이테크인 인스타그램 | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_sns_instagram.png
+Image: 디케이테크인 페이스북 | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_sns_facebook.png
+Image: dktechin a kakao company | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_footer.png
+Image: 서류전형>사전과제>1차 테크핏 인터뷰>2차 컬쳐핏 인터뷰>레퍼런스 체크>최종입사, 모든 면접은 일대일 혹은 다대다, 다대일로 진행되며 시간은 최대 1시간 가량 소요됩니다. 사전과제 및 레퍼런스 체크의 경우 포지션에 따라 생략이 될 수 있습니다. | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_contents.png
+Image: Culture-영어호칭, 100:0의 법칙, 신뢰/충돌/헌신, 규율 위에 세운 자율 존중, 협업의 가치 우선 | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_culture.png
+Image: 접수방법 및 기간 | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_title2.png
+Image: Work-유연그무제, 최적의 업무장비 지원 | Link: https://t1.daumcdn.net/contents_img/img-contents/hr/culture/img_work.png

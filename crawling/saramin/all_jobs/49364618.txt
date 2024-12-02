@@ -1,0 +1,110 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49364618&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=410727db-2dfa-400b-89e9-fa7d25dc4766
+
+Iframe Text Content:
+셀로 개발 PM
+서비스 소개
+미디어로그는 MVNO(U+유모바일), 중고폰사업(셀로)사업과 LG U+의 미디어/ICT서비스를 지원하는 전문기업입니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+DB AWS Kubernetes Docker MySQL Oracle Vue.js Java
+주요업무
+• 셀로 서비스(웹/APP) 및 업무지원시스템 개발 운영 PM 및 추가/개선/고도화 관리 
+• 셀로 서비스 DBMS 관리/운영 (MariaDB / MySQL), 기능개선/추가에 따른 DB 스키마 관리 
+• 개발 협력사 관리
+자격요건
+• 사업/기획/현업 담당자과의 협업과 소통에 어려움이 없으신 분 
+• 웹/APP 서비스 개발, 모듈/API 단위 서비스 설계/개발, 서비스 빌드 및 배포 경험 
+• DB설계 운영 및 DBMS 활용한 Backend 서비스 연동 경험 
+• HTML/CSS에 대한 이해가 있어 간단한 페이지 구성 및 수정이 가능한 분
+우대사항
+• SI 프로젝트 개발 PM 및 SM 개발관리 PM 경험자 
+• DBMS 운영/관리 경험자 
+• 빅데이터 기반 머신러닝 Ai 설계 및 개발 경험자
+마감일 및 근무지
+• 마감일 : ~2024-12-09
+• 근무지
+- 서울시 마포구 월드컵북로416, LG유플러스 상암사옥 13층
+복지 및 혜택
+[통신비 지원]
+• U+유모바일 음성무제한 요금제 지원
+
+[자녀 학비 지원]
+• 대학교까지 학자금 전액 지원 (자녀 수 제한 없음), 유치원 제한적 보조
+• 초등학교/중학교/고등학교 입학 선물 제공
+
+[그룹사 제품 할인]
+• LG그룹사 제품 할인
+• LG 계열사 Family Card 할인
+
+[경조사 지원]
+• 결혼 축하금 (100만원)/ 축의 화환 제공
+• 출산 축하 선물 지급
+• 부모님 환갑 또는 칠순 축하금 지원
+• 조의금 및 장례물품 지원
+• 경조휴가 제공
+
+[기념일 지원]
+• 임직원 생일 기념 선물 제공
+• 멀티 복지포인트 제공 (年 100만 포인트)
+• 교육, 여행, 레저, 문화생활 등 자기개발/여가활동 비용
+
+[의료비]
+• 임직원/배우자/자녀/부모 의료비 지원(연간 150만원)
+
+[단체상해보험 가입]
+• 임직원/배우자 단체 상해보험 가입(암 진단금 3,000만원 등)
+
+[종합 건강검진]
+• 임직원/배우자 정기적 종합 검진 실시
+
+[휴가 제도]
+• 연차 외 Refresh 휴가 5일 제공
+• 장기근속자 포상금 및 휴가 부여
+• LG그룹 창립기념일 휴가
+
+[휴양 시설]
+• 리조트 및 콘도 임직원 할인가에 사용(한화콘도/대명콘도/곤지암리조트)
+
+[동호회 지원]
+• 스포츠/레저/취미활동 등 동호회 활동 지원
+
+[Work & Life 밸런스 지원]
+• 월 2회 Smart Working Day (오후 5시 퇴근)
+• 유연근무제 운영
+
+[셔틀버스 지원]
+• 디지털미디어시티역 미디어로그 본사
+
+[교육 지원]
+• 전사 교육 및 개인 직무교육
+• 도서구입비 지원
+• 어학교육 지원
+채용절차 및 기타 지원 유의사항
+※ 채용서류 반환에 관한 안내 
+ 
+미디어로그는 입사지원자 여러분들의 편리하고 원활한 지원을 위해 입사지원서 및 전형 진행과 관련된 모든 서류를 점핏 사이트에서 제출받고 있습니다.
+
+다만, 전형 진행과정에서 불가피하게 일부 서류를 직접 제출하신 경우, [채용절차의 공정화에 관한 법률 시행령]에 근거하여 아래와 같이 해당 서류의 반환을 요청하실 수 있습니다. 
+단, 사이트나 전자우편을 통해 제출하신 서류는 대상에서 제외됩니다.
+
+• 대상 서류: 전형 진행과정에서 직접 제출하신 각종 서류 및 자료 일체
+• 신청 기간: 최종 합격자 발표 후 180일 이내
+• 신청 방법: "(미디어로그 연락처 또는 채용사이트 게시판 1:1문의 등에 기재필요)"에 제출 서류 반환 신청 문의 등록 
+ (반환 받으실 서류, 수령주소 정보를 정확히 기입해주시기 바랍니다.)
+• 반환 절차: 채용담당자가 반환 신청 문의 확인 후 14일 이내 요청서류를 반환 
+ (등기/소포 배송이며, 반환시 발생하는 비용은 전액 회사에서 부담합니다.)
+
+
+참고로, [채용절차의 공정화에 관한 법률 시행령]에 근거하여 전형과정에서 직접 제출하신 각종 서류 및 자료 일체는 최종 합격자 발표 이후 180일간 보관하며, 180일이 초과된 서류는 모두 파기함을 안내드립니다. 감사합니다.
+
+Iframe Image Links:
+Image: AWS | Link: https://cdn.jumpit.co.kr/images/stacks/aws.png
+Image: DB | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Oracle | Link: https://cdn.jumpit.co.kr/images/stacks/oracle.png
+Image: Vue.js | Link: https://cdn.jumpit.co.kr/images/stacks/vue.js.png
+Image: Kubernetes | Link: https://cdn.jumpit.co.kr/images/stacks/kubernetes.png
+Image: Java | Link: https://cdn.jumpit.co.kr/images/stacks/java.png
+Image: MySQL | Link: https://cdn.jumpit.co.kr/images/stacks/mysql.png
+Image: Docker | Link: https://cdn.jumpit.co.kr/images/stacks/docker.png

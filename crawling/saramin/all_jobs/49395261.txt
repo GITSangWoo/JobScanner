@@ -1,0 +1,69 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49395261&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=410727db-2dfa-400b-89e9-fa7d25dc4766
+
+Iframe Text Content:
+AI 서비스 - 자연어처리 (NLP) / Python 엔진 개발 (추가 채용)
+서비스 소개
+아일리스프런티어는 NLP(자연어처리) 기술을 핵심으로 '데이터 컨설팅'과 '인공지능 솔루션'을 보유한 기술 전문 기업입니다. 아일리스프런티어는 국내 최고 수준의 형태소 분석기를 보유하고 있으며, KAIST 자연어처리 연구소와 공동 연구를 통해 NLP 관련 기술개발을 지속적으로 수행하고 있습니다.
+
+젊고 유능한 사람들이 모여 '수평적인 문화', '소통의 자율성', '업무의 간결함'과 같은 단순함이 주는 힘을 바탕으로 최신 기술을 탄탄하고 빠르게 흡수하고 구현하는 전문 기업 아일리스프런티어는 빅데이터와 인공지능 분야에서 꾸준히 성장해온 11년차 기업입니다.
+
+저희는 구성원들이 '일'로 만족감을 갖고, 자아를 실현하며, 매일 동기부여할 수 있기를 희망합니다.
+아일리스프런티어에서 함께 인공지능 분야를 이끌어나갈 인재의 지원을 환영합니다!
+
+회사 사업 관련 기사
+https://www.venturesquare.net/915020 (24년 2월 기사)
+http://www.it-b.co.kr/news/articleView.html?idxno=67619 (23년 4월 기사)
+https://www.newsis.com/view/?id=NISX20220628_0001923408 (22년 6월 기사)
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+RDB RPA NLP Docker FastAPI Flask Django Python Transformers NoSql
+주요업무
+ㆍ언어모델(LLM) 등 기계학습(ML) 기반 자연어처리(NLP)와 관련된 기술 연구/개발
+ㆍ챗봇, 보고서자동화 등 인공지능(AI) 서비스에서 알고리즘 구현/모델링 (텍스트분류, MRC, 문서요약 등) 
+ㆍ자연어처리, 챗봇 등 인공지능 시스템 엔진 기능 구현, 시제품(Prototype) 개발
+ㆍ인공지능(AI) 시스템 및 서비스(챗봇/RPA 등) 조사/연구/기획
+자격요건
+ㆍ의사표현, 토론 등 매사에 적극적인 소통이 되는 연구/개발자 
+ㆍ챗봇, LLM 등의 자연어처리 기반 인공지능(AI) 서비스와 관련된 기본적인 지식 
+ㆍRDB/NoSQL, API 등 백엔드 개발에 대한 기본 지식 
+ㆍTransformer의 encoder 계열 모델을 이용한 모델 학습 경험자
+우대사항
+ㆍ자연어처리(NLP) 관련 인공지능 서비스와 관련된 개발 및 프로젝트 경험 우대
+ㆍPython 언어 기반 (Python/Django/Flask/FastAPI 등) 인공지능/기계학습(딥러닝) 모델 배포 및 기능 서비스 경험 
+ㆍTriton, vLLM 등 인공지능 모델 배포/서빙 기반 서비스 구현 경험
+ㆍ클라우드(Docker, Kubernetes) 기반 서비스 개발/배포/관리 관련 관심 및 지식
+마감일 및 근무지
+• 마감일 : ~2024-12-12
+• 근무지
+- 서울 종로구 종로1길 50 B동 2층
+복지 및 혜택
+• 연차는 당연한 권리! 진짜진짜 자유롭게 연차를 사용할 수 있어요 
+• 8시 30분 -10시 30분 사이에 출근 시간을 선택할 수 있어요
+• 프런티어의 정시 퇴근을 적극 장려하고 있어요
+• 매주 금요일은 1시간 일찍 퇴근해요
+ (*금요일에 일찍 오시면 4:30 퇴근도 가능하죠!)
+• 특별한 날 가족과 함께 보낼 수 있는 스페셜 데이(반차)를 드려요
+ • 식대와 별도로 점심 식사, 라운지 카페, 사내 간식을 제공하고 있어요 
+• 파견 근무 시에는 인센티브를 지급해요
+• 직원의 성장이 곧 회사의 성장! 격주에 한 번 사내 세미나가 열려요
+• 이외에 좋은 복지제도가 있으면 적극 제안해 주세요:)
+채용절차 및 기타 지원 유의사항
+채용절차
+ㆍ서류전형 - 1차면접 - 임원면접 - 최종합격
+
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: Transformers | Link: https://cdn.jumpit.co.kr/images/stacks/Transformers.png
+Image: RDB | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: Django | Link: https://cdn.jumpit.co.kr/images/stacks/django.png
+Image: Flask | Link: https://cdn.jumpit.co.kr/images/stacks/flask.png
+Image: RPA | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: NoSql | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Docker | Link: https://cdn.jumpit.co.kr/images/stacks/docker.png
+Image: FastAPI | Link: https://cdn.jumpit.co.kr/images/stacks/FastAPI.png
+Image: NLP | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

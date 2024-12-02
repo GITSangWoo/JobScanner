@@ -1,0 +1,111 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=etc&rec_idx=49349947&searchType=search&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4
+
+Iframe Text Content:
+Frontend Engineer
+서비스 소개
+코넥티브는 인공지능 기반 의료 소프트웨어 및 수술용 로봇 기술을 기반으로 헬스케어 혁신을 주도 하는 스타트업 입니다.
+
+딥러닝 기술을 바탕으로 전문 의료진이 직접 라벨링한 10만 장 이상의 영상자료를 활용하여 X-ray 판독 보조 소프트웨어와 관절염 수술에 사용할 딥러닝 기반 수술 계획 보조 소프트웨어, 수술 로봇 등을 개발합니다.
+
+임상과 연구에 10년 이상의 풍부한 경험과 실력을 갖춘 서울대학교병원 정형외과 노두현 교수가 2021년 창업하여 2022년 카카오벤처스와 슈미트로부터 Seed 투자를, 2023년에는 DSC, 슈미트, 스톤브릿지벤처스, 리벤처스로부터 Pre A 투자를 받았습니다.
+
+코넥티브는 서울대병원 현직 교수 및 인공지능 연구실과 협업하며 연간 인공지능 논문을 5~10편 출간하고 있습니다. 풍부한 임상데이터와 연구 경험을 바탕으로 연구 및 개발 경험을 누릴 수 있으며 프로젝트 참여 정도에 따라 연구 논문에 저자로 참여하실 수 있습니다. 
+
+코넥티브는 10년 뒤 4배 이상 증가할 관절염 환자, 인공관절 수술의 디지털 트렌스포메이션을 타겟으로 합니다. 지금의 진료 및 수술은 아날로그 형태를 벗어나지 못하고 있으나 10년 뒤 그 수요가 폭증하며 디지털 트렌스포메이션은 필수로 자리매김할 것입니다.
+
+코넥티브와 함께 새로운 길을 만들어 갈 역량 있는 분들을 모십니다.
+
+
+[코넥티브 소개 영상]
+• https://www.youtube.com/watch?v=Psxw0_5NeAQ
+• https://www.youtube.com/watch?v=_NDYZrGfRbs
+
+
+[코넥티브 뉴스]
+• 코넥티브, 코넥티브, 40억원 규모 Pre-A 투자 유치 
+(뉴스보기: http://www.bokuennews.com/news/article.html?no=239912)
+• 코넥티브, 중동 진출…UAE 버질홀딩스와 파트너십
+(뉴스보기: https://www.hankyung.com/article/202407088206i)
+• ‘딥러닝으로 영상판독시간 97% 단축’ 코넥티브, 대한슬관절학회 국제학술지 최우수 논문상 수상
+(뉴스보기: https://digitalchosun.dizzo.com/site/data/html_dir/2024/05/23/2024052380171.html)
+•코넥티브, 로봇 연구소 '코보랩' 개소 
+(뉴스보기: https://www.linkedin.com/company/82530448/admin/feed/posts/)
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Confluence Jira WebGL JavaScript React
+주요업무
+• 의료 영상 데이터 기반 플랫폼 내 프론트엔드 개발
+• 그 외 web기반의 신규 product/service개발을 위한 프론트엔드 기술 연구 및 개발
+자격요건
+• 웹 개발 경력 7년 이상 또는 그에 준하는 실력을 보유하신 분 (전체 기간이 프론트엔드 개발 경력이 아니어도 무방)
+• ES6 등 모던 JavaScript사용에 능숙한 분
+• HTML/CSS를 이해하고 업무에서 활용 가능하신 분
+• Canvas 또는 WebGL 을 이용한 프로젝트 경험이 있으신 분
+• React, Vue 등 SPA 프레임워크 사용에 능숙하신 분
+• RESTful API에 대한 이해가 있으신 분
+• Git의 작동원리를 이해하고 사용에 능숙하신 분
+• 이공학 학사 이상 학위 소지 또는 그에 준하는 연구/개발 경험이 있으신 분
+우대사항
+• 인공지능 관련 프로젝트 경험
+• 디지털헬스케어 분야 및 스타트업 근무 경력
+• 3D 렌더링 관련 경험
+마감일 및 근무지
+• 마감일 : ~2024-11-30
+• 근무지
+- 서울 강남구 논현로 418 7층, 8층 코넥티브
+복지 및 혜택
+[근무조건]
+• 정규직(4대보험 가입, 수습기간 3개월)
+• 유연근무제(출근 시간: 7시 ~ 11시)
+ - 코어 근무시간: 11시 ~ 15시 
+ - 주 40시간 근무
+• 월 5회(5일)이내 재택 또는 원격 근무 가능 
+• 근무지: 코넥티브 사무실(서울 역삼역 인근) 
+
+[혜택 및 복지]
+[업무 몰입을 위한 지원]
+• 개인 장비 구매 지원(최대 400만원)
+• 사무실 음료 및 간식 제공
+• 야근 시, 저녁 식대 지원
+[휴식 및 건강 관리 지원]
+• 근속년수에 따른 리프레시 휴가 부여(유급)
+• 연 1회 종합건강검진 지원
+• 2시간 단위 연차 휴가 사용 제도 시행 
+[소통을 위한 지원]
+• 팀 활동비 지원 
+• 매월 1회 런치챗 진행 
+• 타운홀 미팅 및 사내 캐주얼 행사 진행 
+[경조사 및 기념일 지원]
+• 각종 경조사 지원 및 명절 선물 제공
+• 기념일(생일) 축하 지원 
+• 복지포인트 연 120만(120만원) 포인트 지급
+• 매년 창립 기념일 휴가 
+• 입사시 웰컴키트 제공 
+[학습 및 개발 지원]
+• 직무 관련 도서 및 콘텐츠 지원
+• 컨퍼런스 및 외부 교육 참여 지원
+채용절차 및 기타 지원 유의사항
+[채용 절차]
+Step 1. 서류 전형
+• 서류 접수 후 최대 1주일 이내로 회신 
+• 지원자 개별 연락
+Step 2. 1차 면접: 실무진 면접 
+• 비대면 면접 (30분) 
+Step 3. 2차 면접: 경영진 면접
+• 대면 면접 (60분) 
+ ** 면접 합격자 대상, 필요 시 평판 조회 진행
+Step 4. 처우 협의 및 입사일 조정 
+Step 5. Final Offer(최종 합격)
+
+* 내부 사정에 따라 채용 절차는 변경되거나 생략될 수 있습니다
+* 지원서 내용이 사실과 다를 경우 합격 및 입사가 취소될 수 있습니다
+* 입사 후 3개월의 수습기간 실시 후 평가 결과에 따라 수습기간이 연장되거나 채용 취소될 수 있습니다
+
+Iframe Image Links:
+Image: JavaScript | Link: https://cdn.jumpit.co.kr/images/stacks/javascript.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: Confluence | Link: https://cdn.jumpit.co.kr/images/stacks/confluence.png
+Image: Jira | Link: https://cdn.jumpit.co.kr/images/stacks/jira.png
+Image: WebGL | Link: https://cdn.jumpit.co.kr/images/stacks/WebGL.png
+Image: React | Link: https://cdn.jumpit.co.kr/images/stacks/react.png

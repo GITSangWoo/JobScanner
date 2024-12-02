@@ -1,0 +1,100 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49352733&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=2cc0eacb-9bfd-43bc-9990-ef10aaee104f
+
+Iframe Text Content:
+[전문연구요원 가능] ML Engineer
+서비스 소개
+[데이터를 주도하고 인공지능 시대를 촉진하는 데이터메이커]
+인공지능이 올바르게 동작하기 위해서는 수십에서 수백만 건의 학습 데이터가 필요합니다. 
+학습 데이터를 통해 인공지능은 정답을 찾아가고, 우리의 일상 생활을 더 편하게 해 줍니다.
+데이터메이커는 인공지능의 학습에 이용되는 데이터를 수집·정제·가공하는 라벨링 프로젝트를 수행하고, 인공지능 솔루션 개발·모델 학습과 관리를 지원하는 MLOps 플랫폼을 제공해 인공지능 시대를 앞당깁니다. 
+
+"Less Effort, More Outcome"
+<적게 일하고 많이 벌자> 라는 말, 데이터메이커에서는 <적게 일하고 일찍 끝내자> 로 실현됩니다.
+반복적인 과업을 자동화하고 업무 체계를 개선할 수 있는 방법을 지속적으로 연구해요.
+우리는 단순히 많이 일하기보다는, 더 좋은 방법을 찾아 업무 프로세스를 개선해 나가고 있습니다.
+
+"내가 가는 길이 곧 데이터메이커의 길"
+학창시절 선생님의 질문에 손을 들고 대답을 할 지 친구들의 눈치를 보며 고민했던 적, 한 번쯤은 있으시죠?
+신입사원이라 눈치 볼 필요 없이, 너무 튀어 보이지 않을지 걱정 마세요.
+데이터메이커에서는 작은 아이디어라도 제안을 할 수 있고, 직접 실현해 볼 수도 있어요.
+여러분의 의견이 곧 회사의 길이 되고, 우리와 회사가 함께 성장할 수 있는 바탕이 된답니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Kubernetes Kubeflow NLP Ubuntu Git GitHub Docker PyTorch Python TensorFlow
+주요업무
+• MLOps 시스템 개발 및 자동화
+• LLM, VLM 기반 신규 솔루션 개발
+• 외부 ML/DL 기술 구현 검토 및 지원
+자격요건
+• 동료와 협업을 즐기는 분
+• 좋아하는 분야에 대해 탐구를 즐기는 분
+• Unix/Linux 기반 개발·운영에 익숙한 분
+• 형상관리 도구(Git)를 통한 프로젝트 관리 및 협업 경험이 있는 분
+• Python을 활용한 데이터 핸들링 및 분석 경험이나 지식이 있는 분
+• 지속적으로 트렌드에 맞는 새로운 기술을 습득하고 논문을 탐독하는 분
+• 머신러닝 프레임워크(PyTorch, TensorFlow 등)를 1가지 이상 능숙하게 활용하는 분
+• Computer Vision, NLP 등 머신러닝 관련 Task에 대해 1가지 이상 깊이 있게 탐구해 본 분
+우대사항
+• 관련 분야 석·박사 학위가 있는 분
+• ML/DL 관련 논문을 출판한 경험이 있는 분
+• 애자일 스크럼 방법론을 통한 개발 경험이 있는 분
+• MLOps 플랫폼을 잘 이해하고 개발 경험이 있는 분
+• Pruning, Quantization을 통한 모델 경량화 경험이 있는 분
+• TensorRT, openvino를 통한 inference 최적화 경험이 있는 분
+• Docker, Kubernetes, Kubeflow, MLflow 등 가상화 및 머신러닝 관련 플랫폼을 활용해본 분
+• 효율적인 자원 활용 방안을 ML/DL 개발 과정에서 적용한 경험이 있는 분(DDP, ZeRO, GPU Clustering 등)
+마감일 및 근무지
+• 마감일 : ~2024-12-07
+• 근무지
+- 대전 유성구 유성대로 871, 4-5층
+복지 및 혜택
+[보상]
+• 경조금 및 경조휴가를 제공해 드려요.
+• 성과에 기반한 성과급을 지급해 드려요.
+• 장기근속자에게 휴가비와 특별 휴가를 제공해 드려요.
+• 생일이 있는 달에는 상품권과 특별 휴가 1일을 제공해 드려요.
+• 명절을 더 풍성하게 보낼 수 있도록 명절 귀향비를 지급해 드려요.
+
+[근무 및 휴가]
+• 매년 연말 혹은 연초에 특별 휴가를 제공해 드려요.
+• 휴가 사유를 묻지 않아요. 연차, 반차, 반반차를 편하게 활용하세요.
+• 매 달 특별휴가 1일을 받을 주인공을 추첨해요. 주인공이 되어보세요.
+• 하이브리드 재택 근무를 운영하고 있어요. 주 2회까지 재택근무가 가능해요.
+• 유연근무제를 실시하고 있어요. 생활 리듬에 맞게 출퇴근시간을 조정할 수 있어요.
+
+[자기계발 지원]
+• 업무능력 향상, 자기계발에 필요한 도서 및 강좌, 교육 비용을 지원해 드려요.
+
+[업무 환경]
+• 34" 커브드 모니터, 최신 노트북 등 고급 장비를 지급해 드려요.
+• 임직원의 평균 연령이 낮아 젊고 자유로운 분위기에서 근무할 수 있어요.
+• 주차비를 지원해 드려요. 출근도 피곤한데 주차는 마음 편하게 해 봅시다.
+• 불가피하게 야근을 해야 한다면 야근식대와 야근교통비를 지원해 드려요.
+• 직원 라운지에 준비되어 있는 다양한 간식과 음료를 무제한으로 즐길 수 있어요.
+• 편한 복장에서 업무의 능률이 나온다고 믿어요. 자율복장으로 편하게 출근하세요.
+채용절차 및 기타 지원 유의사항
+[근무조건]
+• 근무 장소: 대전 유성구 죽동(충남대학교 서문 앞)
+• 근무 시간: 월~금(주 5일), 일 8시간(점심시간 제외)
+• 급여: 직전연봉 기준 협의(개인 역량에 따른 급여 책정)
+• 고용 형태: 정규직(3개월 수습, 수습기간 중 모든 처우 동일)
+
+[채용절차]
+• 서류전형 → 기술 테스트 및 면접전형 → 처우 협의 → 최종 합격
+
+[참고사항]
+• 수시 채용으로, 우수 인재 채용 시 공고가 마감됩니다.
+
+Iframe Image Links:
+Image: TensorFlow | Link: https://cdn.jumpit.co.kr/images/stacks/tensorflow.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: PyTorch | Link: https://cdn.jumpit.co.kr/images/stacks/pytorch.png
+Image: Git | Link: https://cdn.jumpit.co.kr/images/stacks/git.png
+Image: Kubernetes | Link: https://cdn.jumpit.co.kr/images/stacks/kubernetes.png
+Image: Kubeflow | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: GitHub | Link: https://cdn.jumpit.co.kr/images/stacks/github.png
+Image: Docker | Link: https://cdn.jumpit.co.kr/images/stacks/docker.png
+Image: Ubuntu | Link: https://cdn.jumpit.co.kr/images/stacks/ubuntu.png
+Image: NLP | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

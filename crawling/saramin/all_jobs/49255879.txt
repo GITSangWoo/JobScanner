@@ -1,0 +1,57 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49255879&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=44cbcd90-9ff4-48c4-919a-0fd6ea659661
+
+Iframe Text Content:
+디지털헬스케어 플랫폼 AI 엔지니어 (병역특례 가능)
+서비스 소개
+건강한 삶을 책임지는 기술, 로봇공학과 인공지능 기술을 기반으로 디지털 헬스케어 솔루션을 개발하는 EXOSYSTEMS입니다. 
+
+근골격계의 건강관리를 위한 디지털 케어 제품을 시작으로 다양한 만성질환에 대한 디지털 케어 솔루션을 통해 디지털 헬스케어의 거대한 물결위에 가장 높게 떠오르는 기업이 되고자 합니다. 
+하드웨어와 소프트웨어에서 모두 기술력을 보유한 기술 기반 스타트업에서 "글로벌 No.1 디지털 헬스케어 기업" 이라는 비전을 공유하고 함께 미래를 그려나갈 분을 찾고 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+TensorFlow Python C++ MATLAB AI/인공지능
+주요업무
+디지털 헬스케어 디바이스로부터 얻어지는 생체신호를 분석하여 질병과 관련된 디지털 바이오마커를 분석하는 일을 합니다. 
+골격근의 상태를 진단 모니터링하는 측정 기술을 개발하며, 다양한 근육의 비선형 생체 신호를 학습알고리즘을 활용하여 정량적 지표를 개발을 수행합니다. 
+골격근 고유의 특성을 비침습적으로 진단하는 최초의 기술을 개발하여 건강관리의 새로운 패러다임을 만들어갑니다. 
+세계로 나아갈 수 있는 기술을 개발한는 핵심 인력 중 하나로서 회사의 미래를 함께 그려나가실 분을 찾습니다.
+
+• 근골격계 건강관리를 위한 생체신호 데이터 분석
+• 생체신호 기반의 정량적 / 질적 평가 알고리즘 및 예측 알고리즘 개발
+• 사용자 데이터 기반의 Key Index 및 측정해야 하는 DB 요구사항 도출
+자격요건
+• 관련분야 석사 학위 이상
+• AI 관련 전공/프로젝트 포트폴리오 제출
+• Tensorflow / CNN, DNN, RNN 에 대한 높은 이해
+• 데이터 정제, outlier 제거 등 전처리를 위한 도구 개발 경험
+• Python / C++ / MATLAB 숙련자
+우대사항
+• 관련분야 박사 학위자
+• 생체신호 분석 관련 프로젝트 포트폴리오 보유자
+• 관련 프로젝트 리드 경험자
+• 수준급 저널 논문 게재 실적 보유자
+마감일 및 근무지
+• 마감일 : ~2024-11-25
+• 근무지
+- 경기 성남시 수정구 창업로 43 판교글로벌비즈센터 A803호
+복지 및 혜택
+최고의 복지는 함께 하는 동료들과의 협업하는 과정에서 성장을 경험하는 것이라고 합니다. 
+개인과 회사의 성장, 성과에 대한 보상 등 치열한 만큼 보람을 느낄 수 있도록 만들어가고 있습니다. 
+기업의 성장 단계에 맞는 복지체계를 지속적으로 늘려가도록 하겠습니다.
+
+• 육아 고충에 대한 공감 및 근무시간 조정
+• 자유로운 휴가 사용문화
+• 아직은 크게 열려있는 스톡옵션 부여 기회
+• 성과에 따른 인센티브 지급
+• 결혼 축하금 및 기타 경조사비
+• 리프레시 휴가 및 휴가비 지원
+• 병역특례 제도 운영
+
+Iframe Image Links:
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: MATLAB | Link: https://cdn.jumpit.co.kr/images/stacks/matlab.png
+Image: AI/인공지능 | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: C++ | Link: https://cdn.jumpit.co.kr/images/stacks/CPlusPlus.png
+Image: TensorFlow | Link: https://cdn.jumpit.co.kr/images/stacks/tensorflow.png

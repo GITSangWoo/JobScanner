@@ -1,0 +1,57 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49256833&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=abe19497-5b44-41e4-b532-de836b765221
+
+Iframe Text Content:
+[SW연구소] SW 개발자 경력직 모집
+서비스 소개
+ATM, 정산기, 무인주차 정산기 등 개발 제조하는 법인입니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Kali Linux Google Cloud Natural Language LinuxKit SW R Language Linux GUI C++ Mfc C
+주요업무
+• 고객용 GUI 프로그램 개발 
+• 각종 DEVICE 제어용 어플리케이션 프로그램 개발 / 유지보수 등 
+• 서버 연동 프로그램 개발 
+• LINUX 어플리케이션 응용 프로그램 개발 등 
+• ATM 어플리케이션 개발/유지보수
+자격요건
+• 경력 : 경력 (8~15)(연구원, 주임연구원, 선임연구원, 팀원급)
+• 기타 필수 사항 : 해당 직무 근무 경험 有
+• C, C++ language 사용 경험 8년 ~15년 
+• MFC, Linux C Language 프로그램 개발 경험 8년 ~ 15년 경력자
+• 업무에 성실하고 해외 출장에 문제가 없는 사람
+우대사항
+• 관련 프로그램 개발경력 8년 이상 우대 
+• MFC 능숙자 우대 
+• LINUX 능숙자 우대
+• ATM/CD 어플리케이션 개발 경험 有
+• 운전가능자, 엑셀 고급능력자
+마감일 및 근무지
+• 마감일 : ~2024-11-21
+• 근무지
+- 경기 화성시 동탄산단2길 7-17
+복지 및 혜택
+• 지원금/보험 : 건강검진
+• 급여제도 : 퇴직연금, 야근수당, 휴일(특근)수당, 연차수당, 4대 보험
+• 교육/생활 : 구내식당(사원식당)
+• 조직문화 : 야근강요 안함
+• 출퇴근 : 주 52시간제 준수
+• 시차출퇴근제(8~10 : 17~19)운영, 반반차 제도 운영
+채용절차 및 기타 지원 유의사항
+제출서류
+최종합격 후 주민등록등본, 졸업증명서, 관련 자격증 사본 등을 원본으로 제출하여야 합니다.
+
+수습기간 3개월
+
+Iframe Image Links:
+Image: C | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: Google Cloud Natural Language | Link: https://cdn.jumpit.co.kr/images/stacks/GoogleCharts.png
+Image: R Language | Link: https://cdn.jumpit.co.kr/images/stacks/rlanguage.png
+Image: Mfc | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png
+Image: Kali Linux | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: SW | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: LinuxKit | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: C++ | Link: https://cdn.jumpit.co.kr/images/stacks/CPlusPlus.png
+Image: GUI | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

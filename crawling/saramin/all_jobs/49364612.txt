@@ -1,0 +1,76 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49364612&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=44cbcd90-9ff4-48c4-919a-0fd6ea659661
+
+Iframe Text Content:
+머신러닝 엔지니어 경력 채용
+서비스 소개
+대한민국 에듀테크 업계를 선도하고 있는 기업, 아이스크림에듀 입니다.
+
+아이스크림에듀는 세계 최초 Digital Home Learning 서비스인 아이스크림 홈런 HOME LEARN을 출시하고 빠르게 성장하였습니다.
+
+유아부터 중등까지 폭넓은 연령대를 아우르는 독보적인 스마트 학습 서비스인 홈런은 
+AI 기반의 체계적인 학습분석 서비스와 방대한 디지털 콘텐츠로 업계 최고의 경쟁력을 보유하고 있습니다.
+
+세상에 없던 서비스를 창조하고 교육의 새로운 패러다임을 제시해온 아이스크림에듀는 
+대한민국을 넘어 글로벌 교육기업으로 성장하고 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Kubernetes Docker AWS TensorFlow PyTorch MachineLearning NoSql RDB FastAPI Python
+주요업무
+1) Large Language Model(LLM) 또는 Small Language Model(SLM, sLLM) 기반의 응용 서비스 개발 
+2) 오픈 소스 LLM의 fine-tuning, 강화학습 등을 통해 특정 태스크에 적합한 자체 모델 개발 
+3) Retrieval Augmented Generation(RAG) 품질 향상 방안 연구 
+4) LLM 기반의 Agent 개발을 위한 각종 요소 구현
+자격요건
+• 머신러닝 유관 경력 2년 이상 또는 그에 준하는 경험을 가지신 분 
+• 개발한 머신러닝 프로젝트를 실제 상용 서비스에 성공적으로 배포해보신 분 
+• LLM/SLM 기반 서비스를 상용화하는 데 필요한 사항을 고민하고, 직접 요구사항을 달성해보신 분 
+• 생성형 AI의 프롬프트 엔지니어링에 대해 이해하고, 효과적으로 활용하실 수 있는 분 
+• 함께 일하는 연구자, 개발자, 기획자와 원활한 소통이 가능하신 분
+우대사항
+• 최신 LLM/SLM 연구를 이해하고 구현하실 수 있는 분 
+• 오픈 소스 LLM/SLM을 목적에 맞게 fine-tuning 하여 활용해보신 분 
+• Prompt tuning, LoRA 등, 다양한 PEFT 기법에 대한 이해도가 높으신 분 
+• DPO, ORPO 등, 강화학습 기법을 LLM/SLM에 적용하여 성능을 높여보신 분 
+• Hugging Face TRL, DeepSpeed 등, LLM 학습 관련 라이브러리 사용에 익숙하신 분 
+• Amazon Trainium/Inferentia, Google TPU 등, AI 전용 하드웨어를 모델 학습, 추론에 사용해보신 분 
+• 상용 배포한 머신러닝 프로젝트를 지속하여 모니터링 및 개선해보신 분 
+• 퍼블릭 클라우드, Kubernetes 환경에서 서비스를 개발해본 경험이 있으신 분 
+• 퍼블릭 클라우드와 온 프레미스 서버 기반의 하이브리드 MLOps 플랫폼을 구축, 운영 및 개선해보신 분
+마감일 및 근무지
+• 마감일 : ~2024-12-08
+• 근무지
+- 서울 서초구 매헌로 16 하이브랜드 16층, 18층
+복지 및 혜택
+"성과를 충분히 보상합니다.
+• 경영성과급
+• Stock Grant(자사주 무상부여)
+
+몰입하고 성장할 수 있는 환경을 제공합니다.
+• 유연근무제(시차출퇴근/선택적근로시간제)
+• 업무 관련 도서 / 교육 / 세미나 / 웨비나 지원
+
+건강한 삶을 지원합니다.
+• 임직원 대출
+• 매분기 복지포인트
+• 기념일 마다 축하금
+• 정기여름휴가
+• 종합건강검진 지원
+• 경조사 / 명절 선물 지원
+
+소통하고, 공유하고, 공감합니다.
+• 타운홀 미팅, 경영전략 워크샵
+• 다양한 사내 행사와 이벤트"
+
+Iframe Image Links:
+Image: AWS | Link: https://cdn.jumpit.co.kr/images/stacks/aws.png
+Image: RDB | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: PyTorch | Link: https://cdn.jumpit.co.kr/images/stacks/pytorch.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/benefit_pc.png
+Image: MachineLearning | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Kubernetes | Link: https://cdn.jumpit.co.kr/images/stacks/kubernetes.png
+Image: NoSql | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Docker | Link: https://cdn.jumpit.co.kr/images/stacks/docker.png
+Image: FastAPI | Link: https://cdn.jumpit.co.kr/images/stacks/FastAPI.png
+Image: TensorFlow | Link: https://cdn.jumpit.co.kr/images/stacks/tensorflow.png

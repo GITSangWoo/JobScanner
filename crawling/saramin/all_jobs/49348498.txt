@@ -1,0 +1,48 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49348498&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=36869fb4-1e40-4519-b4b5-c939b14a0952
+
+Iframe Text Content:
+(주)위즈베라
+2024년 AI 연구소 경력 & 팀장 채용
+
+모집부문 담당업무 자격요건
+AI Researcher 채용
+- 대용량 로그 데이터를 기반으로 
+시계열 분석 및  이상 탐지 모델 개발
+
+
+-데이터 분석가 및 엔지니어와
+협력하여 문제 해결방안을 연구
+지원자격
+
+ㆍ컴퓨터공학, 머신러닝, 인공지능      또는 관련 분야의 석사 학위소지      자 또는 3년 이상의 관련 경력자
+
+ㆍPytorch, Tensorflow 등
+    머신러닝 프레임워크 사용 경험
+
+ㆍ시계열 분석 및 이상 탐지 관련
+    모델링 경험
+
+ㆍ모델 개발부터 배포 및 적용까지      의 전 과정에 대한 경험
+ㆍ창의적이고 주도적인 문제 해결         능력
+ㆍ타 부서와 원활한 협업 및 커뮤니       케이션 능력
+
+
+
+우대사항
+- 클라우드 플랫폼(AWS, GCP,
+   Azure) 및 온프레미스 인프라 경험
+-  머신러닝 파이프라인 설계, 구축 및     최적화 경험
+
+- 오픈 소스 LLM/SLM을 활용한
+   파인 튜닝 경험
+
+- Kubernetes 클러스터 구축 및
+  운영 경험
+
+- 대용량 비정형 데이터를 분석하고       ML/DL 모델을 직접 개발한 경험
+
+기술 스택
+Python, Pytorch, PostgreSQL, Kubernetes, Ray, Kserve, FastAPI, GitLab CI, Argo CD, Argo Workflow, LangChain
+2024년 10월 11일 (금) 09시 ~ 2024년 11월 5일 (화) 20시
+
+No images found in iframe.

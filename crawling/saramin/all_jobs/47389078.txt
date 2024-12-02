@@ -1,0 +1,62 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=47389078&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=290bf73e-6420-499b-a8ac-e4cabebed627
+
+Iframe Text Content:
+[글로벌 AI 스타트업] Software Engineer (Web Automation)
+서비스 소개
+마크비전의 엔지니어링팀은 IP(지식재산권)를 중요한 자산으로 활용하는 모든 글로벌 브랜드들과 콘텐츠 기업들이 사용할 수 있는 AI Powered IP Protection 소프트웨어를 구축하고 있습니다. 특히 위조상품과 불법콘텐츠 문제를 실시간으로 해결하기 위해 수천개의 온라인 마켓플레이스에서 데이터를 수집하여 수백만개의 리스팅을 분석하는 고도화된 시스템을 개발합니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Bitbucket Jira Kotlin Python Grafana MongoDB PostgreSQL AWS
+주요업무
+• 수많은 글로벌 브랜드 기업들의 IP 보호∙관리를 위한 서비스를 개발 및 운영합니다.
+• 고객의 IP를 보호하기 위해 필요한 데이터를 수 많은 사이트에서 수집하는 자동화 시스템을 개발하고 운영합니다.
+• 데이터를 수집하기 위해 필요한 인프라를 효율적으로 운영합니다.
+자격요건
+• 백엔드 개발 경력 5년 이상 또는 그에 준하는 실력을 가지고 계신분
+• 기초적인 웹 지식을 갖추고 계신 분
+• AWS 등 클라우드 서비스를 이용해보신 분
+• 논리적인 사고를 통해 문제 해결 능력을 갖추고 계신 분
+• 팀원간, 조직간의 원활한 커뮤니케이션 능력을 갖추신 분
+우대사항
+• 스크래핑된 데이터 기반의 서비스를 만들어 보신 분
+• 컨테이너 기반의 서비스를 개발하거나 운영해보신 분
+• 테스트 코드 작성에 대한 이해와 경험이 있으신 분
+• 코드 기반의 선언적인 인프라를 운영해 보신 분
+
+* 마크비전에서 사용하는 기술스택입니다.
+• 언어: Python(requests, selenium 등), Kotlin
+• 인프라: AWS(EKS, SQS 등)
+• 데이터/모니터링: PostgreSQL, MongoDB, Grafana 등
+• 업무: Jira, Bitbucket 등
+마감일 및 근무지
+• 마감일 : 상시
+• 근무지
+- 서울 강남구 테헤란로 427 6층 마크비전
+복지 및 혜택
+[다음과 같은 환경에서 일하시게 됩니다]
+• 오전 8시부터 10시 사이에 자유롭게 출근합니다.
+• 출근과 재택근무를 병행하며 최적의 업무 환경을 팀 내에서 자율적으로 선택합니다.
+• 오피스 출근 시 점심 식대를 지원해드립니다.
+• 부득이하게 밤 늦게까지 근무하시게 될 경우 야근 식대 및 귀가 택시비를 지원합니다.
+• 최신 오피스 장비를 지원합니다. 
+• 팀 빌딩을 위한 팀 단위 런치 / 디너를 지원합니다
+• 오피스 내 다양한 간식, 음료, 폴바셋 커피, 티 등을 무제한으로 제공합니다.
+
+[글로벌 AI 스타트업, 마크비전 엔지니어링 팀에 합류해야하는 이유]
+• 출시 2년만에 한국을 넘어 글로벌 시장 타겟으로한 제품을 만들어낸 높은 인재 밀도.
+• 뛰어난 마크비전의 글로벌 Product Team 동료들과 자유롭고 치열하게 토론하는 개발문화.
+• 글로벌 Top-Tier 고객사들의 복잡한 문제 해결을 위한 진정한 '고객집착' 중심의 진정한 개발자 경험.
+
+인간 고유의 창의성과 혁신을 보호하기 위해 마크비전에서는 더욱 뛰어난 여러분들의 합류를 기다리고 있습니다. 'Crime Fighter' 가 되어 고도화된 기술을 통해 IP 생태계 현장의 최전선에서 함께 싸우실 분들은 주저없이 마크비전에 합류해 주세요!
+
+Iframe Image Links:
+Image: AWS | Link: https://cdn.jumpit.co.kr/images/stacks/aws.png
+Image: Bitbucket | Link: https://cdn.jumpit.co.kr/images/stacks/bitbucket.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: PostgreSQL | Link: https://cdn.jumpit.co.kr/images/stacks/postgresql.png
+Image: MongoDB | Link: https://cdn.jumpit.co.kr/images/stacks/mongodb.png
+Image: Jira | Link: https://cdn.jumpit.co.kr/images/stacks/jira.png
+Image: Kotlin | Link: https://cdn.jumpit.co.kr/images/stacks/kotlin.png
+Image: Grafana | Link: https://cdn.jumpit.co.kr/images/stacks/grafana.png

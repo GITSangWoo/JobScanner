@@ -1,0 +1,70 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49328175&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c709406e-f872-4daa-a43c-3c3d11e1a325
+
+Iframe Text Content:
+Sr. Research Scientist (7년이하)
+서비스 소개
+We heal the world in new ways.
+
+메디픽셀은 새로운 방법으로 세상을 치유한다는 사명을 가지고, 인공지능을 의료에 접목하여 질병의 진단과 치료방법을 개발하는 헬스테크 스타트업입니다. 
+심혈관 질환과 관련된 인공지능 및 이미지 분석에 있어 독보적인 기술력을 갖추고, 세계에서 가장 경쟁력 있고 혁신적인 SaMD(Software as Medical Device)를 제공하고 있습니다.
+
+메디픽셀의 혁신적인 기술력은 Microsoft for Startups 선정, Johnson & Johnson QuickFire Challenges 대회 우승, 중소벤처기업부 ‘대-스타 해결사 플랫폼’ 우승, 과학기술정보통신부 ‘장관상’ 수상에 이어 2023년에는 MICCAI의 심혈관 분야 의료 인공지능 알고리즘 경진대회에서 협착 검출 1위, 혈관 분할 2위의 쾌거를 달성했습니다.
+
+이제 메디픽셀은 미국 FDA 승인, 미국과 베트남 경제사절단 선정, 다양한 국제 의료 학회 참석을 통해 우리의 기술을 글로벌 비즈니스로 연결하는 걸음을 내딛고 있습니다. 
+2021년에 글로벌 1위 기업인 필립스의 투자, 2023년 6월에는 인도의 IITPL사와 약 450만불 규모의 구매 MOU를 체결함으로써 새로운 도약의 시작을 알렸으며, 메디픽셀의 무한한 가능성은 170억원 규모의 시리즈B 투자유치로도 증명할 수 있었습니다.
+
+우리는 비슷한 꿈과 열정을 가지고, 새로운 방법으로 세상을 치유한다는 사명을 함께 실현할 사람들을 기다립니다. 
+구성원들이 각 분야에서 탁월한 재능을 가지고 성장할 수 있도록 최적의 환경을 제공하고 적극 지원하겠습니다. 
+세계 최고의 인공지능 의료 소프트웨어로 세상을 치유하고자 하는 분들의 많은 관심과 지원 부탁드립니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Linux PyTorch Python ai/인공지능
+주요업무
+• 관상동맥 내 혈류역학 모델 개발
+• 다양한 물리적 현상에 대한 데이터 분석 및 모델링
+• Python을 이용한 시뮬레이션 코드 작성 및 테스트
+• 프로젝트 요구 사항에 따른 알고리즘 개발 및 최적화
+• 논문/특허 분석을 바탕으로 주요기술 현황 분석, 연구개발 방향 제시
+자격요건
+• 공학, 물리학, 컴퓨터 과학, 수학 또는 관련분야에서의 석사 학위 혹은 연구원으로서 3년 이상의 경력을 가진 분 
+• 물리 현상 및 유체역학에 대한 깊은 이해 
+• 수학적 모델링 혹은 전산유체 프로젝트 경험을 가진 분 
+• Python을 포함한 프로그래밍 언어에 대한 능숙한 활용 능력 
+• 논문(영문) 작성 경험을 가진 분
+우대사항
+• (열유체 혹은 수학적 모델링 관련전공) 박사학위 소지자 
+• 혈류역학 관련 프로젝트 경험 
+• 고급 수준의 Python 코딩 기술 
+• 기계학습 및 데이터 과학 관련 지식 
+• 영어 커뮤니케이션에 익숙한 분
+마감일 및 근무지
+• 마감일 : ~2024-12-03
+• 근무지
+- 서울특별시 강남구 테헤란로108길 22, 지상 3층(대치동, 서경빌딩)
+복지 및 혜택
+• 자율 재택근무 및 시차 출퇴근제 운영
+• 점심 식대 지원
+• 영어 회화 수업 
+• 웰컴키트 지급
+• 각종 포상제도 운영
+• 간식, 커피 무한 제공
+• 건강검진 비용 지원
+• 명절 선물 지급 
+• 도서구매비 & 교육비 지원 
+• 최고 사양 장비 지원
+• 야근 No No No
+• 직급 대신 닉네임으로
+채용절차 및 기타 지원 유의사항
+[근무형태]
+• 정규직 (수습기간 3개월, 급여100%)
+
+[채용절차]
+• 서류전형 - 1차 실무면접 - 2차 과제면접 - 임원면접 - 최종합격
+
+Iframe Image Links:
+Image: ai/인공지능 | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Python | Link: https://cdn.jumpit.co.kr/images/stacks/python.png
+Image: PyTorch | Link: https://cdn.jumpit.co.kr/images/stacks/pytorch.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png

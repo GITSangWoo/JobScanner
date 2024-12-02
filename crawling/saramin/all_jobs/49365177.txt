@@ -1,0 +1,55 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49365177&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=c53375c6-e220-4fb3-8afc-00c39f47a76c
+
+Iframe Text Content:
+시큐브
+S/W개발, UI개발, 보안솔루션,
+IT 및 보안솔루션 영업
+부문별 모집
+역량있고 유능한 인재를 모집합니다.
+모집부문
+모집분야 및 인원 자격요건
+게이트웨이형
+소프트웨어 개발
+(신입/경력) 신입/경력 0명
+ㆍ경력 : 경력 5년 이상
+ㆍ사용언어 : C/C++,Java
+ㆍ서버접근통제
+ㆍ계정관리
+ㆍAudit & Log
+ㆍ대상서버(윈도우, 리눅스, 유닉스) 및 통신장비
+웹 기반 UI 개발
+(신입/경력) 신입/경력 0명 ㆍ경력 : 경력 5년 이상
+ㆍ기술요건 : Java, JSP, HTML, Spring framework,
+    Database 관련 지식 보유
+보안솔루션
+(SW) 기술지원
+엔지니어
+(신입/경력) 신입/경력 0명 ㆍ경력 : 시스템/네트워크 관련 전공 또는 지식보유자
+ㆍ컴퓨터공학/정보통신 등 관련 전공자 및 졸업예정자
+ㆍ정보처리기사, IT관련 자격증 보유
+IT 및 보안솔루션 영업
+(신입/경력) 신입/경력 0명 ㆍ경력 : IT 및 보안 솔루션 영업 경력자
+ㆍ시스템 / 네트워크 관련 지식 보유
+ㆍ보안SW 인프라 부문 기술적 이해 보유
+ㆍ관련학과 졸업 및 졸업예정자
+    근무조건
+ㆍ학력 : 대졸 이상 (4년)
+ㆍ전공 우대 : 컴퓨터공학, 정보보안 등 관련 학과 졸업
+복리후생
+ㆍ지원금/보험 : 건강검진, 단체 상해보험
+ㆍ급여제도 : 퇴직금, 4대 보험
+ㆍ선물 : 명절선물/귀향비
+ㆍ교육/생활 : 창립일행사, 워크샵, 음료제공(차, 커피)
+ㆍ근무 환경 : 휴게실, 회의실
+ㆍ리프레시 : 연차, 경조휴가제, 반차, 근로자의 날 휴무
+전형절차
+접수기간 및 방법
+ㆍ접수기간 : 2024년 11월 30일 마감
+ㆍ접수방법 : 사람인 온라인 입사지원
+ㆍ이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: 서류전형 인적성검사 면접전형 최종합격 | Link: https://www.saraminimage.co.kr/recruit/os_sk_01/07_ccube_img_step4_241108.png
+Image: Designed by saramin | Link: https://www.saraminimage.co.kr/recruit/bbs_recruit/watermark_white.png

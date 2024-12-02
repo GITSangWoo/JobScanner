@@ -1,0 +1,30 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49352213&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=0f6ee95d-9b67-491d-938a-cee320353013
+
+Iframe Text Content:
+안녕하세요?
+라인서치의 헤드헌터 박형규 대표입니다.
+저희는 반도체,디스플레이팀/전자,IT팀/기계,화학팀/제약,바이오팀을 주축으로 
+최고 임원급을 비롯하여 각분야 실무 전문가들을
+추천드리는 헤드헌팅업계를 리딩하는 전문회사입니다.
+좋은 포지션을 추천드립니다.
+
+
+[ LNA & Switch 설계 엔지니어 ]
+
+ㅁ 기본적인 요구사항
+- SOI 공정에 대한 이해
+- High Power RF Switch Design 경력 및 양산 경험자
+- Oscillator, Level Shifter, Charge Pump 설계 경험자
+- ESD 회로에 대한 이해 및 설계
+- Cadence 기반 시뮬레이션
+- Cadence 기반 레이아웃 (DRC/LVS)
+- Post layout 시뮬레이션
+- Analog/Mixed-signal 검증
+
+
+경력과 매칭되시는 분은
+line@linesearch.co.kr로 이력서를 보내주시거나,
+010-5176-5075로 문의바랍니다.
+감사합니다.
+
+No images found in iframe.

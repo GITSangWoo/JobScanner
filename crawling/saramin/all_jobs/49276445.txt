@@ -1,0 +1,34 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49276445&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=76c04cb4-d2f7-4559-9a21-da2f8ca32832
+
+Iframe Text Content:
+식품B2B 데이터시스템 개발자 채용 [Web, DB, .NET]
+모집부문 및 상세내용
+모집부문 상세내용
+공통 자격요건
+ㆍ학력 : 대졸 이상 (4년)
+SW개발-Web/ERP/BigData 신입/경력 정규직
+개발팀 2명
+주요업무
+ㆍ 엑셀 데이터 입력 및 데이터 시스템 효율화 자동화 개발
+ㆍ Web/.NET/DB(postgreSQL) 식품 생산/유통관리 ERP
+ㆍ 블루시스ERP 블루시스마켓 블루시스Data 서비스개선 AI개발
+ㆍ 최초 1~2년간 시스템 교육 및 데이터 입력 업무도 약 20~30% 병행 필요
+ㆍ SW 협업 시스템(Jira & Confluence & Git) 사용
+지원자격
+ㆍ경력 : 무관 (신입도 지원 가능)(사원, 팀원, 팀장급)
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월
+ㆍ 근무지역 : (13449) 경기 성남시 수정구 창업로 43 판교글로벌비즈센터 B1010호(시흥동)
+전형절차
+서류전형
+1차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 10월 27일 (일) 11시 ~ 2024년 11월 26일 (화) 24시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 자유양식
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://www.saraminimage.co.kr/sri/vix/template/toptype/it2.png

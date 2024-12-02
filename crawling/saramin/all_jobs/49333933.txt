@@ -1,0 +1,41 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49333933&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=33d37386-8162-4559-b754-cebffa41db4f
+
+Iframe Text Content:
+[코스닥상장]
+생성형 AI
+엔지니어 채용
+모집부문 및 상세내용
+모집부문 상세내용
+생성형 AI 연구개발
+[업무내용]
+
+- 생성형 AI 기반 솔루션 연구개발
+- 솔루션 적용 연구개발
+자격요건
+ [자격요건]
+ - 개발 경력 5년 이상 경력자
+ - LLM FineTunning, LoRA (Llama2, Mistral 등) 지식 보유 및 경험자
+ - Python 등 AI 프로그래밍 유경험자
+ - 우수한 커뮤니케이션 보유자
+
+[우대요건]
+ - Python 숙련
+ - git, vscode, jupyter notebook, colab 등의 개발환경 능숙자
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월
+ㆍ 근무지역 : (135-080) 서울 강남구 역삼동 708-8 세방빌딩 신관17층 - 서울 2호선 선릉역에서 100m 이내
+전형절차
+서류전형
+(합격자에 한하여 전화인터뷰 진행)
+1차면접
+2차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 11월 4일 (월) 10시 ~ 2024년 11월 30일 (토) 24시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://www.saraminimage.co.kr/sri/vix/template/toptype/marketing1.png

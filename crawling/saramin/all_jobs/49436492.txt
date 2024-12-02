@@ -1,0 +1,57 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49436492&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=e349981f-b225-4d9a-bc79-b03ec328cbb1
+
+Iframe Text Content:
+■ 기업개요
+주식회사 알티올은 응용소프트웨어 개발 및 공급 기업입니다.
+스마트물류 자동화 솔루션 전문기업으로 높은 기술력을 평가받아 현대로지시의 M&A를 통해 흡수되어 독립법인으로 경영중인 기업입니다.
+주요사업은 AGVB(무인운반차), 산업용로봇, 콘베이어물류 시스템을 융합하여 스마트물류 자동화 솔루션을 개발하고 있습니다.
+본사 소재지는 인천 연수수 송도과학로 32, 송도테크노파크 IT센터에 소재하고 있습니다.
+
+1.매출액 : 60억
+2.종업원수 : 40명
+3.업력 : 8년차(2017년설립)
+4.기업형태 : 중소기업
+5.주요고객 : 이랜드리테일, 한화제약, CJ대한통운, 현대자동차, 대상베스트코, 우체국 등
+
+■ M&A기업 : 국내 물류 전문 대기업 "현대글로비스" 에서 인수 ▶ 대기업 인수합병에 의한 성장잠재력 확보 기업
+
+■ 직무내용 / 기술스텍
+
+1. 프론트엔드 개발
+가. Basic : HTML, CSS, javascript.
+나. Data Modeling : ERD기반 데이터 컨트롤 가능
+다. framework : React.js, Next.js, Typescript
+라. Interface : Api(Rest, GraphQL), WebSocket SubScirbe
+마. Team Collaboration Tool (Jira, Git, Figma)
+
+2. 백엔드 개발
+가. Java 기본기
+나. framework : Spring boot
+다. Interface : Api, Socket, WebSocket, PUB,,SUB
+라. Database : DDL, DML (Oracle, MySql, MariaDB, MSSql)
+마. Data Modelling : Design to Schema (ERD)
+바. Team Collaboration Tool (Jira, Git, Jenkins, Figma)
+
+■ 우대사항
+- WMS, WCS, TMS 등 물류자동화 솔루션 개발자 특별우대(우선 채용)
+- IT 인프라 구축 경험 (Docker, WAS, Database, Network)
+- 포트폴리오 제출자
+
+■ 선발개요
+- 학력 : 초대졸 이상
+- 경력 : 3년 이상인자 (3년이상 - 10년이하 / 역량에 따라 그 이상도 지원 가능)
+- 직급 : 사원 - 선임급
+- 연봉 : 4,000만원 - 7,000만원 (경력 및 역량에 차등하여 상향 조정 적용)
+
+■ 참고사항
+- 유연근무제 : 시차출근제 적용(08-17, 09-18, 10-19 자율선택)
+함께하기 위한 방법
+접수기간 : 2024년 11월 20일 (수)11시 00분 ~ 2024년 12월 20일 (금) 23시 59분
+접수방법 : 사람인 입사지원
+이력서양식 : 자사양식
+함께하기 위한 여정
+서류전형
+1차면접
+최종합격
+
+No images found in iframe.

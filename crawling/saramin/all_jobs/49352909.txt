@@ -1,0 +1,77 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49352909&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=abe19497-5b44-41e4-b532-de836b765221
+
+Iframe Text Content:
+Frontend Engineer(React)
+서비스 소개
+저희 회사에서 사업 확대를 계획 중에 있어 R&D 부문 증원 예정으로 관련한 경험이 있으신 분을 찾고 있습니다.
+당사 위펀은 창립이후 근 4년간 J커브를 그리며 폭발적인 성장을 이어가고 있으며, 2021년에는 시리즈B 투자유치 달아 누적 투자액 130억을 달성하였습니다. 
+2023년에는 시리즈C 200억(납입완료) 투자유치를 성공하여 총 누적 투자액 330억을 달성하였습니다. 2022년 매출 480억원 기록하였으며, 올해 2023년에는 매출 1000억원을 목표로 성장예정입니다.
+
+모쪼록 좋은 인연이 될 수 있기를 바라며, 문의사항에 대해서는 언제든 편하게 문의주시기 바랍니다.
+감사합니다.
+(원하신다면 개발팀 실무 담당자와 가벼운 커피챗도 가능합니다.)
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+CSS 3 Vue.js HTML5 Java Semantic UI React Semantic UI React TypeScript Git JavaScript
+주요업무
+• 신규 서비스 플랫폼 개발 및 기존 서비스 고도화
+• 더 나은 고객 경험 제공을 위한 서비스 개선
+• 기술 부채 식별 및 점진적 개선
+자격요건
+• 3년 이상의 웹 프론트엔드 개발 경험 또는 그에 준하는 역량을 보유하신 분
+• 최신 JavaScript(ES6 이상), HTML5, CSS3를 능숙하게 사용하시는 분
+• 1년 이상의 React 실무 경험
+• TypeScript 를 사용한 실무 경험
+• Git 을 통한 팀 단위 프로젝트 경험
+• Semantic Markup, 웹 표준, 웹 접근성, 크로스 브라우징, 반응형 웹 개발에 능숙하신 분
+• 브라우저 렌더링, 네트워크 통신 과정의 기본적인 이해가 있으신 분
+우대사항
+• 1년 이상의 Vue.js 실무 경험
+• Vue.js에서 React로 기술 전환을 주도한 경험
+• 사용자 활동 추적, Heatmap 등 데이터 기반 UX 개선 경험
+• 성능 벤치마킹 및 프로파일러를 통한 최적화 경험
+• SEO(Search Engine Optimization) 경험
+• Mocha, Jest, Jasmine 등 단위 테스트를 통한 신뢰성 있는 코드 생산 경험
+• Cypress 등 End-to-End 테스팅 프레임워크 사용 경험 있으신 분
+• 사내 스터디 또는 기술 세미나를 통한 주도적인 지식 공유 경험
+• Framer 또는 Storybook(UI component explorer) 사용 경험
+• 하이브리드 앱 개발 경험 또는 동작방식을 이해하시는 분
+• Scrum(애자일 개발 프로세스) 프로젝트 수행 경험 또는 MVP(Minimum Viable Product) 개발 경험
+• 반복적인 업무를 자동화하여 업무 효율을 개선한 경험
+마감일 및 근무지
+• 마감일 : ~2024-12-06
+• 근무지
+- 서울 강남구 강남대로 374 15층
+복지 및 혜택
+퍼니를 위한 든든한 복지
+• 신축 오피스의 쾌적한 근무 환경 지원(강남역 3분거리) 
+• 최고급 장비 지원(Mac / PC 등 최고급 노트북, 모니터 지원) 
+• 탄력적인 자율 출퇴근제(8시~10시 30분 자유롭게 출근) 
+• 점심, 저녁 별도 제공(든든하게 먹을 수 있는 식비 지원 / 연봉 미포함) 
+• 자율 복장 출근(자유로운 옷에서 자유로운 분위기가 나옵니다) 
+• 간식, 음료 무한 제공(편의점 급 카페테리아)
+• 생일 선물 제공 및 조기 퇴근(위펀에서 가장 먼저 축하해 줍니다) 
+• 패밀리데이는 일찍 가족과 함께(매월 셋째주 금요일 조기 퇴근) 
+• 눈치보지 말고 자율 휴가제(눈치보지 않게 비대면 연차 신청) 
+• 매달 비바런치(매월 2회 점심시간이 늘어나는 비바런치) 
+• 근속 연차별 다양한 선물 제공(퍼니를 위한 굿즈는 지금도 진화 중) 
+• 사내 복지몰 이용(다양한 제품과 파격적인 가격 혜택)
+• 외근 시 차량 지원(회사 차량 및 카쉐어링 서비스 제공) 
+• 경조 휴가 및 경조금 지원 제도 운영(기쁨과 슬픔을 함께해요)
+채용절차 및 기타 지원 유의사항
+• 서류심사 → 사전과제(코딩테스트) → 1차(기술면접) → 2차(현업/HR)면접 → 처우 협의 → 최종 합격
+** 코딩테스트를 필수로 진행하고 있습니다. 코딩테스트 진행 가능하신분들 적극 지원 부탁드립니다!
+
+Iframe Image Links:
+Image: JavaScript | Link: https://cdn.jumpit.co.kr/images/stacks/javascript.png
+Image: HTML5 | Link: https://cdn.jumpit.co.kr/images/stacks/html5.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Vue.js | Link: https://cdn.jumpit.co.kr/images/stacks/vue.js.png
+Image: Semantic UI | Link: https://cdn.jumpit.co.kr/images/stacks/semanticui.png
+Image: Git | Link: https://cdn.jumpit.co.kr/images/stacks/git.png
+Image: CSS 3 | Link: https://cdn.jumpit.co.kr/images/stacks/css3.png
+Image: Java | Link: https://cdn.jumpit.co.kr/images/stacks/java.png
+Image: Semantic UI React | Link: https://cdn.jumpit.co.kr/images/stacks/semanticuireact.png
+Image: React | Link: https://cdn.jumpit.co.kr/images/stacks/react.png
+Image: TypeScript | Link: https://cdn.jumpit.co.kr/images/stacks/typescript.png

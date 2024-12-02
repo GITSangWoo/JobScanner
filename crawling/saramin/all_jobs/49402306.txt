@@ -1,0 +1,66 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49402306&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=44cbcd90-9ff4-48c4-919a-0fd6ea659661
+
+Iframe Text Content:
+[비스텔리젼스]
+JAVA Application Engineer
+
+BISTelligence는 전신인 BISTel에서 인적분할을 통해 분사한 manufacturing AI 전문 기업입니다.
+제조산업에서 Digital Transformation과정의 단계별 역할을 지원하고, 최적의 모델을 찾아 서비스합니다.
+
+우리는 BISTel에서 20년이상 축적된 제조산업 분야에서의 솔루션 개발과 Consulting 경험을 기반으로
+산업현장의 다양한 문제를 고객의 눈높이에서 이해하고 해결책을 제시합니다.
+
+디지털 기술로 대변하는 Data로 이루어진 세상에서 차별화된 경험과 가치를 선사하는 manufacturing AI No.1 기업으로
+4차 산업혁명 시대 제조산업의 혁신을 이루어 미래 경쟁력 확보의 최고의 파트너입니다.
+모집부문 및 상세내용
+모집부문 상세내용
+공통 자격요건
+ㆍ학력 : 무관
+JAVA Application
+Engineer
+Adaptive Edge Solution 0명
+주요업무
+ㆍ 반도체/이차전지 등 제조 설비 데이터 인터페이스 개발 및 유지보수
+ㆍ 사이트 프로젝트 고객 대응 수행
+
+지원자격
+ㆍ경력 : 무관 (신입도 지원 가능)
+ㆍ중국어 회화(비즈니스 레벨) 가능자
+ㆍ해외 출장근무에 결격사유가 없는 자
+ㆍJAVA Application 개발 가능자
+ㆍ사이트 근무(출장) 가능자
+ㆍ기술스택: Java 8, Linux, Kafka Streams
+
+우대조건
+ㆍIT 전공 또는 관련 분야의 학력 보유자
+ㆍ중국어 어학 관련 자격증 보유자
+ㆍJAVA 및 Python을 이용한 프로젝트 개발 및 유지보수 경험자
+ㆍ반도체 및 제조 관련 서비스 구축 및 활용 경험자
+근무조건
+ㆍ 근무형태 : 정규직(수습기간)-3개월
+ㆍ 근무일시 : 주 5일(월~금), 유연근무제
+ㆍ 근무지역 : (06754) 서울 서초구 바우뫼로 128 비스텔 - 신분당선 양재시민의숲 에서 800m 이내
+전형절차
+서류전형
+1차면접
+2차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 11월 14일 (목) 14시 ~ 2024년 12월 31일 (화) 24시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 자사양식
+
+
+
+
+복지 및 혜택
+
+
+
+
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202408/19/sigfjo_57fm-iurlu_recruit.png
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202408/19/sigfti_nsry-iurlu_recruit.png

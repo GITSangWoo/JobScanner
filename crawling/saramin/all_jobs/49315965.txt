@@ -1,0 +1,92 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49315965&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=e5c584db-a838-4200-8611-2cd5825eaf8e
+
+Iframe Text Content:
+[파운트/핀테크] 백엔드 개발자(Python/리드급)
+서비스 소개
+Brand Page: https://corp.fount.co/
+
+'모든 사람들의 경제적 자유를 실현하기 위한 구체적인 해결책을 제시하자'
+라는 미션을 가지고 '최저 거래비용, 쉽고 빠른 모바일 자산관리 서비스'를 통해, "내 돈 어떻게 관리하지?"라는 질문에 가장 좋은 답이 되는 서비스를 제공하고 있습니다.
+
+정부 기관은 물론 대형 금융사들도 인정한 높은 기술경쟁력을 바탕으로 약 1조 5천억원 규모의 자산이 파운트의 기술을 통해 운용되고 있으며, 2024년 현재 누적 투자액 약 730억 원을 기록하며 안팎으로 인정 받고 있습니다.
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Pandas Redis PostgreSQL MySQL FastAPI Django REST framework Django Amazon EKS AWS Celery NumPy
+주요업무
+•Django Framework를 활용한 소프트웨어 구성 요소 및 웹 애플리케이션 개발 및 최적화
+•API 연동 및 외부 플랫폼에 대한 연동 시스템 개발
+• SW 아키텍쳐 및 API 설계
+• 백오피스 개발 관리
+• 보안 관리 및 백엔드 기술 리딩
+자격요건
+• 백엔드 개발 경력 7년 이상 또는 그에 준하는 실력을 보유하신 분 (포트폴리오 혹은 경력상세기술서 포함 필수) 
+• Python 및 Django 사용 경험 3년 이상 있는 분
+• MSA 설계, 개발 및 운영 경험이 있으신 분
+• 비즈니스, 프로덕트, 개발자 등 이해관계자들과의 유연한 커뮤니케이션을 가지고 계신 분
+우대사항
+• 끊임없이 새로운 기술에 도전하고 업무에 지속적으로 적용하는 성향을 가진 분
+• 로보어드바이저 및 금융업 관련 유경험자 우대
+• Git 기반의 업무 협업 경험
+• 대용량 트래픽 기반의 분산/비동기 처리 인프라 구축 관련 스킬, MSA 기반의 시스템 운영 경험
+• 웹 어플리케이션 성능 최적화 및 Trouble shooting 경험
+마감일 및 근무지
+• 마감일 : ~2024-11-30
+• 근무지
+- 서울 중구 한강대로 416, 13층 032호
+복지 및 혜택
+[Growth & Development]
+• 업무 관련 도서 구입 지원 
+• 온/오프라인 강의 수강 지원
+• 자격증 응시료 지원 
+• 각종 세미나 및 컨퍼런스 참석 활동 지원
+• 멘토링 제도 시행 (신규입사자 대상)
+• 인재상 기반 수시포상제도 시행 
+
+[Wellness & Family]
+• 종합건강검진 지원 (연 1회, 본인 포함 가족 혜택 적용) 
+• 경조사 휴가 및 경조사비 지원
+• 독감예방접종 실시
+• 명절 상품권 지급
+
+[Work & Life]
+• 팀별 시차 출퇴근제 (8시~10시)
+• 최신 사양의 업무 장비 지원(Apple/LG Gram/기타)
+• 효율적인 업무를 위한 듀얼 모니터 지급 
+• 편안한 출퇴근을 위한 주차비 50% 지원
+• 야근 시 식대 및 택시비 지원
+
+[Refreshment & Fun]
+• 자유로운 연차 사용 
+• 편의점 수준의 맛있는 간식 및 커피 무한 제공
+• 다양한 분야의 사내 동호회 활동비 지원
+• 근로자휴가지원사업 지원 (연 40만 포인트 혜택)
+• 다양한 조직문화활동 진행(Culture-Day 등)
+채용절차 및 기타 지원 유의사항
+[제출서류]
+• 이력서와 함께 자신의 개발 능력을 피력할 수 있는 경력기술서, 포트폴리오 또는 github 주소 등을 기재 첨부하여 주세요.
+
+[채용절차]
+• 서류전형→실무진 면접→평판조회→조직적합성 인터뷰 → 최종합격 
+
+[지원 시 주의사항]
+• 3개월의 수습 기간이 있습니다.(수습 기간 동일 급여와 복리후생 보장)
+• 포트폴리오 제출 시,10MB 초과할 경우에는 링크를 기재해주세요.
+
+[참고사항]
+• 서류 합격자에 한해 연락드립니다.
+• 본 채용은 수시 진행으로 우수 인재 채용 시 마감될 수 있습니다.
+
+Iframe Image Links:
+Image: AWS | Link: https://cdn.jumpit.co.kr/images/stacks/aws.png
+Image: Django REST framework | Link: https://cdn.jumpit.co.kr/images/stacks/DjangoRESTframework.png
+Image: Pandas | Link: https://cdn.jumpit.co.kr/images/stacks/pandas.png
+Image: PostgreSQL | Link: https://cdn.jumpit.co.kr/images/stacks/postgresql.png
+Image: Django | Link: https://cdn.jumpit.co.kr/images/stacks/django.png
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/hired_resumes_pc.png
+Image: NumPy | Link: https://cdn.jumpit.co.kr/images/stacks/numpy.png
+Image: Celery | Link: https://cdn.jumpit.co.kr/images/stacks/Celery.png
+Image: MySQL | Link: https://cdn.jumpit.co.kr/images/stacks/mysql.png
+Image: Redis | Link: https://cdn.jumpit.co.kr/images/stacks/redis.png
+Image: Amazon EKS | Link: https://cdn.jumpit.co.kr/images/stacks/amazoneks.png
+Image: FastAPI | Link: https://cdn.jumpit.co.kr/images/stacks/FastAPI.png

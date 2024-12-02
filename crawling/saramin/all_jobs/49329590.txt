@@ -1,0 +1,75 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49329590&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=1ce572f6-2127-4637-8908-dd3f579392e5
+
+Iframe Text Content:
+마린웍스(주) / 마린전자상사 2024년 하반기
+선박 네트워크 엔지니어
+정규직 채용
+사람을 위한 상상, 삶을 위한 기술.
+미래를 선도할 스마트십, 자율운항 시장을 함께 개척할 인재를 모집합니다.
+
+
+        회사소개
+마린웍스는 조선해양분야 ICT 전문 기업으로,
+선박의 전장 설계부터 소프트웨어 개발, 엔지니어링, 디지털 전략 컨설팅, IT 아웃소싱까지
+마켓의 변화를 대비한 최고의 사업 포트폴리오를 구축하고
+국내외 고객에게 최적의 솔루션을 제공하고 있습니다.
+모집요강
+모집분야 담당업무 / 자격요건 / 우대사항 근무지
+선박 네트워크
+엔지니어
+(신입/경력)
+[담당업무]
+ ㆍ군함, 관공선, 상선 네트워크 구축 및 커미셔닝 업무
+  - L3,L2 Switch 설치 및 설정, Access Point 설정
+  - Firewall 설치 및 설정 
+  - VoIP System, CCTV system 설정
+
+[자격요건]
+ ㆍ1종 보통 운전면허소지자 (필수)
+ ㆍ울산,거제 등 출장 업무 수행 가능자
+ 
+[채용직급]
+ㆍ선임~책임(사원~과장급)
+ㆍ처우 : 회사 내규에 따름,
+          면접 후 직급에 따라 협의
+
+[우대사항]
+ ㆍ네트워크 관련 자격증 소지자
+ ㆍ선박 작업 경험 유경험자
+ ㆍ네트워크 결선 작업 유경험자
+울산 사무소 : 0명
+부산 본사 : 0명 
+
+지원자격
+- 해외여행에 결격사유가 없는 자
+
+근무조건
+- 근무형태 : 정규직
+- 근무일시 : 주 5일(월~금) 오전 9시 ~ 오후 6시 / 오전 8시 ~ 오후 5시
+- 급여 : 회사 내규에 따름
+- 근무지역 : 울산 - 동구 동진4길 49 / 울산사무소
+                   부산 - 부산광역시 동구 고관로 62 / 부산 지하철 2호선 초량역에서 도보 5분, 부산진역에서 도보 5분 
+
+
+복리후생
+전형절차
+접수기간
+- 서류접수기한 : 채용시 마감 
+- 접수 완료된 지원서는 순차적으로 상시 검토하며, 각 채용 분야별 서류 합격자에 한하여 전형 일정은
+  개별 연락드릴 예정입니다.
+지원방법
+- 사람인 지원
+- 사람인 온라인 이력서, 자기소개서(필수). 경력자의 경우 경력 기술서 제출 필수
+유의사항
+- 본 채용은 마린웍스(주) 및 마린전자상사에서 함께 진행하고 있습니다.
+- 입사 지원서 내용 중 허위 사항이 있는 경우 합격이 취소됩니다.
+- 전형 일정은 내부 사정에 따라 조정될 수 있으며, 조정사항 발생 시 사전 안내 예정입니다.
+
+Iframe Image Links:
+Image: logo | Link: https://idesk2.mecys.com/img/mw_w_logo.png
+Image: welfare | Link: https://idesk2.mecys.com/img/mw_jo_welfare.png
+Image: No alt | Link: https://pds.saramin.co.kr/recruit/recruit/202403/11/sa5o71_wk7h-1crv0xt_recruit.png
+Image: img | Link: https://idesk2.mecys.com/img/mw_jo_img_1.png
+Image: marineworks homepage | Link: https://idesk2.mecys.com/img/mw_jo_icon_hp.png
+Image: procedure | Link: https://idesk2.mecys.com/img/mw_jo_procedure.png
+Image: marineworks youtube | Link: https://idesk2.mecys.com/img/mw_jo_icon_yt.png

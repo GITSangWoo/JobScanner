@@ -1,0 +1,64 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49430021&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=4ca7329e-bb4d-4cd4-b1b9-260c4be680e2
+
+Iframe Text Content:
+네트워크 엔지니어
+서비스 소개
+• 자율주행차 솔루션 개발/사업 전문 기업
+• 스마트시티 주차 솔루션 사업화 기업
+• 독보적인 정밀 실내 내비게이션 기술로 자율주행차/스마트시티 산업 선도
+• 세계 최초 차량용 실내 내비게이션 기술 상용화
+• AI, IoT, 빅데이터 융복합 솔루션 제공
+
+# 베스텔라랩이 더욱 궁금하시다면?
+ └ www.vestellalab.com
+이 포지션의 AI 예상 면접 질문이 궁금하다면 점핏에서 확인해보세요!
+모집부문 / 상세내용
+사용 기술
+Ccnp Ccna Linux Router VPN
+주요업무
+• 주차 내비게이션 서비스 네트워크 구축 및 운영 개선
+• 주차 내비게이션 서비스 시스템 모니터링 및 현장 대응(트러블 슈팅)
+• 주차 내비게이션 서비스 서버 설치
+자격요건
+• 4년이상 인프라 및 네트워크 엔지니어
+• 인프라 운영에 필요한 네트워크 및 보안에 대한 기본 지식
+• 스위치, 라우터 등 네트워크 장비에 대한 전반적인 이해
+• 라우팅(BGP,OSPF,VXLAN-EVPN), DNS, SLB(L4/L7), VPN 등의 기술과 운영 경험이 있으신 분
+• 네트워크 운영/유지 관리의 경험 및 고도화/기획/ 경험이 있으신 분
+• API 기반으로 오픈소스를 이용한 운영 자동화의 경험이 있으신 분
+우대사항
+• 리눅스 경험 있으신 분
+• VPN 경험 있으신 분
+• 가상화(컨테이너 시스템 구축 및 운영) 경험 있으신 분
+• CCNA, CCNP, 정보처리기사, 정보보안기사
+마감일 및 근무지
+• 마감일 : ~2024-12-22
+• 근무지
+- 대구 동구 동대구로 465 대구스케일업허브
+- 경기 안양시 동안구 벌말로 80 더에이치타워919 602호
+복지 및 혜택
+• 커피와 스낵 무한 제공 !
+• 도서 지원 !
+• 개인 컴퓨터, 모니터 제공 !
+채용절차 및 기타 지원 유의사항
+[채용절차]
+• 서류전형 → 실무면접 → 임원면접 → 최종검토 → 최종합격
+
+[지원 서류]
+• 이력서, 자기소개서, 포트폴리오
+• 첨부파일 이름은 “yymmdd_채용파트_성함_이력서/자기소개서/포트폴리오” 라고 기재해 주세요.
+
+[참고사항]
+• 서류 합격자에 한해 연락드립니다.
+• 본 채용은 수시 진행으로 우수 인재 채용 시 마감될 수 있습니다.
+
+# 베스텔라랩이 더욱 궁금하시다면?
+ └ www.vestellalab.com
+
+Iframe Image Links:
+Image: 배너 | Link: https://cdn.jumpit.co.kr/jumpit/position/sri/interview_pc_1.png
+Image: Ccnp | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Ccna | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: Linux | Link: https://cdn.jumpit.co.kr/images/stacks/linux.png
+Image: Router | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png
+Image: VPN | Link: https://cdn.jumpit.co.kr/images/stacks/noStack.png

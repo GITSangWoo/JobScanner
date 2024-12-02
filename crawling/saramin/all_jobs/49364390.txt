@@ -1,0 +1,38 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49364390&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=255f39c0-e5c6-48af-a584-51300758ac0c
+
+Iframe Text Content:
+QA   엔지니어
+ [담당업무]
+·   자사 솔루션의 테스트 + 인증 업무를 담당.
+·   Technical Writer로서 문서 작성  (각종 매뉴얼, 가이드 작성 역량)
+  [자격요건]
+   - 시스템엔지니어/DevOps Engineer 혹은 소프트웨어 QA (SQA) 경력 4년~10년
+   - 솔루션 서버, 네트워크, 서비스 구성 및 운영
+  -  인증 업무 수행 유경험자 (GS 또는 CC인증 등)
+  -    자사 시스템에 대한 버그를 찾고 리포트하고 해결된 사항을 확인하는 업무에 대한 의지와 열정
+-     적극성과 꼼꼼함
+  [필요기술]
+·   Linux 운영체제 지식 및 스킬(중급이상)
+·  DBMS 관련 지식 및 스킬 
+  : SQLD" 자격증 혹은 그에 준하는 쿼리 작성능력
+·  VM 사용 능력 
+·  클라우드 인프라에 대한 경험 (AWS 등)
+·  네트워크 관련 지식 및 스킬 (중급이상)
+  [우대사항]
+  -IT 자격증 소지자 (정보처리기사 등)
+ - 테스트 자동화에 대한 경험 우대.
+ - VMWare, AWS 사용 능력
+
+
+
+[참고사항]
+-  근무지:마포
+-  처우:현연봉 및 면접내용에 따른 협의
+
+
+ 
+
+접수방법:이메일접수(cindy@humantree.net )
+담당자: Cindy.HAN
+
+No images found in iframe.

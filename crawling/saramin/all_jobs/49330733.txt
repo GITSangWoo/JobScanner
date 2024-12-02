@@ -1,0 +1,98 @@
+URL: https://www.saramin.co.kr/zf_user/jobs/relay/view?view_type=search&rec_idx=49330733&location=ts&searchword=%EB%8D%B0%EC%9D%B4%ED%84%B0%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&searchType=search&paid_fl=n&search_uuid=5fe8ee1a-69bb-4112-a53e-375bbf6ee3a1
+
+Iframe Text Content:
+[말레이시아] Cisco - 네트워크 및 보안 전문가
+모집부문 및 상세내용
+Cisco Collaboration L2
+고객의 협업 시스템 문제를 해결 & 기술 문서 관리 포지션
+지원자격
+ㆍ영어 능통자
+ㆍ학력: 학사 학위 (관련 전공 우대)
+ㆍ경력: 네트워크 기술 6년 이상
+ㆍ인증: CCNA, CCNP 또는 CCIE 필수
+ㆍTelepresence, CUCM, Voice Communications Manager 경험 필수
+ㆍ기술 문서 작성과 팀 교육 경험 필요
+Cisco Collaboration L3
+주요 계정의 네트워크 협업 문제 해결 & 교육과 멘토링 제공하는
+시니어 포지션
+지원자격
+ㆍ영어 능통자
+ㆍ학력: 학사 학위 (컴퓨터 공학, 네트워크 또는 관련 전공)
+ㆍ경력: 네트워크 관련 10년 이상
+ㆍ인증: CCIE 필수
+ㆍ기술 역량: Webex Meetings, CUCM, 고급 네트워크 문제 해결 기술
+ㆍ교육 및 멘토링 능력: 팀 교육과 고객 지원을 위한 멘토링 경험 필요
+Cisco Collaboration Webex L2
+Webex 협업 솔루션 관련 문제 해결 담당 & 타사 시스템과의 통합 문제 해결
+지원자격
+ㆍ영어 능통자
+ㆍ학력: 학사 학위 (IT, 네트워크 엔지니어링 또는 관련 전공)
+ㆍ경력: 6년 이상의 네트워크 경험
+ㆍ인증: CCNA, CCNP 또는 CCIE 필수
+ㆍ기술 역량: Webex Meetings, CUCM 경험, Python을 활용한 문제 해결 능력
+ㆍ문서 관리 및 3자 통합 경험: 타사 시스템과의 통합 문제 해결
+Cisco Collaboration Webex L3
+Webex 관련 고급 기술 지원 담당 & 고객과 협력하여 문제 해결 전략 제안
+지원자격
+ㆍ영어 능통자
+ㆍ학력: 학사 학위 (네트워크 엔지니어링, 컴퓨터 과학 관련 전공)
+ㆍ경력: 네트워크 관련 10년 이상
+ㆍ인증: CCIE 필수
+ㆍ고급 기술 역량: Webex 관련 문제 해결 및 교육 프로그램 설계 경험
+ㆍ고객 지원 및 자동화: IC-Digitization을 통한 프로세스 자동화 경험
+Cisco Data Centre Engineer L3
+데이터 센터 환경에서 네트워크 문제 해결 & 위기 관리 담당 포지션
+지원자격
+ㆍ영어 능통자
+ㆍ학력: 학사 학위 (네트워크 엔지니어링, 컴퓨터 과학, IT 관련 전공)
+ㆍ경력: 8년 이상의 데이터 센터 네트워크 경험
+ㆍ인증: CCIE 또는 CCDE (필수 아님)
+ㆍ기술 역량: BGP, MPLS, 데이터 센터 스토리지 및 서버 가상화 경험
+ㆍ대규모 네트워크 운영 및 위기 관리 경험
+Cisco Enterprise Data L3
+엔터프라이즈 네트워크와 보안 문제 해결 및 스크립팅을 통해 네트워크 운영 지원
+지원자격
+ㆍ영어 능통자
+학력: 학사 학위 (IT, 컴퓨터 과학, 네트워크 엔지니어링 전공)
+경력: 8년 이상의 네트워크 및 보안 경험
+인증: CCIE 필수
+기술 역량: IPsec, VPN, 클라우드 보안 기술 (AWS, Azure, GCP 등)
+스크립팅 능력: Bash, Python을 활용한 문제 해결 및 자동화
+Cisco Security L2
+보안 문제 해결 및 고객의 네트워크 보안 관련 요청 처리 
+기술 지원 포지션
+지원자격
+ㆍ영어 능통자
+ㆍ학력: 학사 학위 (보안, 컴퓨터 과학, IT 관련 전공)
+ㆍ경력: 3-6년의 보안 기술 경험
+ㆍ인증: CCNA Security 이상
+ㆍ보안 기술 역량: NAT, VPN, 방화벽 관리 및 Python 문제 해결 능력
+ㆍ고객 관리 능력: 고객 문의 관리 및 문제 해결을 위한 의사소통 능력
+Cisco Security L3
+고급 보안 문제 해결과 고객 만족도 향상을 목표로 하는
+네트워크 보안 전문가 포지션
+지원자격
+ㆍ영어 능통자
+ㆍ학력: 학사 학위 (보안, 네트워크 엔지니어링, 컴퓨터 과학 관련 전공)
+ㆍ경력: 6-8년의 보안 네트워크 경험
+ㆍ인증: CCIE Security 필수
+ㆍ고급 보안 기술: TLS/SSL, SSO, IPsec 등의 고급 보안 문제 해결 능력
+ㆍAWS, Azure, Google Cloud 플랫폼에 대한 이해와 프로젝트 관리 능력
+
+
+
+
+전형절차
+서류전형
+1차면접
+최종합격
+접수기간 및 방법
+ㆍ 접수기간 : 2024년 11월 4일 (월) 14시 ~ 2024년 12월 4일 (수) 18시
+ㆍ 접수방법 : 사람인 입사지원
+ㆍ 이력서양식 : 사람인 온라인 이력서
+ㆍ 제출서류 : 영문 이력서 제출 요망
+유의사항
+ㆍ입사지원 서류에 허위사실이 발견될 경우, 채용확정 이후라도 채용이 취소될 수 있습니다.
+
+Iframe Image Links:
+Image: No alt | Link: https://www.saraminimage.co.kr/sri/vix/template/toptype/design2.png

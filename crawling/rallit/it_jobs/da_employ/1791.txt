@@ -1,0 +1,86 @@
+URL: https://www.rallit.com/positions/1791/data-sr-engineer
+1/1
+오비맥주, 어떤 곳인가요?
+ABInBev는 세계 1위 맥주 기업이자 세계 5대 소비재기업으로 500개가 넘는 브랜드를 포트폴리오를 보유한 글로벌 선두 기업입니다. AB InBev Korea 오비맥주는 카스, 한맥, OB라거, 필굿, 버드와이저, 스텔라, 호가든 등 소비자들의 입맛에 맞춘 차별화된 브랜드 포트폴리오로 국내 맥주시장을 선도하고 있습니다. 오비 맥주는 지속적인 혁신을 통해 새로운 제품과 더 강력한 브랜드를 만들고 있으며 고객 및 지역 사회와의 더욱 의미 있는 관계를 만들기 위해 노력합니다.
+Data Sr. Engineer , 어떤 일을 하나요?
+오비맥주 Strategy & Technology팀에서 Sr. Data Engineer를 채용하고자 하니, 아래 주요 업무 및 자격요건을 상세히 살펴보신 후 지원바랍니다.
+#Python
+#SQL
+#Java
+#AWS
+#Azure
+#Google Cloud Platform
+주요업무
+Data Engineering Strategy: Develop and execute the data engineering strategy aligned with the organization's goals and objectives.
+Data Infrastructure: Oversee the design, implementation, and maintenance of scalable and reliable data infrastructure, including data pipelines, storage systems, and data warehouses.
+Data Quality and Governance: Establish and enforce data quality standards and governance policies to ensure the accuracy, completeness, and security of data.
+Technical Expertise: Stay updated with emerging technologies, tools, and best practices in the data engineering field, and apply them to enhance data processing, integration, and analysis capabilities.
+Team Leadership: Provide leadership and guidance to the data engineering team, ensuring efficient collaboration, effective communication, and a positive work environment.
+자격요건
+[Tech]
+Proficiency in programming languages like Python, SQL, and Java.
+Familiarity with cloud platforms and services like AWS, Azure, or GCP.
+Understanding of data modeling and database design principles
+Knowledge of data warehousing and ETL (Extract, Transform, Load) processes & best practices of pipeline management
+[Leadership]
+A mindset of continuous learning
+Strategic thinking and the ability to align data engineering initiatives with organizational goals.
+Problem-solving and decision-making skills to overcome challenges and drive successful outcomes
+[Position Experience]
+A bachelor's or master's degree in a relevant field such as Computer Science, Data Engineering, Data Science, or a related discipline.
+Over 8+ years of experience in data engineering, data architecture, or a related field.
+Experience in managing and leading a team of data engineers.
+Ability to effectively manage multiple projects and changing priorities
+우대사항
+[Tech]
+Experience in Data Science related projects
+Extensive experience working with Azure platforms & services
+[Industry-Optional]
+CPG or alcohol industry
+Data scientist, data engineer, business analyst
+Data visualization
+[Personality-Optional]
+Ability to comprehend and converse in English to communicate effectively
+혜택 및 복지
+Work from anywhere (연간 총 25일 근무지자율 선택제 제도)
+자율 좌석제(사무실 내, 원하는 자리에서 근무)
+시차 출근제 (8:00~10:00 사이 출근)
+주 1회 Happy hour (근무시간 중에 맥주 마시며 근무)
+매주 수요일 가정의 날 / PC Off제도
+맥주 Bar 운영
+여름 유급 휴가 (5일) 및 여름 휴가비 지급
+건강검진 : 30세 이상 종합검진 (격년으로 본인/배우자 포함)
+단체상해보험
+경조사지원 (결혼, 조사, 자녀 돌잔치, 결혼기념일 등 경조휴가 및 경조금 지원)
+명절 맥주 지원 및 자사 제품 할인
+자녀 학자금 지원
+본인 및 배우자, 부모, 자녀 대상 의료비 지원 (인당 최대 500만원)
+콘도 지원 (연 2박)
+장기근속 포상
+주택자금 융자 지원 등
+채용 절차
+서류 접수
+실무 면접
+임원 면접
+최종 합격
+채용 절차는 일정 및 상황에 따라 달라질 수 있습니다.
+지원서 내용 중 허위 사실이 있는 경우에는 합격이 취소될 수 있습니다.
+오비맥주에서 전하는 미래 동료에게 한마디
+ABInBev Korea 오비맥주에 대해 궁금하신 내용은 아래 링크에서 확인하세요!
+ABInBev
+오비맥주
+Linked In
+김오비 블로그
+근무 지역
+서울 강남구 영동대로 517 ASEM 및 한국종합무역센타단지 8층
+Data Sr. Engineer 
+경력
+시니어 (9년 이상)
+최소 연봉
+회사 내규에 따름
+마감일
+채용 시 마감
+회사명
+오비맥주
+7
+지원하기
