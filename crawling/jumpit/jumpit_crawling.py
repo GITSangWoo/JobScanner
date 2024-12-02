@@ -16,7 +16,7 @@ import re
 
 output_folder = "links"
 today = datetime.today().strftime('%Y%m%d')
-log_file_name = os.path.join(output_folder, f"{today}_jumpit.log")
+log_file_name = os.path.join(output_folder, f"{today}.log")
 
 def save_crawled_content(url, content):
     file_name = url.split('/')[-1] + ".txt"
@@ -123,7 +123,7 @@ def update_log_file(url, crawl_time):
 ensure_directories()
 
 bucket_name = 't2jt'
-today_file_key = f"job/DE/sources/jumpit/links/{today}_jumpit.txt"
+today_file_key = f"job/DE/sources/jumpit/links/{today}.txt"
 
 links_with_ddays = read_links_and_ddays_from_s3(bucket_name, today_file_key)
 

@@ -98,11 +98,11 @@ if not os.path.exists(output_folder):
 
 # 오늘 날짜 기반 파일 이름 생성
 today = datetime.now().strftime("%Y%m%d")
-output_file_path = os.path.join(output_folder, f"{today}_jumpit.log")
-log_file_name=os.path.join(output_folder, f"{today}_jumpit.log")
+output_file_path = os.path.join(output_folder, f"{today}.log")
+log_file_name=os.path.join(output_folder, f"{today}.log")
 
 yesterday= (datetime.today() - timedelta(days=1)).strftime('%Y%m%d')
-yesterday_log_file=os.path.join(output_folder, f"{yesterday}_jumpit.log")
+yesterday_log_file=os.path.join(output_folder, f"{yesterday}.log")
 
 # 어제 로그 파일이 있으면 읽기
 previous_urls = {}
@@ -171,7 +171,7 @@ def upload_to_s3(file_path, bucket_name, object_name):
 
 # S3 버킷 및 객체 이름 설정
 bucket_name = 't2jt'
-s3_file_key = f"job/DE/sources/jumpit/links/{today}_jumpit.log"
+s3_file_key = f"job/DE/sources/jumpit/links/{today}.log"
 
 # 로컬 파일을 S3에 업로드
 upload_to_s3(output_file_path, bucket_name, s3_file_key)
