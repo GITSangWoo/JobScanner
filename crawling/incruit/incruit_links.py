@@ -34,7 +34,7 @@ output_folder = "links"
 if not os.path.exists(output_folder):
     os.makedirs(output_folder)
 today = datetime.now().strftime("%Y%m%d")  # 오늘 날짜 (YYYYMMDD)
-log_file_name = os.path.join(output_folder, f"{today}_incruit.log")
+log_file_name = os.path.join(output_folder, f"{today}.log")
 
 # S3 업로드 경로 설정
 bucket_name = "t2jt"
@@ -43,7 +43,7 @@ object_name = f"job/DE/sources/{site_name}/links/{today}.txt"  # S3에서 사용
 
 # 어제 날짜로 로그파일 이름 설정
 yesterday = (datetime.today() - timedelta(days=1)).strftime('%Y%m%d')
-yesterday_log_file_name = os.path.join(output_folder, f"{yesterday}_incruit.log")
+yesterday_log_file_name = os.path.join(output_folder, f"{yesterday}.log")
 
 
 # 페이지 순차적으로 크롤링

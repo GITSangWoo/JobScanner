@@ -109,7 +109,7 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), opti
 # 오늘 날짜로 로그파일 이름 설정
 output_folder = "links"
 today = datetime.today().strftime('%Y%m%d')
-log_file_name = os.path.join(output_folder, f"{today}_incruit.log")  # 로컬 파일 사용
+log_file_name = os.path.join(output_folder, f"{today}.log")  # 로컬 파일 사용
 
 # DB 연결을 크롤링 시작 전에 한 번만 열고, 크롤링이 다 끝난 후 connection.close() 호출
 connection = connection_pool.get_connection()
