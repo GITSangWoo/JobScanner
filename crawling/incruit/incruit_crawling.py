@@ -248,7 +248,7 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
             except Exception as e:
                 print(f"Error processing {url}: {e}")
 
-        elif notice_status == "deleted" and work_status == "done":
+        elif notice_status == "deleted":
             removed_links.append(url)
 
     if removed_links:
