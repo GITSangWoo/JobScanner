@@ -144,6 +144,8 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), opti
 with open(log_file_name, 'r', encoding='utf-8') as file:
     lines = file.readlines()
 
+    removed_links = []
+
     for line in lines[1:]:
         columns = line.strip().split(',')
         url = columns[0]
@@ -159,7 +161,9 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
         except ValueError:
             deadline = None  # D-day 값이 유효하지 않으면 deadline은 None
         
-        if notice_status == "update" and work_status == "null":
+        if notice_status == "deleted" and work_status == "null":
+            removed_links.append(url)
+        elif notice_status == "update" and work_status == "null":
             print(f"Starting crawl for {url}")
             crawl_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
@@ -226,6 +230,9 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
 
             except Exception as e:
                 print(f"Error processing {url}: {e}")
+
+    if removed_links:
+        update_removed_links_in_db(removed_links, connection)  # Update removed links in DB
 
 driver.quit()
 connection.close()
