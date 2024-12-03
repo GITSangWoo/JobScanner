@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
 import time
 from datetime import datetime
+from io import StringIO
 
 # AWS S3 클라이언트 설정
 s3_client = boto3.client('s3')
@@ -27,22 +28,22 @@ def load_existing_links(bucket_name, s3_file_path):
 
     # S3 파일에서 링크 읽기
     try:
-        s3_client.download_file(bucket_name, s3_file_path, file_name)
-        print(f"S3 파일을 로컬로 다운로드: {file_name}")
-        with open(file_name, "r", encoding="utf-8") as file:
-            existing_links.update(line.strip() for line in file.readlines())
+        response = s3_client.get_object(Bucket=bucket_name, Key=s3_file_path)
+        content = response['Body'].read().decode('utf-8')
+        existing_links.update(line.strip() for line in content.splitlines())
+        print(f"S3에서 기존 링크를 로드했습니다. 총 {len(existing_links)}개의 링크.")
     except ClientError as e:
-        if e.response['Error']['Code'] == "404":
-            print("S3에 기존 파일이 존재하지 않습니다. 새로 생성합니다.")
+        if e.response['Error']['Code'] == "NoSuchKey":
+            print("S3에 오늘 파일이 존재하지 않습니다. 새로 생성합니다.")
         else:
-            print(f"S3 파일 다운로드 중 오류 발생: {e}")
+            print(f"S3 파일 로드 중 오류 발생: {e}")
 
     return existing_links
 
-# S3에 파일 업로드 함수
-def upload_to_s3(local_file_path, bucket_name, s3_file_path):
+# S3에 텍스트 데이터 업로드 함수
+def upload_to_s3_from_memory(data, bucket_name, s3_file_path):
     try:
-        s3_client.upload_file(local_file_path, bucket_name, s3_file_path)
+        s3_client.put_object(Bucket=bucket_name, Key=s3_file_path, Body=data)
         print(f"파일이 S3에 성공적으로 업로드되었습니다. S3 경로: s3://{bucket_name}/{s3_file_path}")
     except NoCredentialsError:
         print("AWS 자격 증명 오류: 자격 증명이 없습니다.")
@@ -107,11 +108,9 @@ def scrape_links():
 
     # S3에 새 데이터 저장
     if new_links:
-        with open(file_name, "w", encoding="utf-8") as file:
-            for link in new_links:
-                file.write(f"{link}\n")
-
-        upload_to_s3(file_name, bucket_name, s3_file_path)
+        # 메모리에 데이터를 작성
+        output_data = "\n".join(new_links)
+        upload_to_s3_from_memory(output_data, bucket_name, s3_file_path)
         print(f"총 {len(new_links)}개의 링크를 S3에 저장하였습니다.")
     else:
         print("새로 저장할 링크가 없습니다.")

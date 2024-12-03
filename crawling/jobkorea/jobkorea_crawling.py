@@ -45,6 +45,11 @@ insert_query = """
     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
 """
 
+# 작업 상태 기록 함수
+def log_status(url, status, task_status):
+    time_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    logging.info(f"{url} - {status} - {task_status} - {time_now}")
+
 # Selenium 웹 드라이버 설정
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
 
@@ -68,7 +73,7 @@ today_date = datetime.now().strftime("%Y%m%d")
 # 오늘 날짜 파일 경로 설정
 today_links_file = f"{prefix}/{today_date}.txt"
 
-# 가장 최근 날짜 파일 경로 가져오기 (오늘 날짜 파일 제외)
+# 가장 최근 날짜 파일 가져오기 (오늘 날짜 제외)
 def get_latest_file_exclude_today(bucket_name, prefix, today_date):
     response = s3_client.list_objects_v2(Bucket=bucket_name, Prefix=prefix)
     if 'Contents' not in response:
@@ -83,48 +88,61 @@ def get_latest_file_exclude_today(bucket_name, prefix, today_date):
     files.sort(reverse=True)  # 최신 파일을 맨 위로 정렬
     return files[0] if files else None
 
-# 최신 날짜 파일 가져오기 (오늘 날짜 제외)
+# 가장 최근 날짜 파일을 찾고 없으면 빈 값을 반환
 latest_file = get_latest_file_exclude_today(bucket_name, prefix, today_date)
 
+# 최신 파일이 없을 경우 빈 값을 반환
+if not latest_file:
+    logging.info("가장 최근 날짜 파일을 찾을 수 없으므로 빈 값을 사용합니다.")
+    latest_file = ""  # 빈 값 설정
+
+# 최신 파일명에서 날짜 추출
 if latest_file:
-    # 최신 파일명에서 날짜 추출
     latest_date = latest_file.split('/')[-1].split('.')[0]  # 예: '20241202'
     latest_links_file = f"{prefix}/{latest_date}.txt"
-
-    logging.info(f"가장 최신 파일 (오늘 제외): {latest_links_file}")
+    logging.info(f"사용할 파일: {latest_links_file}")
 else:
-    logging.error("최신 파일을 찾을 수 없습니다.")
-    driver.quit()
-    exit()
+    latest_links_file = ""
+    logging.info("최신 파일이 없으므로 빈 값을 사용합니다.")
 
 # 오늘 날짜 파일 읽기
 today_urls = read_s3_file(bucket_name, today_links_file)
 
-# 최신 날짜 파일 읽기
-latest_urls = read_s3_file(bucket_name, latest_links_file)
+# 최신 날짜 파일 읽기 (빈 값이 있을 경우 실행되지 않음)
+if latest_links_file:
+    latest_urls = read_s3_file(bucket_name, latest_links_file)
+else:
+    latest_urls = set()  # 빈 값 처리
 
 # URL 비교
-if today_urls and latest_urls:
-    # 새 URL 계산
-    new_today_urls = today_urls - latest_urls
-    # 제거된 URL 계산
-    removed_urls = latest_urls - today_urls
+if today_urls:
+    # 최신 파일이 존재할 경우 비교하여 새로운 URL과 제거된 URL을 계산
+    if latest_urls:
+        # 새 URL 계산
+        new_today_urls = today_urls - latest_urls
+        # 제거된 URL 계산
+        removed_urls = latest_urls - today_urls
+        # 기존 URL 계산 (교집합)
+        existing_urls = today_urls & latest_urls
 
-    logging.info(f"새 URL 수: {len(new_today_urls)}, 제거된 URL 수: {len(removed_urls)}")
+        logging.info(f"새 URL 수: {len(new_today_urls)}, 제거된 URL 수: {len(removed_urls)}")
+        print(f"[INFO] 새 URL 수: {len(new_today_urls)}개")
+        print(f"[INFO] remove된 공고 수: {len(removed_urls)}개")
+        print(f"[INFO] 기존에 있던 URL 수: {len(existing_urls)}개")
 
+        # 기존 URL들에 대해 log_status 호출
+        for url in existing_urls:
+            log_status(url, "exist", "done")
+
+    else:
+        # 최신 파일이 없을 경우 removed_urls는 빈 값
+        new_today_urls = today_urls
+        removed_urls = set()
+        logging.info(f"새 URL 수: {len(new_today_urls)}, 제거된 URL 수: {len(removed_urls)}")
+        print(f"[INFO] 새 URL 수: {len(new_today_urls)}개")
+        print(f"[INFO] remove된 공고 수: {len(removed_urls)}개")
 else:
-    logging.error(f"{today_links_file} 또는 {latest_links_file}을(를) 읽을 수 없습니다.")
-
-# 출력: 어제는 있었지만 오늘은 없는 URL 수
-print(f"[INFO] remove된 공고 수: {len(removed_urls)}개")
-
-# 출력: 어제는 없었지만 오늘은 있는 URL 수
-print(f"[INFO] 오늘 새로 create된 공고 수: {len(new_today_urls)}개")
-
-# 작업 상태 기록 함수
-def log_status(url, status, task_status):
-    time_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-    logging.info(f"{url} - {status} - {task_status} - {time_now}")
+    logging.error(f"{today_links_file}을(를) 읽을 수 없습니다.")
 
 # text와 image 디렉토리 생성 (현재 작업 디렉토리에서)
 text_dir = "txt"
@@ -175,11 +193,21 @@ def upload_to_s3(local_file_path, bucket_name, s3_path):
         print(f"[ERROR] {local_file_path}를 S3로 업로드하는 중 오류가 발생했습니다.")
         return None
 
+processed_urls = set()  # 처리된 URL들을 저장할 집합
+
+# 크롤링 시작 전에 이미 처리된 URL을 읽어옵니다 (예: 데이터베이스나 로그에서).
+# 예를 들어, 로그에서 `done` 상태인 URL만 추출하여 `processed_urls`에 추가합니다.
+with open('log.txt', 'r') as log_file:
+    for line in log_file:
+        if 'update - done' in line:
+            url = line.split(' ')[0]  # 로그에서 URL 추출
+            processed_urls.add(url)
+
 # 각 링크 처리
 for url in new_today_urls:
-    url = url.strip()  # 링크에서 공백 제거
-    if not url:
-        continue  # 빈 라인은 건너뜁니다
+    url = url.strip()
+    if not url or url in processed_urls:
+        continue
 
     try:
         # 페이지 열기

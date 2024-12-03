@@ -2,504 +2,1438 @@
 Get LATEST chromedriver version for google-chrome
 Get LATEST chromedriver version for google-chrome
 Driver [/home/tommy/.wdm/drivers/chromedriver/linux64/131.0.6778.85/chromedriver-linux64/chromedriver] found in cache
-가장 최신 파일 (오늘 제외): job/DE/sources/jobkorea/links/20241129.txt
-새 URL 수: 163, 제거된 URL 수: 336
-https://www.jobkorea.co.kr/Recruit/GI_Read/46014843 - update - done - 2024-12-02 10:43:54
-https://www.jobkorea.co.kr/Recruit/GI_Read/46026864 - update - done - 2024-12-02 10:44:01
-https://www.jobkorea.co.kr/Recruit/GI_Read/45998744 - update - done - 2024-12-02 10:44:08
-https://www.jobkorea.co.kr/Recruit/GI_Read/46028049 - update - done - 2024-12-02 10:44:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021367 - update - done - 2024-12-02 10:44:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023722 - update - done - 2024-12-02 10:44:29
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021980 - update - done - 2024-12-02 10:44:45
-https://www.jobkorea.co.kr/Recruit/GI_Read/46027914 - update - done - 2024-12-02 10:44:53
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020556 - update - done - 2024-12-02 10:45:00
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020971 - update - done - 2024-12-02 10:45:07
-https://www.jobkorea.co.kr/Recruit/GI_Read/45887164 - update - done - 2024-12-02 10:45:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46024834 - update - done - 2024-12-02 10:45:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021000 - update - done - 2024-12-02 10:45:29
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021593 - update - done - 2024-12-02 10:45:36
-https://www.jobkorea.co.kr/Recruit/GI_Read/46017254 - update - done - 2024-12-02 10:45:44
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020836 - update - done - 2024-12-02 10:45:51
-https://www.jobkorea.co.kr/Recruit/GI_Read/46025939 - update - done - 2024-12-02 10:45:58
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021267 - update - done - 2024-12-02 10:46:05
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022490 - update - done - 2024-12-02 10:46:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023017 - update - done - 2024-12-02 10:46:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46019879 - update - done - 2024-12-02 10:46:27
-https://www.jobkorea.co.kr/Recruit/GI_Read/46024692 - update - done - 2024-12-02 10:46:35
-https://www.jobkorea.co.kr/Recruit/GI_Read/46011398 - update - done - 2024-12-02 10:46:41
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023237 - update - done - 2024-12-02 10:46:48
-https://www.jobkorea.co.kr/Recruit/GI_Read/46017716 - update - done - 2024-12-02 10:46:55
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023329 - update - done - 2024-12-02 10:47:03
-https://www.jobkorea.co.kr/Recruit/GI_Read/46013960 - update - done - 2024-12-02 10:47:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46011975 - update - done - 2024-12-02 10:47:29
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022494 - update - done - 2024-12-02 10:47:36
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020120 - update - done - 2024-12-02 10:47:45
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023842 - update - done - 2024-12-02 10:47:51
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021125 - update - done - 2024-12-02 10:48:00
-https://www.jobkorea.co.kr/Recruit/GI_Read/46019998 - update - done - 2024-12-02 10:48:08
-https://www.jobkorea.co.kr/Recruit/GI_Read/46011009 - update - done - 2024-12-02 10:48:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46017675 - update - done - 2024-12-02 10:48:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022577 - update - done - 2024-12-02 10:48:28
-https://www.jobkorea.co.kr/Recruit/GI_Read/45795502 - update - done - 2024-12-02 10:48:36
-https://www.jobkorea.co.kr/Recruit/GI_Read/46010748 - update - done - 2024-12-02 10:48:43
-https://www.jobkorea.co.kr/Recruit/GI_Read/45927062 - update - done - 2024-12-02 10:48:51
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021993 - update - done - 2024-12-02 10:48:58
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020875 - update - done - 2024-12-02 10:49:05
-https://www.jobkorea.co.kr/Recruit/GI_Read/46010887 - update - done - 2024-12-02 10:49:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/45978388 - update - done - 2024-12-02 10:49:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46024900 - update - done - 2024-12-02 10:49:28
-https://www.jobkorea.co.kr/Recruit/GI_Read/46028999 - update - done - 2024-12-02 10:49:35
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022810 - update - done - 2024-12-02 10:49:43
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020717 - update - done - 2024-12-02 10:49:51
-https://www.jobkorea.co.kr/Recruit/GI_Read/46028528 - update - done - 2024-12-02 10:49:58
-https://www.jobkorea.co.kr/Recruit/GI_Read/46002202 - update - done - 2024-12-02 10:50:05
-https://www.jobkorea.co.kr/Recruit/GI_Read/45826187 - update - done - 2024-12-02 10:50:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46018476 - update - done - 2024-12-02 10:50:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46010756 - update - done - 2024-12-02 10:50:26
-https://www.jobkorea.co.kr/Recruit/GI_Read/46019297 - update - done - 2024-12-02 10:50:43
-https://www.jobkorea.co.kr/Recruit/GI_Read/46027254 - update - done - 2024-12-02 10:50:50
-https://www.jobkorea.co.kr/Recruit/GI_Read/46027933 - update - done - 2024-12-02 10:50:58
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021964 - update - done - 2024-12-02 10:51:05
-https://www.jobkorea.co.kr/Recruit/GI_Read/46019016 - update - done - 2024-12-02 10:51:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/45680852 - update - done - 2024-12-02 10:51:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021678 - update - done - 2024-12-02 10:51:28
-https://www.jobkorea.co.kr/Recruit/GI_Read/46011182 - update - done - 2024-12-02 10:51:45
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023364 - update - done - 2024-12-02 10:51:52
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023137 - update - done - 2024-12-02 10:52:09
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020983 - update - done - 2024-12-02 10:52:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022790 - update - done - 2024-12-02 10:52:23
-https://www.jobkorea.co.kr/Recruit/GI_Read/46016027 - update - done - 2024-12-02 10:52:30
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022411 - update - done - 2024-12-02 10:52:37
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020581 - update - done - 2024-12-02 10:52:44
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022119 - update - done - 2024-12-02 10:52:51
-https://www.jobkorea.co.kr/Recruit/GI_Read/45746975 - update - done - 2024-12-02 10:52:58
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020103 - update - done - 2024-12-02 10:53:05
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023220 - update - done - 2024-12-02 10:53:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020462 - update - done - 2024-12-02 10:53:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46018771 - update - done - 2024-12-02 10:53:28
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023550 - update - done - 2024-12-02 10:53:35
-https://www.jobkorea.co.kr/Recruit/GI_Read/46028427 - update - done - 2024-12-02 10:53:41
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021716 - update - done - 2024-12-02 10:53:48
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021104 - update - done - 2024-12-02 10:53:56
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022105 - update - done - 2024-12-02 10:54:03
-https://www.jobkorea.co.kr/Recruit/GI_Read/46019151 - update - done - 2024-12-02 10:54:11
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022774 - update - done - 2024-12-02 10:54:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46029433 - update - done - 2024-12-02 10:54:25
-https://www.jobkorea.co.kr/Recruit/GI_Read/46028292 - update - done - 2024-12-02 10:54:33
-https://www.jobkorea.co.kr/Recruit/GI_Read/45908857 - update - done - 2024-12-02 10:54:40
-https://www.jobkorea.co.kr/Recruit/GI_Read/46010764 - update - done - 2024-12-02 10:54:47
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022558 - update - done - 2024-12-02 10:55:04
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021040 - update - done - 2024-12-02 10:55:11
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022320 - update - done - 2024-12-02 10:55:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021398 - update - done - 2024-12-02 10:55:26
-https://www.jobkorea.co.kr/Recruit/GI_Read/46018827 - update - done - 2024-12-02 10:55:33
-https://www.jobkorea.co.kr/Recruit/GI_Read/45923870 - update - done - 2024-12-02 10:55:41
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022282 - update - done - 2024-12-02 10:55:58
-https://www.jobkorea.co.kr/Recruit/GI_Read/46025317 - update - done - 2024-12-02 10:56:06
-https://www.jobkorea.co.kr/Recruit/GI_Read/46009032 - update - done - 2024-12-02 10:56:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46019534 - update - done - 2024-12-02 10:56:30
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022188 - update - done - 2024-12-02 10:56:47
-https://www.jobkorea.co.kr/Recruit/GI_Read/46016089 - update - done - 2024-12-02 10:56:53
-https://www.jobkorea.co.kr/Recruit/GI_Read/46028265 - update - done - 2024-12-02 10:57:00
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021946 - update - done - 2024-12-02 10:57:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46017978 - update - done - 2024-12-02 10:57:24
-https://www.jobkorea.co.kr/Recruit/GI_Read/46010880 - update - done - 2024-12-02 10:57:31
-https://www.jobkorea.co.kr/Recruit/GI_Read/46010926 - update - done - 2024-12-02 10:57:37
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020510 - update - done - 2024-12-02 10:57:44
-https://www.jobkorea.co.kr/Recruit/GI_Read/46012811 - update - done - 2024-12-02 10:57:52
-https://www.jobkorea.co.kr/Recruit/GI_Read/46014617 - update - done - 2024-12-02 10:57:58
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023001 - update - done - 2024-12-02 10:58:06
-https://www.jobkorea.co.kr/Recruit/GI_Read/45758479 - update - done - 2024-12-02 10:58:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46018132 - update - done - 2024-12-02 10:58:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46014381 - update - done - 2024-12-02 10:58:37
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023194 - update - done - 2024-12-02 10:58:44
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023854 - update - done - 2024-12-02 10:58:51
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020225 - update - done - 2024-12-02 10:58:58
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021091 - update - done - 2024-12-02 10:59:08
-https://www.jobkorea.co.kr/Recruit/GI_Read/46024175 - update - done - 2024-12-02 10:59:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022733 - update - done - 2024-12-02 10:59:23
-https://www.jobkorea.co.kr/Recruit/GI_Read/46028437 - update - done - 2024-12-02 10:59:31
-https://www.jobkorea.co.kr/Recruit/GI_Read/46019622 - update - done - 2024-12-02 10:59:48
-https://www.jobkorea.co.kr/Recruit/GI_Read/46010956 - update - done - 2024-12-02 10:59:56
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022754 - update - done - 2024-12-02 11:00:03
-https://www.jobkorea.co.kr/Recruit/GI_Read/46018304 - update - done - 2024-12-02 11:00:10
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020238 - update - done - 2024-12-02 11:00:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/45997834 - update - done - 2024-12-02 11:00:25
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021154 - update - done - 2024-12-02 11:00:32
-https://www.jobkorea.co.kr/Recruit/GI_Read/46027977 - update - done - 2024-12-02 11:00:41
-https://www.jobkorea.co.kr/Recruit/GI_Read/46026890 - update - done - 2024-12-02 11:00:48
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022181 - update - done - 2024-12-02 11:00:56
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022316 - update - done - 2024-12-02 11:01:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46019957 - update - done - 2024-12-02 11:01:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46015632 - update - done - 2024-12-02 11:01:28
-https://www.jobkorea.co.kr/Recruit/GI_Read/46029334 - update - done - 2024-12-02 11:01:35
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020341 - update - done - 2024-12-02 11:01:43
-https://www.jobkorea.co.kr/Recruit/GI_Read/46026887 - update - done - 2024-12-02 11:01:50
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022201 - update - done - 2024-12-02 11:01:58
-https://www.jobkorea.co.kr/Recruit/GI_Read/46018354 - update - done - 2024-12-02 11:02:04
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022168 - update - done - 2024-12-02 11:02:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022537 - update - done - 2024-12-02 11:02:29
-https://www.jobkorea.co.kr/Recruit/GI_Read/46012152 - update - done - 2024-12-02 11:02:36
-https://www.jobkorea.co.kr/Recruit/GI_Read/46012350 - update - done - 2024-12-02 11:02:43
-https://www.jobkorea.co.kr/Recruit/GI_Read/46010900 - update - done - 2024-12-02 11:02:51
-https://www.jobkorea.co.kr/Recruit/GI_Read/46028285 - update - done - 2024-12-02 11:02:59
-https://www.jobkorea.co.kr/Recruit/GI_Read/45701862 - update - done - 2024-12-02 11:03:06
-https://www.jobkorea.co.kr/Recruit/GI_Read/45906250 - update - done - 2024-12-02 11:03:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020704 - update - done - 2024-12-02 11:03:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021078 - update - done - 2024-12-02 11:03:27
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022515 - update - done - 2024-12-02 11:03:35
-https://www.jobkorea.co.kr/Recruit/GI_Read/45826425 - update - done - 2024-12-02 11:03:43
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022445 - update - done - 2024-12-02 11:03:50
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020127 - update - done - 2024-12-02 11:03:57
-https://www.jobkorea.co.kr/Recruit/GI_Read/46028605 - update - done - 2024-12-02 11:04:04
-https://www.jobkorea.co.kr/Recruit/GI_Read/46017095 - update - done - 2024-12-02 11:04:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022341 - update - done - 2024-12-02 11:04:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46022302 - update - done - 2024-12-02 11:04:26
-https://www.jobkorea.co.kr/Recruit/GI_Read/46011173 - update - done - 2024-12-02 11:04:43
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020118 - update - done - 2024-12-02 11:04:50
-https://www.jobkorea.co.kr/Recruit/GI_Read/46016085 - update - done - 2024-12-02 11:04:57
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020812 - update - done - 2024-12-02 11:05:04
-https://www.jobkorea.co.kr/Recruit/GI_Read/45689124 - update - done - 2024-12-02 11:05:11
-https://www.jobkorea.co.kr/Recruit/GI_Read/46026865 - update - done - 2024-12-02 11:05:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46020535 - update - done - 2024-12-02 11:05:35
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023534 - update - done - 2024-12-02 11:05:42
-https://www.jobkorea.co.kr/Recruit/GI_Read/46019870 - update - done - 2024-12-02 11:05:50
-https://www.jobkorea.co.kr/Recruit/GI_Read/46011403 - update - done - 2024-12-02 11:05:58
-https://www.jobkorea.co.kr/Recruit/GI_Read/46023824 - update - done - 2024-12-02 11:06:04
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - update - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:12
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:13
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:14
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:15
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:16
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:17
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:18
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:19
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:20
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:21
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:22
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:23
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:23
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:23
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:23
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:23
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:23
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:23
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:23
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:23
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:23
-https://www.jobkorea.co.kr/Recruit/GI_Read/46021731 - removed - done - 2024-12-02 11:06:23
+오늘 날짜 파일을 제외한 파일이 없습니다.
+가장 최근 날짜 파일을 찾을 수 없으므로 빈 값을 사용합니다.
+최신 파일이 없으므로 빈 값을 사용합니다.
+새 URL 수: 1176, 제거된 URL 수: 0
+https://www.jobkorea.co.kr/Recruit/GI_Read/46028265 - update - done - 2024-12-03 10:07:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45985386 - update - done - 2024-12-03 10:07:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45766070 - update - done - 2024-12-03 10:07:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/45863558 - update - done - 2024-12-03 10:07:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/46018771 - update - done - 2024-12-03 10:07:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45694391 - update - done - 2024-12-03 10:07:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/46019870 - update - done - 2024-12-03 10:07:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/46021091 - update - done - 2024-12-03 10:08:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/46005656 - update - done - 2024-12-03 10:08:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/45922645 - update - done - 2024-12-03 10:08:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45871762 - update - done - 2024-12-03 10:08:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45950469 - update - done - 2024-12-03 10:08:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/46010887 - update - done - 2024-12-03 10:08:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45957297 - update - done - 2024-12-03 10:09:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/45918765 - update - done - 2024-12-03 10:09:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874789 - update - done - 2024-12-03 10:09:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/45997898 - update - done - 2024-12-03 10:09:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45994604 - update - done - 2024-12-03 10:09:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45873978 - update - done - 2024-12-03 10:09:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/45746338 - update - done - 2024-12-03 10:09:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/45893373 - update - done - 2024-12-03 10:10:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/45877954 - update - done - 2024-12-03 10:10:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/46016089 - update - done - 2024-12-03 10:10:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/46007368 - update - done - 2024-12-03 10:10:25
+https://www.jobkorea.co.kr/Recruit/GI_Read/45685304 - update - done - 2024-12-03 10:10:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45902816 - update - done - 2024-12-03 10:11:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45883534 - update - done - 2024-12-03 10:11:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45879832 - update - done - 2024-12-03 10:11:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/46032163 - update - done - 2024-12-03 10:11:25
+https://www.jobkorea.co.kr/Recruit/GI_Read/45885575 - update - done - 2024-12-03 10:11:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033415 - update - done - 2024-12-03 10:11:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/46022282 - update - done - 2024-12-03 10:12:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45879797 - update - done - 2024-12-03 10:12:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45977144 - update - done - 2024-12-03 10:12:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45687479 - update - done - 2024-12-03 10:12:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/45957262 - update - done - 2024-12-03 10:12:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/45994852 - update - done - 2024-12-03 10:12:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/45914850 - update - done - 2024-12-03 10:13:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/46027914 - update - done - 2024-12-03 10:13:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45887114 - update - done - 2024-12-03 10:13:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45906866 - update - done - 2024-12-03 10:13:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45887691 - update - done - 2024-12-03 10:13:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45992449 - update - done - 2024-12-03 10:13:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45723684 - update - done - 2024-12-03 10:14:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/45880404 - update - done - 2024-12-03 10:14:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/46003990 - update - done - 2024-12-03 10:14:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919450 - update - done - 2024-12-03 10:14:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45970369 - update - done - 2024-12-03 10:14:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/45958070 - update - done - 2024-12-03 10:14:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45772902 - update - done - 2024-12-03 10:15:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/45882674 - update - done - 2024-12-03 10:15:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919366 - update - done - 2024-12-03 10:15:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/45979488 - update - done - 2024-12-03 10:15:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45858980 - update - done - 2024-12-03 10:15:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874537 - update - done - 2024-12-03 10:15:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/46036027 - update - done - 2024-12-03 10:16:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45906098 - update - done - 2024-12-03 10:16:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45689124 - update - done - 2024-12-03 10:16:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45903873 - update - done - 2024-12-03 10:16:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45725509 - update - done - 2024-12-03 10:16:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45907603 - update - done - 2024-12-03 10:16:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45904583 - update - done - 2024-12-03 10:16:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45997908 - update - done - 2024-12-03 10:17:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45746975 - update - done - 2024-12-03 10:17:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45978820 - update - done - 2024-12-03 10:17:25
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034186 - update - done - 2024-12-03 10:17:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45882580 - update - done - 2024-12-03 10:17:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/45969184 - update - done - 2024-12-03 10:17:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45999830 - update - done - 2024-12-03 10:17:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45948153 - update - done - 2024-12-03 10:18:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/45996635 - update - done - 2024-12-03 10:18:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/46009452 - update - done - 2024-12-03 10:18:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/46014192 - update - done - 2024-12-03 10:18:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45865988 - update - done - 2024-12-03 10:18:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45980075 - update - done - 2024-12-03 10:18:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/45974381 - update - done - 2024-12-03 10:18:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/46018132 - update - done - 2024-12-03 10:18:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/46029292 - update - done - 2024-12-03 10:18:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/45971933 - update - done - 2024-12-03 10:19:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45786462 - update - done - 2024-12-03 10:19:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030628 - update - done - 2024-12-03 10:19:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/45961027 - update - done - 2024-12-03 10:19:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45945712 - update - done - 2024-12-03 10:19:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45901124 - update - done - 2024-12-03 10:19:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45781322 - update - done - 2024-12-03 10:19:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45978431 - update - done - 2024-12-03 10:20:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/45951133 - update - done - 2024-12-03 10:20:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45981856 - update - done - 2024-12-03 10:20:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919468 - update - done - 2024-12-03 10:20:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/46017095 - update - done - 2024-12-03 10:20:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45863761 - update - done - 2024-12-03 10:20:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45936489 - update - done - 2024-12-03 10:21:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/46005618 - update - done - 2024-12-03 10:21:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45990343 - update - done - 2024-12-03 10:21:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919444 - update - done - 2024-12-03 10:21:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034219 - update - done - 2024-12-03 10:21:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45999537 - update - done - 2024-12-03 10:21:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45819959 - update - done - 2024-12-03 10:21:42
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/45960067 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/45960067 - update - failed - 2024-12-03 10:21:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/45998744 - update - done - 2024-12-03 10:21:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45864806 - update - done - 2024-12-03 10:22:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45956761 - update - done - 2024-12-03 10:22:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/46016085 - update - done - 2024-12-03 10:22:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/45901813 - update - done - 2024-12-03 10:22:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45981203 - update - done - 2024-12-03 10:22:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/46006296 - update - done - 2024-12-03 10:22:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/45972068 - update - done - 2024-12-03 10:22:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45924348 - update - done - 2024-12-03 10:22:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45938903 - update - done - 2024-12-03 10:23:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/46006089 - update - done - 2024-12-03 10:23:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874985 - update - done - 2024-12-03 10:23:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919412 - update - done - 2024-12-03 10:23:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45917942 - update - done - 2024-12-03 10:23:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45817035 - update - done - 2024-12-03 10:23:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033615 - update - done - 2024-12-03 10:23:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45970982 - update - done - 2024-12-03 10:23:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/46014364 - update - done - 2024-12-03 10:23:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/45969010 - update - done - 2024-12-03 10:24:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45726068 - update - done - 2024-12-03 10:24:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/46012350 - update - done - 2024-12-03 10:24:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/45886050 - update - done - 2024-12-03 10:24:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/46008881 - update - done - 2024-12-03 10:24:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/46001672 - update - done - 2024-12-03 10:24:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/46016360 - update - done - 2024-12-03 10:24:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/46008428 - update - done - 2024-12-03 10:24:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/46015442 - update - done - 2024-12-03 10:25:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/46032198 - update - done - 2024-12-03 10:25:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/46028605 - update - done - 2024-12-03 10:25:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45911748 - update - done - 2024-12-03 10:25:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919022 - update - done - 2024-12-03 10:25:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45711716 - update - done - 2024-12-03 10:25:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45879789 - update - done - 2024-12-03 10:25:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45887926 - update - done - 2024-12-03 10:26:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45944087 - update - done - 2024-12-03 10:26:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45766758 - update - done - 2024-12-03 10:26:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45996275 - update - done - 2024-12-03 10:26:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/46009474 - update - done - 2024-12-03 10:26:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/45978880 - update - done - 2024-12-03 10:27:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/45976230 - update - done - 2024-12-03 10:27:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/46006943 - update - done - 2024-12-03 10:27:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45762291 - update - done - 2024-12-03 10:27:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/45888183 - update - done - 2024-12-03 10:27:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45947390 - update - done - 2024-12-03 10:27:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45901717 - update - done - 2024-12-03 10:27:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45985542 - update - done - 2024-12-03 10:27:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45954992 - update - done - 2024-12-03 10:28:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45932988 - update - done - 2024-12-03 10:28:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45853469 - update - done - 2024-12-03 10:28:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/45752115 - update - done - 2024-12-03 10:28:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45685776 - update - done - 2024-12-03 10:28:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45814005 - update - done - 2024-12-03 10:28:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/45846148 - update - done - 2024-12-03 10:28:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/46014812 - update - done - 2024-12-03 10:28:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/46027977 - update - done - 2024-12-03 10:29:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/46032908 - update - done - 2024-12-03 10:29:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45862918 - update - done - 2024-12-03 10:29:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45948420 - update - done - 2024-12-03 10:29:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/45965036 - update - done - 2024-12-03 10:29:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/46003403 - update - done - 2024-12-03 10:29:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/45710669 - update - done - 2024-12-03 10:30:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/46025317 - update - done - 2024-12-03 10:30:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/46019957 - update - done - 2024-12-03 10:30:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45947775 - update - done - 2024-12-03 10:30:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/45716875 - update - done - 2024-12-03 10:30:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/45998526 - update - done - 2024-12-03 10:30:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/45915280 - update - done - 2024-12-03 10:30:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45997130 - update - done - 2024-12-03 10:30:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/46029514 - update - done - 2024-12-03 10:31:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45978279 - update - done - 2024-12-03 10:31:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034163 - update - done - 2024-12-03 10:31:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/46022490 - update - done - 2024-12-03 10:31:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45821952 - update - done - 2024-12-03 10:31:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/46013139 - update - done - 2024-12-03 10:31:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/46035570 - update - done - 2024-12-03 10:31:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45710856 - update - done - 2024-12-03 10:31:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45709812 - update - done - 2024-12-03 10:32:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/46013479 - update - done - 2024-12-03 10:32:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/45924677 - update - done - 2024-12-03 10:32:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/45909397 - update - done - 2024-12-03 10:32:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45894076 - update - done - 2024-12-03 10:32:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034701 - update - done - 2024-12-03 10:32:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/45823514 - update - done - 2024-12-03 10:32:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919297 - update - done - 2024-12-03 10:32:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45896360 - update - done - 2024-12-03 10:32:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45990722 - update - done - 2024-12-03 10:33:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45695633 - update - done - 2024-12-03 10:33:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45944194 - update - done - 2024-12-03 10:33:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45712792 - update - done - 2024-12-03 10:33:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45909253 - update - done - 2024-12-03 10:33:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45969434 - update - done - 2024-12-03 10:33:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/45703288 - update - done - 2024-12-03 10:33:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/46003953 - update - done - 2024-12-03 10:33:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45899584 - update - done - 2024-12-03 10:34:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/46014892 - update - done - 2024-12-03 10:34:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/46020836 - update - done - 2024-12-03 10:34:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45898598 - update - done - 2024-12-03 10:34:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874981 - update - done - 2024-12-03 10:34:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45822970 - update - done - 2024-12-03 10:34:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45967555 - update - done - 2024-12-03 10:34:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45912007 - update - done - 2024-12-03 10:34:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/45973594 - update - done - 2024-12-03 10:34:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45966905 - update - done - 2024-12-03 10:35:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/46018354 - update - done - 2024-12-03 10:35:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45955438 - update - done - 2024-12-03 10:35:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/46022188 - update - done - 2024-12-03 10:35:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/46020120 - update - done - 2024-12-03 10:35:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45969202 - update - done - 2024-12-03 10:35:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/45998019 - update - done - 2024-12-03 10:35:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/45764810 - update - done - 2024-12-03 10:36:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45918588 - update - done - 2024-12-03 10:36:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45942433 - update - done - 2024-12-03 10:36:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45867674 - update - done - 2024-12-03 10:36:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919329 - update - done - 2024-12-03 10:36:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45773035 - update - done - 2024-12-03 10:36:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/45702861 - update - done - 2024-12-03 10:36:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45886912 - update - done - 2024-12-03 10:37:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/46022105 - update - done - 2024-12-03 10:37:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45701862 - update - done - 2024-12-03 10:37:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/46035188 - update - done - 2024-12-03 10:37:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/46022445 - update - done - 2024-12-03 10:37:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45967237 - update - done - 2024-12-03 10:37:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919522 - update - done - 2024-12-03 10:37:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/45906670 - update - done - 2024-12-03 10:37:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45974220 - update - done - 2024-12-03 10:37:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45733540 - update - done - 2024-12-03 10:38:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45983600 - update - done - 2024-12-03 10:38:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45912434 - update - done - 2024-12-03 10:38:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/45954387 - update - done - 2024-12-03 10:38:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45991787 - update - done - 2024-12-03 10:38:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45863446 - update - done - 2024-12-03 10:38:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/45959219 - update - done - 2024-12-03 10:38:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45942345 - update - done - 2024-12-03 10:38:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45966661 - update - done - 2024-12-03 10:39:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/46020875 - update - done - 2024-12-03 10:39:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/45902261 - update - done - 2024-12-03 10:39:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45928698 - update - done - 2024-12-03 10:39:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45868428 - update - done - 2024-12-03 10:39:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/46035883 - update - done - 2024-12-03 10:39:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/45956704 - update - done - 2024-12-03 10:39:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45922163 - update - done - 2024-12-03 10:39:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45819395 - update - done - 2024-12-03 10:39:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034236 - update - done - 2024-12-03 10:40:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45911960 - update - done - 2024-12-03 10:40:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45975654 - update - done - 2024-12-03 10:40:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/45879814 - update - done - 2024-12-03 10:40:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45966928 - update - done - 2024-12-03 10:40:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45812946 - update - done - 2024-12-03 10:40:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45763355 - update - done - 2024-12-03 10:40:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45790153 - update - done - 2024-12-03 10:41:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/46010992 - update - done - 2024-12-03 10:41:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45924781 - update - done - 2024-12-03 10:41:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45903686 - update - done - 2024-12-03 10:41:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45993140 - update - done - 2024-12-03 10:41:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034507 - update - done - 2024-12-03 10:41:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/45871956 - update - done - 2024-12-03 10:41:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/45873964 - update - done - 2024-12-03 10:41:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45922057 - update - done - 2024-12-03 10:42:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/46010926 - update - done - 2024-12-03 10:42:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45763361 - update - done - 2024-12-03 10:42:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45877540 - update - done - 2024-12-03 10:42:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45880094 - update - done - 2024-12-03 10:42:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/45910711 - update - done - 2024-12-03 10:42:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/45887574 - update - done - 2024-12-03 10:42:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030456 - update - done - 2024-12-03 10:42:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/46036472 - update - done - 2024-12-03 10:42:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/46009580 - update - done - 2024-12-03 10:43:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/45963167 - update - done - 2024-12-03 10:43:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034727 - update - done - 2024-12-03 10:43:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45950923 - update - done - 2024-12-03 10:43:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874911 - update - done - 2024-12-03 10:43:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/46019016 - update - done - 2024-12-03 10:43:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45820078 - update - done - 2024-12-03 10:43:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/46021980 - update - done - 2024-12-03 10:44:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45921018 - update - done - 2024-12-03 10:44:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/45663296 - update - done - 2024-12-03 10:44:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/46011867 - update - done - 2024-12-03 10:44:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45928216 - update - done - 2024-12-03 10:44:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45902627 - update - done - 2024-12-03 10:44:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/46021078 - update - done - 2024-12-03 10:44:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45733822 - update - done - 2024-12-03 10:45:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45972818 - update - done - 2024-12-03 10:45:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/46031744 - update - done - 2024-12-03 10:45:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/46022411 - update - done - 2024-12-03 10:45:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/46006536 - update - done - 2024-12-03 10:45:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/46002686 - update - done - 2024-12-03 10:45:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/45949313 - update - done - 2024-12-03 10:45:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/45982150 - update - done - 2024-12-03 10:45:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45887730 - update - done - 2024-12-03 10:46:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/46035601 - update - done - 2024-12-03 10:46:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/46020812 - update - done - 2024-12-03 10:46:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45948907 - update - done - 2024-12-03 10:46:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45962995 - update - done - 2024-12-03 10:46:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/45896288 - update - done - 2024-12-03 10:46:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/45957031 - update - done - 2024-12-03 10:46:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/45755804 - update - done - 2024-12-03 10:46:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030637 - update - done - 2024-12-03 10:47:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45974770 - update - done - 2024-12-03 10:47:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874953 - update - done - 2024-12-03 10:47:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/46011009 - update - done - 2024-12-03 10:47:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45913134 - update - done - 2024-12-03 10:47:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45996387 - update - done - 2024-12-03 10:47:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/45909618 - update - done - 2024-12-03 10:47:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/45941845 - update - done - 2024-12-03 10:47:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45884924 - update - done - 2024-12-03 10:48:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/45777248 - update - done - 2024-12-03 10:48:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/45989044 - update - done - 2024-12-03 10:48:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874040 - update - done - 2024-12-03 10:48:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/46011398 - update - done - 2024-12-03 10:48:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/46016389 - update - done - 2024-12-03 10:48:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45911857 - update - done - 2024-12-03 10:48:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/46032030 - update - done - 2024-12-03 10:48:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/45857909 - update - done - 2024-12-03 10:49:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45837651 - update - done - 2024-12-03 10:49:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45863570 - update - done - 2024-12-03 10:49:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45763360 - update - done - 2024-12-03 10:49:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45991933 - update - done - 2024-12-03 10:49:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919489 - update - done - 2024-12-03 10:49:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/46036168 - update - done - 2024-12-03 10:49:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/46014043 - update - done - 2024-12-03 10:50:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45780978 - update - done - 2024-12-03 10:50:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45766587 - update - done - 2024-12-03 10:50:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/45751330 - update - done - 2024-12-03 10:50:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/46013714 - update - done - 2024-12-03 10:50:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45860108 - update - done - 2024-12-03 10:50:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/46012979 - update - done - 2024-12-03 10:50:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/46013416 - update - done - 2024-12-03 10:51:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/46022558 - update - done - 2024-12-03 10:51:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45806442 - update - done - 2024-12-03 10:51:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45905815 - update - done - 2024-12-03 10:51:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/45749649 - update - done - 2024-12-03 10:51:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/45863373 - update - done - 2024-12-03 10:51:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/45887918 - update - done - 2024-12-03 10:52:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/45980607 - update - done - 2024-12-03 10:52:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45897768 - update - done - 2024-12-03 10:52:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/46035393 - update - done - 2024-12-03 10:52:25
+https://www.jobkorea.co.kr/Recruit/GI_Read/45979007 - update - done - 2024-12-03 10:52:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45929448 - update - done - 2024-12-03 10:52:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/46005668 - update - done - 2024-12-03 10:53:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874965 - update - done - 2024-12-03 10:53:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45991934 - update - done - 2024-12-03 10:53:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45767847 - update - done - 2024-12-03 10:53:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45841461 - update - done - 2024-12-03 10:53:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919289 - update - done - 2024-12-03 10:53:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45914091 - update - done - 2024-12-03 10:53:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/45686854 - update - done - 2024-12-03 10:53:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45755792 - update - done - 2024-12-03 10:54:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45964740 - update - done - 2024-12-03 10:54:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45966411 - update - done - 2024-12-03 10:54:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/45989048 - update - done - 2024-12-03 10:54:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/46001341 - update - done - 2024-12-03 10:54:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/45949176 - update - done - 2024-12-03 10:54:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/46016964 - update - done - 2024-12-03 10:55:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/45772367 - update - done - 2024-12-03 10:55:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874827 - update - done - 2024-12-03 10:55:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45770270 - update - done - 2024-12-03 10:55:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/46010764 - update - done - 2024-12-03 10:55:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45871682 - update - done - 2024-12-03 10:55:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/45901966 - update - done - 2024-12-03 10:56:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45870572 - update - done - 2024-12-03 10:56:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033210 - update - done - 2024-12-03 10:56:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45860579 - update - done - 2024-12-03 10:56:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45857741 - update - done - 2024-12-03 10:56:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/46019534 - update - done - 2024-12-03 10:56:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45802551 - update - done - 2024-12-03 10:57:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874899 - update - done - 2024-12-03 10:57:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45884035 - update - done - 2024-12-03 10:57:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45826465 - update - done - 2024-12-03 10:57:25
+https://www.jobkorea.co.kr/Recruit/GI_Read/45989010 - update - done - 2024-12-03 10:57:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45908333 - update - done - 2024-12-03 10:57:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/45980883 - update - done - 2024-12-03 10:57:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/46012957 - update - done - 2024-12-03 10:57:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45687902 - update - done - 2024-12-03 10:58:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45804371 - update - done - 2024-12-03 10:58:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45859178 - update - done - 2024-12-03 10:58:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/46031046 - update - done - 2024-12-03 10:58:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45774915 - update - done - 2024-12-03 10:58:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/45814553 - update - done - 2024-12-03 10:58:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/46012270 - update - done - 2024-12-03 10:58:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45998560 - update - done - 2024-12-03 10:59:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45981981 - update - done - 2024-12-03 10:59:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45921141 - update - done - 2024-12-03 10:59:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45880678 - update - done - 2024-12-03 10:59:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45920336 - update - done - 2024-12-03 10:59:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45974356 - update - done - 2024-12-03 10:59:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/45958873 - update - done - 2024-12-03 10:59:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/46032604 - update - done - 2024-12-03 10:59:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/46021593 - update - done - 2024-12-03 10:59:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45860596 - update - done - 2024-12-03 11:00:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45705437 - update - done - 2024-12-03 11:00:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45548916 - update - done - 2024-12-03 11:00:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/45875599 - update - done - 2024-12-03 11:00:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/45687149 - update - done - 2024-12-03 11:00:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/45835245 - update - done - 2024-12-03 11:00:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/46016288 - update - done - 2024-12-03 11:01:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/46024692 - update - done - 2024-12-03 11:01:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/45825486 - update - done - 2024-12-03 11:01:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919391 - update - done - 2024-12-03 11:01:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45689245 - update - done - 2024-12-03 11:01:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45776139 - update - done - 2024-12-03 11:01:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/45988886 - update - done - 2024-12-03 11:01:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/46028528 - update - done - 2024-12-03 11:01:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45923870 - update - done - 2024-12-03 11:02:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034828 - update - done - 2024-12-03 11:02:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45932793 - update - done - 2024-12-03 11:02:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/46035919 - update - done - 2024-12-03 11:02:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45761390 - update - done - 2024-12-03 11:02:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/45838212 - update - done - 2024-12-03 11:02:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/46020535 - update - done - 2024-12-03 11:03:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45976930 - update - done - 2024-12-03 11:03:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45966370 - update - done - 2024-12-03 11:03:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/46008912 - update - done - 2024-12-03 11:03:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45966364 - update - done - 2024-12-03 11:03:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45866828 - update - done - 2024-12-03 11:03:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/45798333 - update - done - 2024-12-03 11:03:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45870932 - update - done - 2024-12-03 11:04:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874998 - update - done - 2024-12-03 11:04:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033215 - update - done - 2024-12-03 11:04:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45913689 - update - done - 2024-12-03 11:04:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45873593 - update - done - 2024-12-03 11:04:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/45847650 - update - done - 2024-12-03 11:04:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/45960481 - update - done - 2024-12-03 11:04:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/45909233 - update - done - 2024-12-03 11:04:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45973864 - update - done - 2024-12-03 11:05:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/46012811 - update - done - 2024-12-03 11:05:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45999752 - update - done - 2024-12-03 11:05:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034489 - update - done - 2024-12-03 11:05:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45850920 - update - done - 2024-12-03 11:05:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033424 - update - done - 2024-12-03 11:05:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45911710 - update - done - 2024-12-03 11:05:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/45945239 - update - done - 2024-12-03 11:05:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45878636 - update - done - 2024-12-03 11:06:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/45963815 - update - done - 2024-12-03 11:06:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/46007787 - update - done - 2024-12-03 11:06:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/46001387 - update - done - 2024-12-03 11:06:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/46011403 - update - done - 2024-12-03 11:06:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45883403 - update - done - 2024-12-03 11:06:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45792158 - update - done - 2024-12-03 11:06:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033211 - update - done - 2024-12-03 11:07:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030159 - update - done - 2024-12-03 11:07:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/45890178 - update - done - 2024-12-03 11:07:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45795428 - update - done - 2024-12-03 11:07:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45686018 - update - done - 2024-12-03 11:07:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919495 - update - done - 2024-12-03 11:07:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/45923997 - update - done - 2024-12-03 11:07:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/45991050 - update - done - 2024-12-03 11:08:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45959453 - update - done - 2024-12-03 11:08:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45823442 - update - done - 2024-12-03 11:08:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/45727522 - update - done - 2024-12-03 11:08:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45937343 - update - done - 2024-12-03 11:08:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/46012629 - update - done - 2024-12-03 11:08:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45842035 - update - done - 2024-12-03 11:09:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/46035069 - update - done - 2024-12-03 11:09:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45862140 - update - done - 2024-12-03 11:09:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/45895585 - update - done - 2024-12-03 11:09:25
+https://www.jobkorea.co.kr/Recruit/GI_Read/46024175 - update - done - 2024-12-03 11:09:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45801750 - update - done - 2024-12-03 11:09:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030031 - update - done - 2024-12-03 11:09:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45963360 - update - done - 2024-12-03 11:10:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45909589 - update - done - 2024-12-03 11:10:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45991682 - update - done - 2024-12-03 11:10:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874836 - update - done - 2024-12-03 11:10:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45886945 - update - done - 2024-12-03 11:10:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/45865763 - update - done - 2024-12-03 11:10:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/45991761 - update - done - 2024-12-03 11:11:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45780684 - update - done - 2024-12-03 11:11:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45835021 - update - done - 2024-12-03 11:11:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45686747 - update - done - 2024-12-03 11:11:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45981264 - update - done - 2024-12-03 11:11:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/46014617 - update - done - 2024-12-03 11:11:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/43634159 - update - done - 2024-12-03 11:11:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45978947 - update - done - 2024-12-03 11:11:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45991982 - update - done - 2024-12-03 11:12:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45807082 - update - done - 2024-12-03 11:12:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030485 - update - done - 2024-12-03 11:12:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45981146 - update - done - 2024-12-03 11:12:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45755799 - update - done - 2024-12-03 11:12:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/46014381 - update - done - 2024-12-03 11:12:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45672501 - update - done - 2024-12-03 11:12:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45911213 - update - done - 2024-12-03 11:13:13
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/46030703 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030703 - update - failed - 2024-12-03 11:13:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/46006317 - update - done - 2024-12-03 11:13:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45796958 - update - done - 2024-12-03 11:13:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/45861939 - update - done - 2024-12-03 11:13:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45994292 - update - done - 2024-12-03 11:13:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45908419 - update - done - 2024-12-03 11:13:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/46032152 - update - done - 2024-12-03 11:14:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45755803 - update - done - 2024-12-03 11:14:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45755798 - update - done - 2024-12-03 11:14:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/45889888 - update - done - 2024-12-03 11:14:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45995581 - update - done - 2024-12-03 11:14:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45709800 - update - done - 2024-12-03 11:14:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/45893825 - update - done - 2024-12-03 11:14:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/45937536 - update - done - 2024-12-03 11:14:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45996118 - update - done - 2024-12-03 11:15:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/46017978 - update - done - 2024-12-03 11:15:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/45730735 - update - done - 2024-12-03 11:15:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/45890274 - update - done - 2024-12-03 11:15:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45999024 - update - done - 2024-12-03 11:15:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45961933 - update - done - 2024-12-03 11:15:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/45959524 - update - done - 2024-12-03 11:15:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/46012924 - update - done - 2024-12-03 11:15:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45894712 - update - done - 2024-12-03 11:16:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/46019297 - update - done - 2024-12-03 11:16:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/45821365 - update - done - 2024-12-03 11:16:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/46005707 - update - done - 2024-12-03 11:16:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/45882723 - update - done - 2024-12-03 11:16:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/46031019 - update - done - 2024-12-03 11:16:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45989746 - update - done - 2024-12-03 11:16:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45929340 - update - done - 2024-12-03 11:17:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/45863963 - update - done - 2024-12-03 11:17:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45953764 - update - done - 2024-12-03 11:17:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/46014352 - update - done - 2024-12-03 11:17:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/45915599 - update - done - 2024-12-03 11:17:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034464 - update - done - 2024-12-03 11:17:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/46029857 - update - done - 2024-12-03 11:18:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/45926122 - update - done - 2024-12-03 11:18:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/45968545 - update - done - 2024-12-03 11:18:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/46021946 - update - done - 2024-12-03 11:18:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45950760 - update - done - 2024-12-03 11:18:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/45867095 - update - done - 2024-12-03 11:18:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45954658 - update - done - 2024-12-03 11:19:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45920282 - update - done - 2024-12-03 11:19:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45996017 - update - done - 2024-12-03 11:19:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/46028049 - update - done - 2024-12-03 11:19:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/46035631 - update - done - 2024-12-03 11:19:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/45811237 - update - done - 2024-12-03 11:19:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45963855 - update - done - 2024-12-03 11:20:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/45923561 - update - done - 2024-12-03 11:20:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/45777000 - update - done - 2024-12-03 11:20:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919518 - update - done - 2024-12-03 11:20:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45891839 - update - done - 2024-12-03 11:20:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033396 - update - done - 2024-12-03 11:20:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/46036993 - update - done - 2024-12-03 11:20:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45899955 - update - done - 2024-12-03 11:20:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45875925 - update - done - 2024-12-03 11:20:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45739630 - update - done - 2024-12-03 11:21:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45956306 - update - done - 2024-12-03 11:21:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45924548 - update - done - 2024-12-03 11:21:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/45962139 - update - done - 2024-12-03 11:21:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45831063 - update - done - 2024-12-03 11:21:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45997458 - update - done - 2024-12-03 11:21:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45733671 - update - done - 2024-12-03 11:21:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45695419 - update - done - 2024-12-03 11:21:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/45880159 - update - done - 2024-12-03 11:22:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45862933 - update - done - 2024-12-03 11:22:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45947817 - update - done - 2024-12-03 11:22:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45993454 - update - done - 2024-12-03 11:22:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45923832 - update - done - 2024-12-03 11:22:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45902361 - update - done - 2024-12-03 11:22:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034367 - update - done - 2024-12-03 11:22:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45883171 - update - done - 2024-12-03 11:22:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/46014843 - update - done - 2024-12-03 11:23:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45674795 - update - done - 2024-12-03 11:23:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033656 - update - done - 2024-12-03 11:23:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/46004714 - update - done - 2024-12-03 11:23:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45962628 - update - done - 2024-12-03 11:23:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/46031959 - update - done - 2024-12-03 11:23:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45928901 - update - done - 2024-12-03 11:23:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45687947 - update - done - 2024-12-03 11:24:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45879804 - update - done - 2024-12-03 11:24:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/46031187 - update - done - 2024-12-03 11:24:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/46029433 - update - done - 2024-12-03 11:24:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45990899 - update - done - 2024-12-03 11:24:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45846582 - update - done - 2024-12-03 11:24:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45937366 - update - done - 2024-12-03 11:24:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45998958 - update - done - 2024-12-03 11:24:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/46000964 - update - done - 2024-12-03 11:25:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874697 - update - done - 2024-12-03 11:25:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45833843 - update - done - 2024-12-03 11:25:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/46025939 - update - done - 2024-12-03 11:25:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45818460 - update - done - 2024-12-03 11:25:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/46017153 - update - done - 2024-12-03 11:25:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45927547 - update - done - 2024-12-03 11:25:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/45944544 - update - done - 2024-12-03 11:25:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45882577 - update - done - 2024-12-03 11:26:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45787623 - update - done - 2024-12-03 11:26:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45844126 - update - done - 2024-12-03 11:26:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/45923952 - update - done - 2024-12-03 11:26:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45876677 - update - done - 2024-12-03 11:26:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45982503 - update - done - 2024-12-03 11:26:43
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/45713099 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/45713099 - update - failed - 2024-12-03 11:26:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/46004574 - update - done - 2024-12-03 11:26:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/46011406 - update - done - 2024-12-03 11:27:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45745188 - update - done - 2024-12-03 11:27:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45687470 - update - done - 2024-12-03 11:27:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45684324 - update - done - 2024-12-03 11:27:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/45901639 - update - done - 2024-12-03 11:27:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/45910684 - update - done - 2024-12-03 11:27:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45903202 - update - done - 2024-12-03 11:28:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/46016027 - update - done - 2024-12-03 11:28:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034501 - update - done - 2024-12-03 11:28:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45810728 - update - done - 2024-12-03 11:28:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45980907 - update - done - 2024-12-03 11:28:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45798022 - update - done - 2024-12-03 11:28:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034981 - update - done - 2024-12-03 11:28:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45865031 - update - done - 2024-12-03 11:28:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45892065 - update - done - 2024-12-03 11:28:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/45885185 - update - done - 2024-12-03 11:29:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033943 - update - done - 2024-12-03 11:29:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/46009032 - update - done - 2024-12-03 11:29:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/45953871 - update - done - 2024-12-03 11:29:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/46013102 - update - done - 2024-12-03 11:29:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45837688 - update - done - 2024-12-03 11:30:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45950155 - update - done - 2024-12-03 11:30:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/46027254 - update - done - 2024-12-03 11:30:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45903657 - update - done - 2024-12-03 11:30:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45690676 - update - done - 2024-12-03 11:30:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45674801 - update - done - 2024-12-03 11:30:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/45704592 - update - done - 2024-12-03 11:30:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/45901559 - update - done - 2024-12-03 11:31:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/45952974 - update - done - 2024-12-03 11:31:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/46023722 - update - done - 2024-12-03 11:31:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/45867119 - update - done - 2024-12-03 11:31:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/46011467 - update - done - 2024-12-03 11:31:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45701282 - update - done - 2024-12-03 11:31:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/45906478 - update - done - 2024-12-03 11:31:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/46015666 - update - done - 2024-12-03 11:32:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/46031055 - update - done - 2024-12-03 11:32:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45680852 - update - done - 2024-12-03 11:32:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/46013263 - update - done - 2024-12-03 11:32:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45985674 - update - done - 2024-12-03 11:32:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/46031822 - update - done - 2024-12-03 11:32:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874809 - update - done - 2024-12-03 11:32:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45990319 - update - done - 2024-12-03 11:33:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45959569 - update - done - 2024-12-03 11:33:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/45906250 - update - done - 2024-12-03 11:33:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45979039 - update - done - 2024-12-03 11:33:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45876536 - update - done - 2024-12-03 11:33:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45669100 - update - done - 2024-12-03 11:33:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/45702154 - update - done - 2024-12-03 11:34:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45879831 - update - done - 2024-12-03 11:34:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45744411 - update - done - 2024-12-03 11:34:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/45694138 - update - done - 2024-12-03 11:34:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45989449 - update - done - 2024-12-03 11:34:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45894114 - update - done - 2024-12-03 11:34:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/46004693 - update - done - 2024-12-03 11:34:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45924777 - update - done - 2024-12-03 11:34:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/45991826 - update - done - 2024-12-03 11:35:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45936723 - update - done - 2024-12-03 11:35:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/46035321 - update - done - 2024-12-03 11:35:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/46029424 - update - done - 2024-12-03 11:35:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/46028437 - update - done - 2024-12-03 11:35:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45904588 - update - done - 2024-12-03 11:35:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45911079 - update - done - 2024-12-03 11:35:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/46017432 - update - done - 2024-12-03 11:35:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45960454 - update - done - 2024-12-03 11:36:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45849657 - update - done - 2024-12-03 11:36:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/46035952 - update - done - 2024-12-03 11:36:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033965 - update - done - 2024-12-03 11:36:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45905864 - update - done - 2024-12-03 11:36:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45864920 - update - done - 2024-12-03 11:36:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/46036489 - update - done - 2024-12-03 11:36:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45730204 - update - done - 2024-12-03 11:37:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45872361 - update - done - 2024-12-03 11:37:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/45796309 - update - done - 2024-12-03 11:37:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45939139 - update - done - 2024-12-03 11:37:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45935333 - update - done - 2024-12-03 11:37:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45936722 - update - done - 2024-12-03 11:37:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45920832 - update - done - 2024-12-03 11:37:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030471 - update - done - 2024-12-03 11:38:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/45723302 - update - done - 2024-12-03 11:38:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45937159 - update - done - 2024-12-03 11:38:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45794847 - update - done - 2024-12-03 11:38:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45788790 - update - done - 2024-12-03 11:38:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034503 - update - done - 2024-12-03 11:38:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/46004874 - update - done - 2024-12-03 11:38:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45716983 - update - done - 2024-12-03 11:39:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919362 - update - done - 2024-12-03 11:39:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45993741 - update - done - 2024-12-03 11:39:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45883100 - update - done - 2024-12-03 11:39:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919428 - update - done - 2024-12-03 11:39:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45916567 - update - done - 2024-12-03 11:39:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/45879794 - update - done - 2024-12-03 11:39:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45721834 - update - done - 2024-12-03 11:40:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/46011764 - update - done - 2024-12-03 11:40:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45668192 - update - done - 2024-12-03 11:40:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/45944806 - update - done - 2024-12-03 11:40:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/46032858 - update - done - 2024-12-03 11:40:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919264 - update - done - 2024-12-03 11:40:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45770654 - update - done - 2024-12-03 11:40:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45920624 - update - done - 2024-12-03 11:40:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45734168 - update - done - 2024-12-03 11:41:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/45872837 - update - done - 2024-12-03 11:41:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/46019622 - update - done - 2024-12-03 11:41:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45879819 - update - done - 2024-12-03 11:41:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/46008613 - update - done - 2024-12-03 11:41:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874939 - update - done - 2024-12-03 11:41:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/46021267 - update - done - 2024-12-03 11:42:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919501 - update - done - 2024-12-03 11:42:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45744349 - update - done - 2024-12-03 11:42:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45916157 - update - done - 2024-12-03 11:42:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/46026864 - update - done - 2024-12-03 11:42:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/46013960 - update - done - 2024-12-03 11:42:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/46035047 - update - done - 2024-12-03 11:42:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45941699 - update - done - 2024-12-03 11:43:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030034 - update - done - 2024-12-03 11:43:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/46004025 - update - done - 2024-12-03 11:43:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/45981998 - update - done - 2024-12-03 11:43:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45836693 - update - done - 2024-12-03 11:43:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45976029 - update - done - 2024-12-03 11:43:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45928419 - update - done - 2024-12-03 11:43:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45674706 - update - done - 2024-12-03 11:44:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/45869581 - update - done - 2024-12-03 11:44:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45889864 - update - done - 2024-12-03 11:44:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/46010588 - update - done - 2024-12-03 11:44:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/46019879 - update - done - 2024-12-03 11:44:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/46008003 - update - done - 2024-12-03 11:44:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45912540 - update - done - 2024-12-03 11:44:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919508 - update - done - 2024-12-03 11:44:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919319 - update - done - 2024-12-03 11:44:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45972272 - update - done - 2024-12-03 11:45:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45871038 - update - done - 2024-12-03 11:45:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45870461 - update - done - 2024-12-03 11:45:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/45696884 - update - done - 2024-12-03 11:45:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45829628 - update - done - 2024-12-03 11:45:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/46020510 - update - done - 2024-12-03 11:45:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/46004449 - update - done - 2024-12-03 11:45:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/45870414 - update - done - 2024-12-03 11:45:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919484 - update - done - 2024-12-03 11:46:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45691375 - update - done - 2024-12-03 11:46:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45846865 - update - done - 2024-12-03 11:46:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/45906454 - update - done - 2024-12-03 11:46:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/46026865 - update - done - 2024-12-03 11:46:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919462 - update - done - 2024-12-03 11:46:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/46036321 - update - done - 2024-12-03 11:46:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45991039 - update - done - 2024-12-03 11:47:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/46021678 - update - done - 2024-12-03 11:47:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/46012921 - update - done - 2024-12-03 11:47:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45961163 - update - done - 2024-12-03 11:47:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/46036140 - update - done - 2024-12-03 11:47:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/45862013 - update - done - 2024-12-03 11:47:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45767246 - update - done - 2024-12-03 11:48:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/45772661 - update - done - 2024-12-03 11:48:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45855714 - update - done - 2024-12-03 11:48:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45710713 - update - done - 2024-12-03 11:48:25
+https://www.jobkorea.co.kr/Recruit/GI_Read/45946097 - update - done - 2024-12-03 11:48:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45952761 - update - done - 2024-12-03 11:48:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/46021964 - update - done - 2024-12-03 11:48:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/46020971 - update - done - 2024-12-03 11:48:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45886536 - update - done - 2024-12-03 11:49:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034201 - update - done - 2024-12-03 11:49:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/46007110 - update - done - 2024-12-03 11:49:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/46003566 - update - done - 2024-12-03 11:49:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/45995640 - update - done - 2024-12-03 11:49:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45927319 - update - done - 2024-12-03 11:49:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45891631 - update - done - 2024-12-03 11:49:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45763366 - update - done - 2024-12-03 11:50:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/46018827 - update - done - 2024-12-03 11:50:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/46016285 - update - done - 2024-12-03 11:50:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45791940 - update - done - 2024-12-03 11:50:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030409 - update - done - 2024-12-03 11:50:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45755802 - update - done - 2024-12-03 11:50:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030174 - update - done - 2024-12-03 11:51:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/45881991 - update - done - 2024-12-03 11:51:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45679683 - update - done - 2024-12-03 11:51:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/45945514 - update - done - 2024-12-03 11:51:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45781310 - update - done - 2024-12-03 11:51:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45938811 - update - done - 2024-12-03 11:51:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/45923450 - update - done - 2024-12-03 11:51:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45876077 - update - done - 2024-12-03 11:52:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/45911827 - update - done - 2024-12-03 11:52:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/46016365 - update - done - 2024-12-03 11:52:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45701440 - update - done - 2024-12-03 11:52:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45913695 - update - done - 2024-12-03 11:52:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/46032615 - update - done - 2024-12-03 11:52:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/46021125 - update - done - 2024-12-03 11:52:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45966307 - update - done - 2024-12-03 11:53:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45743121 - update - done - 2024-12-03 11:53:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/46013446 - update - done - 2024-12-03 11:53:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45865067 - update - done - 2024-12-03 11:53:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45859716 - update - done - 2024-12-03 11:53:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45909786 - update - done - 2024-12-03 11:53:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/45938786 - update - done - 2024-12-03 11:53:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/45666642 - update - done - 2024-12-03 11:53:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45899761 - update - done - 2024-12-03 11:54:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45902131 - update - done - 2024-12-03 11:54:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030045 - update - done - 2024-12-03 11:54:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45888082 - update - done - 2024-12-03 11:54:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45828461 - update - done - 2024-12-03 11:54:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/46028427 - update - done - 2024-12-03 11:54:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/45952632 - update - done - 2024-12-03 11:54:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/45736883 - update - done - 2024-12-03 11:55:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45889185 - update - done - 2024-12-03 11:55:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45840062 - update - done - 2024-12-03 11:55:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/45993112 - update - done - 2024-12-03 11:55:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45864495 - update - done - 2024-12-03 11:55:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/46008142 - update - done - 2024-12-03 11:55:42
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/46030694 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030694 - update - failed - 2024-12-03 11:55:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/46010756 - update - done - 2024-12-03 11:55:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/45755800 - update - done - 2024-12-03 11:56:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45876615 - update - done - 2024-12-03 11:56:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45890961 - update - done - 2024-12-03 11:56:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/45878195 - update - done - 2024-12-03 11:56:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/45629022 - update - done - 2024-12-03 11:56:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45934805 - update - done - 2024-12-03 11:57:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874932 - update - done - 2024-12-03 11:57:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030782 - update - done - 2024-12-03 11:57:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45704128 - update - done - 2024-12-03 11:57:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919512 - update - done - 2024-12-03 11:57:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/46035200 - update - done - 2024-12-03 11:57:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/45981761 - update - done - 2024-12-03 11:57:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/45666863 - update - done - 2024-12-03 11:57:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45886738 - update - done - 2024-12-03 11:58:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/46020704 - update - done - 2024-12-03 11:58:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/46022302 - update - done - 2024-12-03 11:58:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45686897 - update - done - 2024-12-03 11:58:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/45751957 - update - done - 2024-12-03 11:58:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45709872 - update - done - 2024-12-03 11:58:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45914712 - update - done - 2024-12-03 11:59:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/45914692 - update - done - 2024-12-03 11:59:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45766751 - update - done - 2024-12-03 11:59:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45961541 - update - done - 2024-12-03 11:59:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45894135 - update - done - 2024-12-03 11:59:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45834994 - update - done - 2024-12-03 11:59:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/45879808 - update - done - 2024-12-03 11:59:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/45903580 - update - done - 2024-12-03 11:59:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/46026887 - update - done - 2024-12-03 12:00:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45998208 - update - done - 2024-12-03 12:00:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45947667 - update - done - 2024-12-03 12:00:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/46015127 - update - done - 2024-12-03 12:00:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45832945 - update - done - 2024-12-03 12:00:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/46019151 - update - done - 2024-12-03 12:00:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45731610 - update - done - 2024-12-03 12:00:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45771082 - update - done - 2024-12-03 12:00:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45886963 - update - done - 2024-12-03 12:01:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/45904081 - update - done - 2024-12-03 12:01:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45930866 - update - done - 2024-12-03 12:01:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/46010880 - update - done - 2024-12-03 12:01:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45583484 - update - done - 2024-12-03 12:01:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/45744719 - update - done - 2024-12-03 12:01:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919472 - update - done - 2024-12-03 12:01:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45958428 - update - done - 2024-12-03 12:02:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/46002115 - update - done - 2024-12-03 12:02:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/45730279 - update - done - 2024-12-03 12:02:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45861333 - update - done - 2024-12-03 12:02:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45974941 - update - done - 2024-12-03 12:02:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919528 - update - done - 2024-12-03 12:02:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/45672486 - update - done - 2024-12-03 12:02:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45975647 - update - done - 2024-12-03 12:02:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45977479 - update - done - 2024-12-03 12:03:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/45953849 - update - done - 2024-12-03 12:03:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45695296 - update - done - 2024-12-03 12:03:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/45920821 - update - done - 2024-12-03 12:03:25
+https://www.jobkorea.co.kr/Recruit/GI_Read/45875184 - update - done - 2024-12-03 12:03:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45903437 - update - done - 2024-12-03 12:03:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919438 - update - done - 2024-12-03 12:03:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45997767 - update - done - 2024-12-03 12:03:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/46021000 - update - done - 2024-12-03 12:04:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/45979366 - update - done - 2024-12-03 12:04:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45924491 - update - done - 2024-12-03 12:04:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/46010956 - update - done - 2024-12-03 12:04:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45944563 - update - done - 2024-12-03 12:04:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45957453 - update - done - 2024-12-03 12:04:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/45681989 - update - done - 2024-12-03 12:04:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/46010748 - update - done - 2024-12-03 12:04:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45868805 - update - done - 2024-12-03 12:05:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45912577 - update - done - 2024-12-03 12:05:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/46007917 - update - done - 2024-12-03 12:05:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/45944889 - update - done - 2024-12-03 12:05:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919104 - update - done - 2024-12-03 12:05:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45899019 - update - done - 2024-12-03 12:05:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45772158 - update - done - 2024-12-03 12:05:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45926611 - update - done - 2024-12-03 12:06:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/45884089 - update - done - 2024-12-03 12:06:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45900923 - update - done - 2024-12-03 12:06:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45902828 - update - done - 2024-12-03 12:06:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45876583 - update - done - 2024-12-03 12:06:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/45887674 - update - done - 2024-12-03 12:06:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/46012116 - update - done - 2024-12-03 12:06:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45927062 - update - done - 2024-12-03 12:07:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45844834 - update - done - 2024-12-03 12:07:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034952 - update - done - 2024-12-03 12:07:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/45904582 - update - done - 2024-12-03 12:07:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45719625 - update - done - 2024-12-03 12:07:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45837954 - update - done - 2024-12-03 12:07:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45947664 - update - done - 2024-12-03 12:07:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45691693 - update - done - 2024-12-03 12:07:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45674779 - update - done - 2024-12-03 12:08:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/46011509 - update - done - 2024-12-03 12:08:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45796489 - update - done - 2024-12-03 12:08:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45951721 - update - done - 2024-12-03 12:08:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45959822 - update - done - 2024-12-03 12:08:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/45991070 - update - done - 2024-12-03 12:08:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/46028999 - update - done - 2024-12-03 12:09:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/46023137 - update - done - 2024-12-03 12:09:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/46029319 - update - done - 2024-12-03 12:09:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45706714 - update - done - 2024-12-03 12:09:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45991555 - update - done - 2024-12-03 12:09:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/45779288 - update - done - 2024-12-03 12:09:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/46031432 - update - done - 2024-12-03 12:09:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45973001 - update - done - 2024-12-03 12:10:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45822750 - update - done - 2024-12-03 12:10:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/46015632 - update - done - 2024-12-03 12:10:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/45746679 - update - done - 2024-12-03 12:10:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45687100 - update - done - 2024-12-03 12:10:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45964642 - update - done - 2024-12-03 12:10:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034763 - update - done - 2024-12-03 12:10:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/45948530 - update - done - 2024-12-03 12:10:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45961514 - update - done - 2024-12-03 12:11:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45668139 - update - done - 2024-12-03 12:11:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45906411 - update - done - 2024-12-03 12:11:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033918 - update - done - 2024-12-03 12:11:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033639 - update - done - 2024-12-03 12:11:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919465 - update - done - 2024-12-03 12:11:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45979387 - update - done - 2024-12-03 12:11:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45815920 - update - done - 2024-12-03 12:12:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/45820670 - update - done - 2024-12-03 12:12:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/46023329 - update - done - 2024-12-03 12:12:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45904990 - update - done - 2024-12-03 12:12:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/46020717 - update - done - 2024-12-03 12:12:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45779585 - update - done - 2024-12-03 12:12:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/45967648 - update - done - 2024-12-03 12:12:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/45946512 - update - done - 2024-12-03 12:12:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45820632 - update - done - 2024-12-03 12:13:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874945 - update - done - 2024-12-03 12:13:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/46037091 - update - done - 2024-12-03 12:13:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/46017675 - update - done - 2024-12-03 12:13:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/46022168 - update - done - 2024-12-03 12:13:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/45839942 - update - done - 2024-12-03 12:13:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45795502 - update - done - 2024-12-03 12:14:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/45965706 - update - done - 2024-12-03 12:14:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/45926774 - update - done - 2024-12-03 12:14:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45947809 - update - done - 2024-12-03 12:14:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874974 - update - done - 2024-12-03 12:14:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874841 - update - done - 2024-12-03 12:14:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/46018476 - update - done - 2024-12-03 12:14:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45915514 - update - done - 2024-12-03 12:15:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/46017178 - update - done - 2024-12-03 12:15:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/45885033 - update - done - 2024-12-03 12:15:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919384 - update - done - 2024-12-03 12:15:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/45862767 - update - done - 2024-12-03 12:15:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030717 - update - done - 2024-12-03 12:15:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45945687 - update - done - 2024-12-03 12:16:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/46017254 - update - done - 2024-12-03 12:16:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/46014767 - update - done - 2024-12-03 12:16:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/46004338 - update - done - 2024-12-03 12:16:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/45819843 - update - done - 2024-12-03 12:16:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/45743801 - update - done - 2024-12-03 12:16:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45696872 - update - done - 2024-12-03 12:17:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/45890207 - update - done - 2024-12-03 12:17:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/46010563 - update - done - 2024-12-03 12:17:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45324861 - update - done - 2024-12-03 12:17:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45954925 - update - done - 2024-12-03 12:17:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/46016284 - update - done - 2024-12-03 12:17:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/45939745 - update - done - 2024-12-03 12:17:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45912780 - update - done - 2024-12-03 12:18:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033581 - update - done - 2024-12-03 12:18:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45907088 - update - done - 2024-12-03 12:18:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/46011173 - update - done - 2024-12-03 12:18:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/46001422 - update - done - 2024-12-03 12:18:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45778789 - update - done - 2024-12-03 12:18:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45993103 - update - done - 2024-12-03 12:19:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/45893342 - update - done - 2024-12-03 12:19:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45916851 - update - done - 2024-12-03 12:19:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/46031041 - update - done - 2024-12-03 12:19:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45949980 - update - done - 2024-12-03 12:19:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45887357 - update - done - 2024-12-03 12:19:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/45981526 - update - done - 2024-12-03 12:19:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45705097 - update - done - 2024-12-03 12:20:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/45907390 - update - done - 2024-12-03 12:20:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/46027933 - update - done - 2024-12-03 12:20:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/46006456 - update - done - 2024-12-03 12:20:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/45826187 - update - done - 2024-12-03 12:20:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/45965928 - update - done - 2024-12-03 12:21:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/46012520 - update - done - 2024-12-03 12:21:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/45929298 - update - done - 2024-12-03 12:21:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919457 - update - done - 2024-12-03 12:21:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/46003985 - update - done - 2024-12-03 12:21:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45884278 - update - done - 2024-12-03 12:21:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/45752245 - update - done - 2024-12-03 12:21:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/46014959 - update - done - 2024-12-03 12:21:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/46002234 - update - done - 2024-12-03 12:22:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45687464 - update - done - 2024-12-03 12:22:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45945403 - update - done - 2024-12-03 12:22:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/46032633 - update - done - 2024-12-03 12:22:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45886080 - update - done - 2024-12-03 12:22:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45884178 - update - done - 2024-12-03 12:22:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45959027 - update - done - 2024-12-03 12:22:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45998729 - update - done - 2024-12-03 12:22:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45959940 - update - done - 2024-12-03 12:23:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/46007496 - update - done - 2024-12-03 12:23:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45915111 - update - done - 2024-12-03 12:23:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45951345 - update - done - 2024-12-03 12:23:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/45876486 - update - done - 2024-12-03 12:23:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45697990 - update - done - 2024-12-03 12:23:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45901483 - update - done - 2024-12-03 12:24:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/45891844 - update - done - 2024-12-03 12:24:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45748876 - update - done - 2024-12-03 12:24:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45970364 - update - done - 2024-12-03 12:24:25
+https://www.jobkorea.co.kr/Recruit/GI_Read/45763368 - update - done - 2024-12-03 12:24:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/46002062 - update - done - 2024-12-03 12:24:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45997275 - update - done - 2024-12-03 12:24:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/45719308 - update - done - 2024-12-03 12:24:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45932108 - update - done - 2024-12-03 12:25:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45989718 - update - done - 2024-12-03 12:25:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45912239 - update - done - 2024-12-03 12:25:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45905565 - update - done - 2024-12-03 12:25:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/46026331 - update - done - 2024-12-03 12:25:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45842822 - update - done - 2024-12-03 12:25:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/45758479 - update - done - 2024-12-03 12:25:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45850309 - update - done - 2024-12-03 12:26:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45687521 - update - done - 2024-12-03 12:26:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45954351 - update - done - 2024-12-03 12:26:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45856616 - update - done - 2024-12-03 12:26:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45945525 - update - done - 2024-12-03 12:26:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034887 - update - done - 2024-12-03 12:26:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/46024834 - update - done - 2024-12-03 12:27:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45955669 - update - done - 2024-12-03 12:27:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/45980764 - update - done - 2024-12-03 12:27:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/45820650 - update - done - 2024-12-03 12:27:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/46005310 - update - done - 2024-12-03 12:27:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45975045 - update - done - 2024-12-03 12:27:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45890197 - update - done - 2024-12-03 12:28:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/46012972 - update - done - 2024-12-03 12:28:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/46029334 - update - done - 2024-12-03 12:28:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45989777 - update - done - 2024-12-03 12:28:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/45790860 - update - done - 2024-12-03 12:28:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874959 - update - done - 2024-12-03 12:28:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45749641 - update - done - 2024-12-03 12:29:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/45966486 - update - done - 2024-12-03 12:29:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45974457 - update - done - 2024-12-03 12:29:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/45806858 - update - done - 2024-12-03 12:29:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45901824 - update - done - 2024-12-03 12:29:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45755795 - update - done - 2024-12-03 12:29:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45817711 - update - done - 2024-12-03 12:29:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/46038084 - update - done - 2024-12-03 12:30:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45860669 - update - done - 2024-12-03 12:30:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45671201 - update - done - 2024-12-03 12:30:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45863877 - update - done - 2024-12-03 12:30:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/46012943 - update - done - 2024-12-03 12:30:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/45970173 - update - done - 2024-12-03 12:30:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/45867080 - update - done - 2024-12-03 12:30:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/46037078 - update - done - 2024-12-03 12:31:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45888551 - update - done - 2024-12-03 12:31:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45996710 - update - done - 2024-12-03 12:31:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/45931725 - update - done - 2024-12-03 12:31:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45911561 - update - done - 2024-12-03 12:31:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/46024900 - update - done - 2024-12-03 12:31:45
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/45987975 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/45987975 - update - failed - 2024-12-03 12:31:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/46023017 - update - done - 2024-12-03 12:32:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/46005320 - update - done - 2024-12-03 12:32:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45863086 - update - done - 2024-12-03 12:32:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45997384 - update - done - 2024-12-03 12:32:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45996079 - update - done - 2024-12-03 12:32:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/45860333 - update - done - 2024-12-03 12:33:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/45867692 - update - done - 2024-12-03 12:33:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/46005634 - update - done - 2024-12-03 12:33:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45965751 - update - done - 2024-12-03 12:33:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45950493 - update - done - 2024-12-03 12:33:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45912637 - update - done - 2024-12-03 12:34:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/45696891 - update - done - 2024-12-03 12:34:07
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/46030714 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030714 - update - failed - 2024-12-03 12:34:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45970379 - update - done - 2024-12-03 12:34:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45875163 - update - done - 2024-12-03 12:34:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874920 - update - done - 2024-12-03 12:34:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/45948528 - update - done - 2024-12-03 12:34:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/45961929 - update - done - 2024-12-03 12:34:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/46022119 - update - done - 2024-12-03 12:35:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45960039 - update - done - 2024-12-03 12:35:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45826425 - update - done - 2024-12-03 12:35:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45694134 - update - done - 2024-12-03 12:35:25
+https://www.jobkorea.co.kr/Recruit/GI_Read/45943949 - update - done - 2024-12-03 12:35:33
+https://www.jobkorea.co.kr/Recruit/GI_Read/45804664 - update - done - 2024-12-03 12:35:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/46035872 - update - done - 2024-12-03 12:35:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/46031342 - update - done - 2024-12-03 12:35:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45995103 - update - done - 2024-12-03 12:36:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/46038693 - update - done - 2024-12-03 12:36:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45870294 - update - done - 2024-12-03 12:36:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/46022316 - update - done - 2024-12-03 12:36:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/45884902 - update - done - 2024-12-03 12:36:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919419 - update - done - 2024-12-03 12:37:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/46003102 - update - done - 2024-12-03 12:37:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/45748992 - update - done - 2024-12-03 12:37:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/45894750 - update - done - 2024-12-03 12:37:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45817217 - update - done - 2024-12-03 12:37:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45938561 - update - done - 2024-12-03 12:37:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45970742 - update - done - 2024-12-03 12:37:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/45827228 - update - done - 2024-12-03 12:38:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45910541 - update - done - 2024-12-03 12:38:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45717027 - update - done - 2024-12-03 12:38:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/45833510 - update - done - 2024-12-03 12:38:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45905141 - update - done - 2024-12-03 12:38:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/45813306 - update - done - 2024-12-03 12:38:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/45811120 - update - done - 2024-12-03 12:38:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45988629 - update - done - 2024-12-03 12:39:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45939803 - update - done - 2024-12-03 12:39:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/45978929 - update - done - 2024-12-03 12:39:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45811211 - update - done - 2024-12-03 12:39:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/45862666 - update - done - 2024-12-03 12:39:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/46002388 - update - done - 2024-12-03 12:39:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45870386 - update - done - 2024-12-03 12:40:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/45968088 - update - done - 2024-12-03 12:40:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874925 - update - done - 2024-12-03 12:40:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45991059 - update - done - 2024-12-03 12:40:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034244 - update - done - 2024-12-03 12:40:48
+https://www.jobkorea.co.kr/Recruit/GI_Read/45924445 - update - done - 2024-12-03 12:40:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45746510 - update - done - 2024-12-03 12:41:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45720256 - update - done - 2024-12-03 12:41:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/45957158 - update - done - 2024-12-03 12:41:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/45908857 - update - done - 2024-12-03 12:41:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45727582 - update - done - 2024-12-03 12:41:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/45918563 - update - done - 2024-12-03 12:41:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/45821108 - update - done - 2024-12-03 12:41:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/45889562 - update - done - 2024-12-03 12:42:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/45906135 - update - done - 2024-12-03 12:42:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45981078 - update - done - 2024-12-03 12:42:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/46000136 - update - done - 2024-12-03 12:42:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45758084 - update - done - 2024-12-03 12:42:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45988007 - update - done - 2024-12-03 12:42:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/46011975 - update - done - 2024-12-03 12:42:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45884183 - update - done - 2024-12-03 12:43:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/46006559 - update - done - 2024-12-03 12:43:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45988686 - update - done - 2024-12-03 12:43:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/46017148 - update - done - 2024-12-03 12:43:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45984097 - update - done - 2024-12-03 12:43:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/46015091 - update - done - 2024-12-03 12:43:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/46032718 - update - done - 2024-12-03 12:43:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45906290 - update - done - 2024-12-03 12:43:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919375 - update - done - 2024-12-03 12:44:07
+https://www.jobkorea.co.kr/Recruit/GI_Read/45991883 - update - done - 2024-12-03 12:44:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/45954362 - update - done - 2024-12-03 12:44:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/46016291 - update - done - 2024-12-03 12:44:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/45957799 - update - done - 2024-12-03 12:44:37
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034353 - update - done - 2024-12-03 12:44:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/46028292 - update - done - 2024-12-03 12:44:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/45933137 - update - done - 2024-12-03 12:45:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45870480 - update - done - 2024-12-03 12:45:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/45996807 - update - done - 2024-12-03 12:45:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/46036413 - update - done - 2024-12-03 12:45:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45821505 - update - done - 2024-12-03 12:45:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/45666313 - update - done - 2024-12-03 12:45:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/45988651 - update - done - 2024-12-03 12:45:47
+https://www.jobkorea.co.kr/Recruit/GI_Read/46010900 - update - done - 2024-12-03 12:45:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/45920297 - update - done - 2024-12-03 12:46:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/45899539 - update - done - 2024-12-03 12:46:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45942304 - update - done - 2024-12-03 12:46:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/45919478 - update - done - 2024-12-03 12:46:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/45831596 - update - done - 2024-12-03 12:46:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/46011154 - update - done - 2024-12-03 12:46:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034359 - update - done - 2024-12-03 12:46:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/45982044 - update - done - 2024-12-03 12:46:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/46005041 - update - done - 2024-12-03 12:47:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45972430 - update - done - 2024-12-03 12:47:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45891398 - update - done - 2024-12-03 12:47:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45978388 - update - done - 2024-12-03 12:47:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/45711948 - update - done - 2024-12-03 12:47:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/45924785 - update - done - 2024-12-03 12:47:55
+https://www.jobkorea.co.kr/Recruit/GI_Read/46002443 - update - done - 2024-12-03 12:48:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45803753 - update - done - 2024-12-03 12:48:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/45696901 - update - done - 2024-12-03 12:48:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030688 - update - done - 2024-12-03 12:48:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/46011182 - update - done - 2024-12-03 12:48:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/46033884 - update - done - 2024-12-03 12:48:51
+https://www.jobkorea.co.kr/Recruit/GI_Read/45687847 - update - done - 2024-12-03 12:48:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/46021104 - update - done - 2024-12-03 12:49:09
+https://www.jobkorea.co.kr/Recruit/GI_Read/45962303 - update - done - 2024-12-03 12:49:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/45874983 - update - done - 2024-12-03 12:49:25
+https://www.jobkorea.co.kr/Recruit/GI_Read/45909022 - update - done - 2024-12-03 12:49:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45894806 - update - done - 2024-12-03 12:49:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/45711294 - update - done - 2024-12-03 12:49:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/45771898 - update - done - 2024-12-03 12:49:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/45959602 - update - done - 2024-12-03 12:50:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45876466 - update - done - 2024-12-03 12:50:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/45887164 - update - done - 2024-12-03 12:50:28
+https://www.jobkorea.co.kr/Recruit/GI_Read/45879825 - update - done - 2024-12-03 12:50:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/45810509 - update - done - 2024-12-03 12:50:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45973231 - update - done - 2024-12-03 12:51:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/45902675 - update - done - 2024-12-03 12:51:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/45888350 - update - done - 2024-12-03 12:51:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45988346 - update - done - 2024-12-03 12:51:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45976037 - update - done - 2024-12-03 12:51:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45771896 - update - done - 2024-12-03 12:51:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45955062 - update - done - 2024-12-03 12:52:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/46006675 - update - done - 2024-12-03 12:52:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45689858 - update - done - 2024-12-03 12:52:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/45923570 - update - done - 2024-12-03 12:52:37
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/home/tommy/.wdm/drivers/chromedriver/linux64/131.0.6778.85/chromedriver-linux64/chromedriver] found in cache
+오늘 날짜 파일을 제외한 파일이 없습니다.
+가장 최근 날짜 파일을 찾을 수 없으므로 빈 값을 사용합니다.
+최신 파일이 없으므로 빈 값을 사용합니다.
+새 URL 수: 1176, 제거된 URL 수: 0
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/45960067 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/45960067 - update - failed - 2024-12-03 16:36:52
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/46030694 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030694 - update - failed - 2024-12-03 16:37:00
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/46030703 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030703 - update - failed - 2024-12-03 16:37:10
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/46030714 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030714 - update - failed - 2024-12-03 16:37:18
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/45713099 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/45713099 - update - failed - 2024-12-03 16:37:25
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/45987975 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/45987975 - update - failed - 2024-12-03 16:37:33
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/home/tommy/.wdm/drivers/chromedriver/linux64/131.0.6778.85/chromedriver-linux64/chromedriver] found in cache
+오늘 날짜 파일을 제외한 파일이 없습니다.
+가장 최근 날짜 파일을 찾을 수 없으므로 빈 값을 사용합니다.
+최신 파일이 없으므로 빈 값을 사용합니다.
+새 URL 수: 1176, 제거된 URL 수: 0
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/46030694 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030694 - update - failed - 2024-12-03 16:37:57
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/46030703 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030703 - update - failed - 2024-12-03 16:38:06
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/45960067 크롤링 실패: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.69)
+Stacktrace:
+#0 0x5654b225d31a <unknown>
+#1 0x5654b1d736e0 <unknown>
+#2 0x5654b1d4938f <unknown>
+#3 0x5654b1dee89d <unknown>
+#4 0x5654b1e0488c <unknown>
+#5 0x5654b1de6203 <unknown>
+#6 0x5654b1db4cc0 <unknown>
+#7 0x5654b1db5c9e <unknown>
+#8 0x5654b222ad0b <unknown>
+#9 0x5654b222ec92 <unknown>
+#10 0x5654b2217b3c <unknown>
+#11 0x5654b222f807 <unknown>
+#12 0x5654b21fd0df <unknown>
+#13 0x5654b224c578 <unknown>
+#14 0x5654b224c740 <unknown>
+#15 0x5654b225c196 <unknown>
+#16 0x7f590c849ac3 <unknown>
+
+https://www.jobkorea.co.kr/Recruit/GI_Read/45960067 - update - failed - 2024-12-03 16:38:06
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/45713099 크롤링 실패: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.69)
+Stacktrace:
+#0 0x5654b225d31a <unknown>
+#1 0x5654b1d736e0 <unknown>
+#2 0x5654b1d4938f <unknown>
+#3 0x5654b1dee89d <unknown>
+#4 0x5654b1e0488c <unknown>
+#5 0x5654b1de6203 <unknown>
+#6 0x5654b1db4cc0 <unknown>
+#7 0x5654b1db5c9e <unknown>
+#8 0x5654b222ad0b <unknown>
+#9 0x5654b222ec92 <unknown>
+#10 0x5654b2217b3c <unknown>
+#11 0x5654b222f807 <unknown>
+#12 0x5654b21fd0df <unknown>
+#13 0x5654b224c578 <unknown>
+#14 0x5654b224c740 <unknown>
+#15 0x5654b225c196 <unknown>
+#16 0x7f590c849ac3 <unknown>
+
+https://www.jobkorea.co.kr/Recruit/GI_Read/45713099 - update - failed - 2024-12-03 16:38:06
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/45987975 크롤링 실패: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.69)
+Stacktrace:
+#0 0x5654b225d31a <unknown>
+#1 0x5654b1d736e0 <unknown>
+#2 0x5654b1d4938f <unknown>
+#3 0x5654b1dee89d <unknown>
+#4 0x5654b1e0488c <unknown>
+#5 0x5654b1de6203 <unknown>
+#6 0x5654b1db4cc0 <unknown>
+#7 0x5654b1db5c9e <unknown>
+#8 0x5654b222ad0b <unknown>
+#9 0x5654b222ec92 <unknown>
+#10 0x5654b2217b3c <unknown>
+#11 0x5654b222f807 <unknown>
+#12 0x5654b21fd0df <unknown>
+#13 0x5654b224c578 <unknown>
+#14 0x5654b224c740 <unknown>
+#15 0x5654b225c196 <unknown>
+#16 0x7f590c849ac3 <unknown>
+
+https://www.jobkorea.co.kr/Recruit/GI_Read/45987975 - update - failed - 2024-12-03 16:38:06
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/46030714 크롤링 실패: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.69)
+Stacktrace:
+#0 0x5654b225d31a <unknown>
+#1 0x5654b1d736e0 <unknown>
+#2 0x5654b1d4938f <unknown>
+#3 0x5654b1dee89d <unknown>
+#4 0x5654b1e0488c <unknown>
+#5 0x5654b1de6203 <unknown>
+#6 0x5654b1db4cc0 <unknown>
+#7 0x5654b1db5c9e <unknown>
+#8 0x5654b222ad0b <unknown>
+#9 0x5654b222ec92 <unknown>
+#10 0x5654b2217b3c <unknown>
+#11 0x5654b222f807 <unknown>
+#12 0x5654b21fd0df <unknown>
+#13 0x5654b224c578 <unknown>
+#14 0x5654b224c740 <unknown>
+#15 0x5654b225c196 <unknown>
+#16 0x7f590c849ac3 <unknown>
+
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030714 - update - failed - 2024-12-03 16:38:06
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+Driver [/home/tommy/.wdm/drivers/chromedriver/linux64/131.0.6778.85/chromedriver-linux64/chromedriver] found in cache
+오늘 날짜 파일을 제외한 파일이 없습니다.
+가장 최근 날짜 파일을 찾을 수 없으므로 빈 값을 사용합니다.
+최신 파일이 없으므로 빈 값을 사용합니다.
+새 URL 수: 1176, 제거된 URL 수: 0
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/45960067 크롤링 실패: (1048, "Column 'notice_type' cannot be null")
+https://www.jobkorea.co.kr/Recruit/GI_Read/45960067 - update - failed - 2024-12-03 16:38:31
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/45713099 크롤링 실패: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.69)
+Stacktrace:
+#0 0x55b1d0f4431a <unknown>
+#1 0x55b1d0a5a6e0 <unknown>
+#2 0x55b1d0a3038f <unknown>
+#3 0x55b1d0ad589d <unknown>
+#4 0x55b1d0aeb88c <unknown>
+#5 0x55b1d0acd203 <unknown>
+#6 0x55b1d0a9bcc0 <unknown>
+#7 0x55b1d0a9cc9e <unknown>
+#8 0x55b1d0f11d0b <unknown>
+#9 0x55b1d0f15c92 <unknown>
+#10 0x55b1d0efeb3c <unknown>
+#11 0x55b1d0f16807 <unknown>
+#12 0x55b1d0ee40df <unknown>
+#13 0x55b1d0f33578 <unknown>
+#14 0x55b1d0f33740 <unknown>
+#15 0x55b1d0f43196 <unknown>
+#16 0x7f14fbbf2ac3 <unknown>
+
+https://www.jobkorea.co.kr/Recruit/GI_Read/45713099 - update - failed - 2024-12-03 16:38:37
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/45987975 크롤링 실패: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.69)
+Stacktrace:
+#0 0x55b1d0f4431a <unknown>
+#1 0x55b1d0a5a6e0 <unknown>
+#2 0x55b1d0a3038f <unknown>
+#3 0x55b1d0ad589d <unknown>
+#4 0x55b1d0aeb88c <unknown>
+#5 0x55b1d0acd203 <unknown>
+#6 0x55b1d0a9bcc0 <unknown>
+#7 0x55b1d0a9cc9e <unknown>
+#8 0x55b1d0f11d0b <unknown>
+#9 0x55b1d0f15c92 <unknown>
+#10 0x55b1d0efeb3c <unknown>
+#11 0x55b1d0f16807 <unknown>
+#12 0x55b1d0ee40df <unknown>
+#13 0x55b1d0f33578 <unknown>
+#14 0x55b1d0f33740 <unknown>
+#15 0x55b1d0f43196 <unknown>
+#16 0x7f14fbbf2ac3 <unknown>
+
+https://www.jobkorea.co.kr/Recruit/GI_Read/45987975 - update - failed - 2024-12-03 16:38:37
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/46030694 크롤링 실패: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.69)
+Stacktrace:
+#0 0x55b1d0f4431a <unknown>
+#1 0x55b1d0a5a6e0 <unknown>
+#2 0x55b1d0a3038f <unknown>
+#3 0x55b1d0ad589d <unknown>
+#4 0x55b1d0aeb88c <unknown>
+#5 0x55b1d0acd203 <unknown>
+#6 0x55b1d0a9bcc0 <unknown>
+#7 0x55b1d0a9cc9e <unknown>
+#8 0x55b1d0f11d0b <unknown>
+#9 0x55b1d0f15c92 <unknown>
+#10 0x55b1d0efeb3c <unknown>
+#11 0x55b1d0f16807 <unknown>
+#12 0x55b1d0ee40df <unknown>
+#13 0x55b1d0f33578 <unknown>
+#14 0x55b1d0f33740 <unknown>
+#15 0x55b1d0f43196 <unknown>
+#16 0x7f14fbbf2ac3 <unknown>
+
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030694 - update - failed - 2024-12-03 16:38:37
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/46030714 크롤링 실패: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.69)
+Stacktrace:
+#0 0x55b1d0f4431a <unknown>
+#1 0x55b1d0a5a6e0 <unknown>
+#2 0x55b1d0a3038f <unknown>
+#3 0x55b1d0ad589d <unknown>
+#4 0x55b1d0aeb88c <unknown>
+#5 0x55b1d0acd203 <unknown>
+#6 0x55b1d0a9bcc0 <unknown>
+#7 0x55b1d0a9cc9e <unknown>
+#8 0x55b1d0f11d0b <unknown>
+#9 0x55b1d0f15c92 <unknown>
+#10 0x55b1d0efeb3c <unknown>
+#11 0x55b1d0f16807 <unknown>
+#12 0x55b1d0ee40df <unknown>
+#13 0x55b1d0f33578 <unknown>
+#14 0x55b1d0f33740 <unknown>
+#15 0x55b1d0f43196 <unknown>
+#16 0x7f14fbbf2ac3 <unknown>
+
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030714 - update - failed - 2024-12-03 16:38:37
+[ERROR] https://www.jobkorea.co.kr/Recruit/GI_Read/46030703 크롤링 실패: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=131.0.6778.69)
+Stacktrace:
+#0 0x55b1d0f4431a <unknown>
+#1 0x55b1d0a5a6e0 <unknown>
+#2 0x55b1d0a3038f <unknown>
+#3 0x55b1d0ad589d <unknown>
+#4 0x55b1d0aeb88c <unknown>
+#5 0x55b1d0acd203 <unknown>
+#6 0x55b1d0a9bcc0 <unknown>
+#7 0x55b1d0a9cc9e <unknown>
+#8 0x55b1d0f11d0b <unknown>
+#9 0x55b1d0f15c92 <unknown>
+#10 0x55b1d0efeb3c <unknown>
+#11 0x55b1d0f16807 <unknown>
+#12 0x55b1d0ee40df <unknown>
+#13 0x55b1d0f33578 <unknown>
+#14 0x55b1d0f33740 <unknown>
+#15 0x55b1d0f43196 <unknown>
+#16 0x7f14fbbf2ac3 <unknown>
+
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030703 - update - failed - 2024-12-03 16:38:37
