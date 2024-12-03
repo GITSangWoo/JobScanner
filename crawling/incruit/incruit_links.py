@@ -117,4 +117,3 @@ with open(log_file_name, 'w', encoding='utf-8') as file:
     for line in log_data:
         file.write(line + "\n")
 
-

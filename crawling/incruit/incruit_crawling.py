@@ -52,17 +52,41 @@ def insert_into_db(data):
         if 'connection' in locals():
             connection.close()
 
+def update_removed_links_in_db(removed_links):
+    try:
+        connection = connection_pool.get_connection()
+        cursor = connection.cursor()
+
+        for link in removed_links:
+            sql = "UPDATE incruit SET removed_time = %s WHERE org_url = %s"
+            cursor.execute(sql, (datetime.now(), link))
+
+        connection.commit()
+        print(f"Updated removed links in DB: {len(removed_links)}")
+
+    except Exception as e:
+        print(f"Error updating removed links in DB: {e}")
+    finally:
+        if 'cursor' in locals():
+            cursor.close()
+        if 'connection' in locals():
+            connection.close()
+
 def upload_to_s3(content, bucket_name, object_name):
     try:
         s3 = boto3.client('s3')
-        # 직접 메모리에서 S3에 업로드
+        
+        # 만약 content가 문자열이면, 이를 바이트로 인코딩
+        if isinstance(content, str):
+            content = content.encode('utf-8')
+        
+        # S3에 업로드
         s3.put_object(Bucket=bucket_name, Key=object_name, Body=content)
         print(f"Uploaded to S3 as {object_name}")
         return f"s3://{bucket_name}/{object_name}"
     except Exception as e:
         print(f"Error uploading to S3: {e}")
         return None
-
 
 def download_from_s3_direct(s3_uri):
     try:
@@ -144,6 +168,8 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
     lines = file.readlines()
 
     # 'update' 상태인 URL들을 크롤링 대상 리스트에 추가
+    removed_links = []
+
     for line in lines[1:]:
         columns = line.strip().split(',')
         url = columns[0]
@@ -195,10 +221,7 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
 
                 job_id = str(uuid.uuid4())
                 text_filename = f"{job_id}.txt"
-                text_file_path = f"./txt/{text_filename}"
-                with open(text_file_path, "w", encoding="utf-8") as text_file:
-                    text_file.write(text_content)
-                s3_text_url = upload_to_s3(text_file_path, "t2jt", f"job/DE/sources/incruit/txt/{job_id}.txt")
+                s3_text_url = upload_to_s3(text_content, "t2jt", f"job/DE/sources/incruit/txt/{job_id}.txt")
 
                 s3_image_urls = process_images(image_urls, job_id, "./images", "t2jt", "job/DE/sources/incruit/images")
 
@@ -225,8 +248,13 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
             except Exception as e:
                 print(f"Error processing {url}: {e}")
 
+        elif notice_status == "deleted" and work_status == "null":
+            removed_links.append(url)
+
+    if removed_links:
+        update_removed_links_in_db(removed_links)
+
 # 크롤링 완료 후 DB 연결 종료
 connection.close()
 
 driver.quit()
-
