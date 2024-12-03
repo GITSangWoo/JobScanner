@@ -161,7 +161,7 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
         except ValueError:
             deadline = None  # D-day 값이 유효하지 않으면 deadline은 None
         
-        if notice_status == "deleted" and work_status == "done":
+        if notice_status == "deleted":
             removed_links.append(url)
         elif notice_status == "update" and work_status == "null":
             print(f"Starting crawl for {url}")
