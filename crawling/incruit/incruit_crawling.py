@@ -58,9 +58,30 @@ def update_removed_links_in_db(removed_links):
         cursor = connection.cursor()
 
         for link in removed_links:
-            sql = "UPDATE incruit SET removed_time = %s WHERE org_url = %s"
-            cursor.execute(sql, (datetime.now(), link))
+            print(f"URL {link} is marked as deleted. Checking if it exists in the database.")
+            
+            # Check if URL exists in DB
+            cursor.execute("SELECT 1 FROM incruit WHERE org_url = %s", (link,))
+            result = cursor.fetchone()
+            if not result:
+                print(f"URL {link} not found in DB, skipping removed_time update.")
+                continue
 
+            # Update removed_time without checking done_time
+            removed_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            update_time_query = """
+            UPDATE incruit
+            SET removed_time = %s
+            WHERE org_url = %s
+            """
+            cursor.execute(update_time_query, (removed_time, link))
+
+            # Check if update was successful
+            if cursor.rowcount == 0:
+                print(f"No rows updated for URL: {link}")
+            else:
+                print(f"Removed time updated for URL: {link}")
+        
         connection.commit()
         print(f"Updated removed links in DB: {len(removed_links)}")
 
@@ -71,6 +92,7 @@ def update_removed_links_in_db(removed_links):
             cursor.close()
         if 'connection' in locals():
             connection.close()
+
 
 def upload_to_s3(content, bucket_name, object_name):
     try:
