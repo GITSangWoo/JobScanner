@@ -7,10 +7,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, WebDriverException
 from webdriver_manager.chrome import ChromeDriverManager
 import re
-import logging
-
-# 로깅 설정
-logger = logging.getLogger(__name__)
 
 # Chrome driver 옵션 설정
 chrome_options = Options()
@@ -26,21 +22,20 @@ def get_total_pages(base_url):
         page = 1
         while True:
             page_url = f"{base_url}&page={page}"
-            logger.info(f"Checking page {page}: {page_url}")
             driver.get(page_url)
             WebDriverWait(driver, 10).until(
                 EC.presence_of_all_elements_located((By.CSS_SELECTOR, '#search-results > div.ui.job.items.segment.company-list > div.company.item'))
             )
             job_elements = driver.find_elements(By.CSS_SELECTOR, '#search-results > div.ui.job.items.segment.company-list > div.company.item')
             if not job_elements:
-                logger.info(f"Page {page} has no job postings. Total pages: {page - 1}")
+                print(f"Page {page} has no job postings. Total pages: {page - 1}")
                 return page - 1
             page += 1
     except TimeoutException:
-        logger.warning(f"Timeout on page {page}")
+        print(f"Timeout on page {page}")
         return page - 1
     except WebDriverException as e:
-        logger.error(f"WebDriverException: {e}")
+        print(f"WebDriverException: {e}")
         return page - 1
     finally:
         driver.quit()
@@ -87,11 +82,10 @@ def get_all_links(keyword):
     try:
         total_pages = get_total_pages(base_url)
         if total_pages == 0:
-            print(f"No job postings found for keyword: {keyword}")
+            print(f"키워드 {keyword}에 해당하는 채용공고가 없습니다!")
             return []
 
         for page in range(1, total_pages + 1):
-            print(f"{page}번째 페이지를 scraping 중입니다...")
             page_url = f"{base_url}&page={page}"
             page_links = get_links_from_page(page_url)
             all_posts_links.extend(page_links)

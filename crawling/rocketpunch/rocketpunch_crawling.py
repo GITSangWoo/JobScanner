@@ -25,7 +25,7 @@ chrome_options.add_argument("--no-sandbox")  # 리소스 제약 없는 환경에
 
 kst = ZoneInfo("Asia/Seoul")
 
-def get_job_posts(bucket, links_added, s3_text_path, s3_image_path):
+def get_job_posts(bucket, links_added, job_title, s3_text_path, s3_image_path):
     """
     수집한 채용공고의 링크에서 공고텍스트를 가져오는 함수
     :param json_filepath: JSON 파일 경로 (링크 리스트가 저장된 파일)
@@ -109,7 +109,7 @@ def get_job_posts(bucket, links_added, s3_text_path, s3_image_path):
         job_post["update_time"] = current_time.strftime("%Y-%m-%d %H:%M:%S") 
         job_post["removed_time"] = None
         job_post["site"] = "rocketpunch" 
-        job_post["job_title"] = "데이터 엔지니어"
+        job_post["job_title"] = job_title
         # due_type, due_date 크롤링에서 긁어오기
         try:
             deadline_element = WebDriverWait(driver, 10).until(   
@@ -119,13 +119,14 @@ def get_job_posts(bucket, links_added, s3_text_path, s3_image_path):
             date_pattern = r"\d{4}-\d{2}-\d{2}"
             if re.fullmatch(date_pattern, deadline):
                 job_post["due_type"] = "날짜"
-                job_post["due_date"] = dt.strptime(deadline, "%Y-%m-%d")
+                job_post["due_date"] = dt.strptime(deadline, "%Y-%m-%d").strftime("%Y-%m-%d")
             else:
                 job_post["due_type"] = deadline
+                job_post["due_type"] = deadline[:20] if len(deadline.encode('utf-8')) <= 20 else deadline.encode('utf-8')[:20].decode('utf-8', 'ignore')
                 job_post["due_date"] = None
         except Exception as e:
             print("마감 기한을 찾을 수 없습니다. 해당 요소가 로드되지 않았습니다:", e)
-            job_post["due_type"] = None
+            job_post["due_type"] = "unknown"
             job_post["due_date"] = None
         
         # 회사 이름 요소 감지
@@ -135,7 +136,7 @@ def get_job_posts(bucket, links_added, s3_text_path, s3_image_path):
             )
             job_post["company"] = company_element.text
         except Exception as e:
-            job_post["company"] = None
+            job_post["company"] = "unknown"
             print("회사 이름을 찾을 수 없습니다:", e)
         
         # 공고 제목 요소 감지
@@ -145,7 +146,7 @@ def get_job_posts(bucket, links_added, s3_text_path, s3_image_path):
             )
             job_post["post_title"] = post_title_element.text
         except Exception as e:
-            job_post["post_title"] = None
+            job_post["post_title"] = "unknown"
             print("공고 제목을 찾을 수 없습니다:", e)
 
         # 여기서 부터 공고에서 텍스트, 이미지 감지 > 텍스트와 이미지 s3에 저장후 url 반환
@@ -156,12 +157,12 @@ def get_job_posts(bucket, links_added, s3_text_path, s3_image_path):
         
         # process_content에서 notice_type, text, image 탐지하고 text, image는 바로 s3에 저장
         # 그리고 저장된 각각의 s3의 주소를 반환
-        final_notice_type, image_paths, text_path = process_contents(driver, div_selectors, bucket, s3_text_path, s3_image_path)
+        notice_type, image_paths, text_path = process_contents(driver, div_selectors, bucket, s3_text_path, s3_image_path)
 
-        job_post["notice_type"] = final_notice_type
+        job_post["notice_type"] = notice_type
         job_post["org_url"] = link
         job_post["s3_text_url"] = text_path
-        job_post["s3_image_url"] = "\n".join(image_paths)
+        job_post["s3_images_url"] = ",".join(image_paths) if image_paths else None
         job_post["responsibility"] = None
         job_post["qualification"] = None
         job_post["preferential"] = None
