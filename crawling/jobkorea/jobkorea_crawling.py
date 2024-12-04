@@ -60,7 +60,7 @@ def read_s3_file(bucket_name, file_key):
         file_content = obj['Body'].read().decode('utf-8')
         return set(line.strip() for line in file_content.splitlines())
     except Exception as e:
-        logging.error(f"[ERROR] S3 파일 읽기 실패: {file_key}, 에러: {e}")
+        print(f"[ERROR] S3 파일 읽기 실패: {file_key}, 에러: {e}")
         return set()
 
 # S3 버킷과 파일 경로 설정
@@ -77,13 +77,13 @@ today_links_file = f"{prefix}/{today_date}.txt"
 def get_latest_file_exclude_today(bucket_name, prefix, today_date):
     response = s3_client.list_objects_v2(Bucket=bucket_name, Prefix=prefix)
     if 'Contents' not in response:
-        logging.error("S3 버킷에 파일이 존재하지 않습니다.")
+        print("S3 버킷에 파일이 존재하지 않습니다.")
         return None
     files = [content['Key'] for content in response['Contents']]
     # 오늘 날짜 파일을 제외한 파일만 필터링
     files = [file for file in files if today_date not in file]
     if not files:
-        logging.error("오늘 날짜 파일을 제외한 파일이 없습니다.")
+        print("오늘 날짜 파일을 제외한 파일이 없습니다.")
         return None
     files.sort(reverse=True)  # 최신 파일을 맨 위로 정렬
     return files[0] if files else None
@@ -93,17 +93,17 @@ latest_file = get_latest_file_exclude_today(bucket_name, prefix, today_date)
 
 # 최신 파일이 없을 경우 빈 값을 반환
 if not latest_file:
-    logging.info("가장 최근 날짜 파일을 찾을 수 없으므로 빈 값을 사용합니다.")
+    print("가장 최근 날짜 파일을 찾을 수 없으므로 빈 값을 사용합니다.")
     latest_file = ""  # 빈 값 설정
 
 # 최신 파일명에서 날짜 추출
 if latest_file:
     latest_date = latest_file.split('/')[-1].split('.')[0]  # 예: '20241202'
     latest_links_file = f"{prefix}/{latest_date}.txt"
-    logging.info(f"사용할 파일: {latest_links_file}")
+    print(f"사용할 파일: {latest_links_file}")
 else:
     latest_links_file = ""
-    logging.info("최신 파일이 없으므로 빈 값을 사용합니다.")
+    print("최신 파일이 없으므로 빈 값을 사용합니다.")
 
 # 오늘 날짜 파일 읽기
 today_urls = read_s3_file(bucket_name, today_links_file)
@@ -123,26 +123,50 @@ if today_urls:
         # 제거된 URL 계산
         removed_urls = latest_urls - today_urls
         # 기존 URL 계산 (교집합)
-        existing_urls = today_urls & latest_urls
+        existing_urls = today_urls.intersection(latest_urls)
 
-        logging.info(f"새 URL 수: {len(new_today_urls)}, 제거된 URL 수: {len(removed_urls)}")
+        print(f"새 URL 수: {len(new_today_urls)}, 제거된 URL 수: {len(removed_urls)}")
         print(f"[INFO] 새 URL 수: {len(new_today_urls)}개")
         print(f"[INFO] remove된 공고 수: {len(removed_urls)}개")
         print(f"[INFO] 기존에 있던 URL 수: {len(existing_urls)}개")
 
-        # 기존 URL들에 대해 log_status 호출
-        for url in existing_urls:
-            log_status(url, "exist", "done")
+        # 파일 읽기
+        with open("log.txt", 'r') as file:
+            lines = file.readlines()
+
+        # 수정된 데이터를 저장할 리스트
+        updated_lines = []
+
+        # 파일에서 URL을 찾아서 상태 업데이트
+        for line in lines:
+            url = line.split(' ')[0]
+            
+            if url in existing_urls:
+                # 기존 URL이 있으면 "exist"로 상태 업데이트
+                updated_line = line.replace("update", "exist")
+                updated_lines.append(updated_line)
+            elif url in removed_urls:
+                # 삭제된 URL이면 "removed"로 상태 업데이트
+                updated_line = line.replace("update", "removed")
+                updated_lines.append(updated_line)
+            else:
+                # 그 외의 URL은 그대로 추가
+                updated_lines.append(line)
+
+        # 파일에 덮어쓰기
+        with open("log.txt", 'w') as file:
+            file.writelines(updated_lines)
 
     else:
         # 최신 파일이 없을 경우 removed_urls는 빈 값
         new_today_urls = today_urls
         removed_urls = set()
-        logging.info(f"새 URL 수: {len(new_today_urls)}, 제거된 URL 수: {len(removed_urls)}")
+        print(f"새 URL 수: {len(new_today_urls)}, 제거된 URL 수: {len(removed_urls)}")
         print(f"[INFO] 새 URL 수: {len(new_today_urls)}개")
         print(f"[INFO] remove된 공고 수: {len(removed_urls)}개")
 else:
-    logging.error(f"{today_links_file}을(를) 읽을 수 없습니다.")
+    print(f"{today_links_file}을(를) 읽을 수 없습니다.")
+
 
 # text와 image 디렉토리 생성 (현재 작업 디렉토리에서)
 text_dir = "txt"
@@ -200,8 +224,14 @@ processed_urls = set()  # 처리된 URL들을 저장할 집합
 with open('log.txt', 'r') as log_file:
     for line in log_file:
         if 'update - done' in line:
-            url = line.split(' ')[0]  # 로그에서 URL 추출
-            processed_urls.add(url)
+            # 로그에서 날짜와 URL 추출
+            line_parts = line.split(' ')
+            log_date = line_parts[3]  # 날짜는 4번째 항목
+            url = line_parts[0]  # URL은 첫 번째 항목
+
+            # 오늘 날짜와 일치하면 processed_urls에 추가
+            if log_date == today_date:
+                processed_urls.add(url)
 
 # 각 링크 처리
 for url in new_today_urls:
@@ -375,7 +405,7 @@ for url in new_today_urls:
         print("\n")
         skipped_urls.append(url)
         error_count += 1
-        logging.error(f"[ERROR] {url} 크롤링 실패: {e}")
+        print(f"[ERROR] {url} 크롤링 실패: {e}")
         log_status(url, "update", "failed")
 
 # removed_time이 NULL인 경우에만 업데이트하도록 추가
@@ -401,16 +431,13 @@ for removed_url in removed_urls:
             print(f"[INFO] URL {removed_url}에 대해 removed_time이 {removed_time}으로 업데이트되었습니다.")
         else:
             print(f"[INFO] URL {removed_url}에 대해 removed_time이 이미 존재하므로 업데이트하지 않습니다.")
-        log_status(url, "removed", "done")
 
         # MySQL DB에 저장
         cursor.execute(insert_query, tuple(data.values()))
         db.commit()  # 데이터베이스에 커밋
             
     except Exception as e:
-        print(f"[ERROR] URL {removed_url}에 대해 removed_time 업데이트 중 오류 발생.")
-        print(e)
-        log_status(url, "removed", "failed")
+        print("")
 
 
 # 웹 드라이버 종료
