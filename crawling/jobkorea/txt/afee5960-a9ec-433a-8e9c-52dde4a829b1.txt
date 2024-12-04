@@ -1,0 +1,58 @@
+[경력]  웹개발자 채용(계약직/프리랜서)
+1.  Java Web 개발자  2명
+2. Frontend Engineer 2명
+㈜유비케어는 의료정보화용 solution인 EMR 시장에서 전국 병의원 약국시장의 점유율 1위 (40%) 업체로, 16,800 병의원 약국에서 당사 제품을 사용하고 있으며 이를 바탕으로 의료정보화 사업의 기반이 되는 국내 최대 병의원 약국 네트워크를 구축하고 있습니다. 의료기기유통, 의약품전자상거래, 건강기능식품등 B2B 사업과 제약사 및 증권사를 대상으로 약품에 대한 통계서비스를 제공하는 제약 마케팅 솔루션사업 그리고 미래 성장 사업으로 U-Healthcare Solution을 지속 개발,공급하는 Healthcare Solution 대표기업입니다. 높은 EMR 시장점유율을 통해 안정적 성장 기반을 확보하였으며 이머징 마켓으로써 확대되는 의료시장에 있어 새로운 추가 비용없이 시장 진입이 가능한 강점 보유하고 있는 안정성과 성장성이 높은 회사입니다.
+
+
+[Java 기반 웹개발자  2명,   Vuejs 기반 Frontend Engineer  2명]
+
+채용 포지션
+Java 기반 웹개발자
+( 2명 )
+담당업무
+ㆍJava Spring, Vuejs 기반 Web 사이트 고도화 및 신규 프로젝트  
+
+자격요건
+ㆍ학력 : 학력무관
+ㆍ경력 : Java 기반 웹서비스 개발 경력 7년 이상
+ㆍ필수 보유 기술 
+    - Java Spring 기반 Web 사이트 구축 경험 필수 (최소 7년 이상)
+    - DB : MS-SQL Procedure 기반 웹사이트 개발 경험  
+ㆍ현재 구축 및 운영중인 기술 
+    - Java Spring, Spring boot, JavaScript, jQuery, VueJS, MS-SQL, Git, Jenkins
+
+우대사항
+ㆍVue.js 사용 경험 / Spring boot 사용 프로젝트 진행 경험
+
+기타정보
+ㆍ근로형태 : 계약직/프리랜서 (오프라인 인터뷰시 협의 가능)
+ㆍ계약기간 : 5개월 (협의 가능, 최초 계약 후 연장시 협의 진행)
+ㆍ계약비용 : 오프라인 인터뷰시 협의 후 결정 
+Frontend Engineer
+( 2명 )
+담당업무
+ㆍFrontend Engineer (VueJS기반)
+ㆍVue.js, Typescript, javascript 등을 활용한 웹 서비스 개발 
+
+자격요건
+ㆍ학력 : 학력무관
+ㆍ경력 : 경력7년 이상 
+ㆍ HTML, CSS, JavaScript, TypeScript 를 능숙하게 사용하시는 분
+ㆍ VueJS를 이용한 SPA 개발 경험이 있으신 분 (필수)
+ㆍ Native App 협업 경험이 있으신 분 
+ㆍ현재 구축 및 운영중인 기술 
+    - VueJS, Java Spring, Spring boot, JavaScript, jQuery, MS-SQL, Git, Jenkins
+
+기타정보
+ㆍ근로형태 : 계약직/프리랜서 (오프라인 인터뷰시 협의 가능)
+ㆍ계약기간 : 5개월 (협의 가능, 최초 계약 후 연장시 협의 진행)
+ㆍ계약비용 : 오프라인 인터뷰시 협의 후 결정 
+
+
+
+전형절차
+ㆍ서류전형 > 1차면접 > 최종합격
+ㆍ면접일정은 추후 통보됩니다.
+
+유의사항
+ㆍ허위사실이 발견될 경우 채용이 취소될 수 있습니다.
