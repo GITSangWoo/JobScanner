@@ -9,33 +9,33 @@ from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
+  
+  
+if not os.path.exists('./wanted'):
+        os.makedirs('./wanted')  # 디렉토리 생성  
+  
 def log_error(error_message):
     """오류를 makelog_err.log 파일에 기록"""
-    with open('makelog_err.log', 'a', encoding='utf-8') as err_file:
+    # ./wanted 디렉토리가 없으면 생성
+    with open('./wanted/makelog_err.log', 'a', encoding='utf-8') as err_file:
         timestamp = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
         err_file.write(f"{timestamp},{error_message}\n")
 
 job_url_list = {
     "DE": [
         "https://www.wanted.co.kr/search?query=데이터+엔지니어&tab=position",
-        "https://www.wanted.co.kr/search?query=데이터엔지니어&tab=position"
     ],
     "FE": [
-        "https://www.wanted.co.kr/search?query=프론트+엔지니어&tab=position",
-        "https://www.wanted.co.kr/search?query=프론트엔지니어&tab=position"
+        "https://www.wanted.co.kr/search?query=프론트엔드&tab=position"
     ],
     "BE": [
-        "https://www.wanted.co.kr/search?query=백엔드+엔지니어&tab=position",
-        "https://www.wanted.co.kr/search?query=백엔드엔지니어&tab=position"
+        "https://www.wanted.co.kr/search?query=백엔드&tab=position"
     ],
     "DA": [
         "https://www.wanted.co.kr/search?query=데이터+분석가&tab=position",
-        "https://www.wanted.co.kr/search?query=데이터분석가&tab=position"
     ],
     "MLE": [
         "https://www.wanted.co.kr/search?query=머신러닝+엔지니어&tab=position",
-        "https://www.wanted.co.kr/search?query=머신러닝엔지니어&tab=position"
     ]
 }
 
@@ -47,16 +47,16 @@ try:
 
     # 오늘 날짜로 로그 파일 이름 설정
     today = datetime.today().strftime('%Y%m%d')
-    today_log_file_name = f"{today}.log"
+    today_log_file_name = f"./wanted/{today}.log"
 
     # 로그 파일을 찾을 디렉토리 설정
-    log_directory = '.'  # 현재 디렉토리
+    log_directory = './wanted'  # 원하는 디렉토리로 변경
     log_files = [f for f in os.listdir(log_directory) if re.match(r'^\d{8}\.log$', f)]
 
     # 가장 최근에 생성된 로그 파일 찾기
     if log_files:
         # 파일들을 생성 시간 기준으로 정렬하고 가장 최근 파일을 선택
-        log_files.sort(key=lambda x: os.path.getmtime(x), reverse=True)
+        log_files.sort(key=lambda x: os.path.getmtime(os.path.join(log_directory, x)), reverse=True)
         recent_log_file_name = log_files[0]  # 가장 최근의 로그 파일을 선택
         print(f"Found the most recent log file: {recent_log_file_name}")
     else:
@@ -64,8 +64,8 @@ try:
 
     # 이전 로그 파일이 존재하는지 확인하고 읽기
     previous_urls = {}  # 이전 로그에 있는 URL 및 해당 job
-    if os.path.exists(recent_log_file_name):
-        with open(recent_log_file_name, 'r', encoding='utf-8') as file:
+    if os.path.exists(os.path.join(log_directory, recent_log_file_name)):
+        with open(os.path.join(log_directory, recent_log_file_name), 'r', encoding='utf-8') as file:
             lines = file.readlines()
             if lines:  # 파일에 내용이 있을 때만 처리
                 for line in lines[1:]:  # 첫 번째 줄은 header
@@ -181,4 +181,3 @@ except Exception as e:
     if 'driver' in locals():
         driver.quit()
 
-# 어제 deleted url은 포함하지 않고 체크함 

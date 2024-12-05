@@ -6,7 +6,7 @@ from pyspark.sql.functions import col
 # SparkSession 초기화
 spark = SparkSession.builder \
     .appName("JobInfoProcessing") \
-    .config("spark.jars", "/home/centa/teamproject/FinalRepo/crawling/wanted/mysql-connector-j-9.1.0.jar") \
+    .config("spark.driver.extraClassPath", "/home/centa/teamproject/FinalRepo/crawling/wanted/mysql-connector-j-9.1.0.jar") \
     .getOrCreate()
 
 # S3에서 텍스트 파일을 읽어오는 함수
