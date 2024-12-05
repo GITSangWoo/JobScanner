@@ -8,6 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from concurrent.futures import ThreadPoolExecutor
 from urllib.parse import urlparse, parse_qsl, urlencode, urljoin, unquote
+from selenium.webdriver.chrome.options import Options
 import requests
 import uuid
 import time
@@ -23,15 +24,21 @@ logging.basicConfig(
 # AWS S3 클라이언트 생성
 s3 = boto3.client('s3')
 
-# S3 설정
+# S3 설정 - 기본값
 BUCKET_NAME = "t2jt"
-S3_BASE_PATH = "job/DE/sources/saramin/links"
-S3_TEXT_PATH = "job/DE/sources/saramin/txt"
-S3_IMAGES_PATH = "job/DE/sources/saramin/images"
-today_date = datetime.now().strftime("%Y%m%d")  # 오늘 날짜 (YYYYMMDD 형식)
-yesterday_date = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")  # 어제 날짜 (YYYYMMDD 형식)
-today_file_path = f"{S3_BASE_PATH}/{today_date}.txt"
-yesterday_file_path = f"{S3_BASE_PATH}/{yesterday_date}.txt"
+DEFAULT_KEYWORD = "DE"  # 기본 키워드
+S3_BASE_PATH = f"job/{DEFAULT_KEYWORD}/sources/saramin/links"
+S3_TEXT_PATH = f"job/{DEFAULT_KEYWORD}/sources/saramin/txt"
+S3_IMAGES_PATH = f"job/{DEFAULT_KEYWORD}/sources/saramin/images"
+
+# 오늘과 어제 날짜 파일 경로를 동적으로 생성할 함수
+def get_s3_paths(keyword):
+    base_path = f"job/{keyword}/sources/saramin/links"
+    text_path = f"job/{keyword}/sources/saramin/txt"
+    images_path = f"job/{keyword}/sources/saramin/images"
+    today_file = f"{base_path}/{datetime.now().strftime('%Y%m%d')}.txt"
+    yesterday_file = f"{base_path}/{(datetime.now() - timedelta(days=1)).strftime('%Y%m%d')}.txt"
+    return base_path, text_path, images_path, today_file, yesterday_file
 
 # MySQL 연결 풀 설정
 db_config = {
@@ -62,21 +69,24 @@ def upload_to_s3(content, file_name):
 def read_s3_file(bucket, path, retries=3):
     for attempt in range(retries):
         try:
+            logging.info(f"[INFO] S3 파일 읽기 시도: Bucket={bucket}, Path={path}")
             response = s3.get_object(Bucket=bucket, Key=path)
-            return response['Body'].read().decode('utf-8').strip()
+            file_content = response['Body'].read().decode('utf-8').strip()
+
+            if not file_content:
+                logging.warning(f"[WARNING] S3 파일 내용이 비어 있습니다: {path}")
+                return ""
+
+            return file_content
         except Exception as e:
-            logging.error(f"S3 파일 읽기 실패 (시도 {attempt + 1}/{retries}): {e}")
+            logging.error(f"[ERROR] S3 파일 읽기 실패 (시도 {attempt + 1}/{retries}): {e}")
             if attempt < retries - 1:
                 time.sleep(2)  # 재시도 전 대기
             else:
-                return None
+                return ""
 
 # URL 추출 함수
 def extract_urls_with_details(content):
-    """
-    Extract URLs along with JOB_TITLE, COMPANY, and POST_TITLE from content.
-    Normalize URLs for consistent comparison.
-    """
     data = []
     for line in content.splitlines():
         url_match = re.search(r"ORG_URL:\s*(https?://[^\s,]+)", line)
@@ -163,10 +173,8 @@ def update_removed_time(org_url):
             cursor.close()
             conn.close()
 
+# 이미지 URL을 다운로드하여 S3에 저장한 후, DB에 저장할 URL을 반환
 def upload_image_to_s3(image_url):
-    """
-    이미지 URL을 다운로드하여 S3에 저장한 후, DB에 저장할 URL을 반환
-    """
     try:
         # S3 키로 사용하기 위해 URL의 슬래시를 |로 인코딩
         encoded_url = image_url.replace('/', '|')  # 슬래시를 %2F로 변환
@@ -201,20 +209,37 @@ def extract_due_date_and_content(url, next_id, job_title, company, post_title, r
     for attempt in range(retries):
         try:
             logging.info(f"URL로 이동 중 (시도 {attempt + 1}/{retries}): {url}")
-            driver = webdriver.Chrome()
+            
+            chrome_options = Options()
+            chrome_options.add_argument("--headless")
+            chrome_options.add_argument("--disable-gpu")
+            chrome_options.add_argument("--no-sandbox")
+            chrome_options.add_argument("--disable-dev-shm-usage")
+            chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")  # User-Agent 설정
+
+            driver = webdriver.Chrome(options=chrome_options)
             driver.get(url)
 
             time.sleep(10)
 
-            # Iframe으로 전환
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "iframe")))
-            iframe = driver.find_element(By.ID, "iframe_content_0")
-            driver.switch_to.frame(iframe)
+            # iframe 전환
+            try:
+                WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "iframe_content_0")))
+                iframe = driver.find_element(By.ID, "iframe_content_0")
+                driver.switch_to.frame(iframe)
+            except Exception as e:
+                logging.error(f"iframe 탐색 실패: {e}")
+                return False
 
-            # user_content 텍스트 추출
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "user_content")))
-            content_element = driver.find_element(By.CLASS_NAME, "user_content")
-            extracted_text = content_element.text.strip()
+            # user_content 탐색
+            try:
+                WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, "user_content")))
+                content_element = driver.find_element(By.CLASS_NAME, "user_content")
+                extracted_text = content_element.text.strip()
+                logging.info(f"추출된 텍스트: {extracted_text}")
+            except Exception as e:
+                logging.error(f"user_content 탐색 실패: {e}")
+                return False
 
             # 텍스트 처리 - S3 저장
             if extracted_text:
@@ -328,11 +353,8 @@ def save_to_db(next_id, job_title, company, post_title, due_type, due_date, noti
             conn.close()
 
 
-# 정규화된 URL 사용
+# 정규화된 URL 사용 (URL을 정규화로 비교 가능 형태로 변환)
 def normalize_url(url):
-    """
-    URL을 정규화하여 비교가 가능한 형태로 변환.
-    """
     try:
         parsed_url = urlparse(url)
         query_params = sorted(parse_qsl(parsed_url.query), key=lambda x: x[0])  # 정렬된 쿼리
@@ -352,15 +374,23 @@ def normalize_url(url):
 
 # 실행 로직
 # 오늘날짜.txt와 DB와 먼저 중복 체크 후 오늘날짜.txt와 어제날짜.txt비교 후 추가 및 제거
-def execute():
+def execute(keyword):
     try:
+        # 동적으로 S3 경로 설정
+        global S3_BASE_PATH, S3_TEXT_PATH, S3_IMAGES_PATH, today_file_path, yesterday_file_path
+        S3_BASE_PATH, S3_TEXT_PATH, S3_IMAGES_PATH, today_file_path, yesterday_file_path = get_s3_paths(keyword)
+
         # S3 파일 읽기
         today_content = read_s3_file(BUCKET_NAME, today_file_path)
         yesterday_content = read_s3_file(BUCKET_NAME, yesterday_file_path)
 
         if not today_content:
-            logging.error("오늘 파일을 읽을 수 없으므로 종료합니다.")
+            logging.warning(f"{keyword}: 오늘 파일을 읽을 수 없어 작업을 건너뜁니다.")
             return
+        
+        if not yesterday_content:
+            logging.info(f"{keyword}: 어제 파일이 비어 있거나 존재하지 않습니다. 어제 데이터를 비어 있는 것으로 간주합니다.")
+            yesterday_content = ""  # 어제 데이터를 빈 값으로 설정
 
         # 오늘 날짜 파일에서 URL 및 관련 데이터 추출
         today_data = extract_urls_with_details(today_content)
@@ -385,13 +415,6 @@ def execute():
         # 어제 날짜 파일에서 URL 데이터 추출
         yesterday_urls = {normalize_url(item[0]) for item in yesterday_data} if yesterday_content else set()
         today_urls = {normalize_url(data[0]) for data in today_data}
-
-        # 어제 URL 목록과 오늘 필터된 URL 목록 저장
-        #with open("yesterday_urls_debug.txt", "w", encoding="utf-8") as f:
-        #    f.writelines(f"{url}\n" for url in yesterday_urls)
-
-        #with open("today_urls_debug.txt", "w", encoding="utf-8") as f:
-        #    f.writelines(f"{url}\n" for url in today_urls)
 
         # 추가 및 제거된 URL 계산
         added_urls = today_urls - yesterday_urls
@@ -434,6 +457,17 @@ def execute():
     except Exception as e:
         logging.error(f"실행 중 오류 발생: {e}")
 
-# 실행
-execute()
+def execute_for_all_keywords():
+    """
+    모든 키워드에 대해 작업 실행.
+    """
+    KEYWORDS = ["DE", "FE", "BE", "DA", "MLE"]
+
+    for keyword in KEYWORDS:
+        logging.info(f"=== {keyword} 작업 시작 ===")
+        execute(keyword)
+        logging.info(f"=== {keyword} 작업 완료 ===")
+
+if __name__ == "__main__":
+    execute_for_all_keywords()
 
