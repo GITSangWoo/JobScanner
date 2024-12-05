@@ -14,9 +14,8 @@ from urllib.parse import urlparse, parse_qs
 from webdriver_manager.chrome import ChromeDriverManager
 import re
 
-output_folder = "links"
 today = datetime.today().strftime('%Y%m%d')
-log_file_name = os.path.join(output_folder, f"{today}.log")
+log_file_name = os.path.join("jumpit", f"{today}.log")
 
 def save_crawled_content(url, content):
     file_name = url.split('/')[-1] + ".txt"
@@ -93,9 +92,6 @@ def extract_site_name(url):
     domain = parsed_url.hostname
     return domain.split('.')[0] if domain else None
 
-def ensure_directories():
-    os.makedirs("links", exist_ok=True)
-
 def calculate_deadline_from_dday(d_day):
     today = datetime.now().date()
     deadline = today + timedelta(days=d_day)
@@ -109,7 +105,8 @@ def update_log_file(url, crawl_time):
     
     for line in lines:
         columns = line.strip().split(',')
-        if columns[0] == url:
+        if columns[1] == url:
+            job_title = columns[0].strip()  # 로그 파일에서 job_title 추출
             columns[2] = "done"
             columns[3] = crawl_time
             updated_line = ','.join(columns)
@@ -120,10 +117,9 @@ def update_log_file(url, crawl_time):
     with open(log_file_name, 'w', encoding='utf-8') as file:
         file.writelines(updated_lines)
 
-ensure_directories()
 
 bucket_name = 't2jt'
-today_file_key = f"job/DE/sources/jumpit/links/{today}.txt"
+today_file_key = f"job/DE/sources/jumpit/links/{today}.txt"  # 기본값은 DE로 설정
 
 links_with_ddays = read_links_and_ddays_from_s3(bucket_name, today_file_key)
 
@@ -146,17 +142,19 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
 
 removed_links = []
 
-for line in lines[1:]:
+for line in lines[1:]:  # 헤더는 제외
     columns = line.strip().split(',')
-    url = columns[0]
-    notice_status = columns[1]
-    work_status = columns[2]
-    done_time = columns[3]
-    d_day = columns[4]
-    
+    job_title = columns[0].strip()  # 로그 파일에서 job_title 추출
+  # 로그에서 직무명을 추출
+    url = columns[1]
+    notice_status = columns[2]
+    work_status = columns[3]
+    done_time = columns[4]
+    d_day = columns[5]
+
     try:
         with connection.cursor() as cursor:
-            if notice_status == "deleted":
+            if notice_status == "deleted" and work_status == "done":
                 print(f"URL {url} is marked as deleted. Checking if it exists in the database.")
                 
                 # Check if URL exists in DB
@@ -182,7 +180,6 @@ for line in lines[1:]:
                     print(f"Removed time updated for URL: {url}")
                 connection.commit()
 
-            
             elif notice_status == "update" and work_status == "null":
                 print(f"Starting crawl for {url}")
                 crawl_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
@@ -203,7 +200,7 @@ for line in lines[1:]:
                     text_path = os.path.join("texts", f"{uuid.uuid4()}.txt")
                     with open(text_path, "w", encoding="utf-8") as f:
                         f.write(job_content_text)
-                    s3_text_url = upload_to_s3(text_path, bucket_name, f"job/DE/sources/{extract_site_name(url)}/txt/{uuid.uuid4()}.txt")
+                    s3_text_url = upload_to_s3(text_path, bucket_name, f"job/{job_title}/sources/{extract_site_name(url)}/txt/{uuid.uuid4()}.txt")
                 
                 company_name = None
                 post_title = None
@@ -228,10 +225,9 @@ for line in lines[1:]:
                     due_type = '상시채용'
                     due_date = None
 
-
                 data = {
                     'site': extract_site_name(url),
-                    'job_title': '데이터 엔지니어',
+                    'job_title': job_title,  # 동적으로 추출된 job_title
                     'due_type': due_type,
                     'due_date': due_date,
                     'company': company_name,
@@ -239,8 +235,8 @@ for line in lines[1:]:
                     'post_title': post_title,
                     'org_url': url,
                     's3_text_url': s3_text_url,
-                    'create_time': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                    'update_time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                    'create_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                    'update_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                 }
 
                 insert_into_db(data, connection)
@@ -249,8 +245,5 @@ for line in lines[1:]:
     except Exception as e:
         print(f"Error processing {url}: {e}")
 
-if removed_links:
-    update_removed_links_in_db(removed_links, connection)
-
-driver.quit()
 connection.close()
+driver.quit()
