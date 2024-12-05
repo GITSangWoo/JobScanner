@@ -153,7 +153,7 @@ options.headless = False
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
 # 오늘 날짜로 로그파일 이름 설정
-output_folder = "links"
+output_folder = "incruit"
 today = datetime.today().strftime('%Y%m%d')
 log_file_name = os.path.join(output_folder, f"{today}.log")  # 로컬 파일 사용
 
@@ -171,10 +171,11 @@ def update_log_file(url, crawl_time):
     
     for line in lines:
         columns = line.strip().split(',')
-        if columns[0] == url:
+        if columns[1] == url:
             # URL이 일치하면 work_status를 "done"으로 업데이트하고, done_time 추가
             columns[2] = "done"
             columns[3] = crawl_time
+            columns[0] = job_title
             updated_line = ','.join(columns)
             updated_lines.append(updated_line + '\n')
         else:
@@ -185,7 +186,7 @@ def update_log_file(url, crawl_time):
     with open(log_file_name, 'w', encoding='utf-8') as file:
         file.writelines(updated_lines)
 
-# 기존 로그 파일을 읽기
+# 기존 로그 파일을 읽고, "update" 상태인 URL들만 크롤링
 with open(log_file_name, 'r', encoding='utf-8') as file:
     lines = file.readlines()
 
@@ -194,20 +195,21 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
 
     for line in lines[1:]:
         columns = line.strip().split(',')
-        url = columns[0]
-        notice_status = columns[1]
-        work_status = columns[2]
-        done_time = columns[3]
-        
+        job_title = columns[0]  # job_title 추출
+        url = columns[1]        # URL 추출
+        notice_status = columns[2]
+        work_status = columns[3]
+        done_time = columns[4] if len(columns) > 4 else None
+
         if notice_status == "update" and work_status == "null":
-            print(f"Starting crawl for {url}")
+            print(f"Starting crawl for {job_title}: {url}")
             # 크롤링 작업 수행
             crawl_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
             try:
                 # 각 링크에 대해 로딩 타임아웃 설정
                 driver.get(url)
-                driver.set_page_load_timeout(CRAWL_TIMEOUT)  # 페이지 로딩 타임아웃을 설정합니다.
+                driver.set_page_load_timeout(CRAWL_TIMEOUT)  # 페이지 로딩 타임아웃 설정
                 time.sleep(3)
 
                 company = WebDriverWait(driver, 10).until(
@@ -243,15 +245,15 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
 
                 job_id = str(uuid.uuid4())
                 text_filename = f"{job_id}.txt"
-                s3_text_url = upload_to_s3(text_content, "t2jt", f"job/DE/sources/incruit/txt/{job_id}.txt")
+                s3_text_url = upload_to_s3(text_content, "t2jt", f"job/{job_title}/sources/incruit/txt/{job_id}.txt")
 
-                s3_image_urls = process_images(image_urls, job_id, "./images", "t2jt", "job/DE/sources/incruit/images")
+                s3_image_urls = process_images(image_urls, job_id, "./images", "t2jt", f"job/{job_title}/sources/incruit/images")
 
                 notice_type = "both" if s3_text_url and s3_image_urls else "text" if s3_text_url else "images" if s3_image_urls else "NULL"
 
                 insert_into_db({
                     "site": "incruit",
-                    "job_title": "데이터 엔지니어",
+                    "job_title": job_title,
                     "due_type": due_type,
                     "due_date": due_date_mysql,
                     "company": company,
@@ -268,9 +270,9 @@ with open(log_file_name, 'r', encoding='utf-8') as file:
                 update_log_file(url, crawl_time)
 
             except Exception as e:
-                print(f"Error processing {url}: {e}")
+                print(f"Error processing {job_title} - {url}: {e}")
 
-        elif notice_status == "deleted":
+        elif notice_status == "deleted" and work_status == "done":
             removed_links.append(url)
 
     if removed_links:
