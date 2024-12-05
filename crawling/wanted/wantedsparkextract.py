@@ -15,7 +15,7 @@ def get_mysql_connection():
         host='43.201.40.223',
         user='user',
         password='1234',
-        database='testdb',
+        database='jobnotice',
         port=3306
     )
 
@@ -140,16 +140,19 @@ def process_job_info(row):
         print(f"Error processing URL {row['s3_text_url']}: {e}")
         return (row['id'], None, None, None)
 
-# 데이터프레임을 RDD로 변환하여 파티셔닝 처리
-num_partitions = 3  # 3개의 파티션으로 분할
-partitioned_rdd = s3_urls_df.rdd.repartition(num_partitions)
+def main():
+    # 데이터프레임을 RDD로 변환하여 파티셔닝 처리
+    num_partitions = 3  # 3개의 파티션으로 분할
+    partitioned_rdd = s3_urls_df.rdd.repartition(num_partitions)
 
-# 각 파티션에서 병렬로 DB 업데이트 처리
-processed_rdd = partitioned_rdd.map(process_job_info)
+    # 각 파티션에서 병렬로 DB 업데이트 처리
+    processed_rdd = partitioned_rdd.map(process_job_info)
 
-# DB 업데이트는 batch 방식으로 처리
-processed_rdd.foreachPartition(update_batch_to_db)
+    # DB 업데이트는 batch 방식으로 처리
+    processed_rdd.foreachPartition(update_batch_to_db)
 
-# Spark 세션 종료
-spark.stop()
-
+    # Spark 세션 종료
+    spark.stop()
+    
+if __name__ == "__main__":
+    main()
