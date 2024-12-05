@@ -200,50 +200,56 @@ def update_log_file(url, done_time, status="done"):
         print(f"Error updating log file for URL {url}: {e}")
 
 # 로그에 따라 'deleted', 'update', 'exist' 상태인 URL만 크롤링
-with open(log_file_name, 'r', encoding='utf-8') as file:
-    lines = file.readlines()
 
-for line in lines[1:]:  # 첫 번째 줄은 헤더이므로 생략
-    columns = line.strip().split(',')
-    url = columns[1]
-    notice_status = columns[2]
-    work_status = columns[3]
-    done_time = columns[4] if len(columns) > 4 else None  # done_time이 존재할 때만 처리
-    job_title = columns[0]  # 첫 번째 열에서 job_title을 가져옵니다.
+def main():
+    with open(log_file_name, 'r', encoding='utf-8') as file:
+        lines = file.readlines()
 
-    # 'deleted' 상태일 경우 처리 (크롤링은 하지 않음)
-    if notice_status == "deleted":
-        print(f"URL {url} is deleted. Checking if it exists in the database.")
-        cursor.execute("SELECT removed_time FROM wanted WHERE org_url = %s", (url,))
-        result = cursor.fetchone()
+    for line in lines[1:]:  # 첫 번째 줄은 헤더이므로 생략
+        columns = line.strip().split(',')
+        url = columns[1]
+        notice_status = columns[2]
+        work_status = columns[3]
+        done_time = columns[4] if len(columns) > 4 else None  # done_time이 존재할 때만 처리
+        job_title = columns[0]  # 첫 번째 열에서 job_title을 가져옵니다.
 
-        if result:
-            removed_time = done_time  # 로그에서 가져온 done_time 값을 removed_time으로 사용
-            print(f"URL {url} exists in DB. Updating removed_time to: {removed_time}")
-            # 데이터베이스에서 removed_time을 done_time으로 업데이트
-            update_time_query = """
-            UPDATE wanted
-            SET removed_time = %s
-            WHERE org_url = %s
-            """
-            cursor.execute(update_time_query, (removed_time, url))
-            connection.commit()
-            print(f"Removed time for {url} updated successfully.")
-        else:
-            print(f"URL {url} not found in the database.")
-        continue  # 'deleted' 상태인 경우 크롤링을 건너뛰고, 제거만 처리
+        # 'deleted' 상태일 경우 처리 (크롤링은 하지 않음)
+        if notice_status == "deleted":
+            print(f"URL {url} is deleted. Checking if it exists in the database.")
+            cursor.execute("SELECT removed_time FROM wanted WHERE org_url = %s", (url,))
+            result = cursor.fetchone()
 
-    # 'update' 또는 'exist' 상태이면서 'work_status'가 'null' 또는 'error'인 URL만 크롤링
-    if notice_status in ['update', 'exist'] and (work_status == 'null' or work_status == 'error'):
-        print(f"Crawling URL: {url}")
-        crawl_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-        
-        # 크롤링 함수 실행
-        crawl_result = crawl_url(url, job_title)  # 크롤링 함수 실행
+            if result:
+                removed_time = done_time  # 로그에서 가져온 done_time 값을 removed_time으로 사용
+                print(f"URL {url} exists in DB. Updating removed_time to: {removed_time}")
+                # 데이터베이스에서 removed_time을 done_time으로 업데이트
+                update_time_query = """
+                UPDATE wanted
+                SET removed_time = %s
+                WHERE org_url = %s
+                """
+                cursor.execute(update_time_query, (removed_time, url))
+                connection.commit()
+                print(f"Removed time for {url} updated successfully.")
+            else:
+                print(f"URL {url} not found in the database.")
+            continue  # 'deleted' 상태인 경우 크롤링을 건너뛰고, 제거만 처리
 
-        # 크롤링이 성공적으로 완료되면 로그 파일에서 work_status를 done으로 업데이트
-        if crawl_result != "Error during crawling.":
-            update_log_file(url, crawl_time)
+        # 'update' 또는 'exist' 상태이면서 'work_status'가 'null' 또는 'error'인 URL만 크롤링
+        if notice_status in ['update', 'exist'] and (work_status == 'null' or work_status == 'error'):
+            print(f"Crawling URL: {url}")
+            crawl_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-# 브라우저 종료
-driver.quit()
+            # 크롤링 함수 실행
+            crawl_result = crawl_url(url, job_title)  # 크롤링 함수 실행
+
+            # 크롤링이 성공적으로 완료되면 로그 파일에서 work_status를 done으로 업데이트
+            if crawl_result != "Error during crawling.":
+                update_log_file(url, crawl_time)
+
+    # 브라우저 종료
+    driver.quit()
+
+
+if __name__ == "__main__":
+    main()
