@@ -20,14 +20,13 @@ connection = pymysql.connect(
     host='43.201.40.223',
     user='user',
     password='1234',
-    database='testdb',
+    database='jobnotice',
     port=3306
 )
 cursor = connection.cursor()
 
 # S3 버킷과 폴더 경로 설정
 s3_bucket_name = 't2jt'
-s3_folder_path = 'job/DE/sources/wanted/txt/'
 
 # 셀레니움 웹 드라이버 설정
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
@@ -38,27 +37,19 @@ log_file_name = f"./wanted/{today}.log"
 error_log_file_name = f"./wanted/{today}_error.log"  # 에러 로그 파일
 
 # 크롤링한 콘텐츠를 로컬에 저장하고, S3에 업로드 후 URL 반환
-def save_crawled_content(url, content, max_retries=3):
+def save_crawled_content(url, content, job_title, max_retries=3):
     attempt = 0
     while attempt < max_retries:
         try:
             file_name = f"{uuid.uuid4()}.txt"  # UUID로 파일 이름 생성
-            file_path = os.path.join('textnotice', file_name)
-            
-            # 로컬에 저장
-            if not os.path.exists('textnotice'):
-                os.makedirs('textnotice')
-            
-            # 크롤링한 내용을 로컬 파일에 저장
-            with open(file_path, 'w', encoding='utf-8') as file:
-                file.write(content)
-            print(f"Content saved locally to {file_path}")
+            # 동적으로 경로 설정 (job_title을 포함하여 경로 생성)
+            s3_folder_path_dynamic = f"job/{job_title}/sources/wanted/txt/"
             
             # S3에 파일 업로드
-            s3_file_path = os.path.join(s3_folder_path, file_name)
+            s3_file_path = os.path.join(s3_folder_path_dynamic, file_name)
             s3_client.put_object(
                 Bucket=s3_bucket_name,
-                Key=s3_file_path,  # 'job/DE/sources/wanted/txt/UUID.txt'
+                Key=s3_file_path,  # 동적으로 생성된 경로로 파일 업로드
                 Body=content,
                 ContentType='text/plain'
             )
@@ -123,7 +114,7 @@ def crawl_url(url, job_title, max_retries=3):
                 due_date = None
             
             # S3에 텍스트 내용 저장 후 URL 반환
-            s3_text_url = save_crawled_content(url, job_content_text)
+            s3_text_url = save_crawled_content(url, job_content_text, job_title)
             
             if not s3_text_url:
                 # S3 업로드 실패 시 에러 처리
