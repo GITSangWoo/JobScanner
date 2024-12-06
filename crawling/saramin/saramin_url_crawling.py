@@ -5,6 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from urllib.parse import urlparse, parse_qs, urlencode
+import tempfile
 import boto3
 import datetime
 import time
@@ -27,17 +28,23 @@ S3_PATH_PREFIX_TEMPLATE = "job/{}/sources/saramin/links/"  # 키워드에 따른
 # S3 클라이언트 생성
 s3_client = boto3.client("s3")
 
+temp_dir = tempfile.mkdtemp()
+
 # Chrome 옵션 설정
 chrome_options = Options()
 chrome_options.add_argument("--disable-cache")
-chrome_options.add_argument("--incognito")
 chrome_options.add_argument("--disk-cache-dir=/dev/null")  # 디스크 캐시 경로를 비활성화
 chrome_options.add_argument("--disable-application-cache")  # 애플리케이션 캐시 비활성화
+chrome_options.add_argument("--disable-background-networking")
+chrome_options.add_argument("--disk-cache-size=0")
+chrome_options.add_argument("--incognito")
 chrome_options.add_argument("--disable-gpu")  # GPU 캐시 비활성화 (필요한 경우)
 chrome_options.add_argument("--no-sandbox")  # 샌드박스 비활성화 (권장)
 chrome_options.add_argument("--disable-dev-shm-usage")  # 공유 메모리 비활성화 (리소스 관리)
-chrome_options.add_argument("--user-data-dir=/tmp/chrome-profile")
+#chrome_options.add_argument("--user-data-dir=/tmp/chrome-profile")
 chrome_options.add_argument("--headless")
+chrome_options.add_argument(f"--user-data-dir={temp_dir}")
+chrome_options.add_argument("--disable-features=NetworkService,NetworkServiceInProcess")
 chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")  # User-Agent 설정
 
 # 키워드별 정보 설정
@@ -52,12 +59,20 @@ keywords_config = {
 # WebDriver 설정
 #driver = webdriver.Chrome(options=chrome_options)
 for keyword, config in keywords_config.items():
-    # 각 키워드별로 새로운 브라우저 인스턴스 실행
+    # 각 키워드별로 새로운 브라우저 인스턴스 실행. 브라우저 실행 후 캐시 비활성화
     driver = webdriver.Chrome(options=chrome_options)
+    driver.execute_cdp_cmd("Network.setCacheDisabled", {"cacheDisabled": True})
+    driver.execute_cdp_cmd("Network.clearBrowserCache", {})  # 브라우저 캐시 클리어
+    driver.execute_cdp_cmd("Network.clearBrowserCookies", {})  # 브라우저 쿠키 클리어
+
     try:
-#try:
-#    for keyword, config in keywords_config.items():
         print(f"키워드 '{keyword}' 작업 시작")
+
+        # 로컬 저장소 및 세션 스토리지 정리
+        driver.execute_cdp_cmd("Network.clearBrowserCache", {})
+        driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
+        driver.delete_all_cookies()
+
         # 수집 시점
         current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
         today_date = datetime.datetime.now().strftime("%Y%m%d")
@@ -70,12 +85,6 @@ for keyword, config in keywords_config.items():
         url = "https://www.saramin.co.kr/zf_user/"
         driver.get(url)
         time.sleep(5)
-
-        # 캐시 방지
-        driver.delete_all_cookies()
-        driver.execute_script("window.localStorage.clear();")
-        driver.execute_script("window.sessionStorage.clear();")
-        driver.execute_cdp_cmd("Network.setCacheDisabled", {"cacheDisabled": True})
 
         # 검색어 입력 및 실행
         search_box = driver.find_element(By.CLASS_NAME, "search")
