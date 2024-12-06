@@ -9,6 +9,7 @@ import tempfile
 import boto3
 import datetime
 import time
+import psutil
 
 # URL에서 rec_idx 값까지만 포함된 URL 반환 함수
 def extract_rec_idx_url(url):
@@ -21,14 +22,22 @@ def extract_rec_idx_url(url):
         return f"{base_url}?{new_query}"
     return base_url
 
+# 브라우저 세션 완전 초기화
+def cleanup_driver_process(driver):
+    try:
+        driver.quit()  # 기존 브라우저 세션 종료
+        for proc in psutil.process_iter(attrs=["pid", "name"]):
+            if "chrome" in proc.info["name"].lower():
+                proc.terminate()  # Chrome 프로세스 강제 종료
+    except Exception as e:
+        print(f"드라이버 정리 중 오류 발생: {e}")
+
 # AWS s3 설정
 BUCKET_NAME = "t2jt"
 S3_PATH_PREFIX_TEMPLATE = "job/{}/sources/saramin/links/"  # 키워드에 따른 동적 경로
 
 # S3 클라이언트 생성
 s3_client = boto3.client("s3")
-
-temp_dir = tempfile.mkdtemp()
 
 # Chrome 옵션 설정
 chrome_options = Options()
@@ -42,8 +51,7 @@ chrome_options.add_argument("--disable-gpu")  # GPU 캐시 비활성화 (필요�
 chrome_options.add_argument("--no-sandbox")  # 샌드박스 비활성화 (권장)
 chrome_options.add_argument("--disable-dev-shm-usage")  # 공유 메모리 비활성화 (리소스 관리)
 #chrome_options.add_argument("--user-data-dir=/tmp/chrome-profile")
-chrome_options.add_argument("--headless")
-chrome_options.add_argument(f"--user-data-dir={temp_dir}")
+#chrome_options.add_argument("--headless")
 chrome_options.add_argument("--disable-features=NetworkService,NetworkServiceInProcess")
 chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")  # User-Agent 설정
 
@@ -59,11 +67,13 @@ keywords_config = {
 # WebDriver 설정
 #driver = webdriver.Chrome(options=chrome_options)
 for keyword, config in keywords_config.items():
+    # 각 키워드별로 임시 디렉토리 생성
+    temp_dir = tempfile.mkdtemp()
+    chrome_options.add_argument(f"--user-data-dir={temp_dir}")
+
     # 각 키워드별로 새로운 브라우저 인스턴스 실행. 브라우저 실행 후 캐시 비활성화
     driver = webdriver.Chrome(options=chrome_options)
     driver.execute_cdp_cmd("Network.setCacheDisabled", {"cacheDisabled": True})
-    driver.execute_cdp_cmd("Network.clearBrowserCache", {})  # 브라우저 캐시 클리어
-    driver.execute_cdp_cmd("Network.clearBrowserCookies", {})  # 브라우저 쿠키 클리어
 
     try:
         print(f"키워드 '{keyword}' 작업 시작")
@@ -161,5 +171,10 @@ for keyword, config in keywords_config.items():
         print(f"오류 발생: {e}")
 
     finally:
-        driver.quit()
-
+        try:
+            driver.quit()  # 브라우저 세션 정상 종료 시도
+        except Exception as e:
+            print(f"driver.quit() 실패: {e}")
+        
+        cleanup_driver_process(driver)  # 추가적으로 리소스 정리
+        shutil.rmtree(temp_dir, ignore_errors=True)  # 임시 디렉토리 삭제
