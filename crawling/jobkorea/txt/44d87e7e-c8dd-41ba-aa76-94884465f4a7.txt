@@ -1,0 +1,40 @@
+(주)솔트룩스의 100% 자회사 플루닛입니다.
+                                                                            사무실 및 복리후생은 모든 계열사가 동일하게 사용 및 적용됩니다.
+
+
+포지션 및 자격요건
+프론트엔드 개발자
+( 0명 )
+담당업무
+l   자사 인공지능 기술이 적용 된 WEB/Mobile Service 개발 / Web app
+l  Next.js / React / Flutter 기반 생성형 인공지능 WEB/Mobile
+l  React 기반 Spring 프레임워크 기반의 백엔드 API 서버 개발 및 프론트엔드 
+
+경력
+l   6~12년
+
+필수 자격요건
+l   React 기반의 WEB/Mobile Service / Application 개발 경력 5년 이상
+l   React, javascript, Typescript 및 Java 언어의 기술적 이해와 실무 경험이 있으신 개발자 
+l   HTML5/CSS 기본 지식 및 마크업 능력을 보유하고 있는 경험자 
+l   React 기반의 WEB/Mobile Service / Application 개발 경력 5년 이상 
+l   데이터베이스 클러스터링, 서버 클러스터링 업무 가능자 
+l   GitLab / Redux 등 기반 형상 관리 시스템 사용 가능자
+
+
+우대사항
+l   Public&Private Cloud(AWS, Azure, NBP 등) 상 에서의 서비스 개발 경험이 있는 개발자
+l   docker / node 배포 경험이 있는 개발자
+
+
+복리후생
+ 
+
+
+전형절차
+ㆍ서류전형 > 인적성검사 > 코딩테스트 >1차면접 > 2차면접(필요시)  > 최종합격
+ㆍ면접일정은 추후 통보됩니다.
+
+
+유의사항
+ㆍ허위사실이 발견될 경우 채용이 취소될 수 있습니다.

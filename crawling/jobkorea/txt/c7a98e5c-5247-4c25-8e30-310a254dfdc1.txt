@@ -1,0 +1,51 @@
+모집부문 및 상세내용
+백엔드 개발자     연구소 
+
+담당업무
+ㆍSpringBoot 또는 Node.js를 활용한 백엔드 서비스 개발
+ㆍ자사 스마트워크 솔루션 개발
+ㆍ개발된 솔루션의 지속적인 개선
+
+지원자격 
+ㆍ학력 : 무관
+ㆍ경력 : 경력 3년 ~ 5년(개발 경험 필수)
+ㆍJAVA SpringBoot 또는 Node.JS 기반 서비스 개발 및 운영 가능자
+ㆍTypescript 이해 및 활용 가능자
+ㆍJava Restful API 설계 및 개발 가능자
+ㆍRest API 및 GraphQL API  개발 가능자 
+ㆍJPA 기반 개발 가능자 
+ㆍWebSocket을 이용한 통신
+ㆍDatabase 모델링 및 쿼리 (RDBMS, NoSQL) 가능자 
+ㆍGit을 통한 형상 관리 및 협업 가능자
+ 우대사항
+ㆍNode-JS 또는 JAVA  를 통한 개발 능력 보유자
+ㆍMSA에 대한 기본적인 이해가 있는자
+ㆍ클라우드 환경 개발 경험자
+ㆍ컨테이너 환경 경험자 (Docker & Kubernetes)
+ㆍTypeORM 개발 경험자
+ㆍ지속적인 성장을 추구하는 개발자
+
+특이사항
+ㆍ계약기간 : 12개월 (추후 평가에 따라 정규직 전환 가능)
+
+프론트엔드 개발자     연구소 
+
+담당업무
+ㆍReact Native 를 활용한 Web 개발 업무
+ㆍJSP & JQuery를 활용한 Web 개발 업무
+ㆍReact Native / javascript(Typescript)를 활용한 모바일(IOS , Andriod) 앱 개발 업무
+
+지원자격 
+ㆍ학력 : 무관
+ㆍ경력 : 경력 2년 ~ 5년(개발 경험 필수)
+
+우대사항
+ㆍJsp -> react 변환 작업 경험자 우대
+ㆍWebRTC 경험자 우대
+ㆍWebRTC 관련 SDK 개발 경험자 우대
+ㆍKotlin, JAVA 사용가능자
+ㆍJSP & JQuery 사용 가능자
+ㆍReact-Native 와 연동 경험자(필수)
+
+특이사항
+ㆍ계약기간 : 12개월 (추후 평가에 따라 정규직 전환 가능)

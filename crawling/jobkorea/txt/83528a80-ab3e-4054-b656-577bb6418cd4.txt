@@ -1,0 +1,64 @@
+㈜보스반도체를 소개해요
+보스 반도체는 차량용 반도체 전문기업으로 자율주행 SOC, Mega MCU, Gateway SOC 등 반도체 및 소프트웨어를 포함하는 반도체 Total Solution을 개발하고 있습니다.
+
+보스 반도체는 SoC 설계, 개발 및 생산까지 전체 프로세스를 경험한 업계 최고의 전문가 집단으로 이루어진 리더급 Manpower를 통해 창업 초기부터 국내 유수의 대기업으로 부터 투자를 받고 안정적으로 과제를 수행하고 있는 판교에 위치한 스타트업 회사입니다.
+
+창업 2년이 되지 않은 현재 연구개발자 150명 이상, 베트남 연구개발 법인까지 보유한 빠르게 성장하며 Global Top 기술력을 보유한 회사들과 경쟁하며 의미 있는 성장을 목표로 하고 있는 회사 보스 반도체에서 함께 성장해 나가실 분을 모집하고자 합니다.
+https://www.bos-semi.com
+이런 업무를 해요
+[부서 업무 소개]
+보스반도체의 SoC Top 설계팀은 자율주행 SoC를 비롯한 여러 SoC 제품의 설계의 Top integration 및 system IP 의 설계를 진행하고 있습니다. PPA(Power, Performance, Area) 에서 최고의 경쟁력을 가질 수 있도록 system bus architecture, clock & reset 설계, flooplaning 및 fullchip integration 을 위해 많은 설계 과정을 자동화하여 설계를 진행하고 있습니다.
+
+[주요 업무]
+Full chip 통합 및 System IP 설계
+ㆍ SoC 아키텍처 설계
+- 버스 아키텍처 설계, 시스템 아키텍처 설계, 시스템 분석
+ㆍFull chip SoC 설계
+- Full chip 및 서브블록 통합
+- Full chip 레벨 프론트엔드 작업(Lint, CDC, Formality, SDC 스크립트 작성 포함)
+- Design Env. 및 version control
+- IP/DK/Library management
+- Floorplanning
+- Support SDC/GCA clean up
+ㆍIP 및 서브시스템 설계
+- System bus architecture 설계
+- Clock, Reset , Power controller 설계
+- Sub block 설계
+이런 분들을 찾고 있어요
+ㆍ학력 : 대졸이상
+ㆍ학사 이상의 학위 소지하신 분
+ㆍ주요 업무 상 설계 분야에서 4년 이상의 근무 경험이 있으신 분
+ㆍVerilog 또는 System Verilog를 활용한 기본 RTL 설계 지식
+ㆍEDA 툴 사용 경험
+ㆍIP/Subsystem/Block 설계 경력
+ㆍ해외여행에 결격 사유가 없으신 분
+이런 분이면 더 좋아요
+ㆍ자동차용 반도체 칩 설계 경력
+ㆍFull chip 설계 경력
+ㆍC, C++, Python, Tcl 언어 사용 경험
+ㆍ비즈니스 영어 의사소통 능력을 보유하신 분
+이런 기술이 필요해요
+Verilog
+System Verilog
+이런 조건에서 근무할 예정이에요
+ㆍ고용 형태 : 정규직
+ㆍ근무지 주소 : 경기 성남시 분당구 판교로255번길 24 (삼평동) 3층
+지도보기
+ㆍ근무 요일/시간 : 주5일(월~금) 09:00 ~ 18:00
+함께하면 이런 점들이 좋아요
+ㆍ유연한 출퇴근 시간
+ㆍ능력별 Stock Option 부여
+ㆍ조식, 중식, 석식 제공
+ㆍ간식 / 커피 무제한 제공
+ㆍ최적의 개발환경제공(듀얼 모니터/HPC서버)
+ㆍ허리건강을 위한 모션데스크 지원
+ㆍOn-site 외국어 학습지원
+ㆍ기술도서 구매지원
+ㆍ건강검진프로그램 제공
+합류 여정은 이렇게 진행돼요
+ㆍ서류전형 ＞ 면접전형(1/2차) ＞ Reference Check ＞ 입사 Offer ＞ 채용 검진 ＞ 입사
+ㆍ면접일정은 추후 통보됩니다.
+이 기간동안 모집해요
+~ 2025. 01. 04 (토)
+지원 시 유의해주세요
+허위사실이 발견될 경우 채용이 취소될 수 있습니다.

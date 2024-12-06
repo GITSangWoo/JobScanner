@@ -208,7 +208,7 @@ def download_image(img_url, image_path):
 def upload_to_s3(local_file_path, bucket_name, s3_path):
     try:
         s3_client.upload_file(local_file_path, bucket_name, s3_path)
-        print(f"[INFO] {local_file_path}를 s3://{bucket_name}에 업로드했습니다.")
+        print(f"[INFO] {local_file_path}를 s3에 업로드했습니다.")
         return f"s3://{bucket_name}/{s3_path}"
     except NoCredentialsError:
         print("[ERROR] s3 자격 증명이 없습니다.")

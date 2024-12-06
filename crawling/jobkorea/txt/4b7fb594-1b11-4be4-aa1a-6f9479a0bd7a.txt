@@ -1,0 +1,31 @@
+Sm(패션 부문. AI 시스템 개발 및 유지보수)/상세참조/도곡/즉시-장기/고급/Python,Java,Javascript/
+포지션 및 자격요건
+물산 패션 부문 AI 시스템 개발 및 유지보수
+( ○명 )
+패션 부문. AI 시스템 개발 및 유지보수 
+-. 기간: 즉시 ~ 장기
+-. 기술: 필수- Python, Java, Javascript
+            우대- Vue, scala
+             DB- Mongodb, Cassandra, Mysql
+? 등급: 중급 ~ 고급 1명
+? 근무지: 도곡
+? 특이사항: 
+              1. Infra 
+                    -필수: linux, docker
+                    -우대: k8s, AWS 운영
+               2. api
+                   -REST API, Graphql 설계 및 개발 경험
+               3. ETL
+                  -Spring batch, Pyspark, scala spark, kafka 등
+                    빅데이터 처리 경험
+              4. Monitoring
+                  -prometeus, grafana
+
+*지원_ooo님_공고명_일반이력워드파일(플젝,담당업무,근무회사,등,),경력년수,운영단가,투입가능일,사업자여부, 부탁드립니다--.  bearhcw@naver.com
+
+전형절차
+ㆍ서류전형 > 1차면접 > 2차면접 > 임원면접 > 최종합격
+ㆍ면접일정은 추후 통보됩니다.
+
+유의사항
+ㆍ허위사실이 발견될 경우 채용이 취소될 수 있습니다.
