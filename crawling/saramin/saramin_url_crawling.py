@@ -10,6 +10,7 @@ import boto3
 import datetime
 import time
 import psutil
+import shutil
 
 # URL에서 rec_idx 값까지만 포함된 URL 반환 함수
 def extract_rec_idx_url(url):
@@ -56,9 +57,9 @@ chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64
 
 # 키워드별 정보 설정
 keywords_config = {
-    "데이터 엔지니어": {"job_title": "DE", "path_prefix": "DE"},
-    "프론트엔드": {"job_title": "FE", "path_prefix": "FE"},
-    "백엔드": {"job_title": "BE", "path_prefix": "BE"},
+#    "데이터 엔지니어": {"job_title": "DE", "path_prefix": "DE"},
+#    "프론트엔드": {"job_title": "FE", "path_prefix": "FE"},
+#    "백엔드": {"job_title": "BE", "path_prefix": "BE"},
     "데이터 분석가": {"job_title": "DA", "path_prefix": "DA"},
     "머신러닝 엔지니어": {"job_title": "MLE", "path_prefix": "MLE"}
 }
