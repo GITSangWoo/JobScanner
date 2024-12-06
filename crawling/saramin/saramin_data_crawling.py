@@ -395,7 +395,8 @@ def execute(keyword):
         # 오늘 날짜 파일에서 URL 및 관련 데이터 추출
         today_data = extract_urls_with_details(today_content)
         yesterday_data = extract_urls_with_details(yesterday_content)  # 어제 파일
-        logging.info(f"오늘 날짜 파일에서 추출된 데이터: {len(today_data)}개")
+        logging.info(f"[{keyword}] 오늘 날짜 파일에서 추출된 데이터: {len(today_data)}개")
+        logging.info(f"[{keyword}] 어제 날짜 파일에서 추출된 데이터: {len(yesterday_data)}개")
 
         # DB와 중복 확인
         filtered_today_data = []
@@ -406,7 +407,7 @@ def execute(keyword):
                 cursor.execute("SELECT COUNT(*) FROM saramin WHERE org_url = %s", (url,))
                 if cursor.fetchone()[0] == 0:  # DB에 없는 경우만 추가
                     filtered_today_data.append((url, job_title, company, post_title))
-            logging.info(f"DB 중복 확인 후 남은 데이터: {len(filtered_today_data)}개")
+            logging.info(f"[{keyword}] DB 중복 확인 후 남은 데이터: {len(filtered_today_data)}개")
         finally:
             if conn.is_connected():
                 cursor.close()
@@ -425,8 +426,8 @@ def execute(keyword):
 
 
         # 디버깅용 추가 및 제거된 URL 로깅
-        logging.debug(f"추가된 URL 개수: {len(added_data)}, 목록: {[data[0] for data in added_data]}")
-        logging.debug(f"제거된 URL 개수: {len(removed_urls)}, 목록: {list(removed_urls)}")
+        logging.debug(f"[{keyword}] 추가된 URL 개수: {len(added_data)}, 목록: {[data[0] for data in added_data]}")
+        logging.debug(f"[{keyword}] 제거된 URL 개수: {len(removed_urls)}, 목록: {list(removed_urls)}")
         logging.info(f"추가된 URL: {len(added_data)}개")
         logging.info(f"제거된 URL: {len(removed_urls)}개")
 
