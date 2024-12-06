@@ -173,4 +173,3 @@ for keyword, config in keywords_config.items():
             print(f"driver.quit() 실패: {e}")
         
         cleanup_driver_process(driver)  # 추가적으로 리소스 정리
-        shutil.rmtree(temp_dir, ignore_errors=True)  # 임시 디렉토리 삭제
