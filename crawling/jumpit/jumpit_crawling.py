@@ -14,8 +14,9 @@ from urllib.parse import urlparse, parse_qs
 from webdriver_manager.chrome import ChromeDriverManager
 import re
 
+output_folder = "jumpit"
 today = datetime.today().strftime('%Y%m%d')
-log_file_name = os.path.join("jumpit", f"{today}.log")
+log_file_name = os.path.join(output_folder, f"{today}.log")
 
 def save_crawled_content(url, content):
     file_name = url.split('/')[-1] + ".txt"
