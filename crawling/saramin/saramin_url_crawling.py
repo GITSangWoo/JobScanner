@@ -67,16 +67,12 @@ keywords_config = {
 # WebDriver 설정
 #driver = webdriver.Chrome(options=chrome_options)
 for keyword, config in keywords_config.items():
-    # 각 키워드별로 임시 디렉토리 생성
-    temp_dir = tempfile.mkdtemp()
-    chrome_options.add_argument(f"--user-data-dir={temp_dir}")
-
-    # 각 키워드별로 새로운 브라우저 인스턴스 실행. 브라우저 실행 후 캐시 비활성화
-    driver = webdriver.Chrome(options=chrome_options)
-    driver.execute_cdp_cmd("Network.setCacheDisabled", {"cacheDisabled": True})
-
     try:
         print(f"키워드 '{keyword}' 작업 시작")
+
+        # 각 키워드별로 새로운 브라우저 인스턴스 실행. 브라우저 실행 후 캐시 비활성화
+        driver = webdriver.Chrome(options=chrome_options)
+        driver.execute_cdp_cmd("Network.setCacheDisabled", {"cacheDisabled": True})
 
         # 로컬 저장소 및 세션 스토리지 정리
         driver.execute_cdp_cmd("Network.clearBrowserCache", {})
