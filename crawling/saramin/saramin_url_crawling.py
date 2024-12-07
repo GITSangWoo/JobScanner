@@ -6,8 +6,6 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options
 from urllib.parse import urlparse, parse_qs, urlencode
 from selenium.webdriver.common.keys import Keys
-import subprocess
-import tempfile
 import boto3
 import datetime
 import time
@@ -26,36 +24,30 @@ def extract_rec_idx_url(url):
         return f"{base_url}?{new_query}"
     return base_url
 
-def cleanup(driver, temp_dir):
+def cleanup(driver):
     try:
         driver.quit()
     except Exception as e:
         print(f"Driver quit failed: {e}")
-    
+
     # 프로세스 강제 종료
     for proc in psutil.process_iter(["pid", "name"]):
         if "chrome" in proc.info["name"].lower() or "chromedriver" in proc.info["name"].lower():
             try:
                 proc.terminate()
-                proc.wait(timeout=10)  # 10초 대기
+                proc.wait(timeout=10)
                 print(f"Process terminated: {proc.info}")
             except psutil.TimeoutExpired:
                 print(f"Process termination timeout: {proc.info}")
                 try:
-                    debug_process(proc.pid)  # 프로세스 상태 디버깅
                     proc.kill()  # 강제 종료
                     print(f"Process killed: {proc.info}")
                 except Exception as kill_err:
                     print(f"Force kill failed: {kill_err}")
+            except psutil.NoSuchProcess:
+                print(f"Process already terminated: {proc.info}")
             except Exception as e:
                 print(f"Process termination failed: {e}")
-    
-    # 임시 디렉토리 삭제
-    if os.path.exists(temp_dir):
-        try:
-            shutil.rmtree(temp_dir)
-        except Exception as dir_err:
-            print(f"Temporary directory cleanup failed: {dir_err}")
 
 # AWS s3 설정
 BUCKET_NAME = "t2jt"
@@ -75,26 +67,17 @@ keywords_config = {
 
 # WebDriver 설정
 for keyword, config in keywords_config.items():
-    # 매 키워드마다 새로운 임시 디렉토리 생성
-    temp_dir = tempfile.mkdtemp()
-
     # Chrome 옵션 설정
     chrome_options = Options()
-    chrome_options.add_argument(f"--user-data-dir={temp_dir}")  # 사용자 데이터 디렉토리 강제 지정
+    chrome_options.add_argument("--incognito")
+    #chrome_options.add_argument(f"--user-data-dir={temp_dir}")  # 사용자 데이터 디렉토리 강제 지정
     chrome_options.add_argument("--disable-cache")
-    chrome_options.add_argument("--disk-cache-dir=/dev/null")  # 디스크 캐시 경로를 비활성화
     chrome_options.add_argument("--disable-application-cache")  # 애플리케이션 캐시 비활성화
     chrome_options.add_argument("--disable-background-networking")
-    chrome_options.add_argument("--disable-features=CacheStorage,NetworkService,NetworkServiceInProcess")
-    chrome_options.add_argument("--disk-cache-size=0")
-    #chrome_options.add_argument("--incognito")
     chrome_options.add_argument("--disable-gpu")  # GPU 캐시 비활성화 (필요한 경우)
     chrome_options.add_argument("--no-sandbox")  # 샌드박스 비활성화 (권장)
     chrome_options.add_argument("--disable-dev-shm-usage")  # 공유 메모리 비활성화 (리소스 관리)
     chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-background-timer-throttling")  # 백그라운드 작업 제한 비활성화
-    chrome_options.add_argument("--disable-renderer-backgrounding")  # 렌더러 제한 비활성화
-    chrome_options.add_argument("--purge-code-caches-on-memory-pressure")  # 메모리 압박 시 캐시 제거
     chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")  # User-Agent 설정
 
     try:
@@ -113,20 +96,22 @@ for keyword, config in keywords_config.items():
             }
         )
 
-        # 로컬 저장소 및 세션 스토리지 정리
-        driver.execute_cdp_cmd("Network.clearBrowserCache", {})
-        driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
-        driver.delete_all_cookies()
 
-        # Ctrl + R 새로고침 동작 추가
+        # Ctrl + F5 강력 새로고침
         try:
-            body = driver.find_element(By.TAG_NAME, "body")  # 페이지의 body를 찾음
-            body.send_keys(Keys.CONTROL, 'r')  # Ctrl + R 키 입력
-            print("브라우저 새로고침 (Ctrl + R) 완료")
+            body = driver.find_element(By.TAG_NAME, "body")
+            body.send_keys(Keys.CONTROL, Keys.F5)  # Ctrl + F5 입력
+            print("브라우저 강력 새로고침 (Ctrl + F5) 완료")
         except Exception as e:
-            print(f"Ctrl + R 새로고침 실패, 브라우저를 직접 새로고침합니다: {e}")
-            driver.refresh()  # 브라우저를 코드로 직접 새로고침
-            print("브라우저 새로고침 완료 (driver.refresh())")
+            print(f"Ctrl + F5 새로고침 실패, 강제로 URL 재로드: {e}")
+            driver.refresh()
+        time.sleep(3)
+
+        # URL에 nocache 파라미터 추가
+        url = f"https://www.saramin.co.kr/zf_user/?nocache={int(time.time())}"
+        driver.get(url)
+        print(f"캐시 무효화된 URL로 접근: {url}")
+        time.sleep(5)
 
         # 수집 시점
         current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -135,11 +120,6 @@ for keyword, config in keywords_config.items():
         # S3 파일 경로
         s3_path_prefix = S3_PATH_PREFIX_TEMPLATE.format(config["path_prefix"])
         s3_file_path = f"{s3_path_prefix}{today_date}.txt"
-
-        # 사람인 홈페이지 접속
-        url = "https://www.saramin.co.kr/zf_user/"
-        driver.get(url)
-        time.sleep(5)
 
         # 검색어 입력 및 실행
         search_box = driver.find_element(By.CLASS_NAME, "search")
@@ -221,4 +201,4 @@ for keyword, config in keywords_config.items():
         except Exception as e:
             print(f"driver.quit() 실패: {e}")
         
-        cleanup(driver, temp_dir)
+        cleanup(driver)
