@@ -16,6 +16,8 @@ services:
       - ./airflow/logs:/usr/local/airflow/logs
       - ./airflow/plugins:/usr/local/airflow/plugins
     command: ["airflow", "webserver"]
+    depends_on:
+      - airflow-db
     networks:
       - airflow-spark-network
 
@@ -30,6 +32,8 @@ services:
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: mysql+mysqlconnector://user:1234@43.201.40.223:3306/testdb
       AIRFLOW__CORE__LOAD_EXAMPLES: "False" # 기본 예제 DAG 로드 비활성화
     command: ["airflow", "scheduler"]
+    depends_on:
+      - airflow-db
     networks:
       - airflow-spark-network
 

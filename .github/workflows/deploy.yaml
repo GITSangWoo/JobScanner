@@ -30,10 +30,20 @@ jobs:
           aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/u5b2p7i3
 
       # docker images build or ECR push
+      - name: Delete Existing Airflow Image
+        run: |
+          aws ecr-public batch-delete-image --repository-name job_scanner/test_repo \
+          --image-ids imageTag=airflow-latest || echo "No existing image to delete."
+
       - name: Build and Push Airflow Image
         run: |
           docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest -f ./airflow/Dockerfile-airflow ./airflow
           docker push public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest
+
+      - name: Delete Existing Spark Image
+        run: |
+          aws ecr-public batch-delete-image --repository-name job_scanner/test_repo \
+          --image-ids imageTag=spark-latest || echo "No existing image to delete."
 
       - name: Build and Push Spark Image
         run: |
@@ -74,4 +84,7 @@ jobs:
             " > ~/deploy/docker-compose.yaml
 
             docker-compose -f ~/deploy/docker-compose.yaml up -d
+
+            # Remove Dangling Images
+            docker image prune -f
           EOF
