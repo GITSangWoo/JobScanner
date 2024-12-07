@@ -56,10 +56,9 @@ def get_s3_urls_from_db():
         SELECT id, s3_text_url 
         FROM wanted
         WHERE 
-            ((responsibility IS NULL AND qualification IS NULL) OR
+            (responsibility IS NULL AND qualification IS NULL) OR
             (responsibility IS NULL AND preferential IS NULL) OR
-            (qualification IS NULL AND preferential IS NULL)) AND
-            site = 'wanted'
+            (qualification IS NULL AND preferential IS NULL)
     """
     
     cursor.execute(query)
@@ -79,7 +78,7 @@ def update_batch_to_db(iterator):
 
         # Batch 크기 조절
         if len(batch_data) >= 100:
-            cursor.executemany(""" 
+            cursor.executemany("""
                 UPDATE wanted 
                 SET responsibility = %s, qualification = %s, preferential = %s 
                 WHERE id = %s
@@ -88,7 +87,7 @@ def update_batch_to_db(iterator):
             batch_data = []
 
     if batch_data:
-        cursor.executemany(""" 
+        cursor.executemany("""
             UPDATE wanted 
             SET responsibility = %s, qualification = %s, preferential = %s 
             WHERE id = %s
@@ -116,55 +115,41 @@ sections_to_extract = {
 # DB에서 URL 목록을 가져오기
 s3_urls = get_s3_urls_from_db()
 
-# 빈 데이터프레임 처리
-if not s3_urls:
-    print("No URLs found in the database.")
-else:
-    # Spark DataFrame으로 변환
-    s3_urls_df = spark.createDataFrame(s3_urls, ["id", "s3_text_url"])
+# Spark DataFrame으로 변환
+s3_urls_df = spark.createDataFrame(s3_urls, ["id", "s3_text_url"])
 
-    if s3_urls_df.count() == 0:
-        print("No records found in the DataFrame.")
-    else:
-        # 섹션 추출을 위한 broadcast 변수
-        broadcast_sections = spark.sparkContext.broadcast(sections_to_extract)
+# 섹션 추출을 위한 broadcast 변수
+broadcast_sections = spark.sparkContext.broadcast(sections_to_extract)
 
-        # 각 URL에 대해 텍스트 파일을 읽고 섹션을 추출
-        def process_job_info(row):
-            try:
-                bucket_name, s3_key = extract_s3_details(row['s3_text_url'])
-                job_description = get_s3_file_content(bucket_name, s3_key)
+# 각 URL에 대해 텍스트 파일을 읽고 섹션을 추출
+def process_job_info(row):
+    try:
+        bucket_name, s3_key = extract_s3_details(row['s3_text_url'])
+        job_description = get_s3_file_content(bucket_name, s3_key)
 
-                # broadcast된 섹션 정보를 가져옵니다.
-                sections = broadcast_sections.value
-                
-                key_tasks = extract_section(sections["주요업무"]["start_titles"], sections["주요업무"]["end_titles"], job_description)
-                requirements = extract_section(sections["자격요건"]["start_titles"], sections["자격요건"]["end_titles"], job_description)
-                preferred_qualifications = extract_section(sections["우대사항"]["start_titles"], sections["우대사항"]["end_titles"], job_description)
+        # broadcast된 섹션 정보를 가져옵니다.
+        sections = broadcast_sections.value
+        
+        key_tasks = extract_section(sections["주요업무"]["start_titles"], sections["주요업무"]["end_titles"], job_description)
+        requirements = extract_section(sections["자격요건"]["start_titles"], sections["자격요건"]["end_titles"], job_description)
+        preferred_qualifications = extract_section(sections["우대사항"]["start_titles"], sections["우대사항"]["end_titles"], job_description)
 
-                # 만약 섹션에 값이 없으면 None으로 처리
-                if not key_tasks:
-                    key_tasks = None
-                if not requirements:
-                    requirements = None
-                if not preferred_qualifications:
-                    preferred_qualifications = None
+        return (row['id'], key_tasks, requirements, preferred_qualifications)
 
-                return (row['id'], key_tasks, requirements, preferred_qualifications)
+    except Exception as e:
+        print(f"Error processing URL {row['s3_text_url']}: {e}")
+        return (row['id'], None, None, None)
 
-            except Exception as e:
-                print(f"Error processing URL {row['s3_text_url']}: {e}")
-                return (row['id'], None, None, None)
+# 데이터프레임을 RDD로 변환하여 파티셔닝 처리
+num_partitions = 3  # 3개의 파티션으로 분할
+partitioned_rdd = s3_urls_df.rdd.repartition(num_partitions)
 
-        # 데이터프레임을 RDD로 변환하여 파티셔닝 처리
-        num_partitions = 3  # 3개의 파티션으로 분할
-        partitioned_rdd = s3_urls_df.rdd.repartition(num_partitions)
+# 각 파티션에서 병렬로 DB 업데이트 처리
+processed_rdd = partitioned_rdd.map(process_job_info)
 
-        # 각 파티션에서 병렬로 DB 업데이트 처리
-        processed_rdd = partitioned_rdd.map(process_job_info)
-
-        # DB 업데이트는 batch 방식으로 처리
-        processed_rdd.foreachPartition(update_batch_to_db)
+# DB 업데이트는 batch 방식으로 처리
+processed_rdd.foreachPartition(update_batch_to_db)
 
 # Spark 세션 종료
 spark.stop()
+
