@@ -32,14 +32,12 @@ jobs:
       # docker images build or ECR push
       - name: Build and Push Airflow Image
         run: |
-          docker build -t public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest -f ./airflow/Dockerfile-airflow ./airflow
-          docker tag public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest public.ecr.aws/u5b2p7i3/job_scanner/test_repo:latest
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest -f ./airflow/Dockerfile-airflow ./airflow
           docker push public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest
 
       - name: Build and Push Spark Image
         run: |
-          docker build -t public.ecr.aws/u5b2p7i3/job_scanner/test_repo:spark-latest -f ./spark/Dockerfile-spark ./spark
-          docker tag public.ecr.aws/u5b2p7i3/job_scanner/test_repo:spark-latest public.ecr.aws/u5b2p7i3/job_scanner/test_repo:latest
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/test_repo:spark-latest -f ./spark/Dockerfile-spark ./spark
           docker push public.ecr.aws/u5b2p7i3/job_scanner/test_repo:spark-latest
 
   deploy:

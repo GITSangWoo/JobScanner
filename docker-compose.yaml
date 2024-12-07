@@ -1,0 +1,61 @@
+version: '3.8'
+
+services:
+  airflow:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile-airflow
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: sqlite:////usr/local/airflow/airflow.db
+    volumes:
+      - ./airflow/dags:/usr/local/airflow/dags
+      - ./airflow/logs:/usr/local/airflow/logs
+      - ./airflow/plugins:/usr/local/airflow/plugins
+    command: ["webserver"]
+    networks:
+      - airflow-spark-network
+
+  airflow-scheduler:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile-airflow
+    depends_on:
+      - airflow
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: sqlite:////usr/local/airflow/airflow.db
+    command: ["scheduler"]
+    networks:
+      - airflow-spark-network
+
+  spark-master:
+    build:
+      context: ./spark
+      dockerfile: Dockerfile-spark
+    ports:
+      - "7077:7077"
+      - "4040:4040"
+    environment:
+      SPARK_MODE: master
+    networks:
+      - airflow-spark-network
+
+  spark-worker:
+    build:
+      context: ./spark
+      dockerfile: Dockerfile-spark
+    environment:
+      SPARK_MODE: worker
+      SPARK_MASTER_URL: spark://spark-master:7077
+    depends_on:
+      - spark-master
+    networks:
+      - airflow-spark-network
+
+networks:
+  airflow-spark-network:
+    driver: bridge
+
