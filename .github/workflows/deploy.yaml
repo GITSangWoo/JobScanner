@@ -32,7 +32,7 @@ jobs:
       # docker images build or ECR push
       - name: Build and Push Airflow Image
         run: |
-          docker build -t public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest -f ./airflow/Dockerfile-airflow .
+          docker build -t public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest -f ./airflow/Dockerfile-airflow ./airflow
           docker push public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest
 
       - name: Build and Push Spark Image
