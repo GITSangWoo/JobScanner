@@ -33,11 +33,13 @@ jobs:
       - name: Build and Push Airflow Image
         run: |
           docker build -t public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest -f ./airflow/Dockerfile-airflow ./airflow
+          docker tag public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest public.ecr.aws/u5b2p7i3/job_scanner/test_repo:latest
           docker push public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest
 
       - name: Build and Push Spark Image
         run: |
           docker build -t public.ecr.aws/u5b2p7i3/job_scanner/test_repo:spark-latest -f ./spark/Dockerfile-spark ./spark
+          docker tag public.ecr.aws/u5b2p7i3/job_scanner/test_repo:spark-latest public.ecr.aws/u5b2p7i3/job_scanner/test_repo:latest
           docker push public.ecr.aws/u5b2p7i3/job_scanner/test_repo:spark-latest
 
   deploy:
@@ -53,7 +55,7 @@ jobs:
         run: |
           echo "${{ secrets.EC2_PRIVATE_KEY }}" > ec2-key.pem
           chmod 600 ec2-key.pem
-          ssh -i ec2-key.pem ubuntu@${{ secrets.EC2_PUBLIC_IP }} << 'EOF'
+          ssh -o StrictHostKeyChecking=no -i ec2-key.pem ubuntu@${{ secrets.EC2_PUBLIC_IP }} << 'EOF'
             docker pull public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest
             docker pull public.ecr.aws/u5b2p7i3/job_scanner/test_repo:spark-latest
 
