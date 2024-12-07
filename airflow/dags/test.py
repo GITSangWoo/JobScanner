@@ -20,6 +20,7 @@ with DAG(
     schedule_interval=timedelta(days=1),  # 매일 실행
     start_date=datetime(2023, 12, 1),  # 시작 날짜
     catchup=False,  # 지난 일정 실행 안 함
+    is_paused_upon_creation=False,  # DAG 자동 활성화
 ) as dag:
 
     # 첫 번째 태스크: Hello World 출력
