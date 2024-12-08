@@ -21,7 +21,11 @@ services:
       - ./airflow/dags:/usr/local/airflow/dags
       - ./airflow/logs:/usr/local/airflow/logs
       - ./airflow/plugins:/usr/local/airflow/plugins
-    command: ["/docker-entrypoint-initdb.d/init_airflow.sh"]
+    entrypoint: >
+      bash -c "
+      /docker-entrypoint-initdb.d/init_airflow.sh &&
+      exec airflow webserver
+      "
     networks:
       - airflow-network
 
@@ -33,7 +37,11 @@ services:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: mysql+mysqlconnector://root:1234@43.201.40.223:3306/testdb
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
-    command: ["airflow", "scheduler"]
+    entrypoint: >
+      bash -c "
+      sleep 10 && # airflow 초기화 시간 대기
+      exec airflow scheduler
+      "
     depends_on:
       - airflow
     networks:
