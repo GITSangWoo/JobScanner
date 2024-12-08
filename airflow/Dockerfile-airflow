@@ -1,11 +1,21 @@
 FROM apache/airflow:2.7.1-python3.10
 
+# Root 사용자로 필요한 패키지 설치
 USER root
-RUN apt-get update && apt-get install -y curl wget mysql-client
+RUN apt-get update && apt-get install -y \
+    curl \
+    wget \
+    mysql-client && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# airflow 사용자로 변경 후 pip 패키지 설치
+# Airflow 사용자로 전환 후 Python 패키지 설치
 USER airflow
 RUN pip install boto3
 
 # dags 디렉토리 복사
 COPY dags /opt/airflow/dags
+
+# Airflow entrypoint 및 초기 설정
+ENTRYPOINT ["/usr/bin/dumb-init", "--"]
+CMD ["airflow", "webserver"]
+
