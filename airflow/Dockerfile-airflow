@@ -12,8 +12,17 @@ RUN apt-get update && apt-get install -y \
 USER airflow
 RUN pip install boto3
 
+# 환경 변수 설정 (필요하다면 Docker Compose에서 전달된 변수로 대체 가능)
+ENV AIRFLOW__CORE__EXECUTOR=LocalExecutor
+ENV AIRFLOW__CORE__SQL_ALCHEMY_CONN=mysql+mysqlconnector://root:1234@43.201.40.223:3306/testdb
+ENV AIRFLOW__CORE__LOAD_EXAMPLES=False
+
 # dags 디렉토리 복사
 COPY dags /opt/airflow/dags
+
+# 초기화 스크립트 추가
+COPY init_airflow.sh /docker-entrypoint-initdb.d/init_airflow.sh
+RUN chmod +x /docker-entrypoint-initdb.d/init_airflow.sh
 
 # Airflow entrypoint 및 초기 설정
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]

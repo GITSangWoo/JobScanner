@@ -21,12 +21,7 @@ services:
       - ./airflow/dags:/usr/local/airflow/dags
       - ./airflow/logs:/usr/local/airflow/logs
       - ./airflow/plugins:/usr/local/airflow/plugins
-    command: >
-      bash -c "
-      airflow db init &&
-      airflow users create --username admin --firstname Admin --lastname User --role Admin --email admin@example.com --password admin &&
-      exec airflow webserver
-      "
+    command: ["/docker-entrypoint-initdb.d/init_airflow.sh"]
     networks:
       - airflow-network
 
