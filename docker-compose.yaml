@@ -44,18 +44,6 @@ services:
     networks:
       - airflow-network
 
-  mysql-service:
-    image: mysql:latest
-    environment:
-      MYSQL_ROOT_PASSWORD: 1234
-      MYSQL_DATABASE: testdb
-      MYSQL_USER: user
-      MYSQL_PASSWORD: 1234
-    ports:
-      - "3306:3306"
-    networks:
-      - airflow-network
-
   spark-master:
     build:
       context: ./spark
