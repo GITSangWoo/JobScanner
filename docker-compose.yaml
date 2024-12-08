@@ -39,7 +39,7 @@ services:
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
     entrypoint: >
       bash -c "
-      sleep 10 && # airflow 초기화 시간 대기
+      sleep 10 && 
       exec airflow scheduler
       "
     depends_on:
