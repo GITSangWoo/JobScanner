@@ -1,7 +1,7 @@
 FROM apache/airflow:2.7.1-python3.10
 
 USER root
-RUN apt-get update && apt-get install -y curl wget
+RUN apt-get update && apt-get install -y curl wget mysql-client
 
 # airflow 사용자로 변경 후 pip 패키지 설치
 USER airflow
