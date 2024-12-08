@@ -21,7 +21,7 @@ RUN pip install boto3
 
 # 환경 변수 설정
 ENV AIRFLOW__CORE__EXECUTOR=LocalExecutor
-ENV AIRFLOW__CORE__SQL_ALCHEMY_CONN=mysql+mysqlconnector://root:1234@43.201.40.223:3306/testdb
+ENV AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=mysql+mysqlconnector://root:1234@43.201.40.223:3306/testdb
 ENV AIRFLOW__CORE__LOAD_EXAMPLES=False
 
 # Airflow entrypoint 및 초기 설정
