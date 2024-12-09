@@ -9,7 +9,6 @@ from collections import defaultdict
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -18,9 +17,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from urllib.parse import urlparse, parse_qs, urlencode
 from zoneinfo import ZoneInfo
 from botocore.exceptions import NoCredentialsError, ClientError
-from io import StringIO
 import psutil
-import shutil
 
 def incruit_link():
     # 검색 URL 리스트 설정
@@ -335,7 +332,7 @@ def jumpit_link():
     else:
         print(f"{log_directory} 디렉토리가 이미 존재합니다.")
 
-    log_files = [os.path.join(log_directory, f) for f in os.listdir(log_directory) if re.match(r'^\d{8}\.log$', f)]
+    log_files = [f for f in os.listdir(log_directory) if re.match(r'^\d{8}\.log$', f)]
 
     # 가장 최근에 생성된 로그 파일 찾기
     recent_log_file_name = None  # 기본값을 None으로 설정
@@ -881,13 +878,13 @@ def wanted_link():
             driver.quit()
     
 def main():
-    # print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    # incruit_link()
-    # time.sleep(5)
+    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    incruit_link()
+    time.sleep(5)
 
-    # print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    # jobkorea_link()
-    # time.sleep(5)
+    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    jobkorea_link()
+    time.sleep(5)
 
     print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     jumpit_link()

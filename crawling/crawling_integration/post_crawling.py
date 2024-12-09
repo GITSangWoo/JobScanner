@@ -248,7 +248,7 @@ def incruit_crawling():
                         "notice_type": notice_type,
                         "org_url": url,
                         "s3_text_url": s3_text_url,
-                        "s3_image_url": ";".join(s3_image_urls),
+                        "s3_image_url": ";".join(s3_image_urls) if s3_image_urls else None,
                         "create_time": datetime.now(),
                         "update_time": datetime.now(),
                     })
@@ -1986,3 +1986,20 @@ def wanted_crawling():
 
     if __name__ == "__main__":
         main()
+
+def main():
+    wanted_crawling()
+    time.sleep(600)
+    incruit_crawling()
+    time.sleep(600)
+    jobkorea_crawling()
+    time.sleep(600)
+    rocketpunch_crawling()
+    time.sleep(600)
+    saramin_crawling()
+    time.sleep(600)
+    jumpit_crawling()
+    time.sleep(600)
+
+if __name__ == "__main__":
+    main()

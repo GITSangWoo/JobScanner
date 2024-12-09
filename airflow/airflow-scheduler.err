@@ -1,5 +1,0 @@
-[2024-12-04 17:16:18 +0900] [468552] [INFO] Starting gunicorn 22.0.0
-[2024-12-04 17:16:18 +0900] [468552] [INFO] Listening at: http://[::]:8793 (468552)
-[2024-12-04 17:16:18 +0900] [468552] [INFO] Using worker: sync
-[2024-12-04 17:16:18 +0900] [468555] [INFO] Booting worker with pid: 468555
-[2024-12-04 17:16:18 +0900] [468557] [INFO] Booting worker with pid: 468557
