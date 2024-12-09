@@ -1,15 +1,17 @@
 FROM bitnami/spark:latest
 
+# 루트 사용자로 변경하여 패키지 설치
 USER root
-RUN apt-get update && apt-get install -y python3 python3-pip && \
-    pip install pyspark boto3
+RUN apt-get update && apt-get install -y \
+    python3 \
+    python3-pip && \
+    pip install pyspark boto3 && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
-USER 1001
-COPY ./spark-scripts /opt/spark/scriptsFROM bitnami/spark:latest
-
-USER root
-RUN apt-get update && apt-get install -y python3 python3-pip && \
-    pip install pyspark boto3
-
-USER 1001
+# spark-scripts 복사 및 실행 권한 설정
 COPY ./spark-scripts /opt/spark/scripts
+RUN chmod +x /opt/spark/scripts/*
+
+# 기본 사용자 복원
+USER 1001
+
