@@ -1,0 +1,73 @@
+version: '3.8'
+
+networks:
+  airflow-network:
+    driver: bridge
+  spark-network:
+    driver: bridge
+
+services:
+  airflow:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile-airflow
+    ports:
+      - "8080:8080"
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: mysql+mysqlconnector://root:1234@43.201.40.223:3306/testdb
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False" # 기본 예제 DAG 로드 비활성화
+    volumes:
+      - ./airflow/dags:/usr/local/airflow/dags
+      - ./airflow/logs:/usr/local/airflow/logs
+      - ./airflow/plugins:/usr/local/airflow/plugins
+    entrypoint: >
+      bash -c "
+      /docker-entrypoint-initdb.d/init_airflow.sh &&
+      exec airflow webserver
+      "
+    networks:
+      - airflow-network
+
+  airflow-scheduler:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile-airflow
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__SQL_ALCHEMY_CONN: mysql+mysqlconnector://root:1234@43.201.40.223:3306/testdb
+      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+    entrypoint: >
+      bash -c "
+      sleep 10 && 
+      exec airflow scheduler
+      "
+    depends_on:
+      - airflow
+    networks:
+      - airflow-network
+
+  spark-master:
+    build:
+      context: ./spark
+      dockerfile: Dockerfile-spark
+    ports:
+      - "7077:7077"
+      - "4040:4040"
+    environment:
+      SPARK_MODE: master
+    networks:
+      - spark-network
+
+  spark-worker:
+    build:
+      context: ./spark
+      dockerfile: Dockerfile-spark
+    environment:
+      SPARK_MODE: worker
+      SPARK_MASTER_URL: spark://spark-master:7077
+    depends_on:
+      - spark-master
+    networks:
+      - spark-network
+
