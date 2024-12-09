@@ -17,39 +17,38 @@ jobs:
 
       # AWS 자격 증명 구성
       - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v3
+        uses: aws-actions/configure-aws-credentials@v2
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-northeast-2
+          aws-region: us-east-1
       
       # ECR 로그인 # ECR 퍼블릭은 us-east-1리전만 동작 프라이빗변경 필요
       - name: Log in to Amazon ECR
         id: login-ecr
         run: |
-          aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com
-
+          aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/u5b2p7i3
 
       # docker images build or ECR push
       - name: Delete Existing Airflow Image
         run: |
-          aws ecr batch-delete-image --repository-name job_scanner/airflow \
+          aws ecr-public batch-delete-image --repository-name job_scanner/test_repo \
           --image-ids imageTag=airflow-latest || echo "No existing image to delete."
 
       - name: Build and Push Airflow Image
         run: |
-          docker build --no-cache -t 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:airflow-latest -f ./airflow/Dockerfile-airflow ./airflow
-          docker push 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:airflow-latest
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest -f ./airflow/Dockerfile-airflow ./airflow
+          docker push public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest
 
       - name: Delete Existing Spark Image
         run: |
-          aws ecr-public batch-delete-image --repository-name job_scanner/airflow \
+          aws ecr-public batch-delete-image --repository-name job_scanner/test_repo \
           --image-ids imageTag=spark-latest || echo "No existing image to delete."
 
       - name: Build and Push Spark Image
         run: |
-          docker build --no-cache -t 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:spark-latest -f ./spark/Dockerfile-spark ./spark
-          docker push 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:spark-latest
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/test_repo:spark-latest -f ./spark/Dockerfile-spark ./spark
+          docker push public.ecr.aws/u5b2p7i3/job_scanner/test_repo:spark-latest
 
   deploy:
     name: Deploy to EC2
@@ -65,20 +64,20 @@ jobs:
           echo "${{ secrets.EC2_PRIVATE_KEY }}" > ec2-key.pem
           chmod 600 ec2-key.pem
           ssh -o StrictHostKeyChecking=no -i ec2-key.pem ubuntu@${{ secrets.EC2_PUBLIC_IP }} << 'EOF'
-            docker pull 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:airflow-latest
-            docker pull 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:spark-latest
+            docker pull public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest
+            docker pull public.ecr.aws/u5b2p7i3/job_scanner/test_repo:spark-latest
 
             mkdir -p ~/deploy
             echo "
             version: '3.8'
             services:
               airflow:
-                image: 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:airflow-latest
+                image: public.ecr.aws/u5b2p7i3/job_scanner/test_repo:airflow-latest
                 ports:
                   - '8080:8080'
 
               spark-master:
-                image: 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:spark-latest
+                image: public.ecr.aws/u5b2p7i3/job_scanner/test_repo:spark-latest
                 ports:
                   - '7077:7077'
                   - '4040:4040'
