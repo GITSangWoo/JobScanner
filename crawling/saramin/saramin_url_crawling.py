@@ -58,11 +58,11 @@ s3_client = boto3.client("s3")
 
 # 키워드별 정보 설정
 keywords_config = {
-    "데이터 엔지니어": {"job_title": "DE", "path_prefix": "DE"},
+#    "데이터 엔지니어": {"job_title": "DE", "path_prefix": "DE"},
     "프론트엔드": {"job_title": "FE", "path_prefix": "FE"},
-    "백엔드": {"job_title": "BE", "path_prefix": "BE"},
-    "데이터 분석가": {"job_title": "DA", "path_prefix": "DA"}
-    "머신러닝 엔지니어": {"job_title": "MLE", "path_prefix": "MLE"},
+#    "백엔드": {"job_title": "BE", "path_prefix": "BE"},
+#    "데이터 분석가": {"job_title": "DA", "path_prefix": "DA"}
+#    "머신러닝 엔지니어": {"job_title": "MLE", "path_prefix": "MLE"},
 }
 
 # WebDriver 설정
@@ -197,8 +197,6 @@ for keyword, config in keywords_config.items():
 
     finally:
         try:
-            driver.quit()  # 브라우저 세션 정상 종료 시도
+            cleanup(driver)
         except Exception as e:
-            print(f"driver.quit() 실패: {e}")
-        
-        cleanup(driver)
+            print(f"cleanup 실패: {e}")
