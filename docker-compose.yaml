@@ -18,9 +18,9 @@ services:
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: mysql+mysqlconnector://root:1234@43.201.40.223:3306/airflowdb
       AIRFLOW__CORE__LOAD_EXAMPLES: "False" # 기본 예제 DAG 로드 비활성화
     volumes:
-      - ./airflow/dags:/usr/local/airflow/dags
-      - ./airflow/logs:/usr/local/airflow/logs
-      - ./airflow/plugins:/usr/local/airflow/plugins
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
     entrypoint: >
       bash -c "
       /docker-entrypoint-initdb.d/init_airflow.sh &&
