@@ -24,6 +24,7 @@ with DAG (
     schedule_interval='@daily', # 매일 자정 실행
     catchup=False,
     tags=['crawling','db','S3','RDS'],
+    is_paused_upon_creation=False,  # DAG 자동 활성화
 ) as dag:
 
     # 인크루트
