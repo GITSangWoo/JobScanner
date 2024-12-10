@@ -13,7 +13,7 @@ from selenium.webdriver.support import expected_conditions as EC
   
 if not os.path.exists('./wanted'):
         os.makedirs('./wanted')  # 디렉토리 생성  
-  
+
 def log_error(error_message):
     """오류를 makelog_err.log 파일에 기록"""
     # ./wanted 디렉토리가 없으면 생성
@@ -61,10 +61,11 @@ try:
         print(f"Found the most recent log file: {recent_log_file_name}")
     else:
         print("No log files found in the directory. All URLs will be marked as 'update'.")
+        recent_log_file_name = None  # recent_log_file_name을 None으로 설정
 
     # 이전 로그 파일이 존재하는지 확인하고 읽기
     previous_urls = {}  # 이전 로그에 있는 URL 및 해당 job
-    if os.path.exists(os.path.join(log_directory, recent_log_file_name)):
+    if recent_log_file_name and os.path.exists(os.path.join(log_directory, recent_log_file_name)):
         with open(os.path.join(log_directory, recent_log_file_name), 'r', encoding='utf-8') as file:
             lines = file.readlines()
             if lines:  # 파일에 내용이 있을 때만 처리
