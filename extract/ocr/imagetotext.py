@@ -10,7 +10,7 @@ from io import BytesIO  # 추가: 이미지 데이터를 Bytes로 처리하기 �
 # RDS MySQL 접속 정보
 host = "t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com"
 user = "admin"  # RDS 생성 시 설정한 사용자 이름
-password = "dltkddn!!"  # 비밀번호
+password = ""  # 비밀번호
 database = "testdb"  # 사용하려는 데이터베이스 이름
 
 # MySQL 서버에 연결
