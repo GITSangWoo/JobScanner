@@ -2,27 +2,62 @@ FROM apache/airflow:2.7.1-python3.10
 
 # Root 사용자로 필요한 패키지 설치
 USER root
+
+# APT 저장소 활성화 및 chrome 브라우저 설치를 위한 의존성 설치
 RUN apt-get update && apt-get install -y \
-    curl \
-    wget \
+    curl wget vim gnupg unzip \ 
+    libnss3 libatk-bridge2.0-0 libxcomposite1 libxrandr2 libasound2 libvulkan1 \
+    libxdamage1 libgbm-dev libgtk-3-0 libvulkan1 fonts-liberation xdg-utils \
     mysql-client && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# dags 디렉토리 복사
-COPY dags /opt/airflow/dags
+# Google Chrome 설치
+RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+    apt install -y ./google-chrome-stable_current_amd64.deb && \
+    rm google-chrome-stable_current_amd64.deb
+
+# Chromedriver 설치
+# RUN wget -O /tmp/chromedriver.zip "http://chromedriver.storage.googleapis.com/`curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE`/chromedriver_linux64.zip" && \
+#     unzip /tmp/chromedriver.zip -d /usr/local/bin/ && \
+#     chmod +x /usr/local/bin/chromedriver && \
+#     rm /tmp/chromedriver.zip 
 
 # 초기화 스크립트 복사 및 실행 권한 추가
 COPY init_airflow.sh /docker-entrypoint-initdb.d/init_airflow.sh
 RUN chmod +x /docker-entrypoint-initdb.d/init_airflow.sh
 
-# Airflow 사용자로 전환 후 Python 패키지 설치
 USER airflow
-RUN pip install boto3
+
+# logs, plugins 디렉토리 설정
+RUN mkdir -p /opt/airflow/logs && \
+    mkdir -p /opt/airflow/plugins/crawling/incruit && \
+    mkdir -p /opt/airflow/plugins/crawling/jumpit && \
+    mkdir -p /opt/airflow/plugins/crawling/wanted && \
+    chown -R airflow: /opt/airflow/logs /opt/airflow/plugins/crawling && \
+    chmod -R 775 /opt/airflow/logs /opt/airflow/plugins/crawling
+
+# dags, plugins 디렉토리 복사
+COPY dags /opt/airflow/dags
+COPY plugins /opt/airflow/plugins
+
+# Airflow 사용자로 전환
+# USER airflow
+
+# Python 패키지 설치
+COPY requirements.txt /requirements.txt
+RUN if [ -f /requirements.txt ]; then \
+    pip install --no-cache-dir -r /requirements.txt || (echo "Pip install failed" && exit 1); \
+    else echo "requirements.txt not found"; exit 1; \
+    fi
 
 # 환경 변수 설정
+ENV AWS_SHARED_CREDENTIALS_FILE=/opt/airflow/.aws/credentials
 ENV AIRFLOW__CORE__EXECUTOR=LocalExecutor
 ENV AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=mysql+mysqlconnector://root:1234@43.201.40.223:3306/airflowdb
 ENV AIRFLOW__CORE__LOAD_EXAMPLES=False
+ENV AIRFLOW__CORE__PLUGINS_FOLDER=/opt/airflow/plugins
+# webserver secret key 설정 (로그 파일 잘 읽게)
+ENV AIRFLOW__WEBSERVER__SECRET_KEY="3lA0h8c08#395lcBc7f6C4k8a?" 
 
 # Airflow entrypoint 및 초기 설정
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]

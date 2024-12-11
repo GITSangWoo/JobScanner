@@ -18,9 +18,9 @@ from webdriver_manager.chrome import ChromeDriverManager
 from urllib.parse import urlparse, parse_qs, urlencode
 from zoneinfo import ZoneInfo
 from botocore.exceptions import NoCredentialsError, ClientError
-from io import StringIO
 import psutil
-import shutil
+    
+BASE_OUTPUT_DIR = os.getenv("CRAWLING_OUTPUT_DIR", "/opt/airflow/plugins/crawling")
 
 def incruit_link():
     # 검색 URL 리스트 설정
@@ -58,7 +58,8 @@ def incruit_link():
     page_step = 30  # 페이지네이션의 startno는 30씩 증가
 
     # 오늘 날짜
-    output_folder = './incruit'
+    output_folder = os.path.join(BASE_OUTPUT_DIR, "incruit")
+    #output_folder = './incruit'
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
     today = datetime.now().strftime("%Y%m%d")  # 오늘 날짜 (YYYYMMDD)
@@ -164,6 +165,7 @@ def jobkorea_link():
     options.add_argument("--headless")  # 화면을 표시하지 않음
     options.add_argument("--disable-gpu")  # GPU 비활성화 (Windows에서 필요할 수 있음)
     options.add_argument("--no-sandbox")  # 보안 옵션 비활성화 (Linux에서 필요할 수 있음)
+    options.add_argument("--disable-dev-shm-usage")  # /dev/shm 비활성화
 
     # User-Agent 설정
     user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.110 Safari/537.36"
@@ -317,6 +319,12 @@ def jumpit_link():
     options.add_argument("--headless")  # 화면을 표시하지 않음
     options.add_argument("--disable-gpu")  # GPU 비활성화 (Windows에서 필요할 수 있음)
     options.add_argument("--no-sandbox")  # 보안 옵션 비활성화 (Linux에서 필요할 수 있음)
+    options.add_argument("--disable-dev-shm-usage")  # /dev/shm 비활성화
+    options.add_argument("--disable-software-rasterizer")  # 소프트웨어 렌더링 비활성화
+    options.add_argument("--disable-extensions")  # 확장 프로그램 비활성화
+    options.add_argument("--disable-popup-blocking")  # 팝업 차단 비활성화
+    options.add_argument("--disable-background-timer-throttling")  # 타이머 제한 비활성화
+    options.add_argument("--disable-renderer-backgrounding")  # 백그라운드 렌더링 비활성화
     user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.110 Safari/537.36"
     options.add_argument(f"user-agent={user_agent}")
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
@@ -325,7 +333,8 @@ def jumpit_link():
     today = datetime.today().strftime('%Y%m%d')
 
     # 로그 파일을 찾을 디렉토리 설정
-    log_directory = './jumpit'  # 현재 디렉토리
+    log_directory = os.path.join(BASE_OUTPUT_DIR, "jumpit")
+    #log_directory = './jumpit'  # 현재 디렉토리
     today_log_file_name = os.path.join(log_directory,f"{today}.log")
 
     # 디렉토리가 존재하는지 확인하고, 없으면 생성
@@ -335,7 +344,7 @@ def jumpit_link():
     else:
         print(f"{log_directory} 디렉토리가 이미 존재합니다.")
 
-    log_files = [os.path.join(log_directory, f) for f in os.listdir(log_directory) if re.match(r'^\d{8}\.log$', f)]
+    log_files = [f for f in os.listdir(log_directory) if re.match(r'^\d{8}\.log$', f)]
 
     # 가장 최근에 생성된 로그 파일 찾기
     recent_log_file_name = None  # 기본값을 None으로 설정
@@ -560,15 +569,30 @@ def saramin_link():
             return f"{base_url}?{new_query}"
         return base_url
 
-    # 브라우저 세션 완전 초기화
-    def cleanup_driver_process(driver):
+    def cleanup(driver):
         try:
-            driver.quit()  # 기존 브라우저 세션 종료
-            for proc in psutil.process_iter(attrs=["pid", "name"]):
-                if "chrome" in proc.info["name"].lower():
-                    proc.terminate()  # Chrome 프로세스 강제 종료
+            driver.quit()
         except Exception as e:
-            print(f"드라이버 정리 중 오류 발생: {e}")
+            print(f"Driver quit failed: {e}")
+
+        # 프로세스 강제 종료
+        for proc in psutil.process_iter(["pid", "name"]):
+            if "chrome" in proc.info["name"].lower() or "chromedriver" in proc.info["name"].lower():
+                try:
+                    proc.terminate()
+                    proc.wait(timeout=10)
+                    print(f"Process terminated: {proc.info}")
+                except psutil.TimeoutExpired:
+                    print(f"Process termination timeout: {proc.info}")
+                    try:
+                        proc.kill()  # 강제 종료
+                        print(f"Process killed: {proc.info}")
+                    except Exception as kill_err:
+                        print(f"Force kill failed: {kill_err}")
+                except psutil.NoSuchProcess:
+                    print(f"Process already terminated: {proc.info}")
+                except Exception as e:
+                    print(f"Process termination failed: {e}")
 
     # AWS s3 설정
     BUCKET_NAME = "t2jt"
@@ -576,21 +600,6 @@ def saramin_link():
 
     # S3 클라이언트 생성
     s3_client = boto3.client("s3")
-
-    # Chrome 옵션 설정
-    chrome_options = Options()
-    chrome_options.add_argument("--disable-cache")
-    chrome_options.add_argument("--disk-cache-dir=/dev/null")  # 디스크 캐시 경로를 비활성화
-    chrome_options.add_argument("--disable-application-cache")  # 애플리케이션 캐시 비활성화
-    chrome_options.add_argument("--disable-background-networking")
-    chrome_options.add_argument("--disk-cache-size=0")
-    chrome_options.add_argument("--incognito")
-    chrome_options.add_argument("--disable-gpu")  # GPU 캐시 비활성화 (필요한 경우)
-    chrome_options.add_argument("--no-sandbox")  # 샌드박스 비활성화 (권장)
-    chrome_options.add_argument("--disable-dev-shm-usage")  # 공유 메모리 비활성화 (리소스 관리)
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-features=NetworkService,NetworkServiceInProcess")
-    chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")  # User-Agent 설정
 
     # 키워드별 정보 설정
     keywords_config = {
@@ -603,17 +612,49 @@ def saramin_link():
 
     # WebDriver 설정
     for keyword, config in keywords_config.items():
+        # Chrome 옵션 설정
+        chrome_options = Options()
+        chrome_options.add_argument("--incognito")
+        #chrome_options.add_argument(f"--user-data-dir={temp_dir}")  # 사용자 데이터 디렉토리 강제 지정
+        chrome_options.add_argument("--disable-cache")
+        chrome_options.add_argument("--disable-application-cache")  # 애플리케이션 캐시 비활성화
+        chrome_options.add_argument("--disable-background-networking")
+        chrome_options.add_argument("--disable-gpu")  # GPU 캐시 비활성화 (필요한 경우)
+        chrome_options.add_argument("--no-sandbox")  # 샌드박스 비활성화 (권장)
+        chrome_options.add_argument("--disable-dev-shm-usage")  # 공유 메모리 비활성화 (리소스 관리)
+        chrome_options.add_argument("--headless")
+        chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")  # User-Agent 설정
         try:
             print(f"키워드 '{keyword}' 작업 시작")
 
             # 각 키워드별로 새로운 브라우저 인스턴스 실행. 브라우저 실행 후 캐시 비활성화
             driver = webdriver.Chrome(options=chrome_options)
             driver.execute_cdp_cmd("Network.setCacheDisabled", {"cacheDisabled": True})
+            time.sleep(2)
+            # 명시적으로 캐시 및 스토리지 데이터 삭제
+            driver.execute_cdp_cmd(
+                "Storage.clearDataForOrigin",
+                {
+                    "origin": "https://www.saramin.co.kr",
+                    "storageTypes": "all"
+                }
+            )
+            
+            # Ctrl + F5 강력 새로고침
+            try:
+                body = driver.find_element(By.TAG_NAME, "body")
+                body.send_keys(Keys.CONTROL, Keys.F5)  # Ctrl + F5 입력
+                print("브라우저 강력 새로고침 (Ctrl + F5) 완료")
+            except Exception as e:
+                print(f"Ctrl + F5 새로고침 실패, 강제로 URL 재로드: {e}")
+                driver.refresh()
+            time.sleep(3)
 
-            # 로컬 저장소 및 세션 스토리지 정리
-            driver.execute_cdp_cmd("Network.clearBrowserCache", {})
-            driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
-            driver.delete_all_cookies()
+            # URL에 nocache 파라미터 추가
+            url = f"https://www.saramin.co.kr/zf_user/?nocache={int(time.time())}"
+            driver.get(url)
+            print(f"캐시 무효화된 URL로 접근: {url}")
+            time.sleep(5)
 
             # 수집 시점
             current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -622,11 +663,6 @@ def saramin_link():
             # S3 파일 경로
             s3_path_prefix = S3_PATH_PREFIX_TEMPLATE.format(config["path_prefix"])
             s3_file_path = f"{s3_path_prefix}{today_date}.txt"
-
-            # 사람인 홈페이지 접속
-            url = "https://www.saramin.co.kr/zf_user/"
-            driver.get(url)
-            time.sleep(5)
 
             # 검색어 입력 및 실행
             search_box = driver.find_element(By.CLASS_NAME, "search")
@@ -704,20 +740,19 @@ def saramin_link():
 
         finally:
             try:
-                driver.quit()  # 브라우저 세션 정상 종료 시도
+                cleanup(driver)  # 브라우저 세션 정상 종료 시도
             except Exception as e:
-                print(f"driver.quit() 실패: {e}")
-            
-            cleanup_driver_process(driver)  # 추가적으로 리소스 정리
+                print(f"cleanup 실패: {e}")
 
 def wanted_link():
-    if not os.path.exists('./wanted'):
-        os.makedirs('./wanted')  # 디렉토리 생성  
+    log_directory = os.path.join(BASE_OUTPUT_DIR, "wanted")  # 하위 디렉토리 추가
+    if not os.path.exists(log_directory):
+        os.makedirs(log_directory)  # 디렉토리 생성  
     
     def log_error(error_message):
         """오류를 makelog_err.log 파일에 기록"""
         # ./wanted 디렉토리가 없으면 생성
-        with open('./wanted/makelog_err.log', 'a', encoding='utf-8') as err_file:
+        with open(os.path.join(log_directory, "makelog_err.log"), 'a', encoding='utf-8') as err_file:
             timestamp = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
             err_file.write(f"{timestamp},{error_message}\n")
 
@@ -742,15 +777,18 @@ def wanted_link():
     try:
         # 셀레니움 웹 드라이버 설정
         options = Options()
-        options.headless = True  # 드라이버를 헤드리스 모드로 실행할 수 있음 (주석 처리하거나 True로 설정하여 브라우저를 표시하지 않게 할 수 있음)
+        options.add_argument("--headless")
+        options.add_argument("--no-sandbox")  # 보안 옵션 비활성화 (Linux에서 필요할 수 있음)
+        options.add_argument("--disable-dev-shm-usage")  # /dev/shm 비활성화
+        # options.headless = True  # 드라이버를 헤드리스 모드로 실행할 수 있음 (주석 처리하거나 True로 설정하여 브라우저를 표시하지 않게 할 수 있음)
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
         # 오늘 날짜로 로그 파일 이름 설정
         today = datetime.today().strftime('%Y%m%d')
-        today_log_file_name = f"./wanted/{today}.log"
+        today_log_file_name = os.path.join(log_directory, f"{today}.log")
 
         # 로그 파일을 찾을 디렉토리 설정
-        log_directory = './wanted'  # 원하는 디렉토리로 변경
+        # log_directory = './wanted'  # 원하는 디렉토리로 변경
         log_files = [f for f in os.listdir(log_directory) if re.match(r'^\d{8}\.log$', f)]
 
         # 가장 최근에 생성된 로그 파일 찾기
@@ -883,36 +921,28 @@ def wanted_link():
         if 'driver' in locals():
             driver.quit()
     
-def main():
-    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    incruit_link()
-    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    time.sleep(5)
+def execute_link_crawlings():
+    def safe_execute(task_name, task_function):
+        try:
+            print(f"{task_name} - 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+            task_function()
+            print(f"{task_name} - 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+            time.sleep(5)
+        except Exception as e:
+            print(f"{task_name} 작업 중 에러 발생: {e}")
 
-    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    jobkorea_link()
-    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    time.sleep(5)
+    tasks = [
+        # ("인크루트", incruit_link),
+        ("잡코리아", jobkorea_link),
+        ("점핏", jumpit_link),
+        # ("로켓펀치", rocketpunch_link),
+        # ("사람인", saramin_link),
+        ("원티드", wanted_link),
+    ]
 
-    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    jumpit_link()
-    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    time.sleep(5)
-
-    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    rocketpunch_link()
-    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    time.sleep(5)
-
-    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    saramin_link()
-    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    time.sleep(5)
-
-    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    wanted_link()
-    print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    for task_name, task_function in tasks:
+        safe_execute(task_name, task_function)
 
 if __name__ == "__main__":
-    main()
+    execute_link_crawlings()
 

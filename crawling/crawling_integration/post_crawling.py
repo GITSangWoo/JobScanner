@@ -1,5 +1,6 @@
 import os
 import time
+import re
 import requests
 import uuid
 import boto3
@@ -12,20 +13,17 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from datetime import datetime, timedelta
 from mysql.connector import pooling
-from io import StringIO
-import json
 import pymysql
 from collections import defaultdict
 import logging
 from botocore.exceptions import NoCredentialsError
 from selenium.webdriver.common.action_chains import ActionChains
-from urllib.parse import urlparse, parse_qs, parse_qsl, urlencode, urljoin, unquote
-from concurrent.futures import ThreadPoolExecutor
+from urllib.parse import urlparse, parse_qs, parse_qsl, urlencode
 from zoneinfo import ZoneInfo
 import random
 
-
 def incruit_crawling():
+
     # MySQL 연결 풀 설정
     db_config = {
         'user': 'user',
@@ -69,9 +67,30 @@ def incruit_crawling():
             cursor = connection.cursor()
 
             for link in removed_links:
-                sql = "UPDATE incruit SET removed_time = %s WHERE org_url = %s"
-                cursor.execute(sql, (datetime.now(), link))
+                print(f"URL {link} is marked as deleted. Checking if it exists in the database.")
+                
+                # Check if URL exists in DB
+                cursor.execute("SELECT 1 FROM incruit WHERE org_url = %s", (link,))
+                result = cursor.fetchone()
+                if not result:
+                    print(f"URL {link} not found in DB, skipping removed_time update.")
+                    continue
 
+                # Update removed_time without checking done_time
+                removed_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                update_time_query = """
+                UPDATE incruit
+                SET removed_time = %s
+                WHERE org_url = %s
+                """
+                cursor.execute(update_time_query, (removed_time, link))
+
+                # Check if update was successful
+                if cursor.rowcount == 0:
+                    print(f"No rows updated for URL: {link}")
+                else:
+                    print(f"Removed time updated for URL: {link}")
+            
             connection.commit()
             print(f"Updated removed links in DB: {len(removed_links)}")
 
@@ -82,6 +101,7 @@ def incruit_crawling():
                 cursor.close()
             if 'connection' in locals():
                 connection.close()
+
 
     def upload_to_s3(content, bucket_name, object_name):
         try:
@@ -142,7 +162,7 @@ def incruit_crawling():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
     # 오늘 날짜로 로그파일 이름 설정
-    output_folder = "links"
+    output_folder = "./incruit"
     today = datetime.today().strftime('%Y%m%d')
     log_file_name = os.path.join(output_folder, f"{today}.log")  # 로컬 파일 사용
 
@@ -160,10 +180,11 @@ def incruit_crawling():
         
         for line in lines:
             columns = line.strip().split(',')
-            if columns[0] == url:
+            if columns[1] == url:
                 # URL이 일치하면 work_status를 "done"으로 업데이트하고, done_time 추가
                 columns[2] = "done"
                 columns[3] = crawl_time
+                columns[0] = job_title
                 updated_line = ','.join(columns)
                 updated_lines.append(updated_line + '\n')
             else:
@@ -174,7 +195,7 @@ def incruit_crawling():
         with open(log_file_name, 'w', encoding='utf-8') as file:
             file.writelines(updated_lines)
 
-    # 기존 로그 파일을 읽기
+    # 기존 로그 파일을 읽고, "update" 상태인 URL들만 크롤링
     with open(log_file_name, 'r', encoding='utf-8') as file:
         lines = file.readlines()
 
@@ -183,20 +204,21 @@ def incruit_crawling():
 
         for line in lines[1:]:
             columns = line.strip().split(',')
-            url = columns[0]
-            notice_status = columns[1]
-            work_status = columns[2]
-            done_time = columns[3]
-            
+            job_title = columns[0]  # job_title 추출
+            url = columns[1]        # URL 추출
+            notice_status = columns[2]
+            work_status = columns[3]
+            done_time = columns[4] if len(columns) > 4 else None
+
             if notice_status == "update" and work_status == "null":
-                print(f"Starting crawl for {url}")
+                print(f"Starting crawl for {job_title}: {url}")
                 # 크롤링 작업 수행
                 crawl_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
                 try:
                     # 각 링크에 대해 로딩 타임아웃 설정
                     driver.get(url)
-                    driver.set_page_load_timeout(CRAWL_TIMEOUT)  # 페이지 로딩 타임아웃을 설정합니다.
+                    driver.set_page_load_timeout(CRAWL_TIMEOUT)  # 페이지 로딩 타임아웃 설정
                     time.sleep(3)
 
                     company = WebDriverWait(driver, 10).until(
@@ -232,15 +254,15 @@ def incruit_crawling():
 
                     job_id = str(uuid.uuid4())
                     text_filename = f"{job_id}.txt"
-                    s3_text_url = upload_to_s3(text_content, "t2jt", f"job/DE/sources/incruit/txt/{job_id}.txt")
+                    s3_text_url = upload_to_s3(text_content, "t2jt", f"job/{job_title}/sources/incruit/txt/{job_id}.txt")
 
-                    s3_image_urls = process_images(image_urls, job_id, "./images", "t2jt", "job/DE/sources/incruit/images")
+                    s3_image_urls = process_images(image_urls, job_id, "./images", "t2jt", f"job/{job_title}/sources/incruit/images")
 
                     notice_type = "both" if s3_text_url and s3_image_urls else "text" if s3_text_url else "images" if s3_image_urls else "NULL"
 
                     insert_into_db({
                         "site": "incruit",
-                        "job_title": "데이터 엔지니어",
+                        "job_title": job_title,
                         "due_type": due_type,
                         "due_date": due_date_mysql,
                         "company": company,
@@ -257,9 +279,9 @@ def incruit_crawling():
                     update_log_file(url, crawl_time)
 
                 except Exception as e:
-                    print(f"Error processing {url}: {e}")
+                    print(f"Error processing {job_title} - {url}: {e}")
 
-            elif notice_status == "deleted":
+            elif notice_status == "deleted" and work_status == "done":
                 removed_links.append(url)
 
         if removed_links:
@@ -592,7 +614,7 @@ def jobkorea_crawling():
 
             # 텍스트 파일 및 이미지 URL 업로드
             if iframe_text:  # 텍스트가 비어있지 않으면 텍스트 파일을 생성하고 업로드
-                filename = f"{uuid4()}.txt"  # UUID 기반 파일 이름 생성
+                filename = f"{uuid.uuid4()}.txt"  # UUID 기반 파일 이름 생성
                 file_path = os.path.join(text_dir, filename)
                 with open(file_path, "w", encoding="utf-8") as file:
                     file.write(iframe_text)  # 텍스트 파일 저장
@@ -605,7 +627,7 @@ def jobkorea_crawling():
             # 이미지 다운로드 및 업로드
             image_urls = []
             for img_url in img_links:
-                image_filename = f"{uuid4()}.jpg"  # UUID 기반 이미지 파일 이름 생성
+                image_filename = f"{uuid.uuid4()}.jpg"  # UUID 기반 이미지 파일 이름 생성
                 image_path = os.path.join(image_dir, image_filename)
                 if download_image(img_url, image_path):
                     image_url = upload_to_s3(image_path, "t2jt", f"job/DE/sources/jobkorea/images/{image_filename}")
@@ -708,7 +730,7 @@ def jobkorea_crawling():
     # print(f"건너뛴 URL들: {skipped_urls}")
 
 def jumpit_crawling():
-    output_folder = "links"
+    output_folder = "./jumpit"
     today = datetime.today().strftime('%Y%m%d')
     log_file_name = os.path.join(output_folder, f"{today}.log")
 
@@ -787,9 +809,6 @@ def jumpit_crawling():
         domain = parsed_url.hostname
         return domain.split('.')[0] if domain else None
 
-    def ensure_directories():
-        os.makedirs("links", exist_ok=True)
-
     def calculate_deadline_from_dday(d_day):
         today = datetime.now().date()
         deadline = today + timedelta(days=d_day)
@@ -803,7 +822,8 @@ def jumpit_crawling():
         
         for line in lines:
             columns = line.strip().split(',')
-            if columns[0] == url:
+            if columns[1] == url:
+                job_title = columns[0].strip()  # 로그 파일에서 job_title 추출
                 columns[2] = "done"
                 columns[3] = crawl_time
                 updated_line = ','.join(columns)
@@ -814,10 +834,9 @@ def jumpit_crawling():
         with open(log_file_name, 'w', encoding='utf-8') as file:
             file.writelines(updated_lines)
 
-    ensure_directories()
 
     bucket_name = 't2jt'
-    today_file_key = f"job/DE/sources/jumpit/links/{today}.txt"
+    today_file_key = f"job/DE/sources/jumpit/links/{today}.txt"  # 기본값은 DE로 설정
 
     links_with_ddays = read_links_and_ddays_from_s3(bucket_name, today_file_key)
 
@@ -838,52 +857,68 @@ def jumpit_crawling():
     with open(log_file_name, 'r', encoding='utf-8') as file:
         lines = file.readlines()
 
-        removed_links = []
+    removed_links = []
 
-        for line in lines[1:]:
-            columns = line.strip().split(',')
-            url = columns[0]
-            notice_status = columns[1]
-            work_status = columns[2]
-            done_time = columns[3]
-            d_day = columns[4]  # D-day 값을 가져옴
-            
-            # D-day 값이 숫자인 경우 deadline 계산
-            try:
-                d_day_int = int(d_day)
-                deadline = calculate_deadline_from_dday(d_day_int)
-            except ValueError:
-                deadline = None  # D-day 값이 유효하지 않으면 deadline은 None
-            
-            if notice_status == "deleted":
-                removed_links.append(url)
-            elif notice_status == "update" and work_status == "null":
-                print(f"Starting crawl for {url}")
-                crawl_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    for line in lines[1:]:  # 헤더는 제외
+        columns = line.strip().split(',')
+        job_title = columns[0].strip()  # 로그 파일에서 job_title 추출
+    # 로그에서 직무명을 추출
+        url = columns[1]
+        notice_status = columns[2]
+        work_status = columns[3]
+        done_time = columns[4]
+        d_day = columns[5]
 
-                # Open the URL and perform web scraping directly
-                try:
+        try:
+            with connection.cursor() as cursor:
+                if notice_status == "deleted" and work_status == "done":
+                    print(f"URL {url} is marked as deleted. Checking if it exists in the database.")
+                    
+                    # Check if URL exists in DB
+                    cursor.execute("SELECT 1 FROM jumpit WHERE org_url = %s", (url,))
+                    result = cursor.fetchone()
+                    if not result:
+                        print(f"URL {url} not found in DB, skipping removed_time update.")
+                        continue
+
+                    # Update removed_time without checking done_time
+                    removed_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                    update_time_query = """
+                    UPDATE jumpit
+                    SET removed_time = %s
+                    WHERE org_url = %s
+                    """
+                    cursor.execute(update_time_query, (removed_time, url))
+                    
+                    # Check if update was successful
+                    if cursor.rowcount == 0:
+                        print(f"No rows updated for URL: {url}")
+                    else:
+                        print(f"Removed time updated for URL: {url}")
+                    connection.commit()
+
+                elif notice_status == "update" and work_status == "null":
+                    print(f"Starting crawl for {url}")
+                    crawl_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+
                     driver.get(url)
-                    time.sleep(3)  # Wait for the page to load
-
-                    # Extract job content
+                    time.sleep(3)
+                    
                     job_content_text = None
                     try:
                         job_content_section = WebDriverWait(driver, 10).until(
-                            EC.presence_of_element_located((By.CSS_SELECTOR, ".sc-10492dab-3.hiVlDL"))  # Adjust this selector to match the correct element
+                            EC.presence_of_element_located((By.CSS_SELECTOR, ".sc-10492dab-3.hiVlDL"))
                         )
                         job_content_text = job_content_section.text
                     except Exception:
                         print(f"Failed to extract job content from {url}")
                     
-                    # If content is found, save to file and upload to S3
                     if job_content_text:
                         text_path = os.path.join("texts", f"{uuid.uuid4()}.txt")
                         with open(text_path, "w", encoding="utf-8") as f:
                             f.write(job_content_text)
-                        s3_text_url = upload_to_s3(text_path, bucket_name, f"job/DE/sources/{extract_site_name(url)}/txt/{uuid.uuid4()}.txt")
+                        s3_text_url = upload_to_s3(text_path, bucket_name, f"job/{job_title}/sources/{extract_site_name(url)}/txt/{uuid.uuid4()}.txt")
                     
-                    # Extract additional info (like company name, post title)
                     company_name = None
                     post_title = None
                     try:
@@ -899,14 +934,17 @@ def jumpit_crawling():
                     except Exception:
                         pass
 
-                    # Determine due type
-                    due_type = '상시채용' if not deadline else '날짜'
-                    due_date = deadline if deadline else None
+                    if d_day:  # d_day 값이 존재하는 경우
+                        deadline = calculate_deadline_from_dday(int(d_day))
+                        due_type = '날짜'
+                        due_date = deadline
+                    else:  # d_day 값이 없으면 '상시채용'
+                        due_type = '상시채용'
+                        due_date = None
 
-                    # Prepare data for DB insertion
                     data = {
                         'site': extract_site_name(url),
-                        'job_title': '데이터 엔지니어',
+                        'job_title': job_title,  # 동적으로 추출된 job_title
                         'due_type': due_type,
                         'due_date': due_date,
                         'company': company_name,
@@ -914,22 +952,18 @@ def jumpit_crawling():
                         'post_title': post_title,
                         'org_url': url,
                         's3_text_url': s3_text_url,
-                        's3_image_url': None,
-                        'create_time': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                        'update_time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                        'create_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+                        'update_time': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
                     }
 
-                    insert_into_db(data, connection)  # Insert the data into the DB
-                    update_log_file(url, crawl_time)  # Update log file
+                    insert_into_db(data, connection)
+                    update_log_file(url, crawl_time)
 
-                except Exception as e:
-                    print(f"Error processing {url}: {e}")
+        except Exception as e:
+            print(f"Error processing {url}: {e}")
 
-        if removed_links:
-            update_removed_links_in_db(removed_links, connection)  # Update removed links in DB
-
-    driver.quit()
     connection.close()
+    driver.quit()
 
 def rocketpunch_crawling():
     
@@ -976,7 +1010,7 @@ def rocketpunch_crawling():
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=chrome_options)
 
     # 페이지 크롤링 함수
-    def get_job_posts(link, job_title, s3_text_path, s3_image_path):
+    def get_job_posts(link, job_abb, job_title, s3_text_path, s3_image_path):
         try:
             # 링크에서 텍스트 크롤링
             print(f"해당 링크: {link}에서 채용공고 상세 크롤링 진행중")
@@ -1095,7 +1129,7 @@ def rocketpunch_crawling():
                 'update_time': update_time,
                 'removed_time': None,
                 'site': 'rocketpunch',
-                'job_title': job_title,  # 동적으로 받아온 job_title 사용
+                'job_title': job_abb,  # 동적으로 받아온 job_title 사용
                 'due_type': due_type,
                 'due_date': due_date,
                 'company': company_name,
@@ -1281,9 +1315,9 @@ def rocketpunch_crawling():
 
                 elif len(latest_contents) == 1:
                     # s3에 오늘 크롤링한 리스트만 있을때
-                    today_list = latest_contents[0].splitlines()
+                    today_list = latest_contents[0].splitlines() # 오늘자거 크롤링
                     for url in today_list:
-                        get_job_posts(url, job_title, s3_text_path, s3_image_path)
+                        get_job_posts(url, job_abb, job_title, s3_text_path, s3_image_path)
                     print(f"[CHECKING] 오늘 크롤링한 공고의 개수: {len(today_list)}개")
                 elif len(latest_contents) == 2:
                     # "url1\nurl2\nurl3" 형식으로 나오므로 list로 변환
@@ -1294,7 +1328,7 @@ def rocketpunch_crawling():
                     # today_list에는 있지만 yesterday_list에는 없는 URL 리스트
                     only_in_today = list(set(today_list) - set(yesterday_list))
                     for url in only_in_today:
-                        get_job_posts(url, job_title, s3_text_path, s3_image_path)
+                        get_job_posts(url, job_abb, job_title, s3_text_path, s3_image_path)
                     print(f"[CHECKING] 오늘 크롤링한 공고의 개수: {len(only_in_today)}개")
 
                     # yesterday_list에는 있지만 today_list에는 없는 URL 리스트
@@ -1330,15 +1364,21 @@ def saramin_crawling():
     # AWS S3 클라이언트 생성
     s3 = boto3.client('s3')
 
-    # S3 설정
+    # S3 설정 - 기본값
     BUCKET_NAME = "t2jt"
-    S3_BASE_PATH = "job/DE/sources/saramin/links"
-    S3_TEXT_PATH = "job/DE/sources/saramin/txt"
-    S3_IMAGES_PATH = "job/DE/sources/saramin/images"
-    today_date = datetime.now().strftime("%Y%m%d")  # 오늘 날짜 (YYYYMMDD 형식)
-    yesterday_date = (datetime.now() - timedelta(days=1)).strftime("%Y%m%d")  # 어제 날짜 (YYYYMMDD 형식)
-    today_file_path = f"{S3_BASE_PATH}/{today_date}.txt"
-    yesterday_file_path = f"{S3_BASE_PATH}/{yesterday_date}.txt"
+    DEFAULT_KEYWORD = "DE"  # 기본 키워드
+    S3_BASE_PATH = f"job/{DEFAULT_KEYWORD}/sources/saramin/links"
+    S3_TEXT_PATH = f"job/{DEFAULT_KEYWORD}/sources/saramin/txt"
+    S3_IMAGES_PATH = f"job/{DEFAULT_KEYWORD}/sources/saramin/images"
+
+    # 오늘과 어제 날짜 파일 경로를 동적으로 생성할 함수
+    def get_s3_paths(keyword):
+        base_path = f"job/{keyword}/sources/saramin/links"
+        text_path = f"job/{keyword}/sources/saramin/txt"
+        images_path = f"job/{keyword}/sources/saramin/images"
+        today_file = f"{base_path}/{datetime.now().strftime('%Y%m%d')}.txt"
+        yesterday_file = f"{base_path}/{(datetime.now() - timedelta(days=1)).strftime('%Y%m%d')}.txt"
+        return base_path, text_path, images_path, today_file, yesterday_file
 
     # MySQL 연결 풀 설정
     db_config = {
@@ -1369,21 +1409,24 @@ def saramin_crawling():
     def read_s3_file(bucket, path, retries=3):
         for attempt in range(retries):
             try:
+                logging.info(f"[INFO] S3 파일 읽기 시도: Bucket={bucket}, Path={path}")
                 response = s3.get_object(Bucket=bucket, Key=path)
-                return response['Body'].read().decode('utf-8').strip()
+                file_content = response['Body'].read().decode('utf-8').strip()
+
+                if not file_content:
+                    logging.warning(f"[WARNING] S3 파일 내용이 비어 있습니다: {path}")
+                    return ""
+
+                return file_content
             except Exception as e:
-                logging.error(f"S3 파일 읽기 실패 (시도 {attempt + 1}/{retries}): {e}")
+                logging.error(f"[ERROR] S3 파일 읽기 실패 (시도 {attempt + 1}/{retries}): {e}")
                 if attempt < retries - 1:
                     time.sleep(2)  # 재시도 전 대기
                 else:
-                    return None
+                    return ""
 
     # URL 추출 함수
     def extract_urls_with_details(content):
-        """
-        Extract URLs along with JOB_TITLE, COMPANY, and POST_TITLE from content.
-        Normalize URLs for consistent comparison.
-        """
         data = []
         for line in content.splitlines():
             url_match = re.search(r"ORG_URL:\s*(https?://[^\s,]+)", line)
@@ -1470,10 +1513,8 @@ def saramin_crawling():
                 cursor.close()
                 conn.close()
 
+    # 이미지 URL을 다운로드하여 S3에 저장한 후, DB에 저장할 URL을 반환
     def upload_image_to_s3(image_url):
-        """
-        이미지 URL을 다운로드하여 S3에 저장한 후, DB에 저장할 URL을 반환
-        """
         try:
             # S3 키로 사용하기 위해 URL의 슬래시를 |로 인코딩
             encoded_url = image_url.replace('/', '|')  # 슬래시를 %2F로 변환
@@ -1508,20 +1549,37 @@ def saramin_crawling():
         for attempt in range(retries):
             try:
                 logging.info(f"URL로 이동 중 (시도 {attempt + 1}/{retries}): {url}")
-                driver = webdriver.Chrome()
+                
+                chrome_options = Options()
+                chrome_options.add_argument("--headless")
+                chrome_options.add_argument("--disable-gpu")
+                chrome_options.add_argument("--no-sandbox")
+                chrome_options.add_argument("--disable-dev-shm-usage")
+                chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")  # User-Agent 설정
+
+                driver = webdriver.Chrome(options=chrome_options)
                 driver.get(url)
 
                 time.sleep(10)
 
-                # Iframe으로 전환
-                WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "iframe")))
-                iframe = driver.find_element(By.ID, "iframe_content_0")
-                driver.switch_to.frame(iframe)
+                # iframe 전환
+                try:
+                    WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.ID, "iframe_content_0")))
+                    iframe = driver.find_element(By.ID, "iframe_content_0")
+                    driver.switch_to.frame(iframe)
+                except Exception as e:
+                    logging.error(f"iframe 탐색 실패: {e}")
+                    return False
 
-                # user_content 텍스트 추출
-                WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME, "user_content")))
-                content_element = driver.find_element(By.CLASS_NAME, "user_content")
-                extracted_text = content_element.text.strip()
+                # user_content 탐색
+                try:
+                    WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.CLASS_NAME, "user_content")))
+                    content_element = driver.find_element(By.CLASS_NAME, "user_content")
+                    extracted_text = content_element.text.strip()
+                    logging.info(f"추출된 텍스트: {extracted_text}")
+                except Exception as e:
+                    logging.error(f"user_content 탐색 실패: {e}")
+                    return False
 
                 # 텍스트 처리 - S3 저장
                 if extracted_text:
@@ -1635,11 +1693,8 @@ def saramin_crawling():
                 conn.close()
 
 
-    # 정규화된 URL 사용
+    # 정규화된 URL 사용 (URL을 정규화로 비교 가능 형태로 변환)
     def normalize_url(url):
-        """
-        URL을 정규화하여 비교가 가능한 형태로 변환.
-        """
         try:
             parsed_url = urlparse(url)
             query_params = sorted(parse_qsl(parsed_url.query), key=lambda x: x[0])  # 정렬된 쿼리
@@ -1659,20 +1714,29 @@ def saramin_crawling():
 
     # 실행 로직
     # 오늘날짜.txt와 DB와 먼저 중복 체크 후 오늘날짜.txt와 어제날짜.txt비교 후 추가 및 제거
-    def execute():
+    def execute(keyword):
         try:
+            # 동적으로 S3 경로 설정
+            global S3_BASE_PATH, S3_TEXT_PATH, S3_IMAGES_PATH, today_file_path, yesterday_file_path
+            S3_BASE_PATH, S3_TEXT_PATH, S3_IMAGES_PATH, today_file_path, yesterday_file_path = get_s3_paths(keyword)
+
             # S3 파일 읽기
             today_content = read_s3_file(BUCKET_NAME, today_file_path)
             yesterday_content = read_s3_file(BUCKET_NAME, yesterday_file_path)
 
             if not today_content:
-                logging.error("오늘 파일을 읽을 수 없으므로 종료합니다.")
+                logging.warning(f"{keyword}: 오늘 파일을 읽을 수 없어 작업을 건너뜁니다.")
                 return
+            
+            if not yesterday_content:
+                logging.info(f"{keyword}: 어제 파일이 비어 있거나 존재하지 않습니다. 어제 데이터를 비어 있는 것으로 간주합니다.")
+                yesterday_content = ""  # 어제 데이터를 빈 값으로 설정
 
             # 오늘 날짜 파일에서 URL 및 관련 데이터 추출
             today_data = extract_urls_with_details(today_content)
             yesterday_data = extract_urls_with_details(yesterday_content)  # 어제 파일
-            logging.info(f"오늘 날짜 파일에서 추출된 데이터: {len(today_data)}개")
+            logging.info(f"[{keyword}] 오늘 날짜 파일에서 추출된 데이터: {len(today_data)}개")
+            logging.info(f"[{keyword}] 어제 날짜 파일에서 추출된 데이터: {len(yesterday_data)}개")
 
             # DB와 중복 확인
             filtered_today_data = []
@@ -1683,7 +1747,7 @@ def saramin_crawling():
                     cursor.execute("SELECT COUNT(*) FROM saramin WHERE org_url = %s", (url,))
                     if cursor.fetchone()[0] == 0:  # DB에 없는 경우만 추가
                         filtered_today_data.append((url, job_title, company, post_title))
-                logging.info(f"DB 중복 확인 후 남은 데이터: {len(filtered_today_data)}개")
+                logging.info(f"[{keyword}] DB 중복 확인 후 남은 데이터: {len(filtered_today_data)}개")
             finally:
                 if conn.is_connected():
                     cursor.close()
@@ -1692,13 +1756,6 @@ def saramin_crawling():
             # 어제 날짜 파일에서 URL 데이터 추출
             yesterday_urls = {normalize_url(item[0]) for item in yesterday_data} if yesterday_content else set()
             today_urls = {normalize_url(data[0]) for data in today_data}
-
-            # 어제 URL 목록과 오늘 필터된 URL 목록 저장
-            #with open("yesterday_urls_debug.txt", "w", encoding="utf-8") as f:
-            #    f.writelines(f"{url}\n" for url in yesterday_urls)
-
-            #with open("today_urls_debug.txt", "w", encoding="utf-8") as f:
-            #    f.writelines(f"{url}\n" for url in today_urls)
 
             # 추가 및 제거된 URL 계산
             added_urls = today_urls - yesterday_urls
@@ -1709,8 +1766,8 @@ def saramin_crawling():
 
 
             # 디버깅용 추가 및 제거된 URL 로깅
-            logging.debug(f"추가된 URL 개수: {len(added_data)}, 목록: {[data[0] for data in added_data]}")
-            logging.debug(f"제거된 URL 개수: {len(removed_urls)}, 목록: {list(removed_urls)}")
+            logging.debug(f"[{keyword}] 추가된 URL 개수: {len(added_data)}, 목록: {[data[0] for data in added_data]}")
+            logging.debug(f"[{keyword}] 제거된 URL 개수: {len(removed_urls)}, 목록: {list(removed_urls)}")
             logging.info(f"추가된 URL: {len(added_data)}개")
             logging.info(f"제거된 URL: {len(removed_urls)}개")
 
@@ -1741,8 +1798,19 @@ def saramin_crawling():
         except Exception as e:
             logging.error(f"실행 중 오류 발생: {e}")
 
-    # 실행
-    execute()
+    def execute_for_all_keywords():
+        """
+        모든 키워드에 대해 작업 실행.
+        """
+        KEYWORDS = ["DE", "FE", "BE", "DA", "MLE"]
+
+        for keyword in KEYWORDS:
+            logging.info(f"=== {keyword} 작업 시작 ===")
+            execute(keyword)
+            logging.info(f"=== {keyword} 작업 완료 ===")
+
+    if __name__ == "__main__":
+        execute_for_all_keywords()
 
 def wanted_crawling():
     # AWS S3 클라이언트 설정
@@ -1986,3 +2054,28 @@ def wanted_crawling():
 
     if __name__ == "__main__":
         main()
+
+def execute_post_crawlings():
+    def safe_execute(task_name, task_function):
+        try:
+            print(f"{task_name} - 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+            task_function()
+            print(f"{task_name} - 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+            time.sleep(5)
+        except Exception as e:
+            print(f"{task_name} 작업 중 에러 발생: {e}")
+
+    tasks = [
+        ("인크루트", incruit_crawling),
+        ("잡코리아", jobkorea_crawling),
+        ("점핏", jumpit_crawling),
+        ("로켓펀치", rocketpunch_crawling),
+        ("사람인", saramin_crawling),
+        ("원티드", wanted_crawling),
+    ]
+
+    for task_name, task_function in tasks:
+        safe_execute(task_name, task_function)
+
+if __name__ == "__main__":
+    execute_post_crawlings()

@@ -3,40 +3,54 @@ version: '3.8'
 networks:
   airflow-network:
     driver: bridge
-  spark-network:
-    driver: bridge
+  # spark-network:
+  #   driver: bridge
 
 services:
   airflow:
+    container_name: airflow-webserver
     build:
       context: ./airflow
       dockerfile: Dockerfile-airflow
     ports:
       - "8080:8080"
+    shm_size: 2g
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: mysql+mysqlconnector://root:1234@43.201.40.223:3306/airflowdb
       AIRFLOW__CORE__LOAD_EXAMPLES: "False" # 기본 예제 DAG 로드 비활성화
-    volumes:
-      - ./airflow/dags:/opt/airflow/dags
-      - ./airflow/logs:/opt/airflow/logs
-      - ./airflow/plugins:/opt/airflow/plugins
+      AIRFLOW__CORE__PLUGINS_FOLDER: /opt/airflow/plugins
+      AIRFLOW__WEBSERVER__SECRET_KEY: "3lA0h8c08#395lcBc7f6C4k8a?"
+      PYTHONPATH: /opt/airflow/plugins
     entrypoint: >
       bash -c "
       /docker-entrypoint-initdb.d/init_airflow.sh &&
       exec airflow webserver
       "
+    volumes:
+      - ~/.aws:/opt/airflow/.aws:ro
+      # - ./airflow/dags:/opt/airflow/dags
+      # - ./airflow/logs:/opt/airflow/logs
+      # - ./airflow/plugins:/opt/airflow/plugins
     networks:
       - airflow-network
 
   airflow-scheduler:
+    container_name: airflow-scheduler
     build:
       context: ./airflow
       dockerfile: Dockerfile-airflow
+    restart: always
     environment:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: mysql+mysqlconnector://root:1234@43.201.40.223:3306/airflowdb
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+      AIRFLOW__WEBSERVER__SECRET_KEY: "3lA0h8c08#395lcBc7f6C4k8a?"
+    volumes:
+      - ~/.aws:/opt/airflow/.aws:ro
+      # - ./airflow/dags:/opt/airflow/dags
+      # - ./airflow/logs:/opt/airflow/logs
+      # - ./airflow/plugins:/opt/airflow/plugins
     entrypoint: >
       bash -c "
       sleep 10 && 
@@ -47,27 +61,27 @@ services:
     networks:
       - airflow-network
 
-  spark-master:
-    build:
-      context: ./spark
-      dockerfile: Dockerfile-spark
-    ports:
-      - "7077:7077"
-      - "4040:4040"
-    environment:
-      SPARK_MODE: master
-    networks:
-      - spark-network
+  # spark-master:
+  #   build:
+  #     context: ./spark
+  #     dockerfile: Dockerfile-spark
+  #   ports:
+  #     - "7077:7077"
+  #     - "4040:4040"
+  #   environment:
+  #     SPARK_MODE: master
+  #   networks:
+  #     - spark-network
 
-  spark-worker:
-    build:
-      context: ./spark
-      dockerfile: Dockerfile-spark
-    environment:
-      SPARK_MODE: worker
-      SPARK_MASTER_URL: spark://spark-master:7077
-    depends_on:
-      - spark-master
-    networks:
-      - spark-network
+  # spark-worker:
+  #   build:
+  #     context: ./spark
+  #     dockerfile: Dockerfile-spark
+  #   environment:
+  #     SPARK_MODE: worker
+  #     SPARK_MASTER_URL: spark://spark-master:7077
+  #   depends_on:
+  #     - spark-master
+  #   networks:
+  #     - spark-network
 

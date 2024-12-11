@@ -9,7 +9,6 @@ from collections import defaultdict
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -18,9 +17,7 @@ from webdriver_manager.chrome import ChromeDriverManager
 from urllib.parse import urlparse, parse_qs, urlencode
 from zoneinfo import ZoneInfo
 from botocore.exceptions import NoCredentialsError, ClientError
-from io import StringIO
 import psutil
-import shutil
 
 def incruit_link():
     # 검색 URL 리스트 설정
@@ -157,8 +154,20 @@ def jobkorea_link():
     # AWS S3 클라이언트 설정
     s3_client = boto3.client('s3')
 
-    # Selenium 웹 드라이버 설정
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    # ChromeOptions 설정
+    options = webdriver.ChromeOptions()
+
+    # Headless 옵션 추가
+    options.add_argument("--headless")  # 화면을 표시하지 않음
+    options.add_argument("--disable-gpu")  # GPU 비활성화 (Windows에서 필요할 수 있음)
+    options.add_argument("--no-sandbox")  # 보안 옵션 비활성화 (Linux에서 필요할 수 있음)
+
+    # User-Agent 설정
+    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.110 Safari/537.36"
+    options.add_argument(f"user-agent={user_agent}")
+
+    # WebDriver 초기화
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
     # 검색 키워드와 직무 약어 설정
     search_keywords = {
@@ -210,7 +219,7 @@ def jobkorea_link():
             # 페이지 열기
             url = f"{base_url}{page_number}"
             driver.get(url)
-            time.sleep(3)  # 페이지 로딩 대기
+            time.sleep(7)  # 페이지 로딩 대기
 
             # 검색 결과가 없으면 종료
             try:
@@ -281,12 +290,6 @@ def jobkorea_link():
     driver.quit()
 
 def jumpit_link():
-    def log_error(error_message):
-        """오류를 makelog_err.log 파일에 기록"""
-        with open('makelog_err.log', 'a', encoding='utf-8') as err_file:
-            timestamp = datetime.today().strftime('%Y-%m-%d %H:%M:%S')
-            err_file.write(f"{timestamp},{error_message}\n")
-
     # 검색 URL 리스트 설정
     job_url_list = {
         "DE": [
@@ -307,8 +310,12 @@ def jumpit_link():
     }
 
     # 셀레니움 웹 드라이버 설정
-    options = Options()
-    options.headless = False  # 드라이버를 헤드리스 모드로 실행할 수 있음
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")  # 화면을 표시하지 않음
+    options.add_argument("--disable-gpu")  # GPU 비활성화 (Windows에서 필요할 수 있음)
+    options.add_argument("--no-sandbox")  # 보안 옵션 비활성화 (Linux에서 필요할 수 있음)
+    user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.110 Safari/537.36"
+    options.add_argument(f"user-agent={user_agent}")
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
     # 오늘 날짜로 로그 파일 이름 설정
@@ -325,7 +332,7 @@ def jumpit_link():
     else:
         print(f"{log_directory} 디렉토리가 이미 존재합니다.")
 
-    log_files = [f for f in os.listdir(log_directory) if re.match(r'^\d{8}\.log$', f)]
+    log_files = [os.path.join(log_directory, f) for f in os.listdir(log_directory) if re.match(r'^\d{8}\.log$', f)]
 
     # 가장 최근에 생성된 로그 파일 찾기
     recent_log_file_name = None  # 기본값을 None으로 설정
@@ -335,9 +342,6 @@ def jumpit_link():
         print(f"Found the most recent log file: {recent_log_file_name}")
     else:
         print("No log files found in the directory. All URLs will be marked as 'update'.")
-
-    # 이전 로그 파일이 없으면 빈 딕셔너리로 설정 (오늘 크롤링한 URL과 비교할 기준이 없으므로)
-    previous_urls = {}
 
     # 오늘 크롤링한 URL과 비교하여 상태 설정
     for job_key, urls in job_url_list.items():
@@ -370,7 +374,7 @@ def jumpit_link():
                             d_day_elements = link.find_elements(By.XPATH, ".//div[contains(@class, 'sc-d609d44f-3')]/span")
                             if d_day_elements:
                                 d_day_text = d_day_elements[0].text.strip()
-                                print(f"D-day Text: {d_day_text}")  # D-day 추출된 값 확인
+                                #print(f"D-day Text: {d_day_text}")  # D-day 추출된 값 확인
                                 if "상시" in d_day_text:
                                     d_day = None  # 상시는 null로 저장
                                 elif d_day_text.startswith("D-"):
@@ -378,14 +382,15 @@ def jumpit_link():
                                 else:
                                     d_day = None
                         except Exception as e:
-                            print(f"D-day 추출 실패: {e}")
+                            #print(f"D-day 추출 실패: {e}")
+                            pass
 
                         # 로그에 바로 기록
                         job = job_key
                         notice_status = "update"
                         work_status = "null"
                         done_time = "null"
-                        print(f"링크: {href}, D-day: {d_day}")  # D-day 값도 함께 출력
+                        # print(f"링크: {href}, D-day: {d_day}")  # D-day 값도 함께 출력
                         with open(today_log_file_name, 'a', encoding='utf-8') as file:
                             file.write(f"{job},{href},{notice_status},{work_status},{done_time},{d_day if d_day is not None else 'null'}\n")
 
@@ -419,7 +424,7 @@ def rocketpunch_link():
 
     # 변수 설정 : 링크 저장을 위한 S3
     BUCKET_NAME = 't2jt'
-    S3_LINK_PATH = 'job/{abb}/airflow_test/rocketpunch/links/'
+    S3_LINK_PATH = 'job/{abb}/sources/rocketpunch/links/'
 
     kst = ZoneInfo("Asia/Seoul")
 
@@ -541,198 +546,170 @@ def rocketpunch_link():
         main()
 
 def saramin_link():
-# URL에서 rec_idx 값까지만 포함된 URL 반환 함수
-def extract_rec_idx_url(url):
-    parsed_url = urlparse(url)
-    query_params = parse_qs(parsed_url.query)
-    base_url = f"{parsed_url.scheme}://{parsed_url.netloc}{parsed_url.path}"
-    rec_idx = query_params.get("rec_idx", [None])[0]
-    if rec_idx:
-        new_query = urlencode({"rec_idx": rec_idx})
-        return f"{base_url}?{new_query}"
-    return base_url
+    # URL에서 rec_idx 값까지만 포함된 URL 반환 함수
+    def extract_rec_idx_url(url):
+        parsed_url = urlparse(url)
+        query_params = parse_qs(parsed_url.query)
+        base_url = f"{parsed_url.scheme}://{parsed_url.netloc}{parsed_url.path}"
+        rec_idx = query_params.get("rec_idx", [None])[0]
+        if rec_idx:
+            new_query = urlencode({"rec_idx": rec_idx})
+            return f"{base_url}?{new_query}"
+        return base_url
 
-def cleanup(driver):
-    try:
-        driver.quit()
-    except Exception as e:
-        print(f"Driver quit failed: {e}")
+    # 브라우저 세션 완전 초기화
+    def cleanup_driver_process(driver):
+        try:
+            driver.quit()  # 기존 브라우저 세션 종료
+            for proc in psutil.process_iter(attrs=["pid", "name"]):
+                if "chrome" in proc.info["name"].lower():
+                    proc.terminate()  # Chrome 프로세스 강제 종료
+        except Exception as e:
+            print(f"드라이버 정리 중 오류 발생: {e}")
 
-    # 프로세스 강제 종료
-    for proc in psutil.process_iter(["pid", "name"]):
-        if "chrome" in proc.info["name"].lower() or "chromedriver" in proc.info["name"].lower():
-            try:
-                proc.terminate()
-                proc.wait(timeout=10)
-                print(f"Process terminated: {proc.info}")
-            except psutil.TimeoutExpired:
-                print(f"Process termination timeout: {proc.info}")
-                try:
-                    proc.kill()  # 강제 종료
-                    print(f"Process killed: {proc.info}")
-                except Exception as kill_err:
-                    print(f"Force kill failed: {kill_err}")
-            except psutil.NoSuchProcess:
-                print(f"Process already terminated: {proc.info}")
-            except Exception as e:
-                print(f"Process termination failed: {e}")
+    # AWS s3 설정
+    BUCKET_NAME = "t2jt"
+    S3_PATH_PREFIX_TEMPLATE = "job/{}/sources/saramin/links/"  # 키워드에 따른 동적 경로
 
-# AWS s3 설정
-BUCKET_NAME = "t2jt"
-S3_PATH_PREFIX_TEMPLATE = "job/{}/sources/saramin/links/"  # 키워드에 따른 동적 경로
+    # S3 클라이언트 생성
+    s3_client = boto3.client("s3")
 
-# S3 클라이언트 생성
-s3_client = boto3.client("s3")
-
-# 키워드별 정보 설정
-keywords_config = {
-#    "데이터 엔지니어": {"job_title": "DE", "path_prefix": "DE"},
-    "프론트엔드": {"job_title": "FE", "path_prefix": "FE"},
-#    "백엔드": {"job_title": "BE", "path_prefix": "BE"},
-#    "데이터 분석가": {"job_title": "DA", "path_prefix": "DA"}
-#    "머신러닝 엔지니어": {"job_title": "MLE", "path_prefix": "MLE"},
-}
-
-# WebDriver 설정
-for keyword, config in keywords_config.items():
     # Chrome 옵션 설정
     chrome_options = Options()
-    chrome_options.add_argument("--incognito")
-    #chrome_options.add_argument(f"--user-data-dir={temp_dir}")  # 사용자 데이터 디렉토리 강제 지정
     chrome_options.add_argument("--disable-cache")
+    chrome_options.add_argument("--disk-cache-dir=/dev/null")  # 디스크 캐시 경로를 비활성화
     chrome_options.add_argument("--disable-application-cache")  # 애플리케이션 캐시 비활성화
     chrome_options.add_argument("--disable-background-networking")
+    chrome_options.add_argument("--disk-cache-size=0")
+    chrome_options.add_argument("--incognito")
     chrome_options.add_argument("--disable-gpu")  # GPU 캐시 비활성화 (필요한 경우)
     chrome_options.add_argument("--no-sandbox")  # 샌드박스 비활성화 (권장)
     chrome_options.add_argument("--disable-dev-shm-usage")  # 공유 메모리 비활성화 (리소스 관리)
     chrome_options.add_argument("--headless")
+    chrome_options.add_argument("--disable-features=NetworkService,NetworkServiceInProcess")
     chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")  # User-Agent 설정
 
-    try:
-        print(f"키워드 '{keyword}' 작업 시작")
+    # 키워드별 정보 설정
+    keywords_config = {
+        "데이터 엔지니어": {"job_title": "DE", "path_prefix": "DE"},
+        "프론트엔드": {"job_title": "FE", "path_prefix": "FE"},
+        "백엔드": {"job_title": "BE", "path_prefix": "BE"},
+        "데이터 분석가": {"job_title": "DA", "path_prefix": "DA"},
+        "머신러닝 엔지니어": {"job_title": "MLE", "path_prefix": "MLE"}
+    }
 
-        # 각 키워드별로 새로운 브라우저 인스턴스 실행. 브라우저 실행 후 캐시 비활성화
-        driver = webdriver.Chrome(options=chrome_options)
-        driver.execute_cdp_cmd("Network.setCacheDisabled", {"cacheDisabled": True})
-        time.sleep(2)
-        # 명시적으로 캐시 및 스토리지 데이터 삭제
-        driver.execute_cdp_cmd(
-            "Storage.clearDataForOrigin",
-            {
-                "origin": "https://www.saramin.co.kr",
-                "storageTypes": "all"
-            }
-        )
-
-
-        # Ctrl + F5 강력 새로고침
+    # WebDriver 설정
+    for keyword, config in keywords_config.items():
         try:
-            body = driver.find_element(By.TAG_NAME, "body")
-            body.send_keys(Keys.CONTROL, Keys.F5)  # Ctrl + F5 입력
-            print("브라우저 강력 새로고침 (Ctrl + F5) 완료")
-        except Exception as e:
-            print(f"Ctrl + F5 새로고침 실패, 강제로 URL 재로드: {e}")
-            driver.refresh()
-        time.sleep(3)
+            print(f"키워드 '{keyword}' 작업 시작")
 
-        # URL에 nocache 파라미터 추가
-        url = f"https://www.saramin.co.kr/zf_user/?nocache={int(time.time())}"
-        driver.get(url)
-        print(f"캐시 무효화된 URL로 접근: {url}")
-        time.sleep(5)
+            # 각 키워드별로 새로운 브라우저 인스턴스 실행. 브라우저 실행 후 캐시 비활성화
+            driver = webdriver.Chrome(options=chrome_options)
+            driver.execute_cdp_cmd("Network.setCacheDisabled", {"cacheDisabled": True})
 
-        # 수집 시점
-        current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        today_date = datetime.datetime.now().strftime("%Y%m%d")
+            # 로컬 저장소 및 세션 스토리지 정리
+            driver.execute_cdp_cmd("Network.clearBrowserCache", {})
+            driver.execute_cdp_cmd("Network.clearBrowserCookies", {})
+            driver.delete_all_cookies()
 
-        # S3 파일 경로
-        s3_path_prefix = S3_PATH_PREFIX_TEMPLATE.format(config["path_prefix"])
-        s3_file_path = f"{s3_path_prefix}{today_date}.txt"
+            # 수집 시점
+            current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            today_date = datetime.now().strftime("%Y%m%d")
 
-        # 검색어 입력 및 실행
-        search_box = driver.find_element(By.CLASS_NAME, "search")
-        search_box.click()
-        time.sleep(2)
-        search_input = driver.find_element(By.XPATH, '//input[@id="ipt_keyword_recruit"]')
-        search_input.click()
-        time.sleep(2)
-        search_input.clear()
-        search_input.send_keys(keyword)
-        time.sleep(2)
-        search_button = driver.find_element(By.XPATH, '//button[@id="btn_search_recruit"]')
-        search_button.click()
-        print(f"'{keyword}' 검색 완료!")
-        time.sleep(7)
+            # S3 파일 경로
+            s3_path_prefix = S3_PATH_PREFIX_TEMPLATE.format(config["path_prefix"])
+            s3_file_path = f"{s3_path_prefix}{today_date}.txt"
 
-        # 모든 페이지 데이터 수집
-        page = 1
-        job_data_list = []
-        while True:
-            print(f"현재 페이지: {page}")
-            try:
-                job_elements = WebDriverWait(driver, 10).until(
-                    EC.presence_of_all_elements_located(
-                        (By.XPATH, '//div[@id="recruit_info_list"]//div[contains(@class, "item_recruit")]')
+            # 사람인 홈페이지 접속
+            url = "https://www.saramin.co.kr/zf_user/"
+            driver.get(url)
+            time.sleep(5)
+
+            # 검색어 입력 및 실행
+            search_box = driver.find_element(By.CLASS_NAME, "search")
+            search_box.click()
+            time.sleep(2)
+            search_input = driver.find_element(By.XPATH, '//input[@id="ipt_keyword_recruit"]')
+            search_input.click()
+            time.sleep(2)
+            search_input.clear()
+            search_input.send_keys(keyword)
+            time.sleep(2)
+            search_button = driver.find_element(By.XPATH, '//button[@id="btn_search_recruit"]')
+            search_button.click()
+            print(f"'{keyword}' 검색 완료!")
+            time.sleep(7)
+
+            # 모든 페이지 데이터 수집
+            page = 1
+            job_data_list = []
+            while True:
+                print(f"현재 페이지: {page}")
+                try:
+                    job_elements = WebDriverWait(driver, 10).until(
+                        EC.presence_of_all_elements_located(
+                            (By.XPATH, '//div[@id="recruit_info_list"]//div[contains(@class, "item_recruit")]')
+                        )
                     )
-                )
-                for job_element in job_elements:
-                    try:
-                        title_element = job_element.find_element(By.XPATH, './/h2[@class="job_tit"]/a')
-                        title = title_element.get_attribute("title")
-                        url = title_element.get_attribute("href")
-                        org_url = extract_rec_idx_url(url)
-                        company_element = job_element.find_element(By.XPATH, './/div[@class="area_corp"]//a')
-                        company_name = company_element.text if company_element else "Unknown"
-                        job_data_list.append({
-                            "URL_CR_TIME": current_time,
-                            "SITE": "saramin",
-                            "JOB_TITLE": config["job_title"],
-                            "COMPANY": company_name,
-                            "POST_TITLE": title,
-                            "ORG_URL": org_url
-                        })
-                    except Exception as e:
-                        print(f"요소 처리 중 오류 발생: {e}")
-                time.sleep(5)
+                    for job_element in job_elements:
+                        try:
+                            title_element = job_element.find_element(By.XPATH, './/h2[@class="job_tit"]/a')
+                            title = title_element.get_attribute("title")
+                            url = title_element.get_attribute("href")
+                            org_url = extract_rec_idx_url(url)
+                            company_element = job_element.find_element(By.XPATH, './/div[@class="area_corp"]//a')
+                            company_name = company_element.text if company_element else "Unknown"
+                            job_data_list.append({
+                                "URL_CR_TIME": current_time,
+                                "SITE": "saramin",
+                                "JOB_TITLE": config["job_title"],
+                                "COMPANY": company_name,
+                                "POST_TITLE": title,
+                                "ORG_URL": org_url
+                            })
+                        except Exception as e:
+                            print(f"요소 처리 중 오류 발생: {e}")
+                    time.sleep(5)
 
-                # 다음 페이지로 이동
-                next_page = driver.find_element(By.XPATH, f'//a[@page="{page + 1}"]')
-                next_page.click()
-                time.sleep(5)
-                page += 1
-            except Exception:
-                print(f"'{keyword}' 작업: 마지막 페이지 도달")
-                break
+                    # 다음 페이지로 이동
+                    next_page = driver.find_element(By.XPATH, f'//a[@page="{page + 1}"]')
+                    next_page.click()
+                    time.sleep(5)
+                    page += 1
+                except Exception:
+                    print(f"'{keyword}' 작업: 마지막 페이지 도달")
+                    break
 
-        # S3 업로드 준비
-        s3_content = "\n".join(
-            f"URL_CR_TIME: {job['URL_CR_TIME']}, SITE: {job['SITE']}, JOB_TITLE: {job['JOB_TITLE']}, "
-            f"COMPANY: {job['COMPANY']}, POST_TITLE: {job['POST_TITLE']}, ORG_URL: {job['ORG_URL']}"
-            for job in job_data_list
-        )
+            # S3 업로드 준비
+            s3_content = "\n".join(
+                f"URL_CR_TIME: {job['URL_CR_TIME']}, SITE: {job['SITE']}, JOB_TITLE: {job['JOB_TITLE']}, "
+                f"COMPANY: {job['COMPANY']}, POST_TITLE: {job['POST_TITLE']}, ORG_URL: {job['ORG_URL']}"
+                for job in job_data_list
+            )
 
-        # S3에 데이터 업로드
-        s3_client.put_object(
-            Bucket=BUCKET_NAME,
-            Key=s3_file_path,
-            Body=s3_content.encode("utf-8-sig"),
-            ContentType="text/plain"
-        )
-        print(f"S3에 파일 업로드 완료: s3://{BUCKET_NAME}/{s3_file_path}")
+            # S3에 데이터 업로드
+            s3_client.put_object(
+                Bucket=BUCKET_NAME,
+                Key=s3_file_path,
+                Body=s3_content.encode("utf-8-sig"),
+                ContentType="text/plain"
+            )
+            print(f"S3에 파일 업로드 완료: s3://{BUCKET_NAME}/{s3_file_path}")
 
-    except Exception as e:
-        print(f"오류 발생: {e}")
-
-    finally:
-        try:
-            cleanup(driver)
         except Exception as e:
-            print(f"cleanup 실패: {e}")
+            print(f"오류 발생: {e}")
 
+        finally:
+            try:
+                driver.quit()  # 브라우저 세션 정상 종료 시도
+            except Exception as e:
+                print(f"driver.quit() 실패: {e}")
+            
+            cleanup_driver_process(driver)  # 추가적으로 리소스 정리
 
 def wanted_link():
     if not os.path.exists('./wanted'):
-            os.makedirs('./wanted')  # 디렉토리 생성  
+        os.makedirs('./wanted')  # 디렉토리 생성  
     
     def log_error(error_message):
         """오류를 makelog_err.log 파일에 기록"""
@@ -762,7 +739,7 @@ def wanted_link():
     try:
         # 셀레니움 웹 드라이버 설정
         options = Options()
-        options.headless = False  # 드라이버를 헤드리스 모드로 실행할 수 있음 (주석 처리하거나 True로 설정하여 브라우저를 표시하지 않게 할 수 있음)
+        options.headless = True  # 드라이버를 헤드리스 모드로 실행할 수 있음 (주석 처리하거나 True로 설정하여 브라우저를 표시하지 않게 할 수 있음)
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
         # 오늘 날짜로 로그 파일 이름 설정
@@ -781,10 +758,12 @@ def wanted_link():
             print(f"Found the most recent log file: {recent_log_file_name}")
         else:
             print("No log files found in the directory. All URLs will be marked as 'update'.")
+            recent_log_file_name = None  # recent_log_file_name을 None으로 설정
 
         # 이전 로그 파일이 존재하는지 확인하고 읽기
         previous_urls = {}  # 이전 로그에 있는 URL 및 해당 job
-        if os.path.exists(os.path.join(log_directory, recent_log_file_name)):
+        #if os.path.exists(os.path.join(log_directory, recent_log_file_name)):
+        if recent_log_file_name and os.path.exists(os.path.join(log_directory, recent_log_file_name)):
             with open(os.path.join(log_directory, recent_log_file_name), 'r', encoding='utf-8') as file:
                 lines = file.readlines()
                 if lines:  # 파일에 내용이 있을 때만 처리
@@ -796,7 +775,7 @@ def wanted_link():
                             notice_status = columns[2]
                             if notice_status != "deleted":  # "deleted" 상태인 URL은 제외
                                 previous_urls[url] = job  # URL에 해당하는 job을 저장
-
+ 
         # 오늘 크롤링한 URL을 수집
         all_links = []  # 오늘 수집한 모든 링크
         job_for_links = {}  # 각 링크에 해당하는 job을 기록하기 위한 dictionary
@@ -902,13 +881,38 @@ def wanted_link():
             driver.quit()
     
 def main():
-    wanted_link()
-    incruit_link()
-    jobkorea_link()
-    rocketpunch_link()
-    saramin_link()
-    jumpit_link()
+    try:
+        print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        incruit_link()
+        print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        time.sleep(5)
 
+        print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        jobkorea_link()
+        print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        time.sleep(5)
+
+        print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        jumpit_link()
+        print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        time.sleep(5)
+
+        print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        rocketpunch_link()
+        print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        time.sleep(5)
+
+        print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        saramin_link()
+        print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        time.sleep(5)
+
+        print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+        wanted_link()
+        print(f"현재 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    except Exception as e:
+        print(f"Error 발생: {e}")
+        raise
 
 if __name__ == "__main__":
     main()

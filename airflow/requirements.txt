@@ -1,0 +1,8 @@
+requests
+beautifulsoup4
+boto3
+selenium
+webdriver-manager
+psutil
+botocore
+
