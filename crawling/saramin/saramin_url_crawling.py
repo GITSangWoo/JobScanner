@@ -114,8 +114,8 @@ for keyword, config in keywords_config.items():
         time.sleep(5)
 
         # 수집 시점
-        current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        today_date = datetime.datetime.now().strftime("%Y%m%d")
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        today_date = datetime.now().strftime("%Y%m%d")
 
         # S3 파일 경로
         s3_path_prefix = S3_PATH_PREFIX_TEMPLATE.format(config["path_prefix"])
