@@ -780,6 +780,14 @@ def wanted_link():
         options.add_argument("--headless")
         options.add_argument("--no-sandbox")  # 보안 옵션 비활성화 (Linux에서 필요할 수 있음)
         options.add_argument("--disable-dev-shm-usage")  # /dev/shm 비활성화
+        options.add_argument("--headless")  # 화면을 표시하지 않음
+        options.add_argument("--disable-software-rasterizer")  # 소프트웨어 렌더링 비활성화
+        options.add_argument("--disable-extensions")  # 확장 프로그램 비활성화
+        options.add_argument("--disable-popup-blocking")  # 팝업 차단 비활성화
+        options.add_argument("--disable-background-timer-throttling")  # 타이머 제한 비활성화
+        options.add_argument("--disable-renderer-backgrounding")  # 백그라운드 렌더링 비활성화
+        user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.110 Safari/537.36"
+        options.add_argument(f"user-agent={user_agent}")
         # options.headless = True  # 드라이버를 헤드리스 모드로 실행할 수 있음 (주석 처리하거나 True로 설정하여 브라우저를 표시하지 않게 할 수 있음)
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
@@ -932,11 +940,11 @@ def execute_link_crawlings():
             print(f"{task_name} 작업 중 에러 발생: {e}")
 
     tasks = [
-        # ("인크루트", incruit_link),
+        ("인크루트", incruit_link),
         ("잡코리아", jobkorea_link),
         ("점핏", jumpit_link),
-        # ("로켓펀치", rocketpunch_link),
-        # ("사람인", saramin_link),
+        ("로켓펀치", rocketpunch_link),
+        ("사람인", saramin_link),
         ("원티드", wanted_link),
     ]
 
