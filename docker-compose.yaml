@@ -20,7 +20,6 @@ services:
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: mysql+mysqlconnector://root:1234@43.201.40.223:3306/airflowdb
       AIRFLOW__CORE__LOAD_EXAMPLES: "False" # 기본 예제 DAG 로드 비활성화
       AIRFLOW__CORE__PLUGINS_FOLDER: /opt/airflow/plugins
-      AIRFLOW__WEBSERVER__SECRET_KEY: "3lA0h8c08#395lcBc7f6C4k8a?"
       PYTHONPATH: /opt/airflow/plugins
     entrypoint: >
       bash -c "
@@ -29,9 +28,9 @@ services:
       "
     volumes:
       - ~/.aws:/opt/airflow/.aws:ro
-      # - ./airflow/dags:/opt/airflow/dags
-      # - ./airflow/logs:/opt/airflow/logs
-      # - ./airflow/plugins:/opt/airflow/plugins
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
     networks:
       - airflow-network
 
@@ -45,12 +44,11 @@ services:
       AIRFLOW__CORE__EXECUTOR: LocalExecutor
       AIRFLOW__CORE__SQL_ALCHEMY_CONN: mysql+mysqlconnector://root:1234@43.201.40.223:3306/airflowdb
       AIRFLOW__CORE__LOAD_EXAMPLES: "False"
-      AIRFLOW__WEBSERVER__SECRET_KEY: "3lA0h8c08#395lcBc7f6C4k8a?"
     volumes:
       - ~/.aws:/opt/airflow/.aws:ro
-      # - ./airflow/dags:/opt/airflow/dags
-      # - ./airflow/logs:/opt/airflow/logs
-      # - ./airflow/plugins:/opt/airflow/plugins
+      - ./airflow/dags:/opt/airflow/dags
+      - ./airflow/logs:/opt/airflow/logs
+      - ./airflow/plugins:/opt/airflow/plugins
     entrypoint: >
       bash -c "
       sleep 10 && 

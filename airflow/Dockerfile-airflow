@@ -40,9 +40,6 @@ RUN mkdir -p /opt/airflow/logs && \
 COPY dags /opt/airflow/dags
 COPY plugins /opt/airflow/plugins
 
-# Airflow 사용자로 전환
-# USER airflow
-
 # Python 패키지 설치
 COPY requirements.txt /requirements.txt
 RUN if [ -f /requirements.txt ]; then \
