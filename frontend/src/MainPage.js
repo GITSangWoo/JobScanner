@@ -19,6 +19,18 @@ const MainPage = () => {
         window.location.reload();
     };
 
+    // const handleMypage = () => {
+    //     if (isLoggedIn) {
+    //         navigate("/mypage"); // 로그인된 상태에서는 마이 페이지로 이동
+    //     } else {
+    //         alert("로그인 후 이용하실 수 있습니다.");
+    //         navigate("/auth/login"); // 로그인되지 않은 상태에서 클릭 시 로그인 페이지로 이동
+    //     }
+    // };
+
+    const handleMypage = () => {
+        navigate("/mypage");
+    }
 
     const handleButtonClick = (button) => {
         if (activeButton === button) {
@@ -49,6 +61,7 @@ const MainPage = () => {
     const goToJobSummary = () => {
         navigate("/job-summary"); // 기업 공고 요약 페이지로 이동
     };
+
 
     const techStackData = {
         "FE": {
@@ -208,7 +221,7 @@ const MainPage = () => {
                     <button className="dropdown-item" onClick={handleClick}>기술 스택 순위</button>
                     <button className="dropdown-item" onClick={goToJobSummary}>채용 공고 요약</button>
                     <hr />
-                    <button className="dropdown-item">My Page</button>
+                    <button className="dropdown-item" onClick={handleMypage}>My Page</button>
                 </div>
             </div>
 

@@ -26,10 +26,10 @@ const LoginPage = () => {
                         카카오 로그인 하기
                     </button>
                 </div>
-                {/*<div className="sign-up-link">*/}
-                {/*    아직 회원이 아니세요?*/}
-                {/*    <a href="/sign-up" className="auth-button">회원가입</a>*/}
-                {/*</div>*/}
+                <div className="sign-up-link">
+                    아직 회원이 아니세요?
+                    <a href="/sign-up" className="auth-button">회원가입</a>
+                </div>
             </div>
         </div>
     );

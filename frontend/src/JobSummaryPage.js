@@ -8,6 +8,7 @@ const JobSummaryPage = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false); // 로그인 상태 추적
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const navigate = useNavigate();
+    const [nickname, setNickname] = useState("Esther");
 
     // 페이지 이동을 처리하는 함수
     const handleClick = () => {
@@ -126,15 +127,30 @@ const JobSummaryPage = () => {
         }
     };
 
+    const handleMypage = () => {
+        if (isLoggedIn) {
+            navigate("/mypage"); // 로그인된 상태에서는 마이 페이지로 이동
+        } else {
+            alert("로그인 후 이용하실 수 있습니다.");
+            navigate("/auth/login"); // 로그인되지 않은 상태에서 클릭 시 로그인 페이지로 이동
+        }
+    };
+
     return (
         <div className="job-summary-page">
             <div className="top-right-buttons">
-                <button className="auth-button" onClick={handleLogin}>
-                    로그인
-                </button>
-                <button className="auth-button" onClick={handleSignup}>
-                    회원가입
-                </button>
+                {isLoggedIn ? (
+                    <span className="welcome-message">{nickname}님 환영합니다!</span>
+                ) : (
+                    <>
+                        <button className="auth-button" onClick={() => navigate("/auth/login")}>
+                            로그인
+                        </button>
+                        <button className="auth-button" onClick={() => navigate("/sign-up")}>
+                            회원가입
+                        </button>
+                    </>
+                )}
             </div>
 
             <div className="top-left-menu">
@@ -149,8 +165,8 @@ const JobSummaryPage = () => {
                         <button className="dropdown-item" onClick={goToJobSummary}>
                             채용 공고 요약
                         </button>
-                        <hr />
-                        <button className="dropdown-item">My Page</button>
+                        <hr/>
+                        <button className="dropdown-item" onClick={handleMypage}>My Page</button>
                     </div>
                 )}
             </div>

@@ -375,3 +375,7 @@ tr:hover {
 .rank-container, .chart-container {
     width: 45%;  /* 각각 45%씩 차지하도록 */
 }
+
+.welcome-message {
+    font-weight: bold;
+}
