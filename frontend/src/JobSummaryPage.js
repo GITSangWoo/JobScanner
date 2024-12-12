@@ -4,7 +4,8 @@ import "./JobSummaryPage.css";
 
 const JobSummaryPage = () => {
     const [activeButton, setActiveButton] = useState(null);
-    const [bookmarked, setBookmarked] = useState([]);
+    const [isBookmarked, setIsBookmarked] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false); // 로그인 상태 추적
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const navigate = useNavigate();
 
@@ -17,6 +18,15 @@ const JobSummaryPage = () => {
     const goToJobSummary = () => {
         navigate("/job-summary"); // 기업 공고 요약 페이지로 이동
         window.location.reload();
+    };
+
+    // 로그인 및 회원가입 페이지로 이동
+    const handleLogin = () => {
+        navigate("/auth/login");  // 로그인 페이지로 이동
+    };
+
+    const handleSignup = () => {
+        navigate("/sign-up");  // 회원가입 페이지로 이동
     };
 
     // 줄바꿈 처리 함수
@@ -107,19 +117,22 @@ const JobSummaryPage = () => {
     };
 
     // 북마크 토글 처리
-    const toggleBookmark = (id) => {
-        setBookmarked((prev) =>
-            prev.includes(id) ? prev.filter((item) => item !== id) : [...prev, id]
-        );
+    const handleBookmark = (id) => {
+        if (isLoggedIn) {
+            setIsBookmarked(!isBookmarked); // 로그인된 상태에서 북마크 토글
+        } else {
+            alert("로그인 후 이용하실 수 있습니다..");
+            navigate("/auth/login");
+        }
     };
 
     return (
         <div className="job-summary-page">
             <div className="top-right-buttons">
-                <button className="auth-button" onClick={() => alert("로그인 화면으로 이동합니다.")}>
+                <button className="auth-button" onClick={handleLogin}>
                     로그인
                 </button>
-                <button className="auth-button" onClick={() => alert("회원가입 화면으로 이동합니다.")}>
+                <button className="auth-button" onClick={handleSignup}>
                     회원가입
                 </button>
             </div>
@@ -191,10 +204,10 @@ const JobSummaryPage = () => {
                                 <td className="pre-line">{formatTextWithLineBreaks(job.techStack)}</td>
                                 <td>
                                         <span
-                                            className={`bookmark-icon ${bookmarked.includes(job.id) ? "active" : ""}`}
-                                            onClick={() => toggleBookmark(job.id)}
+                                            className={`bookmark-button ${isBookmarked ? "active" : ""}`}
+                                            onClick={handleBookmark}
                                         >
-                                            {bookmarked.includes(job.id) ? "★" : "☆"}
+                                            {isBookmarked ? "★" : "☆"}
                                         </span>
                                 </td>
                             </tr>

@@ -19,6 +19,7 @@ const MainPage = () => {
         window.location.reload();
     };
 
+
     const handleButtonClick = (button) => {
         if (activeButton === button) {
             setActiveButton(null); // 같은 버튼을 클릭하면 비활성화
@@ -36,12 +37,13 @@ const MainPage = () => {
         setIsDropdownOpen(!isDropdownOpen); // 더보기 버튼 토글
     };
 
+    // 로그인 및 회원가입 페이지로 이동
     const handleLogin = () => {
-        alert("로그인 화면으로 이동합니다.");
+        navigate("/auth/login");  // 로그인 페이지로 이동
     };
 
     const handleSignup = () => {
-        alert("회원가입 화면으로 이동합니다.");
+        navigate("/sign-up");  // 회원가입 페이지로 이동
     };
 
     const goToJobSummary = () => {

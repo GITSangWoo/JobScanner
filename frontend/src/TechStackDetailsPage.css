@@ -1,17 +1,11 @@
-/* 기본 스타일 */
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
-
-.main-page {
+/* 전체 컨테이너 스타일 */
+.tech-stack-details {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    height: 100vh;
-    background-color: #f4f4f4;
-    padding-top: 20px; /* 메뉴와 버튼들이 잘 위치할 수 있도록 */
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding: 20px;
 }
 
 /* 상단 오른쪽 로그인/회원가입 버튼 */
@@ -20,20 +14,23 @@ body {
     top: 20px;
     right: 20px;
     display: flex; /* 버튼들이 수평으로 배치되도록 */
-    gap: 0px; /* 버튼 간격 설정 */
+    gap: 10px; /* 버튼 간격을 조금 늘려서 더 깔끔하게 배치 */
 }
 
 .auth-button {
-    padding: 10px 20px;
-    font-size: 17px;
+    padding: 10px 25px;
+    font-size: 15px !important;
     background-color: transparent !important; /* 배경색을 완전히 투명하게 */
     color: #000; /* 기본 글씨 색상을 검정색으로 설정 */
-    border: none; /* 테두리 제거 */
+    border: none !important;  /*  테두리 없애기 */
+    background: none ; /* 배경색 없애기 (필요하면) */
+    outline: none;
     font-weight: bold; /* 글씨를 굵게 설정 */
     cursor: pointer;
     text-decoration: none; /* 밑줄 제거 */
     transition: color 0.3s;
     box-shadow: none; /* 그림자 제거 */
+    white-space: nowrap; /* 텍스트가 한 줄로 유지되도록 설정 */
 }
 
 .auth-button:hover {
@@ -44,330 +41,76 @@ body {
     outline: none; /* 포커스 시 테두리 제거 */
 }
 
-/* 왼쪽 상단 더보기 버튼 */
-.top-left-menu {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
-
-/* 메뉴 버튼 */
-.menu-button {
-    padding: 10px 15px;
-    font-size: 25px;
-    background-color: #EAEAEA;
-    color: black;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.menu-button:hover {
-    background-color: #BDBDBD;
-}
-
-/* 드롭다운 메뉴 */
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background-color: #fff;
-    color: #333;
-    padding: 10px;
-    border-radius: 5px;
+/* 개별 기술 스택 박스 스타일 */
+.tech-stack-content {
+    background-color: #ffffff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 200px;
-}
-
-.dropdown-item {
-    background-color: transparent;
-    color: #333;
-    padding: 8px 10px;
-    border: none;
-    font-size: 16px;
-    text-align: left;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
     width: 100%;
-    cursor: pointer;
+    margin-top: 20px;
 }
 
-.dropdown-item:hover {
-    background-color: #f0f0f0;
+/* 제목 스타일 */
+.tech-stack-language {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
 }
 
-/* 드롭다운 메뉴가 열리면 보이도록 설정 */
-.dropdown-menu.open {
+/* 설명 및 링크 섹션 제목 */
+.tech-stack-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* 본문 설명 스타일 */
+.tech-stack-content p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+/* 링크 스타일 */
+.tech-stack-content a {
+    font-size: 1.25rem;
+    color: #1a73e8;
+    text-decoration: none;
+    margin-bottom: 10px;
     display: block;
 }
 
-/* 로고 스타일 */
-.logo-container {
+.tech-stack-content a:hover {
+    text-decoration: underline;
+}
+
+/* 북마크 버튼 스타일 */
+.bookmark-container {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    height: 20vh; /* 로고의 위치를 중간으로 유지 */
-    transition: transform 1s ease-out, opacity 1s ease-out;
-    position: relative; /* 위치가 정상적으로 설정되도록 보장 */
-}
-
-.logo-container.scrolled {
-    transform: translateY(0); /* 최종 위치 (원래 위치) */
-    opacity: 1; /* 완전히 불투명 */
-}
-
-.logo {
-    font-size: 3rem; /* 적당한 크기로 로고 크기 설정 */
-    color: #333; /* 로고 색상 */
-    transition: transform 1s ease-out; /* 스무스한 효과를 위해 */
-}
-
-/* 직무 선택 스타일 */
-.content {
-    margin-top: 10px; /* 간격을 좁혀줍니다 */
-    text-align: center;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.message {
-    font-size: 24px;
-    font-weight: bold;
-    color: #555;
-    margin-bottom: 5px;
-}
-
-/* 메세지와 토글 버튼 */
-.message1 {
-    font-size: 15px !important;
-    color: #555;
-    margin-bottom: 20px; /* 토글 버튼과의 간격 조정 */
-    text-align: center; /* 중앙 정렬 */
-}
-
-/* =============================== */
-/*               토글 버튼 스타일               */
-/* =============================== */
-.toggle-buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px; /* 버튼을 조금 더 위로 올리기 */
-}
-
-.toggle-button {
-    padding: 10px 20px;
-    font-size: 20px;
-    border: none;
-    border-radius: 5px;
-    background-color: #EAEAEA;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.toggle-button:hover {
-    background-color: #EAEAEA;
-}
-
-/* 활성화 상태에서 색상 변경 */
-.toggle-button.active {
-    background-color: #BDBDBD;  /* 색상을 더 진하게 */
-}
-
-/* =============================== */
-/*         필터 버튼 스타일        */
-/* =============================== */
-.filter-buttons {
-    display: flex;
-    gap: 5px; /* 버튼 간격을 더 좁게 */
-    justify-content: center;
-    margin-top: 10px; /* 필터 버튼과 직무 토글 사이 간격 */
-}
-
-.filter-button {
-    padding: 8px 16px; /* 크기를 약간 줄임 */
-    font-size: 16px; /* 텍스트 크기를 줄임 */
-    border: none;
-    border-radius: 5px;
-    background-color: #EAEAEA;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.filter-button:hover {
-    background-color: #D6D6D6;
-}
-
-/* 활성화 상태에서 색상 변경 */
-.filter-button.active {
-    background-color: #BDBDBD; /* 직무 토글과 동일한 활성화 색상 */
-}
-
-/* =============================== */
-/*               테이블 스타일               */
-/* =============================== */
-/* 테이블 크기 및 스타일 */
-.table-container {
-    width: 80%;  /* 테이블 크기 */
-    margin: 20px auto;  /* 위 아래 간격을 주고, 가운데 정렬 */
-    padding: 40px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow-x: auto;  /* 테이블 내용이 너무 길어지면 가로 스크롤바가 생기도록 */
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;  /* 테이블 셀 간 경계선 없애기 */
-}
-
-/* 테이블 헤더 및 셀 텍스트 중앙 정렬 */
-th, td {
-    padding: 12px 15px;
-    text-align: center;  /* 수평 중앙 정렬 */
-    vertical-align: middle;  /* 수직 중앙 정렬 */
-    border-bottom: 1px solid #ddd;
-    font-size: 14px; /* 셀 안의 글씨 크기 조정 */
-}
-
-th {
-    background-color: black;
-    font-weight: bold;
-    color: #fff;
-}
-
-tr:hover {
-    background-color: #f9f9f9;
-}
-
-/* 직무 설명 텍스트 스타일 */
-.table-container h2 {
-    font-size: 20px; /* 설명 글씨 크기 조정 */
-    font-weight: normal;
-    color: #555;
     margin-bottom: 20px;
-    text-align: center;
-    line-height: 1.5;
-    word-wrap: break-word;  /* 긴 글이 화면 밖으로 나가지 않도록 줄바꿈 처리 */
 }
 
-
-/* =============================== */
-/*             기술 스택 버튼 스타일             */
-/* =============================== */
-.tech-stack-buttons {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-top: 20px; /* 버튼을 조금 더 위로 올리기 */
-}
-
-.tech-stack-button {
-    padding: 10px 20px;
-    font-size: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: transparent;
-    color: black;
+.bookmark-button {
+    font-size: 2rem;
     cursor: pointer;
-    transition: background-color 0.3s;
-    display: flex;
-    justify-content: center;  /* 수평 중앙 */
-    align-items: center;      /* 수직 중앙 */
-    text-align: center;       /* 텍스트 정렬 */
-}
-
-/*.tech-stack-button:hover {*/
-/*    background-color: #D6D6D6;*/
-/*}*/
-
-/*!* 활성화 상태에서 색상 변경 *!*/
-/*.tech-stack-button.active {*/
-/*    background-color: #BDBDBD;  !* 색상을 더 진하게 *!*/
-/*}*/
-
-/* =============================== */
-/*        기술 스택 버튼 필터 스타일           */
-/* =============================== */
-.filter-tech-stack-buttons {
-    display: flex;
-    gap: 5px; /* 버튼 간격을 더 좁게 */
-    justify-content: center;
-    margin-top: 10px; /* 필터 버튼과 기술 스택 버튼 사이 간격 */
-}
-
-.filter-tech-stack-button {
-    padding: 8px 16px; /* 크기를 약간 줄임 */
-    font-size: 16px; /* 텍스트 크기를 줄임 */
+    background: none;
     border: none;
-    border-radius: 5px;
-    background-color: #EAEAEA;
-    color: black;
-    cursor: pointer;
-    transition: background-color 0.3s;
+    color: gray;
+    transition: color 0.3s;
 }
 
-.filter-tech-stack-button:hover {
-    background-color: #D6D6D6;
+.bookmark-button:hover {
+    color: gold;
 }
 
-/* 활성화 상태에서 색상 변경 */
-.filter-tech-stack-button.active {
-    background-color: #BDBDBD; /* 필터 버튼과 동일한 활성화 색상 */
-}
-
-
-/* =============================== */
-/*               차트 스타일               */
-/* =============================== */
-.chart-container {
-    width: 45%; /* 차트 크기 */
-    display: block; /* 차트는 기본적으로 보이도록 설정 */
-    margin-top: 20px; /* 차트와 위의 내용 간격 */
-}
-
-/* =============================== */
-/*               반응형 스타일               */
-/* =============================== */
-@media (max-width: 768px) {
-    /* 작은 화면에서 테이블의 글씨 크기와 너비를 조금 더 좁게 설정 */
-    .table-container {
-        width: 90%; /* 작은 화면에서 테이블이 더 좁아지도록 설정 */
-    }
-
-    table {
-        font-size: 12px;  /* 작은 화면에서 글씨 크기 축소 */
-    }
-
-    th, td {
-        padding: 10px;  /* 작은 화면에서는 패딩도 줄여줌 */
-    }
-
-    .toggle-button {
-        font-size: 16px; /* 작은 화면에서 버튼 글씨 크기 축소 */
-    }
-
-    /* 차트도 작은 화면에서 크기 조정 */
-    .chart-container {
-        width: 100%;
-    }
-}
-
-/* =============================== */
-/*               순위와 그래프 나란히 배치               */
-/* =============================== */
-.rank-and-chart {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;  /* 전체 너비의 90%로 설정 */
-    margin-top: 20px;  /* 상단에 간격 추가 */
-}
-
-/* 직무에 대한 설명과 나란히 배치 */
-.rank-container, .chart-container {
-    width: 45%;  /* 각각 45%씩 차지하도록 */
+.bookmark-button.active {
+    color: gold;
 }

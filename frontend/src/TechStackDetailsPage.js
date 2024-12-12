@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import {useNavigate, useParams} from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
+import "./TechStackDetailsPage.css"; // CSS 파일을 import
 
 const TechStackDetailsPage = () => {
     const navigate = useNavigate();
@@ -19,11 +20,11 @@ const TechStackDetailsPage = () => {
     };
 
     const handleLogin = () => {
-        alert("로그인 화면으로 이동합니다.");
+        navigate("/auth/login");
     };
 
     const handleSignup = () => {
-        alert("회원가입 화면으로 이동합니다.");
+        navigate("/sign-up");
     };
 
     const goToJobSummary = () => {
@@ -41,7 +42,8 @@ const TechStackDetailsPage = () => {
         if (isLoggedIn) {
             setIsBookmarked(!isBookmarked); // 로그인된 상태에서 북마크 토글
         } else {
-            alert("로그인 후 북마크를 추가하세요.");
+            alert("로그인 후 이용하실 수 있습니다..");
+            navigate("/auth/login");
         }
     };
 
@@ -73,96 +75,83 @@ const TechStackDetailsPage = () => {
                         ⁝⁝⁝
                     </button>
                     <div className={`dropdown-menu ${isDropdownOpen ? "open" : ""}`}>
-                        <button className="dropdown-item" onClick={() => navigate("/tech-stack-ranking")}>기술 스택 순위</button>
+                        <button className="dropdown-item" onClick={handleClick}>기술 스택 순위</button>
                         <button className="dropdown-item" onClick={goToJobSummary}>채용 공고 요약</button>
                         <hr />
                         <button className="dropdown-item">My Page</button>
                     </div>
-                </div>
-
-                {/* 북마크 버튼 */}
-                <div className="bookmark-container" style={{ position: "absolute", top: "80px", right: "20px" }}>
-                    <button
-                        className="bookmark-button"
-                        onClick={handleBookmark}
-                        style={{ fontSize: "2rem", cursor: "pointer", background: "none", border: "none", color: isBookmarked ? "gold" : "gray" }}
-                    >
-                        {isBookmarked ? "★" : "☆"}
-                    </button>
                 </div>
             </header>
 
             {/* 기술 스택 상세 정보 */}
             <div className="tech-stack-content">
                 {/* 언어 이름 */}
-                <h1 className="tech-stack-language" style={{ fontSize: "2.5rem", fontWeight: "bold" }}>
+                <h1 className="tech-stack-language">
                     {techStack.language}
                 </h1>
 
+                {/* 북마크 버튼 - 설명 영역 안으로 이동 */}
+                <div className="bookmark-container">
+                    <button
+                        className={`bookmark-button ${isBookmarked ? "active" : ""}`}
+                        onClick={handleBookmark}
+                    >
+                        {isBookmarked ? "★" : "☆"}
+                    </button>
+                </div>
+
                 {/* 설명 */}
-                <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", marginTop: "1rem" }}>
-                    설명
-                </h2>
-                <p style={{ fontSize: "1.25rem", lineHeight: "1.8", marginBottom: "1.5rem" }}>
+                <h2>설명</h2>
+                <p>
                     {techStack.description || "상세 설명이 없습니다."}
                 </p>
 
                 {/* 유튜브 링크 */}
-                <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", marginTop: "1.5rem" }}>
-                    유튜브 링크
-                </h2>
+                <h2>유튜브 링크</h2>
                 {techStack.youtubeLink ? (
                     <a
                         href={techStack.youtubeLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ fontSize: "1.25rem", display: "block", marginBottom: "1rem" }}
                     >
                         {techStack.youtubeLink}
                     </a>
                 ) : (
-                    <p style={{ fontSize: "1.25rem" }}>링크가 없습니다.</p>
+                    <p>링크가 없습니다.</p>
                 )}
 
                 {/* 도서 링크 */}
-                <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", marginTop: "1.5rem" }}>
-                    도서 링크
-                </h2>
+                <h2>도서 링크</h2>
                 {techStack.bookLink ? (
                     <a
                         href={techStack.bookLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ fontSize: "1.25rem", display: "block", marginBottom: "1rem" }}
                     >
                         {techStack.bookLink}
                     </a>
                 ) : (
-                    <p style={{ fontSize: "1.25rem" }}>링크가 없습니다.</p>
+                    <p>링크가 없습니다.</p>
                 )}
 
                 {/* 공식 문서 */}
-                <h2 style={{ fontSize: "1.5rem", fontWeight: "bold", marginTop: "1.5rem" }}>
-                    공식 문서
-                </h2>
+                <h2>공식 문서</h2>
                 {techStack.documentationLink ? (
                     <a
                         href={techStack.documentationLink}
                         target="_blank"
                         rel="noopener noreferrer"
-                        style={{ fontSize: "1.25rem", display: "block", marginBottom: "1rem" }}
                     >
                         {techStack.documentationLink}
                     </a>
                 ) : (
-                    <p style={{ fontSize: "1.25rem" }}>링크가 없습니다.</p>
+                    <p>링크가 없습니다.</p>
                 )}
             </div>
+
         </div>
     );
-
 };
-
 
 // 기술 스택 세부 정보를 가져오는 함수
 const getTechStackDetails = (role, category, techStackName) => {
@@ -185,7 +174,6 @@ const getTechStackDetails = (role, category, techStackName) => {
                     documentationLink: "https://www.typescriptlang.org/docs/"
                 },
             },
-            // 다른 category (Framework, Tools, Database)도 동일하게 설정
         },
         BE: {
             Language: {
@@ -197,7 +185,6 @@ const getTechStackDetails = (role, category, techStackName) => {
                     documentationLink: "https://docs.oracle.com/en/java/"
                 },
             },
-            // 다른 category (Framework, Tools, Database)도 동일하게 설정
         },
         DE: {
             Framework: {
@@ -209,9 +196,7 @@ const getTechStackDetails = (role, category, techStackName) => {
                     documentationLink: "https://pandas.pydata.org/"
                 },
             },
-            // 다른 category (Language, Tools, Database)도 동일하게 설정
         },
-        // 다른 직무 및 범주 추가
     };
 
     // 해당 role, category, techStackName에 맞는 데이터 반환
