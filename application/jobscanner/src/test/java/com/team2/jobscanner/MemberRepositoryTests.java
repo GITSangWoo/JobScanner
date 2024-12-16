@@ -1,5 +1,7 @@
 package com.team2.jobscanner;
 
+import com.team2.jobscanner.edu.Member;
+import com.team2.jobscanner.edu.MemberRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -12,7 +14,8 @@ import org.springframework.transaction.annotation.Transactional;
 @ExtendWith(SpringExtension.class)
 @SpringBootTest
 public class MemberRepositoryTests {
-    @Autowired MemberRepository memberRepository;
+    @Autowired
+    MemberRepository memberRepository;
 
     @Test
     @Transactional   //java jpa transaction을 활성화 해야됌

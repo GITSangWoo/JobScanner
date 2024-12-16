@@ -1,4 +1,4 @@
-package com.team2.jobscanner;
+package com.team2.jobscanner.edu;
 
 import lombok.Getter;
 import lombok.Setter;
