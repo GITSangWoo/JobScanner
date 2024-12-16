@@ -10,7 +10,21 @@ public class ApiHistory {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    @Column(name="user_id",nullable = false)
+    private Long userId;
+
+    @Column(name="request_api_url", length = 200 ,nullable = false)
+    private String requestApiUrl;
+
+    @Column(name="request_params",columnDefinition = "TEXT")
+    private String  requestParams;
+
+    @Column(name="agent", length = 255 ,nullable = false)
+    private String agent;
+
+    @Column(name="ip", length = 39 ,nullable = false)
+    private String ip;
+
 
     @Embedded
     private AuditTime auditTime;
