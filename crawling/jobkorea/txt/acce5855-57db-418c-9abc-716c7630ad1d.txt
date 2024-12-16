@@ -1,0 +1,35 @@
+피디에프솔루션세미컨덕터테크놀로지코리아(유)
+eBeam systems engineer
+피디에프솔루션세미컨덕터테크놀로지코리아(유)는 2007년에 설립된 회사로 사원수 300명 규모의 중소기업입니다. 경기도 성남시 분당구 판교로 255번길 9-22 우림 W-City 7층 703호에 위치하고 있으며, 반도체 전공정(설계 제조 테스트 조립등) 소프트웨어 솔루션 및 컨설팅사업을 하고 있습니다.
+포지션 및 자격요건
+포지션
+( 1명 )
+Job Description
+. We seek a systems engineer to develop inspection tools for leading edge semiconductor technology.
+. Work in a high value, customer-facing role to drive development on the most advanced chips in the world.
+. Work independently to understand algorithms and apply engineering principles to solve the most challenging problems in the field and find innovative solutions.
+.  Design and perform experiments, analyze data, and present results
+.  Write prototypes to demonstrate newly developed algorithms
+.  Coordinate and work with industry professionals with decades of experiment in software, manufacturing, engineering, and       applications.
+Required skills and experience
+.         Bachelor’s degree or higher in CS, EE, ME, Materials Science, Applied Physics, or related field
+.         1-5 yrs Python / Java / C++ or similar programming language
+.         Experience with data analysis (Pandas, NumPy, etc.) and image processing (OpenCV or similar)
+.         Experience with data visualization (Spotfire, Pyplot/Seaborn, Matlab, Tableau, etc.)
+.         Good oral and written communication skills
+          Desired skills and experience
+.         Experience with AWS or Azure cloud computing
+.         Experience with machine learning, Python TensorFlow or Scikit-learn
+.         Some exposure to HDL (Verilog, System Verilog, VHDL)
+.         Understanding of semiconductor manufacturing process.  Cleanroom experience.
+.         Experience with electron microscopes (SEM, TEM) or other ebeam or semiconductor test equipment.
+.         LabView experience is a plus
+
+☞복리후생 제도
+- 4대보험가입, 근무시 자유로운 복장, 명절선물제공, 식대지원, 경조휴가지원, 퇴직연금제도운영
+전형절차
+ㆍ서류전형 > 1차면접 > 최종합격
+ㆍ면접일정은 추후 통보됩니다.
+
+유의사항
+ㆍ허위사실이 발견될 경우 채용이 취소될 수 있습니다.

@@ -39,26 +39,20 @@ def extract_text_from_s3_file(bucket_name, file_key, keyword_groups):
         start_keywords = group['start_keywords']
         end_keywords = group['end_keywords']
         
-        start_index = None
         section_text = ""
         section_started = False
         
         # 섹션 시작을 찾기 위해 한 줄씩 확인
         for line in lines:
-            # start_keywords와 정확히 일치하는 경우 섹션 시작
             if not section_started:
-                for start in start_keywords:
-                    if line.strip() == start:  # 줄이 start_keywords 중 하나와 정확히 일치하면
-                        section_started = True
-                        break
+                if any(line.strip() == start for start in start_keywords):
+                    section_started = True
+                    continue
             
             if section_started:
-                # end_keywords를 찾은 경우 섹션 종료
                 if any(end in line for end in end_keywords):
                     section_started = False
                     break
-                
-                # 섹션 텍스트에 추가
                 section_text += line + "\n"
         
         # 섹션 텍스트가 존재하는 경우에만 추출
@@ -67,32 +61,32 @@ def extract_text_from_s3_file(bucket_name, file_key, keyword_groups):
     
     return extracted_sections
 
-def process_and_insert_into_db(bucket_name, prefix, keyword_groups, conn):
+def process_and_insert_into_db(bucket_name, prefixes, keyword_groups, conn):
     """S3 데이터를 처리하고 MySQL에 바로 적재"""
-    # S3 버킷에서 텍스트 파일 목록 가져오기
-    files = list_s3_files(bucket_name, prefix)
     cursor = conn.cursor()
-    
     max_length = 1000  # 최대 길이 설정
 
-    for file_key in files:
-        if file_key.endswith('.txt'):  # .txt 파일만 처리
-            sections = extract_text_from_s3_file(bucket_name, file_key, keyword_groups)
-            full_s3_url = "s3://t2jt/" + file_key  # S3 파일 URL 생성
-            current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # 현재 시각
-            
-            # 텍스트 길이 제한
-            responsibility = sections.get('주요업무', '')[:max_length]
-            qualification = sections.get('자격요건', '')[:max_length]
-            preferential = sections.get('우대사항', '')[:max_length]
-            
-            # MySQL 데이터 삽입/업데이트
-            cursor.execute("""
-                UPDATE jobkorea
-                SET responsibility = %s, qualification = %s, preferential = %s
-                WHERE s3_text_url = %s
-                AND (responsibility IS NULL AND qualification IS NULL AND preferential IS NULL)
-            """, (responsibility, qualification, preferential, full_s3_url))
+    for prefix in prefixes:
+        files = list_s3_files(bucket_name, prefix)
+        for file_key in files:
+            if file_key.endswith('.txt'):  # .txt 파일만 처리
+                sections = extract_text_from_s3_file(bucket_name, file_key, keyword_groups)
+                full_s3_url = f"s3://{bucket_name}/{file_key}"  # S3 파일 URL 생성
+                current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')  # 현재 시각
+                
+                # 텍스트 길이 제한
+                responsibility = sections.get('주요업무', '')[:max_length]
+                qualification = sections.get('자격요건', '')[:max_length]
+                preferential = sections.get('우대사항', '')[:max_length]
+                
+                # MySQL 데이터 삽입/업데이트
+                cursor.execute("""
+                    UPDATE jobkorea
+                    SET responsibility = %s, qualification = %s, preferential = %s
+                    WHERE s3_text_url = %s
+                    AND (responsibility IS NULL AND qualification IS NULL AND preferential IS NULL)
+                    AND site = 'jobkorea'
+                """, (responsibility, qualification, preferential, full_s3_url))
     
     conn.commit()
     cursor.close()
@@ -183,7 +177,6 @@ keyword_groups = [
     }
 ]
 
-
 # MySQL 연결 설정
 conn = pymysql.connect(
     host='43.201.40.223',          # AWS 퍼블릭 IP
@@ -195,10 +188,16 @@ conn = pymysql.connect(
 
 # S3 버킷과 경로 지정
 bucket_name = 't2jt'
-prefix = 'job/DE/sources/jobkorea/txt/'  # S3에서 텍스트 파일이 있는 경로
+prefixes = [
+    'job/DA/sources/jobkorea/txt/',
+    'job/DE/sources/jobkorea/txt/',
+    'job/MLE/sources/jobkorea/txt/',
+    'job/FE/sources/jobkorea/txt/',
+    'job/BE/sources/jobkorea/txt/',
+]
 
 # 데이터 처리 및 MySQL로 바로 적재
-process_and_insert_into_db(bucket_name, prefix, keyword_groups, conn)
+process_and_insert_into_db(bucket_name, prefixes, keyword_groups, conn)
 
 # MySQL 연결 종료
 conn.close()

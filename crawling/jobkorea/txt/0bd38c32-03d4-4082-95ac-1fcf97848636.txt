@@ -1,0 +1,32 @@
+[AI] Research Scientist - LLM (2년 이상)
+포지션 및 자격요건
+LLM 
+담당업무
+ㆍ트랜스포머, SSM 등의 언어모델 아키텍쳐 분석
+    (e.g., in-context learning abilities, evaluation methods, subquadratic architectures)
+ㆍMultimodal, multilingual 언어모델 개발 및 활용
+ㆍ언어모델의 효율화 및 성능 확보를 위한 연구
+    (e.g., knowledge distillation, RLHF post-training, quantization, etc.)
+ㆍ최신 딥러닝 논문 파악 및 구현 
+  필수요건
+ㆍ딥러닝 관련 분야 전공 석사 졸업 이상 혹은 이에 준하는 연구 경력
+ㆍAI 탑티어 학회 (NeurIPS, ICLR, ICML, ACL 등) 논문 작성을 경험하신 분
+ㆍ연구를 주도할 수 있으며 논문을 빠르게 이해하고 구현할 수 있는 능력
+ㆍGPT와 같은 Large Language Model에 대한 학습 및 활용 경험
+ㆍ주요 딥러닝 프레임워크의 능숙한 사용(PyTorch, JAX, etc.)
+ㆍ원활한 업무 커뮤니케이션 능력
+ㆍ해외 여행 결격 사유가 없는 분
+
+우대사항
+ㆍ국내/외 인공지능 경진대회 수상 경력 (Kaggle 등) 
+ㆍ딥러닝 관련 open-source에 기여한 경험
+ㆍ멀티모달 모델 이해 및 활용 경험
+ㆍ원활한 영어 의사소통 능력
+
+기타사항
+ㆍ접수기간 : 상시채용 (채용 시 조기에 마감될 수 있습니다.)
+ㆍ접수방법 : 당사 채용 홈페이지 참조
+ㆍ자세한 상세요강은 반드시 채용 홈페이지에서 직접 확인해 주시기 바랍니다.
+
+
+   기업 채용 홈페이지 바로가기 click

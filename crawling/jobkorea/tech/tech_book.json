@@ -265,6 +265,36 @@
         "SQLite 파일",
         "SQLite 서버"
     ],
+    "Data Lake": [
+    "Data Lake",
+    "데이터 레이크",
+    "대용량 데이터 저장소",
+    "빅 데이터 저장소"
+    ],
+    "Iceberg": [
+    "Iceberg",
+    "아이스버그"
+    ],
+    "Druid": [
+    "Druid",
+    "드루이드"
+    ],
+    "Superset": [
+    "Superset",
+    "슈퍼셋"
+    ],
+    "OpenMetadata": [
+    "OpenMetadata",
+    "오픈메타데이터"
+    ],
+    "DolphinScheduler": [
+    "DolphinScheduler",
+    "돌핀스케줄러"
+    ],
+    "Data Mart": [
+    "Data Mart",
+    "데이터 마트"
+    ],
     "Oracle": [
     "Oracle",
     "오라클",
@@ -276,6 +306,19 @@
     "Oracle DB",
     "Oracle Exadata",
     "Oracle RAC"
+    ],
+    "Linux": [
+    "Linux",
+    "리눅스"
+    ],
+    "RunDeck": [
+    "RunDeck",
+    "런덱"
+    ],
+    "RDBMS": [
+    "RDBMS",
+    "관계형 데이터베이스 관리 시스템",
+    "관계형 데이터 베이스"
     ],
     "MongoDB": [
         "몽고DB",
@@ -318,6 +361,10 @@
         "Elasticsearch 분석",
         "Elasticsearch 서버",
         "Elasticsearch 설정"
+    ],
+    "R": [
+    " R ",
+    " R,"
     ],
     "Solr": [
         "솔르",
@@ -441,7 +488,6 @@
     ],
     "Go": [
         " Go ",
-        "Go ",
         "Go,",
         "Go 언어",
         "Go 개발",
@@ -676,15 +722,7 @@
     ],
     "Impala": [
     "Impala",
-    "Apache Impala",
-    "Impala 쿼리",
-    "Impala SQL",
-    "분산 SQL 엔진",
-    "실시간 쿼리",
-    "Impala 데이터 분석",
-    "Impala 쿼리 최적화",
-    "Impala 클러스터",
-    "Impala 데이터 처리"
+    "Apache Impala"
     ],
     "Amazon S3": [
     "S3",
@@ -848,15 +886,9 @@
     ],
     "Snowflake": [
     "Snowflake",
-    "Snowflake 데이터베이스",
-    "클라우드 데이터 웨어하우스",
-    "Snowflake 클라우드",
-    "Snowflake 쿼리",
-    "Snowflake 데이터 분석",
-    "Snowflake 저장소",
-    "Snowflake 데이터 모델링",
-    "Snowflake SQL",
-    "Snowflake 관리"
+    "snow flake",
+    "스노우플레이크",
+    "스노우 플레이크"
     ],
     "PyTorch": [
     "PyTorch",
@@ -1124,8 +1156,16 @@
         "WildFly 관리",
         "WildFly 보안"
     ],
+    "MLOps": [
+    "MLOps",
+    "엠엘옵스",
+    "Machine Learning Operations",
+    "머신러닝 운영",
+    "ML 엔지니어링"
+    ],
     "Spring Boot": [
         "스프링 부트",
+        "Spring",
         "Spring Boot",
         "Spring Boot 애플리케이션",
         "Spring Boot 설정",
@@ -1209,12 +1249,10 @@
     "아마존 아테나",
     "Athena",
     "AWS 쿼리 서비스",
-    "데이터 분석",
     "Athena SQL",
     "AWS 분석 서비스",
     "AWS 데이터 쿼리",
-    "Amazon Athena 쿼리",
-    "S3 데이터 분석"
+    "Amazon Athena 쿼리"
     ],
     "Presto": [
     "Presto",
@@ -1431,7 +1469,6 @@
     "C": [
         "C언어",
         " C ",
-        "C ",
         "C,",
         "C 프로그래밍",
         "C 개발"
@@ -1496,9 +1533,22 @@
         "NoSQL 쿼리",
         "NoSQL 관리"
     ],
+    "JSP": [
+    "JSP",
+    "JavaServer Pages",
+    "자바서버 페이지",
+    "JSP 템플릿",
+    "JSP 개발",
+    "JSP 프로그래밍",
+    "동적 웹 페이지",
+    "서버 사이드 스크립팅",
+    "JSP 라이프사이클",
+    "JSP 표준 태그 라이브러리(JSTL)"
+    ],
     "MariaDB": [
         "마리아DB",
         "MariaDB",
+        "Maria DB",
         "MariaDB 데이터베이스",
         "MariaDB 설정",
         "MariaDB 쿼리",

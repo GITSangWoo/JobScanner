@@ -37,7 +37,7 @@ def load_existing_links(bucket_name, s3_file_path):
         print(f"S3에서 기존 링크를 로드했습니다. 총 {len(existing_links)}개의 링크.")
     except ClientError as e:
         if e.response['Error']['Code'] == "NoSuchKey":
-            print("S3에 오늘 파일이 존재하지 않습니다. 새로 생성합니다.")
+            print("S3에 오늘 날짜에 해당하는 링크 파일이 존재하지 않습니다. 새로 생성합니다.")
         else:
             print(f"S3 파일 로드 중 오류 발생: {e}")
 

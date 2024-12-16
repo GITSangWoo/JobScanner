@@ -21,10 +21,10 @@ def fetch_data():
         with connection.cursor() as cursor:
             # qualification, responsibility, preferential 컬럼 값과 id를 가져오는 쿼리
             cursor.execute("""
-                SELECT id, qualification, responsibility, preferential
-                FROM wanted 
-                WHERE qualification IS NOT NULL OR responsibility IS NOT NULL OR preferential IS NOT NULL
-                LIMIT 10
+                SELECT id, responsibility, qualification, preferential
+                FROM jobkorea
+                WHERE (qualification IS NOT NULL OR responsibility IS NOT NULL OR preferential IS NOT NULL)
+                AND id < 30
             """)
             rows = cursor.fetchall()
             return rows
@@ -96,7 +96,12 @@ def process_data():
                         print(f"{key}")
                         print(value)
                 else:
-                    print(f"\n{col_name} 식별된 기술 스택이 없습니다.")
+                    if col_name == "responsibility":
+                        print(f"\n주요업무에서 식별된 기술 스택이 없습니다.")
+                    elif col_name == "qualification":
+                        print(f"\n자격요건에서 식별된 기술 스택이 없습니다.")
+                    elif col_name == "preferential":
+                        print(f"\n우대사항에서 식별된 기술 스택이 없습니다.")
                 print("\n---------------------------")
             else:
                 print(f"\n{col_name} 데이터가 없습니다.")
