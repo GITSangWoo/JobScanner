@@ -21,4 +21,5 @@ spring:
 logging:
   level:
    org.hibernate.SQL: debug   # SQL 쿼리 로그 표시 logger로 
+   org.hibernate.type.descriptor.sql: TRACE  # 파라미터 로그를 출력함 
 
