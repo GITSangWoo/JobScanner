@@ -7,9 +7,10 @@ import jakarta.persistence.*;
 import java.time.LocalDateTime;
 @Entity
 public class JobRole {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
 
     private String name;
 
