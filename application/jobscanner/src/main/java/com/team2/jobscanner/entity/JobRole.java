@@ -1,26 +1,20 @@
 package com.team2.jobscanner.entity;
 
 import com.team2.jobscanner.time.AuditTime;
-import jakarta.persistence.Column;
-import jakarta.persistence.Embedded;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
+import jakarta.persistence.*;
+
 
 import java.time.LocalDateTime;
-
+@Entity
 public class JobRole {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String name;
+
     @Embedded
     private AuditTime auditTime;
 
-    @CreationTimestamp
-    @Column(name = "create_time", updatable = false)
-    public LocalDateTime getCreateTime() {
-        return auditTime.getCreateTime();
-    }
-
-    @UpdateTimestamp
-    @Column(name = "update_time")
-    public LocalDateTime getUpdateTime() {
-        return auditTime.getUpdateTime();
-    }
+    // Getter, Setter
 }
