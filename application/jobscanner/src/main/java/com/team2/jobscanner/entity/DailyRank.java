@@ -11,7 +11,6 @@ public class DailyRank {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
 
     @Embedded
     private AuditTime auditTime;

@@ -13,11 +13,13 @@ public class Notice {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany(mappedBy = "id")
+    @OneToMany(mappedBy = "notice")
     private List<JobRole> jobRoles;
 
     @Column(name="job_role_id",nullable = false)
     private Long jobRoleId;
+
+    @OneToMany(mappedBy = "")
 
     @Column(name = "due_type", length = 20, nullable = false)
     private String dueType;
@@ -41,6 +43,7 @@ public class Notice {
     private String techPrefer;
 
     @Column(name = "tech_list", length = 1000)
+    private String techList;
 
     @Embedded
     private AuditTime auditTime;

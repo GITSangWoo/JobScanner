@@ -1,6 +1,4 @@
 package com.team2.jobscanner.entity;
-
-import com.team2.jobscanner.time.AuditTime;
 import jakarta.persistence.*;
 
 
@@ -8,10 +6,18 @@ import jakarta.persistence.*;
 public class JobRole {
 
     @Id
-    private Long id;
+    @ManyToOne
+    @JoinColumn(name= "id", referencedColumnName = "job_role_id")
+    private Notice notice;
+
+    @Column(name="role_name", length = 100, nullable = false)
+    private String roleName;
+
+    @Column(name="role_description", columnDefinition = "TEXT", nullable = false)
+    private String roleDescription; 
 
 
-    private String name;
+
 
   
 

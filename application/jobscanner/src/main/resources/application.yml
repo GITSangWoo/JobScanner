@@ -5,7 +5,7 @@ spring:
   datasource:
     url: jdbc:mysql://t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com:3306/service
     username: admin
-    password: dltkddn!!
+    password: dltkddn1
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
       maximum-pool-size: 150  # 최대 연결 수 (필요에 따라 조정)
