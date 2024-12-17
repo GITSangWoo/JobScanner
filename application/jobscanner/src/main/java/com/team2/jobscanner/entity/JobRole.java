@@ -1,14 +1,19 @@
 package com.team2.jobscanner.entity;
 import jakarta.persistence.*;
+import org.springframework.boot.autoconfigure.batch.BatchProperties;
+
+import java.util.List;
 
 
 @Entity
 public class JobRole {
 
     @Id
-    @ManyToOne
-    @JoinColumn(name= "id", referencedColumnName = "job_role_id")
-    private Notice notice;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @OneToMany(mappedBy = "jobroles")
+    private List<Notice> notices;
 
     @Column(name="role_name", length = 100, nullable = false)
     private String roleName;

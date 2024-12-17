@@ -9,17 +9,13 @@ import java.util.List;
 
 @Entity
 public class Notice {
+
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany(mappedBy = "notice")
-    private List<JobRole> jobRoles;
-
-    @Column(name="job_role_id",nullable = false)
-    private Long jobRoleId;
-
-    @OneToMany(mappedBy = "")
+    @ManyToOne
+    @JoinColumn(name="job_role_id", nullable=false, referencedColumnName = "id")
+    private JobRole jobroles;
 
     @Column(name = "due_type", length = 20, nullable = false)
     private String dueType;

@@ -11,6 +11,18 @@ public class DailyRank {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name="job_title", length = 4)
+    private String jobTitle;
+
+    @ManyToOne
+    @JoinColumn(name="tech_name", referencedColumnName = "tech_name")
+    private TechStack techstack;
+
+    @Column(name="count")
+    private int count;
+
+    @Column(name="category", length = 20)
+    private String category;
 
     @Embedded
     private AuditTime auditTime;
