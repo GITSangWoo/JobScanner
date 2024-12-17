@@ -1,6 +1,9 @@
 package com.team2.jobscanner.entity;
 
-import com.team2.jobscanner.time.AuditTime;
+import java.time.LocalDateTime;
+
+import org.hibernate.annotations.CreationTimestamp;
+
 import jakarta.persistence.*;
 
 
@@ -27,8 +30,10 @@ public class ApiHistory {
     private String ip;
 
 
-    @Embedded
-    private AuditTime auditTime;
+    // create_time은 최초 생성 시에만 설정되고 수정되지 않도록 설정
+    @CreationTimestamp
+    @Column(name = "create_time", updatable = false)
+    private LocalDateTime createTime;
 
     // Getter, Setter
 }

@@ -12,7 +12,7 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: create  # 자동 스키마 생성 설정 (필요에 따라 조정) updata: 기존 데이터 테이블 유지 변경점만 추가/ create: 애플리케이션 실행시 마다 테이블 삭제 재생성 
+      ddl-auto: create  # 자동 스키마 생성 설정 (필요에 따라 조정) update: 기존 데이터 테이블 유지 변경점만 추가/ create: 애플리케이션 실행시 마다 테이블 삭제 재생성 
     properties:
       hibernate:
         #show-sql: true  # SQL 쿼리 로그 표시 system.out 으로 
