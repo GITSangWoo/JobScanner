@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.gavlyukovskiy:datasource-decorator-spring-boot-autoconfigure:1.10.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.github.gavlyukovskiy" artifactId="datasource-decorator-spring-boot-autoconfigure" version="1.10.0" baseVersion="1.10.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gavlyukovskiy/datasource-decorator-spring-boot-autoconfigure/1.10.0/7099035a011a154bfd7272a933275c9cf12bb6cd/datasource-decorator-spring-boot-autoconfigure-1.10.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gavlyukovskiy/datasource-decorator-spring-boot-autoconfigure/1.10.0/d99788921e0d3b8767d878bf17d8d87a7a189894/datasource-decorator-spring-boot-autoconfigure-1.10.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.gavlyukovskiy/datasource-decorator-spring-boot-autoconfigure/1.10.0/b1c529a2d00fe24135139584dcdf3f7caa2603a8/datasource-decorator-spring-boot-autoconfigure-1.10.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

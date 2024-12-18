@@ -8,7 +8,7 @@ import json
 # RDS MySQL 접속 정보
 mysql_host = "t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com"
 mysql_user = "admin"
-mysql_password = ""
+mysql_password = "dltkddn1"
 mysql_db = "testdb"
 
 # 기술 관련 키워드를 포함하는 tech_book.json 파일 경로

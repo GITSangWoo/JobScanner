@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework:spring-orm:6.2.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.springframework" artifactId="spring-orm" version="6.2.0" baseVersion="6.2.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/6.2.0/e02bdeb64ee3986d0e8cf0b53dbb4ca89d25f606/spring-orm-6.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/6.2.0/93f38a24ad371a47aa9e3c95e0c724fd87b20f72/spring-orm-6.2.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-orm/6.2.0/ebe479a594fcfcf28a5079ee2340b15a26237ad/spring-orm-6.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
