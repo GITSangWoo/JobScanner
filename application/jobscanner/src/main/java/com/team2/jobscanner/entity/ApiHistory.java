@@ -2,9 +2,11 @@ package com.team2.jobscanner.entity;
 
 import java.time.LocalDateTime;
 
+import com.team2.jobscanner.time.AuditTime;
 import org.hibernate.annotations.CreationTimestamp;
 
 import jakarta.persistence.*;
+import org.hibernate.annotations.UpdateTimestamp;
 
 
 @Entity
@@ -29,11 +31,24 @@ public class ApiHistory {
     @Column(name="ip", length = 39 ,nullable = false)
     private String ip;
 
+    @Embedded
+    private AuditTime auditTime;
 
-    // create_time은 최초 생성 시에만 설정되고 수정되지 않도록 설정
-    @CreationTimestamp
-    @Column(name = "create_time", updatable = false)
-    private LocalDateTime createTime;
+    public ApiHistory() {
+        this.auditTime = new AuditTime();
+    }
 
-    // Getter, Setter
+    @PrePersist
+    public void onPrePersist() {
+        // 새 데이터가 삽입될 때만 create_time은 현재 시간으로 설정됨
+        if (this.auditTime.getCreateTime() == null) {
+            this.auditTime.setCreateTime(LocalDateTime.now());
+        }
+        this.auditTime.setUpdateTime(LocalDateTime.now());  // update_time은 삽입 시점에 설정됨
+    }
+
+    @PreUpdate
+    public void onPreUpdate() {
+        this.auditTime.setUpdateTime(LocalDateTime.now());  // 데이터가 수정될 때마다 update_time 갱신
+    }
 }
