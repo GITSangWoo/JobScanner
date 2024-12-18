@@ -7,3 +7,6 @@ psutil
 pandas
 pyarrow>=10.0.1,<10.1.0
 psycopg2-binary
+mysql-connector-python
+pymysql
+bs4

@@ -5,13 +5,19 @@ from airflow.operators.bash import BashOperator
 from airflow.utils.trigger_rule import TriggerRule
 from datetime import datetime, timedelta
 import pendulum
+import time
 import sys
 import os
 
 # plugins모듈 사용
 sys.path.append('/code/plugins')
 from link_crawling import main
+#from post_crawling import main
 local_tz = pendulum.timezone("Asia/Seoul")
+
+# url 종료후 크롤링하기전 1분대기(task 간 1분 대기)
+def delay_execution():
+    time.sleep(60)
 
 default_args={
     'owner': 'airflow',
@@ -39,10 +45,22 @@ with DAG (
         python_callable=main
         #bash_command="python /code/plugins/link_crawling.py"
     )
-
+    
+#    # task작업 간 1분 대기
+#    delay_task = PythonOperator(
+#        task_id='delay_task',
+#        python_callable=delay_execution
+#    )
+#
+#    post_crawl = PythonOperator(
+#        task_id='post_crawl',
+#        python_callable=main
+#    )
+#
     start = EmptyOperator(task_id="start") 
     end = EmptyOperator(task_id="end", trigger_rule=TriggerRule.ONE_SUCCESS) 
 
     # DAG 내 태스크 의존성 설정
+    #start >> link_crawl >> delay_task >> post_crawl >> end
     start >> link_crawl >> end
 

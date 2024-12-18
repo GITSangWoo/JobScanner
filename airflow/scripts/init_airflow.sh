@@ -7,14 +7,14 @@ if [ -z "$AIRFLOW__CORE__FERNET_KEY" ]; then
 fi
 
 # 디렉토리 생성
-for DIR in /code/plugins/incruit /code/plugins/wanted /code/plugins/jumpit; do
+for DIR in /code/plugins/incruit /code/plugins/wanted /code/plugins/jumpit /code/plugins/logs; do
   if [ ! -d "$DIR" ]; then
     sudo mkdir -p "$DIR"
   fi
 done
 
 # 권한 설정
-chown -R 1000:1000 /code/logs /code/plugins
+chown -R 1000:1000 /code/logs /code/plugins /code/plugins/logs
 
 # 데이터베이스 초기화
 airflow db init || { echo "Database initialization failed"; exit 1; }
