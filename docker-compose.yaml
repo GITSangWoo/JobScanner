@@ -7,43 +7,98 @@ networks:
     driver: bridge
 
 services:
+  postgres:
+    image: postgres:13
+    container_name: airflow-postgres
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    networks:
+      - airflow-network
+
+  redis:
+    image: redis:latest
+    container_name: airflow-redis
+    ports:
+      - "6379:6379"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    networks:
+      - airflow-network
+
   airflow:
+    container_name: airflow-web
     build:
       context: ./airflow
       dockerfile: Dockerfile-airflow
     ports:
       - "8080:8080"
-    environment:
-      AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__CORE__SQL_ALCHEMY_CONN: mysql+mysqlconnector://root:1234@43.201.40.223:3306/airflowdb
-      AIRFLOW__CORE__LOAD_EXAMPLES: "False" # 기본 예제 DAG 로드 비활성화
+    env_file:
+      - ./airflow/.env.airflow
     volumes:
-      - ./airflow/dags:/opt/airflow/dags
-      - ./airflow/logs:/opt/airflow/logs
-      - ./airflow/plugins:/opt/airflow/plugins
+      - ~/.aws:/code/.aws:ro
+      - ./airflow/dags:/code/dags
+      - ./airflow/airflow.cfg:/code/airflow.cfg
+      - ./airflow/logs:/code/logs
+      - ./airflow/plugins:/code/plugins
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
     entrypoint: >
       bash -c "
-      /docker-entrypoint-initdb.d/init_airflow.sh &&
+      sleep 5 &&
+      /code/scripts/init_airflow.sh &&
       exec airflow webserver
       "
     networks:
       - airflow-network
+    depends_on:
+      - redis
+      - postgres
+    shm_size: '2gb'
 
   airflow-scheduler:
+    container_name: airflow-scheduler
     build:
       context: ./airflow
       dockerfile: Dockerfile-airflow
-    environment:
-      AIRFLOW__CORE__EXECUTOR: LocalExecutor
-      AIRFLOW__CORE__SQL_ALCHEMY_CONN: mysql+mysqlconnector://root:1234@43.201.40.223:3306/airflowdb
-      AIRFLOW__CORE__LOAD_EXAMPLES: "False"
+    restart: always
+    env_file:
+      - ./airflow/.env.airflow
+    volumes:
+      - ~/.aws:/code/.aws:ro
+      - ./airflow/dags:/code/dags
+      - ./airflow/airflow.cfg:/code/airflow.cfg
+      - ./airflow/logs:/code/logs
+      - ./airflow/plugins:/code/plugins
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
     entrypoint: >
       bash -c "
-      sleep 10 && 
-      exec airflow scheduler
-      "
+      sleep 10 &&
+      /code/scripts/init_airflow.sh &&
+      exec airflow scheduler &
+      echo 'Waiting for DAG to be loaded...';
+      while ! airflow dags list | grep dag_crawling_to_db; do
+        echo 'DAG not loaded yet. Retrying...';
+        sleep 5;
+      done &&
+      echo 'DAG Loaded. Triggering DAG...' &&
+      airflow dags trigger dag_crawling_to_db &&
+      wait"
     depends_on:
       - airflow
+      - postgres
     networks:
       - airflow-network
 
@@ -71,3 +126,5 @@ services:
     networks:
       - spark-network
 
+volumes:
+  postgres-db-volume:
