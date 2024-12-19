@@ -21,7 +21,8 @@ tech_stack_list = [
     "Spring Data", "Spring Batch", "Spring Integration", "Node.js", "Express", "Vue.js", "React", "Angular", "Svelte", "Next.js",
     "Nuxt.js", "Ember.js", "Django", "Flask", "Ruby on Rails", "Laravel", "Spring Framework", "ASP.NET", "Symfony", "Meteor",
     "Hapi", "Golang", "C++", "C#", "C", "Python", "Perl", "CoffeeScript", "Shell", "SQL", "NoSQL", "MariaDB", "Agit", "Tableau",
-    "PyTorch", "TensorFlow", "AWS Athena", "LLM", "CSS", "Amazon S3", "AWS Redshift", "Firebase", "Snowflake", "Amazon CloudWatch", "Impala"
+    "PyTorch", "TensorFlow", "AWS Athena", "LLM", "CSS", "Amazon S3", "AWS Redshift", "Firebase", "Snowflake", "Amazon CloudWatch", "Impala",
+    "GitHub Actions"
 ]
 
 # MySQL 연결

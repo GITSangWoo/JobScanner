@@ -138,7 +138,8 @@ tech_docs = {
     "Firebase": "https://firebase.google.com/docs",
     "Snowflake": "https://docs.snowflake.com/",
     "Amazon CloudWatch": "https://docs.aws.amazon.com/cloudwatch/",
-    "Impala": "https://impala.apache.org/docs/"
+    "Impala": "https://impala.apache.org/docs/",
+    "GitHub Actions" : "https://docs.github.com/ko/actions"
 }
 
 # 각 기술에 대해 docs_link 값을 업데이트

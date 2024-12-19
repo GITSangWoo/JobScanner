@@ -137,7 +137,8 @@ tech_descriptions = {
     "Firebase": "Firebase는 모바일 및 웹 애플리케이션 개발을 위한 플랫폼으로, 데이터베이스, 인증, 클라우드 메시징과 같은 다양한 도구를 제공합니다.",
     "Snowflake": "Snowflake는 데이터 저장, 처리 및 분석 솔루션을 제공하는 클라우드 기반 데이터 웨어하우징 플랫폼으로, 확장 가능하고 관리가 용이합니다.",
     "Amazon CloudWatch": "Amazon CloudWatch는 AWS 클라우드 리소스 및 애플리케이션의 모니터링 서비스로, 메트릭 및 로그에 대한 실시간 가시성을 제공합니다.",
-    "Impala": "Impala는 Hadoop에 저장된 대규모 데이터를 빠르고 대화형으로 분석할 수 있게 해주는 오픈 소스 분산 SQL 쿼리 엔진입니다."
+    "Impala": "Impala는 Hadoop에 저장된 대규모 데이터를 빠르고 대화형으로 분석할 수 있게 해주는 오픈 소스 분산 SQL 쿼리 엔진입니다.",
+    "GitHub Actions": "GitHub Actions는 GitHub 저장소의 워크플로 자동화를 위한 CI/CD 도구입니다."
 }
 
 # MySQL 연결

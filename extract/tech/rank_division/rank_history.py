@@ -33,16 +33,16 @@ def create_rank_history_table_if_not_exists(connection):
                     ranked_date DATE,
                     category VARCHAR(20),
                     job_title VARCHAR(4),
-                    rank1 VARCHAR(10),
-                    rank2 VARCHAR(10),
-                    rank3 VARCHAR(10),
-                    rank4 VARCHAR(10),
-                    rank5 VARCHAR(10),
-                    rank6 VARCHAR(10),
-                    rank7 VARCHAR(10),
-                    rank8 VARCHAR(10),
-                    rank9 VARCHAR(10),
-                    rank10 VARCHAR(10)
+                    rank1 VARCHAR(30),
+                    rank2 VARCHAR(30),
+                    rank3 VARCHAR(30),
+                    rank4 VARCHAR(30),
+                    rank5 VARCHAR(30),
+                    rank6 VARCHAR(30),
+                    rank7 VARCHAR(30),
+                    rank8 VARCHAR(30),
+                    rank9 VARCHAR(30),
+                    rank10 VARCHAR(30)
                 );
             """)
             connection.commit()
