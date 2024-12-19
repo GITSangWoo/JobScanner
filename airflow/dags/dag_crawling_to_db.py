@@ -16,8 +16,8 @@ from link_crawling import main
 local_tz = pendulum.timezone("Asia/Seoul")
 
 # url 종료후 크롤링하기전 1분대기(task 간 1분 대기)
-def delay_execution():
-    time.sleep(60)
+#def delay_execution():
+#    time.sleep(60)
 
 default_args={
     'owner': 'airflow',

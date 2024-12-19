@@ -942,7 +942,7 @@ def wanted_link():
     
 def main():
     print(f"인크루트 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    #incruit_link()
+   # incruit_link()
     print(f"인크루트 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 
@@ -962,12 +962,12 @@ def main():
     time.sleep(5)
 
     print(f"사람인 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    #saramin_link()
+    saramin_link()
     print(f"사람인 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 
     print(f"원티드 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    #wanted_link()
+    wanted_link()
     print(f"원티드 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
 if __name__ == "__main__":
