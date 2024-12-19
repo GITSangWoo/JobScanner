@@ -939,37 +939,47 @@ def wanted_link():
         # 프로그램 종료 전 브라우저 종료
         if 'driver' in locals():
             driver.quit()
-    
-def main():
-    print(f"인크루트 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-   # incruit_link()
-    print(f"인크루트 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+
+# 크롤링 작업 완료 후 모든 WebDriver 프로세스를 강제 종료:
+def clean_up_chrome_processes():
+    os.system("pkill -f chromedriver || true")
+    os.system("pkill -f chrome || true")
+
+clean_up_chrome_processes()
+
+
+def link_main():
+    print(f"인크루트url 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    #incruit_link()
+    print(f"인크루트url 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 
-    print(f"잡코리아 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"잡코리아url 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     #jobkorea_link()
-    print(f"잡코리아 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"잡코리아url 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 
-    print(f"점핏 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"점핏url 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     #jumpit_link()
-    print(f"점핏 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"점핏url 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 
-    print(f"로켓펀치 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"로켓펀치url 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     #rocketpunch_link()
-    print(f"로켓펀치 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"로켓펀치url 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 
-    print(f"사람인 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    saramin_link()
-    print(f"사람인 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"사람인url 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    #saramin_link()
+    print(f"사람인url 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 
-    print(f"원티드 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    wanted_link()
-    print(f"원티드 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    print(f"원티드url 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    #wanted_link()
+    print(f"원티드url 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+
+    clean_up_chrome_processes()
 
 if __name__ == "__main__":
-    main()
+    link_main()
 

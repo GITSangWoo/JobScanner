@@ -29,228 +29,232 @@ from zoneinfo import ZoneInfo
 # 컨테이너 작업 디렉토리 변경
 os.chdir("/code/plugins")
 
-def jumpit_crawling():
-    output_folder = f'{os.path.dirname(os.path.abspath(__file__))}/jumpit'
-    today = datetime.today().strftime('%Y%m%d')
-    log_file_name = os.path.join(output_folder, f"{today}.log")
+# def jumpit_crawling():
+#     output_folder = f'{os.path.dirname(os.path.abspath(__file__))}/jumpit'
+#     if not os.path.exists(output_folder):
+#         os.makedirs(output_folder)
+#     today = datetime.today().strftime('%Y%m%d')
+#     log_file_name = os.path.join(output_folder, f"{today}.log")
 
-    def save_crawled_content(url, content):
-        file_name = url.split('/')[-1] + ".txt"
-        file_path = os.path.join('textnotice', file_name)
+#     def save_crawled_content(url, content):
+#         file_name = url.split('/')[-1] + ".txt"
+#         file_path = os.path.join('textnotice', file_name)
         
-        if not os.path.exists('textnotice'):
-            os.makedirs('textnotice')
+#         if not os.path.exists('textnotice'):
+#             os.makedirs('textnotice')
         
-        with open(file_path, 'w', encoding='utf-8') as file:
-            file.write(content)
-        print(f"Content saved to {file_path}")
+#         with open(file_path, 'w', encoding='utf-8') as file:
+#             file.write(content)
+#         print(f"Content saved to {file_path}")
 
-    def insert_into_db(data, connection): 
-        with connection.cursor() as cursor:
-            sql = """
-            INSERT INTO jumpit (create_time, update_time, site, job_title, due_type, due_date, company, post_title, org_url, s3_text_url, notice_type)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-            """
-            cursor.execute(sql, (
-                data['create_time'], data['update_time'], data['site'], data['job_title'], data['due_type'], data['due_date'], data['company'],
-                data['post_title'], data['org_url'], data['s3_text_url'], data['notice_type'],
-            ))
-            connection.commit()
+#     def insert_into_db(data, connection): 
+#         with connection.cursor() as cursor:
+#             sql = """
+#             INSERT INTO jumpit (create_time, update_time, site, job_title, due_type, due_date, company, post_title, org_url, s3_text_url, notice_type)
+#             VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+#             """
+#             cursor.execute(sql, (
+#                 data['create_time'], data['update_time'], data['site'], data['job_title'], data['due_type'], data['due_date'], data['company'],
+#                 data['post_title'], data['org_url'], data['s3_text_url'], data['notice_type'],
+#             ))
+#             connection.commit()
 
-    def update_removed_links_in_db(removed_links, connection):
-        try:
-            with connection.cursor() as cursor:
-                for link in removed_links:
-                    sql = """
-                    UPDATE jumpit SET removed_time = %s WHERE org_url = %s
-                    """
-                    cursor.execute(sql, (datetime.now().strftime("%Y-%m-%d %H:%M:%S"), link))
-                connection.commit()
-                print(f"Updated removed links in DB: {len(removed_links)}")
-        except Exception as e:
-            print(f"Error updating removed links in DB: {e}")
+#     def update_removed_links_in_db(removed_links, connection):
+#         try:
+#             with connection.cursor() as cursor:
+#                 for link in removed_links:
+#                     sql = """
+#                     UPDATE jumpit SET removed_time = %s WHERE org_url = %s
+#                     """
+#                     cursor.execute(sql, (datetime.now().strftime("%Y-%m-%d %H:%M:%S"), link))
+#                 connection.commit()
+#                 print(f"Updated removed links in DB: {len(removed_links)}")
+#         except Exception as e:
+#             print(f"Error updating removed links in DB: {e}")
 
-    def read_links_and_ddays_from_s3(bucket_name, s3_file_key):
-        s3 = boto3.client('s3')
-        try:
-            response = s3.get_object(Bucket=bucket_name, Key=s3_file_key)
-            content = response['Body'].read().decode('utf-8')
+#     def read_links_and_ddays_from_s3(bucket_name, s3_file_key):
+#         s3 = boto3.client('s3')
+#         try:
+#             response = s3.get_object(Bucket=bucket_name, Key=s3_file_key)
+#             content = response['Body'].read().decode('utf-8')
             
-            links_with_ddays = {}
-            for line in content.splitlines():
-                if ": " in line:
-                    link, d_day = line.strip().split(": ", 1)
-                    link = re.sub(r':\s*\d+$', '', link)
+#             links_with_ddays = {}
+#             for line in content.splitlines():
+#                 if ": " in line:
+#                     link, d_day = line.strip().split(": ", 1)
+#                     link = re.sub(r':\s*\d+$', '', link)
                     
-                    try:
-                        d_day_int = int(d_day)
-                        links_with_ddays[link] = d_day_int
-                    except ValueError:
-                        print(f"Invalid D-day value: {d_day} for URL: {link}")
+#                     try:
+#                         d_day_int = int(d_day)
+#                         links_with_ddays[link] = d_day_int
+#                     except ValueError:
+#                         print(f"Invalid D-day value: {d_day} for URL: {link}")
             
-            return links_with_ddays
-        except Exception as e:
-            print(f"Error reading file from S3: {e}")
-            return {}
+#             return links_with_ddays
+#         except Exception as e:
+#             print(f"Error reading file from S3: {e}")
+#             return {}
 
-    def upload_to_s3(file_path, bucket_name, object_name):
-        s3 = boto3.client('s3')
-        try:
-            s3.upload_file(file_path, bucket_name, object_name)
-            print(f"Uploaded {file_path} to S3 bucket {bucket_name} as {object_name}")
-            return f"s3://{bucket_name}/{object_name}"
-        except Exception as e:
-            print(f"Error uploading file to S3: {e}")
-            return None
+#     def upload_to_s3(file_path, bucket_name, object_name):
+#         s3 = boto3.client('s3')
+#         try:
+#             s3.upload_file(file_path, bucket_name, object_name)
+#             print(f"Uploaded {file_path} to S3 bucket {bucket_name} as {object_name}")
+#             return f"s3://{bucket_name}/{object_name}"
+#         except Exception as e:
+#             print(f"Error uploading file to S3: {e}")
+#             return None
 
-    def extract_site_name(url):
-        parsed_url = urlparse(url)
-        domain = parsed_url.hostname
-        return domain.split('.')[0] if domain else None
+#     def extract_site_name(url):
+#         parsed_url = urlparse(url)
+#         domain = parsed_url.hostname
+#         return domain.split('.')[0] if domain else None
 
-    def ensure_directories():
-        os.makedirs("links", exist_ok=True)
+#     def ensure_directories():
+#         os.makedirs("links", exist_ok=True)
 
-    def calculate_deadline_from_dday(d_day):
-        today = datetime.now().date()
-        deadline = today + timedelta(days=d_day)
-        return deadline
+#     def calculate_deadline_from_dday(d_day):
+#         today = datetime.now().date()
+#         deadline = today + timedelta(days=d_day)
+#         return deadline
 
-    def update_log_file(url, crawl_time):
-        with open(log_file_name, 'r', encoding='utf-8') as file:
-            lines = file.readlines()
+#     def update_log_file(url, crawl_time):
+#         with open(log_file_name, 'r', encoding='utf-8') as file:
+#             lines = file.readlines()
 
-        updated_lines = []
+#         updated_lines = []
         
-        for line in lines:
-            columns = line.strip().split(',')
-            if columns[0] == url:
-                columns[2] = "done"
-                columns[3] = crawl_time
-                updated_line = ','.join(columns)
-                updated_lines.append(updated_line + '\n')
-            else:
-                updated_lines.append(line)
+#         for line in lines:
+#             columns = line.strip().split(',')
+#             if columns[0] == url:
+#                 columns[2] = "done"
+#                 columns[3] = crawl_time
+#                 updated_line = ','.join(columns)
+#                 updated_lines.append(updated_line + '\n')
+#             else:
+#                 updated_lines.append(line)
         
-        with open(log_file_name, 'w', encoding='utf-8') as file:
-            file.writelines(updated_lines)
+#         with open(log_file_name, 'w', encoding='utf-8') as file:
+#             file.writelines(updated_lines)
 
-    ensure_directories()
+#     ensure_directories()
 
-    bucket_name = 't2jt'
-    today_file_key = f"job/DE/sources/jumpit/links/{today}.txt"
+#     bucket_name = 't2jt'
+#     today_file_key = f"job/DE/sources/jumpit/links/{today}.txt"
 
-    links_with_ddays = read_links_and_ddays_from_s3(bucket_name, today_file_key)
+#     links_with_ddays = read_links_and_ddays_from_s3(bucket_name, today_file_key)
 
-    urls_to_crawl = list(links_with_ddays.keys())
+#     urls_to_crawl = list(links_with_ddays.keys())
 
-    connection = pymysql.connect(
-        host='t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com',
-        user='admin',
-        password='dltkddn1',
-        database='testdb1',
-        port=3306
-    )
+#     connection = pymysql.connect(
+#         host='t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com',
+#         user='admin',
+#         password='dltkddn1',
+#         database='testdb1',
+#         port=3306
+#     )
 
-    options = Options()
-    options.headless = False
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+#     options = Options()
+#     options.add_argument('--headless=new')  # Headless 모드
+#     options.add_argument('--no-sandbox')  # 권한 문제 방지
+#     options.add_argument('--disable-dev-shm-usage')  # 메모리 문제 방지
+#     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-    with open(log_file_name, 'r', encoding='utf-8') as file:
-        lines = file.readlines()
+#     with open(log_file_name, 'r', encoding='utf-8') as file:
+#         lines = file.readlines()
 
-        removed_links = []
+#         removed_links = []
 
-        for line in lines[1:]:
-            columns = line.strip().split(',')
-            url = columns[0]
-            notice_status = columns[1]
-            work_status = columns[2]
-            done_time = columns[3]
-            d_day = columns[4]  # D-day 값을 가져옴
+#         for line in lines[1:]:
+#             columns = line.strip().split(',')
+#             url = columns[0]
+#             notice_status = columns[1]
+#             work_status = columns[2]
+#             done_time = columns[3]
+#             d_day = columns[4]  # D-day 값을 가져옴
             
-            # D-day 값이 숫자인 경우 deadline 계산
-            try:
-                d_day_int = int(d_day)
-                deadline = calculate_deadline_from_dday(d_day_int)
-            except ValueError:
-                deadline = None  # D-day 값이 유효하지 않으면 deadline은 None
+#             # D-day 값이 숫자인 경우 deadline 계산
+#             try:
+#                 d_day_int = int(d_day)
+#                 deadline = calculate_deadline_from_dday(d_day_int)
+#             except ValueError:
+#                 deadline = None  # D-day 값이 유효하지 않으면 deadline은 None
             
-            if notice_status == "deleted":
-                removed_links.append(url)
-            elif notice_status == "update" and work_status == "null":
-                print(f"Starting crawl for {url}")
-                crawl_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+#             if notice_status == "deleted":
+#                 removed_links.append(url)
+#             elif notice_status == "update" and work_status == "null":
+#                 print(f"Starting crawl for {url}")
+#                 crawl_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-                # Open the URL and perform web scraping directly
-                try:
-                    driver.get(url)
-                    time.sleep(3)  # Wait for the page to load
+#                 # Open the URL and perform web scraping directly
+#                 try:
+#                     driver.get(url)
+#                     time.sleep(3)  # Wait for the page to load
 
-                    # Extract job content
-                    job_content_text = None
-                    try:
-                        job_content_section = WebDriverWait(driver, 10).until(
-                            EC.presence_of_element_located((By.CSS_SELECTOR, ".sc-10492dab-3.hiVlDL"))  # Adjust this selector to match the correct element
-                        )
-                        job_content_text = job_content_section.text
-                    except Exception:
-                        print(f"Failed to extract job content from {url}")
+#                     # Extract job content
+#                     job_content_text = None
+#                     try:
+#                         job_content_section = WebDriverWait(driver, 10).until(
+#                             EC.presence_of_element_located((By.CSS_SELECTOR, ".sc-10492dab-3.hiVlDL"))  # Adjust this selector to match the correct element
+#                         )
+#                         job_content_text = job_content_section.text
+#                     except Exception:
+#                         print(f"Failed to extract job content from {url}")
                     
-                    # If content is found, save to file and upload to S3
-                    if job_content_text:
-                        text_path = os.path.join("texts", f"{uuid.uuid4()}.txt")
-                        with open(text_path, "w", encoding="utf-8") as f:
-                            f.write(job_content_text)
-                        s3_text_url = upload_to_s3(text_path, bucket_name, f"job/DE/sources/{extract_site_name(url)}/txt/{uuid.uuid4()}.txt")
+#                     # If content is found, save to file and upload to S3
+#                     if job_content_text:
+#                         text_path = os.path.join("texts", f"{uuid.uuid4()}.txt")
+#                         with open(text_path, "w", encoding="utf-8") as f:
+#                             f.write(job_content_text)
+#                         s3_text_url = upload_to_s3(text_path, bucket_name, f"job/DE/sources/{extract_site_name(url)}/txt/{uuid.uuid4()}.txt")
                     
-                    # Extract additional info (like company name, post title)
-                    company_name = None
-                    post_title = None
-                    try:
-                        company_link = WebDriverWait(driver, 10).until(
-                            EC.presence_of_element_located((By.CSS_SELECTOR, "a.name"))
-                        )
-                        company_name = parse_qs(urlparse(company_link.get_attribute("href")).query).get("company_nm", [None])[0]
+#                     # Extract additional info (like company name, post title)
+#                     company_name = None
+#                     post_title = None
+#                     try:
+#                         company_link = WebDriverWait(driver, 10).until(
+#                             EC.presence_of_element_located((By.CSS_SELECTOR, "a.name"))
+#                         )
+#                         company_name = parse_qs(urlparse(company_link.get_attribute("href")).query).get("company_nm", [None])[0]
 
-                        post_title_element = WebDriverWait(driver, 10).until(
-                            EC.presence_of_element_located((By.CSS_SELECTOR, "h1"))
-                        )
-                        post_title = post_title_element.text
-                    except Exception:
-                        pass
+#                         post_title_element = WebDriverWait(driver, 10).until(
+#                             EC.presence_of_element_located((By.CSS_SELECTOR, "h1"))
+#                         )
+#                         post_title = post_title_element.text
+#                     except Exception:
+#                         pass
 
-                    # Determine due type
-                    due_type = '상시채용' if not deadline else '날짜'
-                    due_date = deadline if deadline else None
+#                     # Determine due type
+#                     due_type = '상시채용' if not deadline else '날짜'
+#                     due_date = deadline if deadline else None
 
-                    # Prepare data for DB insertion
-                    data = {
-                        'site': extract_site_name(url),
-                        'job_title': '데이터 엔지니어',
-                        'due_type': due_type,
-                        'due_date': due_date,
-                        'company': company_name,
-                        'notice_type': 'text',
-                        'post_title': post_title,
-                        'org_url': url,
-                        's3_text_url': s3_text_url,
-                        's3_image_url': None,
-                        'create_time': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                        'update_time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-                    }
+#                     # Prepare data for DB insertion
+#                     data = {
+#                         'site': extract_site_name(url),
+#                         'job_title': '데이터 엔지니어',
+#                         'due_type': due_type,
+#                         'due_date': due_date,
+#                         'company': company_name,
+#                         'notice_type': 'text',
+#                         'post_title': post_title,
+#                         'org_url': url,
+#                         's3_text_url': s3_text_url,
+#                         's3_image_url': None,
+#                         'create_time': datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+#                         'update_time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+#                     }
 
-                    insert_into_db(data, connection)  # Insert the data into the DB
-                    update_log_file(url, crawl_time)  # Update log file
+#                     insert_into_db(data, connection)  # Insert the data into the DB
+#                     update_log_file(url, crawl_time)  # Update log file
 
-                except Exception as e:
-                    print(f"Error processing {url}: {e}")
+#                 except Exception as e:
+#                     print(f"Error processing {url}: {e}")
 
-        if removed_links:
-            update_removed_links_in_db(removed_links, connection)  # Update removed links in DB
+#         if removed_links:
+#             update_removed_links_in_db(removed_links, connection)  # Update removed links in DB
 
-    driver.quit()
-    connection.close()
+#     driver.quit()
+#     connection.close()
 
 def wanted_crawling():
     # AWS S3 클라이언트 설정
@@ -270,7 +274,11 @@ def wanted_crawling():
     s3_bucket_name = 't2jt'
 
     # 셀레니움 웹 드라이버 설정
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    options = Options()
+    options.add_argument('--headless=new')  # Headless 모드
+    options.add_argument('--no-sandbox')  # 권한 문제 방지
+    options.add_argument('--disable-dev-shm-usage')  # 메모리 문제 방지
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
     # 오늘 날짜로 로그파일 이름 설정
     today = datetime.today().strftime('%Y%m%d')
@@ -603,7 +611,9 @@ def incruit_crawling():
 
     # Chrome 설정
     options = Options()
-    options.headless = False
+    options.add_argument('--=new')  # Headless 모드
+    options.add_argument('--no-sandbox')  # 권한 문제 방지
+    options.add_argument('--disable-dev-shm-usage')  # 메모리 문제 방지
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
     # 오늘 날짜로 로그파일 이름 설정
@@ -773,7 +783,7 @@ def rocketpunch_crawling():
 
     chrome_options = Options()
     chrome_options.add_argument(f"user-agent={user_agent}")
-    chrome_options.add_argument("--headless")  # Headless 모드
+    chrome_options.add_argument("--headless=new")  # Headless 모드
     chrome_options.add_argument("--disable-gpu")  # GPU 비활성화
     chrome_options.add_argument("--no-sandbox")  # 리소스 제약 없는 환경에서 실행
 
@@ -1159,7 +1169,11 @@ def jobkorea_crawling():
         logging.info(f"{url} - {status} - {task_status} - {time_now}")
 
     # Selenium 웹 드라이버 설정
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+        options = Options()
+    options.add_argument('--headless=new')  # Headless 모드
+    options.add_argument('--no-sandbox')  # 권한 문제 방지
+    options.add_argument('--disable-dev-shm-usage')  # 메모리 문제 방지
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
     # S3에서 파일 읽기 함수
     def read_s3_file(bucket_name, file_key):
@@ -1904,9 +1918,9 @@ def saramin_crawling():
     execute()
 
 
-def main():
+def post_main():
     print(f"점핏 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    jumpit_crawling()
+    #jumpit_crawling()
     print(f"점핏 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(10)
 
@@ -1935,4 +1949,4 @@ def main():
     time.sleep(10)
 
 if __name__ == "__main__":
-    main()
+    post_main()

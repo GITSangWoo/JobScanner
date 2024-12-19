@@ -64,7 +64,10 @@ services:
     depends_on:
       - redis
       - postgres
-    shm_size: '2gb'
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
 
   airflow-scheduler:
     container_name: airflow-scheduler
@@ -101,6 +104,10 @@ services:
       - postgres
     networks:
       - airflow-network
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
 
   spark-master:
     build:
