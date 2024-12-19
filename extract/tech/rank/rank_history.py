@@ -20,6 +20,36 @@ def connect_to_db():
         cursorclass=pymysql.cursors.DictCursor
     )
 
+# rank_history 테이블 생성 함수
+def create_rank_history_table_if_not_exists(connection):
+    try:
+        with connection.cursor() as cursor:
+            # rank_history 테이블 존재 여부 확인 및 생성
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS rank_history (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                    ranked_date DATE,
+                    category VARCHAR(20),
+                    job_title VARCHAR(4),
+                    rank1 VARCHAR(10),
+                    rank2 VARCHAR(10),
+                    rank3 VARCHAR(10),
+                    rank4 VARCHAR(10),
+                    rank5 VARCHAR(10),
+                    rank6 VARCHAR(10),
+                    rank7 VARCHAR(10),
+                    rank8 VARCHAR(10),
+                    rank9 VARCHAR(10),
+                    rank10 VARCHAR(10)
+                );
+            """)
+            connection.commit()
+    except Exception as e:
+        print(f"Error creating table: {e}")
+        connection.rollback()
+
 # 기술 스택에서 상위 10개를 추출하는 함수 (카운팅 값이 0인 경우 제외)
 def get_top_10_skills(skill_data):
     # 기술 스택 데이터를 내림차순(카운팅 값) + 알파벳 오름차순으로 정렬
@@ -38,6 +68,9 @@ def get_top_10_skills(skill_data):
 def process_and_insert_data():
     connection = connect_to_db()
     try:
+        # 테이블 생성 여부 확인 및 생성
+        create_rank_history_table_if_not_exists(connection)
+
         with connection.cursor() as cursor:
             # agg_tech_stack 테이블 데이터 가져오기
             cursor.execute("SELECT agg_date, tot_agg, res_agg, qual_agg, pref_agg FROM agg_tech_stack")
@@ -84,4 +117,3 @@ def process_and_insert_data():
 
 if __name__ == "__main__":
     process_and_insert_data()
-

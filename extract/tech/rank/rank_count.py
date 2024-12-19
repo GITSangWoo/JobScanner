@@ -20,10 +20,42 @@ def connect_to_db():
         cursorclass=pymysql.cursors.DictCursor
     )
 
+# rank_count 테이블 생성 함수
+def create_rank_count_table_if_not_exists(connection):
+    try:
+        with connection.cursor() as cursor:
+            # rank_count 테이블 존재 여부 확인 및 생성
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS rank_count (
+                    id INT AUTO_INCREMENT PRIMARY KEY,
+                    history_id INT,
+                    create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+                    update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+                    rank1count INT,
+                    rank2count INT,
+                    rank3count INT,
+                    rank4count INT,
+                    rank5count INT,
+                    rank6count INT,
+                    rank7count INT,
+                    rank8count INT,
+                    rank9count INT,
+                    rank10count INT,
+                    FOREIGN KEY (history_id) REFERENCES rank_history(id) ON DELETE CASCADE
+                );
+            """)
+            connection.commit()
+    except Exception as e:
+        print(f"Error creating table: {e}")
+        connection.rollback()
+
 # rank_count 테이블에 데이터 삽입
 def insert_rank_count():
     connection = connect_to_db()
     try:
+        # 테이블 생성 여부 확인 및 생성
+        create_rank_count_table_if_not_exists(connection)
+
         with connection.cursor() as cursor:
             # rank_history 테이블에서 데이터 가져오기
             cursor.execute("SELECT * FROM rank_history")
@@ -102,4 +134,3 @@ def insert_rank_count():
 
 if __name__ == "__main__":
     insert_rank_count()
-
