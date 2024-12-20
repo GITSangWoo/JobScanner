@@ -1,22 +1,22 @@
 package com.team2.jobscanner.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.team2.jobscanner.time.AuditTime;
 import jakarta.persistence.*;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
-import org.springframework.boot.autoconfigure.batch.BatchProperties;
+import lombok.Getter;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-
+@Getter
 @Entity
 public class TechStack {
     @Id
     @Column(name="tech_name", length = 100, nullable = false)
     private String techName;
 
-    @OneToMany(mappedBy = "techstack")
+    @JsonIgnoreProperties("techStack") 
+    @OneToMany(mappedBy = "techStack")
     private List<DailyRank> dailyRank;
 
     @Column(name="tech_description", columnDefinition = "TEXT",nullable = false)

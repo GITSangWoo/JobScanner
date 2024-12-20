@@ -1,14 +1,12 @@
 package com.team2.jobscanner.entity;
 import com.team2.jobscanner.time.AuditTime;
 import jakarta.persistence.*;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
-import org.springframework.boot.autoconfigure.batch.BatchProperties;
+import lombok.Getter;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
-
+@Getter
 @Entity
 public class JobRole {
 

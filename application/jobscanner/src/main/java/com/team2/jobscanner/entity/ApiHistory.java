@@ -1,14 +1,10 @@
 package com.team2.jobscanner.entity;
-
 import java.time.LocalDateTime;
-
 import com.team2.jobscanner.time.AuditTime;
-import org.hibernate.annotations.CreationTimestamp;
-
 import jakarta.persistence.*;
-import org.hibernate.annotations.UpdateTimestamp;
+import lombok.Getter;
 
-
+@Getter
 @Entity
 public class ApiHistory {
     @Id

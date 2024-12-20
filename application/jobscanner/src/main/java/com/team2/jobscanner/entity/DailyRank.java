@@ -1,13 +1,9 @@
 package com.team2.jobscanner.entity;
-
 import com.team2.jobscanner.time.AuditTime;
 import jakarta.persistence.*;
-import org.hibernate.annotations.CreationTimestamp;
-import org.hibernate.annotations.UpdateTimestamp;
-
+import lombok.Getter;
 import java.time.LocalDateTime;
-
-
+@Getter
 @Entity
 public class DailyRank {
 
@@ -18,9 +14,9 @@ public class DailyRank {
     @Column(name="job_title", length = 4)
     private String jobTitle;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name="tech_name", referencedColumnName = "tech_name")
-    private TechStack techstack;
+    private TechStack techStack;
 
     @Column(name="count")
     private int count;
@@ -48,5 +44,19 @@ public class DailyRank {
     public void onPreUpdate() {
         this.auditTime.setUpdateTime(LocalDateTime.now());  // 데이터가 수정될 때마다 update_time 갱신
     }
+
+    //getter setter
+
+    @Override
+    public String toString() {
+        return "DailyRank{" +
+                "id=" + id +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", category='" + category + '\'' +
+                ", count=" + count +
+                ", techStack=" + techStack + // TechStack 객체를 포함하려면 toString() 호출
+                '}';
+    }
+
 }
 
