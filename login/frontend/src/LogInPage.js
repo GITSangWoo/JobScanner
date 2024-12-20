@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { GoogleLogin } from "@react-oauth/google";
 import { GoogleOAuthProvider } from "@react-oauth/google";
 import KakaoLogin from "react-kakao-login";
-// import NaverLogin from "react-naver-login"; // Naver Login 패키지 주석 처리
 import './LogInPage.css';
 
 const LoginPage = () => {
@@ -17,8 +16,9 @@ const LoginPage = () => {
         window.location.reload(); // 페이지 새로고침
     };
 
-    const fetchUserData = (token) => {
-        fetch(`${BACKEND_URL}/user`, {
+    // 로그인 후 사용자 데이터 가져오기
+    const fetchUserData = (token, provider) => {
+        fetch(`${BACKEND_URL}/auth/login/${provider}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -37,6 +37,7 @@ const LoginPage = () => {
             .catch(error => console.error('Error fetching user data:', error));
     };
 
+    // JWT 토큰 저장
     const saveJwtToken = (token) => {
         try {
             localStorage.setItem('jwtToken', token);
@@ -46,6 +47,7 @@ const LoginPage = () => {
         }
     };
 
+    // URL에서 JWT 토큰 확인
     const getJwtTokenFromUrl = () => {
         const urlParams = new URLSearchParams(window.location.search);
         const token = urlParams.get('token');
@@ -57,36 +59,30 @@ const LoginPage = () => {
 
     useEffect(() => {
         if (jwtToken) {
-            fetchUserData(jwtToken); // JWT 토큰이 있으면 사용자 데이터 가져오기
+            console.log("JWT Token exists, no default fetch request.");
         } else {
             getJwtTokenFromUrl(); // URL에서 JWT 토큰 확인
         }
     }, [jwtToken]);
 
     const kakaoClientId = '9ae623834d6fbc0413f981285a8fa0d5';
+
     const kakaoOnSuccess = async (data) => {
         const idToken = data.response.access_token;  // 카카오에서 받은 엑세스 토큰
-        fetch(`${BACKEND_URL}/auth/login/kakao?code=${idToken}`)
-            .then(response => response.json())
-            .then(data => {
-                saveJwtToken(data.token); // JWT 토큰 저장
-                fetchUserData(data.token); // 사용자 데이터 가져오기
-            })
-            .catch(error => console.error('Kakao login error:', error));
+        const provider = 'kakao'; // 카카오 로그인 provider 설정
+        saveJwtToken(idToken); // JWT 토큰 저장
+        fetchUserData(idToken, provider); // 사용자 데이터 가져오기
     };
+
     const kakaoOnFailure = (error) => {
         console.log(error);
     };
 
     const googleOnSuccess = (res) => {
         if (res.credential) {
-            fetch(`${BACKEND_URL}/auth/login/google?code=${res.credential}`)
-                .then(response => response.json())
-                .then(data => {
-                    saveJwtToken(data.token); // JWT 토큰 저장
-                    fetchUserData(data.token); // 사용자 데이터 가져오기
-                })
-                .catch(error => console.error('Google login error:', error));
+            const provider = 'google'; // 구글 로그인 provider 설정
+            saveJwtToken(res.credential); // JWT 토큰 저장
+            fetchUserData(res.credential, provider); // 사용자 데이터 가져오기
         }
     };
 
@@ -99,20 +95,11 @@ const LoginPage = () => {
             <div className="login-container">
                 <div className="login-buttons">
                     <GoogleOAuthProvider clientId="794316202103-0khiaob0cj1ukqe7pqgehsfqhssjs2o3.apps.googleusercontent.com">
-                        <GoogleLogin onSuccess={googleOnSuccess} onFailure={(err) => console.error('Google login failed:', err)} />
+                        <GoogleLogin
+                            onSuccess={googleOnSuccess}
+                            onFailure={(err) => console.error('Google login failed:', err)}
+                        />
                     </GoogleOAuthProvider>
-
-                    {/* NaverLogin 관련 코드 주석 처리 */}
-                    {/* 
-                    <NaverLogin
-                        clientId="your-naver-client-id"
-                        callbackUrl={`${BACKEND_URL}/login/oauth2/authorization/naver`}
-                        onSuccess={naverOnSuccess}
-                        onFailure={(err) => console.error('Naver login failed:', err)}
-                        render={(props) => <button className="login-button" onClick={props.onClick}>네이버로 로그인 하기</button>}
-                    />
-                    */}
-
                     <KakaoLogin
                         token={kakaoClientId}
                         onSuccess={kakaoOnSuccess}
