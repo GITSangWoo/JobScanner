@@ -15,7 +15,7 @@ public class DailyRankController {
     private DailyRankService dailyRankService;
 
     // 직무와 카테고리에 맞는 기술 스택 순위를 반환하는 API
-    @GetMapping("/rank")
+    @GetMapping("/dailyrank")
     public RankCategoryDTO getRanksByJobTitleAndCategory(@RequestParam String jobtitle, @RequestParam String category) {
         return dailyRankService.getRanksByJobTitleAndCategory(jobtitle, category);
     }
