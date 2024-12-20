@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Test</title>
+    <script>
+        async function testLogin(provider) {
+            const url = `/auth/login/${provider}`; // 백엔드 API 경로
+            try {
+                const response = await fetch(url, {
+                    method: 'GET',
+                    credentials: 'include' // 쿠키와 함께 요청
+                });
+
+                if (response.ok) {
+                    const userInfo = await response.json(); // JSON 데이터 추출
+                    displayResult(`Login Success (${provider}):`, userInfo);
+                } else {
+                    const errorText = await response.text();
+                    displayResult(`Login Failed (${provider}):`, errorText);
+                }
+            } catch (error) {
+                displayResult(`Error during ${provider} login:`, error.message);
+            }
+        }
+
+        function displayResult(title, data) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `<h3>${title}</h3><pre>${JSON.stringify(data, null, 2)}</pre>`;
+        }
+    </script>
+</head>
+<body>
+    <h1>Login Test Page</h1>
+    <p>Click the buttons below to test login with Kakao or Google.</p>
+    <button onclick="testLogin('kakao')">Test Kakao Login</button>
+    <button onclick="testLogin('google')">Test Google Login</button>
+    <div id="result" style="margin-top: 20px; border: 1px solid #ccc; padding: 10px;"></div>
+</body>
+</html>

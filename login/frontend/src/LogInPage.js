@@ -9,7 +9,7 @@ const LoginPage = () => {
     const navigate = useNavigate();
     const [jwtToken, setJwtToken] = useState(localStorage.getItem('jwtToken')); // 로컬 스토리지에서 JWT 토큰 불러오기
 
-    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8972';
+    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://localhost:8972';
 
     const handleRedirect = () => {
         navigate("/", { replace: true });

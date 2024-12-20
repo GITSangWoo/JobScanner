@@ -21,14 +21,14 @@ spring:
           google:
             clientId: ${GOOGLE_CLIENT_ID}
             clientSecret: ${GOOGLE_CLIENT_SECRET}
-            redirect-uri: http://localhost:8972/oauth2/callback
+            redirect-uri: https://localhost:8972/oauth2/callback
             scope:
               - profile
 
           naver:
             clientId: ${NAVER_CLIENT_ID}
             clientSecret: ${NAVER_CLIENT_SECRET}
-            redirectUri: http://localhost:8972/oauth2/callback
+            redirectUri: httpss://localhost:8972/oauth2/callback
             authorizationGrantType: authorization_code
             scope:
               - nickname
@@ -38,7 +38,7 @@ spring:
           kakao:
             clientId: ${KAKAO_CLIENT_ID}
             clientSecret: ${KAKAO_CLIENT_SECRET}
-            redirectUri: http://localhost:8972/oauth2/callback
+            redirectUri: https://localhost:8972/oauth2/callback
             authorizationGrantType: authorization_code
             scope:
               - profile_nickname
@@ -56,11 +56,16 @@ app:
     refreshTokenExpiry: 604800000
   oauth2:
     authorizedRedirectUris:
-      - http://localhost:3000/oauth/redirect
-
-server:
-  port: 8972
+      - https://localhost:8443/oauth/redirect
 
 logging:
   level:
     org.springframework.security: DEBUG
+
+server:
+  port: 8972  # 백엔드 서버 포트
+  ssl:
+    key-store: classpath:server.p12  # 인증서 파일 경로
+    key-store-password: password  # 인증서 비밀번호
+    key-store-type: PKCS12  # 인증서 파일 형식
+    key-alias: selfsigned  # 키 별칭
