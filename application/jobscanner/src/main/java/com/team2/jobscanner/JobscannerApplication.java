@@ -10,5 +10,5 @@ public class JobscannerApplication {
 	
 		SpringApplication.run(JobscannerApplication.class, args);
 	}
-
+	
 }

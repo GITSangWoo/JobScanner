@@ -14,7 +14,7 @@ public class Notice {
     @Id
     private Long notice_id;
 
-    @ManyToOne
+   @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "job_title", nullable = false, referencedColumnName = "job_title")
     private JobRole jobRoles;
 
