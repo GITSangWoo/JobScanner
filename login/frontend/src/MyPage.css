@@ -1,0 +1,241 @@
+/* 기본 스타일 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.my-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding-top: 20px; /* 메뉴와 버튼들이 잘 위치할 수 있도록 */
+}
+
+/* 상단 오른쪽 로그인/회원가입 버튼 */
+.top-right-buttons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+/* 왼쪽 상단 더보기 버튼 */
+.top-left-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+/* 메뉴 버튼 */
+.menu-button {
+    padding: 10px 15px;
+    font-size: 25px;
+    background-color: #EAEAEA;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #BDBDBD;
+}
+
+/* 드롭다운 메뉴 */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.dropdown-item {
+    background-color: transparent;
+    color: #333;
+    padding: 8px 10px;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* 드롭다운 메뉴가 열리면 보이도록 설정 */
+.dropdown-menu.open {
+    display: block;
+}
+
+/* 로고 스타일 */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh; /* 로고의 위치를 중간으로 유지 */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+    position: relative; /* 위치가 정상적으로 설정되도록 보장 */
+}
+
+.logo-container.scrolled {
+    transform: translateY(0); /* 최종 위치 (원래 위치) */
+    opacity: 1; /* 완전히 불투명 */
+}
+
+.logo {
+    font-size: 3rem; /* 적당한 크기로 로고 크기 설정 */
+    color: #333; /* 로고 색상 */
+    transition: transform 1s ease-out; /* 스무스한 효과를 위해 */
+}
+
+.welcome-message {
+    font-weight: bold;
+}
+
+/* 사용자 정보와 북마크 목록을 나란히 배치 */
+.user-info {
+    display: flex;
+    justify-content: space-between; /* 두 요소를 양 옆으로 배치 */
+    width: 90%; /* 페이지 너비의 80% */
+    margin-top: 20px;
+    height: 70%;
+    gap: 50px;
+}
+
+/* 소셜 로그인 계정 정보를 위한 스타일 */
+.social-login-info {
+    width: 25%; /* 왼쪽 영역 */
+    height: 40%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-login-info-box {
+    padding: 20px;
+    height: 80%;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #666;
+    font-size: 16px;
+}
+
+/* 북마크 목록 스타일 */
+.bookmark-list {
+    width: 70%; /* 오른쪽 영역 */
+    background-color: #ffffff;
+    padding: 20px;
+    height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 10px;
+}
+
+.bookmark-list h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* 북마크 토글 버튼 스타일 */
+.bookmark-toggle-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.bookmark-toggle-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EAEAEA;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.bookmark-toggle-button:hover {
+    background-color: #EAEAEA;
+}
+
+/* 활성화 상태에서 색상 변경 */
+.bookmark-toggle-button.active {
+    background-color: #BDBDBD;  /* 색상을 더 진하게 */
+}
+
+/* 테이블 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+table td {
+    background-color: #fff;
+    color: #333;
+}
+
+table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* 기본 북마크 버튼 스타일 */
+.mypage-bookmark-button {
+    padding: 5px 10px;
+    font-size: 15px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: black; /* 비활성화 상태에서 글자 색상 */
+    border-radius: 5px; /* 모서리 둥글게 */
+    outline: none;
+    white-space: nowrap;
+}
+
+/* 북마크 활성화 시 스타일 */
+.mypage-bookmark-button.bookmarked {
+    color: black; /* 북마크 추가된 상태에서 글자 색상 (예: 주황색) */
+    background-color: #f7f7f7; /* 배경색 변경 */
+}
+
+/* 버튼 hover 상태 */
+.mypage-bookmark-button:hover {
+    background-color: #f1f1f1; /* hover 시 배경색 변경 */
+    color: black; /* hover 시 글자 색상 */
+}
+
+/* 버튼 클릭 시 색상 변화 */
+.mypage-bookmark-button:active {
+    background-color: #e6e6e6; /* 클릭 시 배경색 변화 */
+    color: black; /* 클릭 시 글자 색상 */
+}
+
+
+
