@@ -9,7 +9,7 @@ const LoginPage = () => {
     const navigate = useNavigate();
     const [jwtToken, setJwtToken] = useState(localStorage.getItem('jwtToken')); // 로컬 스토리지에서 JWT 토큰 불러오기
 
-    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'https://localhost:8972';
+    const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8972';
 
     const handleRedirect = () => {
         navigate("/", { replace: true });
@@ -17,25 +17,28 @@ const LoginPage = () => {
     };
 
     // 로그인 후 사용자 데이터 가져오기
-    const fetchUserData = (token, provider) => {
-        fetch(`${BACKEND_URL}/auth/login/${provider}`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`,
-            },
+// 로그인 후 받은 JWT 토큰을 Authorization 헤더에 포함시켜 API 호출
+const fetchUserData = (token, provider) => {
+    console.log('Fetching user data for provider:', provider, 'with token:', token);  // 요청 전에 로그 찍기
+    fetch(`${BACKEND_URL}/auth/login/${provider}`, {
+        method: 'GET',
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`,  // 여기서 `token`이 your_code에 해당
+        },
+    })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Failed to fetch user data');
+            }
+            return response.json();
         })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to fetch user data');
-                }
-                return response.json();
-            })
-            .then(data => {
-                console.log('User data:', data);
-            })
-            .catch(error => console.error('Error fetching user data:', error));
-    };
+        .then(data => {
+            console.log('User data:', data);  // 받은 사용자 데이터 로그 찍기
+        })
+        .catch(error => console.error('Error fetching user data:', error)); // 오류 로그
+};
+
 
     // JWT 토큰 저장
     const saveJwtToken = (token) => {

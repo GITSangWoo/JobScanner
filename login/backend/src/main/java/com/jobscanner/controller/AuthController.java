@@ -1,83 +1,26 @@
-package com.jobscanner.controller;
+    package com.jobscanner.controller;
 
-import com.jobscanner.dto.SocialLoginDto;
-import com.jobscanner.service.AuthService;
-import com.jobscanner.service.SocialLoginService;
-import lombok.RequiredArgsConstructor;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-@RestController
-@RequestMapping("/auth")
-@RequiredArgsConstructor
-public class AuthController {
-
-    private final SocialLoginService socialLoginService;
-    private final AuthService authService;
-
-    // 카카오 로그인 처리
-    @GetMapping("/login/kakao")
-    public ResponseEntity<String> kakaoLogin(@RequestParam String code) {
-        try {
-            String token = socialLoginService.handleKakaoLogin(code);
-            return ResponseEntity.ok(token); // JWT 토큰 반환
-        } catch (Exception e) {
-            return ResponseEntity.status(500).body("카카오 로그인 실패: " + e.getMessage());
+    import org.springframework.security.core.Authentication;
+    import org.springframework.security.core.annotation.AuthenticationPrincipal;
+    import org.springframework.security.oauth2.core.user.OAuth2User;
+    import org.springframework.ui.Model;
+    import org.springframework.web.bind.annotation.GetMapping;
+    import org.springframework.web.bind.annotation.ModelAttribute;
+    import org.springframework.web.bind.annotation.RequestMapping;
+    import org.springframework.web.bind.annotation.RestController;
+    
+    import java.util.Map;
+    
+    @RestController
+    @RequestMapping("/auth")
+    public class AuthController {
+        
+        @GetMapping("/login")
+        public String oauthLoginInfo(Authentication authentication){
+            //oAuth2User.toString() 예시 : Name: [2346930276], Granted Authorities: [[USER]], User Attributes: [{id=2346930276, provider=kakao, name=김준우, email=bababoll@naver.com}]
+            OAuth2User oAuth2User = (OAuth2User) authentication.getPrincipal();
+            //attributes.toString() 예시 : {id=2346930276, provider=kakao, name=김준우, email=bababoll@naver.com}
+            Map<String, Object> attributes = oAuth2User.getAttributes();
+            return attributes.toString();
         }
     }
-
-    // 네이버 로그인 처리
-    @GetMapping("/login/naver")
-    public ResponseEntity<String> naverLogin(@RequestParam String code, @RequestParam String state) {
-        try {
-            String token = socialLoginService.handleNaverLogin(code, state);
-            return ResponseEntity.ok(token); // JWT 토큰 반환
-        } catch (Exception e) {
-            return ResponseEntity.status(500).body("네이버 로그인 실패: " + e.getMessage());
-        }
-    }
-
-    // 구글 로그인 처리
-    @GetMapping("/login/google")
-    public ResponseEntity<String> googleLogin(@RequestParam String code) {
-        try {
-            String token = socialLoginService.handleGoogleLogin(code);
-            return ResponseEntity.ok(token); // JWT 토큰 반환
-        } catch (Exception e) {
-            return ResponseEntity.status(500).body("구글 로그인 실패: " + e.getMessage());
-        }
-    }
-
-    // 카카오 회원가입 처리
-    @PostMapping("/signup/kakao")
-    public ResponseEntity<String> kakaoSignup(@RequestBody SocialLoginDto kakaoDto) {
-        try {
-            authService.handleKakaoSignup(kakaoDto);
-            return ResponseEntity.status(201).body("User created with Kakao");
-        } catch (Exception e) {
-            return ResponseEntity.status(500).body("카카오 회원가입 실패: " + e.getMessage());
-        }
-    }
-
-    // 네이버 회원가입 처리
-    @PostMapping("/signup/naver")
-    public ResponseEntity<String> naverSignup(@RequestBody SocialLoginDto naverDto) {
-        try {
-            authService.handleNaverSignup(naverDto);
-            return ResponseEntity.status(201).body("User created with Naver");
-        } catch (Exception e) {
-            return ResponseEntity.status(500).body("네이버 회원가입 실패: " + e.getMessage());
-        }
-    }
-
-    // 구글 회원가입 처리
-    @PostMapping("/signup/google")
-    public ResponseEntity<String> googleSignup(@RequestBody SocialLoginDto googleDto) {
-        try {
-            authService.handleGoogleSignup(googleDto);
-            return ResponseEntity.status(201).body("User created with Google");
-        } catch (Exception e) {
-            return ResponseEntity.status(500).body("구글 회원가입 실패: " + e.getMessage());
-        }
-    }
-}

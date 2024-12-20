@@ -1,4 +1,4 @@
-package com.jobscanner.entity;
+package com.jobscanner.domain;
 
 import java.time.LocalDateTime;
 import jakarta.persistence.Entity;
@@ -21,7 +21,7 @@ public class Auth {
 
     @ManyToOne
     @JoinColumn(name = "userId", insertable = false, updatable = false)
-    private User user; // 연관된 User 객체
+    private Member member; // 연관된 User 객체
 
     // Getter and Setter methods
 
@@ -65,11 +65,11 @@ public class Auth {
         this.expiredAt = expiredAt;
     }
 
-    public User getUser() {
-        return user;
+    public Member getUser() {
+        return member;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setUser(Member member) {
+        this.member = member;
     }
 }
