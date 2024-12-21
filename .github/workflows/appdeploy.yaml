@@ -29,11 +29,10 @@ jobs:
         run: |
           aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/u5b2p7i3
 
-      # docker images build or ECR push
       - name: Delete Existing App Image
         run: |
-          aws ecr-public batch-delete-image --repository-name job_scanner/app\
-          --image-ids imageTag=app-latest || echo "No existing image to delete."
+          # 'app-latest' 태그로 이미지를 삭제
+          aws ecr-public batch-delete-image --repository-name job_scanner/app --image-ids imageTag=app-latest || echo "No existing image to delete."
 
       - name: Build and Push App Image
         run: |
