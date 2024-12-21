@@ -22,7 +22,6 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
-      
       # ECR 로그인 # ECR 퍼블릭은 us-east-1리전만 동작 프라이빗변경 필요
       - name: Log in to Amazon ECR
         id: login-ecr
@@ -32,14 +31,14 @@ jobs:
       # docker images build or ECR push
       - name: Delete Existing testApp Image
         run: |
-          aws ecr-public batch-delete-image --repository-name job_scanner/testapp\
-          --image-ids imageTag=test-latest || echo "No existing image to delete."
+          # 'app-latest' 태그로 이미지를 삭제
+          aws ecr-public batch-delete-image --repository-name job_scanner/testapp --image-ids imageTag=testapp-latest || echo "No existing image to delete."
 
-      - name: Build and Push testApp Image
+      - name: Build and Push App Image
         run: |
           docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/testapp:testapp-latest -f ./application/jobscanner/Dockerfile ./application/jobscanner
           docker push public.ecr.aws/u5b2p7i3/job_scanner/testapp:testapp-latest
-
+      
   deploy:
     name: Deploy to EC2
     runs-on: ubuntu-latest
