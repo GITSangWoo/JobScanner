@@ -37,7 +37,7 @@ jobs:
 
       - name: Build and Push testApp Image
         run: |
-          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/app:testapp-latest -f ./application/jobscanner/Dockerfile ./application/jobscanner
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/testapp:testapp-latest -f ./application/jobscanner/Dockerfile ./application/jobscanner
           docker push public.ecr.aws/u5b2p7i3/job_scanner/testapp:testapp-latest
 
   deploy:
