@@ -1,4 +1,4 @@
-name: CI/CD for Spring Application
+name: CI/CD for Spring TestApplication
 
 on:
   push:
