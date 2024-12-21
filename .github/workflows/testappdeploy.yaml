@@ -30,15 +30,15 @@ jobs:
           aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/u5b2p7i3
 
       # docker images build or ECR push
-      - name: Delete Existing App Image
+      - name: Delete Existing testApp Image
         run: |
-          aws ecr-public batch-delete-image --repository-name job_scanner/app\
-          --image-ids imageTag=app-latest || echo "No existing image to delete."
+          aws ecr-public batch-delete-image --repository-name job_scanner/testapp\
+          --image-ids imageTag=test-latest || echo "No existing image to delete."
 
-      - name: Build and Push App Image
+      - name: Build and Push testApp Image
         run: |
-          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/app:app-latest -f ./application/jobscanner/Dockerfile ./application/jobscanner
-          docker push public.ecr.aws/u5b2p7i3/job_scanner/app:app-latest
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/app:testapp-latest -f ./application/jobscanner/Dockerfile ./application/jobscanner
+          docker push public.ecr.aws/u5b2p7i3/job_scanner/testapp:testapp-latest
 
   deploy:
     name: Deploy to EC2
@@ -61,7 +61,7 @@ jobs:
           # 이미지 PULL
           docker pull public.ecr.aws/u5b2p7i3/job_scanner/app:app-latest
           # 새 컨테이너 실행 
-          docker run -d -p 8972:8972 --name app public.ecr.aws/u5b2p7i3/job_scanner/app:app-latest
+          docker run -d -p 8973:8972 --name app public.ecr.aws/u5b2p7i3/job_scanner/app:app-latest
           # Remove Dangling Images
           docker image prune -f
           EOF
