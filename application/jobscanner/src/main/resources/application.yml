@@ -28,3 +28,6 @@ logging:
    org.hibernate.SQL: debug   # SQL 쿼리 로그 표시 logger로 
    org.hibernate.type.descriptor.sql: TRACE  # 파라미터 로그를 출력함 
 
+# 서버 포트 변경 (추가 부분)
+server:
+  port: 8972  # Spring Boot 애플리케이션의 포트를 8972로 변경
