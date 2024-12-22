@@ -1,137 +1,44 @@
 version: '3.8'
-
-networks:
-  airflow-network:
-    driver: bridge
-  spark-network:
-    driver: bridge
-
 services:
-  postgres:
-    image: postgres:13
-    container_name: airflow-postgres
-    environment:
-      POSTGRES_USER: airflow
-      POSTGRES_PASSWORD: airflow
-      POSTGRES_DB: airflow
-    volumes:
-      - postgres-db-volume:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
-    dns:
-      - 8.8.8.8
-      - 8.8.4.4
-    networks:
-      - airflow-network
-
-  redis:
-    image: redis:latest
-    container_name: airflow-redis
-    ports:
-      - "6379:6379"
-    dns:
-      - 8.8.8.8
-      - 8.8.4.4
-    networks:
-      - airflow-network
-
-  airflow:
-    container_name: airflow-web
+  link_crawler:
     build:
-      context: ./airflow
-      dockerfile: Dockerfile-airflow
-    ports:
-      - "8080:8080"
-    env_file:
-      - ./airflow/.env.airflow
+      context: .
+      dockerfile: Dockerfile
+    container_name: link_crawler
+    environment:
+      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+    restart: "no"
+    command: ["python", "/code/crwaling/link_crawling.py"]
     volumes:
+      - ./crwaling:/code/crwaling
+      - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
-      - ./airflow/dags:/code/dags
-      - ./airflow/airflow.cfg:/code/airflow.cfg
-      - ./airflow/logs:/code/logs
-      - ./airflow/plugins:/code/plugins
-    dns:
-      - 8.8.8.8
-      - 8.8.4.4
-    entrypoint: >
-      bash -c "
-      sleep 5 &&
-      /code/scripts/init_airflow.sh &&
-      exec airflow webserver
-      "
-    networks:
-      - airflow-network
-    depends_on:
-      - redis
-      - postgres
-    deploy:
-      resources:
-        limits:
-          memory: 2g  # 메모리 제한 설정 (예시)
 
-  airflow-scheduler:
-    container_name: airflow-scheduler
+  post_crawler:
     build:
-      context: ./airflow
-      dockerfile: Dockerfile-airflow
-    restart: always
-    env_file:
-      - ./airflow/.env.airflow
+      context: .
+      dockerfile: Dockerfile
+    container_name: post_crawler
+    environment:
+      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+    restart: "no"
+    command: ["python", "/code/crwaling/post_crawling.py"]
     volumes:
+      - ./crwaling:/code/crwaling
+      - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
-      - ./airflow/dags:/code/dags
-      - ./airflow/airflow.cfg:/code/airflow.cfg
-      - ./airflow/logs:/code/logs
-      - ./airflow/plugins:/code/plugins
-    dns:
-      - 8.8.8.8
-      - 8.8.4.4
-    entrypoint: >
-      bash -c "
-      sleep 10 &&
-      /code/scripts/init_airflow.sh &&
-      exec airflow scheduler &
-      echo 'Waiting for DAG to be loaded...';
-      while ! airflow dags list | grep dag_crawling_to_db; do
-        echo 'DAG not loaded yet. Retrying...';
-        sleep 5;
-      done &&
-      echo 'DAG Loaded. Triggering DAG...' &&
-      airflow dags trigger dag_crawling_to_db &&
-      wait"
-    depends_on:
-      - airflow
-      - postgres
-    networks:
-      - airflow-network
-    deploy:
-      resources:
-        limits:
-          memory: 2g  # 메모리 제한 설정 (예시)
 
-  spark-master:
+  text_crawler:
     build:
-      context: ./spark
-      dockerfile: Dockerfile-spark
-    ports:
-      - "7077:7077"
-      - "4040:4040"
+      context: .
+      dockerfile: Dockerfile
+    container_name: text_crawler
     environment:
-      SPARK_MODE: master
-    networks:
-      - spark-network
-
-  spark-worker:
-    build:
-      context: ./spark
-      dockerfile: Dockerfile-spark
-    environment:
-      SPARK_MODE: worker
-      SPARK_MASTER_URL: spark://spark-master:7077
-    depends_on:
-      - spark-master
-    networks:
-      - spark-network
-
-volumes:
-  postgres-db-volume:
+      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+    restart: "no"
+    command: ["python", "/code/crwaling/text_preprocess.py"]
+    volumes:
+      - ./crwaling:/code/crwaling
+      - ./extract:/code/extract
+      - ./logs:/code/logs
+      - ~/.aws:/code/.aws:ro

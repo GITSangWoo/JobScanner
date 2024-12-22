@@ -8,6 +8,7 @@ import boto3
 import random
 import json
 import pymysql
+import psutil
 from uuid import uuid4
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
@@ -25,6 +26,14 @@ from selenium.webdriver.common.action_chains import ActionChains
 from urllib.parse import urlparse, parse_qs, parse_qsl, urlencode, urljoin, unquote
 from concurrent.futures import ThreadPoolExecutor
 from zoneinfo import ZoneInfo
+
+
+def kill_existing_chrome():
+    """기존 Chrome 프로세스를 강제로 종료합니다."""
+    for proc in psutil.process_iter(attrs=["pid", "name"]):
+        if "chrome" in proc.info["name"].lower():
+            proc.kill()
+
 
 # 컨테이너 작업 디렉토리 변경
 os.chdir("/code/plugins")
@@ -183,6 +192,8 @@ def jumpit_crawling():
             done_time = columns[3]
             d_day = columns[4]  # D-day 값을 가져옴
             
+            logging.info(f"처리할 URL: {url}, 상태: {notice_status}, 작업 상태: {work_status}")
+
             # D-day 값이 숫자인 경우 deadline 계산
             try:
                 d_day_int = int(d_day)
@@ -198,25 +209,36 @@ def jumpit_crawling():
 
                 # Open the URL and perform web scraping directly
                 try:
-                    driver.get(url)
-                    time.sleep(3)  # Wait for the page to load
+                    try:
+                        driver.get(url)
+                        time.sleep(3)  # Wait for the page to load
+                        logging.info(f"URL 로드 성공: {url}")
+                    except Exception as e:
+                        logging.error(f"URL 로드 실패: {url}, 에러: {e}")
 
                     # Extract job content
                     job_content_text = None
                     try:
-                        job_content_section = WebDriverWait(driver, 10).until(
+                        job_content_section = WebDriverWait(driver, 30).until(
                             EC.presence_of_element_located((By.CSS_SELECTOR, ".sc-10492dab-3.hiVlDL"))  # Adjust this selector to match the correct element
                         )
                         job_content_text = job_content_section.text
-                    except Exception:
-                        print(f"Failed to extract job content from {url}")
+                        logging.info(f"콘텐츠 추출 성공: {url}")
+                    except Exception as e:
+                        logging.error(f"콘텐츠 추출 실패: {url}, 에러: {e}")
+                        continue  # 다음 URL로 넘어감
                     
                     # If content is found, save to file and upload to S3
                     if job_content_text:
-                        text_path = os.path.join("texts", f"{uuid.uuid4()}.txt")
-                        with open(text_path, "w", encoding="utf-8") as f:
-                            f.write(job_content_text)
-                        s3_text_url = upload_to_s3(text_path, bucket_name, f"job/DE/sources/{extract_site_name(url)}/txt/{uuid.uuid4()}.txt")
+                        try:
+                            text_path = os.path.join("texts", f"{uuid.uuid4()}.txt")
+                            with open(text_path, "w", encoding="utf-8") as f:
+                                f.write(job_content_text)
+                            s3_text_url = upload_to_s3(text_path, bucket_name, f"job/DE/sources/{extract_site_name(url)}/txt/{uuid.uuid4()}.txt")
+                            logging.info(f"콘텐츠 저장 및 S3 업로드 성공: {s3_text_url}")
+                        except Exception as e:
+                            logging.error(f"콘텐츠 저장/업로드 실패: {url}, 에러: {e}")
+                            continue
                     
                     # Extract additional info (like company name, post title)
                     company_name = None
@@ -254,11 +276,21 @@ def jumpit_crawling():
                         'update_time': datetime.now().strftime("%Y-%m-%d %H:%M:%S")
                     }
 
-                    insert_into_db(data, connection)  # Insert the data into the DB
-                    update_log_file(url, crawl_time)  # Update log file
+                    try:
+                        insert_into_db(data, connection)  # Insert the data into the DB
+                        logging.info(f"DB 삽입 성공: {url}")
+                    except Exception as e:
+                        logging.error(f"DB 삽입 실패: {url}, 에러: {e}")
+                        continue
+                    try:
+                        update_log_file(url, crawl_time)  # Update log file
+                        logging.info(f"로그 파일 업데이트 성공: {url}")
+                    except Exception as e:
+                        logging.error(f"로그 파일 업데이트 실패: {url}, 에러: {e}")
+                        continue
 
                 except Exception as e:
-                    print(f"Error processing {url}: {e}")
+                    logging.error(f"URL 처리 실패: {url}, 에러: {e}")
 
         if removed_links:
             update_removed_links_in_db(removed_links, connection)  # Update removed links in DB
@@ -1174,373 +1206,408 @@ def jobkorea_crawling():
     # AWS S3 연결 설정
     s3_client = boto3.client('s3')
 
+    # 로그 디렉토리와 파일 경로를 상수로 정의
+    LOG_DIR = "/code/logs/plugins_logs"
+    LOG_FILE = os.path.join(LOG_DIR, "jobkorea_log.txt")
+
+    # 디렉토리 생성
+    os.makedirs(LOG_DIR, exist_ok=True)
+
     # 로깅 설정
+    logging.getLogger().handlers = []
     logging.basicConfig(
-        filename=f"{os.path.dirname(os.path.abspath(__file__))}/logs/jobkorea_log.txt",
+        filename=LOG_FILE,
         level=logging.INFO,
         format="%(message)s"
     )
 
-    # AWS MySQL 연결 설정
-    db = pymysql.connect(
-        host='t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com',  # AWS 퍼블릭 IP
-        user='admin',  # MySQL 사용자
-        password='dltkddn1',  # MySQL 비밀번호
-        database='testdb1',  # 데이터베이스 이름
-        post='3306',
-        charset='utf8mb4'
-    )
+    try:
+        # AWS MySQL 연결 설정
+        db = pymysql.connect(
+            host='t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com',  # AWS 퍼블릭 IP
+            user='admin',  # MySQL 사용자
+            password='dltkddn1',  # MySQL 비밀번호
+            database='testdb1',  # 데이터베이스 이름
+            port=3306,
+            charset='utf8mb4'
+        )
 
-    # 커서 생성
-    cursor = db.cursor()
+        # 커서 생성
+        cursor = db.cursor()
 
-    # 테이블에 데이터 삽입을 위한 SQL 쿼리
-    insert_query = """
-        INSERT INTO jobkorea (create_time, update_time, removed_time, site, job_title, due_type, due_date, company, post_title, notice_type, org_url, s3_text_url, s3_images_url, responsibility, qualification, preferential)
-        VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
-    """
+        # 테이블에 데이터 삽입을 위한 SQL 쿼리
+        insert_query = """
+            INSERT INTO jobkorea (create_time, update_time, removed_time, site, job_title, due_type, due_date, company, post_title, notice_type, org_url, s3_text_url, s3_images_url, responsibility, qualification, preferential)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
+        """
 
-    # 작업 상태 기록 함수
-    def log_status(url, status, task_status):
-        time_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        logging.info(f"{url} - {status} - {task_status} - {time_now}")
+        # 작업 상태 기록 함수
+        def log_status(url, status, task_status):
+            time_now = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            logging.info(f"{url} - {status} - {task_status} - {time_now}")
 
-    # Selenium 웹 드라이버 설정
-    options = Options()
-    options.add_argument("--headless")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--disable-gpu")
-    options.add_argument('--disable-software-rasterizer')  # 소프트웨어 렌더링 비활성화
-    options.add_argument("--remote-debugging-port=9222")
-    options.add_argument("--window-size=1920x1080")
-    options.add_argument("--disable-background-networking")
-    options.add_argument("--disable-renderer-backgrounding")
-    options.add_argument("--disable-background-timer-throttling")
-    options.add_argument("--disable-extensions")
-    options.add_argument("--disable-infobars")
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+        # Selenium 웹 드라이버 설정
+        options = Options()
+        options.add_argument("--headless")
+        options.add_argument("--no-sandbox")
+        options.add_argument("--disable-dev-shm-usage")
+        options.add_argument("--disable-gpu")
+        options.add_argument('--disable-software-rasterizer')  # 소프트웨어 렌더링 비활성화
+        options.add_argument("--remote-debugging-port=9222")
+        options.add_argument("--window-size=1920x1080")
+        options.add_argument("--disable-background-networking")
+        options.add_argument("--disable-renderer-backgrounding")
+        options.add_argument("--disable-background-timer-throttling")
+        options.add_argument("--disable-extensions")
+        options.add_argument("--disable-infobars")
+        driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
-    # S3에서 파일 읽기 함수
-    def read_s3_file(bucket_name, file_key):
-        try:
-            obj = s3_client.get_object(Bucket=bucket_name, Key=file_key)
-            file_content = obj['Body'].read().decode('utf-8')
-            return set(line.strip() for line in file_content.splitlines())
-        except Exception as e:
-            print(f"[ERROR] S3 파일 읽기 실패: {file_key}, 에러: {e}")
-            return set()
-
-    # 가장 최근 날짜 파일 가져오기 (오늘 날짜 제외)
-    def get_latest_file_exclude_today(bucket_name, prefix, today_date):
-        response = s3_client.list_objects_v2(Bucket=bucket_name, Prefix=prefix)
-        if 'Contents' not in response:
-            print("S3 버킷에 파일이 존재하지 않습니다.")
-            return None
-        files = [content['Key'] for content in response['Contents']]
-        files = [file for file in files if today_date not in file]
-        if not files:
-            print("오늘 날짜 파일을 제외한 파일이 없습니다.")
-            return None
-        files.sort(reverse=True)
-        return files[0] if files else None
-
-    # 텍스트 및 이미지 디렉토리 생성
-    text_dir = "txt"
-    image_dir = "images"
-    if not os.path.exists(text_dir):
-        os.makedirs(text_dir)
-    if not os.path.exists(image_dir):
-        os.makedirs(image_dir)
-
-    processed_count = 0
-    error_count = 0
-    error_types = defaultdict(int)
-    skipped_urls = []
-
-    # 변경할 job_title 리스트
-    job_titles = ["DA", "MLE", "DE", "FE", "BE"]
-
-    # 오늘 날짜 계산
-    today_date = datetime.now().strftime("%Y%m%d")
-
-    # 회사 이름을 추출하는 함수
-    def extract_company(text):
-        match = re.search(r"(.*?)(를 소개해요)", text)
-        if match:
-            return match.group(1).strip()  # "를 소개해요" 앞의 텍스트
-        return ""  # "를 소개해요"가 없으면 빈 문자열
-
-    def download_image(img_url, image_path):
-        try:
-            response = requests.get(img_url, stream=True)  # Stream 모드로 다운로드
-            if response.status_code == 200:
-                content_size = int(response.headers.get('Content-Length', 0))  # 파일 크기 확인
-                if content_size < 1024:  # 1KB(1024 bytes) 미만이면 다운로드 중단
-                    return False
-                
-                with open(image_path, "wb") as file:
-                    for chunk in response.iter_content(1024):  # 데이터를 청크 단위로 쓰기
-                        file.write(chunk)
-                return True
-            else:
-                return False
-        except Exception as e:
-            print(f"[ERROR] {img_url}에서 이미지를 다운로드하는 중 오류가 발생했습니다.")
-            print(e)
-            return False
-
-    # S3에 파일 업로드 함수
-    def upload_to_s3(local_file_path, bucket_name, s3_path):
-        try:
-            s3_client.upload_file(local_file_path, bucket_name, s3_path)
-            print(f"[INFO] {local_file_path}를 s3://{bucket_name}에 업로드했습니다.")
-            return f"s3://{bucket_name}/{s3_path}"
-        except NoCredentialsError:
-            print("[ERROR] s3 자격 증명이 없습니다.")
-            return None
-        except Exception as e:
-            print(f"[ERROR] {local_file_path}를 S3로 업로드하는 중 오류가 발생했습니다.")
-            return None
-
-
-    processed_urls = set()  # 처리된 URL들을 저장할 집합
-
-    # 크롤링 시작 전에 이미 처리된 URL을 읽어옵니다 (예: 데이터베이스나 로그에서).
-    # 예를 들어, 로그에서 `done` 상태인 URL만 추출하여 `processed_urls`에 추가합니다.
-    with open('log.txt', 'r') as log_file:
-        for line in log_file:
-            if 'update - done' in line:
-                # 로그에서 날짜와 URL 추출
-                line_parts = line.split(' ')
-                log_date = line_parts[3]  # 날짜는 4번째 항목
-                url = line_parts[0]  # URL은 첫 번째 항목
-                processed_urls.add(url)
-
-    for job_title in job_titles:
-        # S3 버킷과 파일 경로 설정
-        prefix = f'job/{job_title}/sources/jobkorea/links'
-        today_links_file = f"{prefix}/{today_date}.txt"
+        # S3에서 파일 읽기 함수
+        def read_s3_file(bucket_name, file_key):
+            try:
+                obj = s3_client.get_object(Bucket=bucket_name, Key=file_key)
+                file_content = obj['Body'].read().decode('utf-8')
+                return set(line.strip() for line in file_content.splitlines())
+            except Exception as e:
+                print(f"[ERROR] S3 파일 읽기 실패: {file_key}, 에러: {e}")
+                return set()
 
         # 가장 최근 날짜 파일 가져오기 (오늘 날짜 제외)
-        latest_file = get_latest_file_exclude_today(bucket_name, prefix, today_date)
+        def get_latest_file_exclude_today(bucket_name, prefix, today_date):
+            response = s3_client.list_objects_v2(Bucket=bucket_name, Prefix=prefix)
+            if 'Contents' not in response:
+                print("S3 버킷에 파일이 존재하지 않습니다.")
+                return None
+            files = [content['Key'] for content in response['Contents']]
+            files = [file for file in files if today_date not in file]
+            if not files:
+                print("오늘 날짜 파일을 제외한 파일이 없습니다.")
+                return None
+            files.sort(reverse=True)
+            return files[0] if files else None
 
-        if not latest_file:
-            print(f"{job_title}: 최신 날짜의 파일이 없으므로 오늘 수집된 링크를 모두 크롤링합니다.")
-            latest_file = ""
-        else:
-            latest_date = latest_file.split('/')[-1].split('.')[0]
-            latest_links_file = f"{prefix}/{latest_date}.txt"
-            print(f"{job_title}: 사용할 파일: {latest_links_file}")
+        # 텍스트 및 이미지 디렉토리 생성
+        text_dir = "txt"
+        image_dir = "images"
+        if not os.path.exists(text_dir):
+            os.makedirs(text_dir)
+        if not os.path.exists(image_dir):
+            os.makedirs(image_dir)
 
-        today_urls = read_s3_file(bucket_name, today_links_file)
-        latest_urls = read_s3_file(bucket_name, latest_links_file) if latest_file else set()
+        processed_count = 0
+        error_count = 0
+        error_types = defaultdict(int)
+        skipped_urls = []
 
-        if today_urls:
-            if latest_urls:
-                new_today_urls = today_urls - latest_urls
-                removed_urls = latest_urls - today_urls
-                print(f"{job_title}: 새 URL 수: {len(new_today_urls)}, 삭제/마감된 URL 수: {len(removed_urls)}")
-            else:
-                new_today_urls = today_urls
-                removed_urls = set()
-                print(f"{job_title}: 새 URL 수: {len(new_today_urls)}, 제거된 URL 수: {len(removed_urls)}")
-        else:
-            print(f"{job_title}: {today_links_file}을(를) 읽을 수 없습니다.")
-            continue
+        # 변경할 job_title 리스트
+        job_titles = ["DA", "MLE", "DE", "FE", "BE"]
 
-        for url in new_today_urls:
-            url = url.strip()
-            if not url or url in processed_urls:
+        # 오늘 날짜 계산
+        today_date = datetime.now().strftime("%Y%m%d")
+
+        # 회사 이름을 추출하는 함수
+        def extract_company(text):
+            match = re.search(r"(.*?)(를 소개해요)", text)
+            if match:
+                return match.group(1).strip()  # "를 소개해요" 앞의 텍스트
+            return ""  # "를 소개해요"가 없으면 빈 문자열
+
+        def download_image(img_url, image_path):
+            try:
+                response = requests.get(img_url, stream=True)  # Stream 모드로 다운로드
+                if response.status_code == 200:
+                    content_size = int(response.headers.get('Content-Length', 0))  # 파일 크기 확인
+                    if content_size < 1024:  # 1KB(1024 bytes) 미만이면 다운로드 중단
+                        return False
+                    
+                    with open(image_path, "wb") as file:
+                        for chunk in response.iter_content(1024):  # 데이터를 청크 단위로 쓰기
+                            file.write(chunk)
+                    return True
+                else:
+                    return False
+            except Exception as e:
+                print(f"[ERROR] {img_url}에서 이미지를 다운로드하는 중 오류가 발생했습니다.")
+                print(e)
+                return False
+
+        # S3에 파일 업로드 함수
+        def upload_to_s3(local_file_path, bucket_name, s3_path):
+            try:
+                s3_client.upload_file(local_file_path, bucket_name, s3_path)
+                print(f"[INFO] {local_file_path}를 s3://{bucket_name}에 업로드했습니다.")
+                return f"s3://{bucket_name}/{s3_path}"
+            except NoCredentialsError:
+                print("[ERROR] s3 자격 증명이 없습니다.")
+                return None
+            except Exception as e:
+                print(f"[ERROR] {local_file_path}를 S3로 업로드하는 중 오류가 발생했습니다.")
+                return None
+
+        processed_urls = set()  # 처리된 URL들을 저장할 집합
+
+        # log.txt 경로를 상수로 정의
+        LOG_TXT_PATH = os.path.join(LOG_DIR, "log.txt")
+
+        # log.txt 파일이 없으면 생성
+        if not os.path.exists(LOG_TXT_PATH):
+            with open(LOG_TXT_PATH, 'w') as log_file:
+                log_file.write('')  # 빈 파일 생성
+
+        # log.txt 파일 읽기
+        with open(LOG_TXT_PATH, 'r') as log_file:
+            for line in log_file:
+                if 'update - done' in line:
+                    # 로그에서 날짜와 URL 추출
+                    line_parts = line.split(' ')
+                    log_date = line_parts[3]  # 날짜는 4번째 항목
+                    url = line_parts[0]  # URL은 첫 번째 항목
+                    processed_urls.add(url)
+
+        for job_title in job_titles:
+            try:
+                # S3 버킷과 파일 경로 설정
+                prefix = f'job/{job_title}/sources/jobkorea/links'
+                today_links_file = f"{prefix}/{today_date}.txt"
+
+                # 가장 최근 날짜 파일 가져오기 (오늘 날짜 제외)
+                latest_file = get_latest_file_exclude_today(bucket_name, prefix, today_date)
+
+                if not latest_file:
+                    print(f"{job_title}: 최신 날짜의 파일이 없으므로 오늘 수집된 링크를 모두 크롤링합니다.")
+                    latest_file = ""
+                else:
+                    latest_date = latest_file.split('/')[-1].split('.')[0]
+                    latest_links_file = f"{prefix}/{latest_date}.txt"
+                    print(f"{job_title}: 사용할 파일: {latest_links_file}")
+
+                today_urls = read_s3_file(bucket_name, today_links_file)
+                latest_urls = read_s3_file(bucket_name, latest_links_file) if latest_file else set()
+
+                if today_urls:
+                    if latest_urls:
+                        new_today_urls = today_urls - latest_urls
+                        removed_urls = latest_urls - today_urls
+                        print(f"{job_title}: 새 URL 수: {len(new_today_urls)}, 삭제/마감된 URL 수: {len(removed_urls)}")
+                    else:
+                        new_today_urls = today_urls
+                        removed_urls = set()
+                        print(f"{job_title}: 새 URL 수: {len(new_today_urls)}, 제거된 URL 수: {len(removed_urls)}")
+                else:
+                    print(f"{job_title}: {today_links_file}을(를) 읽을 수 없습니다.")
+                    continue
+
+                for url in new_today_urls:
+                    url = url.strip()
+                    if not url or url in processed_urls:
+                        continue
+
+                    try:
+                        driver.get(url)
+                        time.sleep(17)
+
+                        # iframe 전환
+                        try:
+                            iframe = WebDriverWait(driver, 10).until(
+                                EC.presence_of_element_located((By.CSS_SELECTOR, "iframe#gib_frame"))
+                            )
+                            driver.switch_to.frame(iframe)
+
+                            # iframe 내부 텍스트 가져오기
+                            iframe_body = driver.find_element(By.TAG_NAME, "body")
+                            iframe_text = iframe_body.text.strip()
+
+                            # 이미지 링크를 가져오기 전에 텍스트가 있는지 확인
+                            img_links = []  # 기본값을 빈 배열로 설정
+                            if iframe_text == "":  # 텍스트가 없을 경우에만 이미지 링크 추출
+                                # iframe 내부 이미지 링크 가져오기 (중복 제거)
+                                img_elements = iframe_body.find_elements(By.TAG_NAME, "img")
+                                img_links_set = set()  # 중복 제거를 위한 set 사용
+                                for img in img_elements:
+                                    src = img.get_attribute("src")
+                                    if src:
+                                        img_links_set.add(src)  # set에 추가
+                                img_links = list(img_links_set)  # 중복 제거된 리스트 생성pyt
+
+                        except Exception as e:
+                            # iframe이 없으면 section > article에서 텍스트 추출
+                            iframe_text = ""
+                            img_links = []
+                            content_section = driver.find_element(By.CSS_SELECTOR, "section.section-content")
+                            article = content_section.find_element(By.CLASS_NAME, "view-content.view-detail")
+                            iframe_text = article.text.strip()
+
+                            # 이미지 링크 추출 (중복 제거)
+                            img_elements = article.find_elements(By.TAG_NAME, "img")
+                            img_links_set = set()  # 중복 제거를 위한 set 사용
+                            for img in img_elements:
+                                src = img.get_attribute("src")
+                                if src:
+                                    img_links_set.add(src)  # set에 추가
+                            img_links = list(img_links_set)  # 중복 제거된 리스트 생성
+
+                        # 마감일 정보 수집
+                        driver.switch_to.default_content()
+                        deadline = None
+                        due_type = None
+                        try:
+                            date_elements = driver.find_elements(By.CSS_SELECTOR, "dl.date .tahoma")
+                            if len(date_elements) > 1:  # 시작일과 마감일 둘 다 존재하는 경우
+                                deadline_text = date_elements[1].text.strip()  # 두 번째 <span class="tahoma">
+                                deadline_match = re.search(r"(\d{4}\.\s*\d{2}\.\s*\d{2})", deadline_text)
+                                if deadline_match:
+                                    deadline = deadline_match.group(1).replace(".", "-").replace(" ", "")  # 2024-12-07 형태로 변환
+                                    due_type = "날짜"  # 날짜 형식이면 due_type을 "날짜"로 설정
+
+                        except Exception as e:
+                            # deadline이 None일 경우 "상시채용"으로 설정
+                            print(f"[ERROR] 마감일 정보가 정의되지 않았습니다. {url}")
+                            error_count += 1
+                            error_types["<deadline is not defined>"] += 1
+                            due_type = "상시채용"  # deadline이 없으면 due_type은 "상시채용"으로 설정
+
+                        # 회사 이름 및 게시물 제목 수집
+                        company_name = None
+                        try:
+                            summary_section = driver.find_element(By.CLASS_NAME, "secReadSummary")
+                            company_name = summary_section.find_element(By.CLASS_NAME, "coName").text.strip()
+                            if not company_name:
+                                summary_section = driver.find_element(By.CLASS_NAME, "view-subtitle dev-wrap-subtitle")
+                        except Exception as e:
+                            # 회사 이름을 "를 소개해요" 이전 텍스트로 추출
+                            company_name = extract_company(iframe_text) if company_name == None else company_name
+
+                        post_title = None
+                        try:
+                            summary_section = driver.find_element(By.CLASS_NAME, "secReadSummary")
+                            # 기존 제목을 찾고 텍스트를 추출
+                            post_title = summary_section.find_element(By.CLASS_NAME, "sumTit").text.strip()
+
+                            # "닫기" 이후의 텍스트만 추출
+                            if "닫기" in post_title:
+                                post_title = post_title.split("닫기")[1].strip()
+                        except Exception as e:
+                            try:
+                                # 두 번째 시도: section class="view-title dev-wrap-title"에서 제목 추출
+                                title_section = driver.find_element(By.CSS_SELECTOR, "section.view-title.dev-wrap-title")
+                                post_title = title_section.text.strip()
+                            except Exception as e2:
+                                print(f"[ERROR] 게시물 제목이 정의되지 않았습니다. {url}")
+                                error_count += 1
+                                error_types["post_title_not_found"] += 1  # 게시물 제목을 찾을 수 없을 경우 에러 추가
+                                post_title = "N/A"  # 게시물 제목을 찾을 수 없으면 'N/A'로 설정
+
+                        # 텍스트 파일 및 이미지 URL 업로드
+                        if iframe_text:  # 텍스트가 비어있지 않으면 텍스트 파일을 생성하고 업로드
+                            filename = f"{uuid4()}.txt"  # UUID 기반 파일 이름 생성
+                            file_path = os.path.join(text_dir, filename)
+                            with open(file_path, "w", encoding="utf-8") as file:
+                                file.write(iframe_text)  # 텍스트 파일 저장
+
+                            # S3로 업로드
+                            s3_text_url = upload_to_s3(file_path, "t2jt", f"job/{job_title}/sources/jobkorea/txt/{filename}")  # 텍스트 파일 업로드
+                        else:
+                            s3_text_url = None  # 텍스트가 없으면 s3_text_url은 None으로 설정
+
+                        # 이미지 다운로드 및 업로드
+                        image_urls = []
+                        for img_url in img_links:
+                            image_filename = f"{uuid4()}.jpg"  # UUID 기반 이미지 파일 이름 생성
+                            image_path = os.path.join(image_dir, image_filename)
+                            if download_image(img_url, image_path):
+                                image_url = upload_to_s3(image_path, "t2jt", f"job/{job_title}/sources/jobkorea/images/{image_filename}")
+                                if image_url:
+                                    image_urls.append(image_url)  # 업로드한 이미지 URL을 리스트에 추가
+
+
+                        # DB에 저장할 데이터 준비
+                        notice_type = None
+                        if s3_text_url and not image_urls:
+                            notice_type = "text"
+                        elif not s3_text_url and image_urls:
+                            notice_type = "images"
+                        elif s3_text_url and image_urls:
+                            notice_type = "both"
+
+                        # DB에 저장할 데이터 준비
+                        data = {
+                            "create_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                            "update_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+                            "removed_time": None,
+                            "site": "jobkorea",
+                            "job_title": job_title,  # job_title 동적으로 설정
+                            "due_type": due_type if due_type else "상시채용",
+                            "due_date": deadline,
+                            "company": company_name,
+                            "post_title": post_title,
+                            "notice_type": notice_type,
+                            "org_url": url,
+                            "s3_text_url": s3_text_url,
+                            "s3_images_url": ", ".join(image_urls) if image_urls else None,
+                            "responsibility": None,
+                            "qualification": None,
+                            "preferential": None
+                        }
+
+                        cursor.execute(insert_query, tuple(data.values()))
+                        db.commit()
+
+                        processed_count += 1
+                        log_status(url, "update", "done")
+                    # except Exception as e:
+                    #     skipped_urls.append(url)
+                    #     error_count += 1
+                    #     log_status(url, "update", "failed")
+                    except Exception as inner_e:
+                        logging.error(f"URL 처리 실패: {url}, 에러: {inner_e}", exc_info=True)
+                        log_status(url, "update", "failed")
+                        continue
+                
+                # removed_time 업데이트
+                if removed_urls:
+                    for removed_url in removed_urls:
+                        try:
+                            select_query = "SELECT removed_time FROM jobkorea WHERE org_url = %s"
+                            cursor.execute(select_query, (removed_url,))
+                            result = cursor.fetchone()
+                            if result and result[0] is None:
+                                update_query = "UPDATE jobkorea SET removed_time = %s WHERE org_url = %s"
+                                removed_time = datetime.now().strftime("%Y-%m-%d")
+                                cursor.execute(update_query, (removed_time, removed_url))
+                                db.commit()
+                        except Exception as e:
+                            print(f"[ERROR] URL {removed_url} 업데이트 실패: {e}")
+
+            except Exception as outer_e:
+                logging.error(f"{job_title} 작업 실패: {outer_e}", exc_info=True)
                 continue
 
-            try:
-                driver.get(url)
-                time.sleep(17)
+    except Exception as e:
+        logging.critical(f"전체 작업 실패: {e}", exc_info=True)
 
-                # iframe 전환
-                try:
-                    iframe = WebDriverWait(driver, 10).until(
-                        EC.presence_of_element_located((By.CSS_SELECTOR, "iframe#gib_frame"))
-                    )
-                    driver.switch_to.frame(iframe)
+    finally:
+        # 웹 드라이버 종료
+        try:
+            driver.quit()
+        except Exception as e:
+            logging.error(f"웹 드라이버 종료 실패: {e}", exc_info=True)
 
-                    # iframe 내부 텍스트 가져오기
-                    iframe_body = driver.find_element(By.TAG_NAME, "body")
-                    iframe_text = iframe_body.text.strip()
+        # MySQL 연결 끊기
+        try:
+            db.close()
+        except Exception as e:
+            logging.error(f"MySQL 연결 종료 실패: {e}", exc_info=True)
 
-                    # 이미지 링크를 가져오기 전에 텍스트가 있는지 확인
-                    img_links = []  # 기본값을 빈 배열로 설정
-                    if iframe_text == "":  # 텍스트가 없을 경우에만 이미지 링크 추출
-                        # iframe 내부 이미지 링크 가져오기 (중복 제거)
-                        img_elements = iframe_body.find_elements(By.TAG_NAME, "img")
-                        img_links_set = set()  # 중복 제거를 위한 set 사용
-                        for img in img_elements:
-                            src = img.get_attribute("src")
-                            if src:
-                                img_links_set.add(src)  # set에 추가
-                        img_links = list(img_links_set)  # 중복 제거된 리스트 생성pyt
-
-                except Exception as e:
-                    # iframe이 없으면 section > article에서 텍스트 추출
-                    iframe_text = ""
-                    img_links = []
-                    content_section = driver.find_element(By.CSS_SELECTOR, "section.section-content")
-                    article = content_section.find_element(By.CLASS_NAME, "view-content.view-detail")
-                    iframe_text = article.text.strip()
-
-                    # 이미지 링크 추출 (중복 제거)
-                    img_elements = article.find_elements(By.TAG_NAME, "img")
-                    img_links_set = set()  # 중복 제거를 위한 set 사용
-                    for img in img_elements:
-                        src = img.get_attribute("src")
-                        if src:
-                            img_links_set.add(src)  # set에 추가
-                    img_links = list(img_links_set)  # 중복 제거된 리스트 생성
-
-                # 마감일 정보 수집
-                driver.switch_to.default_content()
-                deadline = None
-                due_type = None
-                try:
-                    date_elements = driver.find_elements(By.CSS_SELECTOR, "dl.date .tahoma")
-                    if len(date_elements) > 1:  # 시작일과 마감일 둘 다 존재하는 경우
-                        deadline_text = date_elements[1].text.strip()  # 두 번째 <span class="tahoma">
-                        deadline_match = re.search(r"(\d{4}\.\s*\d{2}\.\s*\d{2})", deadline_text)
-                        if deadline_match:
-                            deadline = deadline_match.group(1).replace(".", "-").replace(" ", "")  # 2024-12-07 형태로 변환
-                            due_type = "날짜"  # 날짜 형식이면 due_type을 "날짜"로 설정
-
-                except Exception as e:
-                    # deadline이 None일 경우 "상시채용"으로 설정
-                    print(f"[ERROR] 마감일 정보가 정의되지 않았습니다. {url}")
-                    error_count += 1
-                    error_types["<deadline is not defined>"] += 1
-                    due_type = "상시채용"  # deadline이 없으면 due_type은 "상시채용"으로 설정
-
-                # 회사 이름 및 게시물 제목 수집
-                company_name = None
-                try:
-                    summary_section = driver.find_element(By.CLASS_NAME, "secReadSummary")
-                    company_name = summary_section.find_element(By.CLASS_NAME, "coName").text.strip()
-                    if not company_name:
-                        summary_section = driver.find_element(By.CLASS_NAME, "view-subtitle dev-wrap-subtitle")
-                except Exception as e:
-                    # 회사 이름을 "를 소개해요" 이전 텍스트로 추출
-                    company_name = extract_company(iframe_text) if company_name == None else company_name
-
-                post_title = None
-                try:
-                    summary_section = driver.find_element(By.CLASS_NAME, "secReadSummary")
-                    # 기존 제목을 찾고 텍스트를 추출
-                    post_title = summary_section.find_element(By.CLASS_NAME, "sumTit").text.strip()
-
-                    # "닫기" 이후의 텍스트만 추출
-                    if "닫기" in post_title:
-                        post_title = post_title.split("닫기")[1].strip()
-                except Exception as e:
-                    try:
-                        # 두 번째 시도: section class="view-title dev-wrap-title"에서 제목 추출
-                        title_section = driver.find_element(By.CSS_SELECTOR, "section.view-title.dev-wrap-title")
-                        post_title = title_section.text.strip()
-                    except Exception as e2:
-                        print(f"[ERROR] 게시물 제목이 정의되지 않았습니다. {url}")
-                        error_count += 1
-                        error_types["post_title_not_found"] += 1  # 게시물 제목을 찾을 수 없을 경우 에러 추가
-                        post_title = "N/A"  # 게시물 제목을 찾을 수 없으면 'N/A'로 설정
-
-                # 텍스트 파일 및 이미지 URL 업로드
-                if iframe_text:  # 텍스트가 비어있지 않으면 텍스트 파일을 생성하고 업로드
-                    filename = f"{uuid4()}.txt"  # UUID 기반 파일 이름 생성
-                    file_path = os.path.join(text_dir, filename)
-                    with open(file_path, "w", encoding="utf-8") as file:
-                        file.write(iframe_text)  # 텍스트 파일 저장
-
-                    # S3로 업로드
-                    s3_text_url = upload_to_s3(file_path, "t2jt", f"job/{job_title}/sources/jobkorea/txt/{filename}")  # 텍스트 파일 업로드
-                else:
-                    s3_text_url = None  # 텍스트가 없으면 s3_text_url은 None으로 설정
-
-                # 이미지 다운로드 및 업로드
-                image_urls = []
-                for img_url in img_links:
-                    image_filename = f"{uuid4()}.jpg"  # UUID 기반 이미지 파일 이름 생성
-                    image_path = os.path.join(image_dir, image_filename)
-                    if download_image(img_url, image_path):
-                        image_url = upload_to_s3(image_path, "t2jt", f"job/{job_title}/sources/jobkorea/images/{image_filename}")
-                        if image_url:
-                            image_urls.append(image_url)  # 업로드한 이미지 URL을 리스트에 추가
-
-
-                # DB에 저장할 데이터 준비
-                notice_type = None
-                if s3_text_url and not image_urls:
-                    notice_type = "text"
-                elif not s3_text_url and image_urls:
-                    notice_type = "images"
-                elif s3_text_url and image_urls:
-                    notice_type = "both"
-
-                # DB에 저장할 데이터 준비
-                data = {
-                    "create_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                    "update_time": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-                    "removed_time": None,
-                    "site": "jobkorea",
-                    "job_title": job_title,  # job_title 동적으로 설정
-                    "due_type": due_type if due_type else "상시채용",
-                    "due_date": deadline,
-                    "company": company_name,
-                    "post_title": post_title,
-                    "notice_type": notice_type,
-                    "org_url": url,
-                    "s3_text_url": s3_text_url,
-                    "s3_images_url": ", ".join(image_urls) if image_urls else None,
-                    "responsibility": None,
-                    "qualification": None,
-                    "preferential": None
-                }
-
-                cursor.execute(insert_query, tuple(data.values()))
-                db.commit()
-
-                processed_count += 1
-                log_status(url, "update", "done")
-            except Exception as e:
-                skipped_urls.append(url)
-                error_count += 1
-                log_status(url, "update", "failed")
-
-        # removed_time 업데이트
-        if removed_urls:
-            for removed_url in removed_urls:
-                try:
-                    select_query = "SELECT removed_time FROM jobkorea WHERE org_url = %s"
-                    cursor.execute(select_query, (removed_url,))
-                    result = cursor.fetchone()
-                    if result and result[0] is None:
-                        update_query = "UPDATE jobkorea SET removed_time = %s WHERE org_url = %s"
-                        removed_time = datetime.now().strftime("%Y-%m-%d")
-                        cursor.execute(update_query, (removed_time, removed_url))
-                        db.commit()
-                except Exception as e:
-                    print(f"[ERROR] URL {removed_url} 업데이트 실패: {e}")
-
-    # 웹 드라이버 종료
-    driver.quit()
-
-    # MySQL 연결 끊기
-    db.close()
-
-    print(f"[INFO] 처리된 총 개수: {processed_count}")
-    print(f"[INFO] 오류 개수: {error_count}")
-    for error_type, count in error_types.items():
-        print(f"[INFO] {error_type}: {count}")
+        # 처리 결과 출력
+        print(f"[INFO] 처리된 총 개수: {processed_count}")
+        print(f"[INFO] 오류 개수: {error_count}")
+        for error_type, count in error_types.items():
+            print(f"[INFO] {error_type}: {count}")
 
 def saramin_crawling():
     # 로깅 설정
     logging.basicConfig(
-        filename=f"{os.path.dirname(os.path.abspath(__file__))}/logs/saramin_log.log",
+        filename=os.path.join(os.path.dirname(os.path.abspath(__file__)), "logs",  "saramin_log.log"),
         level=logging.INFO,
         format="%(asctime)s [%(levelname)s] %(message)s"
     )
@@ -1965,6 +2032,8 @@ def saramin_crawling():
 
 
 def post_main():
+    kill_existing_chrome()  # 기존 프로세스 강제 종료
+    
     print(f"점핏 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     jumpit_crawling()
     print(f"점핏 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
