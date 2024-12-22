@@ -1,4 +1,4 @@
-name: CI/CD for Airflow and Spark
+name: CI/CD for crwaling
 
 on:
   pull_request:
