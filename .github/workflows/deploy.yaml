@@ -21,13 +21,13 @@ jobs:
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: ap-northeast-2
+          aws-region: us-east-1
       
       # ECR 로그인 # ECR 퍼블릭은 us-east-1리전만 동작 프라이빗변경 필요
       - name: Log in to Amazon ECR
         id: login-ecr
         run: |
-          aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com
+          aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 637423378310.dkr.ecr.us-east-1.amazonaws.com
 
 
       # docker images build or ECR push
@@ -38,8 +38,8 @@ jobs:
 
       - name: Build and Push Link Crawler Image
         run: |
-          docker build --no-cache -t 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/crwaling/link_crawler:latest -f ./link_crawler/Dockerfile ./link_crawler
-          docker push 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/crwaling/link_crawler:latest
+          docker build --no-cache -t 637423378310.dkr.ecr.us-east-1.amazonaws.com/job_scanner/crwaling/link_crawler:latest -f ./link_crawler/Dockerfile ./link_crawler
+          docker push 637423378310.dkr.ecr.us-east-1.amazonaws.com/job_scanner/crwaling/link_crawler:latest
 
       - name: Delete Existing Post Crawler Image
         run: |
@@ -48,8 +48,8 @@ jobs:
 
       - name: Build and Push Post Crawler Image
         run: |
-          docker build --no-cache -t 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/crwaling/post_crawler:latest -f ./post_crawler/Dockerfile ./post_crawler
-          docker push 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/crwaling/post_crawler:latest
+          docker build --no-cache -t 637423378310.dkr.ecr.us-east-1.amazonaws.com/job_scanner/crwaling/post_crawler:latest -f ./post_crawler/Dockerfile ./post_crawler
+          docker push 637423378310.dkr.ecr.us-east-1.amazonaws.com/job_scanner/crwaling/post_crawler:latest
 
       - name: Delete Existing Text Crawler Image
         run: |
@@ -58,5 +58,5 @@ jobs:
 
       - name: Build and Push Text Crawler Image
         run: |
-          docker build --no-cache -t 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/crwaling/text_crawler:latest -f ./text_crawler/Dockerfile ./text_crawler
-          docker push 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/crwaling/text_crawler:latest
+          docker build --no-cache -t 637423378310.dkr.ecr.us-east-1.amazonaws.com/job_scanner/crwaling/text_crawler:latest -f ./text_crawler/Dockerfile ./text_crawler
+          docker push 637423378310.dkr.ecr.us-east-1.amazonaws.com/job_scanner/crwaling/text_crawler:latest
