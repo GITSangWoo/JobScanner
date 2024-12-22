@@ -31,61 +31,32 @@ jobs:
 
 
       # docker images build or ECR push
-      - name: Delete Existing Airflow Image
+      - name: Delete Existing Link Crawler Image
         run: |
-          aws ecr batch-delete-image --repository-name job_scanner/airflow \
-          --image-ids imageTag=airflow-latest || echo "No existing image to delete."
+          aws ecr batch-delete-image --repository-name job_scanner/crwaling/link_crawler \
+          --image-ids imageTag=latest || echo "No existing link_crawler image to delete."
 
-      - name: Build and Push Airflow Image
+      - name: Build and Push Link Crawler Image
         run: |
-          docker build --no-cache -t 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:airflow-latest -f ./airflow/Dockerfile-airflow ./airflow
-          docker push 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:airflow-latest
+          docker build --no-cache -t 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/crwaling/link_crawler:latest -f ./link_crawler/Dockerfile ./link_crawler
+          docker push 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/crwaling/link_crawler:latest
 
-      - name: Delete Existing Spark Image
+      - name: Delete Existing Post Crawler Image
         run: |
-          aws ecr-public batch-delete-image --repository-name job_scanner/airflow \
-          --image-ids imageTag=spark-latest || echo "No existing image to delete."
+          aws ecr batch-delete-image --repository-name job_scanner/crwaling/post_crawler \
+          --image-ids imageTag=latest || echo "No existing post_crawler image to delete."
 
-      - name: Build and Push Spark Image
+      - name: Build and Push Post Crawler Image
         run: |
-          docker build --no-cache -t 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:spark-latest -f ./spark/Dockerfile-spark ./spark
-          docker push 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:spark-latest
+          docker build --no-cache -t 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/crwaling/post_crawler:latest -f ./post_crawler/Dockerfile ./post_crawler
+          docker push 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/crwaling/post_crawler:latest
 
-  deploy:
-    name: Deploy to EC2
-    runs-on: ubuntu-latest
-    needs: build-and-push
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Deploy to EC2
+      - name: Delete Existing Text Crawler Image
         run: |
-          echo "${{ secrets.EC2_PRIVATE_KEY }}" > ec2-key.pem
-          chmod 600 ec2-key.pem
-          ssh -o StrictHostKeyChecking=no -i ec2-key.pem ubuntu@${{ secrets.EC2_PUBLIC_IP }} << 'EOF'
-            docker pull 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:airflow-latest
-            docker pull 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:spark-latest
+          aws ecr batch-delete-image --repository-name job_scanner/crwaling/text_crawler \
+          --image-ids imageTag=latest || echo "No existing text_crawler image to delete."
 
-            mkdir -p ~/deploy
-            echo "
-            version: '3.8'
-            services:
-              airflow:
-                image: 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:airflow-latest
-                ports:
-                  - '8080:8080'
-
-              spark-master:
-                image: 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/airflow:spark-latest
-                ports:
-                  - '7077:7077'
-                  - '4040:4040'
-            " > ~/deploy/docker-compose.yaml
-
-            docker-compose -f ~/deploy/docker-compose.yaml up -d
-
-            # Remove Dangling Images
-            docker image prune -f
-          EOF
+      - name: Build and Push Text Crawler Image
+        run: |
+          docker build --no-cache -t 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/crwaling/text_crawler:latest -f ./text_crawler/Dockerfile ./text_crawler
+          docker push 637423378310.dkr.ecr.ap-northeast-2.amazonaws.com/job_scanner/crwaling/text_crawler:latest
