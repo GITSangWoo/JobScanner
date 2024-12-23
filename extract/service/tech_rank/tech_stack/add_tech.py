@@ -1,5 +1,7 @@
+import os
 import mysql.connector
 from mysql.connector import Error
+import json
 
 # RDS MySQL 연결 정보
 host = 't2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com'
@@ -8,24 +10,14 @@ user = 'admin'
 password = 'dltkddn1'
 database = 'service'
 
-# 기술 스택 리스트
-tech_stack_list = [
-    "Jupyter", "Spyder", "PyCharm", "VSCode", "Sublime Text", "Vim", "Emacs", "CI/CD", "Machine Learning", "Deep Learning",
-    "Natural Language Processing", "Hadoop", "Spark", "Kafka", "HBase", "Cassandra", "PostgreSQL", "MySQL", "SQLite",
-    "MongoDB", "Redis", "Elasticsearch", "Solr", "Apache Storm", "Flume", "Airflow", "Celery", "Apache Camel", "Kotlin", "Java",
-    "JavaScript", "TypeScript", "Swift", "Ruby", "Go", "Rust", "PHP", "SQLAlchemy", "JDBC", "Selenium", "Cypress", "Appium",
-    "Terraform", "Ansible", "Docker", "Kubernetes", "OpenShift", "Vagrant", "Git", "GitHub", "GitLab", "Bitbucket", "Jenkins",
-    "Travis CI", "CircleCI", "Puppet", "Chef", "Nagios", "Prometheus", "Grafana", "Zabbix", "Logstash", "Fluentd", "Loggly",
-    "Datadog", "New Relic", "Sentry", "AppDynamics", "GraphQL", "REST API", "gRPC", "WebSocket", "Socket.io", "Nginx",
-    "Apache HTTP Server", "Lighttpd", "Tomcat", "Jetty", "WildFly", "Spring Boot", "Spring MVC", "Spring Security", "Spring Cloud",
-    "Spring Data", "Spring Batch", "Spring Integration", "Node.js", "Express", "Vue.js", "React", "Angular", "Svelte", "Next.js",
-    "Nuxt.js", "Ember.js", "Django", "Flask", "Ruby on Rails", "Laravel", "Spring Framework", "ASP.NET", "Symfony", "Meteor",
-    "Hapi", "Golang", "C++", "C#", "C", "Python", "Perl", "CoffeeScript", "Shell", "SQL", "NoSQL", "MariaDB", "Agit", "Tableau",
-    "PyTorch", "TensorFlow", "AWS Athena", "LLM", "CSS", "Amazon S3", "AWS Redshift", "Firebase", "Snowflake", "Amazon CloudWatch", "Impala",
-    "GitHub Actions"
-]
+# 현재 파일(add_tech.py)의 디렉토리 경로를 기준으로 상대 경로 계산
+current_file_dir = os.path.dirname(os.path.abspath(__file__))  # 현재 파일의 절대 경로 가져오기
+json_file_path = os.path.join(current_file_dir, "../../../tech/tech_book.json")  # 상대 경로 계산
 
 # MySQL 연결
+connection = None  # connection 초기화
+cursor = None  # cursor 초기화
+
 try:
     connection = mysql.connector.connect(
         host=host,
@@ -36,7 +28,16 @@ try:
     )
 
     if connection.is_connected():
-        print("MySQL 서버에 연결되었습니다.")
+
+        # JSON 파일 로드
+        if not os.path.exists(json_file_path):
+            raise FileNotFoundError(f"JSON 파일을 찾을 수 없습니다: {json_file_path}")
+
+        with open(json_file_path, "r", encoding="utf-8") as file:
+            tech_data = json.load(file)
+
+        # 기술 스택 리스트의 키 값만 추출
+        tech_stack_list = list(tech_data.keys())
 
         # 커서 생성
         cursor = connection.cursor()
@@ -57,8 +58,12 @@ try:
 
 except Error as e:
     print(f"에러 발생: {e}")
+except FileNotFoundError as fe:
+    print(fe)
+except json.JSONDecodeError:
+    print("JSON 파일 형식이 잘못되었습니다.")
 finally:
-    if connection.is_connected():
+    if cursor:
         cursor.close()
+    if connection and connection.is_connected():
         connection.close()
-        print("MySQL 연결이 종료되었습니다.")

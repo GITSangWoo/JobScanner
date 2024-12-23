@@ -12,7 +12,7 @@ mysql_password = "dltkddn1"
 mysql_db = "testdb"
 
 # 기술 관련 키워드를 포함하는 tech_book.json 파일 경로
-tech_file_path = 'tech_book.json'
+tech_file_path = '../tech_book.json'
 
 # 기술 스택을 식별하는 함수
 def identify_tech_stack(text, tech_keywords):
