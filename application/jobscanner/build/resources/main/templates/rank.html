@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>순위</title>
+    <style>
+        table {
+            width: 70%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<h1 th:text="${jobTitle} + ' 직무 요구 기술 스택 순위'"></h1>
+
+<table>
+    <thead>
+    <tr>
+        <th>순위</th>
+        <th>주요업무 기술스택</th>
+        <th>요구 기업수</th>
+        <th>순위</th>
+        <th>자격요건 기술스택</th>
+        <th>요구 기업수</th>
+        <th>순위</th>
+        <th>우대사항 기술스택</th>
+        <th>요구 기업수</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- 각 카테고리별 순위를 출력 -->
+    <th:block th:each="rank, iterStat : ${ranksCategory1}">
+        <tr>
+            <td th:text="${iterStat.index + 1}+'등'"></td>
+            <td th:text="${rank.techStack.techName}"></td>
+            <td th:text="${rank.count}+'곳'"></td>
+
+            <!-- 카테고리 2, 카테고리 3의 데이터도 출력 -->
+            <td th:text="${iterStat.index + 1}+'등'"></td>
+            <td th:text="${ranksCategory2[iterStat.index].techStack.techName}"></td>
+            <td th:text="${ranksCategory2[iterStat.index].count}+'곳'"></td>
+            <td th:text="${iterStat.index + 1}+'등'"></td>
+            <td th:text="${ranksCategory3[iterStat.index].techStack.techName}"></td>
+            <td th:text="${ranksCategory3[iterStat.index].count}+'곳'"></td>
+        </tr>
+    </th:block>
+    </tbody>
+</table>
+
+</body>
+</html>
