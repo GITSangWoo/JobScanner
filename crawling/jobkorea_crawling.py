@@ -13,6 +13,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
 from collections import defaultdict
 import boto3
 import logging
@@ -24,10 +25,17 @@ def kill_existing_chrome():
         if "chrome" in proc.info["name"].lower():
             proc.kill()
 
+# 로그 디렉토리 설정
+log_directory = "/code/crawling/jobkorea"
+if not os.path.exists(log_directory):
+    os.makedirs(log_directory)
+
+# 로그 파일 경로 설정
+log_file_txt = os.path.join(log_directory, "jobkorea_log.txt")
 
 # 로깅 설정
 logging.basicConfig(
-    filename="jobkorea_log.txt",
+    filename=log_file_txt,
     level=logging.INFO,
     format="%(message)s"
 )
@@ -71,15 +79,16 @@ options.add_argument("--headless")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--disable-gpu")
-options.add_argument('--disable-software-rasterizer')  # 소프트웨어 렌더링 비활성화
-options.add_argument("--remote-debugging-port=9222")
-options.add_argument("--window-size=1920x1080")
-options.add_argument("--disable-background-networking")
-options.add_argument("--disable-renderer-backgrounding")
-options.add_argument("--disable-background-timer-throttling")
-options.add_argument("--disable-extensions")
-options.add_argument("--disable-infobars")
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+#options.add_argument('--disable-software-rasterizer')  # 소프트웨어 렌더링 비활성화
+#options.add_argument("--remote-debugging-port=9222")
+#options.add_argument("--window-size=1920x1080")
+#options.add_argument("--disable-background-networking")
+#options.add_argument("--disable-renderer-backgrounding")
+#options.add_argument("--disable-background-timer-throttling")
+#options.add_argument("--disable-extensions")
+#options.add_argument("--disable-infobars")
+options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")
+driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
 # S3에서 파일 읽기 함수
 def read_s3_file(bucket_name, file_key):
@@ -106,12 +115,12 @@ def get_latest_file_exclude_today(bucket_name, prefix, today_date):
     return files[0] if files else None
 
 # 텍스트 및 이미지 디렉토리 생성
-text_dir = "jobkorea_txt"
-image_dir = "jobkorea_images"
+text_dir = "jobkorea/jobkorea_txt"
+image_dir = "jobkorea/jobkorea_images"
 if not os.path.exists(text_dir):
-    os.makedirs(text_dir)
+    os.makedirs(text_dir, exist_ok=True)
 if not os.path.exists(image_dir):
-    os.makedirs(image_dir)
+    os.makedirs(image_dir, exist_ok=True)
 
 processed_count = 0
 error_count = 0
@@ -168,7 +177,7 @@ processed_urls = set()  # 처리된 URL들을 저장할 집합
 
 # 크롤링 시작 전에 이미 처리된 URL을 읽어옵니다 (예: 데이터베이스나 로그에서).
 # 예를 들어, 로그에서 `done` 상태인 URL만 추출하여 `processed_urls`에 추가합니다.
-with open('jobkorea_log.txt', 'r') as log_file:
+with open(log_file_txt, 'r') as log_file:
     for line in log_file:
         if 'update - done' in line:
             # 로그에서 날짜와 URL 추출
@@ -217,6 +226,9 @@ for job_title in job_titles:
         try:
             driver.get(url)
             time.sleep(17)
+            # 페이지가 완전히 로드될 때까지 대기
+            #WebDriverWait(driver, 17).until(
+            #    lambda driver: driver.execute_script("return document.readyState") == "complete")
 
             # iframe 전환
             try:
@@ -366,16 +378,22 @@ for job_title in job_titles:
 
             processed_count += 1
             log_status(url, "update", "done")
+        #except Exception as e:
+            #skipped_urls.append(url)
+            #error_count += 1
+            #log_status(url, "update", "failed")
         except Exception as e:
             skipped_urls.append(url)
             error_count += 1
-            log_status(url, "update", "failed")
+            error_types[str(e)] += 1  # 에러 타입별로 카운트
+            log_status(url, "update", f"failed - {e}")  # 에러 메시지 로그 추가
+            print(f"[ERROR] 크롤링 실패: {url}, 에러: {e}")
 
     # removed_time 업데이트
     if removed_urls:
         for removed_url in removed_urls:
             try:
-                select_query = "SELECT removed_time FROM jobkorea WHERE org_url = %s AND site = 'jobkorea'"
+                select_query = "SELECT removed_time FROM combined_table WHERE org_url = %s AND site = 'jobkorea'"
                 cursor.execute(select_query, (removed_url,))
                 result = cursor.fetchone()
                 if result and result[0] is None:
