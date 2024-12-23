@@ -8,9 +8,9 @@ services:
     environment:
       - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
     restart: "no"
-    command: ["python", "/code/crwaling/link_crawling.py"]
+    command: ["python", "/code/crawling/link_crawling.py"]
     volumes:
-      - ./crwaling:/code/crwaling
+      - ./crawling:/code/crawling
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
 
@@ -22,9 +22,9 @@ services:
     environment:
       - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
     restart: "no"
-    command: ["python", "/code/crwaling/post_crawling.py"]
+    command: ["python", "/code/crawling/post_crawling.py"]
     volumes:
-      - ./crwaling:/code/crwaling
+      - ./crawling:/code/crawling
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
 
@@ -36,9 +36,79 @@ services:
     environment:
       - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
     restart: "no"
-    command: ["python", "/code/crwaling/text_preprocess.py"]
+    command: ["python", "/code/crawling/text_preprocess.py"]
     volumes:
-      - ./crwaling:/code/crwaling
+      - ./crawling:/code/crawling
       - ./extract:/code/extract
+      - ./logs:/code/logs
+      - ~/.aws:/code/.aws:ro
+
+  jumpit_crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jumpit_crawler
+    environment:
+      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+    restart: "no"
+    command: ["python", "/code/crawling/jumpit_crawling.py"]
+    volumes:
+      - ./crawling:/code/crawling
+      - ./logs:/code/logs
+      - ~/.aws:/code/.aws:ro
+
+  wanted_crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: wanted_crawler
+    environment:
+      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+    restart: "no"
+    command: ["python", "/code/crawling/wanted_crawling.py"]
+    volumes:
+      - ./crawling:/code/crawling
+      - ./logs:/code/logs
+      - ~/.aws:/code/.aws:ro
+
+  incruit_crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: incruit_crawler
+    environment:
+      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+    restart: "no"
+    command: ["python", "/code/crawling/incruit_crawling.py"]
+    volumes:
+      - ./crawling:/code/crawling
+      - ./logs:/code/logs
+      - ~/.aws:/code/.aws:ro
+
+  jobkorea_crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jobkorea_crawler
+    environment:
+      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+    restart: "no"
+    command: ["python", "/code/crawling/jobkorea_crawling.py"]
+    volumes:
+      - ./crawling:/code/crawling
+      - ./logs:/code/logs
+      - ~/.aws:/code/.aws:ro
+
+  saramin_crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: saramin_crawler
+    environment:
+      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+    restart: "no"
+    command: ["python", "/code/crawling/saramin_crawling.py"]
+    volumes:
+      - ./crawling:/code/crawling
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro

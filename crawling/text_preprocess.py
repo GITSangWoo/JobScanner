@@ -9,7 +9,7 @@ import os
 import time
 
 # 컨테이너 작업 디렉토리 변경
-os.chdir("/code/plugins")
+os.chdir("/code/crawling")
 
 
 def jumpit_txt():
@@ -1091,3 +1091,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
