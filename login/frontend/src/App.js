@@ -6,6 +6,7 @@ import TechStackDetailsPage from "./TechStackDetailsPage"; // TechStackDetailsPa
 import LoginPage from "./LogInPage";
 // import OauthRedirectPage from "./OauthRedirectPage";
 import MyPage from "./MyPage";
+import LoginHandler from "./LoginHandler";
 
 function App() {
     return (
@@ -17,6 +18,8 @@ function App() {
                 <Route path="/job-summary" element={<JobSummaryPage />} /> {/* 기업 공고 요약 */}
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/mypage" element={<MyPage />} />
+                <Route path="/auth/login/kakao" element={<LoginHandler />} //당신이 redirect_url에 맞춰 꾸밀 컴포넌트
+                />
             </Routes>
         </Router>
     );
