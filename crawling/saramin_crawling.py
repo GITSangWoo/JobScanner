@@ -14,6 +14,7 @@ import uuid
 import time
 import logging
 import psutil
+import os
 
 def kill_existing_chrome():
     """기존 Chrome 프로세스를 강제로 종료합니다."""
@@ -452,7 +453,7 @@ def execute(keyword):
         conn = get_connection()
         try:
             cursor = conn.cursor()
-            cursor.execute("SELECT MAX(id) FROM saramin")
+            cursor.execute("SELECT MAX(id) FROM combined_table")
             max_id_result = cursor.fetchone()[0]
             next_id = (max_id_result + 1) if max_id_result is not None else 1  # 없는 경우 1로 시작
         finally:
