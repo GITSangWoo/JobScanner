@@ -13,6 +13,11 @@ services:
       - ./crawling:/code/crawling
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
 
   post_crawler:
     build:
@@ -27,6 +32,11 @@ services:
       - ./crawling:/code/crawling
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
 
   text_crawler:
     build:
@@ -42,6 +52,11 @@ services:
       - ./extract:/code/extract
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
 
   jumpit_crawler:
     build:
@@ -56,6 +71,11 @@ services:
       - ./crawling:/code/crawling
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
 
   wanted_crawler:
     build:
@@ -70,6 +90,11 @@ services:
       - ./crawling:/code/crawling
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
 
   incruit_crawler:
     build:
@@ -84,6 +109,11 @@ services:
       - ./crawling:/code/crawling
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
 
   jobkorea_crawler:
     build:
@@ -98,6 +128,11 @@ services:
       - ./crawling:/code/crawling
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
 
   saramin_crawler:
     build:
@@ -112,3 +147,8 @@ services:
       - ./crawling:/code/crawling
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)

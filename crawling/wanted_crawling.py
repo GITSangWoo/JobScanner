@@ -39,7 +39,7 @@ logging.basicConfig(
 )
 
 # 컨테이너 작업 디렉토리 변경
-os.chdir("/code/crwaling")
+os.chdir("/code/crawling")
 
 # AWS S3 클라이언트 설정
 s3_client = boto3.client('s3')
@@ -63,14 +63,15 @@ options.add_argument("--headless")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--disable-gpu")
-options.add_argument('--disable-software-rasterizer')  # 소프트웨어 렌더링 비활성화
-options.add_argument("--remote-debugging-port=9222")
-options.add_argument("--window-size=1920x1080")
-options.add_argument("--disable-background-networking")
-options.add_argument("--disable-renderer-backgrounding")
-options.add_argument("--disable-background-timer-throttling")
-options.add_argument("--disable-extensions")
-options.add_argument("--disable-infobars")
+#options.add_argument('--disable-software-rasterizer')  # 소프트웨어 렌더링 비활성화
+#options.add_argument("--remote-debugging-port=9222")
+#options.add_argument("--window-size=1920x1080")
+#options.add_argument("--disable-background-networking")
+#options.add_argument("--disable-renderer-backgrounding")
+#options.add_argument("--disable-background-timer-throttling")
+#options.add_argument("--disable-extensions")
+#options.add_argument("--disable-infobars")
+options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")
 driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
 
 # 오늘 날짜로 로그파일 이름 설정

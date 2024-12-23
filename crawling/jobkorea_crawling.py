@@ -24,11 +24,6 @@ def kill_existing_chrome():
         if "chrome" in proc.info["name"].lower():
             proc.kill()
 
-# S3 버킷 이름 고정
-bucket_name = 't2jt'
-
-# AWS S3 연결 설정
-s3_client = boto3.client('s3')
 
 # 로깅 설정
 logging.basicConfig(
@@ -46,6 +41,15 @@ db = pymysql.connect(
     port=3306,
     charset='utf8mb4'
 )
+
+# 컨테이너 작업 디렉토리 변경
+os.chdir("/code/crawling")
+
+# S3 버킷 이름 고정
+bucket_name = 't2jt'
+
+# AWS S3 연결 설정
+s3_client = boto3.client('s3')
 
 # 커서 생성
 cursor = db.cursor()

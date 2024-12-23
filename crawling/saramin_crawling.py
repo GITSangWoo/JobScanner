@@ -39,6 +39,9 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'  # 로그 메시지 형식
 )
 
+# 컨테이너 작업 디렉토리 변경
+os.chdir("/code/crawling")
+
 # AWS S3 클라이언트 생성
 s3 = boto3.client('s3')
 
