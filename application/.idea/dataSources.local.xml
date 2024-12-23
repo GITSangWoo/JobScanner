@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="dataSourceStorageLocal" created-in="IU-243.22562.145">
-    <data-source name="service@t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com" uuid="3ff92451-168b-4a2a-808f-8b85f83c7c6f">
-      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" />
-      <schema-mapping />
-    </data-source>
-  </component>
-</project>
