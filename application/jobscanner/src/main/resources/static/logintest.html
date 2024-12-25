@@ -54,7 +54,7 @@
         console.log('oauthProvider:', oauthProvider);
 
         // 로그인 요청을 보냄
-        fetch('http://localhost:8972/auth/login', {
+        fetch('http://localhost:8973/auth/login', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -87,7 +87,7 @@
 
     // JWT 토큰을 이용해 프로필 정보 요청
     function fetchProfile(token) {
-        fetch('http://localhost:8972/api/user/profile', {
+        fetch('http://localhost:8973/api/user/profile', {
             method: 'GET',
             headers: {
                 'Authorization': `Bearer ${token}`

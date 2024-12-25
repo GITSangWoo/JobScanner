@@ -60,7 +60,7 @@ jobs:
           # 이미지 PULL
           docker pull public.ecr.aws/u5b2p7i3/job_scanner/testapp:testapp-latest
           # 새 컨테이너 실행 
-          docker run -d -p 8973:8972 --name testapp -e JWT_SECRET_KEY="{{secrets.JWT_SECRET_KEY}}" public.ecr.aws/u5b2p7i3/job_scanner/testapp:testapp-latest
+          docker run -d -p 8973:8973 --name testapp -e JWT_SECRET_KEY="{{secrets.JWT_SECRET_KEY}}" public.ecr.aws/u5b2p7i3/job_scanner/testapp:testapp-latest
           # Remove Dangling Images
           docker image prune -f
           EOF
