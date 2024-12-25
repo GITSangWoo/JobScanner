@@ -59,7 +59,7 @@ logging:
 
 # 서버 포트 변경 (추가 부분)
 server:
-  port: 8972  # Spring Boot 애플리케이션의 포트를 8972로 변경
+  port: 8973  # 테스트 Spring Boot 애플리케이션의 포트를 8973로 변경, 실제는 8972
 
 # JWT 설정 (JWT 관련 추가 설정이 필요하면 이곳에 추가)
 jwt:
