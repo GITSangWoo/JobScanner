@@ -19,6 +19,9 @@ public class TechStack {
     @OneToMany(mappedBy = "techStack")
     private List<DailyRank> dailyRank;
 
+    @OneToMany(mappedBy = "techStack")
+    private List<TechStackBookmark> techStackBookmarks;
+
     @Column(name="tech_description", columnDefinition = "TEXT",nullable = false)
     private String techDescription;
 

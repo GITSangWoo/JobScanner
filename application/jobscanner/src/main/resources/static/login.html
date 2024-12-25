@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카카오 로그인</title>
+</head>
+<body>
+<h1>카카오 로그인</h1>
+
+<!-- 카카오 로그인 버튼 -->
+<button onclick="kakaoLogin()">카카오 로그인</button>
+
+<!-- 카카오 로그인 SDK -->
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script>
+    // 카카오 API 초기화
+    Kakao.init('ff469952cde7e7b406e4926e6a7524b2');  // 'YOUR_APP_KEY'는 카카오 개발자 사이트에서 발급받은 앱 키
+
+    // 로그인 버튼 클릭 시 카카오 로그인 팝업 실행
+    function kakaoLogin() {
+        Kakao.Auth.login({
+            success: function(authObj) {
+                // 로그인 성공 시 인증 토큰 받기
+                const accessToken = authObj.access_token;
+                console.log("카카오 로그인 성공: ", accessToken);
+
+                // 백엔드로 토큰 전달하여 사용자 정보 가져오기
+                fetch('http://localhost:8972/auth/kakao', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ accessToken: accessToken })
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        // JWT 토큰 받기
+                        console.log("JWT 토큰: ", data.token);
+                        // 여기서 토큰을 이용해 로그인 후 프로필 정보나 다른 작업을 할 수 있습니다.
+                    })
+                    .catch(error => console.error('Error:', error));
+            },
+            fail: function(err) {
+                console.error(err);
+            }
+        });
+    }
+</script>
+</body>
+</html>

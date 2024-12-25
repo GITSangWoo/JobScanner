@@ -23,8 +23,7 @@ public class TechStackService {
                 techStack.getTechDescription(),   // 기술 설명
                 techStack.getYoutubeLink(),       // 유튜브 링크
                 techStack.getBookLink(),          // 도서 링크
-                techStack.getDocsLink(),          // 공식 문서 링크
-                techStack.getAuditTime().getUpdateTime().toString() // 업데이트 시간
+                techStack.getDocsLink()          // 공식 문서 링크
         );
     }
 }

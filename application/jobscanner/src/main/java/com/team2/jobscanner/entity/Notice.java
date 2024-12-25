@@ -6,6 +6,7 @@ import lombok.Getter;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Getter
 @Entity
@@ -14,9 +15,12 @@ public class Notice {
     @Id
     private Long notice_id;
 
-   @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "job_title", nullable = false, referencedColumnName = "job_title")
     private JobRole jobRoles;
+
+    @OneToMany(mappedBy = "notice")
+    private List<NoticeBookmark> noticeBookmarks;
 
     @Column(name = "due_type", length = 20, nullable = false)
     private String dueType;

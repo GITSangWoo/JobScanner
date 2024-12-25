@@ -16,7 +16,7 @@ public class UserActions {
 
     @ManyToOne
     @JoinColumn(name="user_id",nullable = false)
-    private Users users;
+    private User user;
 
     @Column(name="action_type", length = 50, nullable = false)
     private String actionType;

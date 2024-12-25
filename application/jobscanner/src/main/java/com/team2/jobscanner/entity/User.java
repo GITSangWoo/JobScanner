@@ -3,34 +3,45 @@ package com.team2.jobscanner.entity;
 import com.team2.jobscanner.time.AuditTime;
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
+import org.springframework.security.web.server.authentication.ott.ServerOneTimeTokenAuthenticationConverter;
 
 import java.time.LocalDateTime;
+import java.util.List;
 
+@Setter
 @Getter
 @Entity
-public class Auth {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private User user;
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL,mappedBy = "user")
+    private List<UserActions> userActions;
 
-    @Column(name = "access_token", length = 512, nullable = false)
-    private String accessToken;
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL,mappedBy = "user")
+    private List<Auth> auths;
 
-    @Column(name = "refresh_token", length = 512, nullable = false)
-    private String refreshToken;
+    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL,mappedBy = "user")
+    private List<ApiHistory> apiHistories;
 
-    @Column(name = "expired_time")
-    private LocalDateTime expiredTime;
+    private String email;
+    private String name;
+
+    private String oauthProvider;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<TechStackBookmark> techStackBookmarks;
+
+    @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
+    private List<NoticeBookmark> noticeBookmarks;
 
 
     @Embedded
     private AuditTime auditTime;
 
-    public Auth() {
+    public User() {
         this.auditTime = new AuditTime();
     }
 
@@ -47,4 +58,5 @@ public class Auth {
     public void onPreUpdate() {
         this.auditTime.setUpdateTime(LocalDateTime.now());  // 데이터가 수정될 때마다 update_time 갱신
     }
+    
 }

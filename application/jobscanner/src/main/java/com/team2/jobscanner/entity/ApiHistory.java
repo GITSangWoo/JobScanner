@@ -13,7 +13,7 @@ public class ApiHistory {
 
     @ManyToOne
     @JoinColumn(name="user_id",nullable = false)
-    private Users users;
+    private User user;
 
     @Column(name="request_api_url", length = 200 ,nullable = false)
     private String requestApiUrl;

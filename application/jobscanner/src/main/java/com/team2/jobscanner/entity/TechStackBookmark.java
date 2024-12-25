@@ -3,34 +3,28 @@ package com.team2.jobscanner.entity;
 import com.team2.jobscanner.time.AuditTime;
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
 @Getter
+@Setter
 @Entity
-public class Auth {
+public class TechStackBookmark {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @Column(name = "access_token", length = 512, nullable = false)
-    private String accessToken;
-
-    @Column(name = "refresh_token", length = 512, nullable = false)
-    private String refreshToken;
-
-    @Column(name = "expired_time")
-    private LocalDateTime expiredTime;
-
+    @ManyToOne
+    private TechStack techStack;
 
     @Embedded
     private AuditTime auditTime;
 
-    public Auth() {
+    public TechStackBookmark() {
         this.auditTime = new AuditTime();
     }
 
@@ -47,4 +41,7 @@ public class Auth {
     public void onPreUpdate() {
         this.auditTime.setUpdateTime(LocalDateTime.now());  // 데이터가 수정될 때마다 update_time 갱신
     }
+
+
+    // Getter, Setter, Constructor
 }

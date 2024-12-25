@@ -5,9 +5,9 @@ import lombok.Getter;
 
 @Getter
 public class JobRoleDTO {
-    private String jobTitle;
-    private String roleName;
-    private String roleDescription;
+    private final String jobTitle;
+    private final String roleName;
+    private final String roleDescription;
 
     // 생성자
     public JobRoleDTO(String jobTitle, String roleName, String roleDescription) {

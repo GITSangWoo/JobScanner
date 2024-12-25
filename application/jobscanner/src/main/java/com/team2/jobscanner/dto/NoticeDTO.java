@@ -6,14 +6,14 @@ import lombok.Getter;
 
 @Getter
 public class NoticeDTO {
-    private String duetype;
-    private LocalDate duedate ;
-    private String company;
-    private String posttitle;
-    private String responsibility;
-    private String qualification;
-    private String preferential;
-    private String tottech;
+    private final String duetype;
+    private final LocalDate duedate ;
+    private final String company;
+    private final String posttitle;
+    private final String responsibility;
+    private final String qualification;
+    private final String preferential;
+    private final String tottech;
 
     public NoticeDTO(String duetype,LocalDate duedate, String company, String posttitle, String responsibility, String qualification, String preferential, String tottech){
         this.duetype = duetype;

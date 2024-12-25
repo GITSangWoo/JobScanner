@@ -28,7 +28,6 @@ public class NoticeService {
             notice.getQualification(),
             notice.getPreferential(),
             notice.getTotTech()
-
             ))
             .collect(Collectors.toList());
 

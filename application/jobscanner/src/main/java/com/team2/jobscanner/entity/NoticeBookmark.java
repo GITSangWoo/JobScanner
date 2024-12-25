@@ -3,43 +3,28 @@ package com.team2.jobscanner.entity;
 import com.team2.jobscanner.time.AuditTime;
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
-import java.util.List;
 
 @Getter
+@Setter
 @Entity
-public class Users {
+public class NoticeBookmark {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL,mappedBy = "users")
-    private List<UserActions> userActions;
+    @ManyToOne
+    private User user;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL,mappedBy = "users")
-    private List<Auth> auths;
-
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL,mappedBy = "users")
-    private List<ApiHistory> apiHistories;
-
-    @Column(name="oauth_provider", length = 50 ,nullable = false)
-    private String oauthProvider;
-
-    @Column(name="oauth_id", length = 255 ,nullable = false)
-    private String oauthId;
-
-    @Column(name = "book_mark", columnDefinition = "json")
-    private String bookMark;
-
+    @ManyToOne
+    private Notice notice;
 
     @Embedded
     private AuditTime auditTime;
 
-    public Users() {
-        this.auditTime = new AuditTime();
-    }
-
+    public NoticeBookmark() {this.auditTime = new AuditTime();}
     @PrePersist
     public void onPrePersist() {
         // 새 데이터가 삽입될 때만 create_time은 현재 시간으로 설정됨
@@ -53,5 +38,6 @@ public class Users {
     public void onPreUpdate() {
         this.auditTime.setUpdateTime(LocalDateTime.now());  // 데이터가 수정될 때마다 update_time 갱신
     }
-    
+    // Getter, Setter, Constructor
 }
+
