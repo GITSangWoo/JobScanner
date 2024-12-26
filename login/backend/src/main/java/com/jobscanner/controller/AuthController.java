@@ -1,6 +1,5 @@
 package com.jobscanner.controller;
 
-import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import jakarta.servlet.http.HttpServletResponse;
 
@@ -10,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-import java.net.http.HttpHeaders;
 
 import com.jobscanner.converter.UserConverter;
 import com.jobscanner.domain.User;
@@ -20,7 +18,6 @@ import com.jobscanner.service.AuthService;
 import com.jobscanner.util.BaseResponse;
 
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Service;
 
 @RestController
 @RequiredArgsConstructor

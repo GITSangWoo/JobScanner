@@ -40,6 +40,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.web.cors.CorsConfiguration;
+import org.springframework.web.cors.CorsConfigurationSource;
+import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+
+import com.jobscanner.auth.AuthSuccessHandler;
 
 @Configuration
 @EnableWebSecurity
@@ -59,6 +64,12 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
+            .cors()
+            .and()
+            .formLogin()
+            .loginPage("/login")
+            .successHandler(new AuthSuccessHandler())
+            .and()
             .csrf().disable()  // CSRF 보호 비활성화
             .authorizeHttpRequests(authorizeRequests ->
                 authorizeRequests
@@ -73,4 +84,18 @@ public class SecurityConfig {
 
         return http.build();
     }
+    @Bean
+    public CorsConfigurationSource corsConfigurationSource() {
+        CorsConfiguration configuration = new CorsConfiguration();
+        configuration.addAllowedOrigin("http://localhost:3000"); // React 클라이언트 URL
+        configuration.addAllowedMethod("*"); // 모든 HTTP 메서드 허용
+        configuration.addAllowedHeader("*"); // 모든 헤더 허용
+        configuration.setAllowCredentials(true); // 쿠키 및 자격증명 허용
+        configuration.addExposedHeader("Authorization"); // Authorization 헤더 노출
+    
+        UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+        source.registerCorsConfiguration("/**", configuration); // 모든 경로에 대해 CORS 적용
+        return source;
+    }
+    
 }

@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { GoogleLogin } from "@react-oauth/google";
-import { GoogleOAuthProvider } from "@react-oauth/google";
-// import KakaoLogin from "react-kakao-login";
 import './LogInPage.css';
 import { KAKAO_AUTH_URL } from './KakaoOAuth';
+import axios from 'axios';
 
 const LoginPage = () => {
     const navigate = useNavigate();
@@ -17,22 +15,6 @@ const LoginPage = () => {
         window.location.reload(); // 페이지 새로고침
     };
 
-    // 로그인 후 사용자 데이터 가져오기
-    const fetchUserData = (token) => {
-        fetch(`${BACKEND_URL}/auth/login/kakao`, {
-            method: 'GET',
-            headers: {
-                'Content-Type': 'application/json',
-                'Authorization': `Bearer ${token}`,
-            },
-        })
-        .then(data => {
-            console.log('User data:', data);  // 받은 사용자 데이터 로그 찍기
-        })
-        .catch(error => console.error('Error fetching user data:', error)); // 오류 로그
-};
-
-
     // JWT 토큰 저장
     const saveJwtToken = (token) => {
         try {
@@ -43,7 +25,7 @@ const LoginPage = () => {
         }
     };
 
-    // URL에서 JWT 토큰 확인
+    // 카카오 로그인 후 리디렉션을 처리
     const getJwtTokenFromUrl = () => {
         const urlParams = new URLSearchParams(window.location.search);
         const token = urlParams.get('token');
@@ -53,34 +35,45 @@ const LoginPage = () => {
         }
     };
 
+    // 사용자 데이터 가져오기 (JWT 토큰을 사용하여)
+    const fetchUserData = (token) => {
+        axios.post(`${BACKEND_URL}/auth/login/kakao`, {}, {  // POST 방식으로 요청
+            headers: {
+                'Authorization': `Bearer ${token}`,
+            }
+        })
+        .then(response => {
+            console.log('User data:', response.data);  // 받은 사용자 데이터 로그 찍기
+        })
+        .catch(error => console.error('Error fetching user data:', error));
+    };
+
     useEffect(() => {
         if (jwtToken) {
             console.log("JWT Token exists, no default fetch request.");
+            fetchUserData(jwtToken); // JWT 토큰을 사용하여 사용자 데이터 요청
         } else {
             getJwtTokenFromUrl(); // URL에서 JWT 토큰 확인
         }
-    }, [jwtToken]);
 
-    // const kakaoClientId = '9ae623834d6fbc0413f981285a8fa0d5';
-
-    // const kakaoOnSuccess = async (data) => {
-    //     const idToken = data.response.access_token;  // 카카오에서 받은 엑세스 토큰
-    //     const provider = 'kakao'; // 카카오 로그인 provider 설정
-    //     saveJwtToken(idToken); // JWT 토큰 저장
-    //     fetchUserData(idToken, provider); // 사용자 데이터 가져오기
-    // };
-
-    // const kakaoOnFailure = (error) => {
-    //     console.log(error);
-    // };
-
-    // const googleOnSuccess = (res) => {
-    //     if (res.credential) {
-    //         const provider = 'google'; // 구글 로그인 provider 설정
-    //         saveJwtToken(res.credential); // JWT 토큰 저장
-    //         fetchUserData(res.credential, provider); // 사용자 데이터 가져오기
-    //     }
-    // };
+        // 카카오 로그인 후 리디렉션을 처리
+        const code = new URL(window.location.href).searchParams.get("code");
+        if (code) {
+            // 백엔드로 `code` 보내기 (POST 요청 사용)
+            axios.post(`${BACKEND_URL}/auth/login/kakao`, {
+                code: code,  // 요청 본문에 code 포함
+            })
+            .then(response => {
+                // 응답 받으면 JWT 토큰 저장
+                console.log("Login successful:", response);
+                saveJwtToken(response.data.token); // 응답에서 받은 토큰을 저장
+                navigate("/"); // 로그인 후 홈 페이지로 이동
+            })
+            .catch(error => {
+                console.error("Kakao login failed:", error);
+            });
+        }
+    }, [jwtToken, navigate]);
 
     return (
         <div className="main-page">
@@ -90,27 +83,16 @@ const LoginPage = () => {
             <h1>로그인</h1>
             <div className="login-container">
                 <div className="login-buttons">
-                    {/* <GoogleOAuthProvider clientId="794316202103-0khiaob0cj1ukqe7pqgehsfqhssjs2o3.apps.googleusercontent.com">
-                        <GoogleLogin
-                            onSuccess={googleOnSuccess}
-                            onFailure={(err) => console.error('Google login failed:', err)}
-                        />
-                    </GoogleOAuthProvider> */}
-                    {/* <KakaoLogin
-                        token={kakaoClientId}
-                        onSuccess={kakaoOnSuccess}
-                        onFail={kakaoOnFailure}
-                    /> */}
-                        <React.Fragment>
+                    <React.Fragment>
                         <button
                             onClick={() => {
-                            window.location.href = KAKAO_AUTH_URL;
+                                window.location.href = KAKAO_AUTH_URL;
                             }}
                             style={{ border: "none", background: "none", padding: 0 }}
                         >
                             <img src="/image/kakao.png" alt="Kakao Login" style={{ width: "200px", height: "auto" }} />
                         </button>
-                        </React.Fragment>
+                    </React.Fragment>
                 </div>
             </div>
         </div>

@@ -15,16 +15,15 @@ const MainPage = () => {
     const navigate = useNavigate();
 
     useEffect(() => {
-        console.log("Updated jobData:", jobData);
+        // console.log("Updated jobData:", jobData);
     }, [jobData]);
 
     const fetchDataForCategory = async (jobtitle, category) => {
         try {
             const response = await axios.get(`/dailyrank?jobtitle=${jobtitle}&category=${category}`);
-            console.log(`Fetched data for ${category}:`, response.data);
             return response.data;
         } catch (error) {
-            console.error(`Error fetching ${category} data`, error);
+            // console.error(`Error fetching ${category} data`, error);
             return null;
         }
     };
@@ -38,7 +37,7 @@ const MainPage = () => {
             newJobData[category] = data?.ranks || [];
         }
 
-        console.log("Fetched job data for all categories:", newJobData);
+        // console.log("Fetched job data for all categories:", newJobData);
         setJobData(newJobData);
     };
 
