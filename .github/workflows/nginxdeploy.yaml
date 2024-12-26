@@ -1,0 +1,71 @@
+name: CI/CD for React Deploy Application
+
+on:
+  push:
+    branches:
+      - dev/application/testsw
+
+jobs:
+  build-and-push:
+    name: Build and Push Docker Images to AWS ECR
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+
+      # AWS 자격 증명 구성
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+      
+      # ECR 로그인 # ECR 퍼블릭은 us-east-1리전만 동작 프라이빗변경 필요
+      - name: Log in to Amazon ECR
+        id: login-ecr
+        run: |
+          aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/u5b2p7i3
+
+        # docker images build or ECR push
+      - name: Delete Existing testApp Image
+        run: |
+          # 'testfrontapp-latest' 태그로 이미지를 삭제
+          aws ecr-public batch-delete-image --repository-name job_scanner/testapp --image-ids imageTag=testnginx-latest || echo "No existing image to delete."
+
+      - name: Build and Push App Image
+        run: |
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/testapp:testnginx-latest -f ./login/frontend/Dockerfile ./login/frontend
+          docker push public.ecr.aws/u5b2p7i3/job_scanner/testapp:testnginx-latest
+
+
+
+
+
+  deploy:
+    name: Deploy to EC2
+    runs-on: ubuntu-latest
+    needs: build-and-push
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Deploy to EC2
+        run: |
+          echo "${{ secrets.EC2_PRIVATE_KEY }}" > ec2-key.pem
+          chmod 600 ec2-key.pem
+          ssh -o StrictHostKeyChecking=no -i ec2-key.pem ubuntu@${{ secrets.EC2_PUBLIC_IP }} << 'EOF'
+          
+          # 기존 컨테이너 종료 및 삭제
+          docker stop testnginx || true
+          docker rm testnginx || true
+          # 이미지 PULL
+          docker pull public.ecr.aws/u5b2p7i3/job_scanner/testapp:testnginx-latest
+          # 새 컨테이너 실행 
+          docker run -d -p 80:80 --name testnginx public.ecr.aws/u5b2p7i3/job_scanner/testapp:testnginx-latest
+          # Remove Dangling Images
+          docker image prune -f
+          EOF
