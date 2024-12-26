@@ -1,23 +1,23 @@
-package com.jobscanner.auth;
+// package com.jobscanner.auth;
 
-import lombok.Getter;
-import lombok.Setter;
-import com.jobscanner.domain.Member;
+// import lombok.Getter;
+// import lombok.Setter;
+// import com.jobscanner.domain.User;
 
-@Getter
-@Setter
-public class MemberProfile {
-    private String name;
-    private String email;
-    private String provider;
-    private String nickname;
+// @Getter
+// @Setter
+// public class MemberProfile {
+//     private String name;
+//     private String email;
+//     private String provider;
+//     private String nickname;
 
-    public Member toMember() {
-        return Member.builder()
-                     .name(name)
-                     .email(email)
-                     .provider(provider)
-                     .build();
-    }
+//     public User toMember() {
+//         return User.builder()
+//                      .name(name)
+//                      .email(email)
+//                      .provider(provider)
+//                      .build();
+//     }
 
-}
+// }

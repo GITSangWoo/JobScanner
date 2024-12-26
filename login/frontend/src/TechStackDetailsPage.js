@@ -33,11 +33,31 @@ const TechStackDetailsPage = () => {
     };
 
     useEffect(() => {
-        // 기술 스택 정보를 가져오는 로직
-        console.log("Fetching tech stack for:", techStackName);  // 디버깅용 로그
-        const techStackData = getTechStackDetails(techStackName);
-        setTechStack(techStackData);
-    }, [techStackName]);
+        // 기술 스택 정보를 API로 가져오는 로직
+        const fetchTechStackDetails = async () => {
+            try {
+                const response = await fetch(`/techstack?techName=${techStackName}`);
+                const data = await response.json();
+                if (response.ok) {
+                    setTechStack(data); // API 응답 데이터 매핑
+                } else {
+                    console.error("Error fetching tech stack data:", data);
+                    setTechStack(null);
+                }
+            } catch (error) {
+                console.error("Error fetching tech stack details:", error);
+                setTechStack(null);
+            }
+        };
+
+        if (techStackName) {
+            fetchTechStackDetails();
+        }
+    }, [techStackName]); // techStackName 변경 시마다 API 호출
+
+    if (!techStack) {
+        return <p>해당 기술 스택 정보를 찾을 수 없습니다.</p>;
+    }
 
     const handleBookmark = () => {
         if (isLoggedIn) {
@@ -78,9 +98,6 @@ const TechStackDetailsPage = () => {
                             <button className="auth-button" onClick={() => navigate("/login")}>
                                 로그인
                             </button>
-                            {/*<button className="auth-button" onClick={() => navigate("/sign-up")}>*/}
-                            {/*    회원가입*/}
-                            {/*</button>*/}
                         </>
                     )}
                 </div>
@@ -93,7 +110,7 @@ const TechStackDetailsPage = () => {
                     <div className={`dropdown-menu ${isDropdownOpen ? "open" : ""}`}>
                         <button className="dropdown-item" onClick={handleClick}>기술 스택 순위</button>
                         <button className="dropdown-item" onClick={goToJobSummary}>채용 공고 요약</button>
-                        <hr/>
+                        <hr />
                         <button className="dropdown-item" onClick={handleMypage}>My Page</button>
                     </div>
                 </div>
@@ -103,7 +120,7 @@ const TechStackDetailsPage = () => {
             <div className="tech-stack-content">
                 {/* 언어 이름 */}
                 <h1 className="tech-stack-language">
-                    {techStack.language}
+                    {techStack.tech_name} {/* API에서 받아온 기술 스택 이름 */}
                 </h1>
 
                 {/* 북마크 버튼 - 설명 영역 안으로 이동 */}
@@ -124,13 +141,13 @@ const TechStackDetailsPage = () => {
 
                 {/* 유튜브 링크 */}
                 <h2>유튜브 링크</h2>
-                {techStack.youtubeLink ? (
+                {techStack.youtube_link ? (
                     <a
-                        href={techStack.youtubeLink}
+                        href={techStack.youtube_link}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        {techStack.youtubeLink}
+                        바로가기
                     </a>
                 ) : (
                     <p>링크가 없습니다.</p>
@@ -138,13 +155,13 @@ const TechStackDetailsPage = () => {
 
                 {/* 도서 링크 */}
                 <h2>도서 링크</h2>
-                {techStack.bookLink ? (
+                {techStack.book_link ? (
                     <a
-                        href={techStack.bookLink}
+                        href={techStack.book_link}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        {techStack.bookLink}
+                        바로가기
                     </a>
                 ) : (
                     <p>링크가 없습니다.</p>
@@ -152,59 +169,22 @@ const TechStackDetailsPage = () => {
 
                 {/* 공식 문서 */}
                 <h2>공식 문서</h2>
-                {techStack.documentationLink ? (
+                {techStack.docs_link ? (
                     <a
-                        href={techStack.documentationLink}
+                        href={techStack.docs_link}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        {techStack.documentationLink}
+                        바로가기
                     </a>
                 ) : (
                     <p>링크가 없습니다.</p>
                 )}
-            </div>
 
+            </div>
         </div>
     );
 };
 
-// 기술 스택 세부 정보를 가져오는 함수
-const getTechStackDetails = (techStackName) => {
-    // 여기에 모든 기술 스택 데이터 정의
-    const techStackData = {
-        JavaScript: {
-            language: "JavaScript",
-            description: "JavaScript는 웹 개발에서 많이 사용되는 언어입니다.",
-            youtubeLink: "https://youtu.be/PkZNo7MFNFg?si=QhxbcVEyFrd5vqYT",
-            bookLink: "https://www.yes24.com/Product/Goods/139913428",
-            documentationLink: "https://developer.mozilla.org/ko/docs/Web/JavaScript"
-        },
-        TypeScript: {
-            language: "TypeScript",
-            description: "TypeScript는 JavaScript의 상위 집합으로, 타입을 추가한 언어입니다.",
-            youtubeLink: "https://youtu.be/k5E2AVpwsko?si=17bLHGGE-U5V5PQ6",
-            bookLink: "https://www.yes24.com/Product/Goods/136740163",
-            documentationLink: "https://www.typescriptlang.org/docs/"
-        },
-        Java: {
-            language: "Java",
-            description: "Java는 강력한 객체 지향 언어입니다.",
-            youtubeLink: "https://youtu.be/yRpLlJmRo2w?si=Qkn4kSCX5EObmi_U",
-            bookLink: "https://www.yes24.com/Product/Goods/136263729",
-            documentationLink: "https://docs.oracle.com/en/java/"
-        },
-        Pandas: {
-            language: "Pandas",
-            description: "Pandas는 데이터 분석을 위한 라이브러리입니다.",
-            youtubeLink: "https://youtu.be/kWiCuklohdY?si=2aT1lFL-Ynh56ln8",
-            bookLink: "https://www.yes24.com/Product/Goods/115330064",
-            documentationLink: "https://pandas.pydata.org/"
-        }
-    };
-
-    // 해당 techStackName에 맞는 데이터 반환
-    return techStackData[techStackName] || null;
-};
 
 export default TechStackDetailsPage;

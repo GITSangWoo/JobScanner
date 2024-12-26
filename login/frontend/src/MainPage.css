@@ -214,43 +214,52 @@ body {
 /*               테이블 스타일               */
 /* =============================== */
 /* 테이블 크기 및 스타일 */
-.table-container {
-    width: 80%;  /* 테이블 크기 */
-    margin: 20px auto;  /* 위 아래 간격을 주고, 가운데 정렬 */
-    padding: 40px;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    overflow-x: auto;  /* 테이블 내용이 너무 길어지면 가로 스크롤바가 생기도록 */
+/* =============================== */
+/*               main-table 스타일               */
+/* =============================== */
+.job-tables {
+    width: 100%;
 }
 
-table {
+.main-table-wrapper {
+    text-align: center; /* 부모 요소에 텍스트 중앙 정렬 */
+}
+
+.main-table-container {
+    display: inline-block; /* inline-block으로 설정 */
+    width: 25%; /* 각 테이블 너비 설정 */
+    margin: 10px; /* 간격을 주어 좌우 정렬이 잘 되도록 */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.main-table {
     width: 100%;
     border-collapse: collapse;  /* 테이블 셀 간 경계선 없애기 */
 }
 
 /* 테이블 헤더 및 셀 텍스트 중앙 정렬 */
-th, td {
+.main-table th, .main-table td {
     padding: 12px 15px;
     text-align: center;  /* 수평 중앙 정렬 */
     vertical-align: middle;  /* 수직 중앙 정렬 */
     border-bottom: 1px solid #ddd;
-    font-size: 14px; /* 셀 안의 글씨 크기 조정 */
+    font-size: 10px; /* 셀 안의 글씨 크기 조정 */
 }
 
-th {
+.main-table th {
     background-color: black;
     font-weight: bold;
     color: #fff;
 }
 
-tr:hover {
+.main-table tr:hover {
     background-color: #f9f9f9;
 }
 
 /* 직무 설명 텍스트 스타일 */
-.table-container h2 {
-    font-size: 20px; /* 설명 글씨 크기 조정 */
+.main-table-container h2 {
+    font-size: 15px; /* 설명 글씨 크기 조정 */
     font-weight: normal;
     color: #555;
     margin-bottom: 20px;
@@ -258,7 +267,6 @@ tr:hover {
     line-height: 1.5;
     word-wrap: break-word;  /* 긴 글이 화면 밖으로 나가지 않도록 줄바꿈 처리 */
 }
-
 
 /* =============================== */
 /*             기술 스택 버튼 스타일             */
@@ -326,15 +334,6 @@ tr:hover {
 
 
 /* =============================== */
-/*               차트 스타일               */
-/* =============================== */
-.chart-container {
-    width: 45%; /* 차트 크기 */
-    display: block; /* 차트는 기본적으로 보이도록 설정 */
-    margin-top: 20px; /* 차트와 위의 내용 간격 */
-}
-
-/* =============================== */
 /*               반응형 스타일               */
 /* =============================== */
 @media (max-width: 768px) {
@@ -359,23 +358,4 @@ tr:hover {
     .chart-container {
         width: 100%;
     }
-}
-
-/* =============================== */
-/*               순위와 그래프 나란히 배치               */
-/* =============================== */
-.rank-and-chart {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;  /* 전체 너비의 90%로 설정 */
-    margin-top: 20px;  /* 상단에 간격 추가 */
-}
-
-/* 직무에 대한 설명과 나란히 배치 */
-.rank-container, .chart-container {
-    width: 45%;  /* 각각 45%씩 차지하도록 */
-}
-
-.welcome-message {
-    font-weight: bold;
 }

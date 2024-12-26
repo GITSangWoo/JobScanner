@@ -19,13 +19,13 @@ spring:
             userNameAttribute: id
 
         registration:
-          google:
-            clientId: ${GOOGLE_CLIENT_ID}
-            clientSecret: ${GOOGLE_CLIENT_SECRET}
-            redirect-uri: http://localhost:8972/oauth2/callback
-            scope:
-              - profile
-              - email
+          # google:
+          #   clientId: ${GOOGLE_CLIENT_ID}
+          #   clientSecret: ${GOOGLE_CLIENT_SECRET}
+          #   redirect-uri: http://localhost:8972/oauth2/callback
+          #   scope:
+          #     - profile
+          #     - email
 
           # naver:
           #   clientId: ${NAVER_CLIENT_ID}
@@ -67,8 +67,3 @@ logging:
 
 server:
   port: 8972  # 백엔드 서버 포트
-  # ssl:
-  #   key-store: classpath:server.p12  # 인증서 파일 경로
-  #   key-store-password: password  # 인증서 비밀번호
-  #   key-store-type: PKCS12  # 인증서 파일 형식
-  #   key-alias: selfsigned  # 키 별칭

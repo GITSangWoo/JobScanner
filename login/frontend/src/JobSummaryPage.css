@@ -86,7 +86,7 @@ body {
 
 /* 테이블 스타일 */
 .table-container {
-    width: 95%;
+    width: 100%;
     max-width: 1500px;
     overflow-x: auto;
     margin-top: 20px;
@@ -95,40 +95,39 @@ body {
     box-shadow: none; /* 그림자도 제거 */
 }
 
-table {
+.table {
     width: 100%;
     border-collapse: collapse;
     border: none; /* 테이블의 테두리 제거 */
 }
 
-thead {
+.thead {
     background-color: transparent; /* 배경을 투명으로 설정 */
     color: #fff;
 }
 
-thead th {
+.thead th {
     padding: 10px;
-    text-align: left;
-    font-size: 16px;
+    text-align: center;
+    font-size: 12px !important;
 }
 
-tbody tr:nth-child(even) {
+.tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-tbody tr:hover {
+.tbody tr:hover {
     background-color: #f1f1f1;
 }
 
-td {
+.td {
     padding: 15px;
-    font-size: 14px;
-    white-space: pre-line;
+    font-size: 10px !important;
+    white-space: nowrap !important;
     word-wrap: break-word;
     border: none; /* 셀의 테두리 제거 */
-    text-align: left;
+    text-align: center;
 }
-
 
 /* 북마크 아이콘 */
 .bookmark-icon {
@@ -243,7 +242,7 @@ td {
 }
 
 /* 확장된 내용 */
-table td .expanded-content {
+.summary-table .expanded-content {
     display: none;
     margin-top: 5px;
     padding-left: 10px;
@@ -259,7 +258,7 @@ table td .expanded-content {
 }
 
 /* 확장된 내용 활성화 */
-table td .expanded-content.active {
+.summary-table .expanded-content.active {
     display: block;
 }
 
@@ -289,4 +288,42 @@ table td .expanded-content.active {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* 페이지네이션 스타일 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.page-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #eaeaea;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-button:hover {
+    background-color: #d6d6d6;
+    border-color: #bbb;
+}
+
+.page-button.active {
+    background-color: #bdbdbd;
+    color: white;
+    font-weight: bold;
+    border-color: #888;
+}
+
+.page-button:disabled {
+    background-color: #f1f1f1;
+    color: #ccc;
+    border-color: #ddd;
+    cursor: not-allowed;
 }

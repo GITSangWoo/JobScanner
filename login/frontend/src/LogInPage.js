@@ -74,13 +74,13 @@ const LoginPage = () => {
     //     console.log(error);
     // };
 
-    const googleOnSuccess = (res) => {
-        if (res.credential) {
-            const provider = 'google'; // 구글 로그인 provider 설정
-            saveJwtToken(res.credential); // JWT 토큰 저장
-            fetchUserData(res.credential, provider); // 사용자 데이터 가져오기
-        }
-    };
+    // const googleOnSuccess = (res) => {
+    //     if (res.credential) {
+    //         const provider = 'google'; // 구글 로그인 provider 설정
+    //         saveJwtToken(res.credential); // JWT 토큰 저장
+    //         fetchUserData(res.credential, provider); // 사용자 데이터 가져오기
+    //     }
+    // };
 
     return (
         <div className="main-page">
@@ -90,12 +90,12 @@ const LoginPage = () => {
             <h1>로그인</h1>
             <div className="login-container">
                 <div className="login-buttons">
-                    <GoogleOAuthProvider clientId="794316202103-0khiaob0cj1ukqe7pqgehsfqhssjs2o3.apps.googleusercontent.com">
+                    {/* <GoogleOAuthProvider clientId="794316202103-0khiaob0cj1ukqe7pqgehsfqhssjs2o3.apps.googleusercontent.com">
                         <GoogleLogin
                             onSuccess={googleOnSuccess}
                             onFailure={(err) => console.error('Google login failed:', err)}
                         />
-                    </GoogleOAuthProvider>
+                    </GoogleOAuthProvider> */}
                     {/* <KakaoLogin
                         token={kakaoClientId}
                         onSuccess={kakaoOnSuccess}
