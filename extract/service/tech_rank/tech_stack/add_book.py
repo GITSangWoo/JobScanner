@@ -27,7 +27,7 @@ except FileNotFoundError:
 tech_stack_list = list(tech_data.keys())
 
 # base_link 정의
-base_link = "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchTarget=Book&KeyWord={tech_name}&KeyRecentPublish=0&Cate{tech_name}rySearch=%EC%BB%B4%ED%93%A8%ED%84%B0%2F%EB%AA%A8%EB%B0%94%EC%9D%BC%40351&OutStock=0&ViewType=Detail&SortOrder=2&CustReviewCount=0&CustReviewRank=0&KeyFullWord={tech_name}&KeyLastWord={tech_name}&chkKeyTitle=&chkKeyAuthor=&chkKeyPublisher=&chkKeyISBN=&chkKeyTag=&chkKeyTOC=&chkKeySubject=&ViewRowCount=25&SuggestKeyWord="
+base_link = "https://www.aladin.co.kr/search/wsearchresult.aspx?SearchTarget=Book&KeyWord={tech_name}&KeyRecentPublish=0&CategorySearch=%EC%BB%B4%ED%93%A8%ED%84%B0%2F%EB%AA%A8%EB%B0%94%EC%9D%BC%40351&OutStock=0&ViewType=Detail&SortOrder=2&CustReviewCount=0&CustReviewRank=0&KeyFullWord={tech_name}&KeyLastWord={tech_name}&chkKeyTitle=&chkKeyAuthor=&chkKeyPublisher=&chkKeyISBN=&chkKeyTag=&chkKeyTOC=&chkKeySubject=&ViewRowCount=25&SuggestKeyWord="
 
 # SQL 업데이트 쿼리
 update_query = """

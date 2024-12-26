@@ -1,6 +1,7 @@
 import pymysql
 import re
 import json
+import os
 
 # 텍스트 데이터 기술 스택 추출
 
@@ -34,8 +35,9 @@ def fetch_data():
         connection.close()
 
 
-# 기술 관련 키워드를 포함하는 tech_book.json 파일 경로
-tech_file_path = 'tech_book.json'
+# tech_book.json 파일 경로를 스크립트 위치 기준으로 설정
+script_dir = os.path.dirname(os.path.abspath(__file__))  # 현재 스크립트의 디렉토리 경로
+tech_file_path = os.path.join(script_dir, '../tech_book.json')  # 상대 경로로 tech_book.json 설정
 
 
 # tech_book.json 파일을 읽어서 기술 스택과 키워드를 가져오는 함수
@@ -133,5 +135,3 @@ for row in rows:
     # DB에 저장
     save_to_db(notice_id, tot_tech, res_tech, qual_tech, pref_tech)
     print(f"Saved notice_id {notice_id} to database.")
-
-

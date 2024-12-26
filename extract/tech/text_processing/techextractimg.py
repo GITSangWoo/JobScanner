@@ -1,6 +1,7 @@
 import pymysql
 import re
 import json
+import os
 
 # 이미지에서 추출된 텍스트 데이터 기술 스택 추출
 
@@ -11,8 +12,9 @@ mysql_user = "admin"
 mysql_password = "dltkddn1"
 mysql_db = "testdb"
 
-# 기술 관련 키워드를 포함하는 tech_book.json 파일 경로
-tech_file_path = '../tech_book.json'
+# 현재 파일(techextractimg.py)의 디렉토리 경로를 기준으로 tech_book.json 파일의 경로 계산
+current_file_dir = os.path.dirname(os.path.abspath(__file__))  # 현재 파일의 절대 경로 가져오기
+tech_file_path = os.path.join(current_file_dir, "../tech_book.json")  # 상대 경로 계산
 
 # 기술 스택을 식별하는 함수
 def identify_tech_stack(text, tech_keywords):
@@ -82,6 +84,9 @@ def fetch_imagetotext_data():
 
 
 # 기술 키워드 불러오기
+if not os.path.exists(tech_file_path):
+    raise FileNotFoundError(f"File not found: {tech_file_path}")
+
 tech_keywords = load_tech_keywords(tech_file_path)
 
 # imgtotext 데이터 가져오기
@@ -109,4 +114,3 @@ for row in rows:
         # DB에 저장
         save_to_db(notice_id, tot_tech)
         print(f"Saved notice_id {notice_id} with tot_tech to database.")
-
