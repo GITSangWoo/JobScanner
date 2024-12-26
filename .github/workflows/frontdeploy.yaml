@@ -65,7 +65,7 @@ jobs:
           # 이미지 PULL
           docker pull public.ecr.aws/u5b2p7i3/job_scanner/testapp:testdevfrontapp-latest
           # 새 컨테이너 실행 
-          docker run -d -p 80:80 --name testdevfrontapp public.ecr.aws/u5b2p7i3/job_scanner/testapp:testdevfrontapp-latest
+          docker run -d -p 8974:3000 --name testdevfrontapp public.ecr.aws/u5b2p7i3/job_scanner/testapp:testdevfrontapp-latest
           # Remove Dangling Images
           docker image prune -f
           EOF
