@@ -114,3 +114,7 @@
 .bookmark-button.active {
     color: gold;
 }
+
+.welcome-message {
+    font-weight: bold;
+}
