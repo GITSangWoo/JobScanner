@@ -20,7 +20,7 @@ const MainPage = () => {
 
     const fetchDataForCategory = async (jobtitle, category) => {
         try {
-            const response = await axios.get(`http://172.30.1.193:8972/dailyrank?jobtitle=${jobtitle}&category=${category}`);
+            const response = await axios.get(`http://43.202.114.11:8972/dailyrank?jobtitle=${jobtitle}&category=${category}`);
             return response.data;
         } catch (error) {
             // console.error(`Error fetching ${category} data`, error);
