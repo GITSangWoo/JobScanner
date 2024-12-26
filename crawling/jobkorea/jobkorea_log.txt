@@ -1,0 +1,168 @@
+Found credentials in shared credentials file: /code/.aws/credentials
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+There is no [linux64] chromedriver "131.0.6778.204" for browser google-chrome "131.0.6778" in cache
+Get LATEST chromedriver version for google-chrome
+WebDriver version 131.0.6778.204 selected
+Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+Driver downloading response is 200
+Get LATEST chromedriver version for google-chrome
+Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204]
+https://www.jobkorea.co.kr/Recruit/GI_Read/46065839 - update - failed - 2024-12-23 22:11:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/46041728 - update - failed - 2024-12-23 22:11:44
+https://www.jobkorea.co.kr/Recruit/GI_Read/45825417 - update - failed - 2024-12-23 22:12:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/46090974 - update - failed - 2024-12-23 22:12:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/46057835 - update - failed - 2024-12-23 22:12:40
+https://www.jobkorea.co.kr/Recruit/GI_Read/46015666 - update - failed - 2024-12-23 22:12:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/46057584 - update - failed - 2024-12-23 22:13:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/46039401 - update - failed - 2024-12-23 22:13:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/45962516 - update - failed - 2024-12-23 22:13:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/46052779 - update - failed - 2024-12-23 22:14:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/46112675 - update - failed - 2024-12-23 22:14:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/46146836 - update - failed - 2024-12-23 22:14:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/46032858 - update - failed - 2024-12-23 22:15:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/46143891 - update - failed - 2024-12-23 22:15:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/46047020 - update - failed - 2024-12-23 22:15:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/46101178 - update - failed - 2024-12-23 22:16:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/45886912 - update - failed - 2024-12-23 22:16:21
+https://www.jobkorea.co.kr/Recruit/GI_Read/46091668 - update - failed - 2024-12-23 22:16:40
+Found credentials in shared credentials file: /code/.aws/credentials
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+There is no [linux64] chromedriver "131.0.6778.204" for browser google-chrome "131.0.6778" in cache
+Get LATEST chromedriver version for google-chrome
+WebDriver version 131.0.6778.204 selected
+Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+Driver downloading response is 200
+Get LATEST chromedriver version for google-chrome
+Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204]
+https://www.jobkorea.co.kr/Recruit/GI_Read/46015666 - update - failed - 2024-12-23 22:26:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/46090974 - update - failed - 2024-12-23 22:26:48
+Found credentials in shared credentials file: /code/.aws/credentials
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+There is no [linux64] chromedriver "131.0.6778.204" for browser google-chrome "131.0.6778" in cache
+Get LATEST chromedriver version for google-chrome
+WebDriver version 131.0.6778.204 selected
+Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+Driver downloading response is 200
+Get LATEST chromedriver version for google-chrome
+Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204]
+https://www.jobkorea.co.kr/Recruit/GI_Read/46015666 - update - failed - 2024-12-23 22:39:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/46041728 - update - failed - 2024-12-23 22:39:59
+https://www.jobkorea.co.kr/Recruit/GI_Read/46090974 - update - failed - 2024-12-23 22:40:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/46065839 - update - failed - 2024-12-23 22:40:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/46057835 - update - failed - 2024-12-23 22:40:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/46039401 - update - failed - 2024-12-23 22:40:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/46057584 - update - failed - 2024-12-23 22:40:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45825417 - update - failed - 2024-12-23 22:40:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/45962516 - update - failed - 2024-12-23 22:40:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/46146836 - update - failed - 2024-12-23 22:40:13
+https://www.jobkorea.co.kr/Recruit/GI_Read/46101553 - update - failed - 2024-12-23 22:40:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45954992 - update - failed - 2024-12-23 22:40:17
+Found credentials in shared credentials file: /code/.aws/credentials
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+There is no [linux64] chromedriver "131.0.6778.204" for browser google-chrome "131.0.6778" in cache
+Get LATEST chromedriver version for google-chrome
+WebDriver version 131.0.6778.204 selected
+Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+Driver downloading response is 200
+Get LATEST chromedriver version for google-chrome
+Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204]
+https://www.jobkorea.co.kr/Recruit/GI_Read/45825417 - update - failed - 2024-12-23 22:44:10
+https://www.jobkorea.co.kr/Recruit/GI_Read/46065839 - update - failed - 2024-12-23 22:44:20
+https://www.jobkorea.co.kr/Recruit/GI_Read/46057584 - update - failed - 2024-12-23 22:44:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/46015666 - update - failed - 2024-12-23 22:44:41
+https://www.jobkorea.co.kr/Recruit/GI_Read/46039401 - update - failed - 2024-12-23 22:44:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/46057835 - update - failed - 2024-12-23 22:45:03
+https://www.jobkorea.co.kr/Recruit/GI_Read/46041728 - update - failed - 2024-12-23 22:45:13
+Found credentials in shared credentials file: /code/.aws/credentials
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+There is no [linux64] chromedriver "131.0.6778.204" for browser google-chrome "131.0.6778" in cache
+Get LATEST chromedriver version for google-chrome
+WebDriver version 131.0.6778.204 selected
+Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+Driver downloading response is 200
+Get LATEST chromedriver version for google-chrome
+Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204]
+https://www.jobkorea.co.kr/Recruit/GI_Read/46015666 - update - failed - Message: no such element: Unable to locate element: {"method":"css selector","selector":"section.section-content"}
+  (Session info: chrome=131.0.6778.204); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55c91fda28fa <unknown>
+#1 0x55c91f8b3d20 <unknown>
+#2 0x55c91f902a66 <unknown>
+#3 0x55c91f902d01 <unknown>
+#4 0x55c91f948184 <unknown>
+#5 0x55c91f926b1d <unknown>
+#6 0x55c91f945560 <unknown>
+#7 0x55c91f926893 <unknown>
+#8 0x55c91f8f530d <unknown>
+#9 0x55c91f8f632e <unknown>
+#10 0x55c91fd6f00b <unknown>
+#11 0x55c91fd72f97 <unknown>
+#12 0x55c91fd5b71c <unknown>
+#13 0x55c91fd73b17 <unknown>
+#14 0x55c91fd406cf <unknown>
+#15 0x55c91fd916b8 <unknown>
+#16 0x55c91fd91880 <unknown>
+#17 0x55c91fda1776 <unknown>
+#18 0x7fdaeb9121c4 <unknown>
+ - 2024-12-23 22:52:18
+https://www.jobkorea.co.kr/Recruit/GI_Read/46057835 - update - failed - Message: no such element: Unable to locate element: {"method":"css selector","selector":"section.section-content"}
+  (Session info: chrome=131.0.6778.204); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55c91fda28fa <unknown>
+#1 0x55c91f8b3d20 <unknown>
+#2 0x55c91f902a66 <unknown>
+#3 0x55c91f902d01 <unknown>
+#4 0x55c91f948184 <unknown>
+#5 0x55c91f926b1d <unknown>
+#6 0x55c91f945560 <unknown>
+#7 0x55c91f926893 <unknown>
+#8 0x55c91f8f530d <unknown>
+#9 0x55c91f8f632e <unknown>
+#10 0x55c91fd6f00b <unknown>
+#11 0x55c91fd72f97 <unknown>
+#12 0x55c91fd5b71c <unknown>
+#13 0x55c91fd73b17 <unknown>
+#14 0x55c91fd406cf <unknown>
+#15 0x55c91fd916b8 <unknown>
+#16 0x55c91fd91880 <unknown>
+#17 0x55c91fda1776 <unknown>
+#18 0x7fdaeb9121c4 <unknown>
+ - 2024-12-23 22:52:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/45825417 - update - failed - Message: no such element: Unable to locate element: {"method":"css selector","selector":"section.section-content"}
+  (Session info: chrome=131.0.6778.204); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+#0 0x55c91fda28fa <unknown>
+#1 0x55c91f8b3d20 <unknown>
+#2 0x55c91f902a66 <unknown>
+#3 0x55c91f902d01 <unknown>
+#4 0x55c91f948184 <unknown>
+#5 0x55c91f926b1d <unknown>
+#6 0x55c91f945560 <unknown>
+#7 0x55c91f926893 <unknown>
+#8 0x55c91f8f530d <unknown>
+#9 0x55c91f8f632e <unknown>
+#10 0x55c91fd6f00b <unknown>
+#11 0x55c91fd72f97 <unknown>
+#12 0x55c91fd5b71c <unknown>
+#13 0x55c91fd73b17 <unknown>
+#14 0x55c91fd406cf <unknown>
+#15 0x55c91fd916b8 <unknown>
+#16 0x55c91fd91880 <unknown>
+#17 0x55c91fda1776 <unknown>
+#18 0x7fdaeb9121c4 <unknown>
+ - 2024-12-23 22:52:39

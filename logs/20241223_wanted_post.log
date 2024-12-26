@@ -1,0 +1,46 @@
+2024-12-23 18:58:11,743 - INFO - Found credentials in shared credentials file: /code/.aws/credentials
+2024-12-23 18:58:11,952 - INFO - ====== WebDriver manager ======
+2024-12-23 18:58:12,004 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 18:58:12,030 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 18:58:12,053 - INFO - There is no [linux64] chromedriver "131.0.6778.204" for browser google-chrome "131.0.6778" in cache
+2024-12-23 18:58:12,053 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 18:58:12,114 - INFO - WebDriver version 131.0.6778.204 selected
+2024-12-23 18:58:12,116 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+2024-12-23 18:58:12,116 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+2024-12-23 18:58:12,185 - INFO - Driver downloading response is 200
+2024-12-23 18:58:12,411 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 18:58:12,550 - INFO - Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204]
+2024-12-23 19:06:22,137 - INFO - Found credentials in shared credentials file: /code/.aws/credentials
+2024-12-23 19:06:22,323 - INFO - ====== WebDriver manager ======
+2024-12-23 19:06:22,376 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 19:06:22,409 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 19:06:22,437 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-23 19:11:43,369 - INFO - Found credentials in shared credentials file: /code/.aws/credentials
+2024-12-23 19:11:43,628 - INFO - ====== WebDriver manager ======
+2024-12-23 19:11:43,687 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 19:11:43,719 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 19:11:43,740 - INFO - There is no [linux64] chromedriver "131.0.6778.204" for browser google-chrome "131.0.6778" in cache
+2024-12-23 19:11:43,741 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 19:11:43,805 - INFO - WebDriver version 131.0.6778.204 selected
+2024-12-23 19:11:43,807 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+2024-12-23 19:11:43,807 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+2024-12-23 19:11:43,885 - INFO - Driver downloading response is 200
+2024-12-23 19:11:44,089 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 19:11:44,216 - INFO - Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204]
+2024-12-23 19:17:54,583 - INFO - Found credentials in shared credentials file: /code/.aws/credentials
+2024-12-23 19:17:54,750 - INFO - ====== WebDriver manager ======
+2024-12-23 19:17:54,817 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 19:17:54,839 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 19:17:54,864 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-23 19:23:47,043 - INFO - Found credentials in shared credentials file: /code/.aws/credentials
+2024-12-23 19:23:47,259 - INFO - ====== WebDriver manager ======
+2024-12-23 19:23:47,313 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 19:23:47,336 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 19:23:47,359 - INFO - There is no [linux64] chromedriver "131.0.6778.204" for browser google-chrome "131.0.6778" in cache
+2024-12-23 19:23:47,359 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 19:23:47,770 - INFO - WebDriver version 131.0.6778.204 selected
+2024-12-23 19:23:47,772 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+2024-12-23 19:23:47,773 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+2024-12-23 19:23:47,859 - INFO - Driver downloading response is 200
+2024-12-23 19:23:48,064 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-23 19:23:48,186 - INFO - Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204]

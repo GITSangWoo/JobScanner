@@ -8,11 +8,16 @@ services:
     environment:
       - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
     restart: "no"
-    command: ["python", "/code/crwaling/link_crawling.py"]
+    command: ["python", "/code/crawling/link_crawling.py"]
     volumes:
-      - ./crwaling:/code/crwaling
+      - ./crawling:/code/crawling
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
 
   post_crawler:
     build:
@@ -22,11 +27,16 @@ services:
     environment:
       - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
     restart: "no"
-    command: ["python", "/code/crwaling/post_crawling.py"]
+    command: ["python", "/code/crawling/post_crawling.py"]
     volumes:
-      - ./crwaling:/code/crwaling
+      - ./crawling:/code/crawling
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
 
   text_crawler:
     build:
@@ -36,9 +46,109 @@ services:
     environment:
       - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
     restart: "no"
-    command: ["python", "/code/crwaling/text_preprocess.py"]
+    command: ["python", "/code/crawling/text_preprocess.py"]
     volumes:
-      - ./crwaling:/code/crwaling
+      - ./crawling:/code/crawling
       - ./extract:/code/extract
       - ./logs:/code/logs
       - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
+
+  jumpit_crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jumpit_crawler
+    environment:
+      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+    restart: "no"
+    command: ["python", "/code/crawling/jumpit_crawling.py"]
+    volumes:
+      - ./crawling:/code/crawling
+      - ./logs:/code/logs
+      - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
+
+  wanted_crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: wanted_crawler
+    environment:
+      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+    restart: "no"
+    command: ["python", "/code/crawling/wanted_crawling.py"]
+    volumes:
+      - ./crawling:/code/crawling
+      - ./logs:/code/logs
+      - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
+
+  incruit_crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: incruit_crawler
+    environment:
+      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+    restart: "no"
+    command: ["python", "/code/crawling/incruit_crawling.py"]
+    volumes:
+      - ./crawling:/code/crawling
+      - ./logs:/code/logs
+      - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
+
+  jobkorea_crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: jobkorea_crawler
+    environment:
+      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+    restart: "no"
+    command: ["python", "/code/crawling/jobkorea_crawling.py"]
+    volumes:
+      - ./crawling:/code/crawling
+      - ./logs:/code/logs
+      - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
+
+  saramin_crawler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: saramin_crawler
+    environment:
+      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+    restart: "no"
+    command: ["python", "/code/crawling/saramin_crawling.py"]
+    volumes:
+      - ./crawling:/code/crawling
+      - ./logs:/code/logs
+      - ~/.aws:/code/.aws:ro
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
