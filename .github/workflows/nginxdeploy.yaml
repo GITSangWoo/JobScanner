@@ -37,7 +37,7 @@ jobs:
 
       - name: Build and Push App Image
         run: |
-          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/testapp:testnginx-latest -f ./frontend/Dockerfile ./frontend
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/testapp:testnginx-latest -f ./frontend/nginx/Dockerfile ./frontend
           docker push public.ecr.aws/u5b2p7i3/job_scanner/testapp:testnginx-latest
 
 
