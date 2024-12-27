@@ -18,7 +18,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-@CrossOrigin(origins = "http://43.202.114.11:8972")
+@CrossOrigin(origins = "http://43.202.114.11:8973")
 @RequestMapping("/auth")
 @RestController
 public class OAuthController {
