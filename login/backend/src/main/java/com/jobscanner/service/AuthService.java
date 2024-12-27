@@ -1,6 +1,5 @@
 package com.jobscanner.service;
 
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import com.jobscanner.dto.KakaoDTO;
 import com.jobscanner.repository.UserRepository;
@@ -17,7 +16,6 @@ public class AuthService implements AuthServiceInterface{
     private final KakaoUtil kakaoUtil;
     private final UserRepository userRepository;
     private final JwtUtil jwtUtil;
-    private final PasswordEncoder passwordEncoder;
 
     @Override
     public User oAuthLogin(String accessCode, HttpServletResponse httpServletResponse) {
@@ -37,9 +35,7 @@ public class AuthService implements AuthServiceInterface{
     private User createNewUser(KakaoDTO.KakaoProfile kakaoProfile) {
         User newUser = AuthConverter.toUser(
                 kakaoProfile.getKakao_account().getEmail(),
-                kakaoProfile.getKakao_account().getProfile().getNickname(),
-                null,
-                passwordEncoder
+                kakaoProfile.getKakao_account().getProfile().getNickname()
         );
         return userRepository.save(newUser);
     }
