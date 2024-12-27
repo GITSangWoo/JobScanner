@@ -36,7 +36,7 @@ const TechStackDetailsPage = () => {
         // 기술 스택 정보를 API로 가져오는 로직
         const fetchTechStackDetails = async () => {
             try {
-                const response = await fetch(`http://43.202.114.11:8972//techstack?techName=${techStackName}`);
+                const response = await fetch(`/techstack?techName=${techStackName}`);
                 const data = await response.json();
                 if (response.ok) {
                     setTechStack(data); // API 응답 데이터 매핑

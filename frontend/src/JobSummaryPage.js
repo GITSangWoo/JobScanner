@@ -69,7 +69,7 @@ const JobSummaryPage = () => {
 
     const fetchJobData = async (role) => {
         try {
-            const response = await fetch(`http://43.202.114.11:8972/notice?jobtitle=${role}`);
+            const response = await fetch(`/notice?jobtitle=${role}`);
             const data = await response.json();
             if (response.ok) {
                 // 데이터 구조를 채용 공고에 맞게 변환
