@@ -1,0 +1,129 @@
+2024-12-27 09:11:46,068 - INFO - 인크루트 링크 크롤링 실행: 2024-12-27 09:11:46
+2024-12-27 09:11:46,068 - INFO - 인크루트 링크 크롤링 종료: 2024-12-27 09:11:46
+2024-12-27 09:11:51,074 - INFO - 잡코리아 링크 크롤링 실행: 2024-12-27 09:11:51
+2024-12-27 09:11:51,074 - INFO - 잡코리아 링크 크롤링 시작
+2024-12-27 09:11:51,088 - INFO - Found credentials in shared credentials file: /code/.aws/credentials
+2024-12-27 09:11:51,230 - INFO - ====== WebDriver manager ======
+2024-12-27 09:11:51,330 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 09:11:51,355 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 09:11:51,374 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 09:11:51,441 - INFO - WebDriver version 131.0.6778.204 selected
+2024-12-27 09:11:51,447 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+2024-12-27 09:11:51,447 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+2024-12-27 09:11:51,502 - INFO - Driver downloading response is 200
+2024-12-27 09:11:51,583 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 09:11:51,821 - INFO - Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204]
+2024-12-27 09:15:09,558 - INFO - 인크루트 링크 크롤링 실행: 2024-12-27 09:15:09
+2024-12-27 09:15:09,558 - INFO - 인크루트 링크 크롤링 시작
+2024-12-27 09:18:37,007 - INFO - 인크루트 링크 크롤링 완료
+2024-12-27 09:18:37,010 - INFO - 인크루트 링크 크롤링 종료: 2024-12-27 09:18:37
+2024-12-27 09:18:42,011 - INFO - 잡코리아 링크 크롤링 실행: 2024-12-27 09:18:42
+2024-12-27 09:18:42,011 - INFO - 잡코리아 링크 크롤링 시작
+2024-12-27 09:18:42,025 - INFO - Found credentials in shared credentials file: /code/.aws/credentials
+2024-12-27 09:18:42,191 - INFO - ====== WebDriver manager ======
+2024-12-27 09:18:42,297 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 09:18:42,318 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 09:18:42,338 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:03:50,055 - INFO - 잡코리아 링크 크롤링 완료
+2024-12-27 10:03:50,057 - INFO - 잡코리아 링크 크롤링 종료: 2024-12-27 10:03:50
+2024-12-27 10:03:55,062 - INFO - 점핏 링크 크롤링 실행: 2024-12-27 10:03:55
+2024-12-27 10:03:55,062 - INFO - 점핏 링크 크롤링 시작
+2024-12-27 10:03:55,063 - INFO - ====== WebDriver manager ======
+2024-12-27 10:03:55,155 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:03:55,177 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:03:55,194 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:06:26,368 - INFO - 점핏 링크 크롤링 완료
+2024-12-27 10:06:26,369 - INFO - 점핏 링크 크롤링 종료: 2024-12-27 10:06:26
+2024-12-27 10:06:31,374 - INFO - 로켓펀치 링크 크롤링 실행: 2024-12-27 10:06:31
+2024-12-27 10:06:31,374 - INFO - 로켓펀치 링크 크롤링 시작
+2024-12-27 10:06:31,374 - INFO - ====== WebDriver manager ======
+2024-12-27 10:06:31,510 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:06:31,531 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:06:31,548 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:06:38,762 - INFO - ====== WebDriver manager ======
+2024-12-27 10:06:38,853 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:06:38,895 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:06:38,913 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:06:49,053 - INFO - ====== WebDriver manager ======
+2024-12-27 10:06:49,160 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:06:49,178 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:06:49,198 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:06:56,919 - INFO - ====== WebDriver manager ======
+2024-12-27 10:06:57,028 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:06:57,048 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:06:57,066 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:07:19,173 - INFO - ====== WebDriver manager ======
+2024-12-27 10:07:19,290 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:07:19,309 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:07:19,327 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:07:28,038 - INFO - ====== WebDriver manager ======
+2024-12-27 10:07:28,132 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:07:28,149 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:07:28,167 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:07:35,481 - INFO - ====== WebDriver manager ======
+2024-12-27 10:07:35,613 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:07:35,633 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:07:35,656 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:07:43,187 - INFO - ====== WebDriver manager ======
+2024-12-27 10:07:43,289 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:07:43,306 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:07:43,324 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:07:50,823 - INFO - ====== WebDriver manager ======
+2024-12-27 10:07:50,939 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:07:50,962 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:07:50,982 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:07:58,442 - INFO - ====== WebDriver manager ======
+2024-12-27 10:07:58,551 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:07:58,569 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:07:58,588 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:08:06,795 - INFO - ====== WebDriver manager ======
+2024-12-27 10:08:06,895 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:06,916 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:06,935 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:08:13,363 - INFO - ====== WebDriver manager ======
+2024-12-27 10:08:13,464 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:13,483 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:13,501 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:08:20,472 - INFO - ====== WebDriver manager ======
+2024-12-27 10:08:20,576 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:20,606 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:20,626 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:08:27,174 - INFO - ====== WebDriver manager ======
+2024-12-27 10:08:27,277 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:27,300 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:27,319 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:08:35,276 - INFO - ====== WebDriver manager ======
+2024-12-27 10:08:35,407 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:35,425 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:35,443 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:08:42,132 - INFO - ====== WebDriver manager ======
+2024-12-27 10:08:42,233 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:42,254 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:42,275 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:08:49,909 - INFO - ====== WebDriver manager ======
+2024-12-27 10:08:50,030 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:50,049 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:50,066 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:08:56,566 - INFO - ====== WebDriver manager ======
+2024-12-27 10:08:56,658 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:56,684 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:08:56,707 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:09:02,352 - INFO - ====== WebDriver manager ======
+2024-12-27 10:09:02,464 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:09:02,482 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 10:09:02,500 - INFO - Driver [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+2024-12-27 10:09:08,285 - INFO - 로켓펀치 링크 크롤링 완료
+2024-12-27 10:09:08,287 - INFO - 로켓펀치 링크 크롤링 종료: 2024-12-27 10:09:08
+2024-12-27 10:09:13,292 - INFO - 사람인 링크 크롤링 실행: 2024-12-27 10:09:13
+2024-12-27 10:09:13,292 - INFO - 사람인 링크 크롤링 시작
+2024-12-27 10:21:16,519 - INFO - 인크루트 링크 크롤링 실행: 2024-12-27 10:21:16
+2024-12-27 10:21:16,519 - INFO - 인크루트 링크 크롤링 종료: 2024-12-27 10:21:16
+2024-12-27 10:21:21,524 - INFO - 잡코리아 링크 크롤링 실행: 2024-12-27 10:21:21
+2024-12-27 10:21:21,524 - INFO - 잡코리아 링크 크롤링 종료: 2024-12-27 10:21:21
+2024-12-27 10:21:26,529 - INFO - 점핏 링크 크롤링 실행: 2024-12-27 10:21:26
+2024-12-27 10:21:26,530 - INFO - 점핏 링크 크롤링 종료: 2024-12-27 10:21:26
+2024-12-27 10:21:31,536 - INFO - 로켓펀치 링크 크롤링 실행: 2024-12-27 10:21:31
+2024-12-27 10:21:31,536 - INFO - 로켓펀치 링크 크롤링 종료: 2024-12-27 10:21:31
+2024-12-27 10:21:36,543 - INFO - 사람인 링크 크롤링 실행: 2024-12-27 10:21:36
+2024-12-27 10:21:36,543 - INFO - 사람인 링크 크롤링 시작
+2024-12-27 10:21:36,554 - INFO - Found credentials in shared credentials file: /code/.aws/credentials
