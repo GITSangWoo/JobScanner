@@ -57,7 +57,7 @@ public class SecurityConfig {
         "/techstack?**",
         "/job-summary",
         "/login",
-        "/auth/login/kakao/**",
+        "/auth/login/kakao?**",
         "/user/**"
     };
 
@@ -89,7 +89,7 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.addAllowedOrigin("http://localhost:3000"); // React 클라이언트 URL
         configuration.addAllowedMethod("*"); // 모든 HTTP 메서드 허용
-        configuration.addAllowedHeader("*"); // 모든 헤더 허용
+        configuration.addAllowedHeader("Content-Type" ); // 모든 헤더 허용
         configuration.setAllowCredentials(true); // 쿠키 및 자격증명 허용
         configuration.addExposedHeader("Authorization"); // Authorization 헤더 노출
     

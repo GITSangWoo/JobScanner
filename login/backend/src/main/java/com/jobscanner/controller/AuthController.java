@@ -3,6 +3,7 @@ package com.jobscanner.controller;
 import lombok.RequiredArgsConstructor;
 import jakarta.servlet.http.HttpServletResponse;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -22,6 +23,7 @@ import org.springframework.http.ResponseEntity;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("")
+@CrossOrigin(origins="http://localhost:3000", allowCredentials = "true")
 public class AuthController {
 
     private final AuthService authService;
