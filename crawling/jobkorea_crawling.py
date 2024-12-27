@@ -64,7 +64,7 @@ cursor = db.cursor()
 
 # 테이블에 데이터 삽입을 위한 SQL 쿼리
 insert_query = """
-    INSERT INTO combined_tables (create_time, update_time, removed_time, site, job_title, due_type, due_date, company, post_title, notice_type, org_url, s3_text_url, s3_images_url, responsibility, qualification, preferential)
+    INSERT INTO combined_table (create_time, update_time, removed_time, site, job_title, due_type, due_date, company, post_title, notice_type, org_url, s3_text_url, s3_images_url, responsibility, qualification, preferential)
     VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
 """
 
@@ -257,7 +257,8 @@ for job_title in job_titles:
                 # iframe이 없으면 section > article에서 텍스트 추출
                 iframe_text = ""
                 img_links = []
-                content_section = driver.find_element(By.CSS_SELECTOR, "section.section-content")
+                content_section = WebDriverWait(driver, 20).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, "section.section-content")))
                 article = content_section.find_element(By.CLASS_NAME, "view-content.view-detail")
                 iframe_text = article.text.strip()
 

@@ -41,7 +41,7 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'  # 로그 메시지 형식
 )
 
-os.chdir("/code/crwaling")  # 작업 디렉토리를 /code/crwaling로 변경
+os.chdir("/code/crawling")  # 작업 디렉토리를 /code/crwaling로 변경
 print(f"Current working directory: {os.getcwd()}")  # 현재 작업 디렉토리 확인
 
 def incruit_link():
@@ -1006,22 +1006,22 @@ clean_up_chrome_processes()
 
 def link_main():
     logging.info(f"인크루트 링크 크롤링 실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    incruit_link()
+    #incruit_link()
     logging.info(f"인크루트 링크 크롤링 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 
     logging.info(f"잡코리아 링크 크롤링 실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    jobkorea_link()
+    #jobkorea_link()
     logging.info(f"잡코리아 링크 크롤링 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 
     logging.info(f"점핏 링크 크롤링 실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    jumpit_link()
+    #jumpit_link()
     logging.info(f"점핏 링크 크롤링 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 
     logging.info(f"로켓펀치 링크 크롤링 실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    rocketpunch_link()
+    #rocketpunch_link()
     logging.info(f"로켓펀치 링크 크롤링 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 

@@ -42,7 +42,7 @@ logging.basicConfig(
 )
 
 # 컨테이너 작업 디렉토리 변경
-os.chdir("/code/crwaling")
+os.chdir("/code/crawling")
 
 # MySQL 연결 풀 설정
 db_config = {

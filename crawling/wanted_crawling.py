@@ -257,7 +257,7 @@ for line in lines[1:]:  # 첫 번째 줄은 헤더이므로 생략
     # 'deleted' 상태일 경우 처리 (크롤링은 하지 않음)
     if notice_status == "deleted":
         print(f"URL {url} is deleted. Checking if it exists in the database.")
-        cursor.execute("SELECT removed_time FROM wanted WHERE org_url = %s", (url,))
+        cursor.execute("SELECT removed_time FROM combined_table WHERE org_url = %s AND site = 'wanted'", (url,))
         result = cursor.fetchone()
 
         if result:

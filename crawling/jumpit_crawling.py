@@ -40,7 +40,7 @@ logging.basicConfig(
 )
 
 # 컨테이너 작업 디렉토리 변경
-os.chdir("/code/crwaling")
+os.chdir("/code/crawling")
 
 output_folder = f"{os.path.dirname(os.path.abspath(__file__))}/jumpit"
 today = datetime.today().strftime('%Y%m%d')
@@ -237,8 +237,12 @@ for line in lines[1:]:  # 헤더는 제외
                 except Exception:
                     print(f"Failed to extract job content from {url}")
                 
+                if not os.path.exists("texts"):
+                    os.makedirs("texts", exist_ok=True)
+
                 if job_content_text:
                     text_path = os.path.join("texts", f"{uuid.uuid4()}.txt")
+                    print(f"Saving content to: {text_path}")
                     with open(text_path, "w", encoding="utf-8") as f:
                         f.write(job_content_text)
                     s3_text_url = upload_to_s3(text_path, bucket_name, f"job/{job_title}/sources/{extract_site_name(url)}/txt/{uuid.uuid4()}.txt")

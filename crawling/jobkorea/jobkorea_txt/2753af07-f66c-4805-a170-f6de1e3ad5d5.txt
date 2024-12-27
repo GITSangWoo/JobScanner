@@ -1,0 +1,45 @@
+IT 담당자 모집
+
+포지션 및 자격요건
+IT 담당자
+( 1명 )
+
+
+담당업무
+ㆍProvides a single point of contact for end users (VIPs, Traders, FO/MO/BO users, Visitors) to receive support and maintenance within the organization`s desktop computing environment. This includes installing, diagnosing, repairing, maintaining desktop hardware (PCs, monitors, printers…etc)
+ㆍSupport for all telephony equipment (desk phones, headsets, trading turrets, corporate mobiles, phone recordings and VC systems) maintenance to ensure optimal working environment
+ㆍProvide troubleshooting support (in person, by telephone, or via email) in a timely and accurate fashion and provide end-user assistance where required
+ㆍWork independently and escalate issues to regional L2/L3 IT teams
+ㆍProvides 1st level support on business applications and escalates to the appropriate support team as needed
+ㆍEnsures Natixis technology assets are properly used, monitored and recorded in our inventories.
+ㆍResponsible for recording all users’ request in ServiceNow ticketing system, with accuracy and an appropriate level of details.
+ㆍCollaborates with other Helpdesk teams in the region (by communicating about findings, fixes and documentation, whenever required)
+ㆍSupport local obligations for Business Continuity
+ㆍMaintains the IT software is in line with company required version
+ㆍWorking with local vendors/regulator and application support team to deploy the new applications for users
+ㆍEnsure all IT hardware/software/infrastructure meet local regulator’s requirement
+ㆍDocument and communicate to regional IT and compliance any divergence or discrepancy
+ㆍManaging local IT procurement. Sorting providers, preparing purchase request and dealing with the payment with Financial team
+ㆍArrange to relocate the IT equipment when there is any seating relocation of users.
+ㆍEnsure compliance with bank policy and document any discrepancy
+ㆍTo provide support to coordinate with regional IT, local team and external auditors in case of IT queries or related matters
+ㆍOffsite support and over-time work are necessary in BCP or emergency case
+
+핵심역량
+ㆍ 협동심, 성실성, 꼼꼼함
+
+자격요건
+ㆍExperience in supporting computer hardware (PC, server, VDI, laptop, turret and mobile & handhelds) and software (Windows Desktop - win7 and win10, MS Office ? 2010,2016,365, Airwatch) and basic back-end administration (Windows Server, AD, SCCM, Exchange, networking)
+ㆍBachelor in IT related discipline. MCTS/MCITP/MCSE certifications an advantage
+ㆍProactive and positive attitude. Excellent customer service oriented mindset
+ㆍBanking / Finance experience is a plus.
+ㆍ***Excellent verbal and written communications skills in English
+ㆍShift work is required
+
+
+전형절차
+ㆍ서류전형 > 1차면접 > 2차면접(영어면접) > 임원면접 > 최종합격
+ㆍ면접일정은 추후 통보됩니다.
+
+유의사항
+ㆍ허위사실이 발견될 경우 채용이 취소될 수 있습니다.

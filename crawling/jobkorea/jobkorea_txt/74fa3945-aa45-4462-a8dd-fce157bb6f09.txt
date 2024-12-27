@@ -1,0 +1,62 @@
+하만커넥티드서비시즈인크
+Technical Accounts Manager (경력)
+하만커넥티드서비시즈인크는 2013년에 설립된 회사로 외국계 회사입니다. 성남시 분당구 야탑동에 위치하고 있으며, 삼성전자의 자회사이며 하만의 소프트웨어 개발 및 반도체 설계 사업부로 SoC 설계/검증, Front/Back-end 개발, 파운드리 협업, 디자인 서비스 제공 등의 분야 사업을 진행 중입니다.
+포지션 및 자격요건
+Technical Accounts Manager
+( ○명 )
+Technical Accounts Manager
+As a Technical Accounts Manager, you will be the primary point of contact for our key customers, ensuring they are effectively utilizing Clouds to meet their business needs. You will work closely with customers to understand their technical requirements, provide guidance on best practices, and ensure a smooth onboarding and integration process. Your role is essential in proactively identifying potential challenges, troubleshooting issues, and collaborating with internal teams to deliver timely solutions. Ultimately, you will be responsible for driving customer satisfaction, retention, and long-term success through a personalized and strategic approach.
+
+RESPONSIBILITIES
+- Case management
+- Client communication
+- Maintaining customer relationships
+- Handling all Devops/SRE activities
+- Ensure reliability of services by making systems and applications stable
+- System operation: Log/Metrics check & analysis, Capacity monitoring
+- Enhance Continuous Monitoring mechanisms
+- System security check and management
+
+ADVANTAGE TO HAVE 
+- Analyze system crash/abnormal operation
+- Write and maintain Infrastructure Code using Terraform Ansible etc.
+- AWS GCP Azure Cloud Platform Infrastructure management
+- Writing CI-CD automation jobs and scripts
+- Development of Custom DevOps automation tools and dashboards
+
+LANGUAGE REQUIREMENT 
+Fluent in Korean and English, written and spoken
+
+MUST HAVE
+- A Bachelor`s degree in CS or a related field or equivalent experience in Cloud
+   Technologies.
+- Minimum 2 year of experience in using AWS is mandatory and required at least
+    one other public cloud environment such as Azure, GCP.
+- Working knowledge of Kubernetes - EKS or GKE or AKS or On-prem is a must
+- Knowledge of Prometheus and Grafana or any other monitoring system
+- Good at scripting with Linux and Python
+- Working knowledge of at least 1 Programming language -
+     Java/Python/Go/NodeJS etc.
+- Infrastructure-as-a-Code experiences using tool (Terraform, CloudFormation,
+    Helm)
+
+GOOD TO HAVE 
+- Extensive knowledge of Automation tools like Jenkins.
+- Develop scripts for the automation of various resources ie. security, cost
+    optimization.
+- Good to have Knowledge of service Mesh like Istio.
+- Understanding of SRE principles and culture.
+- Ability to proactively define problems and come up with solutions
+
+IMPORTANT
+- Case management/Client communication
+- Cloud Technologies(AWS, Azure, GCP)
+- Working location is HARMAN office at Yatap or sometimes Suwon Samsung
+    Electronics (Near Mangpo Station, 수원 망포역 근처)
+
+전형절차
+ㆍ서류전형 > 면접 전형 > 최종합격
+ㆍ면접일정은 추후 통보됩니다.
+
+유의사항
+ㆍ허위사실이 발견될 경우 채용이 취소될 수 있습니다.
