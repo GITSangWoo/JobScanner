@@ -15,8 +15,9 @@ public class NoticeDTO {
     private String qualification;
     private String preferential;
     private String tottech;
+    private String org_url;
 
-    public NoticeDTO(Long noticeid, String duetype,LocalDate duedate, String company, String posttitle, String responsibility, String qualification, String preferential, String tottech){
+    public NoticeDTO(Long noticeid, String duetype,LocalDate duedate, String company, String posttitle, String responsibility, String qualification, String preferential, String tottech, String orgurl){
         this.notice_id = noticeid;
         this.duetype = duetype;
         this.duedate = duedate;
@@ -26,6 +27,7 @@ public class NoticeDTO {
         this.qualification = qualification;
         this.preferential = preferential;
         this.tottech = tottech;
+        this.org_url = orgurl;
     }
 
 }

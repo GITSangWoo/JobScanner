@@ -14,7 +14,7 @@ public class Notice {
     @Id
     private Long notice_id;
 
-   @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "job_title", nullable = false, referencedColumnName = "job_title")
     private JobRole jobRoles;
 
@@ -41,6 +41,9 @@ public class Notice {
 
     @Column(name = "tot_tech", length = 1000)
     private String totTech;
+
+    @Column(name = "org_url", length = 1000, nullable = false)
+    private String orgUrl;
 
     @Embedded
     private AuditTime auditTime;

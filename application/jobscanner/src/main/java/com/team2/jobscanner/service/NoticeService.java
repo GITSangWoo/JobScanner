@@ -28,8 +28,8 @@ public class NoticeService {
             notice.getResponsibility(),
             notice.getQualification(),
             notice.getPreferential(),
-            notice.getTotTech()
-
+            notice.getTotTech(),
+            notice.getOrgUrl()
             ))
             .collect(Collectors.toList());
 
