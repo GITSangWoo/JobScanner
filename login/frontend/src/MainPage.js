@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./MainPage.css";
+import Cookies from 'js-cookie';
 
 const MainPage = () => {
     const [activeButton, setActiveButton] = useState(null);
@@ -13,10 +14,38 @@ const MainPage = () => {
     });
     const [jobTitles] = useState(["BE", "FE", "DE", "DA", "MLE"]);
     const navigate = useNavigate();
+    const [nickname, setNickname] = useState(""); // 사용자 닉네임 상태
 
+    // useEffect(() => {
+    //     // console.log("Updated jobData:", jobData);
+    // }, [jobData]);
+    
+    // 로그인 상태 확인 함수
+    const checkLoginStatus = () => {
+        const accessToken = Cookies.get('access_token');
+        return !!accessToken; // 토큰이 있으면 true, 없으면 false
+    };
+
+    // 사용자 정보를 가져오는 함수
     useEffect(() => {
-        // console.log("Updated jobData:", jobData);
-    }, [jobData]);
+        if (checkLoginStatus()) {
+            // 예: API 호출로 사용자 정보를 가져온다고 가정
+            const fetchUserData = async () => {
+                try {
+                    const response = await fetch("/auth/user", {
+                        headers: { Authorization: `Bearer ${Cookies.get('access_token')}` },
+                    });
+                    if (response.ok) {
+                        const data = await response.json();
+                        setNickname(data.nickname || "사용자"); // 닉네임 설정
+                    }
+                } catch (error) {
+                    console.error("Error fetching user data:", error);
+                }
+            };
+            fetchUserData();
+        }
+    }, []);
 
     const fetchDataForCategory = async (jobtitle, category) => {
         try {
@@ -57,7 +86,12 @@ const MainPage = () => {
     };
 
     const handleMypage = () => {
-        navigate("/mypage");
+        if (checkLoginStatus()) {
+            navigate("/mypage");
+        } else {
+            alert("로그인 후 이용하실 수 있습니다.");
+            navigate("/login");
+        }
     };
 
     const navigateToTechStackDetails = (techStackName) => {
@@ -79,9 +113,13 @@ const MainPage = () => {
     return (
         <div className="main-page">
             <div className="top-right-buttons">
-                <button className="auth-button" onClick={handleLogin}>
-                    로그인
-                </button>
+                {checkLoginStatus() ? (
+                    <span className="welcome-message">{nickname}님 환영합니다!</span>
+                ) : (
+                    <button className="auth-button" onClick={handleLogin}>
+                        로그인
+                    </button>
+                )}
             </div>
 
             <div className="top-left-menu">

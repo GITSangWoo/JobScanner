@@ -1,13 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './LogInPage.css';
 import { KAKAO_AUTH_URL } from './KakaoOAuth';
 import axios from 'axios';
+import { handleLoginSuccess } from './auth'; // auth.js에서 함수 가져오기
 
 const LoginPage = () => {
     const navigate = useNavigate();
-    // const [jwtToken, setJwtToken] = useState(localStorage.getItem('jwtToken')); // 로컬 스토리지에서 JWT 토큰 불러오기
-
     const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:8972';
 
     const handleRedirect = () => {
@@ -15,65 +14,43 @@ const LoginPage = () => {
         window.location.reload(); // 페이지 새로고침
     };
 
-    // JWT 토큰 저장
-    // const saveJwtToken = (token) => {
-    //     try {
-    //         localStorage.setItem('jwtToken', token);
-    //         setJwtToken(token); // 상태 업데이트
-    //     } catch (error) {
-    //         console.error('Error saving JWT token:', error);
-    //     }
-    // };
+    useEffect(() => {
+        // URL에서 인가 코드 확인
+        const code = new URL(window.location.href).searchParams.get("code");
+        if (code) {
+            // 백엔드로 인가 코드 전달하여 Access Token 받기
+            axios
+                .post(`${BACKEND_URL}/auth/login/kakao`, { code }) // 인가 코드를 요청 본문에 포함
+                .then(response => {
+                    const { accessToken } = response.data; // 백엔드에서 반환한 Access Token
+                    console.log("Access Token:", accessToken);
 
-    // // 카카오 로그인 후 리디렉션을 처리
-    // const getJwtTokenFromUrl = () => {
-    //     const urlParams = new URLSearchParams(window.location.search);
-    //     const token = urlParams.get('token');
-    //     if (token) {
-    //         saveJwtToken(token); // 토큰 저장
-    //         navigate('/'); // 홈 페이지로 이동
-    //     }
-    // };
+                    // Access Token을 쿠키에 저장
+                    handleLoginSuccess(accessToken);
 
-    // // 사용자 데이터 가져오기 (JWT 토큰을 사용하여)
-    // const fetchUserData = (token) => {
-    //     axios.post(`${BACKEND_URL}/auth/login/kakao`, {}, {  // POST 방식으로 요청
-    //         headers: {
-    //             'Authorization': `Bearer ${token}`,
-    //         }
-    //     })
-    //     .then(response => {
-    //         console.log('User data:', response.data);  // 받은 사용자 데이터 로그 찍기
-    //     })
-    //     .catch(error => console.error('Error fetching user data:', error));
-    // };
+                    // 사용자 데이터를 가져오거나 추가 작업 수행
+                    fetchUserData(accessToken);
 
-    // useEffect(() => {
-    //     if (jwtToken) {
-    //         console.log("JWT Token exists, no default fetch request.");
-    //         fetchUserData(jwtToken); // JWT 토큰을 사용하여 사용자 데이터 요청
-    //     } else {
-    //         getJwtTokenFromUrl(); // URL에서 JWT 토큰 확인
-    //     }
+                    // 홈 페이지로 리디렉션
+                    navigate("/");
+                })
+                .catch(error => {
+                    console.error("Kakao login failed:", error);
+                });
+        }
+    }, [navigate, BACKEND_URL]);
 
-    //     // 카카오 로그인 후 리디렉션을 처리
-    //     const code = new URL(window.location.href).searchParams.get("code");
-    //     if (code) {
-    //         // 백엔드로 `code` 보내기 (POST 요청 사용)
-    //         axios.post('/auth/login/kakao', {
-    //             code: code,  // 요청 본문에 code 포함
-    //         })
-    //         .then(response => {
-    //             // 응답 받으면 JWT 토큰 저장
-    //             console.log("Login successful:", response);
-    //             saveJwtToken(response.data.token); // 응답에서 받은 토큰을 저장
-    //             navigate("/"); // 로그인 후 홈 페이지로 이동
-    //         })
-    //         .catch(error => {
-    //             console.error("Kakao login failed:", error);
-    //         });
-    //     }
-    // }, [jwtToken, navigate]);
+    // 사용자 데이터를 가져오는 함수
+    const fetchUserData = (accessToken) => {
+        axios
+            .get(`${BACKEND_URL}/user/me`, {
+                headers: { Authorization: `Bearer ${accessToken}` },
+            })
+            .then(response => {
+                console.log("User data:", response.data); // 사용자 데이터 출력
+            })
+            .catch(error => console.error("Error fetching user data:", error));
+    };
 
     return (
         <div className="main-page">
