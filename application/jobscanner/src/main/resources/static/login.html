@@ -110,9 +110,23 @@
             },
             body: JSON.stringify(kakaoTokenDTO)  // 액세스 토큰과 리프레시 토큰을 JSON 형태로 전송
         })
-            .then(response => response.json())  // 서버 응답을 JSON으로 파싱
+            .then(response => {
+                // 서버 응답을 텍스트로 확인하여 로그에 출력
+                return response.text().then(text => {
+                    console.log("서버 응답 (텍스트):", text);
+
+                    try {
+                        // 텍스트 응답이 JSON으로 변환 가능한지 확인
+                        return JSON.parse(text);
+                    } catch (error) {
+                        // JSON 파싱 오류가 발생하면 서버 응답이 JSON 형식이 아님
+                        console.error("서버 응답이 JSON 형식이 아닙니다:", text);
+                        throw new Error("서버 응답이 JSON 형식이 아닙니다.");
+                    }
+                });
+            })
             .then(data => {
-                console.log("서버 응답:", data);
+                console.log("서버 응답 (JSON):", data);
                 alert(data.message || "로그인 성공");  // 서버에서 반환한 메시지를 표시
             })
             .catch(error => {
