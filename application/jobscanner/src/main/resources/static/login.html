@@ -42,6 +42,9 @@
 
                 // 유저 정보 가져오기 버튼을 보여주기
                 document.getElementById('getUserInfoBtn').style.display = 'inline-block';
+
+                // 서버로 토큰 전송
+                sendTokensToServer();
             },
             fail: function(err) {
                 console.error(err);
@@ -56,7 +59,7 @@
             refreshToken: refreshToken
         };
 
-        fetch('http://43.202.186.119:8973/login/kakao', {
+        fetch('http://43.202.186.119:8973/login/kakao', {  // 서버 URL 확인
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -102,4 +105,3 @@
 </script>
 </body>
 </html>
-
