@@ -35,16 +35,6 @@
     let accessToken = '';  // 로그인 후 액세스 토큰을 저장할 변수
     let refreshToken = '';  // 리프레시 토큰
 
-    // 페이지 로드 시 자동 로그아웃 처리 (카카오 로그인 상태 초기화)
-    window.onload = function() {
-        Kakao.Auth.logout(function() {
-            console.log("로그아웃 완료");
-        });
-
-        // 로그인 상태 초기화
-        Kakao.Auth.setAccessToken(null);  // 액세스 토큰 초기화
-    };
-
     // 로그인 버튼 클릭 시 카카오 로그인 팝업 실행
     function kakaoLogin() {
         Kakao.Auth.login({
@@ -96,12 +86,10 @@
             },
             body: JSON.stringify(kakaoTokenDTO)  // 액세스 토큰과 리프레시 토큰을 JSON 형태로 전송
         })
-            .then(response => response.text())  // 응답을 텍스트로 받음
+            .then(response => response.json())  // 서버 응답을 JSON으로 파싱
             .then(data => {
                 console.log("서버 응답:", data);
-
-                // 서버 응답이 단순한 문자열인 경우 그대로 출력
-                alert(data || "로그인 성공");
+                alert(data.message || "로그인 성공");  // 서버에서 반환한 메시지를 표시
             })
             .catch(error => {
                 console.error("서버 요청 에러:", error);
