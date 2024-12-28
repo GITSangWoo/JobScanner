@@ -82,6 +82,10 @@
             .then(response => response.json())  // 응답을 JSON으로 파싱
             .then(data => {
                 console.log("유저 정보: ", data);
+
+                // JSON 형식으로 그대로 웹 페이지에 출력
+                const jsonContainer = document.getElementById('json-container');
+                jsonContainer.textContent = JSON.stringify(data, null, 2); // 보기 좋게 JSON을 텍스트로 출력
             })
             .catch(error => {
                 console.error('Error:', error);
