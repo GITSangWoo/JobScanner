@@ -19,6 +19,7 @@ public class TechStackBookmark {
     private User user;
 
     @ManyToOne
+    @JoinColumn(name = "tech_name", nullable = false)
     private TechStack techStack;
 
     @Embedded

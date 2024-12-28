@@ -3,7 +3,7 @@ name: CI/CD for Spring TestApplication
 on:
   push:
     branches:
-      - dev/application/testsw
+      - dev/application/nojwttestsw
 
 jobs:
   build-and-push:

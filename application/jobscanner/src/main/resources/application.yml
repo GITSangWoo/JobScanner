@@ -61,8 +61,3 @@ logging:
 server:
   port: 8973  # Spring Boot 애플리케이션의 포트를 8973로 변경, 로컬에서는 localhost:8973 도커로 실행시 ????:8973 내부아이피가 됨.
 
-# JWT 설정 (JWT 관련 추가 설정이 필요하면 이곳에 추가)
-jwt:
-  header: Authorization
-  secret-key: ${JWT_SECRET_KEY}
-  expiration-time: 300000 # JWT 만료 시간 (5분)

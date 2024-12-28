@@ -46,6 +46,9 @@ public class Notice {
     @Column(name = "tot_tech", length = 1000)
     private String totTech;
 
+    @Column(name="org_url", length = 1000)
+    private String orgUrl;
+
     @Embedded
     private AuditTime auditTime;
 

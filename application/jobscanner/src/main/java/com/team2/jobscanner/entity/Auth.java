@@ -3,9 +3,11 @@ package com.team2.jobscanner.entity;
 import com.team2.jobscanner.time.AuditTime;
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 
+@Setter
 @Getter
 @Entity
 public class Auth {
@@ -17,14 +19,9 @@ public class Auth {
     @JoinColumn(name = "user_id", nullable = false)
     private User user;
 
-    @Column(name = "access_token", length = 512, nullable = false)
-    private String accessToken;
 
     @Column(name = "refresh_token", length = 512, nullable = false)
     private String refreshToken;
-
-    @Column(name = "expired_time")
-    private LocalDateTime expiredTime;
 
 
     @Embedded

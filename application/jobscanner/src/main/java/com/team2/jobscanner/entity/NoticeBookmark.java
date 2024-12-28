@@ -19,6 +19,7 @@ public class NoticeBookmark {
     private User user;
 
     @ManyToOne
+    @JoinColumn(name = "notice_id", nullable = false)
     private Notice notice;
 
     @Embedded

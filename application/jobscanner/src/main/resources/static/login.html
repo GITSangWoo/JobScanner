@@ -11,41 +11,83 @@
 <!-- 카카오 로그인 버튼 -->
 <button onclick="kakaoLogin()">카카오 로그인</button>
 
+<!-- 유저 정보 가져오기 버튼 (카카오 로그인 후 활성화) -->
+<button id="getUserInfoBtn" onclick="getUserInfo()" style="display:none;">유저 정보 가져오기</button>
+
 <!-- 카카오 로그인 SDK -->
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 <script>
     // 카카오 API 초기화
     Kakao.init('ff469952cde7e7b406e4926e6a7524b2');  // 'YOUR_APP_KEY'는 카카오 개발자 사이트에서 발급받은 앱 키
 
+    let accessToken = '';  // 로그인 후 액세스 토큰을 저장할 변수
+    let refreshToken = '';  // 리프레시 토큰
+
     // 로그인 버튼 클릭 시 카카오 로그인 팝업 실행
     function kakaoLogin() {
         Kakao.Auth.login({
             success: function(authObj) {
                 // 로그인 성공 시 인증 토큰 받기
-                const accessToken = authObj.access_token;
-                console.log("카카오 로그인 성공: ", accessToken);
+                accessToken = authObj.access_token;
+                refreshToken = authObj.refresh_token;  // 리프레시 토큰 받기
+                console.log("카카오 로그인 성공: ", accessToken, refreshToken);
 
-                // 백엔드로 토큰 전달하여 사용자 정보 가져오기
-
-                fetch('http://43.202.114.11:8973/auth/kakao', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify({ accessToken: accessToken })
-                })
-                    .then(response => response.json())
-                    .then(data => {
-                        // JWT 토큰 받기
-                        console.log("JWT 토큰: ", data.token);
-                        // 여기서 토큰을 이용해 로그인 후 프로필 정보나 다른 작업을 할 수 있습니다.
-                    })
-                    .catch(error => console.error('Error:', error));
+                // 유저 정보 가져오기 버튼을 보여주기
+                document.getElementById('getUserInfoBtn').style.display = 'inline-block';
             },
             fail: function(err) {
                 console.error(err);
             }
         });
+    }
+
+    // 유저 정보 가져오기 함수
+    function getUserInfo() {
+        if (!accessToken) {
+            alert("먼저 카카오 로그인해주세요!");
+            return;
+        }
+
+        fetch('/user/profile', {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Bearer ' + accessToken,  // 액세스 토큰을 Authorization 헤더에 포함시켜 요청
+            }
+        })
+            .then(response => {
+                if (response.status === 401) {
+                    // 리프레시 토큰으로 액세스 토큰 갱신 요청 실패 시
+                    return response.text();  // "Re-login required" 메시지를 텍스트로 받아옴
+                } else {
+                    return response.json();  // 유저 정보 JSON 데이터 반환
+                }
+            })
+            .then(data => {
+                if (data === "Re-login required") {
+                    // 리프레시 토큰 만료 시 재로그인 유도
+                    alert("리프레시 토큰이 만료되었습니다. 다시 로그인해주세요.");
+                    // 카카오 로그인 페이지로 리디렉션하여 재로그인
+                    Kakao.Auth.login({
+                        success: function(authObj) {
+                            // 로그인 성공 시
+                            accessToken = authObj.access_token;
+                            refreshToken = authObj.refresh_token;
+                            getUserInfo();  // 재로그인 후 유저 정보 가져오기
+                        },
+                        fail: function(err) {
+                            console.error(err);
+                        }
+                    });
+                } else if (data.accessToken) {
+                    // 새 액세스 토큰을 받은 경우
+                    accessToken = data.accessToken;  // 새로운 액세스 토큰 저장
+                    alert("새 액세스 토큰이 발급되었습니다.");
+                    getUserInfo();  // 유저 정보 재요청
+                } else {
+                    console.log("유저 정보: ", data);
+                }
+            })
+            .catch(error => console.error('Error:', error));
     }
 </script>
 </body>

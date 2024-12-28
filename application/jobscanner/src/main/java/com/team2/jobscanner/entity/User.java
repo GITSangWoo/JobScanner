@@ -18,13 +18,7 @@ public class User {
     private Long id;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL,mappedBy = "user")
-    private List<UserActions> userActions;
-
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL,mappedBy = "user")
     private List<Auth> auths;
-
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL,mappedBy = "user")
-    private List<ApiHistory> apiHistories;
 
     private String email;
     private String name;

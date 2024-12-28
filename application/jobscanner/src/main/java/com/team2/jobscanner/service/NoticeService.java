@@ -18,8 +18,9 @@ public class NoticeService {
 
     public List<NoticeDTO> getNoticebyjob(String jobRoles){
         List<Notice> notices = noticeRepository.findByJobRoles_JobTitleOrderByDueTypeAscDueDateAsc(jobRoles);
-        List<NoticeDTO> noticeDTOlList = notices.stream()
+        List<NoticeDTO> noticeDTOList = notices.stream()
             .map(notice -> new NoticeDTO(
+            notice.getNotice_id(),
             notice.getDueType(),
             notice.getDueDate(),
             notice.getCompany(),
@@ -27,13 +28,14 @@ public class NoticeService {
             notice.getResponsibility(),
             notice.getQualification(),
             notice.getPreferential(),
-            notice.getTotTech()
+            notice.getTotTech(),
+            notice.getOrgUrl()
             ))
             .collect(Collectors.toList());
 
 
 
-        return noticeDTOlList;
+        return noticeDTOList;
     }
 
     

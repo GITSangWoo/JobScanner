@@ -18,7 +18,7 @@ public class UserDTO {
                 .map(techStack -> new TechStackDTO(techStack.getTech_name(),techStack.getDescription(),techStack.getYoutube_link(),techStack.getBook_link(),techStack.getDocs_link()))
                 .collect(Collectors.toList());
         this.noticeBookmarks = noticeBookmarks.stream()
-                .map(notice -> new NoticeDTO(notice.getDuetype(),notice.getDuedate(),notice.getCompany(),notice.getPosttitle(),notice.getResponsibility(),notice.getQualification(),notice.getPreferential(), notice.getTottech()))
+                .map(notice -> new NoticeDTO(notice.getNoticeid(),notice.getDuetype(),notice.getDuedate(),notice.getCompany(),notice.getPosttitle(),notice.getResponsibility(),notice.getQualification(),notice.getPreferential(), notice.getTottech(),notice.getOrgurl()))
                 .collect(Collectors.toList());
     }
     // Getter, Setter
