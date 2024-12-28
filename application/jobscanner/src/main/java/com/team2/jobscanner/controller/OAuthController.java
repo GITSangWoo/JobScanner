@@ -44,7 +44,7 @@ public class OAuthController {
             userService.saveAuthToken(user, refreshToken);
 
             // 성공 응답 반환
-            return ResponseEntity.ok("로그인 성공");
+            return ResponseEntity.ok("{\"message\": \"로그인 성공\"}");
         } catch (Exception e) {
             logger.error("카카오 로그인 오류: ", e);
             return ResponseEntity.status(500).body("로그인 처리에 실패했습니다.");
