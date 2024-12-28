@@ -96,10 +96,12 @@
             },
             body: JSON.stringify(kakaoTokenDTO)  // 액세스 토큰과 리프레시 토큰을 JSON 형태로 전송
         })
-            .then(response => response.json())  // 서버 응답을 JSON으로 파싱
+            .then(response => response.text())  // 응답을 텍스트로 받음
             .then(data => {
                 console.log("서버 응답:", data);
-                alert(data.message || "로그인 성공");  // 서버에서 반환한 메시지를 표시
+
+                // 서버 응답이 단순한 문자열인 경우 그대로 출력
+                alert(data || "로그인 성공");
             })
             .catch(error => {
                 console.error("서버 요청 에러:", error);
