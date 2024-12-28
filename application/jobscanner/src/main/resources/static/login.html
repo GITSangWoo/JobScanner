@@ -32,6 +32,9 @@
                 refreshToken = authObj.refresh_token;  // 리프레시 토큰 받기
                 console.log("카카오 로그인 성공: ", accessToken, refreshToken);
 
+                // 카카오 로그인 후 서버로 액세스 토큰과 리프레시 토큰 전달
+                sendTokensToServer(accessToken, refreshToken);
+
                 // 유저 정보 가져오기 버튼을 보여주기
                 document.getElementById('getUserInfoBtn').style.display = 'inline-block';
             },
@@ -39,6 +42,29 @@
                 console.error(err);
             }
         });
+    }
+
+    // 서버로 액세스 토큰과 리프레시 토큰 전달
+    function sendTokensToServer(accessToken, refreshToken) {
+        const kakaoTokenDTO = {
+            accessToken: accessToken,
+            refreshToken: refreshToken
+        };
+
+        fetch('http://43.202.186.119:8973/login/kakao', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(kakaoTokenDTO)  // 액세스 토큰과 리프레시 토큰을 JSON 형태로 전송
+        })
+            .then(response => response.json())
+            .then(data => {
+                console.log("서버 응답:", data);
+                // 유저 정보 가져오기 버튼을 활성화
+                document.getElementById('getUserInfoBtn').style.display = 'inline-block';
+            })
+            .catch(error => console.error("서버 요청 에러:", error));
     }
 
     // 유저 정보 가져오기 함수
@@ -54,37 +80,14 @@
                 'Authorization': 'Bearer ' + accessToken,  // 액세스 토큰을 Authorization 헤더에 포함시켜 요청
             }
         })
-            .then(response => {
-                if (response.status === 401) {
-                    // 리프레시 토큰으로 액세스 토큰 갱신 요청 실패 시
-                    return response.text();  // "Re-login required" 메시지를 텍스트로 받아옴
-                } else {
-                    return response.json();  // 유저 정보 JSON 데이터 반환
-                }
-            })
+            .then(response => response.json())  // JSON으로 응답 처리
             .then(data => {
                 if (data === "Re-login required") {
                     // 리프레시 토큰 만료 시 재로그인 유도
                     alert("리프레시 토큰이 만료되었습니다. 다시 로그인해주세요.");
-                    // 카카오 로그인 페이지로 리디렉션하여 재로그인
-                    Kakao.Auth.login({
-                        success: function(authObj) {
-                            // 로그인 성공 시
-                            accessToken = authObj.access_token;
-                            refreshToken = authObj.refresh_token;
-                            getUserInfo();  // 재로그인 후 유저 정보 가져오기
-                        },
-                        fail: function(err) {
-                            console.error(err);
-                        }
-                    });
-                } else if (data.accessToken) {
-                    // 새 액세스 토큰을 받은 경우
-                    accessToken = data.accessToken;  // 새로운 액세스 토큰 저장
-                    alert("새 액세스 토큰이 발급되었습니다.");
-                    getUserInfo();  // 유저 정보 재요청
+                    kakaoLogin();  // 카카오 로그인 함수 호출하여 재로그인
                 } else {
-                    console.log("유저 정보: ", data);
+                    console.log("유저 정보: ", data);  // 유저 정보 출력
                 }
             })
             .catch(error => console.error('Error:', error));
