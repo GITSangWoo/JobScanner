@@ -29,17 +29,31 @@
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 
 <script>
-    // 카카오 API 초기화
+    // 카카오 API 초기화 (자신의 앱 키로 변경)
     Kakao.init('ff469952cde7e7b406e4926e6a7524b2');  // 'YOUR_APP_KEY'는 카카오 개발자 사이트에서 발급받은 앱 키
 
     let accessToken = '';  // 로그인 후 액세스 토큰을 저장할 변수
     let refreshToken = '';  // 리프레시 토큰
 
-    // 페이지 로드 시 자동 로그아웃 처리 (카카오 로그인 상태 초기화)
+    // 페이지 로드 시 자동 로그아웃 처리
     window.onload = function() {
+        // 로그인 상태 초기화 (로그인 되어 있으면 로그아웃)
         Kakao.Auth.logout(function() {
             console.log("로그아웃 완료");
         });
+
+        // 로그인 버튼을 항상 보이게 하기
+        document.getElementById('getUserInfoBtn').style.display = 'none';
+        document.getElementById('logoutBtn').style.display = 'none';
+
+        // 로그인 상태 확인 (자동 로그인 방지)
+        if (Kakao.Auth.getAccessToken()) {
+            console.log("이미 로그인되어 있습니다.");
+            document.getElementById('getUserInfoBtn').style.display = 'inline-block';
+            document.getElementById('logoutBtn').style.display = 'inline-block';
+        } else {
+            console.log("로그인되어 있지 않습니다.");
+        }
     }
 
     // 로그인 버튼 클릭 시 카카오 로그인 팝업 실행
@@ -54,6 +68,9 @@
                 // 유저 정보 가져오기 및 로그아웃 버튼을 보여주기
                 document.getElementById('getUserInfoBtn').style.display = 'inline-block';
                 document.getElementById('logoutBtn').style.display = 'inline-block';
+
+                // 서버로 카카오 토큰 전송
+                sendTokensToServer();
             },
             fail: function(err) {
                 console.error(err);
@@ -131,4 +148,6 @@
     }
 </script>
 </body>
+</html>
+
 </html>
