@@ -21,8 +21,11 @@ public class UserController {
 
     // 프로필 정보 제공
     @GetMapping("/profile")
-    public ResponseEntity<?> getProfile(@RequestHeader(value = HttpHeaders.AUTHORIZATION) String accessToken) {
+    public ResponseEntity<?> getProfile(@RequestHeader(value = HttpHeaders.AUTHORIZATION) String authorization) {
         try {
+            // Authorization 헤더에서 "Bearer " 부분을 제거하고 액세스 토큰만 추출
+            String accessToken = authorization.substring(7);  // "Bearer "가 7글자이므로 이를 제외한 부분이 토큰입니다.
+
             // 액세스 토큰을 해석하여 사용자 정보를 조회
             User user = userService.getUserInfoFromAccessToken(accessToken);
 
