@@ -83,9 +83,11 @@
             .then(data => {
                 console.log("유저 정보: ", data);
 
-                // JSON 형식으로 그대로 웹 페이지에 출력
+                // JSON 형식으로 유저 정보 표시
                 const jsonContainer = document.getElementById('json-container');
-                jsonContainer.textContent = JSON.stringify(data, null, 2); // 보기 좋게 JSON을 텍스트로 출력
+                if (jsonContainer) {
+                    jsonContainer.textContent = JSON.stringify(data, null, 2); // JSON을 보기 좋게 출력
+                }
             })
             .catch(error => {
                 console.error('Error:', error);
