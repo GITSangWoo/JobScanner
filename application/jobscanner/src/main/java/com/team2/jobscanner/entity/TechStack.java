@@ -19,7 +19,7 @@ public class TechStack {
     @OneToMany(mappedBy = "techStack")
     private List<DailyRank> dailyRank;
 
-    @OneToMany(mappedBy = "techStack")
+    @OneToMany(mappedBy = "techStack",cascade = CascadeType.ALL, orphanRemoval = true)
     private List<TechStackBookmark> techStackBookmarks;
 
     @Column(name="tech_description", columnDefinition = "TEXT",nullable = false)

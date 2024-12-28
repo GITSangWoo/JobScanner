@@ -19,7 +19,7 @@ public class Notice {
     @JoinColumn(name = "job_title", nullable = false, referencedColumnName = "job_title")
     private JobRole jobRoles;
 
-    @OneToMany(mappedBy = "notice")
+    @OneToMany(mappedBy = "notice",cascade = CascadeType.ALL, orphanRemoval = true)
     private List<NoticeBookmark> noticeBookmarks;
 
     @Column(name = "due_type", length = 20, nullable = false)

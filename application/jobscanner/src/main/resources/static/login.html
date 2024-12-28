@@ -14,6 +14,9 @@
 <!-- 유저 정보 가져오기 버튼 (카카오 로그인 후 활성화) -->
 <button id="getUserInfoBtn" onclick="getUserInfo()" style="display:none;">유저 정보 가져오기</button>
 
+<!-- 로그아웃 버튼 (카카오 로그인 후 활성화) -->
+<button id="logoutBtn" onclick="kakaoLogout()" style="display:none;">카카오 로그아웃</button>
+
 <!-- JSON 형식으로 유저 정보 표시 -->
 <div id="user-info">
     <h3>유저 정보</h3>
@@ -21,8 +24,6 @@
         <!-- 여기에 JSON 형식으로 유저 정보가 표시됩니다 -->
     </pre>
 </div>
-
-
 
 <!-- 카카오 로그인 SDK -->
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
@@ -34,6 +35,13 @@
     let accessToken = '';  // 로그인 후 액세스 토큰을 저장할 변수
     let refreshToken = '';  // 리프레시 토큰
 
+    // 페이지 로드 시 자동 로그아웃 처리 (카카오 로그인 상태 초기화)
+    window.onload = function() {
+        Kakao.Auth.logout(function() {
+            console.log("로그아웃 완료");
+        });
+    }
+
     // 로그인 버튼 클릭 시 카카오 로그인 팝업 실행
     function kakaoLogin() {
         Kakao.Auth.login({
@@ -43,12 +51,31 @@
                 refreshToken = authObj.refresh_token;  // 리프레시 토큰 받기
                 console.log("카카오 로그인 성공: ", accessToken, refreshToken);
 
-                // 유저 정보 가져오기 버튼을 보여주기
+                // 유저 정보 가져오기 및 로그아웃 버튼을 보여주기
                 document.getElementById('getUserInfoBtn').style.display = 'inline-block';
+                document.getElementById('logoutBtn').style.display = 'inline-block';
             },
             fail: function(err) {
                 console.error(err);
             }
+        });
+    }
+
+    // 로그아웃 처리
+    function kakaoLogout() {
+        Kakao.Auth.logout(function() {
+            console.log("카카오 로그아웃 성공");
+
+            // 로그인 상태 초기화
+            accessToken = '';
+            refreshToken = '';
+
+            // 버튼 상태 변경
+            document.getElementById('getUserInfoBtn').style.display = 'none';
+            document.getElementById('logoutBtn').style.display = 'none';
+
+            // 사용자에게 알림
+            alert("로그아웃 되었습니다.");
         });
     }
 
