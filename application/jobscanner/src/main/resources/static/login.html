@@ -32,9 +32,6 @@
                 refreshToken = authObj.refresh_token;  // 리프레시 토큰 받기
                 console.log("카카오 로그인 성공: ", accessToken, refreshToken);
 
-                // 카카오 로그인 후 서버로 액세스 토큰과 리프레시 토큰 전달
-                sendTokensToServer(accessToken, refreshToken);
-
                 // 유저 정보 가져오기 버튼을 보여주기
                 document.getElementById('getUserInfoBtn').style.display = 'inline-block';
             },
@@ -44,8 +41,8 @@
         });
     }
 
-    // 서버로 액세스 토큰과 리프레시 토큰 전달
-    function sendTokensToServer(accessToken, refreshToken) {
+    // 서버로 카카오 로그인 토큰을 전송
+    function sendTokensToServer() {
         const kakaoTokenDTO = {
             accessToken: accessToken,
             refreshToken: refreshToken
@@ -58,39 +55,37 @@
             },
             body: JSON.stringify(kakaoTokenDTO)  // 액세스 토큰과 리프레시 토큰을 JSON 형태로 전송
         })
-            .then(response => response.json())
+            .then(response => response.json())  // 서버 응답을 JSON으로 파싱
             .then(data => {
                 console.log("서버 응답:", data);
-                // 유저 정보 가져오기 버튼을 활성화
-                document.getElementById('getUserInfoBtn').style.display = 'inline-block';
+                alert(data.message || "로그인 성공");  // 서버에서 반환한 메시지를 표시
             })
-            .catch(error => console.error("서버 요청 에러:", error));
+            .catch(error => {
+                console.error("서버 요청 에러:", error);
+                alert("서버 요청 중 오류가 발생했습니다.");
+            });
     }
 
-    // 유저 정보 가져오기 함수
+    // 유저 정보 가져오기
     function getUserInfo() {
         if (!accessToken) {
             alert("먼저 카카오 로그인해주세요!");
             return;
         }
 
-        fetch('/user/profile', {
+        fetch('http://43.202.186.119:8973/user/profile', {
             method: 'GET',
             headers: {
                 'Authorization': 'Bearer ' + accessToken,  // 액세스 토큰을 Authorization 헤더에 포함시켜 요청
             }
         })
-            .then(response => response.json())  // JSON으로 응답 처리
+            .then(response => response.json())  // 응답을 JSON으로 파싱
             .then(data => {
-                if (data === "Re-login required") {
-                    // 리프레시 토큰 만료 시 재로그인 유도
-                    alert("리프레시 토큰이 만료되었습니다. 다시 로그인해주세요.");
-                    kakaoLogin();  // 카카오 로그인 함수 호출하여 재로그인
-                } else {
-                    console.log("유저 정보: ", data);  // 유저 정보 출력
-                }
+                console.log("유저 정보: ", data);
             })
-            .catch(error => console.error('Error:', error));
+            .catch(error => {
+                console.error('Error:', error);
+            });
     }
 </script>
 </body>
