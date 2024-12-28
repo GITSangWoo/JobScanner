@@ -14,8 +14,19 @@
 <!-- 유저 정보 가져오기 버튼 (카카오 로그인 후 활성화) -->
 <button id="getUserInfoBtn" onclick="getUserInfo()" style="display:none;">유저 정보 가져오기</button>
 
+<!-- JSON 형식으로 유저 정보 표시 -->
+<div id="user-info">
+    <h3>유저 정보</h3>
+    <pre id="json-container">
+        <!-- 여기에 JSON 형식으로 유저 정보가 표시됩니다 -->
+    </pre>
+</div>
+
+
+
 <!-- 카카오 로그인 SDK -->
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+
 <script>
     // 카카오 API 초기화
     Kakao.init('ff469952cde7e7b406e4926e6a7524b2');  // 'YOUR_APP_KEY'는 카카오 개발자 사이트에서 발급받은 앱 키
@@ -83,11 +94,9 @@
             .then(data => {
                 console.log("유저 정보: ", data);
 
-                // JSON 형식으로 유저 정보 표시
+                // JSON 형식으로 그대로 웹 페이지에 출력
                 const jsonContainer = document.getElementById('json-container');
-                if (jsonContainer) {
-                    jsonContainer.textContent = JSON.stringify(data, null, 2); // JSON을 보기 좋게 출력
-                }
+                jsonContainer.textContent = JSON.stringify(data, null, 2); // 보기 좋게 JSON을 텍스트로 출력
             })
             .catch(error => {
                 console.error('Error:', error);
