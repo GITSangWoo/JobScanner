@@ -1,6 +1,7 @@
 package com.team2.jobscanner.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -8,6 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.team2.jobscanner.dto.RankCategoryDTO;
 import com.team2.jobscanner.service.DailyRankService;
 
+@CrossOrigin(origins = "http://43.202.186.119/*")
 @RestController
 public class DailyRankController {
 

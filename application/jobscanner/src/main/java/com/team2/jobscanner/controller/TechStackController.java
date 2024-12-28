@@ -4,6 +4,7 @@ import com.team2.jobscanner.dto.TechStackDTO;
 import com.team2.jobscanner.service.TechStackService;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins = "http://43.202.186.119/*")
 @RestController
 @RequestMapping("/techstack")
 public class TechStackController {
