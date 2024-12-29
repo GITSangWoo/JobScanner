@@ -82,11 +82,11 @@
             // 기술 스택 목록을 HTML로 동적으로 추가
             techList.forEach(function(tech) {
                 techHtml += `
-                        <div class="tech-item" id="tech-${tech.techName}">
-                            <h2>${tech.techName}</h2>
+                        <div class="tech-item" id="tech-${tech.tech_name}">
+                            <h2>${tech.tech_name}</h2>
                             <p><strong>설명:</strong> ${tech.description}</p>
-                            <p><strong>기술 관련 링크:</strong> <a href="${tech.docsLink}" target="_blank">문서 링크</a></p>
-                            <button class="bookmark-btn" data-techname="${tech.techName}">북마크 추가</button>
+                            <p><strong>기술 관련 링크:</strong> <a href="${tech.docslink}" target="_blank">문서 링크</a></p>
+                            <button class="bookmark-btn" data-techname="${tech.tech_name}">북마크 추가</button>
                         </div>
                     `;
             });
