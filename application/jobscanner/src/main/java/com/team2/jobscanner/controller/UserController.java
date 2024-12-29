@@ -59,11 +59,24 @@ public class UserController {
             // 액세스 토큰에서 유저 정보 추출
             String accessToken = authorization.substring(7);  // "Bearer "를 제외한 토큰
             boolean isAdded = userService.addOrRemoveNoticeBookmark(accessToken, noticeId);
-            return ResponseEntity.ok(isAdded ? "Bookmark added successfully" : "Bookmark removed successfully");
+            return ResponseEntity.ok(isAdded ? "북마크가 성공적으로 추가됐어요" : "북마크가 성공적으로 해제됐어요");
         } catch (Exception e) {
             return ResponseEntity.status(500).body("Error processing bookmark");
         }
     }
+
+    @PostMapping("/bookmark/tech")
+    public ResponseEntity<?> addOrRemoveTechStackBookmark(@RequestHeader("Authorization") String authorization,
+                                                          @RequestParam String techName) {
+        try {
+            String accessToken = authorization.substring(7);  // "Bearer "를 제외한 토큰
+            boolean isAdded = userService.addOrRemoveTechStackBookmark(accessToken, techName);
+            return ResponseEntity.ok(isAdded ? "기술 스택이 성공적으로 북마크되었습니다." : "기술 스택 북마크가 성공적으로 해제되었습니다.");
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("기술 스택 북마크 처리 중 오류가 발생했습니다.");
+        }
+    }
+
 }
 
 

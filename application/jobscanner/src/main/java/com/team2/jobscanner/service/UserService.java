@@ -5,10 +5,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.team2.jobscanner.dto.NoticeDTO;
 import com.team2.jobscanner.dto.TechStackDTO;
 import com.team2.jobscanner.dto.UserDTO;
-import com.team2.jobscanner.entity.Auth;
-import com.team2.jobscanner.entity.Notice;
-import com.team2.jobscanner.entity.NoticeBookmark;
-import com.team2.jobscanner.entity.User;
+import com.team2.jobscanner.entity.*;
 import com.team2.jobscanner.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -31,6 +28,9 @@ public class UserService {
 
     @Autowired
     private NoticeRepository noticeRepository;
+
+    @Autowired
+    private TechStackRepository techStackRepository;
 
     private final RestTemplate restTemplate = new RestTemplate();
 
@@ -230,6 +230,35 @@ public class UserService {
             newBookmark.setUser(user);
             newBookmark.setNotice(notice);
             noticeBookmarkRepository.save(newBookmark);
+            return true;
+        }
+    }
+
+    public boolean addOrRemoveTechStackBookmark(String accessToken, String techName) {
+        User user = getUserInfoFromAccessToken(accessToken); // 사용자 정보 가져오기
+        if (user == null) {
+            throw new RuntimeException("사용자를 찾을 수 없습니다.");
+        }
+
+        // 기술 스택 조회
+        TechStack techStack = techStackRepository.findByTechName(techName);
+        if (techStack == null) {
+            throw new RuntimeException("기술 스택을 찾을 수 없습니다.");
+        }
+
+        // 이미 북마크가 있는지 확인
+        Optional<TechStackBookmark> existingBookmark = techStackBookmarkRepository.findByUserAndTechStack(user, techStack);
+
+        if (existingBookmark.isPresent()) {
+            // 북마크가 존재하면 삭제
+            techStackBookmarkRepository.delete(existingBookmark.get());
+            return false;
+        } else {
+            // 북마크가 없다면 추가
+            TechStackBookmark newBookmark = new TechStackBookmark();
+            newBookmark.setUser(user);
+            newBookmark.setTechStack(techStack);
+            techStackBookmarkRepository.save(newBookmark);
             return true;
         }
     }
