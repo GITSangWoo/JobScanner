@@ -17,10 +17,11 @@ public class TechStack {
     private String techName;
 
     @JsonIgnoreProperties("techStack") 
-    @OneToMany(mappedBy = "techStack")
+    @OneToMany(mappedBy = "techStack",fetch = FetchType.LAZY)
     private List<DailyRank> dailyRank;
 
-    @OneToMany(mappedBy = "techStack",cascade = CascadeType.ALL, orphanRemoval = true)
+
+    @OneToMany(mappedBy = "techStack",cascade = CascadeType.ALL, orphanRemoval = true,fetch = FetchType.LAZY)
     private List<TechStackBookmark> techStackBookmarks;
 
     @Column(name="tech_description", columnDefinition = "TEXT",nullable = false)
