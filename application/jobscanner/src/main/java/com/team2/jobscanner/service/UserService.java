@@ -6,16 +6,16 @@ import com.team2.jobscanner.dto.NoticeDTO;
 import com.team2.jobscanner.dto.TechStackDTO;
 import com.team2.jobscanner.dto.UserDTO;
 import com.team2.jobscanner.entity.Auth;
+import com.team2.jobscanner.entity.Notice;
+import com.team2.jobscanner.entity.NoticeBookmark;
 import com.team2.jobscanner.entity.User;
-import com.team2.jobscanner.repository.AuthRepository;
-import com.team2.jobscanner.repository.NoticeBookmarkRepository;
-import com.team2.jobscanner.repository.TechStackBookmarkRepository;
-import com.team2.jobscanner.repository.UserRepository;
+import com.team2.jobscanner.repository.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -26,10 +26,16 @@ public class UserService {
     @Autowired
     private UserRepository userRepository;
 
+    @Autowired
+    private NoticeBookmarkRepository noticeBookmarkRepository;
+
+    @Autowired
+    private NoticeRepository noticeRepository;
+
     private final RestTemplate restTemplate = new RestTemplate();
 
     private final TechStackBookmarkRepository techStackBookmarkRepository;
-    private final NoticeBookmarkRepository noticeBookmarkRepository;
+
 
     public UserService(UserRepository userRepository,
                        TechStackBookmarkRepository techStackBookmarkRepository,
@@ -196,6 +202,34 @@ public class UserService {
                 .collect(Collectors.toList());
 
         return new UserDTO(user.getEmail(), user.getName(), techStackDTOs, noticeDTOs);
+    }
+
+    public void addOrRemoveNoticeBookmark(String accessToken, Long noticeId) {
+        // 사용자 정보를 액세스 토큰으로 얻기
+        User user = getUserInfoFromAccessToken(accessToken); // 해당 메서드 필요
+        if (user == null) {
+            throw new RuntimeException("User not found");
+        }
+
+        // 공고 조회
+        Notice notice = noticeRepository.findById(noticeId).orElse(null);
+        if (notice == null) {
+            throw new RuntimeException("Notice not found");
+        }
+
+        // 북마크 존재 여부 확인
+        Optional<NoticeBookmark> existingBookmark = noticeBookmarkRepository.findByUserAndNotice(user, notice);
+
+        if (existingBookmark.isPresent()) {
+            // 북마크가 이미 존재하면 삭제
+            noticeBookmarkRepository.delete(existingBookmark.get());
+        } else {
+            // 북마크가 없다면 새로 추가
+            NoticeBookmark newBookmark = new NoticeBookmark();
+            newBookmark.setUser(user);
+            newBookmark.setNotice(notice);
+            noticeBookmarkRepository.save(newBookmark);
+        }
     }
 
 }

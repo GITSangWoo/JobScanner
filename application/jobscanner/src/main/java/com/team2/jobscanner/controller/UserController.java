@@ -51,6 +51,19 @@ public class UserController {
             return ResponseEntity.status(500).body("Internal Server Error");
         }
     }
+
+    @PostMapping("/bookmark/notice")
+    public ResponseEntity<?> addOrRemoveBookmark(@RequestHeader("Authorization") String authorization,
+                                                 @RequestParam Long noticeId) {
+        try {
+            // 액세스 토큰에서 유저 정보 추출
+            String accessToken = authorization.substring(7);  // "Bearer "를 제외한 토큰
+            userService.addOrRemoveNoticeBookmark(accessToken, noticeId);
+            return ResponseEntity.ok("Bookmark toggled successfully");
+        } catch (Exception e) {
+            return ResponseEntity.status(500).body("Error processing bookmark");
+        }
+    }
 }
 
 
