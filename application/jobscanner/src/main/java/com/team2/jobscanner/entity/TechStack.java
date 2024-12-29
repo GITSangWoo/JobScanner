@@ -20,7 +20,6 @@ public class TechStack {
     @OneToMany(mappedBy = "techStack")
     private List<DailyRank> dailyRank;
 
-    @JsonIgnoreProperties("techStack")
     @OneToMany(mappedBy = "techStack",cascade = CascadeType.ALL, orphanRemoval = true)
     private List<TechStackBookmark> techStackBookmarks;
 

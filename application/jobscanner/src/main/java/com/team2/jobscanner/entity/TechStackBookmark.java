@@ -21,7 +21,6 @@ public class TechStackBookmark {
 
     @ManyToOne
     @JoinColumn(name = "tech_name", nullable = false)
-    @JsonIgnoreProperties("techStackBookmarks")
     private TechStack techStack;
 
     @Embedded

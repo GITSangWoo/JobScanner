@@ -15,8 +15,8 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @OneToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL,orphanRemoval = true,mappedBy = "user")
-    private List<Auth> auths;
+    @OneToOne(cascade = CascadeType.ALL,orphanRemoval = true,mappedBy = "user")
+    private Auth auth;
 
     private String email;
     private String name;
