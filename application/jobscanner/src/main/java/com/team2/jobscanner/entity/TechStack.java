@@ -1,6 +1,7 @@
 package com.team2.jobscanner.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.team2.jobscanner.time.AuditTime;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -19,6 +20,7 @@ public class TechStack {
     @OneToMany(mappedBy = "techStack")
     private List<DailyRank> dailyRank;
 
+    @JsonIgnoreProperties("techStack")
     @OneToMany(mappedBy = "techStack",cascade = CascadeType.ALL, orphanRemoval = true)
     private List<TechStackBookmark> techStackBookmarks;
 

@@ -1,5 +1,6 @@
 package com.team2.jobscanner.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.team2.jobscanner.time.AuditTime;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -20,6 +21,7 @@ public class TechStackBookmark {
 
     @ManyToOne
     @JoinColumn(name = "tech_name", nullable = false)
+    @JsonIgnoreProperties("techStackBookmarks")
     private TechStack techStack;
 
     @Embedded
