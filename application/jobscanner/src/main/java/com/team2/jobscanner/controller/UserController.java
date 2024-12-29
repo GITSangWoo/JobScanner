@@ -58,8 +58,8 @@ public class UserController {
         try {
             // 액세스 토큰에서 유저 정보 추출
             String accessToken = authorization.substring(7);  // "Bearer "를 제외한 토큰
-            userService.addOrRemoveNoticeBookmark(accessToken, noticeId);
-            return ResponseEntity.ok("Bookmark toggled successfully");
+            boolean isAdded = userService.addOrRemoveNoticeBookmark(accessToken, noticeId);
+            return ResponseEntity.ok(isAdded ? "Bookmark added successfully" : "Bookmark removed successfully");
         } catch (Exception e) {
             return ResponseEntity.status(500).body("Error processing bookmark");
         }

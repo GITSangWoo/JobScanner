@@ -204,7 +204,7 @@ public class UserService {
         return new UserDTO(user.getEmail(), user.getName(), techStackDTOs, noticeDTOs);
     }
 
-    public void addOrRemoveNoticeBookmark(String accessToken, Long noticeId) {
+    public boolean addOrRemoveNoticeBookmark(String accessToken, Long noticeId) {
         // 사용자 정보를 액세스 토큰으로 얻기
         User user = getUserInfoFromAccessToken(accessToken); // 해당 메서드 필요
         if (user == null) {
@@ -223,12 +223,14 @@ public class UserService {
         if (existingBookmark.isPresent()) {
             // 북마크가 이미 존재하면 삭제
             noticeBookmarkRepository.delete(existingBookmark.get());
+            return false;
         } else {
             // 북마크가 없다면 새로 추가
             NoticeBookmark newBookmark = new NoticeBookmark();
             newBookmark.setUser(user);
             newBookmark.setNotice(notice);
             noticeBookmarkRepository.save(newBookmark);
+            return true;
         }
     }
 

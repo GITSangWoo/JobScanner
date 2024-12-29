@@ -62,7 +62,8 @@
                         "noticeId": noticeId
                     },
                     success: function(response) {
-                        alert('북마크가 성공적으로 추가되었습니다!');
+                        // 북마크가 추가되었는지 삭제되었는지에 따라 메시지 표시
+                        alert(response); // 'Bookmark added successfully' 또는 'Bookmark removed successfully' 표시
                     },
                     error: function(xhr, status, error) {
                         alert('북마크 추가 실패: ' + error);
