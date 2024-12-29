@@ -15,7 +15,7 @@ public class UserDTO {
         this.email = email;
         this.name = name;
         this.techStackBookmarks = techStackBookmarks.stream()
-                .map(techStack -> new TechStackDTO(techStack.getTech_name(),techStack.getDescription(),techStack.getYoutube_link(),techStack.getBook_link(),techStack.getDocs_link()))
+                .map(techStack -> new TechStackDTO(techStack.getTech_name(),techStack.getDescription(),techStack.getYoutubelink(),techStack.getBooklink(),techStack.getDocslink()))
                 .collect(Collectors.toList());
         this.noticeBookmarks = noticeBookmarks.stream()
                 .map(notice -> new NoticeDTO(notice.getNoticeid(),notice.getDuetype(),notice.getDuedate(),notice.getCompany(),notice.getPosttitle(),notice.getResponsibility(),notice.getQualification(),notice.getPreferential(), notice.getTottech(),notice.getOrgurl()))
