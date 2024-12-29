@@ -43,6 +43,9 @@
                 // 유저 정보 가져오기 버튼을 보여주기
                 document.getElementById('getUserInfoBtn').style.display = 'inline-block';
 
+                // 세션에 액세스 토큰 저장
+                sessionStorage.setItem('accessToken', accessToken);
+
                 // 서버로 토큰 전송
                 sendTokensToServer();
             },
