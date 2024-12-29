@@ -26,7 +26,7 @@ const JobSummaryPage = () => {
             // 예: API 호출로 사용자 정보를 가져온다고 가정
             const fetchUserData = async () => {
                 try {
-                    const response = await fetch("/api/user/info", {
+                    const response = await fetch("/auth/user", {
                         headers: { Authorization: `Bearer ${Cookies.get('access_token')}` },
                     });
                     if (response.ok) {
@@ -94,6 +94,7 @@ const JobSummaryPage = () => {
                 const transformedData = data.map((job) => ({
                     id: job.notice_id,
                     deadline: job.duetype === "날짜" ? job.duedate : "상시채용",
+                    org_url: job.org_url,
                     companyName: job.company,
                     jobTitle: job.posttitle,
                     mainTask: job.responsibility || "상세 미제공",
@@ -205,7 +206,11 @@ const JobSummaryPage = () => {
                                 <tr key={job.id}>
                                     <td>{job.deadline}</td>
                                     <td>{job.companyName}</td>
-                                    <td>{job.jobTitle}</td>
+                                    <td>
+                                        <a href={job.org_url} target="_blank" rel="noopener noreferrer">
+                                            {job.jobTitle}
+                                        </a>
+                                    </td>
                                     <td>{job.mainTask}</td>
                                     <td>{job.qualifications}</td>
                                     <td>{job.preferences}</td>

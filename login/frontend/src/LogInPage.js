@@ -43,7 +43,7 @@ const LoginPage = () => {
     // 사용자 데이터를 가져오는 함수
     const fetchUserData = (accessToken) => {
         axios
-            .get(`${BACKEND_URL}/user/me`, {
+            .get(`${BACKEND_URL}/auth/user`, {
                 headers: { Authorization: `Bearer ${accessToken}` },
             })
             .then(response => {
