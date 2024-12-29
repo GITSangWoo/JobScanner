@@ -6,6 +6,7 @@ import com.team2.jobscanner.repository.TechStackRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class TechStackService {
@@ -18,19 +19,25 @@ public class TechStackService {
 
     public TechStackDTO getTechDetails(String techName) {
         TechStack techStack = techStackRepository.findByTechName(techName);
-
-        // DTO로 변환
-        return new TechStackDTO(
-                techStack.getTechName(),          // 기술 이름
-                techStack.getTechDescription(),   // 기술 설명
-                techStack.getYoutubeLink(),       // 유튜브 링크
-                techStack.getBookLink(),          // 도서 링크
-                techStack.getDocsLink()          // 공식 문서 링크
-        );
+        // 엔티티에서 DTO로 변환
+        return convertToDTO(techStack);
     }
 
-    // 모든 기술 목록을 반환하는 메서드
-    public List<TechStack> getAllTechStacks() {
-        return techStackRepository.findAll();  // 기술 테이블에서 모든 기술을 가져옵니다.
+    public List<TechStackDTO> getAllTechStacks() {
+        List<TechStack> techStacks = techStackRepository.findAll();
+        // 엔티티에서 DTO로 변환
+        return techStacks.stream()
+                .map(this::convertToDTO)
+                .collect(Collectors.toList());
+    }
+
+    private TechStackDTO convertToDTO(TechStack techStack) {
+        return new TechStackDTO(
+                techStack.getTechName(),
+                techStack.getTechDescription(),
+                techStack.getYoutubeLink(),
+                techStack.getBookLink(),
+                techStack.getDocsLink()
+        );
     }
 }

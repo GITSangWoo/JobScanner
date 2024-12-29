@@ -20,13 +20,8 @@ public class TechStackController {
     }
 
     @GetMapping("/all")
-    public ResponseEntity<List<TechStack>> getAllTechStacks() {
-        try {
-            List<TechStack> techStacks = techStackService.getAllTechStacks();
-            return ResponseEntity.ok(techStacks);  // 기술 목록 반환
-        } catch (Exception e) {
-            return ResponseEntity.status(500).body(null);  // 에러 처리
-        }
+    public List<TechStackDTO> getAllTechStacks() {
+        return techStackService.getAllTechStacks();
     }
 
     @GetMapping
