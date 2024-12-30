@@ -27,7 +27,7 @@ jobs:
       - name: Log in to Amazon ECR
         id: login-ecr
         run: |
-          aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 637423378310.dkr.ecr.us-east-1.amazonaws.com
+          aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/u5b2p7i3
 
 
       # docker images build or ECR push
@@ -60,3 +60,13 @@ jobs:
         run: |
           docker build --no-cache -t 637423378310.dkr.ecr.us-east-1.amazonaws.com/job_scanner/crwaling/text_crawler:latest -f ./text_crawler/Dockerfile ./text_crawler
           docker push 637423378310.dkr.ecr.us-east-1.amazonaws.com/job_scanner/crwaling/text_crawler:latest
+
+      - name: Delete Existing Extract Crawler Image
+        run: |
+          aws ecr batch-delete-image --repository-name job_scanner/crwaling/extract_crawler \
+          --image-ids imageTag=latest || echo "No existing extract_crawler image to delete."
+
+      - name: Build and Push Text Crawler Image
+        run: |
+          docker build --no-cache -t 637423378310.dkr.ecr.us-east-1.amazonaws.com/job_scanner/crwaling/extract_crawler:latest -f ./extract_crawler/Dockerfile ./extract_crawler
+          docker push 637423378310.dkr.ecr.us-east-1.amazonaws.com/job_scanner/crwaling/extract_crawler:latest
