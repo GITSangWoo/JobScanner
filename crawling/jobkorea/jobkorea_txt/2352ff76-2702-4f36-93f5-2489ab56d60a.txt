@@ -1,0 +1,102 @@
+급성장 docenty.ai 챗봇 서비스 개발 전 직종 채용
+
+각종 직종, 근무 형태 통합 공고
+보통, 3개월 이상 기간의 계약직으로 먼저 채용하고, 정규직 전환할지 결정합니다.
+
+커머스 입점 업체 고객 상담을 위한 AI, 기업 사내 문서 자료 검색 AI를 자동 생성해주는 B2B SaaS를 개발합니다.
+https://docenty.ai 국내 버전을 2023년 12월 출시했습니다.
+국내 최고 수준 성장 속도
+ 실적
+2023년 Primer batch 23기 선정. 시드팁스 선정
+2023년 82startup Like Lion US ideathon ( 한미 국제 startup 창업 대회 ) Gen AI 부문 입상
+2023년 GCP AI startups $200k, MS Azure 등 각종 credits 확보
+2024년 5월 카이스트청년창업투자지주 시드 투자 유치 성공
+2024년 창업중심대학 초기창업기업, 디딤돌 도약형, 민관협력 OI, 신보 NEST, TIPS 선정
+창업 1년 이내에 대기업, 공공기관 등 실적, 레퍼런스 확보. LG전자, 식약처, 우미건설, KISTI, ...
+
+2025년 상반기 일본 진출 예정
+Global B2B SaaS를 목표로 하고 있고, 일본 또는 미국 법인 또는 영업 거점도 설립할 계획을 갖고 있습니다.
+    
+포지션 및 자격요건
+프론트엔드, 백엔드, AI
+PM, PO, 
+기획, 
+UI, UX
+마케팅, 사업 개발, 행정
+( ○명 )
+
+Preferences
+LLM, AI로 세상 혁신이 일어나고 있는 지금 시대에 선두에서 선점하실 분
+급속 성장하는 AI startup의 다음 단계 도약을 이끄실 분
+급속 성장하고자 하는 의지가 크고, 꾸준한 열정으로 성장하실 분
+docenty 제품, 사업에 꾸준히 관심과 열정을 가지실 분. NLP, LLM, RAG, chatbot, SaaS
+해외 시장에서 global tech 기업들과 경쟁하는 것을 즐기실 분
+ 
+모든 직군 채용합니다.
+AI, LLM, ML engineer
+Backend engineer
+Frontend engineer
+Business dev, Marketing, Sales
+정부지원사업, 회계, 재무
+Product owner
+Designer
+...
+
+우대사항
+- 스스로의 힘으로 높은 수준의 허들을 넘어 온 사람, 남들이 정해 놓은 선을 넘어 결과를 만들어 온 사람 (*)
+- 특별한 우수성 입증 실적
+- 특별히 노력해서 특별한 성과를 달성했던 자랑스러운 이력
+- 세상을 혁신, 변화 시킨 경험 또는 습관
+
+backend tech stacks
+
+python (또는 nodejs, nestjs)
+langchain, FastAPI, MongoDB
+Open AI
+GCP, firebase
+
+frontend tech stacks
+
+typescript
+reactjs, nextjs
+Vercel
+PostgreSQL
+
+full-time, part-time, internship, remote, 정규직, 계약직, ...
+productivity, efficiency 우선으로 flexible하게 모집합니다!
+
+2024년 11월 현재 신림선 서울대벤처타운 역 근무 중. 2025년 중 강남, 공덕 근처 사이 어딘가로 이사 예정
+
+혜택 및 복지 (단, 회사 사정에 따라 변화 있음)
+? 2024년 운영비 공제 제품 영업 이익의 일부를 임직원 incentive로 할당 추진 중 
+? 1년 retention bonus (회사 재정 안정성 충분한 경우)
+? bonus 예산 내에서 자기 생산성에 효율적인 방향으로 자유롭게 투자 (예: 500만원 상당 https://f-lab.kr/ 교육 )
+? 출퇴근 시간, 출근, 재택 비율 선택 협의 가능. 최대 생산 효율 방향으로 협의 가능. (보장 아님)
+
+일반적인 전형 과정
+1. 서류 심사
+2. casual video call 30분 정도 (회사, 제품, 전형 설명)
+3. on-site interview
+  a. (전공 과목 또는 연구 주제 있는) in-depth 기술 주제 하나 정해서 문답 토론
+  b. tech position 실무 면접의 경우, live coding, system architecture design (google 등 미국 big-tech interview와 일부 유사)
+ 오해 없도록 주의
+- 편한 환경이 갖춰져야만 생산성이 올라간다고 생각하시는 분께 편한 환경을 제공해 드릴 수 없습니다. 아무 조건, 환경에서도 직접 헤쳐나가 실 수 있는 분께 최적 맞춤 환경을 제공하기 위해 최선의 노력을 합니다. 
+- 성과는 고객 만족, 영업에 공헌한 성과만 인정합니다. 자기 만족의 결과는 성과에 포함되지 않습니다.
+- 살면서 동료들, 남들, 환경 때문에 자기 성과가 안 나왔다고 오해한다면, 초기 스타트업이랑 안 맞을 가능성이 큽니다. 최종 결과가 고객에 도달하기까지 추진력 있게 문제를 직접 해결 할 분만 채용합니다. 동료들도 적극적으로 돕고, 능력을 발휘합니다.
+- 처우 수준이 먼저 높아야만 일을 잘 할 수 있다고 생각하시는 분들께 좋은 처우 조건을 제시할 수 없습니다. 최고의 성과를 먼저 증명하고, 회사를 성장시킬 potential을 증명한 분들께, 회사가 제공 가능한 모든 것을 최대한 제공합니다. (**)
+
+
+아이디어 출처
+* "스스로의 힘으로 높은 수준의 허들을 넘어 온 사람, 남들이 정해 놓은 선을 넘어 결과를 만들어 온 사람" - https://ko.antler.co/ 2024년 데모데이 행사
+** "용병 아닌 선교사를 채용하라" - https://vimeo.com/731186065 , Jeff Bezos at Amazon
+
+2024년 12월 1일 작성.
+ 
+
+
+전형절차
+ㆍ서류전형 > casual call > 면접 > 최종합격
+ㆍ면접일정은 추후 통보됩니다.
+
+유의사항
+ㆍ허위사실이 발견될 경우 채용이 취소될 수 있습니다.
