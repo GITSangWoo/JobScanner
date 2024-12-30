@@ -17,7 +17,7 @@
 <script>
     $(document).ready(function() {
         // 공고 목록을 가져오는 API 요청
-        const noticeApiUrl = "http://43.202.186.119:8973/notice?jobtitle=DE&category=preferential";
+        const noticeApiUrl = "http://43.202.186.119:8972/notice?jobtitle=DE&category=preferential";
 
         $.getJSON(noticeApiUrl, function(data) {
             const noticeList = data;  // 공고 목록 데이터를 받아옵니다.
@@ -53,7 +53,7 @@
 
                 // POST 요청을 통해 북마크 추가
                 $.ajax({
-                    url: 'http://43.202.186.119:8973/user/bookmark/notice',  // 서버에서 POST 요청을 받을 URL
+                    url: 'http://43.202.186.119:8972/user/bookmark/notice',  // 서버에서 POST 요청을 받을 URL
                     type: 'POST',
                     headers: {
                         "Authorization": "Bearer " + accessToken  // Authorization 헤더에 액세스 토큰 포함

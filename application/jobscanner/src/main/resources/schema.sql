@@ -14,3 +14,6 @@ ALTER TABLE job_role
 ALTER TABLE notice
     MODIFY create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     MODIFY update_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP;
+
+
+-- 나머지 테이블은 서버와 클라이언트의 상호작용으로 자동으로 시간이 갱신됌

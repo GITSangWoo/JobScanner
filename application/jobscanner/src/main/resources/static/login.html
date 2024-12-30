@@ -62,7 +62,7 @@
             refreshToken: refreshToken
         };
 
-        fetch('http://43.202.186.119:8973/login/kakao', {  // 서버 URL 확인
+        fetch('http://43.202.186.119:8972/login/kakao', {  // 서버 URL 확인
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -87,7 +87,7 @@
             return;
         }
 
-        fetch('http://43.202.186.119:8973/user/profile', {
+        fetch('http://43.202.186.119:8972/user/profile', {
             method: 'GET',
             headers: {
                 'Authorization': 'Bearer ' + accessToken,  // 액세스 토큰을 Authorization 헤더에 포함시켜 요청
