@@ -1,9 +1,9 @@
-name: CI/CD for Spring Application
+name: CI/CD for Deploy Jobscanner Application to EC2 
 
 on:
   push:
     branches:
-      - dev/application/full
+      - dev/application/deploy
 
 jobs:
   build-and-push:
@@ -29,15 +29,26 @@ jobs:
           aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/u5b2p7i3
 
       # docker images build or ECR push
-      - name: Delete Existing App Image
+      - name: Delete Existing backend Image
         run: |
-          # 'app-latest' 태그로 이미지를 삭제
-          aws ecr-public batch-delete-image --repository-name job_scanner/app --image-ids imageTag=app-latest || echo "No existing image to delete."
+          # 'backend-latest' 태그로 이미지를 삭제
+          aws ecr-public batch-delete-image --repository-name job_scanner/app --image-ids imageTag=backend-latest || echo "No existing image to delete."
 
-      - name: Build and Push App Image
+      - name: Build and Push backend Image
         run: |
-          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/app:app-latest -f ./application/jobscanner/Dockerfile ./application/jobscanner
-          docker push public.ecr.aws/u5b2p7i3/job_scanner/app:app-latest
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/app:backend-latest -f ./backend/jobscanner/Dockerfile ./backend/jobscanner
+          docker push public.ecr.aws/u5b2p7i3/job_scanner/app:backend-latest
+      
+      - name: Delete Existing frontend Image
+        run: |
+          # frontapp-latest' 태그로 이미지를 삭제
+          aws ecr-public batch-delete-image --repository-name job_scanner/app --image-ids imageTag=frontend-latest || echo "No existing image to delete."
+
+      - name: Build and Push frontend Image
+        run: |
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/app:frontend-latest -f ./frontend/nginx/Dockerfile ./frontend
+          docker push public.ecr.aws/u5b2p7i3/job_scanner/app:frontend-latest
+          
 
   deploy:
     name: Deploy to EC2
@@ -55,12 +66,12 @@ jobs:
           ssh -o StrictHostKeyChecking=no -i ec2-key.pem ubuntu@${{ secrets.EC2_PUBLIC_IP }} << 'EOF'
           
           # 기존 컨테이너 종료 및 삭제
-          docker stop app || true
-          docker rm app || true
+          docker compose down || true
           # 이미지 PULL
-          docker pull public.ecr.aws/u5b2p7i3/job_scanner/app:app-latest
+          docker pull public.ecr.aws/u5b2p7i3/job_scanner/app:backend-latest
+          docker pull public.ecr.aws/u5b2p7i3/job_scanner/app:frontend-latest
           # 새 컨테이너 실행 
-          docker run -d -p 8972:8972 --name app public.ecr.aws/u5b2p7i3/job_scanner/app:app-latest
+          docker compose up -d 
           # Remove Dangling Images
           docker image prune -f
           EOF
