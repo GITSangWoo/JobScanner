@@ -33,41 +33,41 @@ jobs:
       # docker images build or ECR push
       - name: Delete Existing Link Crawler Image
         run: |
-          aws ecr batch-delete-image --repository-name job_scanner/crawling/link_crawler \
-          --image-ids imageTag=latest || echo "No existing link_crawler image to delete."
+          aws ecr-public batch-delete-image --repository-name job_scanner/crawling \
+          --image-ids imageTag=link_crawler || echo "No existing link_crawler image to delete."
 
       - name: Build and Push Link Crawler Image
         run: |
-          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/crawling/link_crawler:latest -f $GITHUB_WORKSPACE/Dockerfile $GITHUB_WORKSPACE
-          docker push public.ecr.aws/u5b2p7i3/job_scanner/crawling/link_crawler:latest
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/crawling:link_crawler -f $GITHUB_WORKSPACE/Dockerfile $GITHUB_WORKSPACE
+          docker push public.ecr.aws/u5b2p7i3/job_scanner/crawling:link_crawler
 
       - name: Delete Existing Post Crawler Image
         run: |
-          aws ecr batch-delete-image --repository-name job_scanner/crawling/post_crawler \
-          --image-ids imageTag=latest || echo "No existing post_crawler image to delete."
+          aws ecr-public batch-delete-image --repository-name job_scanner/crawling \
+          --image-ids imageTag=post_crawler || echo "No existing post_crawler image to delete."
 
       - name: Build and Push Post Crawler Image
         run: |
-          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/crawling/post_crawler:latest -f $GITHUB_WORKSPACE/Dockerfile $GITHUB_WORKSPACE
-          docker push public.ecr.aws/u5b2p7i3/job_scanner/crawling/post_crawler:latest
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/crawling:post_crawler -f $GITHUB_WORKSPACE/Dockerfile $GITHUB_WORKSPACE
+          docker push public.ecr.aws/u5b2p7i3/job_scanner/crawling:post_crawler
 
       - name: Delete Existing Text Crawler Image
         run: |
-          aws ecr batch-delete-image --repository-name job_scanner/crawling/text_crawler \
-          --image-ids imageTag=latest || echo "No existing text_crawler image to delete."
+          aws ecr-public batch-delete-image --repository-name job_scanner/crawling \
+          --image-ids imageTag=text_crawler || echo "No existing text_crawler image to delete."
 
       - name: Build and Push Text Crawler Image
         run: |
-          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/crawling/text_crawler:latest -f $GITHUB_WORKSPACE/Dockerfile $GITHUB_WORKSPACE
-          docker push public.ecr.aws/u5b2p7i3/job_scanner/crawling/text_crawler:latest
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/crawling:text_crawler -f $GITHUB_WORKSPACE/Dockerfile $GITHUB_WORKSPACE
+          docker push public.ecr.aws/u5b2p7i3/job_scanner/crawling:text_crawler
 
       - name: Delete Existing Extract Crawler Image
         run: |
-          aws ecr batch-delete-image --repository-name job_scanner/crawling/extract_crawler \
-          --image-ids imageTag=latest || echo "No existing extract_crawler image to delete."
+          aws ecr-public batch-delete-image --repository-name job_scanner/crawling \
+          --image-ids imageTag=extract_crawler || echo "No existing extract_crawler image to delete."
 
       - name: Build and Push Text Crawler Image
         run: |
-          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/crawling/extract_crawler:latest -f $GITHUB_WORKSPACE/Dockerfile $GITHUB_WORKSPACE
-          docker push public.ecr.aws/u5b2p7i3/job_scanner/crawling/extract_crawler:latest
+          docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/crawling:extract_crawler -f $GITHUB_WORKSPACE/Dockerfile $GITHUB_WORKSPACE
+          docker push public.ecr.aws/u5b2p7i3/job_scanner/crawling:extract_crawler
 
