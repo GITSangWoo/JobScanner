@@ -8,6 +8,7 @@
     "chart.js": "^4.4.7",
     "cra-template": "1.2.0",
     "http-proxy-middleware": "^3.0.3",
+    "js-cookie": "^3.0.5",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
@@ -41,7 +42,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://backend:8972",
+  "proxy": "http://43.202.186.119:8972",
   "devDependencies": {
     "eslint-config-react-app": "^7.0.1",
     "eslint-plugin-react": "^7.37.2"

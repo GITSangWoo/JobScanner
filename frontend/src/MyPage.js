@@ -1,16 +1,22 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import './MyPage.css';
+import Cookies from 'js-cookie';
 
 const MyPage = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(true);
-    const [nickname, setNickname] = useState("Esther");
+    const [nickname, setNickname] = useState("");
     const [activeToggle, setActiveToggle] = useState('tech');
     const [bookmarks, setBookmarks] = useState([]); // 초기 북마크 상태
     const [techStackData, setTechStackData] = useState([]); // 기술 스택 상태
     const [jobSummaryData, setJobSummaryData] = useState([]); // 공고 요약 상태
     const navigate = useNavigate();
+
+    // 로그인 상태 확인 함수
+    const checkLoginStatus = () => {
+        const accessToken = Cookies.get('access_token');
+        return !!accessToken; // 토큰이 있으면 true, 없으면 false
+    };
 
     useEffect(() => {
         // 초기 데이터 로드 및 북마크 초기화
@@ -58,12 +64,13 @@ const MyPage = () => {
         navigate("/job-summary");
     };
 
+    // My Page 이동 처리
     const handleMypage = () => {
-        if (isLoggedIn) {
+        if (checkLoginStatus()) {
             navigate("/mypage");
         } else {
             alert("로그인 후 이용하실 수 있습니다.");
-            navigate("/auth/login");
+            navigate("/login");
         }
     };
 
@@ -90,20 +97,37 @@ const MyPage = () => {
         }
     };
 
+    // 사용자 정보를 가져오는 함수
+    useEffect(() => {
+        if (checkLoginStatus()) {
+            // 예: API 호출로 사용자 정보를 가져온다고 가정
+            const fetchUserData = async () => {
+                try {
+                    const response = await fetch("/auth/user", {
+                        headers: { Authorization: `Bearer ${Cookies.get('access_token')}` },
+                    });
+                    if (response.ok) {
+                        const data = await response.json();
+                        setNickname(data.nickname || "사용자"); // 닉네임 설정
+                    }
+                } catch (error) {
+                    console.error("Error fetching user data:", error);
+                }
+            };
+            fetchUserData();
+        }
+    }, []);
+    
+
     return (
         <div className="my-page">
             <div className="top-right-buttons">
-                {isLoggedIn ? (
+                {checkLoginStatus() ? (
                     <span className="welcome-message">{nickname}님 환영합니다!</span>
                 ) : (
-                    <>
-                        <button className="auth-button" onClick={() => navigate("/auth/login")}>
-                            로그인
-                        </button>
-                        <button className="auth-button" onClick={() => navigate("/sign-up")}>
-                            회원가입
-                        </button>
-                    </>
+                    <button className="auth-button" onClick={() => navigate("/login")}>
+                        로그인
+                    </button>
                 )}
             </div>
 

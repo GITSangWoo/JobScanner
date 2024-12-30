@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./TechStackDetailsPage.css"; // CSS 파일을 import
+import Cookies from 'js-cookie';
 
 const TechStackDetailsPage = () => {
     const navigate = useNavigate();
@@ -8,8 +9,33 @@ const TechStackDetailsPage = () => {
     const { techStackName } = useParams(); // URL에서 techStackName만 받기
     const [techStack, setTechStack] = useState(null);
     const [isBookmarked, setIsBookmarked] = useState(false);
-    const [isLoggedIn, setIsLoggedIn] = useState(false); // 로그인 상태 추적
-    const [nickname, setNickname] = useState("Esther");
+       const [nickname, setNickname] = useState(""); // 사용자 닉네임 상태
+    // 로그인 상태 확인 함수
+    const checkLoginStatus = () => {
+        const accessToken = Cookies.get('access_token');
+        return !!accessToken; // 토큰이 있으면 true, 없으면 false
+    };
+
+        // 사용자 정보를 가져오는 함수
+        useEffect(() => {
+            if (checkLoginStatus()) {
+                // 예: API 호출로 사용자 정보를 가져온다고 가정
+                const fetchUserData = async () => {
+                    try {
+                        const response = await fetch("/auth/user", {
+                            headers: { Authorization: `Bearer ${Cookies.get('access_token')}` },
+                        });
+                        if (response.ok) {
+                            const data = await response.json();
+                            setNickname(data.nickname || "사용자"); // 닉네임 설정
+                        }
+                    } catch (error) {
+                        console.error("Error fetching user data:", error);
+                    }
+                };
+                fetchUserData();
+            }
+        }, []);
 
     const handleClick = () => {
         navigate("/", { replace: true }); // navigate 호출
@@ -59,21 +85,23 @@ const TechStackDetailsPage = () => {
         return <p>해당 기술 스택 정보를 찾을 수 없습니다.</p>;
     }
 
-    const handleBookmark = () => {
-        if (isLoggedIn) {
-            setIsBookmarked(!isBookmarked); // 로그인된 상태에서 북마크 토글
+    // 북마크 토글 처리
+    const handleBookmark = (id) => {
+        if (checkLoginStatus()) {
+            setIsBookmarked(!isBookmarked); // 북마크 상태 토글
         } else {
             alert("로그인 후 이용하실 수 있습니다.");
             navigate("/login");
         }
     };
 
+    // My Page 이동 처리
     const handleMypage = () => {
-        if (isLoggedIn) {
-            navigate("/mypage"); // 로그인된 상태에서는 마이 페이지로 이동
+        if (checkLoginStatus()) {
+            navigate("/mypage");
         } else {
             alert("로그인 후 이용하실 수 있습니다.");
-            navigate("/login"); // 로그인되지 않은 상태에서 클릭 시 로그인 페이지로 이동
+            navigate("/login");
         }
     };
 
@@ -91,15 +119,13 @@ const TechStackDetailsPage = () => {
 
                 {/* 로그인/회원가입 버튼 */}
                 <div className="top-right-buttons">
-                    {isLoggedIn ? (
-                        <span className="welcome-message">{nickname}님 환영합니다!</span>
-                    ) : (
-                        <>
-                            <button className="auth-button" onClick={() => navigate("/login")}>
-                                로그인
-                            </button>
-                        </>
-                    )}
+                {checkLoginStatus() ? (
+                    <span className="welcome-message">{nickname}님 환영합니다!</span>
+                ) : (
+                    <button className="auth-button" onClick={handleLogin}>
+                        로그인
+                    </button>
+                )}
                 </div>
 
                 {/* 더보기 메뉴 */}
