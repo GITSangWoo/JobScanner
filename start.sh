@@ -4,6 +4,7 @@
 docker compose down
 sleep 10
 docker rmi finalrepo-link_crawler finalrepo-crawling-post_crawler finalrepo-crawling-text_crawler finalrepo-extract_crawler
+#docker rmi public.ecr.aws/u5b2p7i3/job_scanner/crawling:link_crawler public.ecr.aws/u5b2p7i3/job_scanner/crawling:post_crawler public.ecr.aws/u5b2p7i3/job_scanner/crawling:text_crawler public.ecr.aws/u5b2p7i3/job_scanner/crawling:extract_crawler
 sleep 10
 docker compose up -d --no-start --force-recreate --build
 sleep 5
@@ -45,11 +46,11 @@ echo "text_crawler 컨테이너 작업 완료 및 종료"
 sleep 30
 
 # extract_crawler 컨테이너 실행
-docker compose start extract_crawler
+#docker compose start extract_crawler
 echo "extract_crawler 컨테이너 실행"
 
 sleep 10
 # extract_crawler 종료 대기
-docker wait extract_crawler
+#docker wait extract_crawler
 echo "extract_crawler 컨테이너 작업 완료 및 종료"
 

@@ -4,6 +4,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    #image: public.ecr.aws/u5b2p7i3/job_scanner/crawling:link_crawler
     container_name: link_crawler
     environment:
       - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
@@ -23,6 +24,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    #image: public.ecr.aws/u5b2p7i3/job_scanner/crawling:post_crawler
     container_name: post_crawler
     environment:
       - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
@@ -42,6 +44,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    #image: public.ecr.aws/u5b2p7i3/job_scanner/crawling:text_crawler
     container_name: text_crawler
     environment:
       - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
@@ -61,6 +64,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    #image: public.ecr.aws/u5b2p7i3/job_scanner/crawling:extract_crawler
     container_name: extract_crawler
     environment:
       - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials

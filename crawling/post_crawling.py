@@ -2172,7 +2172,7 @@ def post_main():
     time.sleep(10)
 
     logging.info(f"잡코리아 크롤링 실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    #jobkorea_crawling()
+    jobkorea_crawling()
     logging.info(f"잡코리아 크롤링 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(10)
 
