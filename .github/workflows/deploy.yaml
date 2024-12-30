@@ -24,10 +24,10 @@ jobs:
           aws-region: us-east-1
       
       # ECR 로그인 # ECR 퍼블릭은 us-east-1리전만 동작 프라이빗변경 필요
-      - name: Log in to Amazon ECR
-        id: login-ecr
-        run: |
-          aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/u5b2p7i3
+      # - name: Log in to Amazon ECR
+      #   id: login-ecr
+      #   run: |
+      #     aws ecr-public get-login-password --region us-east-1 | docker login --username AWS --password-stdin public.ecr.aws/u5b2p7i3
 
 
       # docker images build or ECR push
