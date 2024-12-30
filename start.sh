@@ -9,12 +9,12 @@ docker compose up -d --no-start --force-recreate --build
 sleep 5
 
 # link_crawler 컨테이너 실행
-#docker compose start link_crawler
+docker compose start link_crawler
 echo "link_crawler 컨테이너 실행"
 sleep 10
 
 # link_crawler 종료 대기
-#docker wait link_crawler
+docker wait link_crawler
 echo "link_crawler 컨테이너 작업 완료 및 종료"
 
 # 1분 대기
