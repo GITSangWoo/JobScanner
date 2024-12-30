@@ -15,6 +15,7 @@ const MainPage = () => {
     const [jobTitles] = useState(["BE", "FE", "DE", "DA", "MLE"]);
     const navigate = useNavigate();
     const [nickname, setNickname] = useState(""); // 사용자 닉네임 상태
+    const [jobDescription, setJobDescription] = useState(""); // job description 상태
 
     // useEffect(() => {
     //     // console.log("Updated jobData:", jobData);
@@ -57,6 +58,18 @@ const MainPage = () => {
         }
     };
 
+    const fetchDataForDescription = async (jobtitle) => {
+        try {
+            const response = await axios.get(`/jobrole?jobtitle=${jobtitle}`);
+            // 서버에서 데이터를 성공적으로 받았다면, 반환
+            return response.data;
+        } catch (error) {
+            console.error('Error fetching job role data:', error);
+            // 에러 발생 시 적절한 값을 반환하거나 에러를 다시 던짐
+            throw error;
+        }
+    };
+
     const fetchDataForAllCategories = async (jobtitle) => {
         const categories = ["responsibility", "qualification", "preferential"];
         const newJobData = {};
@@ -70,15 +83,32 @@ const MainPage = () => {
         setJobData(newJobData);
     };
 
-    const handleButtonClick = (button) => {
+    const handleButtonClick = async (button) => {
         if (activeButton === button) {
+            // 버튼이 이미 활성화된 경우 상태 초기화
             setActiveButton(null);
             setJobData({ responsibility: [], qualification: [], preferential: [] });
+            setJobDescription(""); // JobDescription 초기화
         } else {
+            // 새로운 버튼 클릭 시
             setActiveButton(button);
             fetchDataForAllCategories(button);
+    
+            // JobDescription 가져오기
+            try {
+                const data = await fetchDataForDescription(button); // API 호출
+                if (data) {
+                    setJobDescription(data.roleDescription); // 설명 업데이트
+                } else {
+                    setJobDescription("Failed to fetch job description."); // 실패 시 메시지
+                }
+            } catch (error) {
+                console.error("Error fetching job description:", error);
+                setJobDescription("Error fetching job description."); // 에러 시 메시지
+            }
         }
     };
+    
 
     const handleClick = () => {
         navigate("/", { replace: true });
@@ -160,6 +190,15 @@ const MainPage = () => {
                     ))}
                 </div>
 
+                {/* 직무 설명 */}
+                {activeButton && jobDescription && (
+                    <div className="job-description">
+                        <h3>직무 설명</h3>
+                        <p>{jobDescription}</p>
+                    </div>
+                )}
+
+                {/* 직무 테이블 */}
                 {activeButton && (
                     <div className="job-tables">
                         {["responsibility", "qualification", "preferential"].map((cat) => (
@@ -199,6 +238,7 @@ const MainPage = () => {
                         ))}
                     </div>
                 )}
+
             </div>
         </div>
     );
