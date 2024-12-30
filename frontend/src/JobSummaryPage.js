@@ -207,7 +207,7 @@ const JobSummaryPage = () => {
                                     <td>{job.deadline}</td>
                                     <td>{job.companyName}</td>
                                     <td>
-                                        <a href={job.org_url} target="_blank" rel="noopener noreferrer">
+                                        <a href={job.orgurl} target="_blank" rel="noopener noreferrer">
                                             {job.jobTitle}
                                         </a>
                                     </td>
