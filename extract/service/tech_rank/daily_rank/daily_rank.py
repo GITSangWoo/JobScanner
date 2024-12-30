@@ -18,6 +18,9 @@ conn_service = mysql.connector.connect(
 )
 cursor_service = conn_service.cursor()
 
+# daily_rank 테이블 초기화
+cursor_service.execute("TRUNCATE TABLE daily_rank")
+
 # testdb의 rank_history 테이블에서 필요한 데이터 조회
 cursor_testdb.execute("SELECT id, job_title, category, rank1, rank2, rank3, rank4, rank5, rank6, rank7, rank8, rank9, rank10 FROM rank_history")
 rank_history_data = cursor_testdb.fetchall()
