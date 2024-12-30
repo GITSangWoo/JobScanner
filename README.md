@@ -7,11 +7,11 @@
 
 ## 🫂 Team
 
-### • 팀 이름: `Team2Job`
+### ■ 팀 이름: `Team2Job`
 - `Team` + `To` + `Job` ➜ **취업**을 하기 위해 만난 **팀**
 - `Team2` + `JobScanner` ➜ 플레이데이터 DE32기 **2조**의 **JobScanner** 서비스
 
-### • 팀원 소개 및 역할
+### ■ 팀원 소개 및 역할
 | **김도현** | **김동욱** | **이상우** | **이상훈** | **조하영** |
 |:------------:|:------------:|:------------:|:------------:|:------------:|
 | [@rlaehgus97](https://github.com/rlaehgus97) | [@DONGUK777](https://github.com/DONGUK777) | [@GITSangWoo](https://github.com/GITSangWoo) | [@hun0219](https://github.com/hun0219) | [@EstherCho-7](https://github.com/EstherCho-7) |
@@ -21,12 +21,12 @@
 <br/>
 
 ## 📂프로젝트 소개
-### • 프로젝트 목표
+### ■ 프로젝트 목표
 > 여러 **채용 공고 사이트**의 정보를 **크롤링**하여<br>
 > **다양한 인사이트**(직군별 핵심 키워드 순위, 기술 정보 제공, 직무 소개, 채용 공고 요약)를<br>
 > 제공하여 **SW 개발 입문/취업**에 실질적인 도움을 주는 것이 목표입니다.
 
-### • 주요기능
+### ■ 주요기능
     
 | **직군별 기술 스택 순위** |
 |:-------------------------:|
@@ -52,7 +52,7 @@
 | 북마크한 기술/공고를 한 눈에 모아 볼 수 있습니다. |
  
 ## 👀Demo
-### • 시연 Video
+### ■ 시연 Video
 - **기술 스택 순위 확인**
   
 ![기술 스택 순위 gif](https://github.com/user-attachments/assets/969f745f-f689-44e6-846e-f91481d13873)
@@ -63,8 +63,8 @@
 
 - **직무 소개**
 
-### • 배포 URL [[바로가기]](http://43.202.114.11/)
-### • 팀 Notion [[바로가기]](https://www.notion.so/14225f9eafe9801cb369d2b274b026cb?v=14225f9eafe981fbb896000c164c89ef&pvs=4)
+### ■ 배포 URL [[바로가기]](http://43.202.114.11/)
+### ■ 팀 Notion [[바로가기]](https://www.notion.so/14225f9eafe9801cb369d2b274b026cb?v=14225f9eafe981fbb896000c164c89ef&pvs=4)
 
 <br/>
 
@@ -90,10 +90,10 @@
 <br/>
 
 ## ERD
-### • 공고 크롤링 데이터 ERD
+### ■ 공고 크롤링 데이터 ERD
 ![image](https://github.com/user-attachments/assets/532c3187-7a74-4bc8-91de-3d5b7075e187)
 
-### • 서비스 데이터 ERD
+### ■ 서비스 데이터 ERD
 ![image](https://github.com/user-attachments/assets/af6a191e-4995-4a18-aeef-c2349972ae4f)
 
 ## 목차
@@ -129,7 +129,7 @@
 
 ## 🔄KPT 회고
 
-### 김동욱
+### ■ 김동욱
 <details>
 <summary>KEEP</summary>
 <div>
@@ -158,7 +158,7 @@
 </div>
 </details>
 
-### 김도현
+### ■ 김도현
 <details>
 <summary>KEEP</summary>
 <div>
@@ -186,7 +186,7 @@
 </div>
 </details>
 
-### 이상우
+### ■ 이상우
 <details>
 <summary>KEEP</summary>
 <div>
@@ -214,7 +214,7 @@
 </div>
 </details>
 
-### 이상훈
+### ■ 이상훈
 <details>
 <summary>KEEP</summary>
 <div>
@@ -242,7 +242,7 @@
 </div>
 </details>
 
-### 조하영
+### ■ 조하영
 <details>
 <summary>KEEP</summary>
 <div>
