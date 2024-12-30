@@ -167,9 +167,9 @@ const TechStackDetailsPage = () => {
 
                 {/* 유튜브 링크 */}
                 <h2>유튜브 링크</h2>
-                {techStack.youtube_link ? (
+                {techStack.youtubelink ? (
                     <a
-                        href={techStack.youtube_link}
+                        href={techStack.youtubelink}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -181,9 +181,9 @@ const TechStackDetailsPage = () => {
 
                 {/* 도서 링크 */}
                 <h2>도서 링크</h2>
-                {techStack.book_link ? (
+                {techStack.booklink ? (
                     <a
-                        href={techStack.book_link}
+                        href={techStack.booklink}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -195,9 +195,9 @@ const TechStackDetailsPage = () => {
 
                 {/* 공식 문서 */}
                 <h2>공식 문서</h2>
-                {techStack.docs_link ? (
+                {techStack.docslink ? (
                     <a
-                        href={techStack.docs_link}
+                        href={techStack.docslink}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
