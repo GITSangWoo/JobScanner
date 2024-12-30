@@ -3,7 +3,7 @@ spring:
     name: jobscanner
 
   datasource:
-    url: jdbc:mysql://t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com:3306/swtestdb
+    url: jdbc:mysql://t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com:3306/service
     username: admin
     password: dltkddn1
     driver-class-name: com.mysql.cj.jdbc.Driver
