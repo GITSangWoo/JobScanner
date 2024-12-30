@@ -337,7 +337,6 @@ def wanted_txt():
     connection.commit()
     connection.close()
 
-
 # def incruit_txt():
 #     # S3 클라이언트 설정
 #     s3_client = boto3.client('s3')
@@ -905,8 +904,8 @@ def jobkorea_txt():
 
     # MySQL 연결 종료
     conn.close()
-
-
+    
+    
 def saramin_txt():
     # S3 및 DB 설정
     BUCKET_NAME = "t2jt"
@@ -924,7 +923,6 @@ def saramin_txt():
 
     # MySQL 연결 풀 설정
     connection_pool = pooling.MySQLConnectionPool(pool_name="testdb1_pool", pool_size=5, **DB_CONFIG)
-
 
     def get_connection():
         """데이터베이스 연결을 가져옵니다."""
@@ -1096,7 +1094,6 @@ def saramin_txt():
     # 실행
     process_records()
 
-
 def txt_main():
     print(f"점핏 시작 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     #jumpit_txt()
@@ -1129,4 +1126,3 @@ def txt_main():
 
 if __name__ == "__main__":
     txt_main()
-
