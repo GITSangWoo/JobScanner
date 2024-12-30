@@ -48,26 +48,6 @@ services:
     restart: "no"
     command: ["python", "/code/crawling/text_preprocess.py"]
     volumes:
-      - ./crawling:/code/crawling
-      - ./extract:/code/extract
-      - ./logs:/code/logs
-      - ~/.aws:/code/.aws:ro
-    shm_size: 4g  # /dev/shm 크기 설정
-    deploy:
-      resources:
-        limits:
-          memory: 2g  # 메모리 제한 설정 (예시)
-
-  text_crawler:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: text_crawler
-    environment:
-      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
-    restart: "no"
-    command: ["python", "/code/crawling/text_preprocess.py"]
-    volumes:
       - /home/ubuntu/crawling/crawling:/code/crawling
       - /home/ubuntu/crawling/logs:/code/logs
       - ~/.aws:/code/.aws:ro
