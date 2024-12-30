@@ -1,0 +1,133 @@
+㈜딥엑스
+전문연구요원 모집 안내
+
+
+㈜딥엑스는 세계 최고 수준의 AI 반도체 원천기술을 연구개발하는 스타트업으로,
+인공지능 기술을 통해 누구나 쉽고 편안한 일상을 보낼 수 있도록 하여 인류 문명 발전에 기여하고자 합니다.
+AI 칩셋 시장 규모는 2025년 700억 달러를 넘어설 것으로 예측되며,
+㈜딥엑스는 최근 CES 2024에서 AI 반도체 기업 중 최초로 3개 부문 혁신상을 수상하며
+세계에서 선도적인 초격차 원천 기술을 다시 한 번 증명하였습니다.
+
+세계 최고 수준의 원천기술을 개발하고, 최고의 동료들과 함께 일하며,
+인류문명을 초지능 사회로 나아가게 할 ㈜딥엑스의 열정적인 여정에 여러분을 초대합니다. 
+
+
+★ Frost & Sullivan, 2024 Company of the Year NPU 부문 선정!
+테슬라, 구글 등 미래 글로벌 기업의 탄생을 예견하기로 유명한 Frost & Sullivan이
+딥엑스에 대해 어떻게 평가하였는지 직접 확인하세요!
+☞ 링크 바로가기
+
+★ 딥엑스 사업에 대해 더욱 구체적으로 알고 싶다면 딥엑스 백서를 확인하세요!
+☞ 링크 바로가기
+
+
+지원 가능 직무
+
+■ 모든 SW & HW 엔지니어 포지션 지원 가능!
+
+【Software】
+
+# DevOps
+□ CI/CD 시스템 개발 및 운영
+□ Regression Test를 비롯한 각종 Test Infrastructure 지원
+□ SW SDK Release Automation
+□ Web Dashboard 개발 및 운영
+□ Model Zoo Management 시스템 개발 및 운영
+
+# Software QA
+□ SDK 관련 전사 품질 Test 기획 및 개선
+□ SW Unit Test, 통합 테스트, System Test 등 다양한 Test 계획 및 수행
+□ Release 전/후 버그 추적 및 픽스 관리
+□ 고객 이슈 대응 및 관리
+
+# Windows Driver
+□ 자사 NPU 칩셋용 윈도우 PCIe 드라이버 설계 및 개발
+□ 드라이버 성능 최적화 및 문제 해결
+□ 드라이버 테스트 계획 수립 및 테스트 애플리케이션 개발
+□ 기술 문서 작성 및 유지보수
+
+# System SW
+□ ROM boot code / Boot Loader 개발
+□ Core / BSP / Protocol Stack 구현
+□ USB, PCle I/F, DDR I/F, SD/eMMC, MIPI I/F, ISP, Codec 등의 드라이버 SW 구현
+□ 각종 하드웨어 IP의 초기 테스트 SW 구현
+□ PM(Power Management), MMU 등 시스템 모듈 제어 SW 구현
+□ 전체 SoC의 구동 Verification SW 구현과 디버깅
+
+# Runtime SW
+□ 딥엑스 NPU 설계에 최적화된 실시간 추론 엔진 설계/구현
+□ 시스템/CPU 설계에 최적화된 DNN모델 전/후처리 프레임워크 설계/구현
+□ NPU/CPU 인터페이스 설계/구현, 성능 최적화
+□ NPU 기반 AI 응용 소프트웨어 개발
+□ 시스템 레벨 NPU 검증 소프트웨어 설계/구현, 자동화 테스트 연동
+□ 내부 팀(전체 SW/HW 팀)과 협력
+
+# GPU SW
+□ GPU Device Driver/Library 개발 및 포팅
+□ GPU 설계에 최적화된 DNN모델 전/후 처리 프레임워크 설계/구현
+□ GPU Framework 개발/포팅
+□ GPU Architecture 를 활용한 최적화 프로그래밍
+
+# Generative AI Development
+□ State Of The Art (SOTA) 생성형 AI 모델 분석 및 트렌드 분석
+□ 생성형 AI의 Quantization을 비롯한 DNN 모델 경량화 기술 개발 및 개선
+□ 생성형 AI 모델의 자사 edge device인 NPU 제품에 최적화 작업
+□ 딥엑스 하드웨어 제품에 최적화된 새로운 생성형 AI 기술 개발 및 개선
+
+# DNN Model Optimization
+□ DNN 모델의 각종 연산 체계 분석 및 관련 최적화/경량화 기술 개발
+□ GPU에서의 최적화 방법 분석, 적용 및 최신 문헌 F/U
+□ 최신 DNN 모델 최적화 기법 연구, 개발 및 최신 문헌 F/U
+□ 다양한 DNN 컴파일러 분석 및 최신 문헌 F/U
+□ 딥엑스 소프트웨어 코드에 대한 알고리즘 최적화
+
+# Compiler
+□ 딥엑스 AI 제품에 최적화는 DL Compiler 개발
+□ Various Compiler Optimization: tiling, memory optimization, operation fusion, …
+□ AI 연산 처리 효율화 기술을 구현을 위한 NPU HW팀과 HW/SW Specification/Interface 구현
+
+
+【Hardware】
+
+# RTL 설계 (HW IP)
+□ RTL 기반 HW IP 설계 (AI 하드웨어 프로세서 설계 및 개발 관련)
+
+# NPU Architect
+□ Required Spec에 부합하는 NPU 구조를 탐색, 공유, 논의하고, 결정합니다.
+□ Co-work 를 통하여 고객 또는 회사의 Needs에 맞는 다양한 프로파일링 도구를 개발합니다.
+□ Network에 대하여 빠르고 정확한 Hardware 친화적인 성능을 예측합니다. (C++, SystemC)
+□ Deep Learning, RTL, Compiler와 협력하여 효율적인 Engineering 기법과 NPU 아키텍처를 설계합니다.
+□ New Network 분석과 시스템 구성 요소를 고려하여 진보된 NPU 구조를 제안합니다.
+
+# FPGA Platform
+□ FPGA 플랫폼 구축 및 프로토타입 개발(AI 하드웨어 프로세서 설계 및 개발 관련)
+
+# SoC ASIC 설계
+□ SoC ASIC 설계 (AI 하드웨어 프로세서 설계 및 개발 관련)
+
+
+
+■ 자세한 내용은 딥엑스의 채용사이트를 참고해주세요.
+
+
+
+
+전형절차
+ㆍ서류전형 > 온라인 인터뷰 (필요시) > 성향테스트 + 1차면접 > 2차면접 > 최종합격
+    * 1차 면접 시 자사의 Chip Demo를 통해 ㈜딥엑스의 기술력을 직접 보여드리고 있습니다.
+ㆍ 접수기간 : 채용 시 마감
+ㆍ접수방법 : ㈜딥엑스 채용사이트 지원 ▷ 바로가기
+ㆍ이력서 양식 : 자유양식
+ㆍ제출서류
+    (1) 필수 제출 서류
+          □ 이력서 (자기소개서 포함, 자유 양식)
+          □ 경력기술서 (전직 등 경력이 있는 경우 해당)
+          □ 성적증명서
+    (2) 선택 제출 서류
+          □ 포트폴리오 등 후보자의 역량을 잘 드러낼 수 있는 자료 일체
+
+
+안내사항
+ㆍ허위사실이 발견될 경우 채용이 취소될 수 있습니다.
+ㆍ입사 후 3개월 간의 수습기간이 부여되며, 수습기간 동안 처우는 동일합니다.
+ㆍ모집 분야별로 마감일이 상이할 수 있으니 유의하시길 바랍니다.

@@ -58,18 +58,18 @@ services:
         limits:
           memory: 2g  # 메모리 제한 설정 (예시)
 
-  jumpit_crawler:
+  text_crawler:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: jumpit_crawler
+    container_name: text_crawler
     environment:
       - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
     restart: "no"
-    command: ["python", "/code/crawling/jumpit_crawling.py"]
+    command: ["python", "/code/crawling/text_preprocess.py"]
     volumes:
-      - ./crawling:/code/crawling
-      - ./logs:/code/logs
+      - /home/ubuntu/crawling/crawling:/code/crawling
+      - /home/ubuntu/crawling/logs:/code/logs
       - ~/.aws:/code/.aws:ro
     shm_size: 4g  # /dev/shm 크기 설정
     deploy:
@@ -77,18 +77,28 @@ services:
         limits:
           memory: 2g  # 메모리 제한 설정 (예시)
 
-  wanted_crawler:
+  extract_crawler:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: wanted_crawler
+    container_name: extract_crawler
     environment:
       - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
     restart: "no"
-    command: ["python", "/code/crawling/wanted_crawling.py"]
+    command: >
+      sh -c "
+      python /code/extract/ocr/imagetotext.py &&
+      python /code/extract/tech/text_processing/techextractimg.py &&
+      python /code/extract/tech/text_processing/techextracttext.py &&
+      python /code/extract/tech/rank_division/dayaggbyjob.py &&
+      python /code/extract/tech/rank_division/rank_history.py &&
+      python /code/extract/tech/rank_division/rank_count.py &&
+      python /code/extract/service/job_notice/noticedatainput.py &&
+      python /code/extract/service/tech_rank/daily_rank/daily_rank.py
+      "
     volumes:
-      - ./crawling:/code/crawling
-      - ./logs:/code/logs
+      - /home/ubuntu/crawling/extract:/code/extract
+      - /home/ubuntu/crawling/logs:/code/logs
       - ~/.aws:/code/.aws:ro
     shm_size: 4g  # /dev/shm 크기 설정
     deploy:
@@ -96,59 +106,97 @@ services:
         limits:
           memory: 2g  # 메모리 제한 설정 (예시)
 
-  incruit_crawler:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: incruit_crawler
-    environment:
-      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
-    restart: "no"
-    command: ["python", "/code/crawling/incruit_crawling.py"]
-    volumes:
-      - ./crawling:/code/crawling
-      - ./logs:/code/logs
-      - ~/.aws:/code/.aws:ro
-    shm_size: 4g  # /dev/shm 크기 설정
-    deploy:
-      resources:
-        limits:
-          memory: 2g  # 메모리 제한 설정 (예시)
-
-  jobkorea_crawler:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: jobkorea_crawler
-    environment:
-      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
-    restart: "no"
-    command: ["python", "/code/crawling/jobkorea_crawling.py"]
-    volumes:
-      - ./crawling:/code/crawling
-      - ./logs:/code/logs
-      - ~/.aws:/code/.aws:ro
-    shm_size: 4g  # /dev/shm 크기 설정
-    deploy:
-      resources:
-        limits:
-          memory: 2g  # 메모리 제한 설정 (예시)
-
-  saramin_crawler:
-    build:
-      context: .
-      dockerfile: Dockerfile
-    container_name: saramin_crawler
-    environment:
-      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
-    restart: "no"
-    command: ["python", "/code/crawling/saramin_crawling.py"]
-    volumes:
-      - ./crawling:/code/crawling
-      - ./logs:/code/logs
-      - ~/.aws:/code/.aws:ro
-    shm_size: 4g  # /dev/shm 크기 설정
-    deploy:
-      resources:
-        limits:
-          memory: 2g  # 메모리 제한 설정 (예시)
+            #  jumpit_crawler:
+            #    build:
+            #      context: .
+            #      dockerfile: Dockerfile
+            #    container_name: jumpit_crawler
+            #    environment:
+            #      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+            #    restart: "no"
+            #    command: ["python", "/code/crawling/jumpit_crawling.py"]
+            #    volumes:
+            #      - ./crawling:/code/crawling
+            #      - ./logs:/code/logs
+            #      - ~/.aws:/code/.aws:ro
+            #    shm_size: 4g  # /dev/shm 크기 설정
+            #    deploy:
+            #      resources:
+            #        limits:
+            #          memory: 2g  # 메모리 제한 설정 (예시)
+            #
+            #  wanted_crawler:
+            #    build:
+            #      context: .
+            #      dockerfile: Dockerfile
+            #    container_name: wanted_crawler
+            #    environment:
+            #      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+            #    restart: "no"
+            #    command: ["python", "/code/crawling/wanted_crawling.py"]
+            #    volumes:
+            #      - ./crawling:/code/crawling
+            #      - ./logs:/code/logs
+            #      - ~/.aws:/code/.aws:ro
+            #    shm_size: 4g  # /dev/shm 크기 설정
+            #    deploy:
+            #      resources:
+            #        limits:
+            #          memory: 2g  # 메모리 제한 설정 (예시)
+            #
+            #  incruit_crawler:
+            #    build:
+            #      context: .
+            #      dockerfile: Dockerfile
+            #    container_name: incruit_crawler
+            #    environment:
+            #      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+            #    restart: "no"
+            #    command: ["python", "/code/crawling/incruit_crawling.py"]
+            #    volumes:
+            #      - ./crawling:/code/crawling
+            #      - ./logs:/code/logs
+            #      - ~/.aws:/code/.aws:ro
+            #    shm_size: 4g  # /dev/shm 크기 설정
+            #    deploy:
+            #      resources:
+            #        limits:
+            #          memory: 2g  # 메모리 제한 설정 (예시)
+            #
+            #  jobkorea_crawler:
+            #    build:
+            #      context: .
+            #      dockerfile: Dockerfile
+            #    container_name: jobkorea_crawler
+            #    environment:
+            #      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+            #    restart: "no"
+            #    command: ["python", "/code/crawling/jobkorea_crawling.py"]
+            #    volumes:
+            #      - ./crawling:/code/crawling
+            #      - ./logs:/code/logs
+            #      - ~/.aws:/code/.aws:ro
+            #    shm_size: 4g  # /dev/shm 크기 설정
+            #    deploy:
+            #      resources:
+            #        limits:
+            #          memory: 2g  # 메모리 제한 설정 (예시)
+            #
+            #  saramin_crawler:
+            #    build:
+            #      context: .
+            #      dockerfile: Dockerfile
+            #    container_name: saramin_crawler
+            #    environment:
+            #      - AWS_SHARED_CREDENTIALS_FILE=/code/.aws/credentials
+            #    restart: "no"
+            #    command: ["python", "/code/crawling/saramin_crawling.py"]
+            #    volumes:
+            #      - ./crawling:/code/crawling
+            #      - ./logs:/code/logs
+            #      - ~/.aws:/code/.aws:ro
+            #    shm_size: 4g  # /dev/shm 크기 설정
+            #    deploy:
+            #      resources:
+            #        limits:
+            #          memory: 2g  # 메모리 제한 설정 (예시)

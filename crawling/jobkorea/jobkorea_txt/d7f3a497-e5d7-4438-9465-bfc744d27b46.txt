@@ -1,0 +1,39 @@
+(주) 마음에이아이 Audio AI Scientist 채용
+(산업기능요원 / 전문연구요원 병역특례 가능)
+㈜마음에이아이는 2014년에 설립된 회사로 자본금 30억 7,566만원, 매출액 101억 7,523만원, 사원수 105명 규모의 고용노동부에서 선정한 강소기업입니다. 경기 성남시 수정구 창업로40번길 30 (시흥동)에 위치하고 있으며, 인공지능 플랫폼/서비스 개발 및 구축사업을 하고 있습니다.
+포지션 및 자격요건
+Audio AI Scientist
+( 0명 )
+담당업무
+ㆍSeamless voice conversation을 위한 Speech LLM 연구
+- Multi-modal LLM with speech understanding
+- Audio analytics models (Wav2Vec, CLAP, Encodec, etc)
+ㆍ고객사 문제 해결을 위한 음성 합성 및 음성 인식 모델 연구개발
+- Speaker-adaptive TTS, Emotional TTS
+- Streaming ASR, Low latency ASR
+ㆍ연구 성과를 정리하여 오디오 및 AI 관련 국제 학회에 제출
+- 4 papers for ICASSP, 4 papers for Interspeech, and 4 papers for other conferences and workshops published since 2020 
+
+자격요건
+ㆍML/DL 알고리즘을 깊이 이해할 수 있는 수준의 수학적 능력 및 모델링 능력
+ㆍTensorFlow, PyTorch 등 DL framework 활용 및 모델 구현에 자유로울 수 있는 수준의 개발 능력
+ㆍAI 관련 기술 논문을 읽고 내용을 충분히 이해하는데 무리가 없는 수준의 영어 능력 
+
+우대사항
+ㆍ유관 전공 석사 이상의 경력 또는 관련 학회 논문 제출 경험
+ㆍ금융, 의료, 교육, 패션 등 산업별 실제 데이터 기반 AI 프로젝트 경험
+ㆍML/DL 연구 논문 Implementation 또는 관련 Repository의 Contribution 경험
+
+근무환경 / 복지
+ㆍ입사 시 GPU 탑재 데스크탑, 맥북 등 원하는 기기 지원
+ㆍ연구용으로만 On-preMise로 V100 10대, A100 30대, H100 10대 이상 운용 중
+ㆍ최소 5,000만원 (정규직 전환 시, 유관 전공 석사의 경우 최소 5,500만원) 의 연봉 제공,
+   역량과 기여도에 따라 연봉 인상
+ㆍ병역특례 가능 (산기능/전문연) 
+
+전형절차
+ㆍ서류전형 > 1차면접 > 2차면접 > 임원면접 > 최종합격
+ㆍ면접일정은 추후 통보됩니다.
+
+유의사항
+ㆍ허위사실이 발견될 경우 채용이 취소될 수 있습니다.

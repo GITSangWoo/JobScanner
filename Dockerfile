@@ -14,6 +14,11 @@ RUN apt-get update && apt-get install -y \
     default-libmysqlclient-dev gcc && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
+# Tesseract OCR 및 관련 패키지 설치
+RUN apt-get update && apt-get install -y \
+    tesseract-ocr tesseract-ocr-eng libtesseract-dev \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
 # Google Chrome 설치
 RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
     apt install -y ./google-chrome-stable_current_amd64.deb && \

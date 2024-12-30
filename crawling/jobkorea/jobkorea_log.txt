@@ -1776,3 +1776,75 @@ https://www.jobkorea.co.kr/Recruit/GI_Read/45978845 - update - done - 2024-12-24
 https://www.jobkorea.co.kr/Recruit/GI_Read/46139544 - update - done - 2024-12-24 15:08:31
 https://www.jobkorea.co.kr/Recruit/GI_Read/46155626 - update - failed - (1048, "Column 'notice_type' cannot be null") - 2024-12-24 15:08:50
 https://www.jobkorea.co.kr/Recruit/GI_Read/45986384 - update - done - 2024-12-24 15:09:08
+Found credentials in shared credentials file: /code/.aws/credentials
+====== WebDriver manager ======
+Get LATEST chromedriver version for google-chrome
+Get LATEST chromedriver version for google-chrome
+There is no [linux64] chromedriver "131.0.6778.204" for browser google-chrome "131.0.6778" in cache
+Get LATEST chromedriver version for google-chrome
+WebDriver version 131.0.6778.204 selected
+Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+Driver downloading response is 200
+Get LATEST chromedriver version for google-chrome
+Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204]
+https://www.jobkorea.co.kr/Recruit/GI_Read/46173383 - update - done - 2024-12-27 14:03:52
+https://www.jobkorea.co.kr/Recruit/GI_Read/46160855 - update - done - 2024-12-27 14:04:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/46173700 - update - done - 2024-12-27 14:04:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/46174755 - update - done - 2024-12-27 14:04:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/46154648 - update - done - 2024-12-27 14:05:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/46161645 - update - done - 2024-12-27 14:05:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/46013082 - update - done - 2024-12-27 14:05:56
+https://www.jobkorea.co.kr/Recruit/GI_Read/46021679 - update - done - 2024-12-27 14:06:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45957799 - update - done - 2024-12-27 14:06:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45820632 - update - done - 2024-12-27 14:07:02
+https://www.jobkorea.co.kr/Recruit/GI_Read/46092442 - update - done - 2024-12-27 14:07:31
+https://www.jobkorea.co.kr/Recruit/GI_Read/46134255 - update - done - 2024-12-27 14:07:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/46140219 - update - done - 2024-12-27 14:08:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/45877954 - update - done - 2024-12-27 14:08:27
+https://www.jobkorea.co.kr/Recruit/GI_Read/46016360 - update - done - 2024-12-27 14:08:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/46018710 - update - done - 2024-12-27 14:09:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/45825417 - update - done - 2024-12-27 14:09:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/45886080 - update - done - 2024-12-27 14:09:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/46132209 - update - done - 2024-12-27 14:10:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/46045466 - update - done - 2024-12-27 14:10:30
+https://www.jobkorea.co.kr/Recruit/GI_Read/46029323 - update - failed - (1048, "Column 'notice_type' cannot be null") - 2024-12-27 14:10:49
+https://www.jobkorea.co.kr/Recruit/GI_Read/46097931 - update - done - 2024-12-27 14:11:08
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030500 - update - done - 2024-12-27 14:11:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/45862140 - update - done - 2024-12-27 14:11:46
+https://www.jobkorea.co.kr/Recruit/GI_Read/46164122 - update - done - 2024-12-27 14:12:05
+https://www.jobkorea.co.kr/Recruit/GI_Read/46099389 - update - failed - (1048, "Column 'notice_type' cannot be null") - 2024-12-27 14:12:24
+https://www.jobkorea.co.kr/Recruit/GI_Read/46155878 - update - failed - (1048, "Column 'notice_type' cannot be null") - 2024-12-27 14:12:43
+https://www.jobkorea.co.kr/Recruit/GI_Read/45909397 - update - done - 2024-12-27 14:13:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/46030471 - update - done - 2024-12-27 14:13:23
+https://www.jobkorea.co.kr/Recruit/GI_Read/46162579 - update - done - 2024-12-27 14:13:42
+https://www.jobkorea.co.kr/Recruit/GI_Read/45995103 - update - done - 2024-12-27 14:14:01
+https://www.jobkorea.co.kr/Recruit/GI_Read/45822838 - update - done - 2024-12-27 14:14:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/46122934 - update - done - 2024-12-27 14:14:39
+https://www.jobkorea.co.kr/Recruit/GI_Read/45938833 - update - done - 2024-12-27 14:14:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/45922658 - update - done - 2024-12-27 14:15:16
+https://www.jobkorea.co.kr/Recruit/GI_Read/45867403 - update - done - 2024-12-27 14:15:35
+https://www.jobkorea.co.kr/Recruit/GI_Read/46133750 - update - done - 2024-12-27 14:15:54
+https://www.jobkorea.co.kr/Recruit/GI_Read/45970439 - update - done - 2024-12-27 14:16:14
+https://www.jobkorea.co.kr/Recruit/GI_Read/46041721 - update - done - 2024-12-27 14:16:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45980702 - update - done - 2024-12-27 14:16:50
+https://www.jobkorea.co.kr/Recruit/GI_Read/46167020 - update - done - 2024-12-27 14:17:11
+https://www.jobkorea.co.kr/Recruit/GI_Read/46034263 - update - done - 2024-12-27 14:17:29
+https://www.jobkorea.co.kr/Recruit/GI_Read/46052361 - update - done - 2024-12-27 14:17:58
+https://www.jobkorea.co.kr/Recruit/GI_Read/46129593 - update - done - 2024-12-27 14:18:17
+https://www.jobkorea.co.kr/Recruit/GI_Read/46122099 - update - done - 2024-12-27 14:18:36
+https://www.jobkorea.co.kr/Recruit/GI_Read/46086137 - update - done - 2024-12-27 14:18:57
+https://www.jobkorea.co.kr/Recruit/GI_Read/46141753 - update - done - 2024-12-27 14:19:15
+https://www.jobkorea.co.kr/Recruit/GI_Read/45832754 - update - done - 2024-12-27 14:19:34
+https://www.jobkorea.co.kr/Recruit/GI_Read/45887574 - update - done - 2024-12-27 14:19:53
+https://www.jobkorea.co.kr/Recruit/GI_Read/45819843 - update - done - 2024-12-27 14:20:12
+https://www.jobkorea.co.kr/Recruit/GI_Read/46097261 - update - failed - (1048, "Column 'notice_type' cannot be null") - 2024-12-27 14:20:32
+https://www.jobkorea.co.kr/Recruit/GI_Read/45997908 - update - done - 2024-12-27 14:21:00
+https://www.jobkorea.co.kr/Recruit/GI_Read/43634159 - update - failed - (1048, "Column 'notice_type' cannot be null") - 2024-12-27 14:21:19
+https://www.jobkorea.co.kr/Recruit/GI_Read/46117534 - update - done - 2024-12-27 14:21:38
+https://www.jobkorea.co.kr/Recruit/GI_Read/46076633 - update - done - 2024-12-27 14:22:06
+https://www.jobkorea.co.kr/Recruit/GI_Read/46043593 - update - done - 2024-12-27 14:22:26
+https://www.jobkorea.co.kr/Recruit/GI_Read/46135017 - update - done - 2024-12-27 14:22:45
+https://www.jobkorea.co.kr/Recruit/GI_Read/46150742 - update - done - 2024-12-27 14:23:04
+https://www.jobkorea.co.kr/Recruit/GI_Read/45906098 - update - done - 2024-12-27 14:23:22
+https://www.jobkorea.co.kr/Recruit/GI_Read/45834139 - update - done - 2024-12-27 14:23:41

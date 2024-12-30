@@ -645,7 +645,7 @@ def saramin_link():
                 if "chrome" in proc.info["name"].lower() or "chromedriver" in proc.info["name"].lower():
                     try:
                         proc.kill()  # 강제 종료
-                        print(f"Process killed: {proc.info}")
+                        print(f"Process killed: {proc.info}", flush=True)
                     except psutil.NoSuchProcess:
                         continue
                     except Exception as e:
@@ -683,7 +683,7 @@ def saramin_link():
             chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.110 Safari/537.36")  # User-Agent 설정
 
             try:
-                print(f"키워드 '{keyword}' 작업 시작")
+                print(f"키워드 '{keyword}' 작업 시작", flush=True)
 
                 # 각 키워드별로 새로운 브라우저 인스턴스 실행. 브라우저 실행 후 캐시 비활성화
                 driver = webdriver.Chrome(options=chrome_options)
@@ -703,7 +703,7 @@ def saramin_link():
                 try:
                     body = driver.find_element(By.TAG_NAME, "body")
                     body.send_keys(Keys.CONTROL, Keys.F5)  # Ctrl + F5 입력
-                    print("브라우저 강력 새로고침 (Ctrl + F5) 완료")
+                    print("브라우저 강력 새로고침 (Ctrl + F5) 완료", flush=True)
                 except Exception as e:
                     print(f"Ctrl + F5 새로고침 실패, 강제로 URL 재로드: {e}")
                     driver.refresh()
@@ -712,7 +712,7 @@ def saramin_link():
                 # URL에 nocache 파라미터 추가
                 url = f"https://www.saramin.co.kr/zf_user/?nocache={int(time.time())}"
                 driver.get(url)
-                print(f"캐시 무효화된 URL로 접근: {url}")
+                print(f"캐시 무효화된 URL로 접근: {url}", flush=True)
                 time.sleep(5)
 
                 # 수집 시점
@@ -735,14 +735,14 @@ def saramin_link():
                 time.sleep(2)
                 search_button = driver.find_element(By.XPATH, '//button[@id="btn_search_recruit"]')
                 search_button.click()
-                print(f"'{keyword}' 검색 완료!")
+                print(f"'{keyword}' 검색 완료!", flush=True)
                 time.sleep(7)
 
                 # 모든 페이지 데이터 수집
                 page = 1
                 job_data_list = []
                 while True:
-                    print(f"현재 페이지: {page}")
+                    print(f"현재 페이지: {page}", flush=True)
                     try:
                         job_elements = WebDriverWait(driver, 10).until(
                             EC.presence_of_all_elements_located(
@@ -775,7 +775,7 @@ def saramin_link():
                         time.sleep(5)
                         page += 1
                     except Exception:
-                        print(f"'{keyword}' 작업: 마지막 페이지 도달")
+                        print(f"'{keyword}' 작업: 마지막 페이지 도달", flush=True)
                         break
 
                 # S3 업로드 준비
@@ -792,7 +792,7 @@ def saramin_link():
                     Body=s3_content.encode("utf-8-sig"),
                     ContentType="text/plain"
                 )
-                print(f"S3에 파일 업로드 완료: s3://{BUCKET_NAME}/{s3_file_path}")
+                print(f"S3에 파일 업로드 완료: s3://{BUCKET_NAME}/{s3_file_path}", flush=True)
 
             except Exception as e:
                 print(f"오류 발생: {e}")
@@ -1006,22 +1006,22 @@ clean_up_chrome_processes()
 
 def link_main():
     logging.info(f"인크루트 링크 크롤링 실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    #incruit_link()
+    incruit_link()
     logging.info(f"인크루트 링크 크롤링 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 
     logging.info(f"잡코리아 링크 크롤링 실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    #jobkorea_link()
+    jobkorea_link()
     logging.info(f"잡코리아 링크 크롤링 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 
     logging.info(f"점핏 링크 크롤링 실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    #jumpit_link()
+    jumpit_link()
     logging.info(f"점핏 링크 크롤링 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 
     logging.info(f"로켓펀치 링크 크롤링 실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    #rocketpunch_link()
+    rocketpunch_link()
     logging.info(f"로켓펀치 링크 크롤링 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(5)
 

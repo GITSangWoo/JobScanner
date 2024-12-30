@@ -127,3 +127,42 @@
 2024-12-27 10:21:36,543 - INFO - 사람인 링크 크롤링 실행: 2024-12-27 10:21:36
 2024-12-27 10:21:36,543 - INFO - 사람인 링크 크롤링 시작
 2024-12-27 10:21:36,554 - INFO - Found credentials in shared credentials file: /code/.aws/credentials
+2024-12-27 12:13:57,915 - INFO - 인크루트 링크 크롤링 실행: 2024-12-27 12:13:57
+2024-12-27 12:13:57,915 - INFO - 인크루트 링크 크롤링 종료: 2024-12-27 12:13:57
+2024-12-27 12:14:02,918 - INFO - 잡코리아 링크 크롤링 실행: 2024-12-27 12:14:02
+2024-12-27 12:14:02,918 - INFO - 잡코리아 링크 크롤링 종료: 2024-12-27 12:14:02
+2024-12-27 12:14:07,926 - INFO - 점핏 링크 크롤링 실행: 2024-12-27 12:14:07
+2024-12-27 12:14:07,926 - INFO - 점핏 링크 크롤링 종료: 2024-12-27 12:14:07
+2024-12-27 12:14:12,931 - INFO - 로켓펀치 링크 크롤링 실행: 2024-12-27 12:14:12
+2024-12-27 12:14:12,931 - INFO - 로켓펀치 링크 크롤링 종료: 2024-12-27 12:14:12
+2024-12-27 12:14:17,937 - INFO - 사람인 링크 크롤링 실행: 2024-12-27 12:14:17
+2024-12-27 12:14:17,937 - INFO - 사람인 링크 크롤링 시작
+2024-12-27 12:14:17,948 - INFO - Found credentials in shared credentials file: /code/.aws/credentials
+2024-12-27 12:45:33,950 - INFO - 인크루트 링크 크롤링 실행: 2024-12-27 12:45:33
+2024-12-27 12:45:33,950 - INFO - 인크루트 링크 크롤링 종료: 2024-12-27 12:45:33
+2024-12-27 12:45:38,955 - INFO - 잡코리아 링크 크롤링 실행: 2024-12-27 12:45:38
+2024-12-27 12:45:38,956 - INFO - 잡코리아 링크 크롤링 종료: 2024-12-27 12:45:38
+2024-12-27 12:45:43,961 - INFO - 점핏 링크 크롤링 실행: 2024-12-27 12:45:43
+2024-12-27 12:45:43,961 - INFO - 점핏 링크 크롤링 종료: 2024-12-27 12:45:43
+2024-12-27 12:45:48,967 - INFO - 로켓펀치 링크 크롤링 실행: 2024-12-27 12:45:48
+2024-12-27 12:45:48,969 - INFO - 로켓펀치 링크 크롤링 종료: 2024-12-27 12:45:48
+2024-12-27 12:45:53,974 - INFO - 사람인 링크 크롤링 실행: 2024-12-27 12:45:53
+2024-12-27 12:45:53,974 - INFO - 사람인 링크 크롤링 시작
+2024-12-27 12:45:53,987 - INFO - Found credentials in shared credentials file: /code/.aws/credentials
+2024-12-27 13:38:09,358 - INFO - 사람인 링크 크롤링 완료
+2024-12-27 13:38:09,361 - INFO - 사람인 링크 크롤링 종료: 2024-12-27 13:38:09
+2024-12-27 13:38:14,366 - INFO - 원티드 링크 크롤링 실행: 2024-12-27 13:38:14
+2024-12-27 13:38:14,366 - INFO - 원티드 링크 크롤링 시작
+2024-12-27 13:38:14,367 - INFO - ====== WebDriver manager ======
+2024-12-27 13:38:14,472 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 13:38:14,494 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 13:38:14,513 - INFO - There is no [linux64] chromedriver "131.0.6778.204" for browser google-chrome "131.0.6778" in cache
+2024-12-27 13:38:14,513 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 13:38:14,582 - INFO - WebDriver version 131.0.6778.204 selected
+2024-12-27 13:38:14,585 - INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+2024-12-27 13:38:14,586 - INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.204/linux64/chromedriver-linux64.zip
+2024-12-27 13:38:14,639 - INFO - Driver downloading response is 200
+2024-12-27 13:38:14,693 - INFO - Get LATEST chromedriver version for google-chrome
+2024-12-27 13:38:14,890 - INFO - Driver has been saved in cache [/root/.wdm/drivers/chromedriver/linux64/131.0.6778.204]
+2024-12-27 13:38:42,839 - INFO - 원티드 링크 크롤링 완료
+2024-12-27 13:38:42,839 - INFO - 원티드 링크 크롤링 종료: 2024-12-27 13:38:42

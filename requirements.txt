@@ -10,3 +10,6 @@ psycopg2-binary
 mysql-connector-python
 pymysql
 bs4
+pytesseract
+Pillow
+numpy
