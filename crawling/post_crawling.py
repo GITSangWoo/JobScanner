@@ -1495,6 +1495,7 @@ def jobkorea_crawling():
 #                            log_status(url, "iframe_switch", "failed", additional_info=str(e))
 #                            print(f"[ERROR] iframe 전환 실패: {url}, 에러: {e}")
 #                            continue  # 다음 URL로 이동
+
                             # iframe 내부 텍스트 가져오기
                             iframe_body = driver.find_element(By.TAG_NAME, "body")
                             iframe_text = iframe_body.text.strip()
@@ -1663,7 +1664,6 @@ def jobkorea_crawling():
                                 db.commit()
                         except Exception as e:
                             print(f"[ERROR] URL {removed_url} 업데이트 실패: {e}")
-
         except Exception as e:
             logging.critical(f"전체 작업 실패: {e}", exc_info=True)
 
@@ -2028,6 +2028,7 @@ def saramin_crawling():
                     cursor.close()
                     conn.close()
 
+
         # 정규화된 URL 사용 (URL을 정규화로 비교 가능 형태로 변환)
         def normalize_url(url):
             try:
@@ -2171,7 +2172,7 @@ def post_main():
     time.sleep(10)
 
     logging.info(f"잡코리아 크롤링 실행: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
-    jobkorea_crawling()
+    #jobkorea_crawling()
     logging.info(f"잡코리아 크롤링 종료: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     time.sleep(10)
 
@@ -2182,3 +2183,4 @@ def post_main():
 
 if __name__ == "__main__":
     post_main()
+

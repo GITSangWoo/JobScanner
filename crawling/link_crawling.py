@@ -42,7 +42,6 @@ logging.basicConfig(
 )
 
 os.chdir("/code/crawling")  # 작업 디렉토리를 /code/crwaling로 변경
-
 print(f"Current working directory: {os.getcwd()}")  # 현재 작업 디렉토리 확인
 
 def incruit_link():
