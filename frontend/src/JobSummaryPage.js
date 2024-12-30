@@ -94,7 +94,7 @@ const JobSummaryPage = () => {
                 const transformedData = data.map((job) => ({
                     id: job.notice_id,
                     deadline: job.duetype === "날짜" ? job.duedate : "상시채용",
-                    org_url: job.org_url,
+                    org_url: job.orgurl,
                     companyName: job.company,
                     jobTitle: job.posttitle,
                     mainTask: job.responsibility || "상세 미제공",
@@ -207,7 +207,7 @@ const JobSummaryPage = () => {
                                     <td>{job.deadline}</td>
                                     <td>{job.companyName}</td>
                                     <td>
-                                        <a href={job.orgurl} target="_blank" rel="noopener noreferrer">
+                                        <a href={job.org_url} target="_blank" rel="noopener noreferrer">
                                             {job.jobTitle}
                                         </a>
                                     </td>
