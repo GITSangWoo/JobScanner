@@ -66,7 +66,7 @@ jobs:
           aws ecr-public batch-delete-image --repository-name job_scanner/crawling \
           --image-ids imageTag=extract_crawler || echo "No existing extract_crawler image to delete."
 
-      - name: Build and Push Text Crawler Image
+      - name: Build and Push Extract Crawler Image
         run: |
           docker build --no-cache -t public.ecr.aws/u5b2p7i3/job_scanner/crawling:extract_crawler -f $GITHUB_WORKSPACE/Dockerfile $GITHUB_WORKSPACE
           docker push public.ecr.aws/u5b2p7i3/job_scanner/crawling:extract_crawler
