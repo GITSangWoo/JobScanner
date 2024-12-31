@@ -54,7 +54,7 @@ function KakaoLogin() {
       refreshToken,
     };
 
-    fetch('/login/kakao', {
+    fetch('http://43.202.186.119/login/kakao', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -83,7 +83,7 @@ function KakaoLogin() {
     }
     const accessToken = token.split('=')[1];
 
-    fetch('/user/profile', {
+    fetch('http://43.202.186.119/user/profile', {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${accessToken}`,
