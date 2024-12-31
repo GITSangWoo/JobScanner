@@ -118,3 +118,58 @@
 .welcome-message {
     font-weight: bold;
 }
+
+/* Link Preview Card Styles */
+.link-preview-card {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.link-preview-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Thumbnail Section */
+.link-preview-thumbnail img {
+    display: block;
+    width: 120px; /* Adjust thumbnail size as needed */
+    height: 100%; 
+    object-fit: cover;
+}
+
+/* Content Section */
+.link-preview-content {
+    flex: 1;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link-preview-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.link-preview-content p {
+    margin: 8px 0 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

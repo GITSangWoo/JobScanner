@@ -332,6 +332,33 @@ body {
     background-color: #BDBDBD; /* 필터 버튼과 동일한 활성화 색상 */
 }
 
+.tech-stack-category {
+    margin: 20px 0; /* 카테고리 간격 */
+    padding: 10px;
+    border-radius: 8px; /* 둥근 모서리 */
+    width: 100%;
+}
+
+.tech-stack-category h4 {
+    margin-bottom: 5px; /* 제목과 차트 간격 */
+    font-size: 1.5rem;
+    color: #333; /* 제목 텍스트 색상 */
+    text-align: center;
+}
+
+.tech-stack-chart {
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    height: 500px; /* 차트 높이 */
+    max-width: 2000px; /* 차트 최대 너비 */
+    margin: 0 auto; /* 부모 요소 기준 수평 중앙 정렬 */
+    font-size: 15px;
+    width: 100%;
+    max-width: 100%;
+}
+
+
 
 /* =============================== */
 /*               반응형 스타일               */
