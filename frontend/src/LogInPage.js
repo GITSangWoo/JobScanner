@@ -29,12 +29,14 @@ function KakaoLogin() {
 
     window.Kakao.Auth.login({
       success: (authObj) => {
-        // console.log('로그인 성공:', authObj);
         setAccessToken(authObj.access_token);
         setRefreshToken(authObj.refresh_token);
 
         // 쿠키에 액세스 토큰 저장 (HTTP-only로 저장)
         document.cookie = `accessToken=${authObj.access_token}; path=/; HttpOnly; SameSite=None`;
+
+        // 쿠키에 저장된 access token 확인 (디버깅용)
+        checkAccessTokenInCookies();
 
         // 서버로 리프레시 토큰 전송
         sendTokensToServer(authObj.refresh_token);
@@ -64,13 +66,32 @@ function KakaoLogin() {
     })
       .then((response) => response.json())
       .then((data) => {
-        // console.log('서버 응답:', data);
         alert(data.message || '로그인 성공');
       })
       .catch((error) => {
         console.error('서버 요청 에러:', error);
         alert('서버 요청 중 오류가 발생했습니다.');
       });
+  };
+
+  // 쿠키에서 액세스 토큰 확인하는 함수
+  const checkAccessTokenInCookies = () => {
+    const cookies = document.cookie.split(';');
+    let accessTokenFound = false;
+
+    // 쿠키에서 'accessToken'을 찾아서 확인
+    cookies.forEach(cookie => {
+      if (cookie.trim().startsWith('accessToken=')) {
+        accessTokenFound = true;
+      }
+    });
+
+    // 결과에 따라 알림 표시
+    if (accessTokenFound) {
+      alert('Access Token이 쿠키에 저장되었습니다.');
+    } else {
+      alert('Access Token이 쿠키에 저장되지 않았습니다.');
+    }
   };
 
   // 유저 정보 가져오기
@@ -91,7 +112,6 @@ function KakaoLogin() {
     })
       .then((response) => response.json())
       .then((data) => {
-        // console.log('유저 정보:', data);
         setUserInfo(data); // 유저 정보 상태 저장
       })
       .catch((error) => {
@@ -101,21 +121,19 @@ function KakaoLogin() {
 
   return (
     <div className="main-page">
-        <div className="logo-container">
-            <div className="logo" onClick={handleRedirect}>JobScanner</div>
+      <div className="logo-container">
+        <div className="logo" onClick={handleRedirect}>JobScanner</div>
+      </div>
+      <h1>로그인</h1>
+      <div className="login-container">
+        <div className="login-buttons">
+          <React.Fragment>
+            <button onClick={kakaoLogin}>
+              <img src="/image/kakao.png" alt="Kakao Login" style={{ width: "200px", height: "auto" }} />
+            </button>
+          </React.Fragment>
         </div>
-        <h1>로그인</h1>
-        <div className="login-container">
-            <div className="login-buttons">
-                <React.Fragment>
-                    <button
-                        onClick={kakaoLogin}
-                    >
-                        <img src="/image/kakao.png" alt="Kakao Login" style={{ width: "200px", height: "auto" }} />
-                    </button>
-                </React.Fragment>
-            </div>
-        </div>
+      </div>
     </div>
   );
 }
