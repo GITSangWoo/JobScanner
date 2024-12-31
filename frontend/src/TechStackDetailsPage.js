@@ -1,14 +1,28 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./TechStackDetailsPage.css"; // CSS 파일을 import
+import axios from "axios"; // axios 임포트
+
+const PROXY_URL = "http://localhost:9000/";
+
+const fetchLinkPreview = async (url) => {
+    try {
+        const response = await axios.get(`${PROXY_URL}${url}`);
+        return response.data;
+    } catch (error) {
+        console.error("Error fetching link preview:", error);
+        throw error;
+    }
+};
 
 const TechStackDetailsPage = () => {
     const navigate = useNavigate();
     const [isDropdownOpen, setIsDropdownOpen] = useState(false); // 더보기 드롭다운 상태
-    const { role, category, techStackName } = useParams(); // URL에서 role, category, techStackName 받기
+    const { techStackName } = useParams(); // URL에서 techStackName 받기
     const [techStack, setTechStack] = useState(null);
     const [isBookmarked, setIsBookmarked] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(false); // 로그인 상태 추적
+    const [linkPreviews, setLinkPreviews] = useState({}); // 링크 미리보기 상태
 
     const handleClick = () => {
         navigate("/", { replace: true }); // navigate 호출
@@ -33,16 +47,53 @@ const TechStackDetailsPage = () => {
 
     useEffect(() => {
         // 기술 스택 정보를 가져오는 로직
-        console.log("Fetching tech stack for:", role, category, techStackName);  // 디버깅용 로그
-        const techStackData = getTechStackDetails(role, category, techStackName);
-        setTechStack(techStackData);
-    }, [role, category, techStackName]);
+        axios.get(`/techstack?techName=${techStackName}`)
+            .then(response => {
+                console.log(response.data); // 응답 데이터 확인
+                const data = response.data;
+                setTechStack({
+                    techName: data.tech_name,
+                    description: data.description,
+                    youtubeLink: data.youtube_link,
+                    bookLink: data.book_link,
+                    documentationLink: data.docs_link
+                });
+                // 링크 미리보기 가져오기
+                const links = [
+                    data.youtube_link,
+                    data.book_link,
+                    data.docs_link
+                ];
+                links.forEach(link => {
+                    if (link) {
+                        fetchLinkPreview(link)
+                            .then(data => {
+                                console.log(data); // 링크 미리보기 데이터 확인
+                                setLinkPreviews(prevState => ({
+                                    ...prevState,
+                                    [link]: data
+                                }));
+                            })
+                            .catch(error => {
+                                console.error("Error fetching link preview:", error);
+                            });
+                    }
+                });
+            })
+            .catch(error => {
+                console.error("Error fetching tech stack data:", error);
+            });
+    }, [techStackName]);
+
+    useEffect(() => {
+        console.log(linkPreviews); // 상태 업데이트 확인
+    }, [linkPreviews]);
 
     const handleBookmark = () => {
         if (isLoggedIn) {
             setIsBookmarked(!isBookmarked); // 로그인된 상태에서 북마크 토글
         } else {
-            alert("로그인 후 이용하실 수 있습니다..");
+            alert("로그인 후 이용하실 수 있습니다.");
             navigate("/auth/login");
         }
     };
@@ -50,6 +101,25 @@ const TechStackDetailsPage = () => {
     if (!techStack) {
         return <p>해당 기술 스택 정보를 찾을 수 없습니다.</p>;
     }
+
+    const renderLinkPreview = (link) => {
+        const preview = linkPreviews[link];
+        if (!preview) return null;
+
+        return (
+            <div className="link-preview-card" key={link}>
+                <a href={link} target="_blank" rel="noopener noreferrer">
+                    <div className="link-preview-thumbnail">
+                        <img src={preview.images[0]} alt="Preview" />
+                    </div>
+                    <div className="link-preview-content">
+                        <h3>{preview.title}</h3>
+                        <p>{preview.description}</p>
+                    </div>
+                </a>
+            </div>
+        );
+    };
 
     return (
         <div className="tech-stack-details">
@@ -87,7 +157,7 @@ const TechStackDetailsPage = () => {
             <div className="tech-stack-content">
                 {/* 언어 이름 */}
                 <h1 className="tech-stack-language">
-                    {techStack.language}
+                    {techStack.techName}
                 </h1>
 
                 {/* 북마크 버튼 - 설명 영역 안으로 이동 */}
@@ -109,13 +179,7 @@ const TechStackDetailsPage = () => {
                 {/* 유튜브 링크 */}
                 <h2>유튜브 링크</h2>
                 {techStack.youtubeLink ? (
-                    <a
-                        href={techStack.youtubeLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        {techStack.youtubeLink}
-                    </a>
+                    renderLinkPreview(techStack.youtubeLink)
                 ) : (
                     <p>링크가 없습니다.</p>
                 )}
@@ -123,13 +187,7 @@ const TechStackDetailsPage = () => {
                 {/* 도서 링크 */}
                 <h2>도서 링크</h2>
                 {techStack.bookLink ? (
-                    <a
-                        href={techStack.bookLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        {techStack.bookLink}
-                    </a>
+                    renderLinkPreview(techStack.bookLink)
                 ) : (
                     <p>링크가 없습니다.</p>
                 )}
@@ -137,70 +195,13 @@ const TechStackDetailsPage = () => {
                 {/* 공식 문서 */}
                 <h2>공식 문서</h2>
                 {techStack.documentationLink ? (
-                    <a
-                        href={techStack.documentationLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        {techStack.documentationLink}
-                    </a>
+                    renderLinkPreview(techStack.documentationLink)
                 ) : (
                     <p>링크가 없습니다.</p>
                 )}
             </div>
-
         </div>
     );
-};
-
-// 기술 스택 세부 정보를 가져오는 함수
-const getTechStackDetails = (role, category, techStackName) => {
-    // 여기에 모든 기술 스택 데이터 정의
-    const techStackData = {
-        FE: {
-            Language: {
-                JavaScript: {
-                    language: "JavaScript",
-                    description: "JavaScript는 웹 개발에서 많이 사용되는 언어입니다.",
-                    youtubeLink: "https://youtu.be/PkZNo7MFNFg?si=QhxbcVEyFrd5vqYT",
-                    bookLink: "https://www.yes24.com/Product/Goods/139913428",
-                    documentationLink: "https://developer.mozilla.org/ko/docs/Web/JavaScript"
-                },
-                TypeScript: {
-                    language: "TypeScript",
-                    description: "TypeScript는 JavaScript의 상위 집합으로, 타입을 추가한 언어입니다.",
-                    youtubeLink: "https://youtu.be/k5E2AVpwsko?si=17bLHGGE-U5V5PQ6",
-                    bookLink: "https://www.yes24.com/Product/Goods/136740163",
-                    documentationLink: "https://www.typescriptlang.org/docs/"
-                },
-            },
-        },
-        BE: {
-            Language: {
-                Java: {
-                    language: "Java",
-                    description: "Java는 강력한 객체 지향 언어입니다.",
-                    youtubeLink: "https://youtu.be/yRpLlJmRo2w?si=Qkn4kSCX5EObmi_U",
-                    bookLink: "https://www.yes24.com/Product/Goods/136263729",
-                    documentationLink: "https://docs.oracle.com/en/java/"
-                },
-            },
-        },
-        DE: {
-            Framework: {
-                Pandas: {
-                    language: "Pandas",
-                    description: "Pandas는 데이터 분석을 위한 라이브러리입니다.",
-                    youtubeLink: "https://youtu.be/kWiCuklohdY?si=2aT1lFL-Ynh56ln8",
-                    bookLink: "https://www.yes24.com/Product/Goods/115330064",
-                    documentationLink: "https://pandas.pydata.org/"
-                },
-            },
-        },
-    };
-
-    // 해당 role, category, techStackName에 맞는 데이터 반환
-    return techStackData[role]?.[category]?.[techStackName] || null;
 };
 
 export default TechStackDetailsPage;

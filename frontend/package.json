@@ -3,20 +3,26 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^1.7.9",
     "chart.js": "^4.4.7",
+    "cors-anywhere": "^0.4.4",
     "cra-template": "1.2.0",
+    "link-preview-js": "^3.0.12",
     "react": "^18.3.1",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^7.0.2",
-    "react-scripts": "5.0.1",
+    "react-player": "^2.16.0",
+    "react-router-dom": "^7.1.1",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^4.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "BROWSER='/mnt/c/Program Files/Google/Chrome/Application/chrome.exe' react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "start-proxy": "node_modules/.bin/cors-anywhere --port 9000",
+    "start-all": "concurrently \"npm run start-proxy\" \"npm start\""
   },
   "eslintConfig": {
     "extends": [
@@ -35,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "proxy": "http://43.202.186.119:8972",
+  "devDependencies": {
+    "concurrently": "^9.1.1"
   }
 }
