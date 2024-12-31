@@ -93,7 +93,7 @@ const MainPage = () => {
                     });
                     if (response.ok) {
                         const data = await response.json();
-                        setNickname(data.nickname || "사용자"); // 닉네임 설정
+                        setNickname(data.name || "사용자"); // 닉네임 설정
                     }
                 } catch (error) {
                     console.error("Error fetching user data:", error);

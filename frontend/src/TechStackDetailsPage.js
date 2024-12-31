@@ -26,12 +26,12 @@ const TechStackDetailsPage = () => {
             // 예: API 호출로 사용자 정보를 가져온다고 가정
             const fetchUserData = async () => {
                 try {
-                    const response = await fetch("/auth/user", {
+                    const response = await fetch("/user/profile", {
                         headers: { Authorization: `Bearer ${Cookies.get('access_token')}` },
                     });
                     if (response.ok) {
                         const data = await response.json();
-                        setNickname(data.nickname || "사용자"); // 닉네임 설정
+                        setNickname(data.name || "사용자"); // 닉네임 설정
                     }
                 } catch (error) {
                     console.error("Error fetching user data:", error);
