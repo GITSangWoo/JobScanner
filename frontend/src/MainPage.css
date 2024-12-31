@@ -218,7 +218,10 @@ body {
 /*               main-table 스타일               */
 /* =============================== */
 .job-tables {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Flexbox를 사용하여 여러 줄로 정렬 */
+    justify-content: center; /* 테이블을 중앙 정렬 */
+    gap: 10px; /* 테이블 간격 */
 }
 
 .main-table-wrapper {
@@ -226,11 +229,11 @@ body {
 }
 
 .main-table-container {
-    display: inline-block; /* inline-block으로 설정 */
-    width: 25%; /* 각 테이블 너비 설정 */
-    margin: 10px; /* 간격을 주어 좌우 정렬이 잘 되도록 */
+    flex: 1 1 calc(25% - 20px); /* 한 줄에 4개씩 배치되도록 너비 조정 */
+    margin: 10px; /* 테이블 간격 */
     padding: 20px;
     border-radius: 5px;
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 계산 */
 }
 
 .main-table {
@@ -266,6 +269,25 @@ body {
     text-align: center;
     line-height: 1.5;
     word-wrap: break-word;  /* 긴 글이 화면 밖으로 나가지 않도록 줄바꿈 처리 */
+}
+
+/* 반응형 스타일 */
+@media (max-width: 1200px) {
+    .main-table-container {
+        flex: 1 1 calc(33.33% - 20px); /* 한 줄에 3개씩 배치 */
+    }
+}
+
+@media (max-width: 900px) {
+    .main-table-container {
+        flex: 1 1 calc(50% - 20px); /* 한 줄에 2개씩 배치 */
+    }
+}
+
+@media (max-width: 600px) {
+    .main-table-container {
+        flex: 1 1 100%; /* 한 줄에 1개씩 배치 */
+    }
 }
 
 /* =============================== */
