@@ -32,11 +32,12 @@ function KakaoLogin() {
         setAccessToken(authObj.access_token);
         setRefreshToken(authObj.refresh_token);
 
-        // 쿠키에 액세스 토큰 저장 (HTTP-only로 저장)
-        document.cookie = `accessToken=${authObj.access_token}; path=/; HttpOnly; SameSite=None`;
+        // 쿠키에 액세스 토큰 저장
+        setCookie('accessToken', authObj.access_token);
 
         // 쿠키에 저장된 access token 확인 (디버깅용)
-        checkAccessTokenInCookies();
+        const token = getCookie('accessToken');
+        console.log('쿠키에서 가져온 Access Token:', token);
 
         // 서버로 리프레시 토큰 전송
         sendTokensToServer(authObj.refresh_token);
@@ -74,40 +75,19 @@ function KakaoLogin() {
       });
   };
 
-  // 쿠키에서 액세스 토큰 확인하는 함수
-  const checkAccessTokenInCookies = () => {
-    const cookies = document.cookie.split(';');
-    let accessTokenFound = false;
-
-    // 쿠키에서 'accessToken'을 찾아서 확인
-    cookies.forEach(cookie => {
-      if (cookie.trim().startsWith('accessToken=')) {
-        accessTokenFound = true;
-      }
-    });
-
-    // 결과에 따라 알림 표시
-    if (accessTokenFound) {
-      alert('Access Token이 쿠키에 저장되었습니다.');
-    } else {
-      alert('Access Token이 쿠키에 저장되지 않았습니다.');
-    }
-  };
-
   // 유저 정보 가져오기
   const getUserInfo = () => {
     // 쿠키에서 액세스 토큰 가져오기
-    const token = document.cookie.split(';').find(cookie => cookie.trim().startsWith('accessToken='));
+    const token = getCookie('accessToken');
     if (!token) {
       alert('먼저 카카오 로그인해주세요!');
       return;
     }
-    const accessToken = token.split('=')[1];
 
     fetch('http://43.202.186.119:8972/user/profile', {
       method: 'GET',
       headers: {
-        Authorization: `Bearer ${accessToken}`,
+        Authorization: `Bearer ${token}`,
       },
     })
       .then((response) => response.json())
