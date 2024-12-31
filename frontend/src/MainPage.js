@@ -140,7 +140,7 @@ const MainPage = () => {
         if (activeButton === button) {
             // 버튼이 이미 활성화된 경우 상태 초기화
             setActiveButton(null);
-            setJobData({ responsibility: [], qualification: [], preferential: [], total: [] });
+            setJobData({ total: [], responsibility: [], qualification: [], preferential: [] });
             setJobDescription(""); // JobDescription 초기화
         } else {
             // 새로운 버튼 클릭 시
