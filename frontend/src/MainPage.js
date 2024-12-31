@@ -8,6 +8,15 @@ import Cookies from 'js-cookie';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
+const getCategoryNameInKorean = (category) => {
+    const categoryNames = {
+        responsibility: "주요업무",
+        qualification: "자격요건",
+        preferential: "우대조건",
+        total: "전체"
+    };
+    return categoryNames[category] || category;
+};
 
 const MainPage = () => {
     const [activeButton, setActiveButton] = useState(null);
@@ -18,17 +27,15 @@ const MainPage = () => {
         responsibility: [],
         qualification: [],
         preferential: [],
+        total: []
     });
-    const categories = ["total", "responsibility","qualification", "preferential"];
+    const categories = ["total", "responsibility", "qualification", "preferential"];
     const [jobTitles] = useState(["BE", "FE", "DE", "DA", "MLE"]);
     const navigate = useNavigate();
     const [categoryData, setCategoryData] = useState({});
     const [nickname, setNickname] = useState(""); // 사용자 닉네임 상태
     const [jobDescription, setJobDescription] = useState(""); // job description 상태
 
-    // useEffect(() => {
-    //     // console.log("Updated jobData:", jobData);
-    // }, [jobData]);
     useEffect(() => {
         if (activeButton) {
             // JPA로부터 데이터 받아오기
@@ -49,7 +56,7 @@ const MainPage = () => {
                                     labels,
                                     datasets: [
                                         {
-                                            label: `${activeButton} 직무의 ${category} 카테고리 기술 스택 사용 빈도`,
+                                            label: `${activeButton} 직무의 ${getCategoryNameInKorean(category)} 기술 스택 사용 빈도`,
                                             data: counts,
                                             backgroundColor: 'rgba(75, 192, 192, 0.2)',
                                             borderColor: 'rgba(75, 192, 192, 1)',
@@ -117,7 +124,7 @@ const MainPage = () => {
     };
 
     const fetchDataForAllCategories = async (jobtitle) => {
-        const categories = ["responsibility", "qualification", "preferential"];
+        const categories = ["total", "responsibility", "qualification", "preferential"];
         const newJobData = {};
 
         for (const category of categories) {
@@ -133,7 +140,7 @@ const MainPage = () => {
         if (activeButton === button) {
             // 버튼이 이미 활성화된 경우 상태 초기화
             setActiveButton(null);
-            setJobData({ responsibility: [], qualification: [], preferential: [] });
+            setJobData({ responsibility: [], qualification: [], preferential: [], total: [] });
             setJobDescription(""); // JobDescription 초기화
         } else {
             // 새로운 버튼 클릭 시
@@ -247,26 +254,14 @@ const MainPage = () => {
                 {/* 직무 테이블 */}
                 {activeButton && (
                     <div className="job-tables">
-                        {["responsibility", "qualification", "preferential"].map((cat) => (
+                        {categories.map((cat) => (
                             <div key={cat} className="main-table-container">
-                                <h3>
-                                    {cat === "responsibility"
-                                        ? "주요업무"
-                                        : cat === "qualification"
-                                        ? "자격요건"
-                                        : "우대조건"}
-                                </h3>
+                                <h3>{getCategoryNameInKorean(cat)}</h3>
                                 <table>
                                     <thead>
                                         <tr>
                                             <th>순위</th>
-                                            <th>
-                                                {cat === "responsibility"
-                                                    ? "주요업무"
-                                                    : cat === "qualification"
-                                                    ? "자격요건"
-                                                    : "우대조건"}
-                                            </th>
+                                            <th>{getCategoryNameInKorean(cat)}</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -286,7 +281,7 @@ const MainPage = () => {
                 )}
                 {activeButton && categories.map((category) => (
                     <div key={category} className="tech-stack-category">
-                        <h4>{`${category} 카테고리`}</h4>
+                        <h4>{getCategoryNameInKorean(category)}</h4>
                         {categoryData[category] ? (
                             <div className="tech-stack-chart">
                                 <Bar
@@ -297,6 +292,9 @@ const MainPage = () => {
                                             title: {
                                                 display: true,
                                             },
+                                            legend: {
+                                                onClick: (e) => e.stopPropagation() // legend 클릭 시 기본 동작 무시
+                                            }
                                         },
                                         scales: {
                                             x: {
@@ -311,6 +309,13 @@ const MainPage = () => {
                                                     text: 'Count',
                                                 },
                                                 min: 0,
+                                                ticks: {
+                                                    callback: function(value) {
+                                                        if (Number.isInteger(value)) {
+                                                            return value;
+                                                        }
+                                                    }
+                                                }
                                             },
                                         },
                                     }}
