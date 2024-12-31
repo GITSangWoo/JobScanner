@@ -53,9 +53,9 @@ const TechStackDetailsPage = () => {
                 setTechStack({
                     techName: data.tech_name,
                     description: data.description,
-                    youtubeLink: data.youtube_link,
-                    bookLink: data.book_link,
-                    documentationLink: data.docs_link
+                    youtubeLink: data.youtubelink,
+                    bookLink: data.booklink,
+                    documentationLink: data.docslink
                 });
 
                 // 링크 미리보기 가져오기
