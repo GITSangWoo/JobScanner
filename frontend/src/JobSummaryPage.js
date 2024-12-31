@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Cookies from 'js-cookie';
 import "./JobSummaryPage.css";
+import axios from 'axios';
+import qs from 'qs'
 
 const JobSummaryPage = () => {
     const [activeButton, setActiveButton] = useState(null);
