@@ -55,7 +55,7 @@ const TechStackDetailsPage = () => {
                     description: data.description,
                     youtubeLink: data.youtubelink,
                     bookLink: data.booklink,
-                    documentationLink: data.docslink
+                    docsLink: data.docslink
                 });
 
                 // 링크 미리보기 가져오기
