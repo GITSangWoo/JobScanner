@@ -3,8 +3,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import "./TechStackDetailsPage.css"; // CSS 파일을 import
 import Cookies from 'js-cookie';
 import axios from 'axios';
-import { getLinkPreview } from "link-preview-js"; // link-preview-js 임포트
-
+import { getLinkPreview } from "link-preview-js";
 
 const TechStackDetailsPage = () => {
     const navigate = useNavigate();
@@ -14,7 +13,7 @@ const TechStackDetailsPage = () => {
     const [isBookmarked, setIsBookmarked] = useState(false);
     const [nickname, setNickname] = useState(""); // 사용자 닉네임 상태
     const [linkPreviews, setLinkPreviews] = useState({}); // 링크 미리보기 상태
-
+    
     // 로그인 상태 확인 함수
     const checkLoginStatus = () => {
         const accessToken = Cookies.get('access_token');
@@ -24,6 +23,7 @@ const TechStackDetailsPage = () => {
     // 사용자 정보를 가져오는 함수
     useEffect(() => {
         if (checkLoginStatus()) {
+            // 예: API 호출로 사용자 정보를 가져온다고 가정
             const fetchUserData = async () => {
                 try {
                     const response = await fetch("/auth/user", {
@@ -41,31 +41,6 @@ const TechStackDetailsPage = () => {
         }
     }, []);
 
-    const fetchTechStackDetails = async () => {
-        try {
-            const response = await fetch(`/techstack?techName=${techStackName}`);
-            const data = await response.json();
-            
-            if (response.ok) {
-                // 데이터를 매핑하여 구조화
-                const transformedData = {
-                    techName: data.tech_name || "정보 없음",
-                    description: data.description || "설명이 없습니다.",
-                    youtubeLink: data.youtubelink || "",
-                    bookLink: data.booklink || "",
-                    docsLink: data.docslink || "",
-                };
-                setTechStack(transformedData);
-            } else {
-                console.error("Error fetching tech stack data:", data);
-                setTechStack(null);
-            }
-        } catch (error) {
-            console.error("Error fetching tech stack details:", error);
-            setTechStack(null);
-        }
-    };
-
     useEffect(() => {
         // 기술 스택 정보를 가져오는 로직
         axios.get(`/techstack?techName=${techStackName}`)
@@ -75,15 +50,15 @@ const TechStackDetailsPage = () => {
                 setTechStack({
                     techName: data.tech_name,
                     description: data.description,
-                    youtubeLink: data.youtubelink,
-                    bookLink: data.booklink,
-                    documentationLink: data.docslink
+                    youtubeLink: data.youtube_link,
+                    bookLink: data.book_link,
+                    documentationLink: data.docs_link
                 });
                 // 링크 미리보기 가져오기
                 const links = [
-                    data.youtubelink,
-                    data.booklink,
-                    data.docslink
+                    data.youtube_link,
+                    data.book_link,
+                    data.docs_link
                 ];
                 links.forEach(link => {
                     if (link) {
@@ -110,10 +85,6 @@ const TechStackDetailsPage = () => {
         console.log(linkPreviews); // 상태 업데이트 확인
     }, [linkPreviews]);
 
-    useEffect(() => {
-        fetchTechStackDetails(); // 컴포넌트 마운트 시 기술 스택 정보 가져오기
-    }, [techStackName]);
-
     const handleClick = () => {
         navigate("/", { replace: true }); // navigate 호출
         window.location.reload();
@@ -131,8 +102,35 @@ const TechStackDetailsPage = () => {
         navigate("/job-summary"); // 기업 공고 요약 페이지로 이동
     };
 
+    useEffect(() => {
+        // 기술 스택 정보를 API로 가져오는 로직
+        const fetchTechStackDetails = async () => {
+            try {
+                const response = await fetch(`/techstack?techName=${techStackName}`);
+                const data = await response.json();
+                if (response.ok) {
+                    setTechStack(data); // API 응답 데이터 매핑
+                } else {
+                    console.error("Error fetching tech stack data:", data);
+                    setTechStack(null);
+                }
+            } catch (error) {
+                console.error("Error fetching tech stack details:", error);
+                setTechStack(null);
+            }
+        };
+
+        if (techStackName) {
+            fetchTechStackDetails();
+        }
+    }, [techStackName]); // techStackName 변경 시마다 API 호출
+
+    if (!techStack) {
+        return <p>해당 기술 스택 정보를 찾을 수 없습니다.</p>;
+    }
+
     // 북마크 토글 처리
-    const handleBookmark = () => {
+    const handleBookmark = (id) => {
         if (checkLoginStatus()) {
             setIsBookmarked(!isBookmarked); // 북마크 상태 토글
         } else {
@@ -151,9 +149,12 @@ const TechStackDetailsPage = () => {
         }
     };
 
-    if (!techStack) {
-        return <p>해당 기술 스택 정보를 찾을 수 없습니다.</p>;
-    }
+    // YouTube 비디오 ID로 섬네일 URL 생성 함수
+    const getYouTubeThumbnailUrl = (url) => {
+        if (!url) return null;
+        const videoId = url.split("v=")[1];
+        return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+    };
 
     const renderLinkPreview = (link) => {
         const preview = linkPreviews[link];
@@ -174,7 +175,6 @@ const TechStackDetailsPage = () => {
         );
     };
 
-
     return (
         <div className="tech-stack-details">
             {/* 상단 로고와 메뉴 */}
@@ -185,13 +185,13 @@ const TechStackDetailsPage = () => {
 
                 {/* 로그인/회원가입 버튼 */}
                 <div className="top-right-buttons">
-                    {checkLoginStatus() ? (
-                        <span className="welcome-message">{nickname}님 환영합니다!</span>
-                    ) : (
-                        <button className="auth-button" onClick={handleLogin}>
-                            로그인
-                        </button>
-                    )}
+                {checkLoginStatus() ? (
+                    <span className="welcome-message">{nickname}님 환영합니다!</span>
+                ) : (
+                    <button className="auth-button" onClick={handleLogin}>
+                        로그인
+                    </button>
+                )}
                 </div>
 
                 {/* 더보기 메뉴 */}
@@ -212,7 +212,7 @@ const TechStackDetailsPage = () => {
             <div className="tech-stack-content">
                 {/* 언어 이름 */}
                 <h1 className="tech-stack-language">
-                    {techStack.techName} {/* API에서 받아온 기술 스택 이름 */}
+                    {techStack.tech_name} {/* API에서 받아온 기술 스택 이름 */}
                 </h1>
 
                 {/* 북마크 버튼 */}
@@ -227,32 +227,57 @@ const TechStackDetailsPage = () => {
 
                 {/* 설명 */}
                 <h2>설명</h2>
-                <p>{techStack.description}</p>
-                
-                {/* 유튜브 링크 */}
-                <h2>유튜브 링크</h2>
-                {techStack.youtubeLink ? (
-                    renderLinkPreview(techStack.youtubeLink)
-                ) : (
-                    <p>링크가 없습니다.</p>
+                <p>
+                    {techStack.description || "상세 설명이 없습니다."}
+                </p>
+
+                {/* 유튜브 섬네일 */}
+                {techStack.youtubelink && (
+                    <div>
+                        <h2>유튜브 링크</h2>
+                        <a
+                            href={techStack.youtubelink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <img
+                                src={getYouTubeThumbnailUrl(techStack.youtubelink)}
+                                alt="YouTube Thumbnail"
+                                className="youtube-thumbnail"
+                            />
+                        </a>
+                        <div style={{ fontSize: '15px', color: '#555' }}>이미지 클릭 시 영상으로 넘어갑니다.</div>
+                    </div>
                 )}
+
 
                 {/* 도서 링크 */}
                 <h2>도서 링크</h2>
-                {techStack.bookLink ? (
-                    renderLinkPreview(techStack.bookLink)
+                {techStack.booklink ? (
+                    <a
+                        href={techStack.booklink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        바로가기
+                    </a>
                 ) : (
                     <p>링크가 없습니다.</p>
                 )}
 
                 {/* 공식 문서 */}
                 <h2>공식 문서</h2>
-                {techStack.docsLink ? (
-                    renderLinkPreview(techStack.docsLink)
+                {techStack.docslink ? (
+                    <a
+                        href={techStack.docslink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        바로가기
+                    </a>
                 ) : (
                     <p>링크가 없습니다.</p>
                 )}
-
             </div>
         </div>
     );
