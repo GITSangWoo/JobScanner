@@ -79,6 +79,26 @@ const TechStackDetailsPage = () => {
             });
     }, [techStackName]);
 
+        // 드롭다운 메뉴 열기/닫기 처리
+        const toggleDropdown = () => {
+            setIsDropdownOpen((prev) => !prev);
+        };
+    
+        const goToJobSummary = () => {
+            navigate("/job-summary"); // 기업 공고 요약 페이지로 이동
+            window.location.reload();
+        };
+    
+        // My Page 이동 처리
+        const handleMypage = () => {
+            if (checkLoginStatus()) {
+                navigate("/mypage");
+            } else {
+                alert("로그인 후 이용하실 수 있습니다.");
+                navigate("/login");
+            }
+        };
+
     const handleBookmark = async (techName) => {
         if (!checkLoginStatus()) {
           alert("로그인 후 이용하실 수 있습니다.");
@@ -138,6 +158,26 @@ const TechStackDetailsPage = () => {
                     )}
                 </div>
             </header>
+
+            <div className="top-left-menu">
+                <button className="menu-button" onClick={toggleDropdown}>
+                    ⁝⁝⁝
+                </button>
+                {isDropdownOpen && (
+                    <div className="dropdown-menu open">
+                        <button className="dropdown-item" onClick={handleClick}>
+                            기술 스택 순위
+                        </button>
+                        <button className="dropdown-item" onClick={goToJobSummary}>
+                            채용 공고 요약
+                        </button>
+                        <hr />
+                        <button className="dropdown-item" onClick={handleMypage}>
+                            My Page
+                        </button>
+                    </div>
+                )}
+            </div>
 
             <div className="tech-stack-content">
                 <h1 className="tech-stack-language">{techStack.techName}</h1>
