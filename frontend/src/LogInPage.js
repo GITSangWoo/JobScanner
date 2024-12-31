@@ -1,16 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import './LogInPage.css';
 import { useNavigate } from 'react-router-dom';
+import { Cookies } from 'react-cookie';
 
 function KakaoLogin() {
   const [accessToken, setAccessToken] = useState('');
   const [refreshToken, setRefreshToken] = useState('');
   const [userInfo, setUserInfo] = useState(null);
   const navigate = useNavigate();
+  const cookies = new Cookies();
 
   const handleRedirect = () => {
     navigate("/", { replace: true });
     window.location.reload(); // 페이지 새로고침
+  };
+
+  // 쿠키에 값을 설정하는 함수
+  const setCookie = (name, value, days = 7) => {
+    cookies.set(name, value, { path: '/', maxAge: days * 24 * 60 * 60 });
+  };
+
+  // 쿠키에서 값을 가져오는 함수
+  const getCookie = (name) => {
+    return cookies.get(name);
   };
 
   // 카카오 API 초기화
