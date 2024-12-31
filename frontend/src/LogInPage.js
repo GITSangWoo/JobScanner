@@ -29,7 +29,7 @@ function KakaoLogin() {
 
     window.Kakao.Auth.login({
       success: (authObj) => {
-        console.log('로그인 성공:', authObj);
+        // console.log('로그인 성공:', authObj);
         setAccessToken(authObj.access_token);
         setRefreshToken(authObj.refresh_token);
 
@@ -54,16 +54,17 @@ function KakaoLogin() {
       refreshToken,
     };
 
-    fetch('http://43.202.186.119:8973/login/kakao', {
+    fetch('http://43.202.186.119/login/kakao', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
+      credentials: 'include', // 쿠키를 포함하는 요청
       body: JSON.stringify(kakaoTokenDTO),
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log('서버 응답:', data);
+        // console.log('서버 응답:', data);
         alert(data.message || '로그인 성공');
       })
       .catch((error) => {
@@ -82,7 +83,7 @@ function KakaoLogin() {
     }
     const accessToken = token.split('=')[1];
 
-    fetch('http://43.202.186.119:8973/user/profile', {
+    fetch('http://43.202.186.119/user/profile', {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${accessToken}`,
@@ -90,7 +91,7 @@ function KakaoLogin() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log('유저 정보:', data);
+        // console.log('유저 정보:', data);
         setUserInfo(data); // 유저 정보 상태 저장
       })
       .catch((error) => {
