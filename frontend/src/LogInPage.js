@@ -34,7 +34,7 @@ function KakaoLogin() {
         setRefreshToken(authObj.refresh_token);
 
         // 쿠키에 액세스 토큰 저장 (HTTP-only로 저장)
-        document.cookie = `accessToken=${authObj.access_token}; path=/; secure; HttpOnly`;
+        document.cookie = `accessToken=${authObj.access_token}; path=/; HttpOnly; SameSite=None`;
 
         // 서버로 리프레시 토큰 전송
         sendTokensToServer(authObj.refresh_token);
