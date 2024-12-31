@@ -1,25 +1,71 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import { Bar } from "react-chartjs-2";
+import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from "chart.js";
 import "./MainPage.css";
 import Cookies from 'js-cookie';
+
+ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
+
 
 const MainPage = () => {
     const [activeButton, setActiveButton] = useState(null);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [sortedData, setSortedData] = useState([]);
+    const [isTableVisible, setIsTableVisible] = useState(true); // 테이블과 차트 전환을 위한 상태   
     const [jobData, setJobData] = useState({
         responsibility: [],
         qualification: [],
         preferential: [],
     });
+    const categories = ["total", "qualification", "preferential"];
     const [jobTitles] = useState(["BE", "FE", "DE", "DA", "MLE"]);
     const navigate = useNavigate();
+    const [categoryData, setCategoryData] = useState({});
     const [nickname, setNickname] = useState(""); // 사용자 닉네임 상태
     const [jobDescription, setJobDescription] = useState(""); // job description 상태
 
     // useEffect(() => {
     //     // console.log("Updated jobData:", jobData);
     // }, [jobData]);
+    useEffect(() => {
+        if (activeButton) {
+            // JPA로부터 데이터 받아오기
+            categories.forEach(category => {
+                axios.get(`/dailyrank?jobtitle=${activeButton}&category=${category}`)
+                    .then(response => {
+                        const data = response.data.ranks;
+                        if (data) {
+                            const sorted = data.sort((a, b) => b.count - a.count).slice(0, 7); // count 기준 내림차순 정렬 후 상위 7개 선택
+                            const labels = data.map(item => item.techName);
+                            const counts = data.map(item => item.count);
+
+                            setSortedData(sorted);
+
+                            setCategoryData(prevData => ({
+                                ...prevData,
+                                [category]: {
+                                    labels,
+                                    datasets: [
+                                        {
+                                            label: `${activeButton} 직무의 ${category} 카테고리 기술 스택 사용 빈도`,
+                                            data: counts,
+                                            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                                            borderColor: 'rgba(75, 192, 192, 1)',
+                                            borderWidth: 1,
+                                        },
+                                    ],
+                                }
+                            }));
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error fetching data:", error);
+                    });
+            });
+        }
+    }, [activeButton]);
     
     // 로그인 상태 확인 함수
     const checkLoginStatus = () => {
@@ -238,6 +284,44 @@ const MainPage = () => {
                         ))}
                     </div>
                 )}
+                {activeButton && categories.map((category) => (
+                    <div key={category} className="tech-stack-category">
+                        <h4>{`${category} 카테고리`}</h4>
+                        {categoryData[category] ? (
+                            <div className="tech-stack-chart">
+                                <Bar
+                                    data={categoryData[category]}
+                                    options={{
+                                        responsive: true,
+                                        plugins: {
+                                            title: {
+                                                display: true,
+                                                text: `${activeButton} 직무의 ${category} 카테고리 기술 스택 사용 빈도`,
+                                            },
+                                        },
+                                        scales: {
+                                            x: {
+                                                title: {
+                                                    display: true,
+                                                    text: 'Tech Stack',
+                                                },
+                                            },
+                                            y: {
+                                                title: {
+                                                    display: true,
+                                                    text: 'Count',
+                                                },
+                                                min: 0,
+                                            },
+                                        },
+                                    }}
+                                />
+                            </div>
+                        ) : (
+                            <p>데이터를 불러오는 중...</p>
+                        )}
+                    </div>
+                ))}
 
             </div>
         </div>
