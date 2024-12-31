@@ -33,7 +33,7 @@ def insert_notice_data():
 
     try:
         # testdb에 연결하여 데이터 가져오기
-        connection = pymysql.connect(**db_config, database='testdb')
+        connection = pymysql.connect(**db_config, database='testdb1')
         cursor = connection.cursor()
 
         # combined_table과 extract_tech_stack을 조인하는 쿼리 작성

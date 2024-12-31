@@ -9,7 +9,7 @@ import os
 mysql_host = "t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com"
 mysql_user = "admin"  # RDS 생성 시 설정한 사용자 이름
 mysql_password = "dltkddn1"  # 비밀번호
-mysql_db = "testdb"  # 사용하려는 데이터베이스 이름
+mysql_db = "testdb1"  # 사용하려는 데이터베이스 이름
 
 
 # MySQL에서 qualification, responsibility, preferential 컬럼 데이터를 가져오는 함수

@@ -10,7 +10,7 @@ import os
 mysql_host = "t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com"
 mysql_user = "admin"
 mysql_password = "dltkddn1"
-mysql_db = "testdb"
+mysql_db = "testdb1"
 
 # 현재 파일(techextractimg.py)의 디렉토리 경로를 기준으로 tech_book.json 파일의 경로 계산
 current_file_dir = os.path.dirname(os.path.abspath(__file__))  # 현재 파일의 절대 경로 가져오기

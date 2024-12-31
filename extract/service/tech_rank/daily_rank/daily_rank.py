@@ -5,7 +5,7 @@ conn_testdb = mysql.connector.connect(
     host="t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com",
     user="admin",
     password="dltkddn1",
-    database="testdb"
+    database="testdb1"
 )
 cursor_testdb = conn_testdb.cursor()
 

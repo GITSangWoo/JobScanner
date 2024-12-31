@@ -6,7 +6,7 @@ DB_HOST = "t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com"
 DB_PORT = 3306
 DB_USER = "admin"
 DB_PASSWORD = "dltkddn1"
-DB_NAME = "testdb"
+DB_NAME = "testdb1"
 
 # 데이터베이스 연결 함수
 def connect_to_db():
