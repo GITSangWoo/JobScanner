@@ -5,7 +5,7 @@ import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from "chart.js";
 import "./MainPage.css";
 import Cookies from 'js-cookie';
-import { ReactTooltip } from 'react-tooltip';
+import ReactTooltip from 'react-tooltip'; // 수정된 부분
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
