@@ -29,7 +29,7 @@ function KakaoLogin() {
 
     window.Kakao.Auth.login({
       success: (authObj) => {
-        console.log('로그인 성공:', authObj);
+        // console.log('로그인 성공:', authObj);
         setAccessToken(authObj.access_token);
         setRefreshToken(authObj.refresh_token);
 
@@ -63,7 +63,7 @@ function KakaoLogin() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log('서버 응답:', data);
+        // console.log('서버 응답:', data);
         alert(data.message || '로그인 성공');
       })
       .catch((error) => {
@@ -90,7 +90,7 @@ function KakaoLogin() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log('유저 정보:', data);
+        // console.log('유저 정보:', data);
         setUserInfo(data); // 유저 정보 상태 저장
       })
       .catch((error) => {
