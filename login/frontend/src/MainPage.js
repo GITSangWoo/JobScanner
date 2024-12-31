@@ -296,7 +296,6 @@ const MainPage = () => {
                                         plugins: {
                                             title: {
                                                 display: true,
-                                                text: `${activeButton} 직무의 ${category} 카테고리 기술 스택 사용 빈도`,
                                             },
                                         },
                                         scales: {

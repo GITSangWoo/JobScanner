@@ -340,7 +340,7 @@ body {
 }
 
 .tech-stack-category h4 {
-    margin-bottom: 15px; /* 제목과 차트 간격 */
+    margin-bottom: 5px; /* 제목과 차트 간격 */
     font-size: 1.5rem;
     color: #333; /* 제목 텍스트 색상 */
     text-align: center;
