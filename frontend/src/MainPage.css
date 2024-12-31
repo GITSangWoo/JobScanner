@@ -1,7 +1,7 @@
 /* 기본 스타일 */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
 }
 
 .main-page {
@@ -10,8 +10,9 @@ body {
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
-    background-color: #f4f4f4;
+    background-color: #FFFFFF;
     padding-top: 20px; /* 메뉴와 버튼들이 잘 위치할 수 있도록 */
+    overflow-x: hidden;
 }
 
 /* 상단 오른쪽 로그인/회원가입 버튼 */
@@ -47,7 +48,6 @@ body {
     outline: none; /* 포커스 시 테두리 제거 */
 }
 
-
 /* 왼쪽 상단 더보기 버튼 */
 .top-left-menu {
     position: absolute;
@@ -59,8 +59,8 @@ body {
 .menu-button {
     padding: 10px 15px;
     font-size: 25px;
-    background-color: #EAEAEA;
-    color: black;
+    background-color: #F4EFE6;
+    color: #1C160C;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -121,7 +121,7 @@ body {
 
 .logo {
     font-size: 3rem; /* 적당한 크기로 로고 크기 설정 */
-    color: #333; /* 로고 색상 */
+    color: #1C160C; /* 로고 색상 */
     transition: transform 1s ease-out; /* 스무스한 효과를 위해 */
 }
 
@@ -379,8 +379,6 @@ body {
     width: 100%;
     max-width: 100%;
 }
-
-
 
 /* =============================== */
 /*               반응형 스타일               */
