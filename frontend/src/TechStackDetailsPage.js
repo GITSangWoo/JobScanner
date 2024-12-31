@@ -78,31 +78,37 @@ const TechStackDetailsPage = () => {
             });
     }, [techStackName]);
 
-    const handleBookmark = async () => {
-        if (checkLoginStatus()) {
-            const accessToken = Cookies.get('access_token');
-            try {
-                // POST 요청을 통해 북마크 추가
-                const response = await axios.post(
-                    'http://43.202.186.119:8972/user/bookmark/tech',  // 서버 URL
-                    { techName: techStackName },  // 전송할 데이터
-                    {
-                        headers: {
-                            "Authorization": `Bearer ${accessToken}`  // Authorization 헤더
-                        }
-                    }
-                );
-                alert(response.data);  // 'Bookmark added successfully' 또는 'Bookmark removed successfully' 메시지
-                setIsBookmarked(!isBookmarked); // 북마크 상태 토글
-            } catch (error) {
-                console.error("북마크 추가 실패:", error);
-                alert('북마크 추가 실패: ' + error);
-            }
-        } else {
-            alert("로그인 후 이용하실 수 있습니다.");
-            navigate("/login");
+    const handleBookmark = async (techName) => {
+        if (!checkLoginStatus()) {
+          alert("로그인 후 이용하실 수 있습니다.");
+          navigate("/login");
+          return;
         }
-    };
+      
+        const accessToken = Cookies.get('access_token');
+      
+        try {
+          const response = await axios.post(
+            'http://43.202.186.119:8972/user/bookmark/tech', 
+            qs.stringify({ techName }),  // x-www-form-urlencoded 형식으로 변환
+            {
+              headers: {
+                Authorization: `Bearer ${accessToken}`,
+                'Content-Type': 'application/x-www-form-urlencoded',  // Content-Type 변경
+              },
+            }
+          );
+          alert(response.data); // 서버 응답 메시지 표시
+        } catch (error) {
+          if (error.response) {
+            // 응답이 있는 경우
+            alert('북마크 추가 실패: ' + error.response.data.message || error.response.data);
+          } else {
+            // 응답이 없는 경우
+            alert('서버에 연결할 수 없습니다. 다시 시도해주세요.');
+          }
+        }
+      };
 
     const getYouTubeThumbnailUrl = (url) => {
         if (!url) return null;
