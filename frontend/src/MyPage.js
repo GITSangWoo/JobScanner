@@ -6,6 +6,7 @@ import Cookies from 'js-cookie';
 const MyPage = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [nickname, setNickname] = useState("");
+    const [email, setEmail] = useState("");
     const [activeToggle, setActiveToggle] = useState('tech');
     const [bookmarks, setBookmarks] = useState([]); // 초기 북마크 상태
     const [techStackData, setTechStackData] = useState([]); // 기술 스택 상태
@@ -18,38 +19,6 @@ const MyPage = () => {
         return !!accessToken; // 토큰이 있으면 true, 없으면 false
     };
 
-    useEffect(() => {
-        // 초기 데이터 로드 및 북마크 초기화
-        const initialTechStackData = ['React'];
-        const initialJobSummaryData = [
-            {
-                id: 1,
-                deadline: '2024-12-31',
-                company: 'Company A',
-                title: 'Software Engineer',
-                tasks: 'Develop features',
-                requirements: 'Java, Spring',
-                preferences: 'React, Docker',
-                techStack: ['Java', 'Spring', 'React']
-            },
-            // {
-            //     id: 2,
-            //     deadline: '2024-12-15',
-            //     company: 'Company B',
-            //     title: 'Backend Developer',
-            //     tasks: 'Develop backend services',
-            //     requirements: 'Node.js, MongoDB',
-            //     preferences: 'Docker, Kubernetes',
-            //     techStack: ['Node.js', 'MongoDB', 'Docker']
-            // }
-        ];
-
-        setTechStackData(initialTechStackData);
-        setJobSummaryData(initialJobSummaryData);
-
-        // 예시로 기본적으로 몇 개의 항목을 북마크에 추가
-        setBookmarks(['React', 1]); // 'React'와 id=1인 공고를 초기 북마크로 설정
-    }, []);
 
     const handleClick = () => {
         navigate("/", { replace: true });
@@ -109,6 +78,7 @@ const MyPage = () => {
                     if (response.ok) {
                         const data = await response.json();
                         setNickname(data.name || "사용자"); // 닉네임 설정
+                        setEmail(data.email || "이메일 없음"); // 이메일 설정
                     }
                 } catch (error) {
                     console.error("Error fetching user data:", error);
@@ -117,7 +87,6 @@ const MyPage = () => {
             fetchUserData();
         }
     }, []);
-    
 
     return (
         <div className="my-page">
@@ -150,7 +119,8 @@ const MyPage = () => {
             <div className="user-info">
                 <div className="social-login-info">
                     <div className="social-login-info-box">
-                        소셜 로그인 계정 정보가 들어갈 예정
+                        <p>Email: {email}</p>
+                        <p>Name: {nickname}</p>
                     </div>
                 </div>
 
@@ -175,25 +145,25 @@ const MyPage = () => {
                     {activeToggle === 'tech' && (
                         <table>
                             <thead>
-                            <tr>
-                                <th>기술 스택</th>
-                                <th>북마크</th>
-                            </tr>
+                                <tr>
+                                    <th>기술 스택</th>
+                                    <th>북마크</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            {techStackData.map((tech, index) => (
-                                <tr key={index}>
-                                    <td>{tech}</td>
-                                    <td>
-                                        <button
-                                            onClick={() => toggleBookmark(tech)}
-                                            className={`mypage-bookmark-button ${bookmarks.includes(tech) ? 'bookmarked' : ''}`}
-                                        >
-                                            {bookmarks.includes(tech) ? '북마크 삭제' : '북마크 추가'}
-                                        </button>
-                                    </td>
-                                </tr>
-                            ))}
+                                {techStackData.map((tech, index) => (
+                                    <tr key={index}>
+                                        <td>{tech}</td>
+                                        <td>
+                                            <button
+                                                onClick={() => toggleBookmark(tech)}
+                                                className={`mypage-bookmark-button ${bookmarks.includes(tech) ? 'bookmarked' : ''}`}
+                                            >
+                                                {bookmarks.includes(tech) ? '북마크 삭제' : '북마크 추가'}
+                                            </button>
+                                        </td>
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
                     )}
@@ -202,37 +172,41 @@ const MyPage = () => {
                     {activeToggle === 'job' && (
                         <table>
                             <thead>
-                            <tr>
-                                <th>마감일</th>
-                                <th>회사명</th>
-                                <th>공고 제목</th>
-                                <th>주요 업무</th>
-                                <th>자격 요건</th>
-                                <th>우대 조건</th>
-                                <th>기술 스택</th>
-                                <th>북마크</th>
-                            </tr>
+                                <tr>
+                                    <th>마감일</th>
+                                    <th>회사명</th>
+                                    <th>공고 제목</th>
+                                    <th>주요 업무</th>
+                                    <th>자격 요건</th>
+                                    <th>우대 조건</th>
+                                    <th>기술 스택</th>
+                                    <th>북마크</th>
+                                </tr>
                             </thead>
                             <tbody>
-                            {jobSummaryData.map((job) => (
-                                <tr key={job.id}>
-                                    <td>{job.deadline}</td>
-                                    <td>{job.company}</td>
-                                    <td>{job.title}</td>
-                                    <td>{job.tasks}</td>
-                                    <td>{job.requirements}</td>
-                                    <td>{job.preferences}</td>
-                                    <td>{job.techStack.join(', ')}</td>
-                                    <td>
-                                        <button
-                                            onClick={() => toggleBookmark(job.id)} // job.id는 공고의 고유 id
-                                            className={`mypage-bookmark-button ${bookmarks.includes(job.id) ? 'bookmarked' : ''}`}
-                                        >
-                                            {bookmarks.includes(job.id) ? '북마크 삭제' : '북마크 추가'}
-                                        </button>
-                                    </td>
-                                </tr>
-                            ))}
+                                {jobSummaryData.map((job) => (
+                                    <tr key={job.id}>
+                                        <td>{job.deadline}</td>
+                                        <td>{job.company}</td>
+                                        <td>
+                                            <a href={job.org_url} target="_blank" rel="noopener noreferrer">
+                                                {job.jobTitle}
+                                            </a>
+                                        </td>
+                                        <td>{job.tasks}</td>
+                                        <td>{job.requirements}</td>
+                                        <td>{job.preferences}</td>
+                                        <td>{job.techStack.join(', ')}</td>
+                                        <td>
+                                            <button
+                                                onClick={() => toggleBookmark(job.id)} // job.id는 공고의 고유 id
+                                                className={`mypage-bookmark-button ${bookmarks.includes(job.id) ? 'bookmarked' : ''}`}
+                                            >
+                                                {bookmarks.includes(job.id) ? '북마크 삭제' : '북마크 추가'}
+                                            </button>
+                                        </td>
+                                    </tr>
+                                ))}
                             </tbody>
                         </table>
                     )}

@@ -56,14 +56,37 @@ const JobSummaryPage = () => {
     };
 
     // 북마크 토글 처리
-    const handleBookmark = (id) => {
-        if (checkLoginStatus()) {
-            setIsBookmarked(!isBookmarked); // 북마크 상태 토글
-        } else {
-            alert("로그인 후 이용하실 수 있습니다.");
-            navigate("/login");
+    const handleBookmark = async (notice_id) => {
+        if (!checkLoginStatus()) {
+          alert("로그인 후 이용하실 수 있습니다.");
+          navigate("/login");
+          return;
         }
-    };
+      
+        const accessToken = Cookies.get('access_token');
+      
+        try {
+          const response = await axios.post(
+            'http://43.202.186.119:8972/user/bookmark/notice', 
+            qs.stringify({ notice_id }),  // x-www-form-urlencoded 형식으로 변환
+            {
+              headers: {
+                Authorization: `Bearer ${accessToken}`,
+                'Content-Type': 'application/x-www-form-urlencoded',  // Content-Type 변경
+              },
+            }
+          );
+          alert(response.data); // 서버 응답 메시지 표시
+        } catch (error) {
+          if (error.response) {
+            // 응답이 있는 경우
+            alert('북마크 추가 실패: ' + error.response.data.message || error.response.data);
+          } else {
+            // 응답이 없는 경우
+            alert('서버에 연결할 수 없습니다. 다시 시도해주세요.');
+          }
+        }
+      };
 
     // 드롭다운 메뉴 열기/닫기 처리
     const toggleDropdown = () => {
