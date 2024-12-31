@@ -20,23 +20,20 @@ const LoginPage = () => {
         if (code) {
             // 백엔드로 인가 코드 전달하여 Access Token 받기
             axios
-                .post(`${BACKEND_URL}/auth/login/kakao`, { code }) // 인가 코드를 요청 본문에 포함
-                .then(response => {
-                    const { accessToken } = response.data; // 백엔드에서 반환한 Access Token
-                    console.log("Access Token:", accessToken);
-
-                    // Access Token을 쿠키에 저장
-                    handleLoginSuccess(accessToken);
-
-                    // 사용자 데이터를 가져오거나 추가 작업 수행
-                    fetchUserData(accessToken);
-
-                    // 홈 페이지로 리디렉션
-                    navigate("/");
-                })
-                .catch(error => {
-                    console.error("Kakao login failed:", error);
-                });
+            .get(`${BACKEND_URL}/auth/login/kakao`, { params: { code } })  // GET 방식으로 요청 보내기
+            .then(response => {
+                const { accessToken } = response.data;
+                console.log("Access Token:", accessToken);
+        
+                handleLoginSuccess(accessToken);
+                fetchUserData(accessToken);
+        
+                navigate("/");
+            })
+            .catch(error => {
+                console.error("Kakao login failed:", error);
+            });
+        
         }
     }, [navigate, BACKEND_URL]);
 

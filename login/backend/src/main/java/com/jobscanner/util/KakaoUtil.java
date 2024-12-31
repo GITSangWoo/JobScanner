@@ -22,9 +22,9 @@ import lombok.extern.slf4j.Slf4j; // @Slf4j 어노테이션
 @Slf4j
 public class KakaoUtil {
 
-    @Value("${spring.kakao.auth.client}")
+    @Value("${spring.security.oauth2.client.registration.kakao.client-id}")
     private String client;
-    @Value("${spring.kakao.auth.redirect}")
+    @Value("${spring.security.oauth2.client.registration.kakao.redirect-uri}")
     private String redirect;
 
     public KakaoDTO.OAuthToken requestToken(String accessCode) {

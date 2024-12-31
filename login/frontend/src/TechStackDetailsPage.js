@@ -9,33 +9,62 @@ const TechStackDetailsPage = () => {
     const { techStackName } = useParams(); // URL에서 techStackName만 받기
     const [techStack, setTechStack] = useState(null);
     const [isBookmarked, setIsBookmarked] = useState(false);
-       const [nickname, setNickname] = useState(""); // 사용자 닉네임 상태
+    const [nickname, setNickname] = useState(""); // 사용자 닉네임 상태
+
     // 로그인 상태 확인 함수
     const checkLoginStatus = () => {
         const accessToken = Cookies.get('access_token');
         return !!accessToken; // 토큰이 있으면 true, 없으면 false
     };
 
-        // 사용자 정보를 가져오는 함수
-        useEffect(() => {
-            if (checkLoginStatus()) {
-                // 예: API 호출로 사용자 정보를 가져온다고 가정
-                const fetchUserData = async () => {
-                    try {
-                        const response = await fetch("/auth/user", {
-                            headers: { Authorization: `Bearer ${Cookies.get('access_token')}` },
-                        });
-                        if (response.ok) {
-                            const data = await response.json();
-                            setNickname(data.nickname || "사용자"); // 닉네임 설정
-                        }
-                    } catch (error) {
-                        console.error("Error fetching user data:", error);
+    // 사용자 정보를 가져오는 함수
+    useEffect(() => {
+        if (checkLoginStatus()) {
+            const fetchUserData = async () => {
+                try {
+                    const response = await fetch("/auth/user", {
+                        headers: { Authorization: `Bearer ${Cookies.get('access_token')}` },
+                    });
+                    if (response.ok) {
+                        const data = await response.json();
+                        setNickname(data.nickname || "사용자"); // 닉네임 설정
                     }
+                } catch (error) {
+                    console.error("Error fetching user data:", error);
+                }
+            };
+            fetchUserData();
+        }
+    }, []);
+
+    const fetchTechStackDetails = async () => {
+        try {
+            const response = await fetch(`/techstack?techName=${techStackName}`);
+            const data = await response.json();
+            
+            if (response.ok) {
+                // 데이터를 매핑하여 구조화
+                const transformedData = {
+                    techName: data.tech_name || "정보 없음",
+                    description: data.description || "설명이 없습니다.",
+                    youtubeLink: data.youtubelink || "",
+                    bookLink: data.booklink || "",
+                    docsLink: data.docslink || "",
                 };
-                fetchUserData();
+                setTechStack(transformedData);
+            } else {
+                console.error("Error fetching tech stack data:", data);
+                setTechStack(null);
             }
-        }, []);
+        } catch (error) {
+            console.error("Error fetching tech stack details:", error);
+            setTechStack(null);
+        }
+    };
+
+    useEffect(() => {
+        fetchTechStackDetails(); // 컴포넌트 마운트 시 기술 스택 정보 가져오기
+    }, [techStackName]);
 
     const handleClick = () => {
         navigate("/", { replace: true }); // navigate 호출
@@ -50,43 +79,12 @@ const TechStackDetailsPage = () => {
         navigate("/login");
     };
 
-    // const handleSignup = () => {
-    //     navigate("/sign-up");
-    // };
-
     const goToJobSummary = () => {
         navigate("/job-summary"); // 기업 공고 요약 페이지로 이동
     };
 
-    useEffect(() => {
-        // 기술 스택 정보를 API로 가져오는 로직
-        const fetchTechStackDetails = async () => {
-            try {
-                const response = await fetch(`/techstack?techName=${techStackName}`);
-                const data = await response.json();
-                if (response.ok) {
-                    setTechStack(data); // API 응답 데이터 매핑
-                } else {
-                    console.error("Error fetching tech stack data:", data);
-                    setTechStack(null);
-                }
-            } catch (error) {
-                console.error("Error fetching tech stack details:", error);
-                setTechStack(null);
-            }
-        };
-
-        if (techStackName) {
-            fetchTechStackDetails();
-        }
-    }, [techStackName]); // techStackName 변경 시마다 API 호출
-
-    if (!techStack) {
-        return <p>해당 기술 스택 정보를 찾을 수 없습니다.</p>;
-    }
-
     // 북마크 토글 처리
-    const handleBookmark = (id) => {
+    const handleBookmark = () => {
         if (checkLoginStatus()) {
             setIsBookmarked(!isBookmarked); // 북마크 상태 토글
         } else {
@@ -119,13 +117,13 @@ const TechStackDetailsPage = () => {
 
                 {/* 로그인/회원가입 버튼 */}
                 <div className="top-right-buttons">
-                {checkLoginStatus() ? (
-                    <span className="welcome-message">{nickname}님 환영합니다!</span>
-                ) : (
-                    <button className="auth-button" onClick={handleLogin}>
-                        로그인
-                    </button>
-                )}
+                    {checkLoginStatus() ? (
+                        <span className="welcome-message">{nickname}님 환영합니다!</span>
+                    ) : (
+                        <button className="auth-button" onClick={handleLogin}>
+                            로그인
+                        </button>
+                    )}
                 </div>
 
                 {/* 더보기 메뉴 */}
@@ -146,10 +144,10 @@ const TechStackDetailsPage = () => {
             <div className="tech-stack-content">
                 {/* 언어 이름 */}
                 <h1 className="tech-stack-language">
-                    {techStack.tech_name} {/* API에서 받아온 기술 스택 이름 */}
+                    {techStack.techName} {/* API에서 받아온 기술 스택 이름 */}
                 </h1>
 
-                {/* 북마크 버튼 - 설명 영역 안으로 이동 */}
+                {/* 북마크 버튼 */}
                 <div className="bookmark-container">
                     <button
                         className={`bookmark-button ${isBookmarked ? "active" : ""}`}
@@ -161,15 +159,13 @@ const TechStackDetailsPage = () => {
 
                 {/* 설명 */}
                 <h2>설명</h2>
-                <p>
-                    {techStack.description || "상세 설명이 없습니다."}
-                </p>
+                <p>{techStack.description}</p>
 
                 {/* 유튜브 링크 */}
                 <h2>유튜브 링크</h2>
-                {techStack.youtube_link ? (
+                {techStack.youtubeLink ? (
                     <a
-                        href={techStack.youtube_link}
+                        href={techStack.youtubeLink}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -181,9 +177,9 @@ const TechStackDetailsPage = () => {
 
                 {/* 도서 링크 */}
                 <h2>도서 링크</h2>
-                {techStack.book_link ? (
+                {techStack.bookLink ? (
                     <a
-                        href={techStack.book_link}
+                        href={techStack.bookLink}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -195,9 +191,9 @@ const TechStackDetailsPage = () => {
 
                 {/* 공식 문서 */}
                 <h2>공식 문서</h2>
-                {techStack.docs_link ? (
+                {techStack.docsLink ? (
                     <a
-                        href={techStack.docs_link}
+                        href={techStack.docsLink}
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -211,6 +207,5 @@ const TechStackDetailsPage = () => {
         </div>
     );
 };
-
 
 export default TechStackDetailsPage;

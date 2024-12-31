@@ -64,35 +64,33 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http
-            .cors()
+            .cors().configurationSource(corsConfigurationSource())  // CORS 필터 설정
             .and()
-            .formLogin()
-            .loginPage("/login")
-            .successHandler(new AuthSuccessHandler())
-            .and()
-            .csrf().disable()  // CSRF 보호 비활성화
-            .authorizeHttpRequests(authorizeRequests ->
+            .csrf().disable()
+            .authorizeHttpRequests(authorizeRequests -> 
                 authorizeRequests
-                    .requestMatchers(ALLOWED_URLS).permitAll()  // 허용된 URL
-                    .anyRequest().authenticated()  // 그 외 모든 요청은 인증 필요
+                    .requestMatchers(ALLOWED_URLS).permitAll()
+                    .anyRequest().authenticated()
             )
-            .headers(headers -> headers.frameOptions().disable())  // H2 콘솔 등에서 사용
-            .logout(logout -> logout.logoutSuccessUrl("/"))  // 로그아웃 성공 시 리다이렉트 URL
-            .oauth2Login(oauth2 -> oauth2
-                .defaultSuccessUrl("http://localhost:3000/oauth/callback", true)
-            );
-
+            .oauth2Login()
+                .defaultSuccessUrl("http://localhost:3000/oauth/callback", true);
         return http.build();
     }
+
     @Bean
+
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.addAllowedOrigin("http://localhost:3000"); // React 클라이언트 URL
         configuration.addAllowedMethod("*"); // 모든 HTTP 메서드 허용
-        configuration.addAllowedHeader("Content-Type" ); // 모든 헤더 허용
+        configuration.addAllowedHeader("*"); // 모든 헤더 허용
         configuration.setAllowCredentials(true); // 쿠키 및 자격증명 허용
         configuration.addExposedHeader("Authorization"); // Authorization 헤더 노출
+        configuration.addExposedHeader("Location"); // 리다이렉트 헤더 허용
     
+        // Pre-flight 요청을 위한 설정
+        configuration.addAllowedMethod("OPTIONS");
+        
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration); // 모든 경로에 대해 CORS 적용
         return source;
