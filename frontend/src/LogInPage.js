@@ -59,6 +59,7 @@ function KakaoLogin() {
       headers: {
         'Content-Type': 'application/json',
       },
+      credentials: 'include', // 쿠키를 포함하는 요청
       body: JSON.stringify(kakaoTokenDTO),
     })
       .then((response) => response.json())
