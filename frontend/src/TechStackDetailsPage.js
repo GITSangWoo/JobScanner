@@ -4,6 +4,7 @@ import "./TechStackDetailsPage.css"; // CSS 파일을 import
 import Cookies from 'js-cookie';
 import axios from 'axios';
 import { getLinkPreview } from "link-preview-js";
+import qs from 'qs';
 
 const TechStackDetailsPage = () => {
     const navigate = useNavigate();
