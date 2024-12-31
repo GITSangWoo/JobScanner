@@ -19,7 +19,7 @@ const MainPage = () => {
         qualification: [],
         preferential: [],
     });
-    const categories = ["total", "qualification", "preferential"];
+    const categories = ["total", "responsibility","qualification", "preferential"];
     const [jobTitles] = useState(["BE", "FE", "DE", "DA", "MLE"]);
     const navigate = useNavigate();
     const [categoryData, setCategoryData] = useState({});
