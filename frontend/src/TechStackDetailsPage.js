@@ -114,16 +114,17 @@ const TechStackDetailsPage = () => {
         const accessToken = Cookies.get('access_token');
       
         try {
-          const response = await axios.post(
-            'http://43.202.186.119:8972/user/bookmark/tech', 
-            qs.stringify({ techName }),  // x-www-form-urlencoded 형식으로 변환
-            {
-              headers: {
-                Authorization: `Bearer ${accessToken}`,
-                'Content-Type': 'application/x-www-form-urlencoded',  // Content-Type 변경
-              },
-            }
-          );
+            const response = await axios.post(
+                'http://43.202.186.119:8972/user/bookmark/tech',
+                { techName },  // x-www-form-urlencoded 대신 JSON 형식으로 전송
+                {
+                  headers: {
+                    Authorization: `Bearer ${accessToken}`,
+                    'Content-Type': 'application/json',  // JSON 형식으로 변경
+                  },
+                }
+              );
+              
           alert(response.data); // 서버 응답 메시지 표시
         } catch (error) {
           if (error.response) {
