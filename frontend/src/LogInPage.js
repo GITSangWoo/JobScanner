@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './LogInPage.css';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,18 +11,22 @@ function KakaoLogin() {
   const handleRedirect = () => {
     navigate("/", { replace: true });
     window.location.reload(); // 페이지 새로고침
-};
-
+  };
 
   // 카카오 API 초기화
-  React.useEffect(() => {
-    if (!window.Kakao.isInitialized()) {
+  useEffect(() => {
+    if (typeof window.Kakao !== 'undefined' && !window.Kakao.isInitialized()) {
       window.Kakao.init('9ae623834d6fbc0413f981285a8fa0d5'); // YOUR_APP_KEY
     }
-  }, []);
+  }, []); // 빈 배열로 컴포넌트 마운트 시 한 번만 실행
 
   // 카카오 로그인
   const kakaoLogin = () => {
+    if (typeof window.Kakao === 'undefined') {
+      console.error('카카오 SDK가 로드되지 않았습니다.');
+      return;
+    }
+
     window.Kakao.Auth.login({
       success: (authObj) => {
         console.log('로그인 성공:', authObj);
@@ -107,7 +111,7 @@ function KakaoLogin() {
             </div>
         </div>
     </div>
-);
+  );
 }
 
 export default KakaoLogin;
