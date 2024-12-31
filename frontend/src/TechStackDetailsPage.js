@@ -60,9 +60,9 @@ const TechStackDetailsPage = () => {
 
                 // 링크 미리보기 가져오기
                 const links = [
-                    data.youtube_link,
-                    data.book_link,
-                    data.docs_link
+                    data.youtubelink,
+                    data.booklink,
+                    data.docslink
                 ];
                 links.forEach(link => {
                     if (link) {
@@ -222,8 +222,8 @@ const TechStackDetailsPage = () => {
                 )}
 
                 <h2>공식 문서</h2>
-                {techStack.documentationLink ? (
-                    <a href={techStack.documentationLink} target="_blank" rel="noopener noreferrer">
+                {techStack.docsLink ? (
+                    <a href={techStack.docsLink} target="_blank" rel="noopener noreferrer">
                         바로가기
                     </a>
                 ) : (
