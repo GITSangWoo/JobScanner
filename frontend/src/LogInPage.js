@@ -45,10 +45,10 @@ function KakaoLogin() {
         setRefreshToken(authObj.refresh_token);
 
         // 쿠키에 액세스 토큰 저장
-        setCookie('accessToken', authObj.access_token);
+        setCookie('access_token', authObj.access_token);
 
         // 쿠키에 저장된 access token 확인 (디버깅용)
-        const token = getCookie('accessToken');
+        const token = getCookie('access_token');
         console.log('쿠키에서 가져온 Access Token:', token);
 
         // 서버로 리프레시 토큰 전송
