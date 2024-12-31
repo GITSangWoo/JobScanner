@@ -2,18 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import "./TechStackDetailsPage.css"; // CSS 파일을 import
 import axios from "axios"; // axios 임포트
-
-const PROXY_URL = "http://localhost:9000/";
-
-const fetchLinkPreview = async (url) => {
-    try {
-        const response = await axios.get(`${PROXY_URL}${url}`);
-        return response.data;
-    } catch (error) {
-        console.error("Error fetching link preview:", error);
-        throw error;
-    }
-};
+import { getLinkPreview } from "link-preview-js"; // link-preview-js 임포트
 
 const TechStackDetailsPage = () => {
     const navigate = useNavigate();
@@ -66,7 +55,7 @@ const TechStackDetailsPage = () => {
                 ];
                 links.forEach(link => {
                     if (link) {
-                        fetchLinkPreview(link)
+                        getLinkPreview(link)
                             .then(data => {
                                 console.log(data); // 링크 미리보기 데이터 확인
                                 setLinkPreviews(prevState => ({
