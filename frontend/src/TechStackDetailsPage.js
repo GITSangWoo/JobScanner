@@ -10,9 +10,14 @@ const TechStackDetailsPage = () => {
     const navigate = useNavigate();
     const { techStackName } = useParams(); // URL에서 techStackName만 받기
     const [techStack, setTechStack] = useState(null);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isBookmarked, setIsBookmarked] = useState(false); // 북마크 상태
     const [nickname, setNickname] = useState(""); // 사용자 닉네임 상태
     const [linkPreviews, setLinkPreviews] = useState({}); // 링크 미리보기 상태
+    const handleClick = () => {
+        navigate("/", { replace: true });
+        window.location.reload();
+    };
 
     // 로그인 상태 확인 함수
     const checkLoginStatus = () => {
