@@ -80,6 +80,7 @@ const MainPage = () => {
         const accessToken = Cookies.get('access_token');
         return !!accessToken; // 토큰이 있으면 true, 없으면 false
     };
+    
 
     // 사용자 정보를 가져오는 함수
     useEffect(() => {
@@ -87,7 +88,7 @@ const MainPage = () => {
             // 예: API 호출로 사용자 정보를 가져온다고 가정
             const fetchUserData = async () => {
                 try {
-                    const response = await fetch("/auth/user", {
+                    const response = await fetch("/user/profile", {
                         headers: { Authorization: `Bearer ${Cookies.get('access_token')}` },
                     });
                     if (response.ok) {
@@ -193,6 +194,7 @@ const MainPage = () => {
     const handleLogin = () => {
         navigate("/login");
     };
+    
 
     return (
         <div className="main-page">
