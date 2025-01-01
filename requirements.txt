@@ -12,4 +12,4 @@ pymysql
 bs4
 pytesseract
 Pillow
-numpy
+numpy<2
