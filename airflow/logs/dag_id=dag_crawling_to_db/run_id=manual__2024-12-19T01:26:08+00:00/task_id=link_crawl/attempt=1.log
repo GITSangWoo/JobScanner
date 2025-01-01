@@ -1,0 +1,68 @@
+[2024-12-19T11:46:19.639+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T01:26:08+00:00 [queued]>
+[2024-12-19T11:46:19.647+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T01:26:08+00:00 [queued]>
+[2024-12-19T11:46:19.647+0900] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-12-19T11:46:19.663+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-19 01:26:08+00:00
+[2024-12-19T11:46:19.667+0900] {standard_task_runner.py:57} INFO - Started process 3435 to run task
+[2024-12-19T11:46:19.670+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'manual__2024-12-19T01:26:08+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmpfchhvhia']
+[2024-12-19T11:46:19.672+0900] {standard_task_runner.py:85} INFO - Job 3: Subtask link_crawl
+[2024-12-19T11:46:19.710+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T01:26:08+00:00 [running]> on host cc3dd9b0c2e4
+[2024-12-19T11:46:19.797+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-19T01:26:08+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-19T01:26:08+00:00'
+[2024-12-19T11:46:19.798+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-19 11:46:19
+[2024-12-19T11:46:19.798+0900] {logging_mixin.py:151} INFO - 인크루트 종료 시간: 2024-12-19 11:46:19
+[2024-12-19T11:46:24.800+0900] {logging_mixin.py:151} INFO - 잡코리아 시작 시간: 2024-12-19 11:46:24
+[2024-12-19T11:46:24.800+0900] {logging_mixin.py:151} INFO - 잡코리아 종료 시간: 2024-12-19 11:46:24
+[2024-12-19T11:46:29.806+0900] {logging_mixin.py:151} INFO - 점핏 시작 시간: 2024-12-19 11:46:29
+[2024-12-19T11:46:29.806+0900] {logging_mixin.py:151} INFO - 점핏 종료 시간: 2024-12-19 11:46:29
+[2024-12-19T11:46:34.812+0900] {logging_mixin.py:151} INFO - 로켓펀치 시작 시간: 2024-12-19 11:46:34
+[2024-12-19T11:46:34.812+0900] {logging_mixin.py:151} INFO - 로켓펀치 종료 시간: 2024-12-19 11:46:34
+[2024-12-19T11:46:39.815+0900] {logging_mixin.py:151} INFO - 사람인 시작 시간: 2024-12-19 11:46:39
+[2024-12-19T11:46:39.867+0900] {credentials.py:1254} INFO - Found credentials in shared credentials file: /code/.aws/credentials
+[2024-12-19T11:46:40.237+0900] {logging_mixin.py:151} INFO - 키워드 '데이터 엔지니어' 작업 시작
+[2024-12-19T11:46:42.508+0900] {logging_mixin.py:151} INFO - 브라우저 강력 새로고침 (Ctrl + F5) 완료
+[2024-12-19T11:47:36.396+0900] {logging_mixin.py:151} INFO - 캐시 무효화된 URL로 접근: https://www.saramin.co.kr/zf_user/?nocache=1734576405
+[2024-12-19T11:47:50.314+0900] {logging_mixin.py:151} INFO - '데이터 엔지니어' 검색 완료!
+[2024-12-19T11:47:57.322+0900] {logging_mixin.py:151} INFO - 현재 페이지: 1
+[2024-12-19T11:48:10.694+0900] {logging_mixin.py:151} INFO - 현재 페이지: 2
+[2024-12-19T11:48:22.291+0900] {logging_mixin.py:151} INFO - 현재 페이지: 3
+[2024-12-19T11:48:33.794+0900] {logging_mixin.py:151} INFO - 현재 페이지: 4
+[2024-12-19T11:48:45.209+0900] {logging_mixin.py:151} INFO - 현재 페이지: 5
+[2024-12-19T11:48:56.633+0900] {logging_mixin.py:151} INFO - 현재 페이지: 6
+[2024-12-19T11:49:08.045+0900] {logging_mixin.py:151} INFO - 현재 페이지: 7
+[2024-12-19T11:49:19.411+0900] {logging_mixin.py:151} INFO - 현재 페이지: 8
+[2024-12-19T11:49:30.861+0900] {logging_mixin.py:151} INFO - 현재 페이지: 9
+[2024-12-19T11:49:42.256+0900] {logging_mixin.py:151} INFO - 현재 페이지: 10
+[2024-12-19T11:49:53.659+0900] {logging_mixin.py:151} INFO - 현재 페이지: 11
+[2024-12-19T11:50:05.158+0900] {logging_mixin.py:151} INFO - 현재 페이지: 12
+[2024-12-19T11:50:16.734+0900] {logging_mixin.py:151} INFO - 현재 페이지: 13
+[2024-12-19T11:50:26.278+0900] {local_task_job_runner.py:294} WARNING - State of this instance has been externally set to restarting. Terminating instance.
+[2024-12-19T11:50:26.282+0900] {process_utils.py:131} INFO - Sending 15 to group 3435. PIDs of all processes in the group: [3450, 3456, 3460, 3461, 3469, 3471, 3491, 3492, 3569, 3782, 3846, 3490, 3435]
+[2024-12-19T11:50:26.282+0900] {process_utils.py:86} INFO - Sending the signal 15 to group 3435
+[2024-12-19T11:50:26.283+0900] {taskinstance.py:1630} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-12-19T11:50:26.283+0900] {logging_mixin.py:151} INFO - '데이터 엔지니어' 작업: 마지막 페이지 도달
+[2024-12-19T11:50:26.473+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=3469, status='terminated', started='11:46:39') (3469) terminated with exit code None
+[2024-12-19T11:50:26.473+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=3491, status='terminated', started='11:46:39') (3491) terminated with exit code None
+[2024-12-19T11:50:26.474+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=3460, status='terminated', started='11:46:39') (3460) terminated with exit code None
+[2024-12-19T11:50:26.474+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=3569, status='terminated', started='11:46:39') (3569) terminated with exit code None
+[2024-12-19T11:50:26.474+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=3461, status='terminated', started='11:46:39') (3461) terminated with exit code None
+[2024-12-19T11:50:26.474+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=3456, status='terminated', started='11:46:39') (3456) terminated with exit code None
+[2024-12-19T11:50:26.474+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=3846, status='terminated', started='11:48:40') (3846) terminated with exit code None
+[2024-12-19T11:50:26.474+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=3490, status='terminated', started='11:46:39') (3490) terminated with exit code None
+[2024-12-19T11:50:26.474+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=3492, status='terminated', started='11:46:39') (3492) terminated with exit code None
+[2024-12-19T11:50:26.475+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=3782, status='terminated', started='11:48:04') (3782) terminated with exit code None
+[2024-12-19T11:50:26.475+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=3471, status='terminated', started='11:46:39') (3471) terminated with exit code None
+[2024-12-19T11:50:26.526+0900] {logging_mixin.py:151} INFO - S3에 파일 업로드 완료: s3://t2jt/job/DE/sources/saramin/links/20241219.txt
+[2024-12-19T11:50:26.527+0900] {connectionpool.py:823} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f95d56dcaf0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/95fa3eb811884b2f16b3d98ad2ad2106
+[2024-12-19T11:50:26.528+0900] {connectionpool.py:823} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f95d55f8e50>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/95fa3eb811884b2f16b3d98ad2ad2106
+[2024-12-19T11:50:26.528+0900] {connectionpool.py:823} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f95d55f8f70>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/95fa3eb811884b2f16b3d98ad2ad2106
+[2024-12-19T11:50:26.532+0900] {logging_mixin.py:151} INFO - 키워드 '프론트엔드' 작업 시작
+[2024-12-19T11:50:26.568+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=3450, status='terminated', started='11:46:39') (3450) terminated with exit code None
+[2024-12-19T11:50:28.839+0900] {logging_mixin.py:151} INFO - 브라우저 강력 새로고침 (Ctrl + F5) 완료
+[2024-12-19T11:50:34.745+0900] {logging_mixin.py:151} INFO - 캐시 무효화된 URL로 접근: https://www.saramin.co.kr/zf_user/?nocache=1734576631
+[2024-12-19T11:50:49.284+0900] {logging_mixin.py:151} INFO - '프론트엔드' 검색 완료!
+[2024-12-19T11:50:56.290+0900] {logging_mixin.py:151} INFO - 현재 페이지: 1
+[2024-12-19T11:51:09.609+0900] {logging_mixin.py:151} INFO - 현재 페이지: 2
+[2024-12-19T11:51:21.230+0900] {logging_mixin.py:151} INFO - 현재 페이지: 3
+[2024-12-19T11:51:26.287+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=3435, name='airflow task ru', status='sleeping', started='11:46:18') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-19T11:51:26.288+0900] {process_utils.py:86} INFO - Sending the signal 9 to group 3435
+[2024-12-19T11:51:26.318+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=3435, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='11:46:18') (3435) terminated with exit code -9
+[2024-12-19T11:51:26.318+0900] {standard_task_runner.py:172} ERROR - Job 3 was killed before it finished (likely due to running out of memory)

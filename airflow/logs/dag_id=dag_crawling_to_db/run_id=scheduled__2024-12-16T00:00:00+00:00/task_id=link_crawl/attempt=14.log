@@ -1,0 +1,37 @@
+[2024-12-17T21:14:35.973+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T21:14:35.983+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T21:14:35.984+0900] {taskinstance.py:1359} INFO - Starting attempt 14 of 15
+[2024-12-17T21:14:35.995+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-16 00:00:00+00:00
+[2024-12-17T21:14:36.000+0900] {standard_task_runner.py:57} INFO - Started process 87 to run task
+[2024-12-17T21:14:36.003+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'scheduled__2024-12-16T00:00:00+00:00', '--job-id', '121', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmp0vws7hk0']
+[2024-12-17T21:14:36.006+0900] {standard_task_runner.py:85} INFO - Job 121: Subtask link_crawl
+[2024-12-17T21:14:36.051+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [running]> on host 60c04c3f321f
+[2024-12-17T21:14:36.120+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='14' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-16T00:00:00+00:00'
+[2024-12-17T21:14:36.121+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-17 21:14:36
+[2024-12-17T21:14:36.121+0900] {logging_mixin.py:151} INFO - 인크루트 종료 시간: 2024-12-17 21:14:36
+[2024-12-17T21:14:41.126+0900] {logging_mixin.py:151} INFO - 잡코리아 시작 시간: 2024-12-17 21:14:41
+[2024-12-17T21:14:41.126+0900] {logging_mixin.py:151} INFO - 잡코리아 종료 시간: 2024-12-17 21:14:41
+[2024-12-17T21:14:46.130+0900] {logging_mixin.py:151} INFO - 점핏 시작 시간: 2024-12-17 21:14:46
+[2024-12-17T21:14:46.130+0900] {logging_mixin.py:151} INFO - 점핏 종료 시간: 2024-12-17 21:14:46
+[2024-12-17T21:14:51.136+0900] {logging_mixin.py:151} INFO - 로켓펀치 시작 시간: 2024-12-17 21:14:51
+[2024-12-17T21:14:51.136+0900] {logging_mixin.py:151} INFO - 로켓펀치 종료 시간: 2024-12-17 21:14:51
+[2024-12-17T21:14:56.140+0900] {logging_mixin.py:151} INFO - 사람인 시작 시간: 2024-12-17 21:14:56
+[2024-12-17T21:14:56.140+0900] {logging_mixin.py:151} INFO - 사람인 종료 시간: 2024-12-17 21:14:56
+[2024-12-17T21:15:01.145+0900] {logging_mixin.py:151} INFO - 원티드 시작 시간: 2024-12-17 21:15:01
+[2024-12-17T21:15:01.146+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T21:15:01.223+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T21:15:01.299+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T21:15:01.365+0900] {logger.py:11} INFO - There is no [linux64] chromedriver "131.0.6778.108" for browser google-chrome "131.0.6778" in cache
+[2024-12-17T21:15:01.366+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T21:15:01.521+0900] {logger.py:11} INFO - WebDriver version 131.0.6778.108 selected
+[2024-12-17T21:15:01.524+0900] {logger.py:11} INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.108/linux64/chromedriver-linux64.zip
+[2024-12-17T21:15:01.525+0900] {logger.py:11} INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.108/linux64/chromedriver-linux64.zip
+[2024-12-17T21:15:01.632+0900] {logger.py:11} INFO - Driver downloading response is 200
+[2024-12-17T21:15:01.935+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T21:15:02.127+0900] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108]
+[2024-12-17T21:15:02.484+0900] {logging_mixin.py:151} INFO - No log files found in the directory. All URLs will be marked as 'update'.
+[2024-12-17T21:15:12.994+0900] {logging_mixin.py:151} INFO - 원티드 종료 시간: 2024-12-17 21:15:12
+[2024-12-17T21:15:12.994+0900] {python.py:194} INFO - Done. Returned value was: None
+[2024-12-17T21:15:13.003+0900] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=dag_crawling_to_db, task_id=link_crawl, execution_date=20241216T000000, start_date=20241217T121435, end_date=20241217T121513
+[2024-12-17T21:15:13.032+0900] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-12-17T21:15:13.045+0900] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

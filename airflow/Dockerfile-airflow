@@ -1,0 +1,64 @@
+# Airflow 공식 이미지 기반
+FROM apache/airflow:2.7.1-python3.10
+
+# 작업 디렉토리 설정
+WORKDIR /code
+
+# Root 사용자로 필요한 시스템 패키지 설치
+USER root
+RUN apt-get update && apt-get install -y bash \
+    curl wget vim gnupg unzip \
+    libnss3 libatk-bridge2.0-0 libgconf-2-4 libxss1 libxcomposite1 libxrandr2 libasound2 libvulkan1 \
+    libxdamage1 libgbm-dev libgtk-3-0 libvulkan1 fonts-liberation libappindicator3-1 xdg-utils \
+    mysql-client \
+    default-libmysqlclient-dev \
+    gcc && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# User and Group ID for Airflow
+ARG AIRFLOW_UID=1000
+ARG AIRFLOW_GID=1000
+
+# Create airflow group and adjust user if necessary
+RUN getent group airflow || groupadd -g ${AIRFLOW_GID} airflow && \
+    usermod -u ${AIRFLOW_UID} -g ${AIRFLOW_GID} airflow && \
+    chown -R airflow:airflow /code
+
+
+# 랜덤 키 생성 및 환경 변수로 설정
+RUN export AIRFLOW_WEBSERVER_SECRET_KEY=$(openssl rand -hex 32) && \
+    echo "AIRFLOW__WEBSERVER__SECRET_KEY=$AIRFLOW_WEBSERVER_SECRET_KEY" >> /etc/environment
+
+# airflow 사용자가 sudo를 비밀번호 없이 사용할 수 있도록 설정
+RUN echo "airflow ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+# Google Chrome 설치
+RUN wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb && \
+    apt install -y ./google-chrome-stable_current_amd64.deb && \
+    rm google-chrome-stable_current_amd64.deb
+
+# Dockerfile 위치의 디렉토리 모두 컨테이너 /code/디렉토리에 복사
+COPY . .
+COPY .env.airflow /code/.env.airflow
+
+# 공유 메모리 설정 (크롬 작업 시 필수)
+RUN mkdir -p /dev/shm && chmod 777 /dev/shm
+
+# 초기화 스크립트 복사 및 실행 권한 추가
+RUN chmod +x /code/scripts/init_airflow.sh
+
+# dags잡는거 필수 (실행.py파일 모듈화)
+ENV PYTHONPATH=/code/dags:/code/plugins
+
+# airflow user 변경
+USER airflow
+
+# DB 설정
+#ENV AIRFLOW__CORE__EXECUTOR=LocalExecutor
+#ENV AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=mysql+mysqldb://admin:dltkddn!!@t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com:3306/airflowdb
+#ENV AIRFLOW__CORE__LOAD_EXAMPLES=False
+
+# python pdm 패키지 설치
+RUN pip install --no-cache-dir -r /code/requirements.txt
+
+ENV PYTHONWARNINGS=ignore

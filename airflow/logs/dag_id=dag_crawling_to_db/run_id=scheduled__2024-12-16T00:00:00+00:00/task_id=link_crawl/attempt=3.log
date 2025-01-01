@@ -1,0 +1,279 @@
+[2024-12-17T17:05:53.816+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T17:05:53.827+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T17:05:53.827+0900] {taskinstance.py:1359} INFO - Starting attempt 3 of 2
+[2024-12-17T17:05:53.840+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-16 00:00:00+00:00
+[2024-12-17T17:05:53.843+0900] {standard_task_runner.py:57} INFO - Started process 81 to run task
+[2024-12-17T17:05:53.847+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'scheduled__2024-12-16T00:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmpbp9tsd5a']
+[2024-12-17T17:05:53.850+0900] {standard_task_runner.py:85} INFO - Job 6: Subtask link_crawl
+[2024-12-17T17:05:53.895+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [running]> on host 12881706c75a
+[2024-12-17T17:05:53.966+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-16T00:00:00+00:00'
+[2024-12-17T17:05:53.967+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-17 17:05:53
+[2024-12-17T17:05:53.967+0900] {logging_mixin.py:151} INFO - 인크루트 종료 시간: 2024-12-17 17:05:53
+[2024-12-17T17:05:58.970+0900] {logging_mixin.py:151} INFO - 잡코리아 시작 시간: 2024-12-17 17:05:58
+[2024-12-17T17:05:58.970+0900] {logging_mixin.py:151} INFO - 잡코리아 종료 시간: 2024-12-17 17:05:58
+[2024-12-17T17:06:03.974+0900] {logging_mixin.py:151} INFO - 점핏 시작 시간: 2024-12-17 17:06:03
+[2024-12-17T17:06:03.975+0900] {logging_mixin.py:151} INFO - 점핏 종료 시간: 2024-12-17 17:06:03
+[2024-12-17T17:06:08.980+0900] {logging_mixin.py:151} INFO - 로켓펀치 시작 시간: 2024-12-17 17:06:08
+[2024-12-17T17:06:08.981+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:06:09.104+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:06:09.146+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:06:09.174+0900] {logger.py:11} INFO - There is no [linux64] chromedriver "131.0.6778.108" for browser google-chrome "131.0.6778" in cache
+[2024-12-17T17:06:09.175+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:06:09.264+0900] {logger.py:11} INFO - WebDriver version 131.0.6778.108 selected
+[2024-12-17T17:06:09.267+0900] {logger.py:11} INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.108/linux64/chromedriver-linux64.zip
+[2024-12-17T17:06:09.268+0900] {logger.py:11} INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.108/linux64/chromedriver-linux64.zip
+[2024-12-17T17:06:09.398+0900] {logger.py:11} INFO - Driver downloading response is 200
+[2024-12-17T17:06:09.769+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:06:09.980+0900] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108]
+[2024-12-17T17:06:37.413+0900] {logging_mixin.py:151} INFO - Timeout on page 9
+[2024-12-17T17:06:37.481+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:06:37.552+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:06:37.582+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:06:37.616+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:06:44.641+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:06:44.699+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:06:44.738+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:06:44.765+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:06:50.220+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:06:50.276+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:06:50.302+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:06:50.329+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:06:55.383+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:06:55.438+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:06:55.467+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:06:55.494+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:07:00.610+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:07:00.668+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:00.695+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:00.725+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:07:06.312+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:07:06.366+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:06.426+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:06.452+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:07:12.305+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:07:12.355+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:12.385+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:12.413+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:07:18.188+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:07:18.241+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:18.267+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:18.291+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:07:23.675+0900] {logging_mixin.py:151} INFO - ⛔ [ERROR] S3로 파일을 업로드하는데 에러 발생 Unable to locate credentials
+[2024-12-17T17:07:23.676+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:07:23.725+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:23.777+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:23.803+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:07:48.711+0900] {logging_mixin.py:151} INFO - Timeout on page 8
+[2024-12-17T17:07:48.777+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:07:48.835+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:49.106+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:49.132+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:07:55.136+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:07:55.186+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:55.212+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:07:55.241+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:08:00.381+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:08:00.433+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:00.708+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:00.736+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:08:04.810+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:08:04.861+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:04.891+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:04.916+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:08:10.077+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:08:10.128+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:10.161+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:10.185+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:08:14.568+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:08:14.618+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:14.660+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:14.703+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:08:19.245+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:08:19.294+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:19.324+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:19.351+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:08:25.321+0900] {logging_mixin.py:151} INFO - ⛔ [ERROR] S3로 파일을 업로드하는데 에러 발생 Unable to locate credentials
+[2024-12-17T17:08:25.321+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:08:25.371+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:25.398+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:25.425+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:08:43.943+0900] {logging_mixin.py:151} INFO - Timeout on page 5
+[2024-12-17T17:08:44.012+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:08:44.084+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:44.128+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:44.157+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:08:49.339+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:08:49.392+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:49.419+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:49.443+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:08:53.792+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:08:53.846+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:53.872+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:53.898+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:08:58.258+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:08:58.311+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:58.337+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:08:58.362+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:09:04.585+0900] {logging_mixin.py:151} INFO - ⛔ [ERROR] S3로 파일을 업로드하는데 에러 발생 Unable to locate credentials
+[2024-12-17T17:09:04.585+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:09:04.636+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:04.684+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:04.709+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:09:25.289+0900] {logging_mixin.py:151} INFO - Timeout on page 6
+[2024-12-17T17:09:25.356+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:09:25.418+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:25.444+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:25.468+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:09:30.577+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:09:30.630+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:30.660+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:30.687+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:09:35.280+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:09:35.348+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:35.397+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:35.428+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:09:40.721+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:09:40.782+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:40.811+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:40.836+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:09:45.591+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:09:45.672+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:45.722+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:45.748+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:09:51.591+0900] {logging_mixin.py:151} INFO - ⛔ [ERROR] S3로 파일을 업로드하는데 에러 발생 Unable to locate credentials
+[2024-12-17T17:09:51.592+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:09:51.642+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:51.667+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:09:51.691+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:10:08.812+0900] {logging_mixin.py:151} INFO - Timeout on page 4
+[2024-12-17T17:10:08.878+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:10:08.950+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:10:08.994+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:10:09.041+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:10:14.912+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:10:14.966+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:10:14.996+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:10:15.039+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:10:20.446+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:10:20.505+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:10:20.535+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:10:20.562+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108/chromedriver-linux64/chromedriver] found in cache
+[2024-12-17T17:10:27.639+0900] {logging_mixin.py:151} INFO - ⛔ [ERROR] S3로 파일을 업로드하는데 에러 발생 Unable to locate credentials
+[2024-12-17T17:10:27.640+0900] {logging_mixin.py:151} INFO - 로켓펀치 종료 시간: 2024-12-17 17:10:27
+[2024-12-17T17:10:32.645+0900] {logging_mixin.py:151} INFO - 사람인 시작 시간: 2024-12-17 17:10:32
+[2024-12-17T17:10:34.653+0900] {logging_mixin.py:151} INFO - 키워드 '데이터 엔지니어' 작업 시작
+[2024-12-17T17:10:37.676+0900] {logging_mixin.py:151} INFO - 브라우저 강력 새로고침 (Ctrl + F5) 완료
+[2024-12-17T17:12:40.773+0900] {logging_mixin.py:151} INFO - 오류 발생: HTTPConnectionPool(host='localhost', port=35563): Read timed out. (read timeout=120)
+[2024-12-17T17:14:40.870+0900] {connectionpool.py:823} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=35563): Read timed out. (read timeout=120)")': /session/ba3ce1316af6be0070b6ac576bada7d6
+[2024-12-17T17:15:50.834+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 115, 'name': 'chrome_crashpad'}
+[2024-12-17T17:15:50.834+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 115, 'name': 'chrome_crashpad'}
+[2024-12-17T17:16:00.858+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 117, 'name': 'chrome'}
+[2024-12-17T17:16:00.859+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 117, 'name': 'chrome'}
+[2024-12-17T17:16:10.891+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 118, 'name': 'chrome'}
+[2024-12-17T17:16:10.892+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 118, 'name': 'chrome'}
+[2024-12-17T17:16:20.900+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 120, 'name': 'chrome_crashpad'}
+[2024-12-17T17:16:20.901+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 120, 'name': 'chrome_crashpad'}
+[2024-12-17T17:16:30.939+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 143, 'name': 'chrome'}
+[2024-12-17T17:16:30.940+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 143, 'name': 'chrome'}
+[2024-12-17T17:16:40.966+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 144, 'name': 'chrome'}
+[2024-12-17T17:16:40.967+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 144, 'name': 'chrome'}
+[2024-12-17T17:16:50.994+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 145, 'name': 'chrome'}
+[2024-12-17T17:16:50.995+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 145, 'name': 'chrome'}
+[2024-12-17T17:17:01.023+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 222, 'name': 'chrome'}
+[2024-12-17T17:17:01.024+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 222, 'name': 'chrome'}
+[2024-12-17T17:17:11.049+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 231, 'name': 'chrome'}
+[2024-12-17T17:17:11.050+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 231, 'name': 'chrome'}
+[2024-12-17T17:17:21.080+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 245, 'name': 'chrome'}
+[2024-12-17T17:17:21.080+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 245, 'name': 'chrome'}
+[2024-12-17T17:17:31.082+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 343, 'name': 'chrome_crashpad'}
+[2024-12-17T17:17:31.083+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 343, 'name': 'chrome_crashpad'}
+[2024-12-17T17:17:41.118+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 346, 'name': 'chrome_crashpad'}
+[2024-12-17T17:17:41.119+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 346, 'name': 'chrome_crashpad'}
+[2024-12-17T17:17:51.157+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 349, 'name': 'chrome'}
+[2024-12-17T17:17:51.158+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 349, 'name': 'chrome'}
+[2024-12-17T17:18:01.192+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 351, 'name': 'chrome'}
+[2024-12-17T17:18:01.192+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 351, 'name': 'chrome'}
+[2024-12-17T17:18:11.223+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 372, 'name': 'chrome'}
+[2024-12-17T17:18:11.223+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 372, 'name': 'chrome'}
+[2024-12-17T17:18:21.254+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 373, 'name': 'chrome'}
+[2024-12-17T17:18:21.255+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 373, 'name': 'chrome'}
+[2024-12-17T17:18:31.289+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 374, 'name': 'chrome'}
+[2024-12-17T17:18:31.290+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 374, 'name': 'chrome'}
+[2024-12-17T17:18:41.295+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 449, 'name': 'chrome'}
+[2024-12-17T17:18:41.296+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 449, 'name': 'chrome'}
+[2024-12-17T17:18:51.300+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 458, 'name': 'chrome'}
+[2024-12-17T17:18:51.301+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 458, 'name': 'chrome'}
+[2024-12-17T17:19:01.307+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 472, 'name': 'chrome'}
+[2024-12-17T17:19:01.308+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 472, 'name': 'chrome'}
+[2024-12-17T17:19:11.309+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 514, 'name': 'chrome_crashpad'}
+[2024-12-17T17:19:11.309+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 514, 'name': 'chrome_crashpad'}
+[2024-12-17T17:19:21.313+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 517, 'name': 'chrome_crashpad'}
+[2024-12-17T17:19:21.314+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 517, 'name': 'chrome_crashpad'}
+[2024-12-17T17:19:31.320+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 520, 'name': 'chrome'}
+[2024-12-17T17:19:31.321+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 520, 'name': 'chrome'}
+[2024-12-17T17:19:41.327+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 522, 'name': 'chrome'}
+[2024-12-17T17:19:41.327+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 522, 'name': 'chrome'}
+[2024-12-17T17:19:51.339+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 544, 'name': 'chrome'}
+[2024-12-17T17:19:51.340+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 544, 'name': 'chrome'}
+[2024-12-17T17:20:01.346+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 545, 'name': 'chrome'}
+[2024-12-17T17:20:01.347+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 545, 'name': 'chrome'}
+[2024-12-17T17:20:11.360+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 546, 'name': 'chrome'}
+[2024-12-17T17:20:11.360+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 546, 'name': 'chrome'}
+[2024-12-17T17:20:21.373+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 620, 'name': 'chrome'}
+[2024-12-17T17:20:21.374+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 620, 'name': 'chrome'}
+[2024-12-17T17:20:31.379+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 629, 'name': 'chrome'}
+[2024-12-17T17:20:31.379+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 629, 'name': 'chrome'}
+[2024-12-17T17:20:41.389+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 643, 'name': 'chrome'}
+[2024-12-17T17:20:41.389+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 643, 'name': 'chrome'}
+[2024-12-17T17:20:51.427+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 686, 'name': 'chrome_crashpad'}
+[2024-12-17T17:20:51.427+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 686, 'name': 'chrome_crashpad'}
+[2024-12-17T17:21:01.433+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 689, 'name': 'chrome_crashpad'}
+[2024-12-17T17:21:01.434+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 689, 'name': 'chrome_crashpad'}
+[2024-12-17T17:21:11.440+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 692, 'name': 'chrome'}
+[2024-12-17T17:21:11.441+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 692, 'name': 'chrome'}
+[2024-12-17T17:21:21.443+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 694, 'name': 'chrome'}
+[2024-12-17T17:21:21.444+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 694, 'name': 'chrome'}
+[2024-12-17T17:21:31.449+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 713, 'name': 'chrome'}
+[2024-12-17T17:21:31.450+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 713, 'name': 'chrome'}
+[2024-12-17T17:21:41.451+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 714, 'name': 'chrome'}
+[2024-12-17T17:21:41.452+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 714, 'name': 'chrome'}
+[2024-12-17T17:21:51.457+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 715, 'name': 'chrome'}
+[2024-12-17T17:21:51.457+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 715, 'name': 'chrome'}
+[2024-12-17T17:22:01.468+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 792, 'name': 'chrome'}
+[2024-12-17T17:22:01.469+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 792, 'name': 'chrome'}
+[2024-12-17T17:22:11.477+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 801, 'name': 'chrome'}
+[2024-12-17T17:22:11.478+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 801, 'name': 'chrome'}
+[2024-12-17T17:22:21.484+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 816, 'name': 'chrome'}
+[2024-12-17T17:22:21.484+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 816, 'name': 'chrome'}
+[2024-12-17T17:22:31.487+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 862, 'name': 'chrome_crashpad'}
+[2024-12-17T17:22:31.487+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 862, 'name': 'chrome_crashpad'}
+[2024-12-17T17:22:41.513+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 864, 'name': 'chrome_crashpad'}
+[2024-12-17T17:22:41.517+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 864, 'name': 'chrome_crashpad'}
+[2024-12-17T17:22:51.544+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 868, 'name': 'chrome'}
+[2024-12-17T17:22:51.544+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 868, 'name': 'chrome'}
+[2024-12-17T17:23:01.569+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 870, 'name': 'chrome'}
+[2024-12-17T17:23:01.569+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 870, 'name': 'chrome'}
+[2024-12-17T17:23:11.596+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 890, 'name': 'chrome'}
+[2024-12-17T17:23:11.597+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 890, 'name': 'chrome'}
+[2024-12-17T17:23:21.636+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 891, 'name': 'chrome'}
+[2024-12-17T17:23:21.637+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 891, 'name': 'chrome'}
+[2024-12-17T17:23:31.640+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 892, 'name': 'chrome'}
+[2024-12-17T17:23:31.641+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 892, 'name': 'chrome'}
+[2024-12-17T17:23:41.653+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 968, 'name': 'chrome'}
+[2024-12-17T17:23:41.654+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 968, 'name': 'chrome'}
+[2024-12-17T17:23:51.662+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 977, 'name': 'chrome'}
+[2024-12-17T17:23:51.662+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 977, 'name': 'chrome'}
+[2024-12-17T17:24:01.666+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 991, 'name': 'chrome'}
+[2024-12-17T17:24:01.666+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 991, 'name': 'chrome'}
+[2024-12-17T17:24:11.677+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 1033, 'name': 'chrome_crashpad'}
+[2024-12-17T17:24:11.678+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 1033, 'name': 'chrome_crashpad'}
+[2024-12-17T17:24:21.686+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 1035, 'name': 'chrome_crashpad'}
+[2024-12-17T17:24:21.687+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 1035, 'name': 'chrome_crashpad'}
+[2024-12-17T17:24:31.694+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 1040, 'name': 'chrome'}
+[2024-12-17T17:24:31.695+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 1040, 'name': 'chrome'}
+[2024-12-17T17:24:41.700+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 1041, 'name': 'chrome'}
+[2024-12-17T17:24:41.701+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 1041, 'name': 'chrome'}
+[2024-12-17T17:24:51.712+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 1061, 'name': 'chrome'}
+[2024-12-17T17:24:51.713+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 1061, 'name': 'chrome'}
+[2024-12-17T17:25:01.717+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 1062, 'name': 'chrome'}
+[2024-12-17T17:25:01.718+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 1062, 'name': 'chrome'}

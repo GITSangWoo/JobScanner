@@ -1,0 +1,12 @@
+[2024-12-17T17:51:51.697+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T17:51:51.705+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T17:51:51.706+0900] {taskinstance.py:1359} INFO - Starting attempt 6 of 2
+[2024-12-17T17:51:51.718+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-16 00:00:00+00:00
+[2024-12-17T17:51:51.721+0900] {standard_task_runner.py:57} INFO - Started process 81 to run task
+[2024-12-17T17:51:51.724+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'scheduled__2024-12-16T00:00:00+00:00', '--job-id', '43', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmpnrlcwzmd']
+[2024-12-17T17:51:51.727+0900] {standard_task_runner.py:85} INFO - Job 43: Subtask link_crawl
+[2024-12-17T17:51:51.769+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [running]> on host 4cdc446d6f6f
+[2024-12-17T17:51:51.834+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-16T00:00:00+00:00'
+[2024-12-17T17:51:51.835+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-17 17:51:51
+[2024-12-17T17:51:51.835+0900] {logging_mixin.py:151} INFO - /code/plugins/incruit
+[2024-12-17T17:52:28.652+0900] {logging_mixin.py:151} INFO - Error while fetching https://search.incruit.com/list/search.asp?col=job&kw=데이터+엔지니어&startno=930: HTTPSConnectionPool(host='search.incruit.com', port=443): Max retries exceeded with url: /list/search.asp?col=job&kw=%EB%8D%B0%EC%9D%B4%ED%84%B0+%EC%97%94%EC%A7%80%EB%8B%88%EC%96%B4&startno=930 (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x7fe8ff235cc0>, 'Connection to search.incruit.com timed out. (connect timeout=10)'))

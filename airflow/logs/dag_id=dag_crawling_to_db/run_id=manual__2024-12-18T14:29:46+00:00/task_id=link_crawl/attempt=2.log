@@ -1,0 +1,10 @@
+[2024-12-18T23:32:07.000+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-18T14:29:46+00:00 [queued]>
+[2024-12-18T23:32:07.008+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-18T14:29:46+00:00 [queued]>
+[2024-12-18T23:32:07.009+0900] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2024-12-18T23:32:07.026+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-18 14:29:46+00:00
+[2024-12-18T23:32:07.031+0900] {standard_task_runner.py:57} INFO - Started process 132 to run task
+[2024-12-18T23:32:07.046+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'manual__2024-12-18T14:29:46+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmp0_0no466']
+[2024-12-18T23:32:07.051+0900] {standard_task_runner.py:85} INFO - Job 3: Subtask link_crawl
+[2024-12-18T23:32:07.094+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-18T14:29:46+00:00 [running]> on host 39c3322a5f16
+[2024-12-18T23:32:07.172+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-18T14:29:46+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-18T14:29:46+00:00'
+[2024-12-18T23:32:07.173+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-18 23:32:07

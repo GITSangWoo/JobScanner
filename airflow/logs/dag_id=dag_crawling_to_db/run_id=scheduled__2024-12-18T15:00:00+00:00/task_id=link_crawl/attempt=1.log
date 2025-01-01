@@ -1,0 +1,36 @@
+[2024-12-20T00:00:00.603+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-18T15:00:00+00:00 [queued]>
+[2024-12-20T00:00:00.614+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-18T15:00:00+00:00 [queued]>
+[2024-12-20T00:00:00.615+0900] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-12-20T00:00:00.628+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-18 15:00:00+00:00
+[2024-12-20T00:00:00.633+0900] {standard_task_runner.py:57} INFO - Started process 5237 to run task
+[2024-12-20T00:00:00.636+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'scheduled__2024-12-18T15:00:00+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmpgp5l0qy3']
+[2024-12-20T00:00:00.639+0900] {standard_task_runner.py:85} INFO - Job 6: Subtask link_crawl
+[2024-12-20T00:00:00.677+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-18T15:00:00+00:00 [running]> on host 885d0f0d454c
+[2024-12-20T00:00:00.752+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-18T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-18T15:00:00+00:00'
+[2024-12-20T00:00:00.754+0900] {logging_mixin.py:151} INFO - 인크루트url 시작 시간: 2024-12-20 00:00:00
+[2024-12-20T00:00:00.754+0900] {logging_mixin.py:151} INFO - 인크루트url 종료 시간: 2024-12-20 00:00:00
+[2024-12-20T00:00:05.760+0900] {logging_mixin.py:151} INFO - 잡코리아url 시작 시간: 2024-12-20 00:00:05
+[2024-12-20T00:00:05.760+0900] {logging_mixin.py:151} INFO - 잡코리아url 종료 시간: 2024-12-20 00:00:05
+[2024-12-20T00:00:10.766+0900] {logging_mixin.py:151} INFO - 점핏url 시작 시간: 2024-12-20 00:00:10
+[2024-12-20T00:00:10.766+0900] {logging_mixin.py:151} INFO - 점핏url 종료 시간: 2024-12-20 00:00:10
+[2024-12-20T00:00:15.770+0900] {logging_mixin.py:151} INFO - 로켓펀치url 시작 시간: 2024-12-20 00:00:15
+[2024-12-20T00:00:15.770+0900] {logging_mixin.py:151} INFO - 로켓펀치url 종료 시간: 2024-12-20 00:00:15
+[2024-12-20T00:00:20.772+0900] {logging_mixin.py:151} INFO - 사람인url 시작 시간: 2024-12-20 00:00:20
+[2024-12-20T00:00:20.772+0900] {logging_mixin.py:151} INFO - 사람인url 종료 시간: 2024-12-20 00:00:20
+[2024-12-20T00:00:25.774+0900] {logging_mixin.py:151} INFO - 원티드url 시작 시간: 2024-12-20 00:00:25
+[2024-12-20T00:00:25.775+0900] {logging_mixin.py:151} INFO - 원티드url 종료 시간: 2024-12-20 00:00:25
+[2024-12-20T00:00:25.792+0900] {python.py:194} INFO - Done. Returned value was: None
+[2024-12-20T00:00:25.806+0900] {taskinstance.py:1398} INFO - Marking task as SUCCESS. dag_id=dag_crawling_to_db, task_id=link_crawl, execution_date=20241218T150000, start_date=20241219T150000, end_date=20241219T150025
+[2024-12-20T00:00:25.827+0900] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2024-12-20T00:00:25.852+0900] {taskinstance.py:2776} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-12-20T14:19:59.879+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-18T15:00:00+00:00 [queued]>
+[2024-12-20T14:19:59.888+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-18T15:00:00+00:00 [queued]>
+[2024-12-20T14:19:59.888+0900] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-12-20T14:19:59.900+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-18 15:00:00+00:00
+[2024-12-20T14:19:59.905+0900] {standard_task_runner.py:57} INFO - Started process 121 to run task
+[2024-12-20T14:19:59.908+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'scheduled__2024-12-18T15:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmpy_4t37s8']
+[2024-12-20T14:19:59.912+0900] {standard_task_runner.py:85} INFO - Job 2: Subtask link_crawl
+[2024-12-20T14:19:59.953+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-18T15:00:00+00:00 [running]> on host 97febb58db8f
+[2024-12-20T14:20:00.024+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-18T15:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-18T15:00:00+00:00'
+[2024-12-20T14:20:00.025+0900] {logging_mixin.py:151} INFO - 인크루트url 시작 시간: 2024-12-20 14:20:00
+[2024-12-20T14:20:00.025+0900] {logging_mixin.py:151} INFO - /code/plugins/incruit

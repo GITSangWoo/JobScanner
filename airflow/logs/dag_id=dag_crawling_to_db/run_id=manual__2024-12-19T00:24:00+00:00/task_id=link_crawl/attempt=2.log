@@ -1,0 +1,61 @@
+[2024-12-19T09:25:19.226+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T00:24:00+00:00 [queued]>
+[2024-12-19T09:25:19.233+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T00:24:00+00:00 [queued]>
+[2024-12-19T09:25:19.233+0900] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2024-12-19T09:25:19.247+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-19 00:24:00+00:00
+[2024-12-19T09:25:19.250+0900] {standard_task_runner.py:57} INFO - Started process 560 to run task
+[2024-12-19T09:25:19.253+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'manual__2024-12-19T00:24:00+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmpbao5qnu6']
+[2024-12-19T09:25:19.255+0900] {standard_task_runner.py:85} INFO - Job 5: Subtask link_crawl
+[2024-12-19T09:25:19.291+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T00:24:00+00:00 [running]> on host d8f4a77e9e2b
+[2024-12-19T09:25:19.355+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-19T00:24:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-19T00:24:00+00:00'
+[2024-12-19T09:25:19.356+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-19 09:25:19
+[2024-12-19T09:25:19.356+0900] {logging_mixin.py:151} INFO - 인크루트 종료 시간: 2024-12-19 09:25:19
+[2024-12-19T09:25:24.362+0900] {logging_mixin.py:151} INFO - 잡코리아 시작 시간: 2024-12-19 09:25:24
+[2024-12-19T09:25:24.362+0900] {logging_mixin.py:151} INFO - 잡코리아 종료 시간: 2024-12-19 09:25:24
+[2024-12-19T09:25:29.368+0900] {logging_mixin.py:151} INFO - 점핏 시작 시간: 2024-12-19 09:25:29
+[2024-12-19T09:25:29.369+0900] {logging_mixin.py:151} INFO - 점핏 종료 시간: 2024-12-19 09:25:29
+[2024-12-19T09:25:34.372+0900] {logging_mixin.py:151} INFO - 로켓펀치 시작 시간: 2024-12-19 09:25:34
+[2024-12-19T09:25:34.372+0900] {logging_mixin.py:151} INFO - 로켓펀치 종료 시간: 2024-12-19 09:25:34
+[2024-12-19T09:25:39.373+0900] {logging_mixin.py:151} INFO - 사람인 시작 시간: 2024-12-19 09:25:39
+[2024-12-19T09:25:39.388+0900] {credentials.py:1254} INFO - Found credentials in shared credentials file: /code/.aws/credentials
+[2024-12-19T09:25:39.537+0900] {logging_mixin.py:151} INFO - 키워드 '데이터 엔지니어' 작업 시작
+[2024-12-19T09:25:39.571+0900] {selenium_manager.py:138} WARNING - The chromedriver version (120.0.6099.224) detected in PATH at /usr/bin/chromedriver might not be compatible with the detected chrome version (131.0.6778.139); currently, chromedriver 131.0.6778.204 is recommended for chrome 131.*, so it is advised to delete the driver in PATH and retry
+[2024-12-19T09:25:39.784+0900] {logging_mixin.py:151} INFO - 오류 발생: Message: session not created: This version of ChromeDriver only supports Chrome version 120
+Current browser version is 131.0.6778.139 with binary path /usr/bin/google-chrome
+Stacktrace:
+#0 0x55ad55af4233 <unknown>
+#1 0x55ad557be0fe <unknown>
+#2 0x55ad557f720d <unknown>
+#3 0x55ad557f62b9 <unknown>
+#4 0x55ad557f1daf <unknown>
+#5 0x55ad557ede89 <unknown>
+#6 0x55ad55840370 <unknown>
+#7 0x55ad5583f957 <unknown>
+#8 0x55ad558351a3 <unknown>
+#9 0x55ad557fa13e <unknown>
+#10 0x55ad557fb712 <unknown>
+#11 0x55ad55ac9534 <unknown>
+#12 0x55ad55acc759 <unknown>
+#13 0x55ad55acc238 <unknown>
+#14 0x55ad55accc05 <unknown>
+#15 0x55ad55abbabf <unknown>
+#16 0x55ad55accf8e <unknown>
+#17 0x55ad55aa5c86 <unknown>
+#18 0x55ad55ae53e5 <unknown>
+#19 0x55ad55ae55cb <unknown>
+#20 0x55ad55af37bf <unknown>
+#21 0x7f47ff5e2ea7 start_thread
+[2024-12-19T09:25:39.785+0900] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/code/plugins/link_crawling.py", line 965, in main
+    saramin_link()
+  File "/code/plugins/link_crawling.py", line 755, in saramin_link
+    cleanup(driver)
+UnboundLocalError: local variable 'driver' referenced before assignment
+[2024-12-19T09:25:39.791+0900] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=dag_crawling_to_db, task_id=link_crawl, execution_date=20241219T002400, start_date=20241219T002519, end_date=20241219T002539
+[2024-12-19T09:25:39.803+0900] {standard_task_runner.py:104} ERROR - Failed to execute job 5 for task link_crawl (local variable 'driver' referenced before assignment; 560)
+[2024-12-19T09:25:39.835+0900] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-12-19T09:25:39.853+0900] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

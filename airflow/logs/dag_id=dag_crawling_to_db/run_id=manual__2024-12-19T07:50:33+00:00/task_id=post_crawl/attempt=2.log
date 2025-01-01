@@ -1,0 +1,94 @@
+[2024-12-19T16:52:23.879+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.post_crawl manual__2024-12-19T07:50:33+00:00 [queued]>
+[2024-12-19T16:52:23.888+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.post_crawl manual__2024-12-19T07:50:33+00:00 [queued]>
+[2024-12-19T16:52:23.888+0900] {taskinstance.py:1359} INFO - Starting attempt 2 of 2
+[2024-12-19T16:52:23.901+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): post_crawl> on 2024-12-19 07:50:33+00:00
+[2024-12-19T16:52:23.907+0900] {standard_task_runner.py:57} INFO - Started process 344 to run task
+[2024-12-19T16:52:23.909+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'post_crawl', 'manual__2024-12-19T07:50:33+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmpimqcpa89']
+[2024-12-19T16:52:23.911+0900] {standard_task_runner.py:85} INFO - Job 5: Subtask post_crawl
+[2024-12-19T16:52:23.951+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.post_crawl manual__2024-12-19T07:50:33+00:00 [running]> on host cc3eb30ffd0b
+[2024-12-19T16:52:24.022+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='post_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-19T07:50:33+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-19T07:50:33+00:00'
+[2024-12-19T16:52:24.023+0900] {logging_mixin.py:151} INFO - 점핏 시작 시간: 2024-12-19 16:52:24
+[2024-12-19T16:52:24.023+0900] {logging_mixin.py:151} INFO - 점핏 종료 시간: 2024-12-19 16:52:24
+[2024-12-19T16:52:34.031+0900] {logging_mixin.py:151} INFO - 원티드 시작 시간: 2024-12-19 16:52:34
+[2024-12-19T16:52:34.046+0900] {credentials.py:1254} INFO - Found credentials in shared credentials file: /code/.aws/credentials
+[2024-12-19T16:52:34.318+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-19T16:52:34.380+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-19T16:52:34.450+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-19T16:52:34.525+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+[2024-12-19T16:52:34.831+0900] {logging_mixin.py:151} INFO - 원티드 종료 시간: 2024-12-19 16:52:34
+[2024-12-19T16:52:34.831+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-19 16:52:34
+[2024-12-19T16:52:35.453+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-19T16:52:35.512+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-19T16:52:35.575+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-19T16:52:35.640+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+[2024-12-19T16:52:35.773+0900] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/code/plugins/post_crawling.py", line 1932, in post_main
+    incruit_crawling()
+  File "/code/plugins/post_crawling.py", line 617, in incruit_crawling
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+  File "/home/airflow/.local/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/airflow/.local/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/home/airflow/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/home/airflow/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/airflow/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x55c4ce4ab8fa <unknown>
+#1 0x55c4cdfbcd20 <unknown>
+#2 0x55c4cdff4438 <unknown>
+#3 0x55c4cdfeff96 <unknown>
+#4 0x55c4ce03bd86 <unknown>
+#5 0x55c4ce03b3d6 <unknown>
+#6 0x55c4ce02f893 <unknown>
+#7 0x55c4cdffe30d <unknown>
+#8 0x55c4cdfff32e <unknown>
+#9 0x55c4ce47800b <unknown>
+#10 0x55c4ce47bf97 <unknown>
+#11 0x55c4ce46471c <unknown>
+#12 0x55c4ce47cb17 <unknown>
+#13 0x55c4ce4496cf <unknown>
+#14 0x55c4ce49a6b8 <unknown>
+#15 0x55c4ce49a880 <unknown>
+#16 0x55c4ce4aa776 <unknown>
+#17 0x7f47335e9ea7 start_thread
+
+[2024-12-19T16:52:35.780+0900] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=dag_crawling_to_db, task_id=post_crawl, execution_date=20241219T075033, start_date=20241219T075223, end_date=20241219T075235
+[2024-12-19T16:52:35.794+0900] {standard_task_runner.py:104} ERROR - Failed to execute job 5 for task post_crawl (Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x55c4ce4ab8fa <unknown>
+#1 0x55c4cdfbcd20 <unknown>
+#2 0x55c4cdff4438 <unknown>
+#3 0x55c4cdfeff96 <unknown>
+#4 0x55c4ce03bd86 <unknown>
+#5 0x55c4ce03b3d6 <unknown>
+#6 0x55c4ce02f893 <unknown>
+#7 0x55c4cdffe30d <unknown>
+#8 0x55c4cdfff32e <unknown>
+#9 0x55c4ce47800b <unknown>
+#10 0x55c4ce47bf97 <unknown>
+#11 0x55c4ce46471c <unknown>
+#12 0x55c4ce47cb17 <unknown>
+#13 0x55c4ce4496cf <unknown>
+#14 0x55c4ce49a6b8 <unknown>
+#15 0x55c4ce49a880 <unknown>
+#16 0x55c4ce4aa776 <unknown>
+#17 0x7f47335e9ea7 start_thread
+; 344)
+[2024-12-19T16:52:35.835+0900] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-12-19T16:52:35.852+0900] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

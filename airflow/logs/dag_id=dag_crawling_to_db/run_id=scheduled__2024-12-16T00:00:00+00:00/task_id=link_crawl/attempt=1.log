@@ -1,0 +1,98 @@
+[2024-12-17T16:46:57.195+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T16:46:57.204+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T16:46:57.204+0900] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-12-17T16:46:57.215+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-16 00:00:00+00:00
+[2024-12-17T16:46:57.218+0900] {standard_task_runner.py:57} INFO - Started process 81 to run task
+[2024-12-17T16:46:57.222+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'scheduled__2024-12-16T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmpp2cz6s81']
+[2024-12-17T16:46:57.224+0900] {standard_task_runner.py:85} INFO - Job 2: Subtask link_crawl
+[2024-12-17T16:46:57.268+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [running]> on host 4d0d15afd824
+[2024-12-17T16:46:57.334+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-16T00:00:00+00:00'
+[2024-12-17T16:46:57.334+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-17 16:46:57
+[2024-12-17T16:46:57.334+0900] {logging_mixin.py:151} INFO - 인크루트 종료 시간: 2024-12-17 16:46:57
+[2024-12-17T16:47:02.340+0900] {logging_mixin.py:151} INFO - 잡코리아 시작 시간: 2024-12-17 16:47:02
+[2024-12-17T16:47:02.340+0900] {logging_mixin.py:151} INFO - 잡코리아 종료 시간: 2024-12-17 16:47:02
+[2024-12-17T16:47:07.344+0900] {logging_mixin.py:151} INFO - 점핏 시작 시간: 2024-12-17 16:47:07
+[2024-12-17T16:47:07.344+0900] {logging_mixin.py:151} INFO - 점핏 종료 시간: 2024-12-17 16:47:07
+[2024-12-17T16:47:12.347+0900] {logging_mixin.py:151} INFO - 로켓펀치 시작 시간: 2024-12-17 16:47:12
+[2024-12-17T16:47:12.347+0900] {logging_mixin.py:151} INFO - 로켓펀치 종료 시간: 2024-12-17 16:47:12
+[2024-12-17T16:47:17.350+0900] {logging_mixin.py:151} INFO - 사람인 시작 시간: 2024-12-17 16:47:17
+[2024-12-17T16:47:19.641+0900] {logging_mixin.py:151} INFO - 키워드 '데이터 엔지니어' 작업 시작
+[2024-12-17T16:47:23.727+0900] {logging_mixin.py:151} INFO - 브라우저 강력 새로고침 (Ctrl + F5) 완료
+[2024-12-17T16:47:30.051+0900] {logging_mixin.py:151} INFO - 캐시 무효화된 URL로 접근: https://www.saramin.co.kr/zf_user/?nocache=1734421646
+[2024-12-17T16:47:32.549+0900] {process_utils.py:131} INFO - Sending 15 to group 81. PIDs of all processes in the group: [125, 131, 135, 136, 145, 146, 167, 176, 242, 256, 270, 279, 166, 81]
+[2024-12-17T16:47:32.550+0900] {process_utils.py:86} INFO - Sending the signal 15 to group 81
+[2024-12-17T16:47:32.551+0900] {taskinstance.py:1630} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-12-17T16:47:32.552+0900] {logging_mixin.py:151} INFO - 오류 발생: Task received SIGTERM signal
+[2024-12-17T16:47:32.554+0900] {connectionpool.py:823} WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ProtocolError('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))': /session/883b51bd599b36ec155bb6e3012db578
+[2024-12-17T16:47:32.555+0900] {connectionpool.py:823} WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f86d3437130>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/883b51bd599b36ec155bb6e3012db578
+[2024-12-17T16:47:32.555+0900] {connectionpool.py:823} WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f86d34359c0>: Failed to establish a new connection: [Errno 111] Connection refused')': /session/883b51bd599b36ec155bb6e3012db578
+[2024-12-17T16:47:33.116+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=125, status='terminated', started='16:47:20') (125) terminated with exit code None
+[2024-12-17T16:47:42.561+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 131, 'name': 'chrome'}
+[2024-12-17T16:47:42.561+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 131, 'name': 'chrome'}
+[2024-12-17T16:47:52.570+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 138, 'name': 'chrome_crashpad'}
+[2024-12-17T16:47:52.571+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 138, 'name': 'chrome_crashpad'}
+[2024-12-17T16:48:02.578+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 141, 'name': 'chrome_crashpad'}
+[2024-12-17T16:48:02.578+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 141, 'name': 'chrome_crashpad'}
+[2024-12-17T16:48:12.615+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 145, 'name': 'chrome'}
+[2024-12-17T16:48:12.615+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 145, 'name': 'chrome'}
+[2024-12-17T16:48:22.645+0900] {logging_mixin.py:151} INFO - Process termination timeout: {'pid': 146, 'name': 'chrome'}
+[2024-12-17T16:48:22.645+0900] {logging_mixin.py:151} INFO - Process killed: {'pid': 146, 'name': 'chrome'}
+[2024-12-17T16:48:32.556+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=176, name='chrome', status='zombie', started='16:47:21') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-17T16:48:32.562+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=242, name='chrome', status='zombie', started='16:47:21') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-17T16:48:32.562+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=166, name='chrome', status='zombie', started='16:47:21') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-17T16:48:32.563+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=167, name='chrome', status='zombie', started='16:47:21') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-17T16:48:32.563+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=146, name='chrome', status='zombie', started='16:47:20') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-17T16:48:32.563+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=136, name='cat', status='zombie', started='16:47:20') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-17T16:48:32.563+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=145, name='chrome', status='zombie', started='16:47:20') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-17T16:48:32.563+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=279, name='chrome', status='zombie', started='16:47:29') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-17T16:48:32.564+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=135, name='cat', status='zombie', started='16:47:20') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-17T16:48:32.564+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=270, name='chrome', status='zombie', started='16:47:29') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-17T16:48:32.564+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=131, name='chrome', status='zombie', started='16:47:20') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-17T16:48:32.564+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=256, name='chrome', status='zombie', started='16:47:26') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-17T16:48:32.564+0900] {process_utils.py:149} WARNING - process psutil.Process(pid=81, name='airflow task ru', status='sleeping', started='16:46:57') did not respond to SIGTERM. Trying SIGKILL
+[2024-12-17T16:48:32.565+0900] {process_utils.py:86} INFO - Sending the signal 9 to group 81
+[2024-12-17T16:48:33.688+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=81, name='airflow task ru', status='terminated', exitcode=<Negsignal.SIGKILL: -9>, started='16:46:57') (81) terminated with exit code -9
+[2024-12-17T16:49:32.587+0900] {process_utils.py:160} ERROR - Process psutil.Process(pid=176, name='chrome', status='zombie', started='16:47:21') (176) could not be killed. Giving up.
+[2024-12-17T16:49:32.588+0900] {process_utils.py:160} ERROR - Process psutil.Process(pid=242, name='chrome', status='zombie', started='16:47:21') (242) could not be killed. Giving up.
+[2024-12-17T16:49:32.588+0900] {process_utils.py:160} ERROR - Process psutil.Process(pid=166, name='chrome', status='zombie', started='16:47:21') (166) could not be killed. Giving up.
+[2024-12-17T16:49:32.589+0900] {process_utils.py:160} ERROR - Process psutil.Process(pid=167, name='chrome', status='zombie', started='16:47:21') (167) could not be killed. Giving up.
+[2024-12-17T16:49:32.589+0900] {process_utils.py:160} ERROR - Process psutil.Process(pid=146, name='chrome', status='zombie', started='16:47:20') (146) could not be killed. Giving up.
+[2024-12-17T16:49:32.589+0900] {process_utils.py:160} ERROR - Process psutil.Process(pid=136, name='cat', status='zombie', started='16:47:20') (136) could not be killed. Giving up.
+[2024-12-17T16:49:32.590+0900] {process_utils.py:160} ERROR - Process psutil.Process(pid=145, name='chrome', status='zombie', started='16:47:20') (145) could not be killed. Giving up.
+[2024-12-17T16:49:32.590+0900] {process_utils.py:160} ERROR - Process psutil.Process(pid=279, name='chrome', status='zombie', started='16:47:29') (279) could not be killed. Giving up.
+[2024-12-17T16:49:32.590+0900] {process_utils.py:160} ERROR - Process psutil.Process(pid=135, name='cat', status='zombie', started='16:47:20') (135) could not be killed. Giving up.
+[2024-12-17T16:49:32.590+0900] {process_utils.py:160} ERROR - Process psutil.Process(pid=270, name='chrome', status='zombie', started='16:47:29') (270) could not be killed. Giving up.
+[2024-12-17T16:49:32.591+0900] {process_utils.py:160} ERROR - Process psutil.Process(pid=131, name='chrome', status='zombie', started='16:47:20') (131) could not be killed. Giving up.
+[2024-12-17T16:49:32.591+0900] {process_utils.py:160} ERROR - Process psutil.Process(pid=256, name='chrome', status='zombie', started='16:47:26') (256) could not be killed. Giving up.
+[2024-12-17T16:49:32.591+0900] {standard_task_runner.py:172} ERROR - Job 2 was killed before it finished (likely due to running out of memory)
+[2024-12-17T16:49:55.934+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T16:49:55.942+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T16:49:55.942+0900] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-12-17T16:49:55.953+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-16 00:00:00+00:00
+[2024-12-17T16:49:55.957+0900] {standard_task_runner.py:57} INFO - Started process 81 to run task
+[2024-12-17T16:49:55.959+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'scheduled__2024-12-16T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmpryyw4jo5']
+[2024-12-17T16:49:55.961+0900] {standard_task_runner.py:85} INFO - Job 2: Subtask link_crawl
+[2024-12-17T16:49:56.006+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [running]> on host 4d0d15afd824
+[2024-12-17T16:49:56.094+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-16T00:00:00+00:00'
+[2024-12-17T16:49:56.095+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-17 16:49:56
+[2024-12-17T16:49:56.095+0900] {logging_mixin.py:151} INFO - 인크루트 종료 시간: 2024-12-17 16:49:56
+[2024-12-17T16:50:01.100+0900] {logging_mixin.py:151} INFO - 잡코리아 시작 시간: 2024-12-17 16:50:01
+[2024-12-17T16:50:01.100+0900] {logging_mixin.py:151} INFO - 잡코리아 종료 시간: 2024-12-17 16:50:01
+[2024-12-17T16:50:06.106+0900] {logging_mixin.py:151} INFO - 점핏 시작 시간: 2024-12-17 16:50:06
+[2024-12-17T16:50:06.106+0900] {logging_mixin.py:151} INFO - 점핏 종료 시간: 2024-12-17 16:50:06
+[2024-12-17T16:50:11.110+0900] {logging_mixin.py:151} INFO - 로켓펀치 시작 시간: 2024-12-17 16:50:11
+[2024-12-17T16:50:11.111+0900] {logging_mixin.py:151} INFO - 로켓펀치 종료 시간: 2024-12-17 16:50:11
+[2024-12-17T16:50:16.112+0900] {logging_mixin.py:151} INFO - 사람인 시작 시간: 2024-12-17 16:50:16
+[2024-12-17T16:50:18.309+0900] {logging_mixin.py:151} INFO - 키워드 '데이터 엔지니어' 작업 시작
+[2024-12-17T16:50:20.609+0900] {logging_mixin.py:151} INFO - 브라우저 강력 새로고침 (Ctrl + F5) 완료
+[2024-12-17T16:50:25.950+0900] {logging_mixin.py:151} INFO - 캐시 무효화된 URL로 접근: https://www.saramin.co.kr/zf_user/?nocache=1734421823
+[2024-12-17T16:50:39.558+0900] {logging_mixin.py:151} INFO - '데이터 엔지니어' 검색 완료!
+[2024-12-17T16:50:46.566+0900] {logging_mixin.py:151} INFO - 현재 페이지: 1
+[2024-12-17T16:51:02.088+0900] {logging_mixin.py:151} INFO - 현재 페이지: 2
+[2024-12-17T16:51:13.540+0900] {logging_mixin.py:151} INFO - 현재 페이지: 3
+[2024-12-17T16:51:24.928+0900] {logging_mixin.py:151} INFO - 현재 페이지: 4
+[2024-12-17T16:51:36.454+0900] {logging_mixin.py:151} INFO - 현재 페이지: 5
+[2024-12-17T16:51:47.974+0900] {logging_mixin.py:151} INFO - 현재 페이지: 6
+[2024-12-17T16:51:59.810+0900] {logging_mixin.py:151} INFO - 현재 페이지: 7
+[2024-12-17T16:52:11.639+0900] {logging_mixin.py:151} INFO - 현재 페이지: 8
+[2024-12-17T16:52:23.382+0900] {logging_mixin.py:151} INFO - 현재 페이지: 9

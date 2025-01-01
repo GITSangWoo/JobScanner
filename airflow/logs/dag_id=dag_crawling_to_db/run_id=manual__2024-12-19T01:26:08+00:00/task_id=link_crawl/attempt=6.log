@@ -1,0 +1,85 @@
+[2024-12-19T11:52:07.606+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T01:26:08+00:00 [queued]>
+[2024-12-19T11:52:07.616+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T01:26:08+00:00 [queued]>
+[2024-12-19T11:52:07.618+0900] {taskinstance.py:1359} INFO - Starting attempt 6 of 7
+[2024-12-19T11:52:07.633+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-19 01:26:08+00:00
+[2024-12-19T11:52:07.637+0900] {standard_task_runner.py:57} INFO - Started process 4331 to run task
+[2024-12-19T11:52:07.640+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'manual__2024-12-19T01:26:08+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmprwcivi18']
+[2024-12-19T11:52:07.642+0900] {standard_task_runner.py:85} INFO - Job 8: Subtask link_crawl
+[2024-12-19T11:52:07.685+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T01:26:08+00:00 [running]> on host cc3dd9b0c2e4
+[2024-12-19T11:52:07.762+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-19T01:26:08+00:00' AIRFLOW_CTX_TRY_NUMBER='6' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-19T01:26:08+00:00'
+[2024-12-19T11:52:07.763+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-19 11:52:07
+[2024-12-19T11:52:08.386+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-19T11:52:08.454+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-19T11:52:08.543+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-19T11:52:08.622+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+[2024-12-19T11:52:08.806+0900] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/code/plugins/post_crawling.py", line 1910, in main
+    print(f"점핏 종료 시간: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+  File "/code/plugins/post_crawling.py", line 145, in incruit_crawling
+    urls_to_crawl = list(links_with_ddays.keys())
+  File "/home/airflow/.local/lib/python3.10/site-packages/selenium/webdriver/chrome/webdriver.py", line 45, in __init__
+    super().__init__(
+  File "/home/airflow/.local/lib/python3.10/site-packages/selenium/webdriver/chromium/webdriver.py", line 66, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "/home/airflow/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 241, in __init__
+    self.start_session(capabilities)
+  File "/home/airflow/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 329, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "/home/airflow/.local/lib/python3.10/site-packages/selenium/webdriver/remote/webdriver.py", line 384, in execute
+    self.error_handler.check_response(response)
+  File "/home/airflow/.local/lib/python3.10/site-packages/selenium/webdriver/remote/errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.SessionNotCreatedException: Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x55cc04de28fa <unknown>
+#1 0x55cc048f3d20 <unknown>
+#2 0x55cc0492b438 <unknown>
+#3 0x55cc04926f96 <unknown>
+#4 0x55cc04972d86 <unknown>
+#5 0x55cc049723d6 <unknown>
+#6 0x55cc04966893 <unknown>
+#7 0x55cc0493530d <unknown>
+#8 0x55cc0493632e <unknown>
+#9 0x55cc04daf00b <unknown>
+#10 0x55cc04db2f97 <unknown>
+#11 0x55cc04d9b71c <unknown>
+#12 0x55cc04db3b17 <unknown>
+#13 0x55cc04d806cf <unknown>
+#14 0x55cc04dd16b8 <unknown>
+#15 0x55cc04dd1880 <unknown>
+#16 0x55cc04de1776 <unknown>
+#17 0x7f865ebbcea7 start_thread
+
+[2024-12-19T11:52:08.815+0900] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_crawling_to_db, task_id=link_crawl, execution_date=20241219T012608, start_date=20241219T025207, end_date=20241219T025208
+[2024-12-19T11:52:08.827+0900] {standard_task_runner.py:104} ERROR - Failed to execute job 8 for task link_crawl (Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x55cc04de28fa <unknown>
+#1 0x55cc048f3d20 <unknown>
+#2 0x55cc0492b438 <unknown>
+#3 0x55cc04926f96 <unknown>
+#4 0x55cc04972d86 <unknown>
+#5 0x55cc049723d6 <unknown>
+#6 0x55cc04966893 <unknown>
+#7 0x55cc0493530d <unknown>
+#8 0x55cc0493632e <unknown>
+#9 0x55cc04daf00b <unknown>
+#10 0x55cc04db2f97 <unknown>
+#11 0x55cc04d9b71c <unknown>
+#12 0x55cc04db3b17 <unknown>
+#13 0x55cc04d806cf <unknown>
+#14 0x55cc04dd16b8 <unknown>
+#15 0x55cc04dd1880 <unknown>
+#16 0x55cc04de1776 <unknown>
+#17 0x7f865ebbcea7 start_thread
+; 4331)
+[2024-12-19T11:52:08.859+0900] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-12-19T11:52:08.881+0900] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,66 @@
+from airflow import DAG
+from airflow.operators.empty import EmptyOperator
+from airflow.operators.python import PythonOperator
+from airflow.operators.bash import BashOperator
+from airflow.utils.trigger_rule import TriggerRule
+from datetime import datetime, timedelta
+import pendulum
+import time
+import sys
+import os
+
+# plugins모듈 사용
+sys.path.append('/code/plugins')
+from link_crawling import link_main
+from post_crawling import post_main
+local_tz = pendulum.timezone("Asia/Seoul")
+
+# url 종료후 크롤링하기전 1분대기(task 간 1분 대기)
+def delay_execution():
+    time.sleep(60)
+
+default_args={
+    'owner': 'airflow',
+    'depends_on_past': False,
+    'retries': 1,
+    'retry_delay': timedelta(seconds=3),
+    'email_on_failure': False
+}# 추가로 default_args에 email, email_on_failure, execution_time(task 실행시간 제한) 등을 걸수 있음
+
+with DAG (
+    'dag_crawling_to_db',
+    default_args = default_args, 
+    max_active_runs=1,
+    description='crawling data from job posting websites and store into S3 and Database',
+    start_date=datetime(2024, 12, 20, tzinfo=local_tz),
+    schedule='@daily', # 매일 자정 실행
+    catchup=False,
+    is_paused_upon_creation=False,  # DAG 자동 활성화
+    tags=['url', 'crawling','db','S3','RDS'],
+) as dag:
+
+    link_crawl = PythonOperator(
+    #link_crawl = BashOperator(
+        task_id='link_crawl',
+        python_callable=link_main
+        #bash_command="python /code/plugins/link_crawling.py"
+    )
+    
+    # task작업 간 1분 대기
+    delay_task = PythonOperator(
+        task_id='delay_task',
+        python_callable=delay_execution
+    )
+
+    post_crawl = PythonOperator(
+        task_id='post_crawl',
+        python_callable=post_main
+    )
+
+    start = EmptyOperator(task_id="start") 
+    end = EmptyOperator(task_id="end", trigger_rule=TriggerRule.ONE_SUCCESS) 
+
+    # DAG 내 태스크 의존성 설정
+    start >> link_crawl >> delay_task >> post_crawl >> end
+    #start >> link_crawl >> end
+

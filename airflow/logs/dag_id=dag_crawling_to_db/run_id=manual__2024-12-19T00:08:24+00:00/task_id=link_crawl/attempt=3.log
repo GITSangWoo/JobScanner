@@ -1,0 +1,16 @@
+[2024-12-19T09:19:16.069+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T00:08:24+00:00 [queued]>
+[2024-12-19T09:19:16.076+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T00:08:24+00:00 [queued]>
+[2024-12-19T09:19:16.076+0900] {taskinstance.py:1359} INFO - Starting attempt 3 of 3
+[2024-12-19T09:19:16.090+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-19 00:08:24+00:00
+[2024-12-19T09:19:16.096+0900] {standard_task_runner.py:57} INFO - Started process 1710 to run task
+[2024-12-19T09:19:16.098+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'manual__2024-12-19T00:08:24+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmp2fful5uo']
+[2024-12-19T09:19:16.100+0900] {standard_task_runner.py:85} INFO - Job 9: Subtask link_crawl
+[2024-12-19T09:19:16.140+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T00:08:24+00:00 [running]> on host 2da4244d8972
+[2024-12-19T09:19:16.211+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-19T00:08:24+00:00' AIRFLOW_CTX_TRY_NUMBER='3' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-19T00:08:24+00:00'
+[2024-12-19T09:19:16.212+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-19 09:19:16
+[2024-12-19T09:19:16.212+0900] {logging_mixin.py:151} INFO - /code/plugins/incruit
+[2024-12-19T09:19:26.161+0900] {local_task_job_runner.py:294} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-12-19T09:19:26.162+0900] {process_utils.py:131} INFO - Sending 15 to group 1710. PIDs of all processes in the group: [1710]
+[2024-12-19T09:19:26.162+0900] {process_utils.py:86} INFO - Sending the signal 15 to group 1710
+[2024-12-19T09:19:26.163+0900] {taskinstance.py:1630} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-12-19T09:19:26.189+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=1710, status='terminated', exitcode=0, started='09:19:15') (1710) terminated with exit code 0

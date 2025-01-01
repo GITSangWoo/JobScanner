@@ -1,0 +1,44 @@
+[2024-12-18T23:29:51.485+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-18T14:29:46+00:00 [queued]>
+[2024-12-18T23:29:51.494+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-18T14:29:46+00:00 [queued]>
+[2024-12-18T23:29:51.494+0900] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-12-18T23:29:51.513+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-18 14:29:46+00:00
+[2024-12-18T23:29:51.526+0900] {standard_task_runner.py:57} INFO - Started process 110 to run task
+[2024-12-18T23:29:51.530+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'manual__2024-12-18T14:29:46+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmpifdp_84x']
+[2024-12-18T23:29:51.533+0900] {standard_task_runner.py:85} INFO - Job 2: Subtask link_crawl
+[2024-12-18T23:29:51.583+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-18T14:29:46+00:00 [running]> on host 39c3322a5f16
+[2024-12-18T23:29:51.661+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-18T14:29:46+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-18T14:29:46+00:00'
+[2024-12-18T23:29:51.663+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-18 23:29:51
+[2024-12-18T23:32:02.650+0900] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 302, in _open_connection
+    self._cmysql.connect(**cnx_kwargs)
+_mysql_connector.MySQLInterfaceError: Can't connect to MySQL server on 't2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com:3306' (110)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/code/plugins/post_crawling.py", line 1910, in main
+    incruit_crawling()
+  File "/code/plugins/post_crawling.py", line 42, in incruit_crawling
+    connection_pool = pooling.MySQLConnectionPool(pool_name="incruit_pool", pool_size=5, **db_config)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mysql/connector/pooling.py", line 430, in __init__
+    self.add_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/mysql/connector/pooling.py", line 538, in add_connection
+    cnx = connect(**self._cnx_config)  # type: ignore[assignment]
+  File "/home/airflow/.local/lib/python3.10/site-packages/mysql/connector/pooling.py", line 293, in connect
+    return CMySQLConnection(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 128, in __init__
+    self.connect(**kwargs)
+  File "/home/airflow/.local/lib/python3.10/site-packages/mysql/connector/abstracts.py", line 1217, in connect
+    self._open_connection()
+  File "/home/airflow/.local/lib/python3.10/site-packages/mysql/connector/connection_cext.py", line 307, in _open_connection
+    raise get_mysql_exception(
+mysql.connector.errors.DatabaseError: 2003 (HY000): Can't connect to MySQL server on 't2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com:3306' (110)
+[2024-12-18T23:32:02.658+0900] {taskinstance.py:1398} INFO - Marking task as UP_FOR_RETRY. dag_id=dag_crawling_to_db, task_id=link_crawl, execution_date=20241218T142946, start_date=20241218T142951, end_date=20241218T143202
+[2024-12-18T23:32:02.673+0900] {standard_task_runner.py:104} ERROR - Failed to execute job 2 for task link_crawl (2003 (HY000): Can't connect to MySQL server on 't2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com:3306' (110); 110)
+[2024-12-18T23:32:02.714+0900] {local_task_job_runner.py:228} INFO - Task exited with return code 1
+[2024-12-18T23:32:02.734+0900] {taskinstance.py:2776} INFO - 0 downstream tasks scheduled from follow-on schedule check

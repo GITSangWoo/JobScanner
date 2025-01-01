@@ -1,0 +1,43 @@
+[2024-12-19T09:19:08.870+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T00:08:24+00:00 [queued]>
+[2024-12-19T09:19:08.878+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T00:08:24+00:00 [queued]>
+[2024-12-19T09:19:08.879+0900] {taskinstance.py:1359} INFO - Starting attempt 2 of 3
+[2024-12-19T09:19:08.892+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-19 00:08:24+00:00
+[2024-12-19T09:19:08.898+0900] {standard_task_runner.py:57} INFO - Started process 1685 to run task
+[2024-12-19T09:19:08.900+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'manual__2024-12-19T00:08:24+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmpm1y767gx']
+[2024-12-19T09:19:08.903+0900] {standard_task_runner.py:85} INFO - Job 8: Subtask link_crawl
+[2024-12-19T09:19:08.950+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl manual__2024-12-19T00:08:24+00:00 [running]> on host 2da4244d8972
+[2024-12-19T09:19:09.022+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-19T00:08:24+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-19T00:08:24+00:00'
+[2024-12-19T09:19:09.023+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-19 09:19:09
+[2024-12-19T09:19:09.023+0900] {logging_mixin.py:151} INFO - /code/plugins/incruit
+[2024-12-19T09:19:18.950+0900] {local_task_job_runner.py:274} WARNING - Recorded pid 1710 does not match the current pid 1685
+[2024-12-19T09:19:18.951+0900] {process_utils.py:131} INFO - Sending 15 to group 1685. PIDs of all processes in the group: [1685]
+[2024-12-19T09:19:18.951+0900] {process_utils.py:86} INFO - Sending the signal 15 to group 1685
+[2024-12-19T09:19:18.951+0900] {taskinstance.py:1630} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-12-19T09:19:18.958+0900] {taskinstance.py:1935} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 192, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/operators/python.py", line 209, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/code/plugins/link_crawling.py", line 945, in main
+    # incruit_link()
+  File "/code/plugins/link_crawling.py", line 86, in incruit_link
+    soup = BeautifulSoup(response.text, 'html.parser')
+  File "/home/airflow/.local/lib/python3.10/site-packages/bs4/__init__.py", line 335, in __init__
+    self._feed()
+  File "/home/airflow/.local/lib/python3.10/site-packages/bs4/__init__.py", line 478, in _feed
+    self.builder.feed(self.markup)
+  File "/home/airflow/.local/lib/python3.10/site-packages/bs4/builder/_htmlparser.py", line 380, in feed
+    parser.feed(markup)
+  File "/usr/local/lib/python3.10/html/parser.py", line 110, in feed
+    self.goahead(0)
+  File "/usr/local/lib/python3.10/html/parser.py", line 170, in goahead
+    k = self.parse_starttag(i)
+  File "/usr/local/lib/python3.10/html/parser.py", line 302, in parse_starttag
+    endpos = self.check_for_whole_start_tag(i)
+  File "/home/airflow/.local/lib/python3.10/site-packages/airflow/models/taskinstance.py", line 1632, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2024-12-19T09:19:18.964+0900] {taskinstance.py:1398} INFO - Marking task as FAILED. dag_id=dag_crawling_to_db, task_id=link_crawl, execution_date=20241219T000824, start_date=20241219T001916, end_date=20241219T001918
+[2024-12-19T09:19:18.975+0900] {standard_task_runner.py:104} ERROR - Failed to execute job 8 for task link_crawl (Task received SIGTERM signal; 1685)
+[2024-12-19T09:19:19.004+0900] {process_utils.py:79} INFO - Process psutil.Process(pid=1685, status='terminated', exitcode=1, started='09:19:08') (1685) terminated with exit code 1

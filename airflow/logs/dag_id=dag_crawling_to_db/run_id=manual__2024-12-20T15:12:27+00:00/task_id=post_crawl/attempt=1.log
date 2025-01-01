@@ -1,0 +1,35 @@
+[2024-12-21T02:20:57.237+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.post_crawl manual__2024-12-20T15:12:27+00:00 [queued]>
+[2024-12-21T02:20:57.244+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.post_crawl manual__2024-12-20T15:12:27+00:00 [queued]>
+[2024-12-21T02:20:57.244+0900] {taskinstance.py:1359} INFO - Starting attempt 1 of 2
+[2024-12-21T02:20:57.259+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): post_crawl> on 2024-12-20 15:12:27+00:00
+[2024-12-21T02:20:57.265+0900] {standard_task_runner.py:57} INFO - Started process 19672 to run task
+[2024-12-21T02:20:57.267+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'post_crawl', 'manual__2024-12-20T15:12:27+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmp21bbr2ei']
+[2024-12-21T02:20:57.269+0900] {standard_task_runner.py:85} INFO - Job 23: Subtask post_crawl
+[2024-12-21T02:20:57.307+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.post_crawl manual__2024-12-20T15:12:27+00:00 [running]> on host a617ee149c5c
+[2024-12-21T02:20:57.377+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='post_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-20T15:12:27+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-12-20T15:12:27+00:00'
+[2024-12-21T02:20:57.384+0900] {logging_mixin.py:151} INFO - 점핏 시작 시간: 2024-12-21 02:20:57
+[2024-12-21T02:20:57.721+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-21T02:20:57.777+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-21T02:20:58.198+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-21T02:20:58.432+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+[2024-12-21T02:20:58.801+0900] {logging_mixin.py:151} INFO - 점핏 종료 시간: 2024-12-21 02:20:58
+[2024-12-21T02:21:08.804+0900] {logging_mixin.py:151} INFO - 원티드 시작 시간: 2024-12-21 02:21:08
+[2024-12-21T02:21:08.862+0900] {credentials.py:1254} INFO - Found credentials in shared credentials file: /code/.aws/credentials
+[2024-12-21T02:21:10.188+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-21T02:21:10.250+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-21T02:21:10.442+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-21T02:21:10.644+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+[2024-12-21T02:21:10.949+0900] {logging_mixin.py:151} INFO - 원티드 종료 시간: 2024-12-21 02:21:10
+[2024-12-21T02:21:10.950+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-21 02:21:10
+[2024-12-21T02:21:13.119+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-21T02:21:13.177+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-21T02:21:13.387+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-21T02:21:13.621+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+[2024-12-21T02:21:14.325+0900] {logging_mixin.py:151} INFO - 인크루트 종료 시간: 2024-12-21 02:21:14
+[2024-12-21T02:21:24.327+0900] {logging_mixin.py:151} INFO - 로켓펀치 시작 시간: 2024-12-21 02:21:24
+[2024-12-21T02:21:24.677+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-21T02:21:24.741+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-21T02:21:24.953+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-21T02:21:25.173+0900] {logger.py:11} INFO - Driver [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.204/chromedriver-linux64/chromedriver] found in cache
+[2024-12-21T02:21:25.462+0900] {logging_mixin.py:151} INFO - 로켓펀치 종료 시간: 2024-12-21 02:21:25
+[2024-12-21T02:21:35.465+0900] {logging_mixin.py:151} INFO - 잡코리아 시작 시간: 2024-12-21 02:21:35

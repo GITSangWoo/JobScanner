@@ -1,0 +1,113 @@
+2024-12-17 20:49:12,Message: session not created: Chrome failed to start: exited normally.
+  (session not created: DevToolsActivePort file doesn't exist)
+  (The process started from chrome location /opt/google/chrome/chrome is no longer running, so ChromeDriver is assuming that Chrome has crashed.)
+Stacktrace:
+#0 0x55a6268f931a <unknown>
+#1 0x55a62640f6e0 <unknown>
+#2 0x55a626446dc8 <unknown>
+#3 0x55a626442926 <unknown>
+#4 0x55a62648e6f6 <unknown>
+#5 0x55a62648dd46 <unknown>
+#6 0x55a626482203 <unknown>
+#7 0x55a626450cc0 <unknown>
+#8 0x55a626451c9e <unknown>
+#9 0x55a6268c6d0b <unknown>
+#10 0x55a6268cac92 <unknown>
+#11 0x55a6268b3b3c <unknown>
+#12 0x55a6268cb807 <unknown>
+#13 0x55a6268990df <unknown>
+#14 0x55a6268e8578 <unknown>
+#15 0x55a6268e8740 <unknown>
+#16 0x55a6268f8196 <unknown>
+#17 0x7f45bab33ea7 start_thread
+
+2024-12-17 20:57:14,Message: 
+Stacktrace:
+#0 0x563db026331a <unknown>
+#1 0x563dafd796e0 <unknown>
+#2 0x563dafdc83e6 <unknown>
+#3 0x563dafdc8681 <unknown>
+#4 0x563dafe0db04 <unknown>
+#5 0x563dafdec48d <unknown>
+#6 0x563dafe0aed7 <unknown>
+#7 0x563dafdec203 <unknown>
+#8 0x563dafdbacc0 <unknown>
+#9 0x563dafdbbc9e <unknown>
+#10 0x563db0230d0b <unknown>
+#11 0x563db0234c92 <unknown>
+#12 0x563db021db3c <unknown>
+#13 0x563db0235807 <unknown>
+#14 0x563db02030df <unknown>
+#15 0x563db0252578 <unknown>
+#16 0x563db0252740 <unknown>
+#17 0x563db0262196 <unknown>
+#18 0x7fca0b69fea7 start_thread
+
+2024-12-17 21:02:29,Message: 
+Stacktrace:
+#0 0x56173cd1731a <unknown>
+#1 0x56173c82d6e0 <unknown>
+#2 0x56173c87c3e6 <unknown>
+#3 0x56173c87c681 <unknown>
+#4 0x56173c8c1b04 <unknown>
+#5 0x56173c8a048d <unknown>
+#6 0x56173c8beed7 <unknown>
+#7 0x56173c8a0203 <unknown>
+#8 0x56173c86ecc0 <unknown>
+#9 0x56173c86fc9e <unknown>
+#10 0x56173cce4d0b <unknown>
+#11 0x56173cce8c92 <unknown>
+#12 0x56173ccd1b3c <unknown>
+#13 0x56173cce9807 <unknown>
+#14 0x56173ccb70df <unknown>
+#15 0x56173cd06578 <unknown>
+#16 0x56173cd06740 <unknown>
+#17 0x56173cd16196 <unknown>
+#18 0x7f8a0ff02ea7 start_thread
+
+2024-12-17 21:07:21,[Errno 2] No such file or directory: '{os.path.dirname(os.path.abspath(__file__))}/wanted'
+2024-12-17 21:15:12,Message: 
+Stacktrace:
+#0 0x5610a14e231a <unknown>
+#1 0x5610a0ff86e0 <unknown>
+#2 0x5610a10473e6 <unknown>
+#3 0x5610a1047681 <unknown>
+#4 0x5610a108cb04 <unknown>
+#5 0x5610a106b48d <unknown>
+#6 0x5610a1089ed7 <unknown>
+#7 0x5610a106b203 <unknown>
+#8 0x5610a1039cc0 <unknown>
+#9 0x5610a103ac9e <unknown>
+#10 0x5610a14afd0b <unknown>
+#11 0x5610a14b3c92 <unknown>
+#12 0x5610a149cb3c <unknown>
+#13 0x5610a14b4807 <unknown>
+#14 0x5610a14820df <unknown>
+#15 0x5610a14d1578 <unknown>
+#16 0x5610a14d1740 <unknown>
+#17 0x5610a14e1196 <unknown>
+#18 0x7f9d7c403ea7 start_thread
+
+2024-12-17 21:23:39,Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=131.0.6778.139)
+Stacktrace:
+#0 0x55c0a274e31a <unknown>
+#1 0x55c0a22646e0 <unknown>
+#2 0x55c0a224b435 <unknown>
+#3 0x55c0a224b313 <unknown>
+#4 0x55c0a2266a02 <unknown>
+#5 0x55c0a22f58b6 <unknown>
+#6 0x55c0a22d7203 <unknown>
+#7 0x55c0a22a5cc0 <unknown>
+#8 0x55c0a22a6c9e <unknown>
+#9 0x55c0a271bd0b <unknown>
+#10 0x55c0a271fc92 <unknown>
+#11 0x55c0a2708b3c <unknown>
+#12 0x55c0a2720807 <unknown>
+#13 0x55c0a26ee0df <unknown>
+#14 0x55c0a273d578 <unknown>
+#15 0x55c0a273d740 <unknown>
+#16 0x55c0a274d196 <unknown>
+#17 0x7fc099ddeea7 start_thread
+

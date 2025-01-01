@@ -1,0 +1,117 @@
+version: '3.8'
+
+networks:
+  airflow-network:
+    driver: bridge
+
+services:
+  postgres:
+    image: postgres:13
+    container_name: airflow-postgres
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    networks:
+      - airflow-network
+
+  redis:
+    image: redis:latest
+    container_name: airflow-redis
+    ports:
+      - "6379:6379"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    networks:
+      - airflow-network
+
+  airflow:
+    container_name: airflow-web
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile-airflow
+    ports:
+      - "8090:8080"
+    env_file:
+      - ./airflow/.env.airflow
+    volumes:
+      - ~/.aws:/code/.aws:ro
+      - ./airflow/dags:/code/dags
+      - ./airflow/airflow.cfg:/code/airflow.cfg
+      - ./airflow/logs:/code/logs
+      - ./airflow/plugins:/code/plugins
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    entrypoint: >
+      bash -c "
+      sleep 5 &&
+      /code/scripts/init_airflow.sh &&
+      exec airflow webserver
+      "
+    networks:
+      - airflow-network
+    depends_on:
+      - redis
+      - postgres
+    cap_add:
+      - SYS_ADMIN
+    security_opt:
+      - seccomp:unconfined
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
+
+  airflow-scheduler:
+    container_name: airflow-scheduler
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile-airflow
+    restart: always
+    env_file:
+      - ./airflow/.env.airflow
+    volumes:
+      - ~/.aws:/code/.aws:ro
+      - ./airflow/dags:/code/dags
+      - ./airflow/airflow.cfg:/code/airflow.cfg
+      - ./airflow/logs:/code/logs
+      - ./airflow/plugins:/code/plugins
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
+    entrypoint: >
+      bash -c "
+      sleep 10 &&
+      /code/scripts/init_airflow.sh &&
+      exec airflow scheduler &
+      echo 'Waiting for DAG to be loaded...';
+      while ! airflow dags list | grep dag_crawling_to_db; do
+        echo 'DAG not loaded yet. Retrying...';
+        sleep 5;
+      done &&
+      echo 'DAG Loaded. Triggering DAG...' &&
+      airflow dags trigger dag_crawling_to_db &&
+      wait"
+    depends_on:
+      - airflow
+      - postgres
+    networks:
+      - airflow-network
+    shm_size: 4g  # /dev/shm 크기 설정
+    deploy:
+      resources:
+        limits:
+          memory: 2g  # 메모리 제한 설정 (예시)
+
+volumes:
+  postgres-db-volume:

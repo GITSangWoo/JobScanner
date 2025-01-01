@@ -1,0 +1,27 @@
+[2024-12-17T18:06:06.699+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T18:06:06.707+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T18:06:06.708+0900] {taskinstance.py:1359} INFO - Starting attempt 8 of 2
+[2024-12-17T18:06:06.720+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-16 00:00:00+00:00
+[2024-12-17T18:06:06.724+0900] {standard_task_runner.py:57} INFO - Started process 81 to run task
+[2024-12-17T18:06:06.727+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'scheduled__2024-12-16T00:00:00+00:00', '--job-id', '109', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmp20qt09_q']
+[2024-12-17T18:06:06.730+0900] {standard_task_runner.py:85} INFO - Job 109: Subtask link_crawl
+[2024-12-17T18:06:06.776+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [running]> on host a6bdc4f363d9
+[2024-12-17T18:06:06.847+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='8' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-16T00:00:00+00:00'
+[2024-12-17T18:06:06.848+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-17 18:06:06
+[2024-12-17T18:06:06.848+0900] {logging_mixin.py:151} INFO - /code/plugins/incruit
+[2024-12-17T18:08:08.020+0900] {logging_mixin.py:151} INFO - 인크루트 종료 시간: 2024-12-17 18:08:08
+[2024-12-17T18:08:13.022+0900] {logging_mixin.py:151} INFO - 잡코리아 시작 시간: 2024-12-17 18:08:13
+[2024-12-17T18:08:13.038+0900] {credentials.py:1254} INFO - Found credentials in shared credentials file: /code/.aws/credentials
+[2024-12-17T18:08:13.122+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T18:08:13.227+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T18:08:13.293+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T18:08:13.353+0900] {logger.py:11} INFO - There is no [linux64] chromedriver "131.0.6778.108" for browser google-chrome "131.0.6778" in cache
+[2024-12-17T18:08:13.354+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T18:08:13.501+0900] {logger.py:11} INFO - WebDriver version 131.0.6778.108 selected
+[2024-12-17T18:08:13.504+0900] {logger.py:11} INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.108/linux64/chromedriver-linux64.zip
+[2024-12-17T18:08:13.506+0900] {logger.py:11} INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.108/linux64/chromedriver-linux64.zip
+[2024-12-17T18:08:13.664+0900] {logger.py:11} INFO - Driver downloading response is 200
+[2024-12-17T18:08:13.870+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T18:08:14.051+0900] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108]
+[2024-12-17T18:08:14.681+0900] {logging_mixin.py:151} INFO - S3에서 기존 링크를 로드했습니다. 총 29개의 링크.
+[2024-12-17T18:08:14.683+0900] {logging_mixin.py:151} INFO - 검색 키워드: 데이터 엔지니어 (DE)

@@ -1,0 +1,33 @@
+[2024-12-17T17:27:11.573+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T17:27:11.582+0900] {taskinstance.py:1157} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [queued]>
+[2024-12-17T17:27:11.583+0900] {taskinstance.py:1359} INFO - Starting attempt 4 of 2
+[2024-12-17T17:27:11.594+0900] {taskinstance.py:1380} INFO - Executing <Task(PythonOperator): link_crawl> on 2024-12-16 00:00:00+00:00
+[2024-12-17T17:27:11.598+0900] {standard_task_runner.py:57} INFO - Started process 81 to run task
+[2024-12-17T17:27:11.601+0900] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_crawling_to_db', 'link_crawl', 'scheduled__2024-12-16T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/dag_crawling_to_db.py', '--cfg-path', '/tmp/tmphp08ozm_']
+[2024-12-17T17:27:11.604+0900] {standard_task_runner.py:85} INFO - Job 8: Subtask link_crawl
+[2024-12-17T17:27:11.649+0900] {task_command.py:415} INFO - Running <TaskInstance: dag_crawling_to_db.link_crawl scheduled__2024-12-16T00:00:00+00:00 [running]> on host 51e08cfb748f
+[2024-12-17T17:27:11.717+0900] {taskinstance.py:1660} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_crawling_to_db' AIRFLOW_CTX_TASK_ID='link_crawl' AIRFLOW_CTX_EXECUTION_DATE='2024-12-16T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='4' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2024-12-16T00:00:00+00:00'
+[2024-12-17T17:27:11.718+0900] {logging_mixin.py:151} INFO - 인크루트 시작 시간: 2024-12-17 17:27:11
+[2024-12-17T17:27:11.719+0900] {logging_mixin.py:151} INFO - /code/plugins/incruit
+[2024-12-17T17:28:58.248+0900] {logging_mixin.py:151} INFO - 인크루트 종료 시간: 2024-12-17 17:28:58
+[2024-12-17T17:29:03.255+0900] {logging_mixin.py:151} INFO - 잡코리아 시작 시간: 2024-12-17 17:29:03
+[2024-12-17T17:29:03.269+0900] {credentials.py:1254} INFO - Found credentials in shared credentials file: /code/.aws/credentials
+[2024-12-17T17:29:03.355+0900] {logger.py:11} INFO - ====== WebDriver manager ======
+[2024-12-17T17:29:03.461+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:29:03.492+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:29:03.537+0900] {logger.py:11} INFO - There is no [linux64] chromedriver "131.0.6778.108" for browser google-chrome "131.0.6778" in cache
+[2024-12-17T17:29:03.537+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:29:03.608+0900] {logger.py:11} INFO - WebDriver version 131.0.6778.108 selected
+[2024-12-17T17:29:03.611+0900] {logger.py:11} INFO - Modern chrome version https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.108/linux64/chromedriver-linux64.zip
+[2024-12-17T17:29:03.612+0900] {logger.py:11} INFO - About to download new driver from https://storage.googleapis.com/chrome-for-testing-public/131.0.6778.108/linux64/chromedriver-linux64.zip
+[2024-12-17T17:29:03.679+0900] {logger.py:11} INFO - Driver downloading response is 200
+[2024-12-17T17:29:03.867+0900] {logger.py:11} INFO - Get LATEST chromedriver version for google-chrome
+[2024-12-17T17:29:04.025+0900] {logger.py:11} INFO - Driver has been saved in cache [/home/***/.wdm/drivers/chromedriver/linux64/131.0.6778.108]
+[2024-12-17T17:29:04.468+0900] {logging_mixin.py:151} INFO - S3에서 기존 링크를 로드했습니다. 총 1175개의 링크.
+[2024-12-17T17:29:04.469+0900] {logging_mixin.py:151} INFO - 검색 키워드: 데이터 엔지니어 (DE)
+[2024-12-17T17:40:22.940+0900] {logging_mixin.py:151} INFO - 80에 수집할 링크가 없으므로 링크 수집을 멈춥니다.
+[2024-12-17T17:40:23.044+0900] {logging_mixin.py:151} INFO - 파일이 S3에 성공적으로 업로드되었습니다. S3 경로: s3://t2jt/job/DE/sources/jobkorea/links/20241217.txt
+[2024-12-17T17:40:23.044+0900] {logging_mixin.py:151} INFO - 데이터 엔지니어 (DE)에서 수집한 링크를 S3에 저장했습니다: job/DE/sources/jobkorea/links/20241217.txt
+[2024-12-17T17:40:23.045+0900] {logging_mixin.py:151} INFO - 데이터 엔지니어에서 29개의 새로운 링크를 발견하였습니다.
+[2024-12-17T17:40:23.124+0900] {logging_mixin.py:151} INFO - S3에서 기존 링크를 로드했습니다. 총 1451개의 링크.
+[2024-12-17T17:40:23.124+0900] {logging_mixin.py:151} INFO - 검색 키워드: 프론트엔드 (FE)
