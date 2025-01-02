@@ -199,18 +199,6 @@ const MainPage = () => {
     return (
         <div className="main-page">
             <header className="header">
-                <div className="logo-container" onClick={handleClick}>
-                    <h1 className="logo">JobScanner</h1>
-                </div>
-                <div className="top-right-buttons">
-                    {checkLoginStatus() ? (
-                        <span className="welcome-message">{nickname}님 환영합니다!</span>
-                    ) : (
-                        <button className="auth-button" onClick={handleLogin}>
-                            로그인
-                        </button>
-                    )}
-                </div>
                 <div className="top-left-menu">
                     <button className="menu-button" onClick={toggleDropdown}>
                         ⁝⁝⁝
@@ -226,6 +214,18 @@ const MainPage = () => {
                         <button className="dropdown-item" onClick={handleMypage}>
                             My Page
                         </button>
+                    </div>
+                </div>
+                <div className="header-right">
+                    <span className="header-logo">JobScanner</span>
+                    <div className="top-right-buttons">
+                        {checkLoginStatus() ? (
+                            <span className="welcome-message">{nickname}님 환영합니다!</span>
+                        ) : (
+                            <button className="auth-button" onClick={handleLogin}>
+                                로그인
+                            </button>
+                        )}
                     </div>
                 </div>
             </header>

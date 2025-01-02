@@ -25,15 +25,37 @@ body {
     background-color: #fff; /* 헤더 배경색 흰색 */
     color: #333; /* 헤더 텍스트 색상 */
     border-bottom: 1px solid #ccc; /* 헤더와 body 사이에 선 추가 */
+    overflow: hidden; /* 헤더 스크롤 제거 */
 }
 
-.logo-container {
+.top-left-menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu-button {
+    padding: 5px 10px; /* 버튼 높이 조정 */
+    font-size: 25px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
 }
 
-.logo {
+.menu-button:hover {
+    background-color: #555;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
     font-size: 1.5rem; /* 헤더 로고 크기 조정 */
     color: #333;
+    margin-right: 20px; /* 오른쪽 버튼과 간격 */
 }
 
 /* 상단 오른쪽 로그인/회원가입 버튼 */
@@ -43,23 +65,19 @@ body {
 }
 
 .auth-button {
-    padding: 10px 25px;
+    padding: 5px 15px; /* 버튼 높이 조정 */
     font-size: 15px !important;
-    background-color: transparent !important; /* 배경색을 완전히 투명하게 */
-    color: #333; /* 기본 글씨 색상을 흰색으로 설정 */
-    border: none;  /* 테두리 없애기 */
-    background: none !important; /* 배경색 없애기 (필요하면) */
-    outline: none;
-    font-weight: bold; /* 글씨를 굵게 설정 */
+    background-color: #28a745; /* 초록색 배경 */
+    color: #fff; /* 흰색 글씨 */
+    border: 2px solid #28a745; /* 초록색 테두리 */
+    border-radius: 20px; /* 둥근 테두리 */
     cursor: pointer;
     text-decoration: none; /* 밑줄 제거 */
-    transition: color 0.3s;
-    box-shadow: none; /* 그림자 제거 */
-    white-space: nowrap; /* 텍스트가 한 줄로 유지되도록 설정 */
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .auth-button:hover {
-    color: #555; /* hover 시 글씨 색상 변경 */
+    background-color: #218838; /* hover 시 배경색 변경 */
 }
 
 .auth-button:focus {
