@@ -4,7 +4,7 @@ import "./TechStackDetailsPage.css"; // CSS 파일을 import
 import Cookies from 'js-cookie';
 import axios from 'axios';
 import { getLinkPreview } from "link-preview-js";
-import qs from 'qs';
+
 
 const TechStackDetailsPage = () => {
     const navigate = useNavigate();
@@ -121,10 +121,18 @@ const TechStackDetailsPage = () => {
       
         const accessToken = Cookies.get('access_token');
 
-        // techName이 객체가 아닌지 확인
-        if (typeof techName === 'object') {
-            techName = techName.techName || ''; // 예시: techName 객체에서 'techName' 속성 가져오기
+        // techName이 객체라면, techName.techName 값을 추출
+        if (typeof techName === 'object' && techName !== null) {
+            techName = techName.techName || '';  // techName 객체에서 'techName' 속성 가져오기
         }
+
+        // techName이 빈 값일 경우 처리
+        if (!techName) {
+            alert("기술 스택 이름을 입력해주세요.");
+            return;
+        }
+
+        console.log("Sending techName:", techName);  // techName이 올바르게 설정되었는지 확인
 
         try {
             const response = await axios.post(
