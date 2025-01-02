@@ -251,7 +251,7 @@ const MainPage = () => {
                     <div className="job-description">
                         <h3>직무 설명</h3>
                         <p>{jobDescription}</p>
-                        <span data-tip="각 기술 스택을 클릭하면 기술스택 설명상세 페이지로 넘어갑니다다" className="info-icon">ℹ️</span>
+                        <span data-tip="각 기술 스택을 클릭하면 기술스택 설명상세 페이지로 넘어갑니다" className="info-icon">ℹ️</span>
                         <ReactTooltip place="top" type="dark" effect="solid"/>
                     </div>
                 )}

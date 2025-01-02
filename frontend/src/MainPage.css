@@ -168,16 +168,16 @@ body {
     background-color: #EAEAEA;
     color: black;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .toggle-button:hover {
-    background-color: #EAEAEA;
+    background-color: #D6D6D6; /* hover 시 배경색 변경 */
 }
 
-/* 활성화 상태에서 색상 변경 */
 .toggle-button.active {
-    background-color: #BDBDBD;  /* 색상을 더 진하게 */
+    background-color: #BDBDBD;  /* 활성화 상태에서 색상 변경 */
+    color: white; /* 활성화 상태에서 글씨 색상 변경 */
 }
 
 /* =============================== */
@@ -269,6 +269,40 @@ body {
     text-align: center;
     line-height: 1.5;
     word-wrap: break-word;  /* 긴 글이 화면 밖으로 나가지 않도록 줄바꿈 처리 */
+}
+
+/* 직무 설명 텍스트 스타일 */
+.job-description {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+    position: relative;
+}
+
+.job-description h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.job-description p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.info-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #888;
 }
 
 /* 반응형 스타일 */
