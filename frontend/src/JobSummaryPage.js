@@ -64,31 +64,37 @@ const JobSummaryPage = () => {
             return;
         }
     
-        const accessToken = Cookies.get('access_token');
+        const accessToken = Cookies.get('access_token'); // 토큰 가져오기
     
         try {
+            // 서버에 요청을 보낼 때 쿼리 스트링에 noticeId를 포함
             const response = await axios.post(
-                'http://43.202.186.119:8972/user/bookmark/notice',
-                { noticeId }, // 서버 요구사항에 맞게 데이터 키 수정
+                `http://43.202.186.119:8972/user/bookmark/notice?noticeId=${noticeId}`,
+                null, // 본문 데이터는 없으므로 null
                 {
                     headers: {
-                        Authorization: `Bearer ${accessToken}`,
-                        'Content-Type': 'application/json',
+                        Authorization: `Bearer ${accessToken}`, // 인증 헤더 추가
                     },
                 }
             );
     
-            // 서버 응답에 따라 북마크 상태를 업데이트
+            // 북마크 상태 업데이트
             setBookmarkedJobs((prevState) => ({
                 ...prevState,
-                [noticeId]: !prevState[noticeId], // 현재 noticeId의 북마크 상태를 토글
+                [noticeId]: !prevState[noticeId], // 현재 noticeId의 상태를 토글
             }));
     
-            alert(response.data); // 서버 응답 메시지 알림
+            alert(response.data.message || "북마크가 성공적으로 추가되었습니다.");
         } catch (error) {
-            alert('북마크 추가 실패: ' + (error.response?.data.message || error.message));
+            // 에러 처리
+            alert(
+                `북마크 추가 실패: ${
+                    error.response?.data?.message || error.message || "알 수 없는 오류입니다."
+                }`
+            );
         }
     };
+    
     
     
     
