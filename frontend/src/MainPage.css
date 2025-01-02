@@ -2,7 +2,7 @@
 body {
     margin: 0;
     font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
-    background-color: #f0f0f0; /* 배경색 변경 */
+    background-color: #fff; /* 배경색 흰색으로 변경 */
 }
 
 .main-page {
@@ -21,7 +21,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px; /* 헤더를 얇게 만듦 */
+    padding: 10px 20px; /* 헤더 높이 조정 */
     background-color: #fff; /* 헤더 배경색 흰색 */
     color: #333; /* 헤더 텍스트 색상 */
     border-bottom: 1px solid #ccc; /* 헤더와 body 사이에 선 추가 */
