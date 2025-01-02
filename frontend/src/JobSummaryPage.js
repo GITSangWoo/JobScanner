@@ -57,21 +57,20 @@ const JobSummaryPage = () => {
         window.location.reload();
     };
 
-    // 북마크 토글 처리
-    const handleBookmark = async (notice_id) => {
+    const handleBookmark = async (job) => {  // job 객체를 매개변수로 전달
         if (!checkLoginStatus()) {
-          alert("로그인 후 이용하실 수 있습니다.");
-          navigate("/login");
-          return;
+            alert("로그인 후 이용하실 수 있습니다.");
+            navigate("/login");
+            return;
         }
-      
+    
         const accessToken = Cookies.get('access_token');
-      
+    
         try {
-            const notice_id = job.id; // 'notice_id'라는 변수명을 명시적으로 선언
-            await axios.post(
+            const notice_id = job.id; // job 객체에서 id를 가져옴
+            const response = await axios.post(
                 'http://43.202.186.119:8972/user/bookmark/notice',
-                { notice_id }, // JSON 데이터에서 키와 변수명이 같으면 이렇게 축약 가능
+                { notice_id },
                 {
                     headers: {
                         Authorization: `Bearer ${accessToken}`,
@@ -79,19 +78,17 @@ const JobSummaryPage = () => {
                     },
                 }
             );
-                      
-          alert(response.data); // 서버 응답 메시지 표시
+    
+            alert(response.data); // 서버 응답 메시지 표시
         } catch (error) {
-          if (error.response) {
-            // 응답이 있는 경우
-            alert('북마크 추가 실패: ' + error.response.data.message || error.response.data);
-          } else {
-            // 응답이 없는 경우
-            alert('서버에 연결할 수 없습니다. 다시 시도해주세요.');
-          }
+            if (error.response) {
+                alert('북마크 추가 실패: ' + (error.response.data.message || error.response.data));
+            } else {
+                alert('서버에 연결할 수 없습니다. 다시 시도해주세요.');
+            }
         }
-      };
-
+    };
+    
     // 드롭다운 메뉴 열기/닫기 처리
     const toggleDropdown = () => {
         setIsDropdownOpen((prev) => !prev);
