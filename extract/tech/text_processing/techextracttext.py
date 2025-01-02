@@ -3,8 +3,6 @@ import re
 import json
 import os
 
-# 텍스트 데이터 기술 스택 추출
-
 # RDS MySQL 접속 정보
 mysql_host = "t2rds.cfa60ymesotv.ap-northeast-2.rds.amazonaws.com"
 mysql_user = "admin"  # RDS 생성 시 설정한 사용자 이름
@@ -23,20 +21,6 @@ def fetch_data():
     )
     try:
         with connection.cursor() as cursor:
-            # 중복 확인 쿼리
-            check_query = """
-                SELECT COUNT(*)
-                FROM extract_tech_stack
-                WHERE notice_id = %s
-            """
-            cursor.execute(check_query, (notice_id,))
-            exists = cursor.fetchone()[0]
-
-            # 중복이면 스킵
-            if exists:
-                print(f"Notice ID {notice_id} already exists. Skipping...")
-                return
-
             # qualification, responsibility, preferential 컬럼 값과 id를 가져오는 쿼리
             cursor.execute("""
                 SELECT id, qualification, responsibility, preferential
@@ -111,17 +95,43 @@ rows = fetch_data()
 
 # 공고별 기술 스택 추출 및 저장
 for row in rows:
-    notice_id = row[0]
+    notice_id = row[0]  # 첫 번째 값은 공고 ID
     tot_tech = {}
     res_tech = {}
     qual_tech = {}
     pref_tech = {}
 
+    # 중복 확인 로직 추가
+    connection = pymysql.connect(
+        host=mysql_host,
+        user=mysql_user,
+        password=mysql_password,
+        database=mysql_db,
+        charset='utf8mb4'
+    )
+    try:
+        with connection.cursor() as cursor:
+            # 중복 확인 쿼리
+            check_query = """
+                SELECT COUNT(*)
+                FROM extract_tech_stack
+                WHERE notice_id = %s
+            """
+            cursor.execute(check_query, (notice_id,))
+            exists = cursor.fetchone()[0]
+
+            # 중복이면 스킵
+            if exists:
+                print(f"Notice ID {notice_id} already exists. Skipping...")
+                continue  # 다음 row로 넘어감
+    finally:
+        connection.close()
+
     # 각 컬럼에 대해 기술 스택을 식별
     for col_index, col_name in enumerate(["responsibility", "qualification", "preferential"]):
-        text = row[col_index + 1]  # 첫 번째 값은 ID이므로, 두 번째 값부터 시작
+        text = row[col_index + 1]  # 첫 번째 값은 ID이므로 두 번째 값부터 시작
 
-        if text:  # 텍스트가 존재하는 경우
+        if text:  # 텍스트가 존재하는 경우만 처리
             # 텍스트에서 줄 바꿈 문자(\n, \r)를 제거하고 한 줄로 만들기
             re_text = re.sub(r'[\r\n]+', ' ', text).strip()
 
