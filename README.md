@@ -121,7 +121,7 @@
 <br/>
 
 ## ✅요구사항 정의서
-[요구사항 정의서](https://docs.google.com/spreadsheets/d/15s4UewBZCuJ099c2KAiWEULkpJrwZ_zoh3XLLEoeDIQ/edit?usp=sharing  )
+[요구사항 정의서](https://docs.google.com/spreadsheets/d/15s4UewBZCuJ099c2KAiWEULkpJrwZ_zoh3XLLEoeDIQ/edit?gid=1961380551#gid=1961380551)
 
 <br/>
 
