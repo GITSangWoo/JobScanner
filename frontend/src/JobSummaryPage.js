@@ -116,7 +116,7 @@ const JobSummaryPage = () => {
             const data = await response.json();
             if (response.ok) {
                 const transformedData = data.map((job) => ({
-                    id: job.notice_id,
+                    id: job.noticeid,
                     deadline: job.duetype === "날짜" ? job.duedate : "상시채용",
                     org_url: job.orgurl,
                     companyName: job.company,
