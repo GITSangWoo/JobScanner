@@ -15,7 +15,7 @@
 | **김도현** | **김동욱** | **이상우** | **이상훈** | **조하영** |
 |:------------:|:------------:|:------------:|:------------:|:------------:|
 | [@rlaehgus97](https://github.com/rlaehgus97) | [@DONGUK777](https://github.com/DONGUK777) | [@GITSangWoo](https://github.com/GITSangWoo) | [@hun0219](https://github.com/hun0219) | [@EstherCho-7](https://github.com/EstherCho-7) |
-| • 애플리케이션 관리<br>• 형상 및 배포 관리<br>• Docker, Airflow<br>• 브랜치 전략 수립 | • 백엔드 개발<br>• 데이터 전처리<br>• 기술 사전 정의  | • 기술적 문제 해결 및 방향 설정<br>• 시스템 아키텍처 설계<br>• OCR(이미지 텍스트화)<br>• 백엔드 개발 | • 팀원들의 애로 사항 논의<br>• 애자일 프로세스 적용<br>• Docker, Airflow<br>• 크롤링 코드 통합 | • 프로젝트 일정 관리<br>• 진행 상황 모니터링<br>• 프론트엔드 개발<br>• ERD 작성 |
+| • 애플리케이션 관리<br>• 형상 및 배포 관리<br>• Docker, Airflow<br>• 브랜치 전략 수립 | • 백엔드 개발<br>• 데이터 전처리<br>• 기술 사전 정의<br>•GitHub 리드미, 발표자료 제작  | • 기술적 문제 해결 및 방향 설정<br>• 시스템 아키텍처 설계<br>• OCR(이미지 텍스트화)<br>• 백엔드 개발 | • 팀원들의 애로 사항 논의<br>• 애자일 프로세스 적용<br>• Docker, Airflow<br>• 크롤링 코드 통합 | • 프로젝트 일정 관리<br>• 진행 상황 모니터링<br>• 프론트엔드 개발<br>• ERD 작성 |
 
 
 <br/>
