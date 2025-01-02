@@ -68,16 +68,18 @@ const JobSummaryPage = () => {
         const accessToken = Cookies.get('access_token');
       
         try {
-            const response = await axios.post(
+            const notice_id = job.id; // 'notice_id'라는 변수명을 명시적으로 선언
+            await axios.post(
                 'http://43.202.186.119:8972/user/bookmark/notice',
-                qs.stringify({ notice_id }),  // x-www-form-urlencoded 대신 JSON 형식으로 전송
+                { notice_id }, // JSON 데이터에서 키와 변수명이 같으면 이렇게 축약 가능
                 {
-                  headers: {
-                    Authorization: `Bearer ${accessToken}`,
-                    'Content-Type': 'application/json',  // JSON 형식으로 변경
-                  },
+                    headers: {
+                        Authorization: `Bearer ${accessToken}`,
+                        'Content-Type': 'application/json',
+                    },
                 }
-              );
+            );
+                      
           alert(response.data); // 서버 응답 메시지 표시
         } catch (error) {
           if (error.response) {
