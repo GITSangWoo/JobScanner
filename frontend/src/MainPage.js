@@ -203,21 +203,9 @@ const MainPage = () => {
                     <button className="menu-button" onClick={toggleDropdown}>
                         ⁝⁝⁝
                     </button>
-                    <div className={`dropdown-menu ${isDropdownOpen ? "open" : ""}`}>
-                        <button className="dropdown-item" onClick={handleClick}>
-                            기술 스택 순위
-                        </button>
-                        <button className="dropdown-item" onClick={navigateToJobSummary}>
-                            채용 공고 요약
-                        </button>
-                        <hr />
-                        <button className="dropdown-item" onClick={handleMypage}>
-                            My Page
-                        </button>
-                    </div>
+                    <span className="header-logo">JobScanner</span>
                 </div>
                 <div className="header-right">
-                    <span className="header-logo">JobScanner</span>
                     <div className="top-right-buttons">
                         {checkLoginStatus() ? (
                             <span className="welcome-message">{nickname}님 환영합니다!</span>
