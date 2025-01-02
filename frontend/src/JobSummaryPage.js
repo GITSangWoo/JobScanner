@@ -71,17 +71,18 @@ const JobSummaryPage = () => {
     
         const accessToken = Cookies.get('access_token');
     
-        try {
-            const response = await axios.post(
-                'http://43.202.186.119:8972/user/bookmark/notice',
-                { notice_id: noticeId },  // 본문(body)에 notice_id 객체로 포함
-                { headers: { Authorization: `Bearer ${accessToken}` } }
-            );
-    
-            alert(response.data);
-        } catch (error) {
-            alert('북마크 추가 실패: ' + (error.response?.data.message || error.message));
-        }
+        axios.post(
+            '/user/bookmark/notice',
+            { notice_id: noticeId },  // noticeId를 본문에 포함
+            { headers: { Authorization: `Bearer ${accessToken}` } }
+        )
+        .then(response => {
+            console.log(response.data);
+            // 북마크 상태 갱신
+        })
+        .catch(error => {
+            console.error("북마크 처리 중 에러:", error);
+        });
     };
     
     
@@ -241,7 +242,10 @@ const JobSummaryPage = () => {
                                     <td>
                                         <span
                                             className={`bookmark-button ${bookmarkedJobs[job.id] ? "active" : ""}`}
-                                            onClick={() => handleBookmark(job.id)}
+                                            onClick={() => {
+                                                console.log(job.id);  // job.id가 제대로 출력되는지 확인
+                                                handleBookmark(job.id);
+                                            }}
                                         >
                                             {bookmarkedJobs[job.id] ? "★" : "☆"}
                                         </span>
