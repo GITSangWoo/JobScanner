@@ -31,6 +31,7 @@ body {
 .top-left-menu {
     display: flex;
     align-items: center;
+    gap: 10px; /* 아이콘과 텍스트 간격 조정 */
 }
 
 .menu-button {
