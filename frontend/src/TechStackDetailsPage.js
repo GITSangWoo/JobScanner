@@ -121,6 +121,11 @@ const TechStackDetailsPage = () => {
       
         const accessToken = Cookies.get('access_token');
 
+        // techName이 객체가 아닌지 확인
+        if (typeof techName === 'object') {
+            techName = techName.techName || ''; // 예시: techName 객체에서 'techName' 속성 가져오기
+        }
+
         try {
             const response = await axios.post(
                 'http://43.202.186.119:8972/user/bookmark/tech', // 서버의 URL
