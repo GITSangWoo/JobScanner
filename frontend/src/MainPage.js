@@ -229,7 +229,10 @@ const MainPage = () => {
                     </div>
                 </div>
             </header>
-
+            <hr className="header-divider" />
+            <div className="logo-container-large">
+                <h1 className="logo-large">JobScanner</h1>
+            </div>
             <div className="content">
                 <p className="message1">직무별 기술 스택 순위 보기</p>
                 <p className="message">원하는 직무를 선택해 주세요</p>
