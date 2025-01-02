@@ -57,7 +57,7 @@ const JobSummaryPage = () => {
         window.location.reload();
     };
 
-    const handleBookmark = async (jobId) => {
+    const handleBookmark = async (noticeId) => {
         if (!checkLoginStatus()) {
             alert("로그인 후 이용하실 수 있습니다.");
             navigate("/login");
@@ -69,7 +69,7 @@ const JobSummaryPage = () => {
         try {
             const response = await axios.post(
                 'http://43.202.186.119:8972/user/bookmark/notice',
-                { notice_id: jobId },
+                { noticeId }, // 서버 요구사항에 맞게 데이터 키 수정
                 {
                     headers: {
                         Authorization: `Bearer ${accessToken}`,
@@ -78,17 +78,18 @@ const JobSummaryPage = () => {
                 }
             );
     
-            // 응답에 따라 상태 업데이트
+            // 서버 응답에 따라 북마크 상태를 업데이트
             setBookmarkedJobs((prevState) => ({
                 ...prevState,
-                [jobId]: !prevState[jobId], // 토글 상태
+                [noticeId]: !prevState[noticeId], // 현재 noticeId의 북마크 상태를 토글
             }));
     
-            alert(response.data);
+            alert(response.data); // 서버 응답 메시지 알림
         } catch (error) {
             alert('북마크 추가 실패: ' + (error.response?.data.message || error.message));
         }
     };
+    
     
     
     // 드롭다운 메뉴 열기/닫기 처리
