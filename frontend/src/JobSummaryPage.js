@@ -73,13 +73,9 @@ const JobSummaryPage = () => {
     
         try {
             const response = await axios.post(
-                `http://43.202.186.119:8972/user/bookmark/notice?noticeId=${noticeId}`,
-                null, // 본문 데이터는 필요 없음
-                {
-                    headers: {
-                        Authorization: `Bearer ${accessToken}`,
-                    },
-                }
+                'http://43.202.186.119:8972/user/bookmark/notice',
+                { notice_id: noticeId },  // 본문(body)에 notice_id 객체로 포함
+                { headers: { Authorization: `Bearer ${accessToken}` } }
             );
     
             alert(response.data);
