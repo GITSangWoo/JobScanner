@@ -26,6 +26,7 @@ body {
     color: #333; /* 헤더 텍스트 색상 */
     border-bottom: 1px solid #ccc; /* 헤더와 body 사이에 선 추가 */
     overflow: hidden; /* 헤더 스크롤 제거 */
+    min-height: 60px; /* 헤더의 최소 높이 설정 */
 }
 
 .top-left-menu {
@@ -56,6 +57,7 @@ body {
 .header-right {
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 
 .header-logo {
