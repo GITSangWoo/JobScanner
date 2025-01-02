@@ -67,7 +67,7 @@
 ![직무별 채용 공고 요약](https://github.com/user-attachments/assets/2eedf673-0f47-4d68-951e-e819f3d2fbbd)
 
 
-### ■ 배포 URL [[바로가기]](http://43.202.114.11/)
+### ■ 배포 URL [[바로가기]](http://43.202.186.119/)
 ### ■ 팀 Notion [[바로가기]](https://www.notion.so/14225f9eafe9801cb369d2b274b026cb?v=14225f9eafe981fbb896000c164c89ef&pvs=4)
 
 <br/>
