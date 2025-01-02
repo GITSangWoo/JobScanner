@@ -18,6 +18,12 @@ const TechStackDetailsPage = () => {
         navigate("/", { replace: true });
         window.location.reload();
     };
+    // YouTube 썸네일 URL을 가져오는 함수
+    const getYouTubeThumbnailUrl = (url) => {
+        if (!url) return null;
+        const videoId = url.split("v=")[1];
+        return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
+    };
 
     // 로그인 상태 확인 함수
     const checkLoginStatus = () => {
