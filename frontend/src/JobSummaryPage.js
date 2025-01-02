@@ -226,7 +226,9 @@ const JobSummaryPage = () => {
                             </tr>
                         </thead>
                         <tbody>
-                            {currentJobs.map((job) => (
+                        {currentJobs.map((job) => {
+                            console.log(job);  // job 객체가 제대로 전달되는지 확인
+                            return (
                                 <tr key={job.id}>
                                     <td>{job.deadline}</td>
                                     <td>{job.companyName}</td>
@@ -242,17 +244,14 @@ const JobSummaryPage = () => {
                                     <td>
                                         <span
                                             className={`bookmark-button ${bookmarkedJobs[job.id] ? "active" : ""}`}
-                                            onClick={() => {
-                                                console.log(job.id);  // job.id가 제대로 출력되는지 확인
-                                                handleBookmark(job.id);
-                                            }}
+                                            onClick={() => handleBookmark(job.id)}  // 여기서 job.id가 undefined로 나오는지 확인
                                         >
                                             {bookmarkedJobs[job.id] ? "★" : "☆"}
                                         </span>
                                     </td>
-
                                 </tr>
-                            ))}
+                            );
+                        })}
                         </tbody>
                     </table>
                     <div className="pagination">
