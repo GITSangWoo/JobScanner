@@ -23,6 +23,20 @@ def fetch_data():
     )
     try:
         with connection.cursor() as cursor:
+            # 중복 확인 쿼리
+            check_query = """
+                SELECT COUNT(*)
+                FROM extract_tech_stack
+                WHERE notice_id = %s
+            """
+            cursor.execute(check_query, (notice_id,))
+            exists = cursor.fetchone()[0]
+
+            # 중복이면 스킵
+            if exists:
+                print(f"Notice ID {notice_id} already exists. Skipping...")
+                return
+
             # qualification, responsibility, preferential 컬럼 값과 id를 가져오는 쿼리
             cursor.execute("""
                 SELECT id, qualification, responsibility, preferential
