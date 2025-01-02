@@ -59,12 +59,12 @@
 
 - **기술 정보 상세보기**
 
-![기술-정보-상세보기](https://github.com/user-attachments/assets/af74950e-3f33-46e6-8a94-1b20f75bf54e)
+![기술 정보 상세보기](https://github.com/user-attachments/assets/1dc80bcc-0a5c-4f17-993e-bff6e5446600)
 
 
 - **직무별 공고 요약 확인**
 
-![직무별-채용-공고-요약](https://github.com/user-attachments/assets/7bfdfe24-4a9d-4d35-b429-7a7b7eaf6db8)
+![직무별 채용 공고 요약](https://github.com/user-attachments/assets/2eedf673-0f47-4d68-951e-e819f3d2fbbd)
 
 
 ### ■ 배포 URL [[바로가기]](http://43.202.114.11/)
