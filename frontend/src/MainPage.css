@@ -277,7 +277,7 @@ body {
 }
 
 .main-table-container {
-    flex: 1 1 calc(25% - 20px); /* 한 줄에 4개씩 배치되도록 너비 조정 */
+    flex: 1 1 calc(20% - 20px); /* 테이블 너비 조정 */
     margin: 10px; /* 테이블 간격 */
     padding: 20px;
     border-radius: 5px;
@@ -503,7 +503,7 @@ body {
 
 /* 차트 스타일 */
 .tech-stack-chart {
-    flex: 1;
+    flex: 2; /* 차트 너비를 늘림 */
     display: flex;
     justify-content: center;
     align-items: center;
