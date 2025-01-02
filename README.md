@@ -15,7 +15,7 @@
 | **김도현** | **김동욱** | **이상우** | **이상훈** | **조하영** |
 |:------------:|:------------:|:------------:|:------------:|:------------:|
 | [@rlaehgus97](https://github.com/rlaehgus97) | [@DONGUK777](https://github.com/DONGUK777) | [@GITSangWoo](https://github.com/GITSangWoo) | [@hun0219](https://github.com/hun0219) | [@EstherCho-7](https://github.com/EstherCho-7) |
-| • 애플리케이션 관리<br>• 형상 및 배포 관리<br>• Docker, Airflow<br>• 브랜치 전략 수립 | • 백엔드 개발<br>• 데이터 전처리<br>• 기술 사전 정의<br>•Readme 작성, 발표자료 제작  | • 기술적 문제 해결 및 방향 설정<br>• 시스템 아키텍처 설계<br>• OCR(이미지 텍스트화)<br>• 백엔드 개발 | • 팀원들의 애로 사항 논의<br>• 애자일 프로세스 적용<br>• Docker, Airflow<br>• 크롤링 코드 통합 | • 프로젝트 일정 관리<br>• 진행 상황 모니터링<br>• 프론트엔드 개발<br>• ERD 작성 |
+| • 애플리케이션 관리<br>• 형상 및 배포 관리<br>• Docker, Airflow<br>• 브랜치 전략 수립 | • 백엔드 개발<br>• 데이터 전처리<br>• 기술 사전 정의<br>•Readme 작성, PPT 제작  | • 기술적 문제 해결 및 방향 설정<br>• 시스템 아키텍처 설계<br>• OCR(이미지 텍스트화)<br>• 백엔드 개발 | • 팀원들의 애로 사항 논의<br>• 애자일 프로세스 적용<br>• Docker, Airflow<br>• 크롤링 코드 통합 | • 프로젝트 일정 관리<br>• 진행 상황 모니터링<br>• 프론트엔드 개발<br>• ERD 작성 |
 
 
 <br/>
@@ -59,9 +59,13 @@
 
 - **기술 정보 상세보기**
 
+![기술-정보-상세보기](https://github.com/user-attachments/assets/af74950e-3f33-46e6-8a94-1b20f75bf54e)
+
+
 - **직무별 공고 요약 확인**
 
-- **직무 소개**
+![직무별-채용-공고-요약](https://github.com/user-attachments/assets/7bfdfe24-4a9d-4d35-b429-7a7b7eaf6db8)
+
 
 ### ■ 배포 URL [[바로가기]](http://43.202.114.11/)
 ### ■ 팀 Notion [[바로가기]](https://www.notion.so/14225f9eafe9801cb369d2b274b026cb?v=14225f9eafe981fbb896000c164c89ef&pvs=4)
