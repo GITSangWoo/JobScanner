@@ -45,19 +45,20 @@ const TechStackDetailsPage = () => {
         }
     }, []);
 
-    // 기술 스택 정보 가져오기
     useEffect(() => {
         axios.get(`/techstack?techName=${techStackName}`)
             .then(response => {
                 const data = response.data;
+                console.log("Received data:", data); // 데이터 출력
+    
                 setTechStack({
-                    techName: data.tech_name,
+                    techName: data.tech_name, // 'tech_name' -> 'techName'으로 수정
                     description: data.description,
                     youtubeLink: data.youtubelink,
                     bookLink: data.booklink,
                     docsLink: data.docslink
                 });
-
+    
                 // 링크 미리보기 가져오기
                 const links = [
                     data.youtubelink,
@@ -83,6 +84,7 @@ const TechStackDetailsPage = () => {
                 console.error("Error fetching tech stack data:", error);
             });
     }, [techStackName]);
+    
 
         // 드롭다운 메뉴 열기/닫기 처리
         const toggleDropdown = () => {

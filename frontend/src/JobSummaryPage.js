@@ -58,11 +58,6 @@ const JobSummaryPage = () => {
     };
 
     const handleBookmark = async (noticeId) => {
-        if (!noticeId) {
-            alert("유효한 noticeId가 아닙니다.");
-            return;
-        }
-    
         if (!checkLoginStatus()) {
             alert("로그인 후 이용하실 수 있습니다.");
             navigate("/login");
@@ -71,19 +66,28 @@ const JobSummaryPage = () => {
     
         const accessToken = Cookies.get('access_token');
     
-        axios.post(
-            '/user/bookmark/notice',
-            { notice_id: noticeId },  // noticeId를 본문에 포함
-            { headers: { Authorization: `Bearer ${accessToken}` } }
-        )
-        .then(response => {
-            console.log(response.data);
-            // 북마크 상태 갱신
-        })
-        .catch(error => {
-            console.error("북마크 처리 중 에러:", error);
-        });
+        // 로그로 보내는 데이터 확인
+        console.log("Sending bookmark request with data:", { noticeId });
+    
+        try {
+            const response = await axios.post(
+                'http://43.202.186.119/user/bookmark/notice',
+                { noticeId }, // 실제로 보내는 데이터 확인
+                { headers: { Authorization: `Bearer ${accessToken}` } }
+            );
+    
+            alert(response.data); // 서버 응답 메시지 표시
+        } catch (error) {
+            if (error.response) {
+                // 응답이 있는 경우
+                alert('북마크 추가 실패: ' + error.response.data.message || error.response.data);
+            } else {
+                // 응답이 없는 경우
+                alert('서버에 연결할 수 없습니다. 다시 시도해주세요.');
+            }
+        }
     };
+    
     
     
     
@@ -227,7 +231,7 @@ const JobSummaryPage = () => {
                         </thead>
                         <tbody>
                         {currentJobs.map((job) => {
-                            console.log(job);  // job 객체가 제대로 전달되는지 확인
+                            // console.log(job);  // job 객체가 제대로 전달되는지 확인
                             return (
                                 <tr key={job.id}>
                                     <td>{job.deadline}</td>
