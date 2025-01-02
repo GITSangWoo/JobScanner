@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+    background-color: #f0f0f0; /* 배경색 변경 */
 }
 
 .main-page {
@@ -10,17 +11,33 @@ body {
     align-items: center;
     justify-content: flex-start;
     height: 100vh;
-    background-color: #FFFFFF;
     padding-top: 20px; /* 메뉴와 버튼들이 잘 위치할 수 있도록 */
     overflow-x: hidden;
 }
 
+/* 헤더 스타일 */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333; /* 헤더 배경색 */
+    color: #fff; /* 헤더 텍스트 색상 */
+}
+
+.logo-container {
+    cursor: pointer;
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+}
+
 /* 상단 오른쪽 로그인/회원가입 버튼 */
 .top-right-buttons {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    display: flex; /* 버튼들이 수평으로 배치되도록 */
+    display: flex;
     gap: 10px; /* 버튼 간격을 조금 늘려서 더 깔끔하게 배치 */
 }
 
@@ -28,7 +45,7 @@ body {
     padding: 10px 25px;
     font-size: 15px !important;
     background-color: transparent !important; /* 배경색을 완전히 투명하게 */
-    color: #000; /* 기본 글씨 색상을 검정색으로 설정 */
+    color: #fff; /* 기본 글씨 색상을 흰색으로 설정 */
     border: none;  /* 테두리 없애기 */
     background: none !important; /* 배경색 없애기 (필요하면) */
     outline: none;
@@ -41,7 +58,7 @@ body {
 }
 
 .auth-button:hover {
-    color: #333; /* hover 시 글씨 색상 변경 */
+    color: #ccc; /* hover 시 글씨 색상 변경 */
 }
 
 .auth-button:focus {
@@ -50,24 +67,22 @@ body {
 
 /* 왼쪽 상단 더보기 버튼 */
 .top-left-menu {
-    position: absolute;
-    top: 20px;
-    left: 20px;
+    position: relative;
 }
 
 /* 메뉴 버튼 */
 .menu-button {
     padding: 10px 15px;
     font-size: 25px;
-    background-color: #F4EFE6;
-    color: #1C160C;
+    background-color: #444;
+    color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .menu-button:hover {
-    background-color: #BDBDBD;
+    background-color: #555;
 }
 
 /* 드롭다운 메뉴 */
@@ -155,29 +170,32 @@ body {
 /* =============================== */
 .toggle-buttons {
     display: flex;
-    gap: 10px;
     justify-content: center;
     margin-top: 20px; /* 버튼을 조금 더 위로 올리기 */
+    border: 2px solid #333; /* 원 테두리 사각형 */
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #fff;
 }
 
 .toggle-button {
+    flex: 1;
     padding: 10px 20px;
     font-size: 20px;
     border: none;
-    border-radius: 5px;
-    background-color: #EAEAEA;
-    color: black;
+    background-color: transparent;
+    color: #333;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 }
 
 .toggle-button:hover {
-    background-color: #D6D6D6; /* hover 시 배경색 변경 */
+    background-color: #f0f0f0; /* hover 시 배경색 변경 */
 }
 
 .toggle-button.active {
-    background-color: #BDBDBD;  /* 활성화 상태에서 색상 변경 */
-    color: white; /* 활성화 상태에서 글씨 색상 변경 */
+    background-color: #333;  /* 활성화 상태에서 배경색 변경 */
+    color: #fff; /* 활성화 상태에서 글씨 색상 변경 */
 }
 
 /* =============================== */
