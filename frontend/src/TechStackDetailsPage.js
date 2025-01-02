@@ -116,7 +116,7 @@ const TechStackDetailsPage = () => {
         try {
             const response = await axios.post(
                 'http://43.202.186.119:8972/user/bookmark/tech',
-                { techName },  // x-www-form-urlencoded 대신 JSON 형식으로 전송
+                qs.stringify({ techName }),  // x-www-form-urlencoded 대신 JSON 형식으로 전송
                 {
                   headers: {
                     Authorization: `Bearer ${accessToken}`,
