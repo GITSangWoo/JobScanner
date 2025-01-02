@@ -12,7 +12,7 @@ const JobSummaryPage = () => {
     const [currentPage, setCurrentPage] = useState(1); // 현재 페이지 상태
     const [itemsPerPage] = useState(20); // 한 페이지에 표시할 항목 수
     const [jobTitles] = useState(["BE", "FE", "DE", "DA", "MLE"]);
-    const [isBookmarked, setIsBookmarked] = useState(false); // 북마크 상태
+    const [bookmarkedJobs, setBookmarkedJobs] = useState({}); // 예: { 1: true, 2: false }
     const [nickname, setNickname] = useState(""); // 사용자 닉네임 상태
     const navigate = useNavigate();
 
@@ -57,7 +57,7 @@ const JobSummaryPage = () => {
         window.location.reload();
     };
 
-    const handleBookmark = async (job) => {  // job 객체를 매개변수로 전달
+    const handleBookmark = async (jobId) => {
         if (!checkLoginStatus()) {
             alert("로그인 후 이용하실 수 있습니다.");
             navigate("/login");
@@ -67,10 +67,9 @@ const JobSummaryPage = () => {
         const accessToken = Cookies.get('access_token');
     
         try {
-            const notice_id = job.id; // job 객체에서 id를 가져옴
             const response = await axios.post(
                 'http://43.202.186.119:8972/user/bookmark/notice',
-                { notice_id },
+                { notice_id: jobId },
                 {
                     headers: {
                         Authorization: `Bearer ${accessToken}`,
@@ -79,15 +78,18 @@ const JobSummaryPage = () => {
                 }
             );
     
-            alert(response.data); // 서버 응답 메시지 표시
+            // 응답에 따라 상태 업데이트
+            setBookmarkedJobs((prevState) => ({
+                ...prevState,
+                [jobId]: !prevState[jobId], // 토글 상태
+            }));
+    
+            alert(response.data);
         } catch (error) {
-            if (error.response) {
-                alert('북마크 추가 실패: ' + (error.response.data.message || error.response.data));
-            } else {
-                alert('서버에 연결할 수 없습니다. 다시 시도해주세요.');
-            }
+            alert('북마크 추가 실패: ' + (error.response?.data.message || error.message));
         }
     };
+    
     
     // 드롭다운 메뉴 열기/닫기 처리
     const toggleDropdown = () => {
@@ -241,12 +243,13 @@ const JobSummaryPage = () => {
                                     <td>{job.techStack}</td>
                                     <td>
                                         <span
-                                            className={`bookmark-button ${isBookmarked ? "active" : ""}`}
+                                            className={`bookmark-button ${bookmarkedJobs[job.id] ? "active" : ""}`}
                                             onClick={() => handleBookmark(job.id)}
                                         >
-                                            {isBookmarked ? "★" : "☆"}
+                                            {bookmarkedJobs[job.id] ? "★" : "☆"}
                                         </span>
                                     </td>
+
                                 </tr>
                             ))}
                         </tbody>
