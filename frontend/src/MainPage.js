@@ -198,37 +198,35 @@ const MainPage = () => {
 
     return (
         <div className="main-page">
-            <header className="header">
-                <div className="top-left-menu">
-                    <button className="menu-button" onClick={toggleDropdown}>
-                        ⁝⁝⁝
+            <div className="top-left-menu">
+                <button className="menu-button" onClick={toggleDropdown}>
+                    ⁝⁝⁝
+                </button>
+                <span className="header-logo">JobScanner</span>
+                <div className={`dropdown-menu ${isDropdownOpen ? "open" : ""}`}>
+                    <button className="dropdown-item" onClick={handleClick}>
+                        기술 스택 순위
                     </button>
-                    <span className="header-logo">JobScanner</span>
-                    <div className={`dropdown-menu ${isDropdownOpen ? "open" : ""}`}>
-                        <button className="dropdown-item" onClick={handleClick}>
-                            기술 스택 순위
-                        </button>
-                        <button className="dropdown-item" onClick={navigateToJobSummary}>
-                            채용 공고 요약
-                        </button>
-                        <hr />
-                        <button className="dropdown-item" onClick={handleMypage}>
-                            My Page
-                        </button>
-                    </div>
+                    <button className="dropdown-item" onClick={navigateToJobSummary}>
+                        채용 공고 요약
+                    </button>
+                    <hr />
+                    <button className="dropdown-item" onClick={handleMypage}>
+                        My Page
+                    </button>
                 </div>
-                <div className="header-right">
-                    <div className="top-right-buttons">
-                        {checkLoginStatus() ? (
-                            <span className="welcome-message">{nickname}님 환영합니다!</span>
-                        ) : (
-                            <button className="auth-button" onClick={handleLogin}>
-                                로그인
-                            </button>
-                        )}
-                    </div>
+            </div>
+            <div className="header-right">
+                <div className="top-right-buttons">
+                    {checkLoginStatus() ? (
+                        <span className="welcome-message">{nickname}님 환영합니다!</span>
+                    ) : (
+                        <button className="auth-button" onClick={handleLogin}>
+                            로그인
+                        </button>
+                    )}
                 </div>
-            </header>
+            </div>
             <hr className="header-divider" />
             <div className="logo-container-large">
                 <h1 className="logo-large">JobScanner</h1>
