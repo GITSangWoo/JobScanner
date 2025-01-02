@@ -35,13 +35,18 @@ body {
 }
 
 .menu-button {
-    padding: 10px 15px; /* 버튼 높이 조정 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
     font-size: 25px;
     background-color: #444;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 50%; /* 둥근 버튼 */
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .menu-button:hover {
@@ -55,6 +60,7 @@ body {
 
 .header-logo {
     font-size: 1.5rem; /* 헤더 로고 크기 조정 */
+    font-weight: bold; /* 두껍게 */
     color: #333;
     margin-right: 20px; /* 오른쪽 버튼과 간격 */
 }
@@ -62,6 +68,7 @@ body {
 /* 상단 오른쪽 로그인/회원가입 버튼 */
 .top-right-buttons {
     display: flex;
+    align-items: center;
     gap: 10px; /* 버튼 간격을 조금 늘려서 더 깔끔하게 배치 */
 }
 
