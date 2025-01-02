@@ -58,42 +58,36 @@ const JobSummaryPage = () => {
     };
 
     const handleBookmark = async (noticeId) => {
+        if (!noticeId) {
+            alert("유효한 noticeId가 아닙니다.");
+            return;
+        }
+    
         if (!checkLoginStatus()) {
             alert("로그인 후 이용하실 수 있습니다.");
             navigate("/login");
             return;
         }
     
-        const accessToken = Cookies.get('access_token'); // 토큰 가져오기
+        const accessToken = Cookies.get('access_token');
     
         try {
-            // 서버에 요청을 보낼 때 쿼리 스트링에 noticeId를 포함
             const response = await axios.post(
                 `http://43.202.186.119:8972/user/bookmark/notice?noticeId=${noticeId}`,
-                null, // 본문 데이터는 없으므로 null
+                null, // 본문 데이터는 필요 없음
                 {
                     headers: {
-                        Authorization: `Bearer ${accessToken}`, // 인증 헤더 추가
+                        Authorization: `Bearer ${accessToken}`,
                     },
                 }
             );
     
-            // 북마크 상태 업데이트
-            setBookmarkedJobs((prevState) => ({
-                ...prevState,
-                [noticeId]: !prevState[noticeId], // 현재 noticeId의 상태를 토글
-            }));
-    
-            alert(response.data.message || "북마크가 성공적으로 추가되었습니다.");
+            alert(response.data);
         } catch (error) {
-            // 에러 처리
-            alert(
-                `북마크 추가 실패: ${
-                    error.response?.data?.message || error.message || "알 수 없는 오류입니다."
-                }`
-            );
+            alert('북마크 추가 실패: ' + (error.response?.data.message || error.message));
         }
     };
+    
     
     
     
