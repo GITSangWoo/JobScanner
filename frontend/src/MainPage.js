@@ -257,39 +257,32 @@ const MainPage = () => {
                     </div>
                 )}
 
-                {/* 직무 테이블 */}
-                {activeButton && (
-                    <div className="job-tables">
-                        {categories.map((cat) => (
-                            <div key={cat} className="main-table-container">
-                                <h3>{getCategoryNameInKorean(cat)}</h3>
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>순위</th>
-                                            <th>{getCategoryNameInKorean(cat)}</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {jobData[cat]?.map((item, index) => (
-                                            <tr key={index}>
-                                                <td>{index + 1}</td>
-                                                <td onClick={() => navigateToTechStackDetails(item.techName)}>
-                                                    {item.techName}
-                                                </td>
-                                            </tr>
-                                        ))}
-                                    </tbody>
-                                </table>
-                            </div>
-                        ))}
-                    </div>
-                )}
+                {/* 직무 테이블 및 차트 */}
                 {activeButton && categories.map((category) => (
-                    <div key={category} className="tech-stack-category">
-                        <h4>{getCategoryNameInKorean(category)}</h4>
-                        {categoryData[category] ? (
-                            <div className="tech-stack-chart">
+                    <div key={category} className="category-section">
+                        <div className="main-table-container">
+                            <h3>{getCategoryNameInKorean(category)}</h3>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>순위</th>
+                                        <th>{getCategoryNameInKorean(category)}</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {jobData[category]?.map((item, index) => (
+                                        <tr key={index}>
+                                            <td>{index + 1}</td>
+                                            <td onClick={() => navigateToTechStackDetails(item.techName)}>
+                                                {item.techName}
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                        <div className="tech-stack-chart">
+                            {categoryData[category] ? (
                                 <Bar
                                     data={categoryData[category]}
                                     options={{
@@ -326,10 +319,10 @@ const MainPage = () => {
                                         },
                                     }}
                                 />
-                            </div>
-                        ) : (
-                            <p>데이터를 불러오는 중...</p>
-                        )}
+                            ) : (
+                                <p>데이터를 불러오는 중...</p>
+                            )}
+                        </div>
                     </div>
                 ))}
 

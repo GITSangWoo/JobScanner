@@ -462,6 +462,59 @@ body {
     max-width: 100%;
 }
 
+/* 카테고리 섹션 스타일 */
+.category-section {
+    display: flex;
+    justify-content: space-between; /* 테이블과 차트를 좌우로 배치 */
+    margin: 20px 0; /* 섹션 간격 */
+    width: 100%;
+    max-width: 1200px; /* 최대 너비 설정 */
+}
+
+/* 테이블 스타일 */
+.main-table-container {
+    flex: 1;
+    margin-right: 20px; /* 테이블과 차트 간격 */
+}
+
+.main-table {
+    width: 100%;
+    border-collapse: collapse;  /* 테이블 셀 간 경계선 없애기 */
+}
+
+/* 테이블 헤더 및 셀 텍스트 중앙 정렬 */
+.main-table th, .main-table td {
+    padding: 12px 15px;
+    text-align: center;  /* 수평 중앙 정렬 */
+    vertical-align: middle;  /* 수직 중앙 정렬 */
+    border-bottom: 1px solid #ddd;
+    font-size: 10px; /* 셀 안의 글씨 크기 조정 */
+}
+
+.main-table th {
+    background-color: black;
+    font-weight: bold;
+    color: #fff;
+}
+
+.main-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* 차트 스타일 */
+.tech-stack-chart {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    max-width: 2000px;
+    margin: 0 auto;
+    font-size: 15px;
+    width: 100%;
+    max-width: 100%;
+}
+
 /* =============================== */
 /*               반응형 스타일               */
 /* =============================== */
