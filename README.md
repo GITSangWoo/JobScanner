@@ -123,7 +123,7 @@
 
 ## 🏗️시스템 아키텍처
 ---
-![image](https://github.com/user-attachments/assets/16408473-cb5d-4b46-bc0f-f122bb94ef48)
+![image](https://github.com/user-attachments/assets/2b48fcfe-6c42-474e-a25c-7e657ab2ea68)
 
 <br/>
 
