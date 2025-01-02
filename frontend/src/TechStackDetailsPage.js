@@ -114,30 +114,26 @@ const TechStackDetailsPage = () => {
         }
       
         const accessToken = Cookies.get('access_token');
-      
+
         try {
             const response = await axios.post(
-                'http://43.202.186.119:8972/user/bookmark/tech',
-                { tech_name: techName },
-                { headers: { Authorization: `Bearer ${accessToken}` } }
+                'http://43.202.186.119:8972/user/bookmark/tech', // 서버의 URL
+                null, // 요청 본문을 비워둡니다.
+                {
+                    headers: { Authorization: `Bearer ${accessToken}` }, // Authorization 헤더 추가
+                    params: { techName: techName } // URL의 쿼리 파라미터로 전달
+                }
             );
-              
-          alert(response.data); // 서버 응답 메시지 표시
+            alert(response.data); // 서버 응답 메시지 표시
         } catch (error) {
-          if (error.response) {
-            // 응답이 있는 경우
-            alert('북마크 추가 실패: ' + error.response.data.message || error.response.data);
-          } else {
-            // 응답이 없는 경우
-            alert('서버에 연결할 수 없습니다. 다시 시도해주세요.');
-          }
+            if (error.response) {
+                // 응답이 있는 경우
+                alert('북마크 추가 실패: ' + error.response.data.message || error.response.data);
+            } else {
+                // 응답이 없는 경우
+                alert('서버에 연결할 수 없습니다. 다시 시도해주세요.');
+            }
         }
-      };
-
-    const getYouTubeThumbnailUrl = (url) => {
-        if (!url) return null;
-        const videoId = url.split("v=")[1];
-        return `https://img.youtube.com/vi/${videoId}/maxresdefault.jpg`;
     };
 
     if (!techStack) {
