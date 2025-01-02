@@ -49,6 +49,20 @@ def save_to_db(notice_id, tot_tech):
     )
     try:
         with connection.cursor() as cursor:
+            # 중복 확인 쿼리
+            check_query = """
+                SELECT COUNT(*)
+                FROM extract_tech_stack
+                WHERE notice_id = %s
+            """
+            cursor.execute(check_query, (notice_id,))
+            exists = cursor.fetchone()[0]
+
+            # 중복이면 스킵
+            if exists:
+                print(f"Notice ID {notice_id} already exists. Skipping...")
+                return
+
             # INSERT 쿼리 작성 (res_tech, qual_tech, pref_tech은 NULL)
             query = """
                 INSERT INTO extract_tech_stack (notice_id, tot_tech, res_tech, qual_tech, pref_tech)
