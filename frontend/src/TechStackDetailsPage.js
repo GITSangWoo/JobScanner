@@ -202,8 +202,8 @@ const TechStackDetailsPage = () => {
                 <div className="bookmark-container">
                     <button
                         className={`bookmark-button ${isBookmarked ? "active" : ""}`}
-                        onClick={handleBookmark(techStack.techName)}
-                    >
+                        onClick={() => handleBookmark(techStack.techName)}  // 익명 함수로 수정하여 이벤트 발생 시 호출되도록 변경
+>
                         {isBookmarked ? "★" : "☆"}
                     </button>
                 </div>
