@@ -112,53 +112,42 @@ const TechStackDetailsPage = () => {
             }
         };
 
-    const handleBookmark = async (techName) => {
-        if (!checkLoginStatus()) {
-          alert("로그인 후 이용하실 수 있습니다.");
-          navigate("/login");
-          return;
-        }
-
-        const accessToken = Cookies.get('access_token');
-
-        // techName이 객체라면, techName.techName 값을 추출
-        if (typeof techName === 'object' && techName !== null) {
-            techName = techName.techName || '';  // techName 객체에서 'techName' 속성 가져오기
-        }
-
-        // techName이 빈 값일 경우 처리
-        if (!techName) {
-            alert("기술 스택 이름을 입력해주세요.");
-            return;
-        }
-
-        console.log("Sending techName:", techName);  // techName이 올바르게 설정되었는지 확인
-
-        try {
-            const formData = new URLSearchParams();
-            formData.append('techName', techName);  // techName을 쿼리 파라미터로 추가
-            
-            const response = await axios.post(
-                'http://43.202.186.119:8972/user/bookmark/tech', // 서버에서 POST 요청을 받을 URL
-                formData,  // 본문에 데이터 전송
-                {
-                    headers: {
-                        Authorization: `Bearer ${accessToken}`,  // Authorization 헤더 추가
-                        'Content-Type': 'application/x-www-form-urlencoded', // 폼 데이터 형식으로 보냄
-                    },
-                }
-            );
-            alert(response.data); // 서버 응답 메시지 표시
-        } catch (error) {
-            if (error.response) {
-                // 응답이 있는 경우
-                alert('북마크 추가 실패: ' + error.response.data.message || error.response.data);
-            } else {
-                // 응답이 없는 경우
-                alert('서버에 연결할 수 없습니다. 다시 시도해주세요.');
+        const handleBookmark = async (techName) => {
+            if (!checkLoginStatus()) {
+                alert("로그인 후 이용하실 수 있습니다.");
+                navigate("/login");
+                return;
             }
-        }
-    };
+        
+            const accessToken = Cookies.get('access_token');
+        
+            if (!techName) {
+                alert("기술 스택 이름을 입력해주세요.");
+                return;
+            }
+        
+            console.log("Sending techName:", techName);  // techName이 올바르게 설정되었는지 확인
+        
+            try {
+                const response = await axios.post(
+                    'http://43.202.186.119:8972/user/bookmark/tech', // 서버에서 POST 요청을 받을 URL
+                    { techName: techName },  // JSON 형식으로 보내기
+                    {
+                        headers: {
+                            Authorization: `Bearer ${accessToken}`,  // Authorization 헤더 추가
+                            'Content-Type': 'application/json', // JSON 형식으로 보냄
+                        },
+                    }
+                );
+                alert(response.data); // 서버 응답 메시지 표시
+            } catch (error) {
+                if (error.response) {
+                    alert('북마크 추가 실패: ' + error.response.data.message || error.response.data);
+                } else {
+                    alert('서버에 연결할 수 없습니다. 다시 시도해주세요.');
+                }
+            }
+        };
 
     if (!techStack) {
         return <p>해당 기술 스택 정보를 찾을 수 없습니다.</p>;
