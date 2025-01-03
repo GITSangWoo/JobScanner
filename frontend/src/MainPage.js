@@ -5,7 +5,7 @@ import { Bar } from "react-chartjs-2";
 import { Chart as ChartJS, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from "chart.js";
 import "./MainPage.css";
 import Cookies from 'js-cookie';
-import ReactTooltip from 'react-tooltip'; // 수정된 부분
+import ReactTooltip from 'react-tooltip';
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend);
 
@@ -23,7 +23,7 @@ const MainPage = () => {
     const [activeButton, setActiveButton] = useState(null);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [sortedData, setSortedData] = useState([]);
-    const [isTableVisible, setIsTableVisible] = useState(true); // 테이블과 차트 전환을 위한 상태   
+    const [isTableVisible, setIsTableVisible] = useState(true);
     const [jobData, setJobData] = useState({
         responsibility: [],
         qualification: [],
@@ -34,18 +34,17 @@ const MainPage = () => {
     const [jobTitles] = useState(["BE", "FE", "DE", "DA", "MLE"]);
     const navigate = useNavigate();
     const [categoryData, setCategoryData] = useState({});
-    const [nickname, setNickname] = useState(""); // 사용자 닉네임 상태
-    const [jobDescription, setJobDescription] = useState(""); // job description 상태
+    const [nickname, setNickname] = useState("");
+    const [jobDescription, setJobDescription] = useState("");
 
     useEffect(() => {
         if (activeButton) {
-            // JPA로부터 데이터 받아오기
             categories.forEach(category => {
                 axios.get(`/dailyrank?jobtitle=${activeButton}&category=${category}`)
                     .then(response => {
                         const data = response.data.ranks;
                         if (data) {
-                            const sorted = data.sort((a, b) => b.count - a.count).slice(0, 7); // count 기준 내림차순 정렬 후 상위 7개 선택
+                            const sorted = data.sort((a, b) => b.count - a.count).slice(0, 7);
                             const labels = data.map(item => item.techName);
                             const counts = data.map(item => item.count);
 
@@ -108,20 +107,18 @@ const MainPage = () => {
             const response = await axios.get(`/dailyrank?jobtitle=${jobtitle}&category=${category}`);
             return response.data;
         } catch (error) {
-            // console.error(`Error fetching ${category} data`, error);
             return null;
         }
     };
 
     const fetchDataForDescription = async (jobtitle) => {
         try {
-            const response = await axios.get(`/jobrole?jobtitle=${jobtitle}`);
+            const response = await axios.get(`http://43.202.186.119:8972/jobrole?jobtitle=${jobtitle}`);
             console.log("API 응답 데이터:", response.data); // 디버깅 코드 추가
             return response.data;
         } catch (error) {
             console.error('Error fetching job role data:', error);
-            // 에러 발생 시 적절한 값을 반환하거나 에러를 다시 던짐
-            throw error;
+            return null; //수정한거거
         }
     };
 
@@ -134,33 +131,29 @@ const MainPage = () => {
             newJobData[category] = data?.ranks || [];
         }
 
-        // console.log("Fetched job data for all categories:", newJobData);
         setJobData(newJobData);
     };
 
     const handleButtonClick = async (button) => {
         if (activeButton === button) {
-            // 버튼이 이미 활성화된 경우 상태 초기화
             setActiveButton(null);
             setJobData({ total: [], responsibility: [], qualification: [], preferential: [] });
-            setJobDescription(""); // JobDescription 초기화
+            setJobDescription("");
         } else {
-            // 새로운 버튼 클릭 시
             setActiveButton(button);
             fetchDataForAllCategories(button);
-    
-            // JobDescription 가져오기
+
             try {
-                const data = await fetchDataForDescription(button); // API 호출
+                const data = await fetchDataForDescription(button);
                 if (data) {
                     console.log("설명 데이터:", data.roleDescription); // 디버깅 코드 추가
-                    setJobDescription(data.roleDescription); // 설명 업데이트
+                    setJobDescription(data.roleDescription);
                 } else {
-                    setJobDescription("Failed to fetch job description."); // 실패 시 메시지
+                    setJobDescription("Failed to fetch job description.");
                 }
             } catch (error) {
                 console.error("Error fetching job description:", error);
-                setJobDescription("Error fetching job description."); // 에러 시 메시지
+                setJobDescription("Error fetching job description.");
             }
         }
     };
@@ -199,7 +192,6 @@ const MainPage = () => {
     const handleLogin = () => {
         navigate("/login");
     };
-    
 
     return (
         <div className="main-page">
@@ -297,7 +289,7 @@ const MainPage = () => {
                                                 display: true,
                                             },
                                             legend: {
-                                                onClick: (e) => e.stopPropagation() // legend 클릭 시 기본 동작 무시
+                                                onClick: (e) => e.stopPropagation()
                                             }
                                         },
                                         scales: {
