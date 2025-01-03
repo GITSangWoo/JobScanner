@@ -192,7 +192,7 @@ const MyPage = () => {
                 onClick={() => toggleBookmark(tech, 'tech')}
                 className={`mypage-bookmark-button ${bookmarks.includes(tech.tech_name) ? 'bookmarked' : ''}`}
             >
-                {bookmarks.includes(tech.tech_name) ? '북마크 삭제' : '북마크 추가'}
+                {bookmarks.includes(tech.tech_name) ? '북마크 추가' : '북마크 삭제'}
             </button>
         </td>
     </tr>
@@ -227,7 +227,7 @@ const MyPage = () => {
                 onClick={() => toggleBookmark(job, 'job')}
                 className={`mypage-bookmark-button ${bookmarks.includes(job.noticeid) ? 'bookmarked' : ''}`}
             >
-                {bookmarks.includes(job.noticeid) ? '★' : '☆'}
+                {bookmarks.includes(job.noticeid) ? '북마크 추가' : '북마크 삭제'}
             </button>
         </td>
     </tr>
