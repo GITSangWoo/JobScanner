@@ -72,7 +72,7 @@ const JobSummaryPage = () => {
         try {
             const response = await axios.post(
                 'http://43.202.186.119:8972/user/bookmark/notice',
-                 noticeId , // 실제로 보내는 데이터 확인
+                { noticeId: noticeId }, // 실제로 보내는 데이터 확인
                 { headers: { Authorization: `Bearer ${accessToken}` } }
             );
     
