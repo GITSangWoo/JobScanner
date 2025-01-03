@@ -163,7 +163,11 @@ const MainPage = () => {
             }
         }
     };
-    
+
+    useEffect(() => {
+        console.log("activeButton:", activeButton);
+        console.log("jobDescription:", jobDescription);
+    }, [activeButton, jobDescription]);
 
     const handleClick = () => {
         navigate("/", { replace: true });
