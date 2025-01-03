@@ -118,7 +118,7 @@ const TechStackDetailsPage = () => {
           navigate("/login");
           return;
         }
-      
+
         const accessToken = Cookies.get('access_token');
 
         // techName이 객체라면, techName.techName 값을 추출
@@ -202,7 +202,7 @@ const TechStackDetailsPage = () => {
                 <div className="bookmark-container">
                     <button
                         className={`bookmark-button ${isBookmarked ? "active" : ""}`}
-                        onClick={handleBookmark}
+                        onClick={handleBookmark(techStack.techName)}
                     >
                         {isBookmarked ? "★" : "☆"}
                     </button>
