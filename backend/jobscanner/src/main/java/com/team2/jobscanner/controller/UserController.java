@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 // @CrossOrigin(origins = "http://43.202.186.119", allowedHeaders = "*", methods = {RequestMethod.GET, RequestMethod.POST})
-@CrossOrigin(origins = {"http://43.202.186.119","https://www.jobscanner.site" })
+@CrossOrigin(origins = {"http://43.202.186.119","http://www.jobscanner.site" })
 @RestController
 @RequestMapping("/user")
 public class UserController {

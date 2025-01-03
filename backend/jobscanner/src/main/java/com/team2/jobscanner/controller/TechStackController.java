@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = {"http://43.202.186.119","https://www.jobscanner.site" })
+@CrossOrigin(origins = {"http://43.202.186.119","http://www.jobscanner.site" })
 @RestController
 @RequestMapping("/techstack")
 public class TechStackController {

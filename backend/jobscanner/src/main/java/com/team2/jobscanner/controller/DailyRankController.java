@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.team2.jobscanner.dto.RankCategoryDTO;
 import com.team2.jobscanner.service.DailyRankService;
 
-@CrossOrigin(origins = {"http://43.202.186.119","https://www.jobscanner.site" })
+@CrossOrigin(origins = {"http://43.202.186.119","http://www.jobscanner.site" })
 @RestController
 public class DailyRankController {
 
