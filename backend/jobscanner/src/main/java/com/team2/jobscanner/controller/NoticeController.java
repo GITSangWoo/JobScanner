@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.team2.jobscanner.dto.NoticeDTO;
 import com.team2.jobscanner.service.NoticeService;
 
-@CrossOrigin(origins = "http://43.202.186.119")
+@CrossOrigin(origins = {"http://43.202.186.119","https://www.jobscanner.site" })
 @RestController
 public class NoticeController {
 
