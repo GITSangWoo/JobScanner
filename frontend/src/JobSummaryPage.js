@@ -68,25 +68,56 @@ const JobSummaryPage = () => {
     
         // 로그로 보내는 데이터 확인
         console.log("Sending bookmark request with data:", { noticeId });
-    
+
         try {
+            // POST 요청을 통해 북마크 추가/삭제 처리
             const response = await axios.post(
-                'http://43.202.186.119:8972/user/bookmark/notice',
-                { noticeId: noticeId }, // 실제로 보내는 데이터 확인
-                { headers: { Authorization: `Bearer ${accessToken}` } }
+                "http://43.202.186.119:8972/user/bookmark/notice",  // 해당 API 엔드포인트로 요청
+                null,  // 데이터가 필요 없다면 null, 아니면 실제 데이터 전달
+                {
+                    headers: {
+                        "Authorization": `Bearer ${accessToken}`,  // Authorization 헤더에 Bearer 토큰 설정
+                    },
+                    params: {
+                        noticeId: noticeId,  // noticeId를 URL 파라미터로 전달
+                    },
+                }
             );
-    
-            alert(response.data); // 서버 응답 메시지 표시
+        
+            // 성공적으로 응답을 받았다면
+            alert(response.data);  // 서버 응답 메시지 출력
+        
         } catch (error) {
+            // 에러 처리
             if (error.response) {
                 // 응답이 있는 경우
-                alert('북마크 추가 실패: ' + error.response.data.message || error.response.data);
+                alert('북마크 추가 실패: ' + (error.response.data.message || error.response.data));
             } else {
                 // 응답이 없는 경우
                 alert('서버에 연결할 수 없습니다. 다시 시도해주세요.');
             }
         }
     };
+    
+    //     try {
+    //         const response = await axios.post(
+    //             'http://43.202.186.119:8972/user/bookmark/notice',
+    //             { noticeId: noticeId }, // 실제로 보내는 데이터 확인
+    //             { headers: { Authorization: `Bearer ${accessToken}` } }
+    //         );
+    
+    //         alert(response.data); // 서버 응답 메시지 표시
+    //     } catch (error) {
+    //         if (error.response) {
+    //             // 응답이 있는 경우
+    //             alert('북마크 추가 실패: ' + error.response.data.message || error.response.data);
+    //         } else {
+    //             // 응답이 없는 경우
+    //             alert('서버에 연결할 수 없습니다. 다시 시도해주세요.');
+    //         }
+    //     }
+    // };
+    
     
     
     
