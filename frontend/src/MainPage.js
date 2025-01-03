@@ -116,7 +116,7 @@ const MainPage = () => {
     const fetchDataForDescription = async (jobtitle) => {
         try {
             const response = await axios.get(`/jobrole?jobtitle=${jobtitle}`);
-            // 서버에서 데이터를 성공적으로 받았다면, 반환
+            console.log("API 응답 데이터:", response.data); // 디버깅 코드 추가
             return response.data;
         } catch (error) {
             console.error('Error fetching job role data:', error);
@@ -153,6 +153,7 @@ const MainPage = () => {
             try {
                 const data = await fetchDataForDescription(button); // API 호출
                 if (data) {
+                    console.log("설명 데이터:", data.roleDescription); // 디버깅 코드 추가
                     setJobDescription(data.roleDescription); // 설명 업데이트
                 } else {
                     setJobDescription("Failed to fetch job description."); // 실패 시 메시지
