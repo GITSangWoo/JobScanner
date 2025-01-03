@@ -137,15 +137,15 @@ const TechStackDetailsPage = () => {
         try {
             const formData = new URLSearchParams();
             formData.append('techName', techName);  // techName을 쿼리 파라미터로 추가
-        
+            
             const response = await axios.post(
-                `http://43.202.186.119:8972/user/bookmark/tech`, // 쿼리 파라미터 제거
-                formData,  // formData로 보냄
+                'http://43.202.186.119:8972/user/bookmark/tech', // 서버에서 POST 요청을 받을 URL
+                formData,  // 본문에 데이터 전송
                 {
                     headers: {
-                        Authorization: `Bearer ${accessToken}`, // Authorization 헤더 추가
-                        'Content-Type': 'application/x-www-form-urlencoded',  // 폼 데이터 형식으로 보냄
-                    }
+                        Authorization: `Bearer ${accessToken}`,  // Authorization 헤더 추가
+                        'Content-Type': 'application/x-www-form-urlencoded', // 폼 데이터 형식으로 보냄
+                    },
                 }
             );
             alert(response.data); // 서버 응답 메시지 표시
@@ -159,7 +159,7 @@ const TechStackDetailsPage = () => {
             }
         }
     };
-    
+
     if (!techStack) {
         return <p>해당 기술 스택 정보를 찾을 수 없습니다.</p>;
     }
