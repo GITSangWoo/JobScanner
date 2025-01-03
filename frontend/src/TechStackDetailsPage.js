@@ -202,7 +202,7 @@ const TechStackDetailsPage = () => {
                 <div className="bookmark-container">
                     <button
                         className={`bookmark-button ${isBookmarked ? "active" : ""}`}
-                        onClick={handleBookmark}
+                        onClick={handleBookmark(techStack.techName)}
                     >
                         {isBookmarked ? "★" : "☆"}
                     </button>
