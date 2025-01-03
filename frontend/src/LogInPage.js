@@ -83,7 +83,7 @@ function KakaoLogin() {
       })
       .catch((error) => {
         console.error('서버 요청 에러:', error);
-        alert('서버 요청 중 오류가 발생했습니다.');
+        // alert('서버 요청 중 오류가 발생했습니다.');
       });
   };
 
