@@ -45,40 +45,76 @@ const MyPage = () => {
         setActiveToggle(tab);
     };
 
-    const toggleBookmark = (item) => {
-        setBookmarks(prevBookmarks => {
-            if (prevBookmarks.includes(item)) {
-                // 북마크가 이미 존재하면 삭제
-                return prevBookmarks.filter(bookmark => bookmark !== item);
-            } else {
-                // 북마크가 없으면 추가
-                return [...prevBookmarks, item];
+    const toggleBookmark = async (item, type) => {
+        try {
+            let response;
+            const token = Cookies.get('access_token');
+            
+            if (type === 'job') {
+                response = await fetch("/bookmark/notice", {
+                    method: "POST",
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: new URLSearchParams({ noticeId: item.noticeid })
+                });
+            } else if (type === 'tech') {
+                response = await fetch("/bookmark/tech", {
+                    method: "POST",
+                    headers: {
+                        Authorization: `Bearer ${token}`,
+                        "Content-Type": "application/x-www-form-urlencoded"
+                    },
+                    body: new URLSearchParams({ techName: item.tech_name })
+                });
             }
-        });
+    
+            if (response.ok) {
+                const message = await response.text();
+                console.log(message);  // 성공 메시지 출력
+                setBookmarks(prevBookmarks => {
+                    if (prevBookmarks.includes(item)) {
+                        return prevBookmarks.filter(bookmark => bookmark !== item);
+                    } else {
+                        return [...prevBookmarks, item];
+                    }
+                });
+            } else {
+                alert("북마크 처리 중 오류가 발생했습니다.");
+            }
+        } catch (error) {
+            console.error("북마크 추가/삭제 오류:", error);
+        }
     };
+    
 
-    // 사용자 정보를 가져오는 함수
     useEffect(() => {
         if (checkLoginStatus()) {
             const fetchUserData = async () => {
                 try {
                     const response = await fetch("/user/profile", {
-                        headers: { Authorization: `Bearer ${Cookies.get('access_token')}` },
+                        headers: {
+                            Authorization: `Bearer ${Cookies.get('access_token')}`,
+                        },
                     });
+    
                     if (response.ok) {
                         const data = await response.json();
-                        setNickname(data.name || "사용자"); // 닉네임 설정
-                        setEmail(data.email || "이메일 없음"); // 이메일 설정
+                        setNickname(data.name || "사용자");
+                        setEmail(data.email || "이메일 없음");
                         setTechStackBookmarks(data.techStackBookmarks || []); // 기술 스택 북마크
-                        setNoticeBookmarks(data.noticeBookmarks || []); // 공고 북마크
+                        setNoticeBookmarks(data.noticeBookmarks || []); // 채용 공고 북마크
+                        setBookmarks([...data.techStackBookmarks, ...data.noticeBookmarks]); // 북마크 상태 업데이트
                     }
                 } catch (error) {
-                    console.error("Error fetching user data:", error);
+                    console.error("유저 데이터 가져오기 오류:", error);
                 }
             };
             fetchUserData();
         }
     }, []);
+    
 
     return (
         <div className="my-page">
@@ -143,24 +179,24 @@ const MyPage = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {techStackBookmarks.map((tech, index) => (
-                                    <tr key={index}>
-                                        <td>
-                                            <a href={tech.docslink} target="_blank" rel="noopener noreferrer">
-                                                {tech.tech_name}
-                                            </a>
-                                            <p>{tech.description}</p>
-                                        </td>
-                                        <td>
-                                            <button
-                                                onClick={() => toggleBookmark(tech.tech_name)}
-                                                className={`mypage-bookmark-button ${bookmarks.includes(tech.tech_name) ? 'bookmarked' : ''}`}
-                                            >
-                                                {bookmarks.includes(tech.tech_name) ? '북마크 삭제' : '북마크 추가'}
-                                            </button>
-                                        </td>
-                                    </tr>
-                                ))}
+                            {techStackBookmarks.map((tech, index) => (
+    <tr key={index}>
+        <td>
+            <a href={tech.docslink} target="_blank" rel="noopener noreferrer">
+                {tech.tech_name}
+            </a>
+            <p>{tech.description}</p>
+        </td>
+        <td>
+            <button
+                onClick={() => toggleBookmark(tech, 'tech')}
+                className={`mypage-bookmark-button ${bookmarks.includes(tech.tech_name) ? 'bookmarked' : ''}`}
+            >
+                {bookmarks.includes(tech.tech_name) ? '북마크 삭제' : '북마크 추가'}
+            </button>
+        </td>
+    </tr>
+))}
                             </tbody>
                         </table>
                     )}
@@ -177,25 +213,25 @@ const MyPage = () => {
                                 </tr>
                             </thead>
                             <tbody>
-                                {noticeBookmarks.map((job) => (
-                                    <tr key={job.noticeid}>
-                                        <td>{job.company}</td>
-                                        <td>
-                                            <a href={job.orgurl} target="_blank" rel="noopener noreferrer">
-                                                {job.posttitle}
-                                            </a>
-                                        </td>
-                                        <td>{job.responsibility}</td>
-                                        <td>
-                                            <button
-                                                onClick={() => toggleBookmark(job.noticeid)}
-                                                className={`mypage-bookmark-button ${bookmarks.includes(job.noticeid) ? 'bookmarked' : ''}`}
-                                            >
-                                                {bookmarks.includes(job.noticeid) ? '★' : '☆'}
-                                            </button>
-                                        </td>
-                                    </tr>
-                                ))}
+                            {noticeBookmarks.map((job) => (
+    <tr key={job.noticeid}>
+        <td>{job.company}</td>
+        <td>
+            <a href={job.orgurl} target="_blank" rel="noopener noreferrer">
+                {job.posttitle}
+            </a>
+        </td>
+        <td>{job.responsibility}</td>
+        <td>
+            <button
+                onClick={() => toggleBookmark(job, 'job')}
+                className={`mypage-bookmark-button ${bookmarks.includes(job.noticeid) ? 'bookmarked' : ''}`}
+            >
+                {bookmarks.includes(job.noticeid) ? '★' : '☆'}
+            </button>
+        </td>
+    </tr>
+))}
                             </tbody>
                         </table>
                     )}
