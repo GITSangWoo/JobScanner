@@ -137,7 +137,7 @@ const TechStackDetailsPage = () => {
         try {
             const response = await axios.post(
                 'http://43.202.186.119:8972/user/bookmark/tech', // 서버의 URL
-                { techName }, // 요청 본문을 비워둡니다.
+                techName,
                 {
                     headers: { Authorization: `Bearer ${accessToken}` }, // Authorization 헤더 추가
                 }
