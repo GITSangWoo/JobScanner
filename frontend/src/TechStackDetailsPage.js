@@ -39,7 +39,7 @@ const TechStackDetailsPage = () => {
         if (checkLoginStatus()) {
             const fetchUserData = async () => {
                 try {
-                    const response = await fetch("/user/profile", {
+                    const response = await fetch("http://43.202.186.119:8972/user/profile", {
                         headers: { Authorization: `Bearer ${Cookies.get('access_token')}` },
                     });
                     if (response.ok) {

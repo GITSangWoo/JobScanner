@@ -87,7 +87,7 @@ const MainPage = () => {
             // 예: API 호출로 사용자 정보를 가져온다고 가정
             const fetchUserData = async () => {
                 try {
-                    const response = await fetch("/user/profile", {
+                    const response = await fetch("http://43.202.186.119:8972/user/profile", {
                         headers: { Authorization: `Bearer ${Cookies.get('access_token')}` },
                     });
                     if (response.ok) {
