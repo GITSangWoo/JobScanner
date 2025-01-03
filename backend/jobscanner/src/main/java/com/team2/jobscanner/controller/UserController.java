@@ -3,9 +3,6 @@ package com.team2.jobscanner.controller;
 import com.team2.jobscanner.dto.UserDTO;
 import com.team2.jobscanner.entity.User;
 import com.team2.jobscanner.service.UserService;
-
-import java.util.Map;
-
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -69,34 +66,17 @@ public class UserController {
         }
     }
 
-    // @PostMapping("/bookmark/tech")
-    // public ResponseEntity<?> addOrRemoveTechStackBookmark(@RequestHeader("Authorization") String authorization,
-    //                                                       @RequestParam String techName) {
-    //     try {
-    //         String accessToken = authorization.substring(7);  // "Bearer "를 제외한 토큰
-    //         boolean isAdded = userService.addOrRemoveTechStackBookmark(accessToken, techName);
-    //         return ResponseEntity.ok(isAdded ? "기술 스택이 성공적으로 북마크되었습니다." : "기술 스택 북마크가 성공적으로 해제되었습니다.");
-    //     } catch (Exception e) {
-    //         return ResponseEntity.status(500).body("기술 스택 북마크 처리 중 오류가 발생했습니다.");
-    //     }
-    // }
-
     @PostMapping("/bookmark/tech")
     public ResponseEntity<?> addOrRemoveTechStackBookmark(@RequestHeader("Authorization") String authorization,
-                                                      @RequestBody Map<String, String> techData) {
+                                                          @RequestParam String techName) {
         try {
             String accessToken = authorization.substring(7);  // "Bearer "를 제외한 토큰
-            String techName = techData.get("techName");  // JSON에서 techName 값을 가져옵니다.
-        
-            // 북마크 추가/삭제 로직
             boolean isAdded = userService.addOrRemoveTechStackBookmark(accessToken, techName);
-
             return ResponseEntity.ok(isAdded ? "기술 스택이 성공적으로 북마크되었습니다." : "기술 스택 북마크가 성공적으로 해제되었습니다.");
         } catch (Exception e) {
             return ResponseEntity.status(500).body("기술 스택 북마크 처리 중 오류가 발생했습니다.");
-      }
+        }
     }
-   
 
 }
 
