@@ -73,10 +73,20 @@ const MyPage = () => {
             if (response.ok) {
                 const message = await response.text();
                 console.log(message);  // 성공 메시지 출력
+                
+                // 북마크 삭제 및 추가 로직 수정
                 setBookmarks(prevBookmarks => {
-                    if (prevBookmarks.includes(item)) {
-                        return prevBookmarks.filter(bookmark => bookmark !== item);
+                    const isItemBookmarked = type === 'job'
+                        ? prevBookmarks.some(bookmark => bookmark.noticeid === item.noticeid)
+                        : prevBookmarks.some(bookmark => bookmark.tech_name === item.tech_name);
+    
+                    if (isItemBookmarked) {
+                        // 삭제하려는 북마크가 이미 있을 경우 제거
+                        return prevBookmarks.filter(bookmark => 
+                            type === 'job' ? bookmark.noticeid !== item.noticeid : bookmark.tech_name !== item.tech_name
+                        );
                     } else {
+                        // 북마크가 없으면 추가
                         return [...prevBookmarks, item];
                     }
                 });
@@ -87,6 +97,7 @@ const MyPage = () => {
             console.error("북마크 추가/삭제 오류:", error);
         }
     };
+    
     
 
     useEffect(() => {
