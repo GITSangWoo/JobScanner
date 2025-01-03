@@ -136,8 +136,8 @@ const TechStackDetailsPage = () => {
 
         try {
             const response = await axios.post(
-                'http://43.202.186.119:8972/user/bookmark/tech', // 서버의 URL
-                { techName: techName },
+                `http://43.202.186.119:8972/user/bookmark/tech?techName=${techName}`, // techName을 URL 쿼리 파라미터로 전달
+                null,  // 본문은 비워둡니다
                 {
                     headers: { Authorization: `Bearer ${accessToken}` }, // Authorization 헤더 추가
                 }
@@ -202,7 +202,7 @@ const TechStackDetailsPage = () => {
                 <div className="bookmark-container">
                     <button
                         className={`bookmark-button ${isBookmarked ? "active" : ""}`}
-                        onClick={handleBookmark(techStack.techName)}
+                        onClick={handleBookmark}
                     >
                         {isBookmarked ? "★" : "☆"}
                     </button>
