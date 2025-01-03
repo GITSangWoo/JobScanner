@@ -14,6 +14,9 @@ const TechStackDetailsPage = () => {
     const [isBookmarked, setIsBookmarked] = useState(false); // 북마크 상태
     const [nickname, setNickname] = useState(""); // 사용자 닉네임 상태
     const [linkPreviews, setLinkPreviews] = useState({}); // 링크 미리보기 상태
+    const [error, setError] = useState(""); // 에러 메시지를 저장하는 상태 추가
+    const [loading, setLoading] = useState(false); // 로딩 상태 추가
+    
     const handleClick = () => {
         navigate("/", { replace: true });
         window.location.reload();
@@ -113,6 +116,10 @@ const TechStackDetailsPage = () => {
         };
 
         const handleBookmark = async (techName) => {
+            setLoading(true);
+            setError(null);
+
+
             if (!checkLoginStatus()) {
                 alert("로그인 후 이용하실 수 있습니다.");
                 navigate("/login");
@@ -129,34 +136,32 @@ const TechStackDetailsPage = () => {
             console.log("Sending techName:", techName);  // techName이 올바르게 설정되었는지 확인
         
             try {
-      // POST 요청을 통해 기술 스택 북마크 추가/삭제 처리
-      const response = await axios.post(
-        "http://43.202.186.119:8972/user/bookmark/tech",
-        null,
-        {
-          headers: {
-            "Authorization": `Bearer ${accessToken}`,
-          },
-          params: {
-            techName: techName,
-          },
-        }
-      );
-
-      // 북마크 추가 또는 삭제된 경우 처리
-      if (response.data === "기술 스택이 성공적으로 북마크되었습니다.") {
-        setIsBookmarked(true);  // 기술 스택 북마크가 추가된 상태
-      } else {
-        setIsBookmarked(false);  // 기술 스택 북마크가 삭제된 상태
-      }
-      alert(response.data);  // 성공 또는 실패 메시지 표시
-    } catch (err) {
-      setError("기술 스택 북마크 처리 중 오류가 발생했습니다.");
-      console.error("기술 스택 북마크 처리 중 오류:", err);
-    } finally {
-      setLoading(false);  // 로딩 상태 종료
-    }
-  };
+                // POST 요청을 통해 기술 스택 북마크 추가/삭제 처리
+                const response = await axios.post(
+                  "http://43.202.186.119:8972/user/bookmark/tech",
+                  null,
+                  {
+                    headers: {
+                      "Authorization": `Bearer ${accessToken}`,
+                    },
+                    params: {
+                      techName: techName,
+                    },
+                  }
+                );
+        
+                // 북마크 추가 또는 삭제된 경우 처리
+                if (response.data === "기술 스택이 성공적으로 북마크되었습니다.") {
+                  setIsBookmarked(true);  // 기술 스택 북마크가 추가된 상태
+                } else {
+                  setIsBookmarked(false);  // 기술 스택 북마크가 삭제된 상태
+                }
+                alert(response.data);  // 성공 또는 실패 메시지 표시
+            } catch (err) {
+                setError("기술 스택 북마크 처리 중 오류가 발생했습니다.");
+                console.error("기술 스택 북마크 처리 중 오류:", err);
+            }
+        };
 
     if (!techStack) {
         return <p>해당 기술 스택 정보를 찾을 수 없습니다.</p>;
