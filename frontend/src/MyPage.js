@@ -51,7 +51,7 @@ const MyPage = () => {
             const token = Cookies.get('access_token');
             
             if (type === 'job') {
-                response = await fetch("/bookmark/notice", {
+                response = await fetch("/user/bookmark/notice", {
                     method: "POST",
                     headers: {
                         Authorization: `Bearer ${token}`,
@@ -60,7 +60,7 @@ const MyPage = () => {
                     body: new URLSearchParams({ noticeId: item.noticeid })
                 });
             } else if (type === 'tech') {
-                response = await fetch("/bookmark/tech", {
+                response = await fetch("/user/bookmark/tech", {
                     method: "POST",
                     headers: {
                         Authorization: `Bearer ${token}`,
