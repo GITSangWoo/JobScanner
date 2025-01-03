@@ -133,149 +133,26 @@
 ## 🔄KPT 회고
 
 ### ■ 김동욱
-<details>
-<summary>KEEP</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
-
-<details>
-<summary>PROBLEM</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
-
-
-<details>
-<summary>TRY</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
+- 백엔드와 프론트 개발은 배우지 않은 부분이 많다보니, 전체적으로 흘러가는 흐름을 이해하고 업무를 진행하는데 어려움이 있었다.
+- 채용 사이트마다 공고 포맷이 달라서 크롤링 작업에 대해 논의하고 작업하는데에 시간이 다소 많이 소요됐다.
+- 지금까지 배운 내용, 기술들을 바탕으로 무에서 유를 만들어 내는 프로젝트를 함으로써 기술의 역할과 용도의 이해도가 전반적으로 높아질 수 있었던 시간이었다.
 
 ### ■ 김도현
-<details>
-<summary>KEEP</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
-
-<details>
-<summary>PROBELM</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
-
-<details>
-<summary>TRY</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
 
 ### ■ 이상우
-<details>
-<summary>KEEP</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
-
-<details>
-<summary>PROBLEM</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
-
-<details>
-<summary>TRY</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
+- 프로젝트를 진행하면서 처음 접해보는 기술들을 도전적으로 수행해야 했었는데 앞으로 데이터 엔지니어 직무를 할 때 새로운 기술을 공부하고 도입해야하는 실무의 한 과정을 미리 경험해 본 것 같아서 한 단계 더 성장한 것 같다.
+- 기술적으로 한계가 있는 문제에 대해서 대처 방안을 찾아내서 대체해야 했는데, 결과적으로 대처 방안을 여러개 만들어 대비해놓아서  프로젝트를 진행할때 막혀도 다른 방향으로 나아갈 수 있어서 전체적으로 프로젝트를 완료하는데 문제가 없었다.
 
 ### ■ 이상훈
-<details>
-<summary>KEEP</summary>
-<div>
-<figure align="center">
-   <p></p>
- </figure>
-</div>
-</details>
 
-<details>
-<summary>PROBLEM</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
-
-<details>
-<summary>TRY</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
 
 ### ■ 조하영
-<details>
-<summary>KEEP</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
-
-<details>
-<summary>PROBLEM</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
-
-<details>
-<summary>TRY</summary>
-<div>
-<figure align="center">
-  <p></p>
- </figure>
-</div>
-</details>
-
-<br/>
+- 경험해봤던 백엔드와 프론트엔드 분야를 다른 기술을 이용하여 도전하니 한 단계 더 발전한 느낌이 들었다.
+- 시간 분배 및 분업이 빠릿빠릿하지 못해 프로젝트의 완성도가 떨어진 느낌이라 아쉬웠다. 또한 각 업무 간 이해도와 소통이 얼마나 중요한지 깨닫게 되었다.
+- 전 프로젝트에서는 로그인 상태를 세션으로 구현했는데, 이번에는 쿠키로 구현했던 것이 많은 지식과 경험이 되었다. 다만 쿠키를 관리하는 것을 조금 더 학습하면 더욱 효율적인 관리가 될 것 같다.
 
 ## 🔍최종 검토 및 개선
+
 
 
 
