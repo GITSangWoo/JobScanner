@@ -222,6 +222,12 @@ function KakaoLogin() {
     if (typeof window.Kakao !== 'undefined' && !window.Kakao.isInitialized()) {
       window.Kakao.init('9ae623834d6fbc0413f981285a8fa0d5'); // YOUR_APP_KEY
     }
+
+    // 페이지가 로드될 때 액세스 토큰이 만료되었는지 확인
+    const token = getCookie('access_token');
+    if (token) {
+      verifyAccessToken(token);
+    }
   }, []);
 
   // 카카오 로그인
@@ -239,10 +245,7 @@ function KakaoLogin() {
 
         // 액세스 토큰을 쿠키에 저장
         setCookie('access_token', accessToken);
-
-        // 쿠키에 저장된 access token 확인 (디버깅용)
-        const token = getCookie('access_token');
-        console.log('쿠키에서 가져온 Access Token:', token);
+        setCookie('refresh_token', refreshToken);
 
         // 서버로 액세스 토큰과 리프레시 토큰을 전송
         sendTokensToServer(accessToken, refreshToken);
@@ -277,7 +280,6 @@ function KakaoLogin() {
         })
         .catch((error) => {
           console.error('서버 요청 에러:', error);
-          // alert('서버 요청 중 오류가 발생했습니다.');
         });
   };
 
@@ -305,6 +307,40 @@ function KakaoLogin() {
         });
   };
 
+  // 액세스 토큰 만료 여부 확인
+  const verifyAccessToken = (token) => {
+    fetch('http://43.202.186.119:8972/login/verify', {
+      method: 'POST',
+      headers: {
+        'Authorization': `Bearer ${token}`,
+      },
+    })
+        .then((response) => {
+          if (!response.ok) {
+            // 액세스 토큰이 만료되었으면 쿠키 삭제
+            cookies.remove('access_token');
+            cookies.remove('refresh_token');
+            alert('세션이 만료되었습니다. 다시 로그인해주세요.');
+            navigate('/login'); // 로그인 페이지로 리디렉션
+          }
+        })
+        .catch((error) => {
+          console.error('토큰 검증 오류:', error);
+          cookies.remove('access_token');
+          cookies.remove('refresh_token');
+          alert('세션이 만료되었습니다. 다시 로그인해주세요.');
+          navigate('/login');
+        });
+  };
+
+  // 로그아웃
+  const logout = () => {
+    cookies.remove('access_token');
+    cookies.remove('refresh_token');
+    alert('로그아웃되었습니다.');
+    navigate('/login'); // 로그인 페이지로 리디렉션
+  };
+
   return (
       <div className="main-page">
         <div className="logo-container">
@@ -328,9 +364,13 @@ function KakaoLogin() {
               <pre>{JSON.stringify(userInfo, null, 2)}</pre>
             </div>
         )}
+
+        {/* 로그아웃 버튼 */}
+        <button onClick={logout} className="logout-button">
+          로그아웃
+        </button>
       </div>
   );
 }
 
 export default KakaoLogin;
-
