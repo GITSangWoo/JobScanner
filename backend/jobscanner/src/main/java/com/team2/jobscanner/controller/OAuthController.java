@@ -20,8 +20,7 @@ public class OAuthController {
 
     @Autowired
     private UserService userService;
-
-
+    
     @PostMapping("/kakao")
     public ResponseEntity<String> kakaologin(@RequestBody KakaoTokenDTO kakaoTokenDTO) {
         // 카카오 로그인에서 받은 액세스 토큰과 리프레시 토큰
@@ -50,4 +49,5 @@ public class OAuthController {
             return ResponseEntity.status(500).body("로그인 처리에 실패했습니다.");
         }
     }
+
 }
