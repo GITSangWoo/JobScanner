@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 
 
-@CrossOrigin(origins = {"http://43.202.186.119","http://www.jobscanner.site" })
+@CrossOrigin(origins = {"http://43.202.186.119","http://www.jobscanner.site" },allowCredentials = "true")
 @RequestMapping("/login")
 @RestController
 public class OAuthController {
