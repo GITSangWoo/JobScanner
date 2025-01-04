@@ -20,7 +20,7 @@ public class OAuthController {
 
     @Autowired
     private UserService userService;
-    
+
     @PostMapping("/kakao")
     public ResponseEntity<String> kakaologin(@RequestBody KakaoTokenDTO kakaoTokenDTO) {
         // 카카오 로그인에서 받은 액세스 토큰과 리프레시 토큰
