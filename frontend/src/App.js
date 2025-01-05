@@ -39,7 +39,7 @@ import MyPage from "./MyPage";
 import LoginHandler from "./LoginHandler";
 
 // 쿠키에서 액세스 토큰을 확인하고 만료된 경우 쿠키 삭제하는 함수
-const checkAccessTokenExpiry = async (accessToken, cookies) => {
+const checkAccessTokenExpiry = async (accessToken, cookies, navigate) => {
     const url = "https://kapi.kakao.com/v2/user/me";
 
     try {
