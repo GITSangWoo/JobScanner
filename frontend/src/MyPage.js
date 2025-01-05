@@ -82,9 +82,11 @@ const MyPage = () => {
     
                     if (isItemBookmarked) {
                         // 삭제하려는 북마크가 이미 있을 경우 제거
-                        return prevBookmarks.filter(bookmark => 
+                        const updatedBookmarks = prevBookmarks.filter(bookmark => 
                             type === 'job' ? bookmark.noticeid !== item.noticeid : bookmark.tech_name !== item.tech_name
                         );
+                        window.location.reload();  // 북마크 삭제 후 페이지 새로고침
+                        return updatedBookmarks;
                     } else {
                         // 북마크가 없으면 추가
                         return [...prevBookmarks, item];
@@ -97,6 +99,7 @@ const MyPage = () => {
             console.error("북마크 추가/삭제 오류:", error);
         }
     };
+    
 
     useEffect(() => {
         // 카카오 SDK 초기화 및 리디렉션 URL 저장

@@ -301,9 +301,9 @@ body {
 }
 
 .main-table th {
-    background-color: black;
+    background-color: #d9d9d9;
     font-weight: bold;
-    color: #fff;
+    color: black;
 }
 
 .main-table tr:hover {

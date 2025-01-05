@@ -191,6 +191,11 @@ const JobSummaryPage = () => {
         }
     }, [activeButton]);
 
+    // 처음 페이지가 로드될 때 BE 버튼을 활성화하도록 설정
+    useEffect(() => {
+        setActiveButton("BE");
+    }, []);
+
     // 페이지네이션 버튼 생성
     const pageNumbers = [];
     const totalPages = Math.ceil(jobData.length / itemsPerPage);
