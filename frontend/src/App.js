@@ -54,10 +54,12 @@ const checkAccessTokenExpiry = async (accessToken, cookies) => {
             // 만약 토큰이 만료되었다면
             console.log("액세스 토큰이 만료되었습니다.");
             cookies.remove("access_token", { path: "/" }); // 만료된 토큰 삭제
+            window.location.reload(); // 새로고침
         }
     } catch (error) {
         console.error("카카오 API 호출 오류:", error);
         cookies.remove("access_token", { path: "/" }); // 오류 발생 시 토큰 삭제
+        window.location.reload(); // 새로고침
     }
 };
 
