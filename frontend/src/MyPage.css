@@ -119,6 +119,7 @@ body {
     padding: 20px;
     height: 100%;
     margin-right: 10px;
+    text-align: center;
 }
 
 .bookmark-list h3 {
@@ -126,6 +127,14 @@ body {
     text-align: center;
     color: #333;
     margin-bottom: 15px;
+}
+
+.bookmark-list th {
+    background-color: #f4f4f4; /* 배경색 */
+    color: #333; /* 텍스트 색 */
+    font-weight: bold; /* 글씨 두껍게 */
+    padding: 10px; /* 패딩 */
+    text-align: center; /* 텍스트 중앙 정렬 */
 }
 
 /* 북마크 토글 버튼 스타일 */
