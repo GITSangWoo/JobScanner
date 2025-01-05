@@ -44,6 +44,7 @@ const MainPage = () => {
 
         // 로그인 요청 이전에 있던 페이지 URL을 sessionStorage에 저장
         const redirectUrl = window.location.pathname;  // 현재 페이지의 경로
+        console.log("Storing redirect URL:", redirectUrl);
         sessionStorage.setItem('redirectUrl', redirectUrl);  // 세션 스토리지에 저장
     }, []);
 
