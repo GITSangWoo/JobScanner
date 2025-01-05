@@ -258,9 +258,9 @@ const JobSummaryPage = () => {
             </div>
 
             {activeButton && jobData.length > 0 && (
-                <div className="table-container">
-                    <table>
-                        <thead>
+                <div className="summary-table-container">
+                    <table className="summary-table">
+                        <thead className="summary-thead">
                             <tr>
                                 <th>마감일</th>
                                 <th>회사 이름</th>
@@ -272,7 +272,7 @@ const JobSummaryPage = () => {
                                 <th>북마크</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody className="summary-tbody">
                         {currentJobs.map((job) => {
                             // console.log(job);  // job 객체가 제대로 전달되는지 확인
                             return (

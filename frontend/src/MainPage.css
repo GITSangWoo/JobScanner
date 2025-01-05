@@ -282,11 +282,13 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 계산 */
+    text-align: center;
 }
 
 .main-table {
     width: 100%;
     border-collapse: collapse;  /* 테이블 셀 간 경계선 없애기 */
+    margin: auto;
 }
 
 /* 테이블 헤더 및 셀 텍스트 중앙 정렬 */

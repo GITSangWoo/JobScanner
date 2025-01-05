@@ -85,42 +85,45 @@ body {
 }
 
 /* 테이블 스타일 */
-.table-container {
+.summary-table-container {
     width: 100%;
     max-width: 1500px;
     overflow-x: auto;
     margin-top: 20px;
     background-color: transparent; /* 배경을 투명으로 설정 */
     border-radius: 10px;
+    text-align: center;
     box-shadow: none; /* 그림자도 제거 */
 }
 
-.table {
+.summary-table {
     width: 100%;
     border-collapse: collapse;
     border: none; /* 테이블의 테두리 제거 */
+    text-align: center;
 }
 
-.thead {
+.summary-thead {
     background-color: transparent; /* 배경을 투명으로 설정 */
     color: #fff;
+    font-weight: bold;
 }
 
-.thead th {
+.summary-thead th {
     padding: 10px;
     text-align: center;
     font-size: 12px !important;
 }
 
-.tbody tr:nth-child(even) {
+.summary-tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 
-.tbody tr:hover {
+.summary-tbody tr:hover {
     background-color: #f1f1f1;
 }
 
-.td {
+.summary-td {
     padding: 15px;
     font-size: 10px !important;
     white-space: nowrap !important;

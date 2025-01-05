@@ -49,6 +49,22 @@ const MainPage = () => {
     }, []);
 
     useEffect(() => {
+        setActiveButton("BE");
+        fetchDataForAllCategories("BE");
+        fetchDataForDescription("BE").then(data => {
+            if (data) {
+                setJobDescription(data.roleDescription);
+            } else {
+                setJobDescription("Failed to fetch job description.");
+            }
+        }).catch(error => {
+            console.error("Error fetching job description:", error);
+            setJobDescription("Error fetching job description.");
+        });
+    }, []);
+    
+
+    useEffect(() => {
         if (activeButton) {
             categories.forEach(category => {
                 axios.get(`/dailyrank?jobtitle=${activeButton}&category=${category}`)
@@ -147,25 +163,24 @@ const MainPage = () => {
 
     const handleButtonClick = async (button) => {
         if (activeButton === button) {
-            setActiveButton(null);
-            setJobData({ total: [], responsibility: [], qualification: [], preferential: [] });
-            setJobDescription("");
-        } else {
-            setActiveButton(button);
-            fetchDataForAllCategories(button);
-
-            try {
-                const data = await fetchDataForDescription(button);
-                if (data) {
-                    console.log("설명 데이터:", data.roleDescription); // 디버깅 코드 추가
-                    setJobDescription(data.roleDescription);
-                } else {
-                    setJobDescription("Failed to fetch job description.");
-                }
-            } catch (error) {
-                console.error("Error fetching job description:", error);
-                setJobDescription("Error fetching job description.");
+            // 활성화된 버튼 클릭 시 아무 변화 없게 처리
+            return;
+        }
+    
+        // 다른 버튼이 클릭되었을 경우 처리
+        setActiveButton(button);
+        fetchDataForAllCategories(button);
+    
+        try {
+            const data = await fetchDataForDescription(button);
+            if (data) {
+                setJobDescription(data.roleDescription);
+            } else {
+                setJobDescription("Failed to fetch job description.");
             }
+        } catch (error) {
+            console.error("Error fetching job description:", error);
+            setJobDescription("Error fetching job description.");
         }
     };
 
@@ -270,14 +285,14 @@ const MainPage = () => {
                     <div key={category} className="category-section">
                         <div className="main-table-container">
                             <h3>{getCategoryNameInKorean(category)}</h3>
-                            <table>
-                                <thead>
+                            <table className="main-table">
+                                <thead className="main-table">
                                     <tr>
                                         <th>순위</th>
                                         <th>{getCategoryNameInKorean(category)}</th>
                                     </tr>
                                 </thead>
-                                <tbody>
+                                <tbody className="main-table">
                                     {jobData[category]?.map((item, index) => (
                                         <tr key={index}>
                                             <td>{index + 1}</td>

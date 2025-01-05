@@ -192,71 +192,97 @@ const MyPage = () => {
                     </div>
 
                     {/* 기술 스택 테이블 */}
-                    {activeToggle === 'tech' && (
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>기술 스택</th>
-                                    <th>북마크</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            {techStackBookmarks.map((tech, index) => (
-    <tr key={index}>
-        <td>
-            <a href={tech.docslink} target="_blank" rel="noopener noreferrer">
-                {tech.tech_name}
-            </a>
-            <p>{tech.description}</p>
-        </td>
-        <td>
-            <button
-                onClick={() => toggleBookmark(tech, 'tech')}
-                className={`mypage-bookmark-button ${bookmarks.includes(tech.tech_name) ? 'bookmarked' : ''}`}
-            >
-                {bookmarks.includes(tech.tech_name) ? '북마크 추가' : '북마크 삭제'}
-            </button>
-        </td>
-    </tr>
-))}
-                            </tbody>
-                        </table>
-                    )}
+{/* 기술 스택 테이블 */}
+{activeToggle === 'tech' && (
+    <div>
+        {techStackBookmarks.length === 0 ? (
+            <p>저장된 북마크가 없습니다.</p>
+        ) : (
+            <table>
+                <thead>
+                    <tr>
+                        <th>기술 스택</th>
+                        <th>북마크</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {techStackBookmarks.map((tech, index) => (
+                        <tr key={index}>
+                            <td>
+                                <a href={tech.docslink} target="_blank" rel="noopener noreferrer">
+                                    {tech.tech_name}
+                                </a>
+                                <p>{tech.description}</p>
+                            </td>
+                            <td>
+                                <button
+                                    onClick={() => toggleBookmark(tech, 'tech')}
+                                    className={`mypage-bookmark-button ${
+                                        bookmarks.some((bookmark) => bookmark.tech_name === tech.tech_name)
+                                            ? 'bookmarked'
+                                            : ''
+                                    }`}
+                                >
+                                    {bookmarks.some((bookmark) => bookmark.tech_name === tech.tech_name)
+                                        ? '북마크 삭제'
+                                        : '북마크 추가'}
+                                </button>
+                            </td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        )}
+    </div>
+)}
 
-                    {/* 채용 공고 테이블 */}
-                    {activeToggle === 'job' && (
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>회사명</th>
-                                    <th>공고 제목</th>
-                                    <th>상세보기</th>
-                                    <th>북마크</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            {noticeBookmarks.map((job) => (
-    <tr key={job.noticeid}>
-        <td>{job.company}</td>
-        <td>
-            <a href={job.orgurl} target="_blank" rel="noopener noreferrer">
-                {job.posttitle}
-            </a>
-        </td>
-        <td>{job.responsibility}</td>
-        <td>
-            <button
-                onClick={() => toggleBookmark(job, 'job')}
-                className={`mypage-bookmark-button ${bookmarks.includes(job.noticeid) ? 'bookmarked' : ''}`}
-            >
-                {bookmarks.includes(job.noticeid) ? '북마크 추가' : '북마크 삭제'}
-            </button>
-        </td>
-    </tr>
-))}
-                            </tbody>
-                        </table>
-                    )}
+{/* 채용 공고 테이블 */}
+{activeToggle === 'job' && (
+    <div>
+        {noticeBookmarks.length === 0 ? (
+            <p>저장된 북마크가 없습니다.</p>
+        ) : (
+            <table>
+                <thead>
+                    <tr>
+                        <th>회사명</th>
+                        <th>공고 제목</th>
+                        <th>상세보기</th>
+                        <th>북마크</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {noticeBookmarks.map((job) => (
+                        <tr key={job.noticeid}>
+                            <td>{job.company}</td>
+                            <td>
+                                <a href={job.orgurl} target="_blank" rel="noopener noreferrer">
+                                    {job.posttitle}
+                                </a>
+                            </td>
+                            <td>{job.responsibility}</td>
+                            <td>
+                                <button
+                                    onClick={() => toggleBookmark(job, 'job')}
+                                    className={`mypage-bookmark-button ${
+                                        bookmarks.some((bookmark) => bookmark.noticeid === job.noticeid)
+                                            ? 'bookmarked'
+                                            : ''
+                                    }`}
+                                >
+                                    {bookmarks.some((bookmark) => bookmark.noticeid === job.noticeid)
+                                        ? '북마크 삭제'
+                                        : '북마크 추가'}
+                                </button>
+                            </td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        )}
+    </div>
+)}
+
                 </div>
             </div>
         </div>
