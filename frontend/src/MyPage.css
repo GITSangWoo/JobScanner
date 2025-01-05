@@ -227,5 +227,6 @@ table tr:hover {
 
 .mypage-url-button {
     background-color: transparent;
-    font-size: 15px;
+    font-size: 20px;
+    border: none;
 }
