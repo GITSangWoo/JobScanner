@@ -45,6 +45,10 @@ const MyPage = () => {
         setActiveToggle(tab);
     };
 
+    const navigateToTechStackDetails = (techStackName) => {
+        navigate(`/details/${techStackName}`);
+    };
+
     const toggleBookmark = async (item, type) => {
         try {
             let response;
@@ -204,9 +208,9 @@ const MyPage = () => {
                     {techStackBookmarks.map((tech, index) => (
                         <tr key={index}>
                             <td>
-                                <a href={`https://www.jobscanner.site/details/${tech.tech_name}`} target="_blank" rel="noopener noreferrer">
+                                <button onClick={() => navigateToTechStackDetails(tech.tech_name)}>
                                     {tech.tech_name}
-                                </a>
+                                </button>
                                 <p>{tech.description}</p>
                             </td>
                             <td>
