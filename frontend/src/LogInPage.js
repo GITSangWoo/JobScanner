@@ -12,7 +12,7 @@ function KakaoLogin() {
 
   const handleRedirect = () => {
     navigate("/", { replace: true });
-    window.location.reload(); // 페이지 새로고침
+    //window.location.reload(); // 페이지 새로고침
   };
 
   // 쿠키에 값을 설정하는 함수
