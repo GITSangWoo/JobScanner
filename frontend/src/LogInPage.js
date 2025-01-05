@@ -89,7 +89,7 @@ function KakaoLogin() {
         });
   };
 
-  // 유저 정보 가져오기
+  // 유저 정보 가져오기 (로그인페이지에서 필요한지 모르겠음)
   const getUserInfo = () => {
     // 쿠키에서 액세스 토큰 가져오기
     const token = getCookie('access_token');
