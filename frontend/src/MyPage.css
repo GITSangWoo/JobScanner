@@ -115,7 +115,7 @@ body {
 
 /* 북마크 목록 스타일 */
 .bookmark-list {
-    width: 70%; /* 오른쪽 영역 */
+    width: 90%; /* 오른쪽 영역 */
     padding: 20px;
     height: 100%;
     margin-right: 10px;
