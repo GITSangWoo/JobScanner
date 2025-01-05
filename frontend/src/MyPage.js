@@ -204,7 +204,7 @@ const MyPage = () => {
                     {techStackBookmarks.map((tech, index) => (
                         <tr key={index}>
                             <td>
-                                <a href={tech.docslink} target="_blank" rel="noopener noreferrer">
+                                <a href={`https://www.jobscanner.site/details/${tech.tech_name}`} target="_blank" rel="noopener noreferrer">
                                     {tech.tech_name}
                                 </a>
                                 <p>{tech.description}</p>
