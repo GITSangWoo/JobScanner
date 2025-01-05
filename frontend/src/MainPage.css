@@ -490,7 +490,7 @@ body {
     text-align: center;  /* 수평 중앙 정렬 */
     vertical-align: middle;  /* 수직 중앙 정렬 */
     border-bottom: 1px solid #ddd;
-    font-size: 10px; /* 셀 안의 글씨 크기 조정 */
+    font-size: 20px; /* 셀 안의 글씨 크기 조정 */
 }
 
 .main-table th {

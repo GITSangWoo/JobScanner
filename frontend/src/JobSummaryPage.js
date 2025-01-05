@@ -277,7 +277,7 @@ const JobSummaryPage = () => {
                                 <th>북마크</th>
                             </tr>
                         </thead>
-                        <tbody className="summary-tbody">
+                        <tbody className="summary-td">
                         {currentJobs.map((job) => {
                             // console.log(job);  // job 객체가 제대로 전달되는지 확인
                             return (
