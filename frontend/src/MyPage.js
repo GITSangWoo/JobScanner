@@ -44,7 +44,7 @@ const MyPage = () => {
     const toggleTab = (tab) => {
         setActiveToggle(tab);
     };
-
+    
     const navigateToTechStackDetails = (techStackName) => {
         navigate(`/details/${techStackName}`);
     };
@@ -208,7 +208,7 @@ const MyPage = () => {
                     {techStackBookmarks.map((tech, index) => (
                         <tr key={index}>
                             <td>
-                                <button onClick={() => navigateToTechStackDetails(tech.tech_name)}>
+                                <button className="mypage-url-button" onClick={() => navigateToTechStackDetails(tech.tech_name)}>
                                     {tech.tech_name}
                                 </button>
                                 <p>{tech.description}</p>
