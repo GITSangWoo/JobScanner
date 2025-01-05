@@ -67,7 +67,7 @@
 ![직무별 채용 공고 요약](https://github.com/user-attachments/assets/2eedf673-0f47-4d68-951e-e819f3d2fbbd)
 
 
-### ■ 배포 URL [[바로가기]](http://43.202.186.119/)
+### ■ 배포 URL [[joscanner.site 바로가기]](http://www.jobscanner.site/)
 ### ■ 팀 Notion [[바로가기]](https://www.notion.so/14225f9eafe9801cb369d2b274b026cb?v=14225f9eafe981fbb896000c164c89ef&pvs=4)
 
 <br/>
@@ -156,7 +156,21 @@
 
 ## 🔍최종 검토 및 개선
 
+### 아쉬운 점
+- 개발 작업에 대한 구체적인 계획 수립 미흡
+- Crontab → Airflow을 사용해보지 못한 아쉬움
+- 전체 프로젝트 시간의 부족으로 UI/UX 개선에 미흡한 아쉬움
 
+### 향후 계획 및 아이디어
+- **Airflow 사용**
+    - 크롤링 및 전처리 스케줄링 → Airflow
+- **UI/UX 개선**
+- **기술 검색**
+    -  해당 기술을 포함하는 공고 노출
+    -  해당 기술에 대한 정보 페이지(인프런, 부트캠프 신청 url 추가)
+- **기술 순위 카테고리 추가**
+    - 연봉별
+    - 신입/경력별
 
 
 
