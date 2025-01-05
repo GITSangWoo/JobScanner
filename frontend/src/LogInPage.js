@@ -10,9 +10,12 @@ function KakaoLogin() {
   const navigate = useNavigate();
   const cookies = new Cookies();
 
+  // 로그인 후 리디렉션
   const handleRedirect = () => {
-    navigate("/", { replace: true });
-    //window.location.reload(); // 페이지 새로고침
+    // sessionStorage에서 이전 페이지 URL 가져오기
+    const redirectUrl = sessionStorage.getItem('redirectUrl') || '/';  // 기본적으로 루트 페이지로 리디렉션
+    navigate(redirectUrl, { replace: true });
+    sessionStorage.removeItem('redirectUrl'); // 리디렉션 후 세션 스토리지에서 URL 제거
   };
 
   // 쿠키에 값을 설정하는 함수
@@ -30,6 +33,10 @@ function KakaoLogin() {
     if (typeof window.Kakao !== 'undefined' && !window.Kakao.isInitialized()) {
       window.Kakao.init('9ae623834d6fbc0413f981285a8fa0d5'); // YOUR_APP_KEY
     }
+
+    // 로그인 요청 이전에 있던 페이지 URL을 sessionStorage에 저장
+    const redirectUrl = window.location.pathname;  // 현재 페이지의 경로
+    sessionStorage.setItem('redirectUrl', redirectUrl);  // 세션 스토리지에 저장
   }, []);
 
   // 카카오 로그인
@@ -55,7 +62,7 @@ function KakaoLogin() {
         // 서버로 액세스 토큰과 리프레시 토큰을 전송
         sendTokensToServer(accessToken, refreshToken);
 
-        // 로그인 후 루트 페이지로 리디렉션
+        // 로그인 후 리디렉션
         handleRedirect();
       },
       fail: (err) => {
