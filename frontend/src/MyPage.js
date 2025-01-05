@@ -169,16 +169,8 @@ const MyPage = () => {
                 <h1 className="logo">JobScanner</h1>
             </div>
 
-            <div className="user-info">
-                <div className="social-login-info">
-                    <div className="social-login-info-box">
-                        <p>Email: {email}</p>
-                        <p>Name: {nickname}</p>
-                    </div>
-                </div>
-
                 <div className="bookmark-list">
-                    <h3>북마크 목록</h3>
+                    <h3>{nickname}님의 북마크 목록입니다.</h3>
                     <div className="bookmark-toggle-buttons">
                         <button
                             className={`bookmark-toggle-button ${activeToggle === 'tech' ? 'active' : ''}`}
@@ -287,7 +279,6 @@ const MyPage = () => {
 )}
 
                 </div>
-            </div>
         </div>
     );
 };

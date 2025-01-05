@@ -112,34 +112,12 @@ body {
     gap: 50px;
 }
 
-/* 소셜 로그인 계정 정보를 위한 스타일 */
-.social-login-info {
-    width: 25%; /* 왼쪽 영역 */
-    height: 40%;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.social-login-info-box {
-    padding: 20px;
-    height: 80%;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    color: #666;
-    font-size: 16px;
-}
 
 /* 북마크 목록 스타일 */
 .bookmark-list {
     width: 70%; /* 오른쪽 영역 */
-    background-color: #ffffff;
     padding: 20px;
     height: 100%;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 10px;
 }
 
