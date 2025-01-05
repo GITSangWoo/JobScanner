@@ -323,12 +323,18 @@ const MainPage = () => {
                                                 title: {
                                                     display: true,
                                                     text: 'Tech Stack',
+                                                    font: {
+                                                        weight: 'bold',
+                                                    },
                                                 },
                                             },
                                             y: {
                                                 title: {
                                                     display: true,
                                                     text: 'Count',
+                                                    font: {
+                                                        weight: 'bold',
+                                                    },
                                                 },
                                                 min: 0,
                                                 ticks: {
