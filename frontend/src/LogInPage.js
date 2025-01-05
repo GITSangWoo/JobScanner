@@ -30,16 +30,16 @@ function KakaoLogin() {
     return cookies.get(name);
   };
 
-  // 카카오 API 초기화
-  useEffect(() => {
-    if (typeof window.Kakao !== 'undefined' && !window.Kakao.isInitialized()) {
-      window.Kakao.init('9ae623834d6fbc0413f981285a8fa0d5'); // YOUR_APP_KEY
-    }
-
-    // 로그인 요청 이전에 있던 페이지 URL을 sessionStorage에 저장
-    const redirectUrl = window.location.pathname;  // 현재 페이지의 경로
-    sessionStorage.setItem('redirectUrl', redirectUrl);  // 세션 스토리지에 저장
-  }, []);
+  // // 카카오 API 초기화
+  // useEffect(() => {
+  //   if (typeof window.Kakao !== 'undefined' && !window.Kakao.isInitialized()) {
+  //     window.Kakao.init('9ae623834d6fbc0413f981285a8fa0d5'); // YOUR_APP_KEY
+  //   }
+  //
+  //   // 로그인 요청 이전에 있던 페이지 URL을 sessionStorage에 저장
+  //   const redirectUrl = window.location.pathname;  // 현재 페이지의 경로
+  //   sessionStorage.setItem('redirectUrl', redirectUrl);  // 세션 스토리지에 저장
+  // }, []);
 
   // 카카오 로그인
   const kakaoLogin = () => {
