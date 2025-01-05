@@ -2,10 +2,11 @@ import React, { useState, useEffect } from 'react';
 import './LogInPage.css';
 import { useNavigate } from 'react-router-dom';
 import { Cookies } from 'react-cookie';
+import MainPage from "./MainPage";
 
 function KakaoLogin() {
-  const [accessToken, setAccessToken] = useState('');
-  const [refreshToken, setRefreshToken] = useState('');
+  // const [accessToken, setAccessToken] = useState('');
+  // const [refreshToken, setRefreshToken] = useState('');
   const [userInfo, setUserInfo] = useState(null);
   const navigate = useNavigate();
   const cookies = new Cookies();
@@ -14,6 +15,7 @@ function KakaoLogin() {
   const handleRedirect = () => {
     // sessionStorage에서 이전 페이지 URL 가져오기
     const redirectUrl = sessionStorage.getItem('redirectUrl') || '/';  // 기본적으로 루트 페이지로 리디렉션
+    console.log("Redirecting to:", redirectUrl);
     navigate(redirectUrl, { replace: true });
     sessionStorage.removeItem('redirectUrl'); // 리디렉션 후 세션 스토리지에서 URL 제거
   };

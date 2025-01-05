@@ -22,6 +22,17 @@ const JobSummaryPage = () => {
         return !!accessToken; // 토큰이 있으면 true, 없으면 false
     };
 
+    // 카카오 SDK 초기화 및 리디렉션 URL 저장
+    useEffect(() => {
+        if (typeof window.Kakao !== "undefined" && !window.Kakao.isInitialized()) {
+            window.Kakao.init("9ae623834d6fbc0413f981285a8fa0d5"); // YOUR_APP_KEY
+        }
+
+        // 로그인 요청 이전에 있던 페이지 URL을 sessionStorage에 저장
+        const redirectUrl = window.location.pathname; // 현재 페이지의 경로
+        sessionStorage.setItem("redirectUrl", redirectUrl); // 세션 스토리지에 저장
+    }, []);
+
     // 사용자 정보를 가져오는 함수
     useEffect(() => {
         if (checkLoginStatus()) {
