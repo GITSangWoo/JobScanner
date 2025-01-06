@@ -53,18 +53,33 @@
  
 ## 👀Demo
 ### ■ 시연 Video
-- **기술 스택 순위 확인**
+- **직무 설명 및 기술 스택 순위**
   
-![기술 스택 순위 gif](https://github.com/user-attachments/assets/969f745f-f689-44e6-846e-f91481d13873)
-
-- **기술 정보 상세보기**
-
-![기술 정보 상세보기](https://github.com/user-attachments/assets/1dc80bcc-0a5c-4f17-993e-bff6e5446600)
+![직무 설명 및 기술 스택 순위](https://github.com/user-attachments/assets/2553e1f3-acb7-4b06-9d19-3b617cc7c520)
 
 
-- **직무별 공고 요약 확인**
+- **기술 스택 정보 상세 보기**
 
-![직무별 채용 공고 요약](https://github.com/user-attachments/assets/2eedf673-0f47-4d68-951e-e819f3d2fbbd)
+![기술 스택 정보 상세 보기](https://github.com/user-attachments/assets/1926910e-283f-44c4-8073-a5c39f76b76b)
+
+
+- **카카오 로그인**
+
+![카카오 로그인](https://github.com/user-attachments/assets/51f65f10-1ad5-496c-ac05-6b152ac0194a)
+
+
+- **직무별 채용 공고 요약**
+
+![직무별 채용 공고](https://github.com/user-attachments/assets/319f60d3-e7a6-4581-a530-b34e146093f0)
+
+- **북마크/마이페이지**
+**기술 스택 북마크**
+
+![기술 스택 북마크](https://github.com/user-attachments/assets/cbfec03c-aaac-4702-bc68-50343ca776b2)
+
+**채용 공고 북마크**
+
+![채용공고 북마크](https://github.com/user-attachments/assets/767581a2-7c92-4e78-9782-0fd76f7c566b)
 
 
 ### ■ 배포 URL [[joscanner.site 바로가기]](http://www.jobscanner.site/)
