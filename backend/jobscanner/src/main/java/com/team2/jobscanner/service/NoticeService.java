@@ -17,7 +17,7 @@ public class NoticeService {
     private NoticeRepository noticeRepository;
 
     public List<NoticeDTO> getNoticebyjob(String jobRoles){
-        List<Notice> notices = noticeRepository.findByJobRoles_JobTitleOrderByDueTypeAscDueDateAsc(jobRoles);
+        List<Notice> notices = noticeRepository.findByJobRoles_JobTitleAndDueDateIsNullOrDueDateAfterOrderByDueTypeAscDueDateAsc(jobRoles);
         List<NoticeDTO> noticeDTOList = notices.stream()
             .map(notice -> new NoticeDTO(
             notice.getNotice_id(),
