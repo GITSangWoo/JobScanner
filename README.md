@@ -68,9 +68,10 @@
 ![카카오 로그인](https://github.com/user-attachments/assets/51f65f10-1ad5-496c-ac05-6b152ac0194a)
 
 
-- **직무별 채용 공고 요약**
+- **직무 별 채용 공고 요약**
 
-![직무별 채용 공고](https://github.com/user-attachments/assets/319f60d3-e7a6-4581-a530-b34e146093f0)
+![직무 별 채용 공고 요약](https://github.com/user-attachments/assets/a8b2900c-d259-4aa6-a49d-4bb77ba29bd5)
+
 
 - **북마크/마이페이지**
 **기술 스택 북마크**
@@ -79,7 +80,7 @@
 
 **채용 공고 북마크**
 
-![채용공고 북마크](https://github.com/user-attachments/assets/767581a2-7c92-4e78-9782-0fd76f7c566b)
+![채용 공고 북마크](https://github.com/user-attachments/assets/b1ad0248-9b8e-4273-b892-bdfaa094d58f)
 
 
 ### ■ 배포 URL [[joscanner.site 바로가기]](http://www.jobscanner.site/)
