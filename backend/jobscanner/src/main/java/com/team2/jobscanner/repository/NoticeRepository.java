@@ -14,7 +14,7 @@ import com.team2.jobscanner.entity.Notice;
 public interface NoticeRepository extends JpaRepository<Notice, Long> {
     // List<Notice> findByJobRoles_JobTitleOrderByDueTypeAscDueDateAsc(String jobTitle);
     @Query("SELECT n FROM Notice n WHERE n.jobRoles.jobTitle = :jobTitle " +
-           "AND (n.dueDate IS NULL OR n.dueDate > CURRENT_DATE) " +
+           "AND (n.dueDate IS NULL OR n.dueDate >= CURRENT_DATE) " +
            "ORDER BY n.dueType ASC, n.dueDate ASC")
     List<Notice> findByJobRoles_JobTitleAndDueDateIsNullOrDueDateAfterOrderByDueTypeAscDueDateAsc(@Param("jobTitle") String jobTitle);
 }
