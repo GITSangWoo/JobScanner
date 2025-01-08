@@ -1,0 +1,546 @@
+/* 기본 스타일 */
+body {
+    margin: 0;
+    font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+    background-color: #fff; /* 배경색 흰색으로 변경 */
+}
+
+.main-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-top: 20px; /* 메뉴와 버튼들이 잘 위치할 수 있도록 */
+    overflow-x: hidden;
+}
+
+/* 헤더 스타일 */
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px; /* 헤더 높이 조정 */
+    background-color: #fff; /* 헤더 배경색 흰색 */
+    color: #333; /* 헤더 텍스트 색상 */
+    border-bottom: 1px solid #ccc; /* 헤더와 body 사이에 선 추가 */
+    overflow: hidden; /* 헤더 스크롤 제거 */
+    min-height: 60px; /* 헤더의 최소 높이 설정 */
+}
+
+.top-left-menu {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 아이콘과 텍스트 간격 조정 */
+}
+
+.menu-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 25px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 50%; /* 둥근 버튼 */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-button:hover {
+    background-color: #555;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-logo {
+    font-size: 1.5rem; /* 헤더 로고 크기 조정 */
+    font-weight: bold; /* 두껍게 */
+    color: #333;
+    margin-right: 20px; /* 오른쪽 버튼과 간격 */
+}
+
+/* 상단 오른쪽 로그인/회원가입 버튼 */
+.top-right-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 버튼 간격을 조금 늘려서 더 깔끔하게 배치 */
+}
+
+.auth-button {
+    padding: 10px 15px; /* 버튼 높이 조정 */
+    font-size: 15px !important;
+    background-color: #28a745; /* 초록색 배경 */
+    color: #fff; /* 흰색 글씨 */
+    border: 2px solid #28a745; /* 초록색 테두리 */
+    border-radius: 20px; /* 둥근 테두리 */
+    cursor: pointer;
+    text-decoration: none; /* 밑줄 제거 */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.auth-button:hover {
+    background-color: #218838; /* hover 시 배경색 변경 */
+}
+
+.auth-button:focus {
+    outline: none; /* 포커스 시 테두리 제거 */
+}
+
+/* 왼쪽 상단 더보기 버튼 */
+.top-left-menu {
+    position: relative;
+}
+
+/* 메뉴 버튼 */
+.menu-button {
+    padding: 10px 15px;
+    font-size: 25px;
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #555;
+}
+
+/* 드롭다운 메뉴 */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 200px;
+}
+
+.dropdown-item {
+    background-color: transparent;
+    color: #333;
+    padding: 8px 10px;
+    border: none;
+    font-size: 16px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}
+
+/* 드롭다운 메뉴가 열리면 보이도록 설정 */
+.dropdown-menu.open {
+    display: block;
+}
+
+/* 큰 로고 스타일 */
+.logo-container-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* 헤더와의 간격 */
+}
+
+.logo-large {
+    font-size: 3rem; /* 큰 로고 크기 */
+    font-weight: bold; /* 두껍게 */
+    color: #333; /* 로고 색상 */
+}
+
+/* 직무 선택 스타일 */
+.content {
+    margin-top: 10px; /* 간격을 좁혀줍니다 */
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* 메세지와 토글 버튼 */
+.message1 {
+    font-size: 15px !important;
+    color: #555;
+    margin-bottom: 20px; /* 토글 버튼과의 간격 조정 */
+    text-align: center; /* 중앙 정렬 */
+}
+
+/* =============================== */
+/*               토글 버튼 스타일               */
+/* =============================== */
+.toggle-buttons {
+    display: flex;
+    justify-content: space-between; /* 버튼 간격을 균등하게 배치 */
+    margin: 20px auto; /* 위/아래 여백 */
+    border: 2px solid #f0e5d8; /* 전체 컨테이너 테두리 */
+    border-radius: 30px; /* 컨테이너를 둥글게 */
+    padding: 5px 10px; /* 내부 여백 */
+    background-color: #f8f4ed; /* 컨테이너 배경색 */
+    width: 80%; /* 컨테이너 너비 */
+}
+
+.toggle-button {
+    flex: 1; /* 버튼 너비를 동일하게 유지 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    padding: 10px 20px;
+    font-size: 16px; /* 텍스트 크기 */
+    font-weight: bold;
+    border: none; /* 버튼 테두리 제거 */
+    border-radius: 20px; /* 둥근 버튼 */
+    background-color: transparent; /* 기본 배경색 제거 */
+    color: #8b6f47; /* 기본 글씨 색상 */
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* 버튼 활성화 상태 */
+.toggle-button.active {
+    background-color: #fff; /* 활성화된 버튼 배경 흰색 */
+    color: #333; /* 활성화된 버튼 텍스트 색상 */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* 활성화된 버튼 그림자 */
+}
+
+/* 버튼 hover 효과 */
+.toggle-button:hover {
+    background-color: #e8dccc; /* hover 시 배경색 */
+    color: #6d5531; /* hover 시 텍스트 색상 */
+}
+
+/* =============================== */
+/*         필터 버튼 스타일        */
+/* =============================== */
+.filter-buttons {
+    display: flex;
+    gap: 5px; /* 버튼 간격을 더 좁게 */
+    justify-content: center;
+    margin-top: 10px; /* 필터 버튼과 직무 토글 사이 간격 */
+}
+
+.filter-button {
+    padding: 8px 16px; /* 크기를 약간 줄임 */
+    font-size: 16px; /* 텍스트 크기를 줄임 */
+    border: none;
+    border-radius: 5px;
+    background-color: #EAEAEA;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-button:hover {
+    background-color: #D6D6D6;
+}
+
+/* 활성화 상태에서 색상 변경 */
+.filter-button.active {
+    background-color: #BDBDBD; /* 직무 토글과 동일한 활성화 색상 */
+}
+
+/* =============================== */
+/*               테이블 스타일               */
+/* =============================== */
+/* 테이블 크기 및 스타일 */
+/* =============================== */
+/*               main-table 스타일               */
+/* =============================== */
+.job-tables {
+    display: flex;
+    flex-wrap: wrap; /* Flexbox를 사용하여 여러 줄로 정렬 */
+    justify-content: center; /* 테이블을 중앙 정렬 */
+    gap: 10px; /* 테이블 간격 */
+}
+
+.main-table-wrapper {
+    text-align: center; /* 부모 요소에 텍스트 중앙 정렬 */
+}
+
+.main-table-container {
+    flex: 1 1 calc(20% - 20px); /* 테이블 너비 조정 */
+    margin: 10px; /* 테이블 간격 */
+    padding: 20px;
+    border-radius: 5px;
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 계산 */
+    text-align: center;
+    font-size: 20px;
+}
+
+.main-table {
+    width: 100%;
+    border-collapse: collapse;  /* 테이블 셀 간 경계선 없애기 */
+    margin: auto;
+}
+
+/* 테이블 헤더 및 셀 텍스트 중앙 정렬 */
+.main-table th, .main-table td {
+    padding: 12px 15px;
+    text-align: center;  /* 수평 중앙 정렬 */
+    vertical-align: middle;  /* 수직 중앙 정렬 */
+    border-bottom: 1px solid #ddd;
+    font-size: 10px; /* 셀 안의 글씨 크기 조정 */
+}
+
+.main-table th {
+    background-color: #d9d9d9;
+    font-weight: bold;
+    color: black;
+}
+
+.main-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* 직무 설명 텍스트 스타일 */
+.main-table-container h2 {
+    font-size: 15px; /* 설명 글씨 크기 조정 */
+    font-weight: normal;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: center;
+    line-height: 1.5;
+    word-wrap: break-word;  /* 긴 글이 화면 밖으로 나가지 않도록 줄바꿈 처리 */
+}
+
+/* 직무 설명 텍스트 스타일 */
+.job-description {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    width: 80%;
+    max-width: 800px;
+    text-align: left;
+    position: relative;
+}
+
+.job-description h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.job-description p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.info-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #888;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 1200px) {
+    .main-table-container {
+        flex: 1 1 calc(33.33% - 20px); /* 한 줄에 3개씩 배치 */
+    }
+}
+
+@media (max-width: 900px) {
+    .main-table-container {
+        flex: 1 1 calc(50% - 20px); /* 한 줄에 2개씩 배치 */
+    }
+}
+
+@media (max-width: 600px) {
+    .main-table-container {
+        flex: 1 1 100%; /* 한 줄에 1개씩 배치 */
+    }
+}
+
+/* =============================== */
+/*             기술 스택 버튼 스타일             */
+/* =============================== */
+.tech-stack-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px; /* 버튼을 조금 더 위로 올리기 */
+}
+
+.tech-stack-button {
+    padding: 10px 20px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;  /* 수평 중앙 */
+    align-items: center;      /* 수직 중앙 */
+    text-align: center;       /* 텍스트 정렬 */
+}
+
+/*.tech-stack-button:hover {*/
+/*    background-color: #D6D6D6;*/
+/*}*/
+
+/*!* 활성화 상태에서 색상 변경 *!*/
+/*.tech-stack-button.active {*/
+/*    background-color: #BDBDBD;  !* 색상을 더 진하게 *!*/
+/*}*/
+
+/* =============================== */
+/*        기술 스택 버튼 필터 스타일           */
+/* =============================== */
+.filter-tech-stack-buttons {
+    display: flex;
+    gap: 5px; /* 버튼 간격을 더 좁게 */
+    justify-content: center;
+    margin-top: 10px; /* 필터 버튼과 기술 스택 버튼 사이 간격 */
+}
+
+.filter-tech-stack-button {
+    padding: 8px 16px; /* 크기를 약간 줄임 */
+    font-size: 16px; /* 텍스트 크기를 줄임 */
+    border: none;
+    border-radius: 5px;
+    background-color: #EAEAEA;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-tech-stack-button:hover {
+    background-color: #D6D6D6;
+}
+
+/* 활성화 상태에서 색상 변경 */
+.filter-tech-stack-button.active {
+    background-color: #BDBDBD; /* 필터 버튼과 동일한 활성화 색상 */
+}
+
+.tech-stack-category {
+    margin: 20px 0; /* 카테고리 간격 */
+    padding: 10px;
+    border-radius: 8px; /* 둥근 모서리 */
+    width: 100%;
+}
+
+.tech-stack-category h4 {
+    margin-bottom: 5px; /* 제목과 차트 간격 */
+    font-size: 1.5rem;
+    color: #333; /* 제목 텍스트 색상 */
+    text-align: center;
+}
+
+.tech-stack-chart {
+    display: flex; /* Flexbox 사용 */
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    height: 500px; /* 차트 높이 */
+    max-width: 2000px; /* 차트 최대 너비 */
+    margin: 0 auto; /* 부모 요소 기준 수평 중앙 정렬 */
+    font-size: 15px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* 카테고리 섹션 스타일 */
+.category-section {
+    display: flex;
+    justify-content: space-between; /* 테이블과 차트를 좌우로 배치 */
+    margin: 20px 0; /* 섹션 간격 */
+    width: 100%;
+    max-width: 1200px; /* 최대 너비 설정 */
+}
+
+/* 테이블 스타일 */
+.main-table-container {
+    flex: 1;
+    margin-right: 20px; /* 테이블과 차트 간격 */
+}
+
+.main-table {
+    width: 100%;
+    border-collapse: collapse;  /* 테이블 셀 간 경계선 없애기 */
+}
+
+/* 테이블 헤더 및 셀 텍스트 중앙 정렬 */
+.main-table th, .main-table td {
+    padding: 12px 15px;
+    text-align: center;  /* 수평 중앙 정렬 */
+    vertical-align: middle;  /* 수직 중앙 정렬 */
+    border-bottom: 1px solid #ddd;
+    font-size: 20px; /* 셀 안의 글씨 크기 조정 */
+}
+
+.main-table th {
+    background-color: black;
+    font-weight: bold;
+    color: #fff;
+}
+
+.main-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* 차트 스타일 */
+.tech-stack-chart {
+    flex: 2; /* 차트 너비를 늘림 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    max-width: 2000px;
+    margin: 0 auto;
+    font-size: 15px;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* =============================== */
+/*               반응형 스타일               */
+/* =============================== */
+@media (max-width: 768px) {
+    /* 작은 화면에서 테이블의 글씨 크기와 너비를 조금 더 좁게 설정 */
+    .table-container {
+        width: 90%; /* 작은 화면에서 테이블이 더 좁아지도록 설정 */
+    }
+
+    table {
+        font-size: 12px;  /* 작은 화면에서 글씨 크기 축소 */
+    }
+
+    th, td {
+        padding: 10px;  /* 작은 화면에서는 패딩도 줄여줌 */
+    }
+
+    .toggle-button {
+        font-size: 16px; /* 작은 화면에서 버튼 글씨 크기 축소 */
+    }
+
+    /* 차트도 작은 화면에서 크기 조정 */
+    .chart-container {
+        width: 100%;
+    }
+}
