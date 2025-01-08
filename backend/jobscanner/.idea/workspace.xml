@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0b09bf25-10de-4be9-8d26-14b82a327c4b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../.github/workflows/appdeploy.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/FinalRepo.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/modules/jobscanner.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/application.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules/jobscanner.main.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.vscode/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../jobscanner.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/JobscannerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/controller/DailyRankController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/controller/JobRoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/controller/NoticeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/controller/OAuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/controller/TechStackController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/dto/JobRoleDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/dto/KakaoTokenDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/dto/NoticeDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/dto/RankCategoryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/dto/RankDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/dto/TechStackDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/dto/UserDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/entity/Auth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/entity/DailyRank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/entity/JobRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/entity/Notice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/entity/NoticeBookmark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/entity/TechStack.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/entity/TechStackBookmark.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/repository/AuthRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/repository/DailyRankRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/repository/JobRoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/repository/NoticeBookmarkRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/repository/NoticeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/repository/TechStackBookmarkRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/repository/TechStackRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/service/DailyRankService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/service/JobRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/service/NoticeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/service/TechStackService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/team2/jobscanner/time/AuditTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/noticebookmark.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/techbookmark.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/rank.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/team2/jobscanner/JobscannerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/team2/jobscanner/MemberRepositoryTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../ec2deploy/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/.idea/frontend.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/default.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/defaultbackup.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/defaultbackup2.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/nginx/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/public/image/kakao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/JobSummaryPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/JobSummaryPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/KakaoOAuth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/LogInPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/LogInPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/LoginHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/MainPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/MainPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/MyPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/MyPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/OauthRedirectPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/TechStackDetailsPage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/TechStackDetailsPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/setProxy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../frontend/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/.package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/actualApply.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/actualApply.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/applyBind.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/applyBind.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/functionApply.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/functionApply.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/functionCall.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/functionCall.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/reflectApply.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/reflectApply.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bind-apply-helpers/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bound/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bound/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bound/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bound/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bound/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bound/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bound/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bound/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bound/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bound/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/call-bound/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/get.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/get.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/set.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/test/get.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/test/set.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/dunder-proto/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-define-property/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-define-property/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-define-property/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-define-property/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-define-property/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-define-property/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-define-property/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-define-property/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-define-property/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-define-property/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-define-property/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/eval.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/eval.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/range.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/range.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/ref.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/ref.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/syntax.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/syntax.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/type.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/type.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/uri.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-errors/uri.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/RequireObjectCoercible.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/RequireObjectCoercible.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/ToObject.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/ToObject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/es-object-atoms/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/function-bind/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/function-bind/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/function-bind/.github/SECURITY.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/function-bind/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/function-bind/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/function-bind/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/function-bind/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/function-bind/implementation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/function-bind/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/function-bind/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/function-bind/test/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/function-bind/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/get-intrinsic/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/get-intrinsic/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/get-intrinsic/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/get-intrinsic/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/get-intrinsic/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/get-intrinsic/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/get-intrinsic/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/get-intrinsic/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/get-intrinsic/test/GetIntrinsic.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/gopd/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/gopd/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/gopd/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/gopd/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/gopd/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/gopd/gOPD.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/gopd/gOPD.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/gopd/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/gopd/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/gopd/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/gopd/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/gopd/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/shams.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/shams.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/test/shams/core-js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/test/shams/get-own-property-symbols.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/test/tests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/has-symbols/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/hasown/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/hasown/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/hasown/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/hasown/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/hasown/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/hasown/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/hasown/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/hasown/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/hasown/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/hasown/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/abs.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/abs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/constants/maxArrayLength.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/constants/maxArrayLength.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/constants/maxSafeInteger.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/constants/maxSafeInteger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/constants/maxValue.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/constants/maxValue.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/floor.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/floor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/isFinite.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/isFinite.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/isInteger.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/isInteger.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/isNaN.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/isNaN.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/isNegativeZero.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/isNegativeZero.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/max.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/max.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/min.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/mod.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/mod.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/pow.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/pow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/round.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/round.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/sign.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/sign.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/math-intrinsics/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/example/all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/example/circular.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/example/fn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/example/inspect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/package-support.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/readme.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test-core-js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/bigint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/browser/dom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/circular.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/deep.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/err.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/fakes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/fn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/global.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/has.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/holes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/indent-option.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/inspect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/lowbyte.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/number.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/quoteStyle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/toStringTag.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/undef.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/test/values.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/object-inspect/util.inspect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/qs/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/qs/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/qs/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/qs/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/qs/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/qs/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/qs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/qs/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/qs/test/empty-keys-cases.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/qs/test/parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/qs/test/stringify.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/qs/test/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-list/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-list/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-list/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-list/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-list/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-list/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-list/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-list/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-list/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-list/list.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-list/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-list/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-list/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-map/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-map/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-map/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-map/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-map/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-map/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-map/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-map/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-map/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-map/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-map/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-map/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-weakmap/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-weakmap/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-weakmap/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-weakmap/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-weakmap/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-weakmap/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-weakmap/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-weakmap/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-weakmap/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-weakmap/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-weakmap/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel-weakmap/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel/.eslintrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel/.github/FUNDING.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel/.nycrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel/test/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../node_modules/side-channel/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../package.json" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2qvbLrH8TJbh3xU0LlNTr6Vetpb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "Merging main",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
+    <layout>
+      <window_info id="Bookmarks" side_tool="true" />
+      <window_info id="ORM" side_tool="true" />
+      <window_info id="Merge Requests" />
+      <window_info id="Commit_Guest" show_stripe_button="false" />
+      <window_info id="Pull Requests" />
+      <window_info id="Learn" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2633075" />
+      <window_info id="Commit" order="1" weight="0.25" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="TypeScript" />
+      <window_info anchor="bottom" id="Profiler" />
+      <window_info anchor="bottom" id="Build" />
+      <window_info anchor="bottom" id="TODO" />
+      <window_info anchor="bottom" id="File Transfer" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Problems" order="1" />
+      <window_info anchor="bottom" id="Problems View" order="2" />
+      <window_info anchor="bottom" id="Terminal" order="3" />
+      <window_info anchor="bottom" id="Services" order="4" />
+      <window_info anchor="right" id="Endpoints" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
+      <window_info anchor="right" id="Beans" />
+      <window_info anchor="right" content_ui="combo" id="Notifications" order="0" weight="0.25" />
+      <window_info anchor="right" id="AIAssistant" order="1" weight="0.25" />
+      <window_info anchor="right" id="Database" order="2" weight="0.25" />
+      <window_info anchor="right" id="Gradle" order="3" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="RunManager">
+    <configuration name="JobscannerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="jobscanner.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.team2.jobscanner.JobscannerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-fdfe4dae3a2d-intellij.indexing.shared.core-IU-243.22562.145" />
+        <option value="bundled-js-predefined-d6986cc7102b-deb605915726-JavaScript-IU-243.22562.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0b09bf25-10de-4be9-8d26-14b82a327c4b" name="Changes" comment="" />
+      <created>1735545942921</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1735545942921</updated>
+      <workItem from="1735545944853" duration="314000" />
+      <workItem from="1735549130519" duration="4824000" />
+      <workItem from="1735828807109" duration="7467000" />
+      <workItem from="1735914645002" duration="19646000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

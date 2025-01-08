@@ -1,0 +1,334 @@
+/* 기본 스타일 */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* 공고 요약 페이지 */
+.job-summary-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+/* 로고 */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    position: relative;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #333;
+}
+
+/* 콘텐츠 */
+.content {
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.message {
+    font-size: 24px;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.message1 {
+    font-size: 15px !important;
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* 토글 버튼 */
+.toggle-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #EAEAEA;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+    background-color: #EAEAEA;
+}
+
+.toggle-button.active {
+    background-color: #bdbdbd;
+    font-weight: bold;
+}
+
+/* 테이블 스타일 */
+.summary-table-container {
+    width: 100%;
+    max-width: 1500px;
+    overflow-x: auto;
+    margin-top: 20px;
+    background-color: transparent; /* 배경을 투명으로 설정 */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: none; /* 그림자도 제거 */
+}
+
+.summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none; /* 테이블의 테두리 제거 */
+    text-align: center;
+}
+
+.summary-thead {
+    background-color: transparent; /* 배경을 투명으로 설정 */
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.summary-thead th {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.summary-tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.summary-tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.summary-td {
+    padding: 15px;
+    font-size: 13px !important;
+    word-wrap: break-word;
+    border: none; /* 셀의 테두리 제거 */
+    text-align: center;
+}
+
+/* 북마크 아이콘 */
+.bookmark-icon {
+    cursor: pointer;
+    font-size: 25px;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.bookmark-icon.active {
+    color: #ffcc00;
+}
+
+.bookmark-icon:hover {
+    color: #ff9900;
+}
+
+/* 상단 오른쪽 로그인/회원가입 버튼 */
+.top-right-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex; /* 버튼들이 수평으로 배치되도록 */
+    gap: 10px; /* 버튼 간격을 조금 늘려서 더 깔끔하게 배치 */
+}
+
+.auth-button {
+    padding: 10px 25px;
+    font-size: 15px !important;
+    background-color: transparent !important; /* 배경색을 완전히 투명하게 */
+    color: #000; /* 기본 글씨 색상을 검정색으로 설정 */
+    border: none;  /* 테두리 없애기 */
+    background: none !important; /* 배경색 없애기 (필요하면) */
+    outline: none;
+    font-weight: bold; /* 글씨를 굵게 설정 */
+    cursor: pointer;
+    text-decoration: none; /* 밑줄 제거 */
+    transition: color 0.3s;
+    box-shadow: none; /* 그림자 제거 */
+    white-space: nowrap; /* 텍스트가 한 줄로 유지되도록 설정 */
+}
+
+.auth-button:hover {
+    color: #333; /* hover 시 글씨 색상 변경 */
+}
+
+.auth-button:focus {
+    outline: none; /* 포커스 시 테두리 제거 */
+}
+
+/* 더보기 버튼 */
+.top-left-menu {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.menu-button {
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: #eaeaea;
+    color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+    background-color: #d6d6d6;
+}
+
+/* 드롭다운 메뉴 */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+    padding: 8px 10px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-menu.open {
+    display: block;
+}
+
+/* 드롭다운 버튼 스타일 */
+.expand-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 16px;
+}
+
+.welcome-message {
+    font-weight: bold;
+}
+
+/* 확장된 내용 */
+.summary-table .expanded-content {
+    display: none;
+    margin-top: 5px;
+    padding-left: 10px;
+    position: relative;
+    left: 0;
+    top: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    z-index: 10;
+    max-height: 300px;
+    overflow-y: auto;
+    animation: slideDown 0.3s ease-out;
+}
+
+/* 확장된 내용 활성화 */
+.summary-table .expanded-content.active {
+    display: block;
+}
+
+/* 줄바꿈 */
+.pre-line {
+    white-space: pre-line;
+}
+
+/* 애니메이션 */
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 페이지네이션 스타일 */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.page-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #eaeaea;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.page-button:hover {
+    background-color: #d6d6d6;
+    border-color: #bbb;
+}
+
+.page-button.active {
+    background-color: #bdbdbd;
+    color: white;
+    font-weight: bold;
+    border-color: #888;
+}
+
+.page-button:disabled {
+    background-color: #f1f1f1;
+    color: #ccc;
+    border-color: #ddd;
+    cursor: not-allowed;
+}

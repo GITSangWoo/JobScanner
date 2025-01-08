@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  frontend:
+    build:
+      context: . # 현재 디렉토리에 있는 Dockerfile을 사용
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000" # React 앱을 localhost:3000에서 사용할 수 있도록 매핑
+    volumes:
+      - .:/app # 로컬 파일 변경 시 컨테이너 내부에도 반영
+      - /app/node_modules # node_modules는 컨테이너 내부에서 관리
+    stdin_open: true # React 개발 서버가 제대로 실행되도록 옵션 설정
+    tty: true
