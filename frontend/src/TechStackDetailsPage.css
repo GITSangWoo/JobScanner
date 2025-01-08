@@ -1,0 +1,182 @@
+/* 전체 컨테이너 스타일 */
+.tech-stack-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 상단 오른쪽 로그인/회원가입 버튼 */
+.top-right-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex; /* 버튼들이 수평으로 배치되도록 */
+    gap: 10px; /* 버튼 간격을 조금 늘려서 더 깔끔하게 배치 */
+}
+
+.auth-button {
+    padding: 10px 25px;
+    font-size: 15px !important;
+    background-color: transparent !important; /* 배경색을 완전히 투명하게 */
+    color: #000; /* 기본 글씨 색상을 검정색으로 설정 */
+    border: none !important;  /*  테두리 없애기 */
+    background: none ; /* 배경색 없애기 (필요하면) */
+    outline: none;
+    font-weight: bold; /* 글씨를 굵게 설정 */
+    cursor: pointer;
+    text-decoration: none; /* 밑줄 제거 */
+    transition: color 0.3s;
+    box-shadow: none; /* 그림자 제거 */
+    white-space: nowrap; /* 텍스트가 한 줄로 유지되도록 설정 */
+}
+
+.auth-button:hover {
+    color: #333; /* hover 시 글씨 색상 변경 */
+}
+
+.auth-button:focus {
+    outline: none; /* 포커스 시 테두리 제거 */
+}
+
+/* 개별 기술 스택 박스 스타일 */
+.tech-stack-content {
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* 제목 스타일 */
+.tech-stack-language {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+/* 설명 및 링크 섹션 제목 */
+.tech-stack-content h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444444;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* 본문 설명 스타일 */
+.tech-stack-content p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #555555;
+    margin-bottom: 20px;
+}
+
+/* 링크 스타일 */
+.tech-stack-content a {
+    font-size: 1.25rem;
+    color: #1a73e8;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.tech-stack-content a:hover {
+    text-decoration: underline;
+}
+
+/* 북마크 버튼 스타일 */
+.bookmark-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bookmark-button {
+    font-size: 2rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: gray;
+    transition: color 0.3s;
+}
+
+.bookmark-button:hover {
+    color: gold;
+}
+
+.bookmark-button.active {
+    color: gold;
+}
+
+.welcome-message {
+    font-weight: bold;
+}
+
+/* Link Preview Card Styles */
+.link-preview-card {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s ease;
+    text-decoration: none;
+    background-color: #fff;
+}
+
+.link-preview-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Thumbnail Section */
+.link-preview-thumbnail img {
+    display: block;
+    width: 120px; /* Adjust thumbnail size as needed */
+    height: 100%; 
+    object-fit: cover;
+}
+
+/* Content Section */
+.link-preview-content {
+    flex: 1;
+    padding: 12px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.link-preview-content h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.link-preview-content p {
+    margin: 8px 0 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.youtube-thumbnail {
+    max-width: 100%;   /* 이미지의 최대 너비를 부모 요소에 맞게 설정 */
+    width: 300px;      /* 원하는 너비로 설정 */
+    height: auto;      /* 비율에 맞춰 자동으로 높이 조정 */
+    border-radius: 8px; /* 선택적으로 둥근 모서리 추가 */
+}
