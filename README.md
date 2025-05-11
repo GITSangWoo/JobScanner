@@ -13,7 +13,6 @@
 
 ### ■ 팀원 소개 및 역할
 | **김도현** | **김동욱** | **이상우** | **이상훈** | **조하영** |
-|:-----------|:-----------|:-----------|:-----------|:-----------|
 | [@rlaehgus97](https://github.com/rlaehgus97) | [@DONGUK777](https://github.com/DONGUK777) | [@GITSangWoo](https://github.com/GITSangWoo) | [@hun0219](https://github.com/hun0219) | [@EstherCho-7](https://github.com/EstherCho-7) |
 | <small>• 프론트엔드 개발<br>• 형상 및 배포 관리<br>• Docker, Airflow<br>• 브랜치 전략 수립</small> | <small>• 백엔드 개발<br>• 데이터 전처리<br>• 기술 사전 정의<br>• Readme 작성, PPT 제작</small> | <small>• 프론트 개발&배포<br>• CI/CD 구축<br>• 전처리 메소드 개발<br>• 백엔드 개발<br>• 인프라 개발</small> | <small>• 애자일 프로세스 적용(CI/CD)<br>• 크롤링 코드 통합<br>• Docker, Airflow<br>• 인프라 개발</small> | <small>• 프론트엔드 설계 및 개발<br>• 백엔드 설계<br>• 칸반 미팅 주최<br>• 문서 작업</small> |
 
